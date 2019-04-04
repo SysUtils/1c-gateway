@@ -1,0 +1,18 @@
+package FieldsDocumentJournalЗаказыКлиентов
+
+const Ref = "Ref"
+const Type = "Type"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Number = "Number"
+const Posted = "Posted"
+const ВалютаKey = "Валюта_Key"
+const ДатаОплаты = "ДатаОплаты"
+const ДатаОтгрузки = "ДатаОтгрузки"
+const ИнформацияKey = "Информация_Key"
+const Comment = "Комментарий"
+const ОрганизацияKey = "Организация_Key"
+const ОтветственныйKey = "Ответственный_Key"
+const ПодразделениеKey = "Подразделение_Key"
+const Sum = "Сумма"
+const RefType = "Ref_Type"

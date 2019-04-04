@@ -1,0 +1,18 @@
+package FieldsAccumulationRegisterВнутренниеЗаказыRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const RecordType = "RecordType"
+const ItemKey = "Номенклатура_Key"
+const InstanceKey = "СерияНоменклатуры_Key"
+const ХарактеристикаНоменклатурыKey = "ХарактеристикаНоменклатуры_Key"
+const SizeKey = "Размер_Key"
+const Заказчик = "Заказчик"
+const ВнутреннийЗаказKey = "ВнутреннийЗаказ_Key"
+const СтатусПартии = "СтатусПартии"
+const Quantity = "Количество"
+const Weight = "Вес"
+const RecorderType = "Recorder_Type"
+const ЗаказчикType = "Заказчик_Type"

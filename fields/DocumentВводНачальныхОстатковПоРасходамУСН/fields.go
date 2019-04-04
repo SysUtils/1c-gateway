@@ -1,0 +1,15 @@
+package FieldsDocumentВводНачальныхОстатковПоРасходамУСН
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const ОрганизацияKey = "Организация_Key"
+const Comment = "Комментарий"
+const ОтветственныйKey = "Ответственный_Key"
+const ВзаиморасчетыСПокупателями = "ВзаиморасчетыСПокупателями"
+const ТоварыПроданные = "ТоварыПроданные"
+const ВзаиморасчетыСПоставщиками = "ВзаиморасчетыСПоставщиками"
+const ТоварыНаОстатках = "ТоварыНаОстатках"

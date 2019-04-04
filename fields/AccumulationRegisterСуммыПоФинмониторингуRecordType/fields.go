@@ -1,0 +1,15 @@
+package FieldsAccumulationRegisterСуммыПоФинмониторингуRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const RecordType = "RecordType"
+const ОрганизацияKey = "Организация_Key"
+const ДоговорКонтрагентаKey = "ДоговорКонтрагента_Key"
+const ДокументУчета = "ДокументУчета"
+const СуммаОтгрузки = "СуммаОтгрузки"
+const СуммаОплаты = "СуммаОплаты"
+const СуммаВозврата = "СуммаВозврата"
+const RecorderType = "Recorder_Type"
+const ДокументУчетаType = "ДокументУчета_Type"

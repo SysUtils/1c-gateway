@@ -1,0 +1,16 @@
+package FieldsCatalogШаблоныЗаполненияКУ
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Description = "Description"
+const Code = "Code"
+const DeletionMark = "DeletionMark"
+const РучноеУказаниеПериода = "РучноеУказаниеПериода"
+const ДатаНачБудни = "ДатаНачБудни"
+const ДатаКонБудни = "ДатаКонБудни"
+const РучноеУказаниеСалонов = "РучноеУказаниеСалонов"
+const КУМин = "КУМин"
+const КУМакс = "КУМакс"
+const ПраздничныеДни = "ПраздничныеДни"
+const КУНаНеделю = "КУНаНеделю"
+const Салоны = "Салоны"

@@ -1,0 +1,17 @@
+package FieldsDocumentВозвратДавальческогоМеталла
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const Weight = "Вес"
+const ДоговорКонтрагентаKey = "ДоговорКонтрагента_Key"
+const ДокументОснованиеKey = "ДокументОснование_Key"
+const Comment = "Комментарий"
+const КонтрагентKey = "Контрагент_Key"
+const ItemKey = "Номенклатура_Key"
+const ОрганизацияKey = "Организация_Key"
+const ОтветственныйKey = "Ответственный_Key"
+const DepartmentKey = "Склад_Key"

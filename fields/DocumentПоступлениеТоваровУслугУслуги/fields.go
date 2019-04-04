@@ -1,0 +1,15 @@
+package FieldsDocumentПоступлениеТоваровУслугУслуги
+
+const Key = "Ref_Key"
+const LineNumber = "LineNumber"
+const Quantity = "Количество"
+const ItemKey = "Номенклатура_Key"
+const НоменклатурнаяГруппаKey = "НоменклатурнаяГруппа_Key"
+const ПодразделениеKey = "Подразделение_Key"
+const ПроектKey = "Проект_Key"
+const Содержание = "Содержание"
+const СтавкаНДС = "СтавкаНДС"
+const СтатьяЗатратKey = "СтатьяЗатрат_Key"
+const Sum = "Сумма"
+const СуммаНДС = "СуммаНДС"
+const Cost = "Цена"

@@ -1,0 +1,17 @@
+package FieldsDocumentПередачаВРемонт
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const ОрганизацияKey = "Организация_Key"
+const DepartmentKey = "Склад_Key"
+const КонтрагентKey = "Контрагент_Key"
+const ДоговорКонтрагентаKey = "ДоговорКонтрагента_Key"
+const СобственнаяМастерская = "СобственнаяМастерская"
+const КоличествоДокумента = "КоличествоДокумента"
+const Weight = "ВесДокумента"
+const ИзделияПринятыеВРемонт = "ИзделияПринятыеВРемонт"
+const Goods = "Товары"

@@ -1,0 +1,16 @@
+package FieldsDocumentУдалитьНарядЗаказВставки
+
+const Key = "Ref_Key"
+const LineNumber = "LineNumber"
+const Weight = "Вес"
+const ГруппаДефектаKey = "ГруппаДефекта_Key"
+const ГруппаЦветаKey = "ГруппаЦвета_Key"
+const КаменьKey = "Камень_Key"
+const Quantity = "Количество"
+const ItemKey = "Номенклатура_Key"
+const Размер1 = "Размер1"
+const Размер2 = "Размер2"
+const Размер3 = "Размер3"
+const РассевKey = "Рассев_Key"
+const ФормаОгранкиKey = "ФормаОгранки_Key"
+const ЦветКамняKey = "ЦветКамня_Key"

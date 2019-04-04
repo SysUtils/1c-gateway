@@ -1,0 +1,17 @@
+package FieldsCatalogПодключаемоеОборудование
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Description = "Description"
+const DeletionMark = "DeletionMark"
+const ВерсияКомпоненты = "ВерсияКомпоненты"
+const ИдентификаторУстройства = "ИдентификаторУстройства"
+const УстройствоОтключено = "УстройствоОтключено"
+const УстройствоИспользуется = "УстройствоИспользуется"
+const ОбработчикДрайвера = "ОбработчикДрайвера"
+const ПараметрыBase64Data = "Параметры_Base64Data"
+const РабочееМестоKey = "РабочееМесто_Key"
+const ТипОборудования = "ТипОборудования"
+const ТребуетсяПереустановка = "ТребуетсяПереустановка"
+const ПараметрыType = "Параметры_Type"
+const Параметры = "Параметры"

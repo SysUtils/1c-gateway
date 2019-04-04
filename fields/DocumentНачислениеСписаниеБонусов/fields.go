@@ -1,0 +1,18 @@
+package FieldsDocumentНачислениеСписаниеБонусов
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const Comment = "Комментарий"
+const ОтветственныйKey = "Ответственный_Key"
+const НастройкиЗаполненияBase64Data = "НастройкиЗаполнения_Base64Data"
+const ДатаНачисленияБонусов = "ДатаНачисленияБонусов"
+const ВремменныеБонусы = "ВремменныеБонусы"
+const ДатаСписанияБонусов = "ДатаСписанияБонусов"
+const ДокументСозданВЮТД = "ДокументСозданВЮТД"
+const ДисконтныеКарты = "ДисконтныеКарты"
+const НастройкиЗаполненияType = "НастройкиЗаполнения_Type"
+const НастройкиЗаполнения = "НастройкиЗаполнения"

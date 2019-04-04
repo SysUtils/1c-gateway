@@ -1,0 +1,18 @@
+package FieldsDocumentJournalДавальческиеДокументы
+
+const Ref = "Ref"
+const Type = "Type"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Number = "Number"
+const Posted = "Posted"
+const Weight = "Вес"
+const ДатаВх = "ДатаВх"
+const Comment = "Комментарий"
+const КонтрагентKey = "Контрагент_Key"
+const Металл = "Металл"
+const НомерВх = "НомерВх"
+const ОрганизацияKey = "Организация_Key"
+const ОтветственныйKey = "Ответственный_Key"
+const RefType = "Ref_Type"
+const МеталлType = "Металл_Type"

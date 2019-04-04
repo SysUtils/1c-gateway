@@ -1,0 +1,16 @@
+package FieldsPayType
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Description = "Description"
+const Code = "Code"
+const ParentKey = "Parent_Key"
+const IsFolder = "IsFolder"
+const DeletionMark = "DeletionMark"
+const БанкКредиторKey = "БанкКредитор_Key"
+const ДоговорВзаиморасчетовБанкаКредитораKey = "ДоговорВзаиморасчетовБанкаКредитора_Key"
+const ДоговорЭквайрингаKey = "ДоговорЭквайринга_Key"
+const НомерКарты = "НомерКарты"
+const ПроцентБанковскойКомиссии = "ПроцентБанковскойКомиссии"
+const ТипОплаты = "ТипОплаты"
+const АвтоматическиВычитатьСуммуКомиссии = "АвтоматическиВычитатьСуммуКомиссии"

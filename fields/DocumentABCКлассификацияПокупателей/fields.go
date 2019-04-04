@@ -1,0 +1,15 @@
+package FieldsDocumentABCКлассификацияПокупателей
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const ДатаНачала = "ДатаНачала"
+const ДатаОкончания = "ДатаОкончания"
+const Comment = "Комментарий"
+const ПроцентAКласса = "ПроцентAКласса"
+const ПроцентBКласса = "ПроцентBКласса"
+const ПроцентCКласса = "ПроцентCКласса"
+const ТаблицаРаспределенияКонтрагентов = "ТаблицаРаспределенияКонтрагентов"

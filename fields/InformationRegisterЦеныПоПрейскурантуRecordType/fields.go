@@ -1,0 +1,17 @@
+package FieldsInformationRegisterЦеныПоПрейскурантуRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const КаменьKey = "Камень_Key"
+const ФормаОгранкиKey = "ФормаОгранки_Key"
+const ЦветКамняKey = "ЦветКамня_Key"
+const ГруппаЦветаKey = "ГруппаЦвета_Key"
+const ГруппаДефектаKey = "ГруппаДефекта_Key"
+const РассевKey = "Рассев_Key"
+const Размер1От = "Размер1От"
+const Размер1До = "Размер1До"
+const Cost = "Цена"
+const ТипЦенKey = "ТипЦен_Key"
+const RecorderType = "Recorder_Type"

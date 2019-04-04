@@ -1,0 +1,15 @@
+package FieldsDocumentЧекККМОплата
+
+const Key = "Ref_Key"
+const LineNumber = "LineNumber"
+const ВидОплатыKey = "ВидОплаты_Key"
+const НомерВидаОплаты = "НомерВидаОплаты"
+const ПроцентТорговойУступки = "ПроцентТорговойУступки"
+const Sum = "Сумма"
+const СуммаТорговойУступки = "СуммаТорговойУступки"
+const Хэш = "Хэш"
+const КартаСбербанка = "КартаСбербанка"
+const Последние4 = "Последние4"
+const КодRRN = "КодRRN"
+const Идентификатор = "Идентификатор"
+const TransactionId = "TransactionId"

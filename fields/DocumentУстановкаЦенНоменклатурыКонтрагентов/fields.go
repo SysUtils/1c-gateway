@@ -1,0 +1,17 @@
+package FieldsDocumentУстановкаЦенНоменклатурыКонтрагентов
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const ДокументОснование = "ДокументОснование"
+const Информация = "Информация"
+const Comment = "Комментарий"
+const КонтрагентKey = "Контрагент_Key"
+const НеПроводитьНулевыеЗначения = "НеПроводитьНулевыеЗначения"
+const ОтветственныйKey = "Ответственный_Key"
+const ТипыЦен = "ТипыЦен"
+const Goods = "Товары"
+const ДокументОснованиеType = "ДокументОснование_Type"

@@ -1,0 +1,17 @@
+package FieldsAccumulationRegisterТоварыНаСкладахАМRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const RecordType = "RecordType"
+const DepartmentKey = "Склад_Key"
+const МеталлKey = "Металл_Key"
+const ТоварнаяГруппаKey = "ТоварнаяГруппа_Key"
+const ТоварнаяКатегорияKey = "ТоварнаяКатегория_Key"
+const ТоварнаяПозицияKey = "ТоварнаяПозиция_Key"
+const ItemKey = "Номенклатура_Key"
+const Quantity = "Количество"
+const Weight = "Вес"
+const РозничнаяСтоимость = "РозничнаяСтоимость"
+const RecorderType = "Recorder_Type"

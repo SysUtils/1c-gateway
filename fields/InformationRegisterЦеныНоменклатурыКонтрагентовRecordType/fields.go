@@ -1,0 +1,15 @@
+package FieldsInformationRegisterЦеныНоменклатурыКонтрагентовRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const ТипЦенKey = "ТипЦен_Key"
+const ItemKey = "Номенклатура_Key"
+const InstanceKey = "СерияНоменклатуры_Key"
+const ХарактеристикаНоменклатурыKey = "ХарактеристикаНоменклатуры_Key"
+const SizeKey = "Размер_Key"
+const Cost = "Цена"
+const ВалютаKey = "Валюта_Key"
+const ЕдиницаИзмеренияKey = "ЕдиницаИзмерения_Key"
+const RecorderType = "Recorder_Type"

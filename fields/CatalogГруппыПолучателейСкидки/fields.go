@@ -1,0 +1,17 @@
+package FieldsCatalogГруппыПолучателейСкидки
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Description = "Description"
+const ParentKey = "Parent_Key"
+const IsFolder = "IsFolder"
+const DeletionMark = "DeletionMark"
+const СпособФормирования = "СпособФормирования"
+const СхемаКомпоновкиДанныхBase64Data = "СхемаКомпоновкиДанных_Base64Data"
+const Описание = "Описание"
+const ОтветственныйKey = "Ответственный_Key"
+const ДатаСоздания = "ДатаСоздания"
+const ИмяШаблонаСКД = "ИмяШаблонаСКД"
+const ТипПолучателей = "ТипПолучателей"
+const СхемаКомпоновкиДанныхType = "СхемаКомпоновкиДанных_Type"
+const СхемаКомпоновкиДанных = "СхемаКомпоновкиДанных"

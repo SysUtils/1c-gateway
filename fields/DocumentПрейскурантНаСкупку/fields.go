@@ -1,0 +1,15 @@
+package FieldsDocumentПрейскурантНаСкупку
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const НеПроводитьНулевыеЗначения = "НеПроводитьНулевыеЗначения"
+const ОтветственныйKey = "Ответственный_Key"
+const ИспользоватьПриОбмене = "ИспользоватьПриОбмене"
+const Comment = "Комментарий"
+const ДокументСозданВЮТД = "ДокументСозданВЮТД"
+const DepartmentKey = "Склад_Key"
+const Пробы = "Пробы"

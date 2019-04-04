@@ -1,0 +1,16 @@
+package FieldsAccumulationRegisterДенежныеСредстваКПолучениюRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const RecordType = "RecordType"
+const ВидДенежныхСредств = "ВидДенежныхСредств"
+const БанковскийСчетКасса = "БанковскийСчетКасса"
+const ДокументПолучения = "ДокументПолучения"
+const TypeOfMovingMoneyKey = "СтатьяДвиженияДенежныхСредств_Key"
+const Sum = "Сумма"
+const СуммаУпр = "СуммаУпр"
+const RecorderType = "Recorder_Type"
+const БанковскийСчетКассаType = "БанковскийСчетКасса_Type"
+const ДокументПолученияType = "ДокументПолучения_Type"

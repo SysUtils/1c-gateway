@@ -1,0 +1,15 @@
+package FieldsCatalogПроекты
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Description = "Description"
+const Code = "Code"
+const ParentKey = "Parent_Key"
+const IsFolder = "IsFolder"
+const DeletionMark = "DeletionMark"
+const ДатаНачала = "ДатаНачала"
+const ДатаОкончания = "ДатаОкончания"
+const Описание = "Описание"
+const ОтветственныйKey = "Ответственный_Key"
+const БИдентификатор = "Б_Идентификатор"
+const БНомерВерсии = "Б_НомерВерсии"

@@ -1,0 +1,17 @@
+package FieldsCatalogОбработкиОбслуживанияТО
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Description = "Description"
+const Code = "Code"
+const DeletionMark = "DeletionMark"
+const Версия = "Версия"
+const ВерсияAPI = "ВерсияAPI"
+const Вид = "Вид"
+const Идентификатор = "Идентификатор"
+const ИмяФайла = "ИмяФайла"
+const ОбработкаBase64Data = "Обработка_Base64Data"
+const Описание = "Описание"
+const Модели = "Модели"
+const ОбработкаType = "Обработка_Type"
+const Обработка = "Обработка"

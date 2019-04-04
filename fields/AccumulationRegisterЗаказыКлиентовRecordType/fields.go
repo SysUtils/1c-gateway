@@ -1,0 +1,17 @@
+package FieldsAccumulationRegisterЗаказыКлиентовRecordType
+
+const Recorder = "Recorder"
+const Period = "Period"
+const LineNumber = "LineNumber"
+const Active = "Active"
+const RecordType = "RecordType"
+const ItemKey = "Номенклатура_Key"
+const SizeKey = "Размер_Key"
+const ЗаказКлиентаKey = "ЗаказКлиента_Key"
+const InstanceKey = "СерияНоменклатуры_Key"
+const Заказано = "Заказано"
+const ВРезерве = "ВРезерве"
+const КРазмещению = "КРазмещению"
+const ЗаказаноВес = "ЗаказаноВес"
+const ЗаказаноСумма = "ЗаказаноСумма"
+const RecorderType = "Recorder_Type"

@@ -1,0 +1,17 @@
+package FieldsDocumentИнвентаризацияТоваровОтданныхНаКомиссию
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const ДоговорКонтрагентаKey = "ДоговорКонтрагента_Key"
+const Comment = "Комментарий"
+const КонтрагентKey = "Контрагент_Key"
+const ОрганизацияKey = "Организация_Key"
+const ОтветственныйKey = "Ответственный_Key"
+const ПодразделениеKey = "Подразделение_Key"
+const Сделка = "Сделка"
+const Goods = "Товары"
+const СделкаType = "Сделка_Type"

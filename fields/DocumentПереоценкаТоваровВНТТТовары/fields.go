@@ -1,0 +1,17 @@
+package FieldsDocumentПереоценкаТоваровВНТТТовары
+
+const Key = "Ref_Key"
+const LineNumber = "LineNumber"
+const Weight = "Вес"
+const Quantity = "Количество"
+const ItemKey = "Номенклатура_Key"
+const SizeKey = "Размер_Key"
+const InstanceKey = "СерияНоменклатуры_Key"
+const ХарактеристикаНоменклатурыKey = "ХарактеристикаНоменклатуры_Key"
+const RetailCost = "ЦенаВРознице"
+const ЦенаВРозницеГр = "ЦенаВРозницеГр"
+const ЦенаВРозницеСтарая = "ЦенаВРозницеСтарая"
+const Найдено = "Найдено"
+const Дней = "Дней"
+const ДоговорКонтрагентаKey = "ДоговорКонтрагента_Key"
+const ПроцентУценки = "ПроцентУценки"

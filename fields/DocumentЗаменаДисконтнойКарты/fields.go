@@ -1,0 +1,17 @@
+package FieldsDocumentЗаменаДисконтнойКарты
+
+const Key = "Ref_Key"
+const DataVersion = "DataVersion"
+const Number = "Number"
+const Date = "Date"
+const DeletionMark = "DeletionMark"
+const Posted = "Posted"
+const ОтветственныйKey = "Ответственный_Key"
+const СтараяДисконтнаяКартаKey = "СтараяДисконтнаяКарта_Key"
+const НоваяДисконтнаяКартаKey = "НоваяДисконтнаяКарта_Key"
+const Comment = "Комментарий"
+const ДокументСозданВЮТД = "ДокументСозданВЮТД"
+const НомерСтаройДисконтнойКарты = "НомерСтаройДисконтнойКарты"
+const НомерНовойДисконтнойКарты = "НомерНовойДисконтнойКарты"
+const СуммаНакоплений = "СуммаНакоплений"
+const СуммаБонусов = "СуммаБонусов"
