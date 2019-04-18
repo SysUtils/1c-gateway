@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/generator"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 	"os"
 	"strings"
 )
@@ -65,7 +65,7 @@ func LoadFromFile(path string) map[string]string {
 	return res
 }
 
-func Start(schema generator.Schema) {
+func Start(schema shared.Schema) {
 	types = LoadFromFile("types.dat")
 	fields = LoadFromFile("fields.dat")
 	for i, entity := range schema.Entities {

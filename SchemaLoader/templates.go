@@ -1,6 +1,4 @@
-package generator
-
-//go:generate go-bindata -pkg $GOPACKAGE static/
+package SchemaLoader
 
 var templateFields = `
 package Fields{{.CamelName}}
