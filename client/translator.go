@@ -6,7 +6,6 @@ import (
 )
 
 func (g *Generator) TranslateType(src string) string {
-	src = strings.Replace(src, "_", "", -1)
 	if strings.HasPrefix(src, "Edm.") {
 		src = src[4:]
 	}
@@ -17,10 +16,15 @@ func (g *Generator) TranslateType(src string) string {
 	if strings.HasPrefix(src, "Collection(") && strings.HasSuffix(src, ")") {
 		src = "[]" + g.TranslateType(src[11:len(src)-1])
 	}
-	return translit.EncodeToICAO(src)
+	if val, ok := g.TypeMap[src]; ok {
+		return val
+	}
+	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
 }
 
 func (g *Generator) TranslateName(src string) string {
-	src = strings.Replace(src, "_", "", -1)
-	return translit.EncodeToICAO(src)
+	if val, ok := g.NameMap[src]; ok {
+		return val
+	}
+	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
 }

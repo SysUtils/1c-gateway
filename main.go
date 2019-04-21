@@ -1,9 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/client"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_loader"
+	"io/ioutil"
 	"log"
 	"os"
 )
@@ -20,6 +22,11 @@ func main() {
 		log.Fatalln(err)
 	}
 	clientGen := client.NewGenerator(*schema)
+	fields, _ := ioutil.ReadFile("fields.dat")
+	types, _ := ioutil.ReadFile("types.dat")
+	json.Unmarshal(fields, &clientGen.NameMap)
+	json.Unmarshal(types, &clientGen.TypeMap)
+
 	clientGen.Start()
 	print()
 

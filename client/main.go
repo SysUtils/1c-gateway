@@ -7,11 +7,13 @@ import (
 )
 
 type Generator struct {
-	schema shared.Schema
+	TypeMap map[string]string
+	NameMap map[string]string
+	schema  shared.Schema
 }
 
 func NewGenerator(schema shared.Schema) *Generator {
-	return &Generator{schema: schema}
+	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string)}
 }
 
 func (g *Generator) Start() {

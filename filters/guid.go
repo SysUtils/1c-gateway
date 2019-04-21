@@ -2,7 +2,7 @@ package filters
 
 import (
 	"fmt"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/Edm"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/odata"
 )
 
 type GuidOp int
@@ -12,7 +12,7 @@ const (
 	GuidOpNe
 )
 
-func Guid(field string, op GuidOp, value Guid) *Filter {
+func Guid(field string, op GuidOp, value odata.Guid) *Filter {
 	switch op {
 	case GuidOpEq:
 		return &Filter{fmt.Sprintf("%s eq guid'%s'", field, value)}
