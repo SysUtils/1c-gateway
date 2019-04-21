@@ -6,27 +6,27 @@ import (
 	"fmt"
 )
 
-type Binary []byte
+type Stream []byte
 
-func (Binary) ImplementsGraphQLType(name string) bool {
-	return name == "Binary"
+func (Stream) ImplementsGraphQLType(name string) bool {
+	return name == "Stream"
 }
 
-func (t *Binary) UnmarshalGraphQL(input interface{}) error {
+func (t *Stream) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case string:
 		res, _ := b64.StdEncoding.DecodeString(input)
-		*t = Binary(res)
+		*t = Stream(res)
 	default:
 		return fmt.Errorf("wrong type")
 	}
 	return nil
 }
 
-func (t Binary) MarshalJSON() ([]byte, error) {
+func (t Stream) MarshalJSON() ([]byte, error) {
 	return json.Marshal(b64.StdEncoding.EncodeToString(t))
 }
 
-func (t Binary) AsParameter() string {
+func (t Stream) AsParameter() string {
 	return `'` + b64.StdEncoding.EncodeToString(t) + `'`
 }

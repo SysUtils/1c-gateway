@@ -21,8 +21,7 @@ func (Guid) ImplementsGraphQLType(name string) bool {
 func (t *Guid) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case string:
-		tmp := Guid(input)
-		t = &tmp
+		*t = Guid(input)
 		return nil
 	default:
 		return fmt.Errorf("wrong type")
@@ -35,4 +34,8 @@ func (t *Guid) UnmarshalGraphQL(input interface{}) error {
 // query for fields that use the Time type
 func (t Guid) MarshalJSON() ([]byte, error) {
 	return json.Marshal(string(t))
+}
+
+func (t Guid) AsParameter() string {
+	return `guid'` + string(t) + `'`
 }

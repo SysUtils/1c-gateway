@@ -12,7 +12,7 @@ const (
 	GuidOpNe
 )
 
-func Guid(field string, op GuidOp, value Edm.Guid) *Filter {
+func Guid(field string, op GuidOp, value Guid) *Filter {
 	switch op {
 	case GuidOpEq:
 		return &Filter{fmt.Sprintf("%s eq guid'%s'", field, value)}

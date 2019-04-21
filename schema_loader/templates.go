@@ -1,4 +1,4 @@
-package SchemaLoader
+package schema_loader
 
 var templateFields = `
 package Fields{{.CamelName}}

@@ -7,32 +7,32 @@ import (
 	"strings"
 )
 
-type Int int
+type Int16 int16
 
-func (Int) ImplementsGraphQLType(name string) bool {
-	return name == "Int"
+func (Int16) ImplementsGraphQLType(name string) bool {
+	return name == "Int16"
 }
 
-func (t *Int) UnmarshalGraphQL(input interface{}) error {
+func (t *Int16) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case int:
-		*t = Int(input)
+		*t = Int16(input)
 	case string:
 		val, err := strconv.Atoi(strings.Trim(input, `"`))
 		if err != nil {
 			return err
 		}
-		*t = Int(val)
+		*t = Int16(val)
 	default:
 		return fmt.Errorf("wrong type")
 	}
 	return nil
 }
 
-func (t Int) MarshalJSON() ([]byte, error) {
+func (t Int16) MarshalJSON() ([]byte, error) {
 	return json.Marshal(int(t))
 }
 
-func (t Int) AsParameter() string {
+func (t Int16) AsParameter() string {
 	return strconv.Itoa(int(t))
 }

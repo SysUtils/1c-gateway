@@ -41,8 +41,7 @@ type NavProp struct {
 }
 
 type OneCType struct {
-	Name        string `xml:"Name,attr"`
-	CamelName   string
+	Name        string        `xml:"Name,attr"`
 	Keys        []PropertyRef `xml:"Key>PropertyRef"`
 	Properties  []Property    `xml:"Property"`
 	Navigations []NavProp     `xml:"NavigationProperty"`
