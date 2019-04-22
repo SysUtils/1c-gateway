@@ -3,6 +3,7 @@ package odata
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 )
 
 type Guid string
@@ -28,12 +29,17 @@ func (t *Guid) UnmarshalGraphQL(input interface{}) error {
 	}
 }
 
-// MarshalJSON is a custom marshaler for Time
-//
-// This function will be called whenever you
-// query for fields that use the Time type
 func (t Guid) MarshalJSON() ([]byte, error) {
 	return json.Marshal(string(t))
+}
+
+func (t *Guid) UnmarshalJSON(b []byte) error {
+	s := string(b)
+	if strings.HasPrefix(s, "guid'") {
+		s = s[5 : len(s)-1]
+	}
+	*t = Guid(s)
+	return nil
 }
 
 func (t Guid) AsParameter() string {

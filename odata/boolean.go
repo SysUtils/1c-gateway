@@ -25,6 +25,11 @@ func (t Boolean) MarshalJSON() ([]byte, error) {
 	return json.Marshal(bool(t))
 }
 
+func (t *Boolean) UnmarshalJSON(b []byte) error {
+	*t = Boolean(string(b) == "true")
+	return nil
+}
+
 func (t Boolean) AsParameter() string {
 	if t {
 		return "true"

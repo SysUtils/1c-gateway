@@ -3,10 +3,13 @@ package odata
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 	"time"
 )
 
 type DateTime time.Time
+
+const timeformat = "2006-01-02T15:04:05"
 
 func (DateTime) ImplementsGraphQLType(name string) bool {
 	return name == "DateTime"
@@ -18,7 +21,7 @@ func (t *DateTime) UnmarshalGraphQL(input interface{}) error {
 		*t = DateTime(input)
 		return nil
 	case string:
-		val, err := time.Parse(time.RFC3339, input)
+		val, err := time.Parse(timeformat, input)
 		*t = DateTime(val)
 		return err
 	case int:
@@ -35,11 +38,17 @@ func (t *DateTime) UnmarshalGraphQL(input interface{}) error {
 }
 
 func (t DateTime) MarshalJSON() ([]byte, error) {
-	val := time.Time(t).Format(time.RFC3339)
+	val := time.Time(t).Format(timeformat)
 	return json.Marshal(val)
 }
 
+func (t *DateTime) UnmarshalJSON(b []byte) error {
+	val, err := time.Parse(timeformat, strings.Trim(string(b), `"`))
+	*t = DateTime(val)
+	return err
+}
+
 func (t DateTime) AsParameter() string {
-	val := time.Time(t).Format(time.RFC3339)
+	val := time.Time(t).Format(timeformat)
 	return fmt.Sprintf("'%s'", val)
 }

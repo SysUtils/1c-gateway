@@ -37,6 +37,12 @@ func (t Float) MarshalJSON() ([]byte, error) {
 	return json.Marshal(float32(t))
 }
 
+func (t *Float) UnmarshalJSON(b []byte) error {
+	val, err := strconv.ParseFloat(strings.Trim(string(b), `"`), 64)
+	*t = Float(val)
+	return err
+}
+
 func (t Float) AsParameter() string {
 	return strconv.FormatFloat(float64(t), 'f', -1, 64)
 }

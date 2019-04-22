@@ -35,6 +35,13 @@ func (t Int64) MarshalJSON() ([]byte, error) {
 	return json.Marshal(int(t))
 }
 
+func (t *Int64) UnmarshalJSON(b []byte) error {
+	s := string(b)
+	val, err := strconv.ParseInt(strings.Trim(s, `"`), 10, 64)
+	*t = Int64(val)
+	return err
+}
+
 func (t Int64) AsParameter() string {
 	return strconv.FormatInt(int64(t), 10)
 }

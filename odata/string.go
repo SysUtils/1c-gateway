@@ -26,6 +26,13 @@ func (t String) MarshalJSON() ([]byte, error) {
 	return json.Marshal(string(t))
 }
 
+func (t *String) UnmarshalJSON(b []byte) error {
+	s := ""
+	err := json.Unmarshal(b, &s)
+	*t = String(s)
+	return err
+}
+
 func (t String) Escape() string {
 	return strings.Replace(string(t), "'", "''", -1)
 }

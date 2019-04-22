@@ -22,7 +22,7 @@ func (t *Double) UnmarshalGraphQL(input interface{}) error {
 	case int:
 		*t = Double(input)
 	case string:
-		val, err := strconv.Atoi(strings.Trim(input, `"`))
+		val, err := strconv.ParseFloat(strings.Trim(input, `"`), 64)
 		if err != nil {
 			return err
 		}
@@ -34,7 +34,13 @@ func (t *Double) UnmarshalGraphQL(input interface{}) error {
 }
 
 func (t Double) MarshalJSON() ([]byte, error) {
-	return json.Marshal(float32(t))
+	return json.Marshal(float64(t))
+}
+
+func (t *Double) UnmarshalJSON(b []byte) error {
+	val, err := strconv.ParseFloat(strings.Trim(string(b), `"`), 64)
+	*t = Double(val)
+	return err
 }
 
 func (t Double) AsParameter() string {

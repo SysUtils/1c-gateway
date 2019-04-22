@@ -33,6 +33,13 @@ func (t Int) MarshalJSON() ([]byte, error) {
 	return json.Marshal(int(t))
 }
 
+func (t *Int) UnmarshalJSON(b []byte) error {
+	s := string(b)
+	val, err := strconv.Atoi(strings.Trim(s, `"`))
+	*t = Int(val)
+	return err
+}
+
 func (t Int) AsParameter() string {
 	return strconv.Itoa(int(t))
 }

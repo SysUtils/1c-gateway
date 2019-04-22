@@ -3,6 +3,7 @@ package odata
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 	"time"
 )
 
@@ -37,6 +38,13 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 func (t Time) MarshalJSON() ([]byte, error) {
 	val := time.Time(t).Format(time.RFC3339)
 	return json.Marshal(val)
+}
+
+func (t *Time) UnmarshalJSON(b []byte) error {
+	s := strings.Trim(string(b), `"`)
+	val, err := time.Parse(time.RFC3339, s)
+	*t = Time(val)
+	return err
 }
 
 func (t Time) AsParameter() string {
