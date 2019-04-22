@@ -19,7 +19,7 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 		*t = Time(input)
 		return nil
 	case string:
-		val, err := time.Parse(time.RFC3339, input)
+		val, err := time.Parse(timeformat, input)
 		*t = Time(val)
 		return err
 	case int:
@@ -36,18 +36,18 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 }
 
 func (t Time) MarshalJSON() ([]byte, error) {
-	val := time.Time(t).Format(time.RFC3339)
+	val := time.Time(t).Format(timeformat)
 	return json.Marshal(val)
 }
 
 func (t *Time) UnmarshalJSON(b []byte) error {
 	s := strings.Trim(string(b), `"`)
-	val, err := time.Parse(time.RFC3339, s)
+	val, err := time.Parse(timeformat, s)
 	*t = Time(val)
 	return err
 }
 
 func (t Time) AsParameter() string {
-	val := time.Time(t).Format(time.RFC3339)
+	val := time.Time(t).Format(timeformat)
 	return fmt.Sprintf("'%s'", val)
 }

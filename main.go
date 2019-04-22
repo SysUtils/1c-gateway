@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/client"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/odata"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_loader"
 	"io/ioutil"
 	"log"
@@ -29,10 +28,4 @@ func main() {
 	json.Unmarshal(types, &clientGen.TypeMap)
 
 	clientGen.Start()
-	client := odata.NewClient("web", "12345", fmt.Sprintf("http://%s/%s/odata/standard.odata/", os.Args[1], os.Args[2]))
-	res, err := client.AccumulationRegisterVzaimoraschetySKontragentamis(odata.Where{Top: 1})
-	if err != nil {
-		log.Fatalln(err)
-	}
-	fmt.Printf("%+v", res)
 }

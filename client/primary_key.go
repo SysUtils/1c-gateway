@@ -44,7 +44,9 @@ func (g *Generator) GenPrimaryKeySerializeFunc(source shared.OneCType) string {
 	result += fmt.Sprintf(`	return `)
 	for i, key := range source.Keys {
 		if i > 0 {
-			result += ` + "," + `
+			result += fmt.Sprintf(` + ",%s=" + `, key.Name)
+		} else {
+			result += fmt.Sprintf(`"%s=" + `, key.Name)
 		}
 		result += "p." + g.TranslateName(key.Name) + ".AsParameter()"
 	}

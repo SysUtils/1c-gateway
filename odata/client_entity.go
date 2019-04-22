@@ -26,10 +26,11 @@ func (c *Client) getEntities(name string, where Where) (string, error) {
 	return c.get(uri)
 }
 
-func (c *Client) executeEntityMethod(key IPrimaryKey, function IFunction) (string, error) {
+func (c *Client) ExecuteEntityMethod(key IPrimaryKey, function IFunction) (string, error) {
 	uri := "/" + url.PathEscape(key.APIEntityType())
 	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key
-	uri += "?$format=json"
+	uri += "/" + function.Name()
+	uri += "?$format=json&"
 	uri += function.Parameters()
 
 	return c.post(uri, nil)

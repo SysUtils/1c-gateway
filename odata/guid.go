@@ -22,7 +22,7 @@ func (Guid) ImplementsGraphQLType(name string) bool {
 func (t *Guid) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case string:
-		*t = Guid(input)
+		*t = Guid(strings.Trim(input, `"`))
 		return nil
 	default:
 		return fmt.Errorf("wrong type")
@@ -34,7 +34,7 @@ func (t Guid) MarshalJSON() ([]byte, error) {
 }
 
 func (t *Guid) UnmarshalJSON(b []byte) error {
-	s := string(b)
+	s := strings.Trim(string(b), `"`)
 	if strings.HasPrefix(s, "guid'") {
 		s = s[5 : len(s)-1]
 	}

@@ -40,4 +40,15 @@ import "encoding/json"
 		f.WriteString(g.GenComplexType(e) + "\n")
 	}
 	f.Close()
+
+	f, err = os.Create("odata/Functions.go")
+	if err != nil {
+		log.Fatal(err)
+	}
+	f.WriteString(`package odata
+`)
+	for _, e := range g.schema.Functions {
+		f.WriteString(g.GenFunction(e) + "\n")
+	}
+	f.Close()
 }
