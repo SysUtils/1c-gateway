@@ -1,4 +1,4 @@
-package client
+package native
 
 import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
@@ -26,6 +26,16 @@ import "encoding/json"
 `)
 	for _, e := range g.schema.Entities {
 		f.WriteString(g.GenType(e) + "\n")
+	}
+	f.Close()
+
+	f, err = os.Create("odata/Primary.go")
+	if err != nil {
+		log.Fatal(err)
+	}
+	f.WriteString(`package odata
+`)
+	for _, e := range g.schema.Entities {
 		f.WriteString(g.GenPrimaryKey(e) + "\n")
 	}
 	f.Close()

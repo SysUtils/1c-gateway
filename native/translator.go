@@ -1,4 +1,4 @@
-package client
+package native
 
 import (
 	"pkg.re/essentialkaos/translit.v2"

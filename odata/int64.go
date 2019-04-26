@@ -10,12 +10,14 @@ import (
 type Int64 int64
 
 func (Int64) ImplementsGraphQLType(name string) bool {
-	return name == "Int"
+	return name == "Int64"
 }
 
 func (t *Int64) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case int:
+		*t = Int64(input)
+	case int32:
 		*t = Int64(input)
 	case int64:
 		*t = Int64(input)

@@ -104,13 +104,13 @@ func (entity {{ $camelname }}) {{.Name}}({{- range .Parameters -}}
 	return nil
 }
 {{- else -}}
-func (entity {{ $camelname }}) {{.Name}}(client Client, {{- range .Parameters -}}
+func (entity {{ $camelname }}) {{.Name}}(native Client, {{- range .Parameters -}}
 {{ Transliterate .Name}} {{ Transliterate .Type}},
 {{- end -}}) ({{ Transliterate .Type}}, error) {
 	var result {{ Transliterate .Type}}
 	args := {{ BuildArgs .Parameters }}
 	keys := {{ BuildEntityRefkeys $entity.Keys }}
-	raw, err := client.executeEntityMethod("{{$entity.Name}}", keys, "{{.Name}}", args)
+	raw, err := native.executeEntityMethod("{{$entity.Name}}", keys, "{{.Name}}", args)
 	if err != nil {
 		return result, err
 	}

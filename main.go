@@ -3,7 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/client"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/graphql"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/native"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_loader"
 	"io/ioutil"
 	"log"
@@ -11,7 +12,6 @@ import (
 )
 
 func main() {
-	//Startgqlserver()
 	if len(os.Args) != 5 {
 		log.Fatal("usage: 1cclientgenerator host 1СBase username password")
 	}
@@ -21,11 +21,18 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	clientGen := client.NewGenerator(*schema)
+	graphqlGen := graphql.NewGenerator(*schema)
 	fields, _ := ioutil.ReadFile("fields.dat")
 	types, _ := ioutil.ReadFile("types.dat")
+	json.Unmarshal(fields, &graphqlGen.NameMap)
+	json.Unmarshal(types, &graphqlGen.TypeMap)
+
+	graphqlGen.Start()
+
+	clientGen := native.NewGenerator(*schema)
 	json.Unmarshal(fields, &clientGen.NameMap)
 	json.Unmarshal(types, &clientGen.TypeMap)
 
 	clientGen.Start()
+	StartServer()
 }
