@@ -1,0 +1,2942 @@
+package odata
+
+type AccumulationRegisterPartiiTovarovVProizvodstveArgs struct {
+	Key PrimaryAccumulationRegisterPartiiTovarovVProizvodstve
+}
+type AccumulationRegisterPartiiTovarovVProizvodstvesArgs struct {
+}
+type AccumulationRegisterPartiiTovarovVProizvodstveRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterPartiiTovarovVProizvodstveRecordType
+}
+type AccumulationRegisterPartiiTovarovVProizvodstveRecordTypesArgs struct {
+}
+type AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiArgs struct {
+	Key PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami
+}
+type AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamisArgs struct {
+}
+type AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType
+}
+type AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordTypesArgs struct {
+}
+type AccumulationRegisterVnutrennieZakazyArgs struct {
+	Key PrimaryAccumulationRegisterVnutrennieZakazy
+}
+type AccumulationRegisterVnutrennieZakazysArgs struct {
+}
+type AccumulationRegisterVnutrennieZakazyRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterVnutrennieZakazyRecordType
+}
+type AccumulationRegisterVnutrennieZakazyRecordTypesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKomitentaArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKomitenta
+}
+type AccumulationRegisterDenezhnyeSredstvaKomitentasArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKomitentaRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType
+}
+type AccumulationRegisterDenezhnyeSredstvaKomitentaRecordTypesArgs struct {
+}
+type AccumulationRegisterZakazyKlientovArgs struct {
+	Key PrimaryAccumulationRegisterZakazyKlientov
+}
+type AccumulationRegisterZakazyKlientovsArgs struct {
+}
+type AccumulationRegisterZakazyKlientovRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterZakazyKlientovRecordType
+}
+type AccumulationRegisterZakazyKlientovRecordTypesArgs struct {
+}
+type AccumulationRegisterSummyPoFinmonitoringuRoznitsaArgs struct {
+	Key PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsa
+}
+type AccumulationRegisterSummyPoFinmonitoringuRoznitsasArgs struct {
+}
+type AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType
+}
+type AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordTypesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKPolucheniiuArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiu
+}
+type AccumulationRegisterDenezhnyeSredstvaKPolucheniiusArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType
+}
+type AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordTypesArgs struct {
+}
+type AccumulationRegisterProdazhiPoDiskontnymKartamArgs struct {
+	Key PrimaryAccumulationRegisterProdazhiPoDiskontnymKartam
+}
+type AccumulationRegisterProdazhiPoDiskontnymKartamsArgs struct {
+}
+type AccumulationRegisterProdazhiPoDiskontnymKartamRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterProdazhiPoDiskontnymKartamRecordType
+}
+type AccumulationRegisterProdazhiPoDiskontnymKartamRecordTypesArgs struct {
+}
+type AccumulationRegisterTovaryPoluchennyeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryPoluchennye
+}
+type AccumulationRegisterTovaryPoluchennyesArgs struct {
+}
+type AccumulationRegisterTovaryPoluchennyeRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryPoluchennyeRecordType
+}
+type AccumulationRegisterTovaryPoluchennyeRecordTypesArgs struct {
+}
+type AccumulationRegisterSvobodnyeOstatkiArgs struct {
+	Key PrimaryAccumulationRegisterSvobodnyeOstatki
+}
+type AccumulationRegisterSvobodnyeOstatkisArgs struct {
+}
+type AccumulationRegisterSvobodnyeOstatkiRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSvobodnyeOstatkiRecordType
+}
+type AccumulationRegisterSvobodnyeOstatkiRecordTypesArgs struct {
+}
+type AccumulationRegisterSummyVRassrochkuArgs struct {
+	Key PrimaryAccumulationRegisterSummyVRassrochku
+}
+type AccumulationRegisterSummyVRassrochkusArgs struct {
+}
+type AccumulationRegisterSummyVRassrochkuRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSummyVRassrochkuRecordType
+}
+type AccumulationRegisterSummyVRassrochkuRecordTypesArgs struct {
+}
+type AccumulationRegisterGrafikPlatezheiArgs struct {
+	Key PrimaryAccumulationRegisterGrafikPlatezhei
+}
+type AccumulationRegisterGrafikPlatezheisArgs struct {
+}
+type AccumulationRegisterGrafikPlatezheiRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterGrafikPlatezheiRecordType
+}
+type AccumulationRegisterGrafikPlatezheiRecordTypesArgs struct {
+}
+type AccumulationRegisterRoznichnaiaVyruchkaArgs struct {
+	Key PrimaryAccumulationRegisterRoznichnaiaVyruchka
+}
+type AccumulationRegisterRoznichnaiaVyruchkasArgs struct {
+}
+type AccumulationRegisterRoznichnaiaVyruchkaRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterRoznichnaiaVyruchkaRecordType
+}
+type AccumulationRegisterRoznichnaiaVyruchkaRecordTypesArgs struct {
+}
+type AccumulationRegisterTovaryVPutiArgs struct {
+	Key PrimaryAccumulationRegisterTovaryVPuti
+}
+type AccumulationRegisterTovaryVPutisArgs struct {
+}
+type AccumulationRegisterTovaryVPutiRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryVPutiRecordType
+}
+type AccumulationRegisterTovaryVPutiRecordTypesArgs struct {
+}
+type AccumulationRegisterPoteriMetallaVProizvodstveArgs struct {
+	Key PrimaryAccumulationRegisterPoteriMetallaVProizvodstve
+}
+type AccumulationRegisterPoteriMetallaVProizvodstvesArgs struct {
+}
+type AccumulationRegisterPoteriMetallaVProizvodstveRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterPoteriMetallaVProizvodstveRecordType
+}
+type AccumulationRegisterPoteriMetallaVProizvodstveRecordTypesArgs struct {
+}
+type AccumulationRegisterPartiiTovarovNaSkladakhArgs struct {
+	Key PrimaryAccumulationRegisterPartiiTovarovNaSkladakh
+}
+type AccumulationRegisterPartiiTovarovNaSkladakhsArgs struct {
+}
+type ProductActionDocumentArgs struct {
+	Key PrimaryProductActionDocument
+}
+type ProductActionDocumentsArgs struct {
+}
+type AccumulationRegisterSummyDokumentovDliaObmenaArgs struct {
+	Key PrimaryAccumulationRegisterSummyDokumentovDliaObmena
+}
+type AccumulationRegisterSummyDokumentovDliaObmenasArgs struct {
+}
+type AccumulationRegisterSummyDokumentovDliaObmenaRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSummyDokumentovDliaObmenaRecordType
+}
+type AccumulationRegisterSummyDokumentovDliaObmenaRecordTypesArgs struct {
+}
+type AccumulationRegisterDvizheniiaDenezhnykhSredstvArgs struct {
+	Key PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstv
+}
+type AccumulationRegisterDvizheniiaDenezhnykhSredstvsArgs struct {
+}
+type AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType
+}
+type AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordTypesArgs struct {
+}
+type AccumulationRegisterProdazhiPoStatiamArgs struct {
+	Key PrimaryAccumulationRegisterProdazhiPoStatiam
+}
+type AccumulationRegisterProdazhiPoStatiamsArgs struct {
+}
+type AccumulationRegisterProdazhiPoStatiamRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterProdazhiPoStatiamRecordType
+}
+type AccumulationRegisterProdazhiPoStatiamRecordTypesArgs struct {
+}
+type InformationRegisterTsenyNomenklaturyArgs struct {
+	Key PrimaryInformationRegisterTsenyNomenklatury
+}
+type InformationRegisterTsenyNomenklaturysArgs struct {
+}
+type InformationRegisterTsenyNomenklaturyRecordTypeArgs struct {
+	Key PrimaryInformationRegisterTsenyNomenklaturyRecordType
+}
+type InformationRegisterTsenyNomenklaturyRecordTypesArgs struct {
+}
+type AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseArgs struct {
+	Key PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse
+}
+type AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitsesArgs struct {
+}
+type AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType
+}
+type AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordTypesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaVRezerveArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerve
+}
+type AccumulationRegisterDenezhnyeSredstvaVRezervesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaVRezerveRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType
+}
+type AccumulationRegisterDenezhnyeSredstvaVRezerveRecordTypesArgs struct {
+}
+type AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhArgs struct {
+	Key PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh
+}
+type AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhsArgs struct {
+}
+type AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType
+}
+type AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordTypesArgs struct {
+}
+type AccumulationRegisterDavalcheskiiMetallPoteriArgs struct {
+	Key PrimaryAccumulationRegisterDavalcheskiiMetallPoteri
+}
+type AccumulationRegisterDavalcheskiiMetallPoterisArgs struct {
+}
+type AccumulationRegisterDavalcheskiiMetallPoteriRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDavalcheskiiMetallPoteriRecordType
+}
+type AccumulationRegisterDavalcheskiiMetallPoteriRecordTypesArgs struct {
+}
+type InformationRegisterTsenyPoPreiskurantuArgs struct {
+	Key PrimaryInformationRegisterTsenyPoPreiskurantu
+}
+type InformationRegisterTsenyPoPreiskurantusArgs struct {
+}
+type InformationRegisterTsenyPoPreiskurantuRecordTypeArgs struct {
+	Key PrimaryInformationRegisterTsenyPoPreiskurantuRecordType
+}
+type InformationRegisterTsenyPoPreiskurantuRecordTypesArgs struct {
+}
+type AccumulationRegisterTovaryVOtboreArgs struct {
+	Key PrimaryAccumulationRegisterTovaryVOtbore
+}
+type AccumulationRegisterTovaryVOtboresArgs struct {
+}
+type AccumulationRegisterTovaryVOtboreRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryVOtboreRecordType
+}
+type AccumulationRegisterTovaryVOtboreRecordTypesArgs struct {
+}
+type AccumulationRegisterRealizovannyeTovaryArgs struct {
+	Key PrimaryAccumulationRegisterRealizovannyeTovary
+}
+type AccumulationRegisterRealizovannyeTovarysArgs struct {
+}
+type AccumulationRegisterRealizovannyeTovaryRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterRealizovannyeTovaryRecordType
+}
+type AccumulationRegisterRealizovannyeTovaryRecordTypesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKomissioneraArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKomissionera
+}
+type AccumulationRegisterDenezhnyeSredstvaKomissionerasArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType
+}
+type AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordTypesArgs struct {
+}
+type AccumulationRegisterProdazhi1Args struct {
+	Key PrimaryAccumulationRegisterProdazhi1
+}
+type AccumulationRegisterProdazhi1sArgs struct {
+}
+type AccumulationRegisterProdazhi1RecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterProdazhi1RecordType
+}
+type AccumulationRegisterProdazhi1RecordTypesArgs struct {
+}
+type AccumulationRegisterTovaryNaSkladakhAMArgs struct {
+	Key PrimaryAccumulationRegisterTovaryNaSkladakhAM
+}
+type AccumulationRegisterTovaryNaSkladakhAMsArgs struct {
+}
+type AccumulationRegisterTovaryNaSkladakhAMRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryNaSkladakhAMRecordType
+}
+type AccumulationRegisterTovaryNaSkladakhAMRecordTypesArgs struct {
+}
+type AccumulationRegisterSummyPoFinmonitoringuArgs struct {
+	Key PrimaryAccumulationRegisterSummyPoFinmonitoringu
+}
+type AccumulationRegisterSummyPoFinmonitoringusArgs struct {
+}
+type AccumulationRegisterSummyPoFinmonitoringuRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSummyPoFinmonitoringuRecordType
+}
+type AccumulationRegisterSummyPoFinmonitoringuRecordTypesArgs struct {
+}
+type InformationRegisterTsenyNomenklaturyKontragentovArgs struct {
+	Key PrimaryInformationRegisterTsenyNomenklaturyKontragentov
+}
+type InformationRegisterTsenyNomenklaturyKontragentovsArgs struct {
+}
+type InformationRegisterTsenyNomenklaturyKontragentovRecordTypeArgs struct {
+	Key PrimaryInformationRegisterTsenyNomenklaturyKontragentovRecordType
+}
+type InformationRegisterTsenyNomenklaturyKontragentovRecordTypesArgs struct {
+}
+type AccumulationRegisterVzaimoraschetySKontragentamiArgs struct {
+	Key PrimaryAccumulationRegisterVzaimoraschetySKontragentami
+}
+type AccumulationRegisterVzaimoraschetySKontragentamisArgs struct {
+}
+type AccumulationRegisterVzaimoraschetySKontragentamiRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterVzaimoraschetySKontragentamiRecordType
+}
+type AccumulationRegisterVzaimoraschetySKontragentamiRecordTypesArgs struct {
+}
+type AccumulationRegisterSummyPokupokPoDiskontnymKartamArgs struct {
+	Key PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartam
+}
+type AccumulationRegisterSummyPokupokPoDiskontnymKartamsArgs struct {
+}
+type AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType
+}
+type AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordTypesArgs struct {
+}
+type AccumulationRegisterVypolneniePlanaProdazhArgs struct {
+	Key PrimaryAccumulationRegisterVypolneniePlanaProdazh
+}
+type AccumulationRegisterVypolneniePlanaProdazhsArgs struct {
+}
+type AccumulationRegisterVypolneniePlanaProdazhRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterVypolneniePlanaProdazhRecordType
+}
+type AccumulationRegisterVypolneniePlanaProdazhRecordTypesArgs struct {
+}
+type AccumulationRegisterDavalcheskiiMetallArgs struct {
+	Key PrimaryAccumulationRegisterDavalcheskiiMetall
+}
+type AccumulationRegisterDavalcheskiiMetallsArgs struct {
+}
+type AccumulationRegisterDavalcheskiiMetallRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDavalcheskiiMetallRecordType
+}
+type AccumulationRegisterDavalcheskiiMetallRecordTypesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstva
+}
+type AccumulationRegisterDenezhnyeSredstvasArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaRecordType
+}
+type AccumulationRegisterDenezhnyeSredstvaRecordTypesArgs struct {
+}
+type AccumulationRegisterTovaryPeredannyeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryPeredannye
+}
+type AccumulationRegisterTovaryPeredannyesArgs struct {
+}
+type AccumulationRegisterTovaryPeredannyeRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterTovaryPeredannyeRecordType
+}
+type AccumulationRegisterTovaryPeredannyeRecordTypesArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKSpisaniiuArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiu
+}
+type AccumulationRegisterDenezhnyeSredstvaKSpisaniiusArgs struct {
+}
+type AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordTypeArgs struct {
+	Key PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType
+}
+type AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordTypesArgs struct {
+}
+type CatalogDogovoryKontragentovArgs struct {
+	Key PrimaryCatalogDogovoryKontragentov
+}
+type CatalogDogovoryKontragentovsArgs struct {
+}
+type OrderArgs struct {
+	Key PrimaryOrder
+}
+type OrdersArgs struct {
+}
+type DocumentChekKKMOplataArgs struct {
+	Key PrimaryDocumentChekKKMOplata
+}
+type DocumentChekKKMOplatasArgs struct {
+}
+type DocumentChekKKMOplataSertifikatamiArgs struct {
+	Key PrimaryDocumentChekKKMOplataSertifikatami
+}
+type DocumentChekKKMOplataSertifikatamisArgs struct {
+}
+type DocumentChekKKMProdazhaSertifikatovArgs struct {
+	Key PrimaryDocumentChekKKMProdazhaSertifikatov
+}
+type DocumentChekKKMProdazhaSertifikatovsArgs struct {
+}
+type DocumentChekKKMTovaryArgs struct {
+	Key PrimaryDocumentChekKKMTovary
+}
+type DocumentChekKKMTovarysArgs struct {
+}
+type DocumentChekKKMDokumentyObmenaArgs struct {
+	Key PrimaryDocumentChekKKMDokumentyObmena
+}
+type DocumentChekKKMDokumentyObmenasArgs struct {
+}
+type DocumentChekKKMDogovoraRassrochkiProdazhaArgs struct {
+	Key PrimaryDocumentChekKKMDogovoraRassrochkiProdazha
+}
+type DocumentChekKKMDogovoraRassrochkiProdazhasArgs struct {
+}
+type DocumentChekKKMDogovoraRassrochkiOplataArgs struct {
+	Key PrimaryDocumentChekKKMDogovoraRassrochkiOplata
+}
+type DocumentChekKKMDogovoraRassrochkiOplatasArgs struct {
+}
+type DocumentChekKKMOplataBallamiArgs struct {
+	Key PrimaryDocumentChekKKMOplataBallami
+}
+type DocumentChekKKMOplataBallamisArgs struct {
+}
+type DocumentChekKKMSkidkiNatsenkiArgs struct {
+	Key PrimaryDocumentChekKKMSkidkiNatsenki
+}
+type DocumentChekKKMSkidkiNatsenkisArgs struct {
+}
+type DocumentChekKKMUpravliaemyeSkidkiArgs struct {
+	Key PrimaryDocumentChekKKMUpravliaemyeSkidki
+}
+type DocumentChekKKMUpravliaemyeSkidkisArgs struct {
+}
+type DocumentChekKKMPodarkiArgs struct {
+	Key PrimaryDocumentChekKKMPodarki
+}
+type DocumentChekKKMPodarkisArgs struct {
+}
+type DocumentChekKKMKuponyArgs struct {
+	Key PrimaryDocumentChekKKMKupony
+}
+type DocumentChekKKMKuponysArgs struct {
+}
+type DocumentPereotsenkaValiutnykhSredstvArgs struct {
+	Key PrimaryDocumentPereotsenkaValiutnykhSredstv
+}
+type DocumentPereotsenkaValiutnykhSredstvsArgs struct {
+}
+type CatalogTipySkidokNatsenokArgs struct {
+	Key PrimaryCatalogTipySkidokNatsenok
+}
+type CatalogTipySkidokNatsenoksArgs struct {
+}
+type CatalogTipySkidokNatsenokVremiaPoDniamNedeliArgs struct {
+	Key PrimaryCatalogTipySkidokNatsenokVremiaPoDniamNedeli
+}
+type CatalogTipySkidokNatsenokVremiaPoDniamNedelisArgs struct {
+}
+type CatalogVidyKodirovokiTsepeiArgs struct {
+	Key PrimaryCatalogVidyKodirovokiTsepei
+}
+type CatalogVidyKodirovokiTsepeisArgs struct {
+}
+type CatalogVidyKodirovokiTsepeiElementyKodirovkiArgs struct {
+	Key PrimaryCatalogVidyKodirovokiTsepeiElementyKodirovki
+}
+type CatalogVidyKodirovokiTsepeiElementyKodirovkisArgs struct {
+}
+type CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistvArgs struct {
+	Key PrimaryCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv
+}
+type CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistvsArgs struct {
+}
+type DocumentOtchetKomitentuOProdazhakhArgs struct {
+	Key PrimaryDocumentOtchetKomitentuOProdazhakh
+}
+type DocumentOtchetKomitentuOProdazhakhsArgs struct {
+}
+type DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstvaArgs struct {
+	Key PrimaryDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva
+}
+type DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstvasArgs struct {
+}
+type DocumentOtchetKomitentuOProdazhakhTovaryArgs struct {
+	Key PrimaryDocumentOtchetKomitentuOProdazhakhTovary
+}
+type DocumentOtchetKomitentuOProdazhakhTovarysArgs struct {
+}
+type CatalogKassyArgs struct {
+	Key PrimaryCatalogKassy
+}
+type CatalogKassysArgs struct {
+}
+type CatalogKassiryArgs struct {
+	Key PrimaryCatalogKassiry
+}
+type CatalogKassirysArgs struct {
+}
+type DocumentZaiavkaNaPereotsenkuTovarovArgs struct {
+	Key PrimaryDocumentZaiavkaNaPereotsenkuTovarov
+}
+type DocumentZaiavkaNaPereotsenkuTovarovsArgs struct {
+}
+type DocumentZaiavkaNaPereotsenkuTovarovTovaryArgs struct {
+	Key PrimaryDocumentZaiavkaNaPereotsenkuTovarovTovary
+}
+type DocumentZaiavkaNaPereotsenkuTovarovTovarysArgs struct {
+}
+type CatalogProizvodstvennyeUchastkiArgs struct {
+	Key PrimaryCatalogProizvodstvennyeUchastki
+}
+type CatalogProizvodstvennyeUchastkisArgs struct {
+}
+type DocumentZakrytieZakazovKlientovArgs struct {
+	Key PrimaryDocumentZakrytieZakazovKlientov
+}
+type DocumentZakrytieZakazovKlientovsArgs struct {
+}
+type DocumentZakrytieZakazovKlientovZakazyArgs struct {
+	Key PrimaryDocumentZakrytieZakazovKlientovZakazy
+}
+type DocumentZakrytieZakazovKlientovZakazysArgs struct {
+}
+type CatalogProektyArgs struct {
+	Key PrimaryCatalogProekty
+}
+type CatalogProektysArgs struct {
+}
+type DocumentPlatezhnoePoruchenieVkhodiashcheeArgs struct {
+	Key PrimaryDocumentPlatezhnoePoruchenieVkhodiashchee
+}
+type DocumentPlatezhnoePoruchenieVkhodiashcheesArgs struct {
+}
+type DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha
+}
+type DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta
+}
+type DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragentasArgs struct {
+}
+type DocumentVydachaZakazaArgs struct {
+	Key PrimaryDocumentVydachaZakaza
+}
+type DocumentVydachaZakazasArgs struct {
+}
+type CatalogFormyOgrankiArgs struct {
+	Key PrimaryCatalogFormyOgranki
+}
+type CatalogFormyOgrankisArgs struct {
+}
+type CatalogFormatyMagazinovArgs struct {
+	Key PrimaryCatalogFormatyMagazinov
+}
+type CatalogFormatyMagazinovsArgs struct {
+}
+type CatalogRabochieMestaArgs struct {
+	Key PrimaryCatalogRabochieMesta
+}
+type CatalogRabochieMestasArgs struct {
+}
+type CatalogNastroikiVypolneniiaObmenaArgs struct {
+	Key PrimaryCatalogNastroikiVypolneniiaObmena
+}
+type CatalogNastroikiVypolneniiaObmenasArgs struct {
+}
+type CatalogNastroikiVypolneniiaObmenaNastroikiObmenaArgs struct {
+	Key PrimaryCatalogNastroikiVypolneniiaObmenaNastroikiObmena
+}
+type CatalogNastroikiVypolneniiaObmenaNastroikiObmenasArgs struct {
+}
+type CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkamiArgs struct {
+	Key PrimaryCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami
+}
+type CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkamisArgs struct {
+}
+type CatalogZnacheniiaSvoistvObieektovArgs struct {
+	Key PrimaryCatalogZnacheniiaSvoistvObieektov
+}
+type CatalogZnacheniiaSvoistvObieektovsArgs struct {
+}
+type DocumentRealizatsiiaTovarovUslugArgs struct {
+	Key PrimaryDocumentRealizatsiiaTovarovUslug
+}
+type DocumentRealizatsiiaTovarovUslugsArgs struct {
+}
+type DocumentRealizatsiiaTovarovUslugTovaryArgs struct {
+	Key PrimaryDocumentRealizatsiiaTovarovUslugTovary
+}
+type DocumentRealizatsiiaTovarovUslugTovarysArgs struct {
+}
+type DocumentRealizatsiiaTovarovUslugUslugiArgs struct {
+	Key PrimaryDocumentRealizatsiiaTovarovUslugUslugi
+}
+type DocumentRealizatsiiaTovarovUslugUslugisArgs struct {
+}
+type DocumentSobytieArgs struct {
+	Key PrimaryDocumentSobytie
+}
+type DocumentSobytiesArgs struct {
+}
+type DocumentSobytieStoronnieLitsaArgs struct {
+	Key PrimaryDocumentSobytieStoronnieLitsa
+}
+type DocumentSobytieStoronnieLitsasArgs struct {
+}
+type CatalogVariantyOtvetovOprosovArgs struct {
+	Key PrimaryCatalogVariantyOtvetovOprosov
+}
+type CatalogVariantyOtvetovOprosovsArgs struct {
+}
+type CatalogGruppyPisemElektronnoiPochtyArgs struct {
+	Key PrimaryCatalogGruppyPisemElektronnoiPochty
+}
+type CatalogGruppyPisemElektronnoiPochtysArgs struct {
+}
+type CatalogGruppyPochtovoiRassylkiArgs struct {
+	Key PrimaryCatalogGruppyPochtovoiRassylki
+}
+type CatalogGruppyPochtovoiRassylkisArgs struct {
+}
+type CatalogNastroikiOtchetovArgs struct {
+	Key PrimaryCatalogNastroikiOtchetov
+}
+type CatalogNastroikiOtchetovsArgs struct {
+}
+type CatalogNastroikiOtchetovGruppyNastroekIPolzovateliArgs struct {
+	Key PrimaryCatalogNastroikiOtchetovGruppyNastroekIPolzovateli
+}
+type CatalogNastroikiOtchetovGruppyNastroekIPolzovatelisArgs struct {
+}
+type CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamArgs struct {
+	Key PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam
+}
+type CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamsArgs struct {
+}
+type CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidkiArgs struct {
+	Key PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki
+}
+type CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidkisArgs struct {
+}
+type DepartmentArgs struct {
+	Key PrimaryDepartment
+}
+type DepartmentsArgs struct {
+}
+type CatalogKodyVidovTovarovArgs struct {
+	Key PrimaryCatalogKodyVidovTovarov
+}
+type CatalogKodyVidovTovarovsArgs struct {
+}
+type CatalogRassevyArgs struct {
+	Key PrimaryCatalogRassevy
+}
+type CatalogRassevysArgs struct {
+}
+type CatalogPrichinyZakrytiiaZakazovArgs struct {
+	Key PrimaryCatalogPrichinyZakrytiiaZakazov
+}
+type CatalogPrichinyZakrytiiaZakazovsArgs struct {
+}
+type CatalogSegmentyNomenklaturyArgs struct {
+	Key PrimaryCatalogSegmentyNomenklatury
+}
+type CatalogSegmentyNomenklaturysArgs struct {
+}
+type CatalogSostavStrokiChekaArgs struct {
+	Key PrimaryCatalogSostavStrokiCheka
+}
+type CatalogSostavStrokiChekasArgs struct {
+}
+type CatalogUsloviiaPriemaIzdeliiNaKomissiiuArgs struct {
+	Key PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiu
+}
+type CatalogUsloviiaPriemaIzdeliiNaKomissiiusArgs struct {
+}
+type CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenokArgs struct {
+	Key PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok
+}
+type CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenoksArgs struct {
+}
+type CatalogIstochnikiInformatsiiPriObrashcheniiPokupateleiArgs struct {
+	Key PrimaryCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei
+}
+type CatalogIstochnikiInformatsiiPriObrashcheniiPokupateleisArgs struct {
+}
+type DocumentKorrektirovkaDolgaArgs struct {
+	Key PrimaryDocumentKorrektirovkaDolga
+}
+type DocumentKorrektirovkaDolgasArgs struct {
+}
+type DocumentKorrektirovkaDolgaSummyDolgaArgs struct {
+	Key PrimaryDocumentKorrektirovkaDolgaSummyDolga
+}
+type DocumentKorrektirovkaDolgaSummyDolgasArgs struct {
+}
+type PayTypeArgs struct {
+	Key PrimaryPayType
+}
+type PayTypesArgs struct {
+}
+type CatalogKhranilishcheShablonovArgs struct {
+	Key PrimaryCatalogKhranilishcheShablonov
+}
+type CatalogKhranilishcheShablonovsArgs struct {
+}
+type DocumentZaiavkaNaRaskhodovanieSredstvArgs struct {
+	Key PrimaryDocumentZaiavkaNaRaskhodovanieSredstv
+}
+type DocumentZaiavkaNaRaskhodovanieSredstvsArgs struct {
+}
+type DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha
+}
+type DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavkiArgs struct {
+	Key PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki
+}
+type DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavkisArgs struct {
+}
+type DocumentZakrytieZakazovPostavshchikamArgs struct {
+	Key PrimaryDocumentZakrytieZakazovPostavshchikam
+}
+type DocumentZakrytieZakazovPostavshchikamsArgs struct {
+}
+type DocumentZakrytieZakazovPostavshchikamZakazyArgs struct {
+	Key PrimaryDocumentZakrytieZakazovPostavshchikamZakazy
+}
+type DocumentZakrytieZakazovPostavshchikamZakazysArgs struct {
+}
+type CatalogVidyKamneiArgs struct {
+	Key PrimaryCatalogVidyKamnei
+}
+type CatalogVidyKamneisArgs struct {
+}
+type DocumentAnketyKlientovDliaFinMonitoringaArgs struct {
+	Key PrimaryDocumentAnketyKlientovDliaFinMonitoringa
+}
+type DocumentAnketyKlientovDliaFinMonitoringasArgs struct {
+}
+type DocumentAnketyKlientovDliaFinMonitoringaAnketyArgs struct {
+	Key PrimaryDocumentAnketyKlientovDliaFinMonitoringaAnkety
+}
+type DocumentAnketyKlientovDliaFinMonitoringaAnketysArgs struct {
+}
+type CatalogDogovoryRassrochkiArgs struct {
+	Key PrimaryCatalogDogovoryRassrochki
+}
+type CatalogDogovoryRassrochkisArgs struct {
+}
+type CatalogSertifikatyArgs struct {
+	Key PrimaryCatalogSertifikaty
+}
+type CatalogSertifikatysArgs struct {
+}
+type DocumentPostuplenieDavalcheskogoMetallaArgs struct {
+	Key PrimaryDocumentPostuplenieDavalcheskogoMetalla
+}
+type DocumentPostuplenieDavalcheskogoMetallasArgs struct {
+}
+type DocumentInkassovoePorucheniePeredannoeArgs struct {
+	Key PrimaryDocumentInkassovoePorucheniePeredannoe
+}
+type DocumentInkassovoePorucheniePeredannoesArgs struct {
+}
+type DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha
+}
+type DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentInkassovoePorucheniePeredannoeRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta
+}
+type DocumentInkassovoePorucheniePeredannoeRekvizityKontragentasArgs struct {
+}
+type CatalogFormulyDliaRaschetaArgs struct {
+	Key PrimaryCatalogFormulyDliaRascheta
+}
+type CatalogFormulyDliaRaschetasArgs struct {
+}
+type CatalogKuponyArgs struct {
+	Key PrimaryCatalogKupony
+}
+type CatalogKuponysArgs struct {
+}
+type CorrectingArgs struct {
+	Key PrimaryCorrecting
+}
+type CorrectingsArgs struct {
+}
+type DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniiaArgs struct {
+	Key PrimaryDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia
+}
+type DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniiasArgs struct {
+}
+type DocumentInternetZakazArgs struct {
+	Key PrimaryDocumentInternetZakaz
+}
+type DocumentInternetZakazsArgs struct {
+}
+type DocumentInternetZakazTovaryInternetZakazaArgs struct {
+	Key PrimaryDocumentInternetZakazTovaryInternetZakaza
+}
+type DocumentInternetZakazTovaryInternetZakazasArgs struct {
+}
+type DocumentInternetZakazTovaryArgs struct {
+	Key PrimaryDocumentInternetZakazTovary
+}
+type DocumentInternetZakazTovarysArgs struct {
+}
+type CatalogRegionyArgs struct {
+	Key PrimaryCatalogRegiony
+}
+type CatalogRegionysArgs struct {
+}
+type SaleJournalArgs struct {
+	Key PrimarySaleJournal
+}
+type SaleJournalsArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhBonusyArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhBonusy
+}
+type DocumentOtchetORoznichnykhProdazhakhBonusysArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditamiArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditamisArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartamiArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartamisArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataSertifikatamiArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataSertifikatamisArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatovArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov
+}
+type DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatovsArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhTovaryArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhTovary
+}
+type DocumentOtchetORoznichnykhProdazhakhTovarysArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazhaArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha
+}
+type DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazhasArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhDokumentyObmenaArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhDokumentyObmena
+}
+type DocumentOtchetORoznichnykhProdazhakhDokumentyObmenasArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplataArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata
+}
+type DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplatasArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataBallamiArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBallami
+}
+type DocumentOtchetORoznichnykhProdazhakhOplataBallamisArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenkiArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki
+}
+type DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenkisArgs struct {
+}
+type DocumentOtchetORoznichnykhProdazhakhKuponyArgs struct {
+	Key PrimaryDocumentOtchetORoznichnykhProdazhakhKupony
+}
+type DocumentOtchetORoznichnykhProdazhakhKuponysArgs struct {
+}
+type DocumentOtmenaSkidokNomenklaturyArgs struct {
+	Key PrimaryDocumentOtmenaSkidokNomenklatury
+}
+type DocumentOtmenaSkidokNomenklaturysArgs struct {
+}
+type DocumentOtmenaSkidokNomenklaturyDokumentyArgs struct {
+	Key PrimaryDocumentOtmenaSkidokNomenklaturyDokumenty
+}
+type DocumentOtmenaSkidokNomenklaturyDokumentysArgs struct {
+}
+type CatalogTovarnyeGruppyArgs struct {
+	Key PrimaryCatalogTovarnyeGruppy
+}
+type CatalogTovarnyeGruppysArgs struct {
+}
+type DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvArgs struct {
+	Key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv
+}
+type DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvsArgs struct {
+}
+type DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha
+}
+type DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta
+}
+type DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragentasArgs struct {
+}
+type CatalogOrderKeyArgs struct {
+	Key PrimaryCatalogOrderKey
+}
+type CatalogOrderKeysArgs struct {
+}
+type DocumentKassovyiChekKorrektsiiArgs struct {
+	Key PrimaryDocumentKassovyiChekKorrektsii
+}
+type DocumentKassovyiChekKorrektsiisArgs struct {
+}
+type DocumentKassovyiChekKorrektsiiOplataArgs struct {
+	Key PrimaryDocumentKassovyiChekKorrektsiiOplata
+}
+type DocumentKassovyiChekKorrektsiiOplatasArgs struct {
+}
+type DocumentSchetNaOplatuPokupateliuArgs struct {
+	Key PrimaryDocumentSchetNaOplatuPokupateliu
+}
+type DocumentSchetNaOplatuPokupateliusArgs struct {
+}
+type DocumentSchetNaOplatuPokupateliuTovaryArgs struct {
+	Key PrimaryDocumentSchetNaOplatuPokupateliuTovary
+}
+type DocumentSchetNaOplatuPokupateliuTovarysArgs struct {
+}
+type DocumentSchetNaOplatuPokupateliuUslugiArgs struct {
+	Key PrimaryDocumentSchetNaOplatuPokupateliuUslugi
+}
+type DocumentSchetNaOplatuPokupateliuUslugisArgs struct {
+}
+type CatalogNastroikiObmenaDannymiArgs struct {
+	Key PrimaryCatalogNastroikiObmenaDannymi
+}
+type CatalogNastroikiObmenaDannymisArgs struct {
+}
+type CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektovArgs struct {
+	Key PrimaryCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov
+}
+type CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektovsArgs struct {
+}
+type CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykhArgs struct {
+	Key PrimaryCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh
+}
+type CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykhsArgs struct {
+}
+type CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkamiArgs struct {
+	Key PrimaryCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami
+}
+type CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkamisArgs struct {
+}
+type DocumentJournalBankovskieRaschetnyeDokumentyArgs struct {
+	Key PrimaryDocumentJournalBankovskieRaschetnyeDokumenty
+}
+type DocumentJournalBankovskieRaschetnyeDokumentysArgs struct {
+}
+type DocumentZamenaDiskontnoiKartyArgs struct {
+	Key PrimaryDocumentZamenaDiskontnoiKarty
+}
+type DocumentZamenaDiskontnoiKartysArgs struct {
+}
+type ReturnToSupplierArgs struct {
+	Key PrimaryReturnToSupplier
+}
+type ReturnToSuppliersArgs struct {
+}
+type DocumentVozvratTovarovPostavshchikuTovaryArgs struct {
+	Key PrimaryDocumentVozvratTovarovPostavshchikuTovary
+}
+type DocumentVozvratTovarovPostavshchikuTovarysArgs struct {
+}
+type DocumentInventarizatsiiaTovarovNaSkladeArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovNaSklade
+}
+type DocumentInventarizatsiiaTovarovNaSkladesArgs struct {
+}
+type DocumentInventarizatsiiaTovarovNaSkladeTovaryArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovary
+}
+type DocumentInventarizatsiiaTovarovNaSkladeTovarysArgs struct {
+}
+type DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiiArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii
+}
+type DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiisArgs struct {
+}
+type DocumentInventarizatsiiaTovarovNaSkladeSertifikatyArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovNaSkladeSertifikaty
+}
+type DocumentInventarizatsiiaTovarovNaSkladeSertifikatysArgs struct {
+}
+type DocumentInventarizatsiiaTovarovNaSkladeTovaryVPutiArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti
+}
+type DocumentInventarizatsiiaTovarovNaSkladeTovaryVPutisArgs struct {
+}
+type DocumentPrikhodnyiKassovyiOrderArgs struct {
+	Key PrimaryDocumentPrikhodnyiKassovyiOrder
+}
+type DocumentPrikhodnyiKassovyiOrdersArgs struct {
+}
+type DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha
+}
+type DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPrikhodnyiKassovyiOrderOplataArgs struct {
+	Key PrimaryDocumentPrikhodnyiKassovyiOrderOplata
+}
+type DocumentPrikhodnyiKassovyiOrderOplatasArgs struct {
+}
+type DocumentPrikhodnyiKassovyiOrderTovaryArgs struct {
+	Key PrimaryDocumentPrikhodnyiKassovyiOrderTovary
+}
+type DocumentPrikhodnyiKassovyiOrderTovarysArgs struct {
+}
+type CatalogPrichinyVozvrataArgs struct {
+	Key PrimaryCatalogPrichinyVozvrata
+}
+type CatalogPrichinyVozvratasArgs struct {
+}
+type DocumentDenezhnyiChekArgs struct {
+	Key PrimaryDocumentDenezhnyiChek
+}
+type DocumentDenezhnyiCheksArgs struct {
+}
+type DocumentVozvratMaterialovIzProizvodstvaArgs struct {
+	Key PrimaryDocumentVozvratMaterialovIzProizvodstva
+}
+type DocumentVozvratMaterialovIzProizvodstvasArgs struct {
+}
+type DocumentVozvratMaterialovIzProizvodstvaTovaryArgs struct {
+	Key PrimaryDocumentVozvratMaterialovIzProizvodstvaTovary
+}
+type DocumentVozvratMaterialovIzProizvodstvaTovarysArgs struct {
+}
+type DocumentPereotsenkaTovarovOtdannykhNaKomissiiuArgs struct {
+	Key PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiu
+}
+type DocumentPereotsenkaTovarovOtdannykhNaKomissiiusArgs struct {
+}
+type DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovaryArgs struct {
+	Key PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary
+}
+type DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovarysArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSN
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNsArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliamiArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliamisArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannyeArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannyesArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikamiArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikamisArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakhArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh
+}
+type DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakhsArgs struct {
+}
+type DocumentGTDImportArgs struct {
+	Key PrimaryDocumentGTDImport
+}
+type DocumentGTDImportsArgs struct {
+}
+type DocumentGTDImportRazdelyArgs struct {
+	Key PrimaryDocumentGTDImportRazdely
+}
+type DocumentGTDImportRazdelysArgs struct {
+}
+type DocumentGTDImportTovaryArgs struct {
+	Key PrimaryDocumentGTDImportTovary
+}
+type DocumentGTDImportTovarysArgs struct {
+}
+type DocumentAktSverkiArgs struct {
+	Key PrimaryDocumentAktSverki
+}
+type DocumentAktSverkisArgs struct {
+}
+type DocumentAktSverkiTovaryArgs struct {
+	Key PrimaryDocumentAktSverkiTovary
+}
+type DocumentAktSverkiTovarysArgs struct {
+}
+type CatalogFailyArgs struct {
+	Key PrimaryCatalogFaily
+}
+type CatalogFailysArgs struct {
+}
+type CatalogFailyDopolnitelnyeRekvizityArgs struct {
+	Key PrimaryCatalogFailyDopolnitelnyeRekvizity
+}
+type CatalogFailyDopolnitelnyeRekvizitysArgs struct {
+}
+type CatalogFailySertifikatyShifrovaniiaArgs struct {
+	Key PrimaryCatalogFailySertifikatyShifrovaniia
+}
+type CatalogFailySertifikatyShifrovaniiasArgs struct {
+}
+type CatalogUchetnyeZapisiElektronnoiPochtyArgs struct {
+	Key PrimaryCatalogUchetnyeZapisiElektronnoiPochty
+}
+type CatalogUchetnyeZapisiElektronnoiPochtysArgs struct {
+}
+type CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisiArgs struct {
+	Key PrimaryCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi
+}
+type CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisisArgs struct {
+}
+type DocumentPlaniruemoePostuplenieDenezhnykhSredstvArgs struct {
+	Key PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstv
+}
+type DocumentPlaniruemoePostuplenieDenezhnykhSredstvsArgs struct {
+}
+type DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha
+}
+type DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPreiskurantTsenNaKamniArgs struct {
+	Key PrimaryDocumentPreiskurantTsenNaKamni
+}
+type DocumentPreiskurantTsenNaKamnisArgs struct {
+}
+type PurchaseArgs struct {
+	Key PrimaryPurchase
+}
+type PurchasesArgs struct {
+}
+type DocumentSkupkaTovarovTovaryArgs struct {
+	Key PrimaryDocumentSkupkaTovarovTovary
+}
+type DocumentSkupkaTovarovTovarysArgs struct {
+}
+type DocumentSchetFakturaPoluchennyiArgs struct {
+	Key PrimaryDocumentSchetFakturaPoluchennyi
+}
+type DocumentSchetFakturaPoluchennyisArgs struct {
+}
+type DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliamArgs struct {
+	Key PrimaryDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam
+}
+type DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliamsArgs struct {
+}
+type DocumentAktKhimicheskogoAnalizaMetallaArgs struct {
+	Key PrimaryDocumentAktKhimicheskogoAnalizaMetalla
+}
+type DocumentAktKhimicheskogoAnalizaMetallasArgs struct {
+}
+type CatalogfmKartochkaKontragentaArgs struct {
+	Key PrimaryCatalogfmKartochkaKontragenta
+}
+type CatalogfmKartochkaKontragentasArgs struct {
+}
+type CatalogfmKartochkaKontragentaDannyeKontragentaArgs struct {
+	Key PrimaryCatalogfmKartochkaKontragentaDannyeKontragenta
+}
+type CatalogfmKartochkaKontragentaDannyeKontragentasArgs struct {
+}
+type DocumentSpisanieProsrochennykhSertifikatovArgs struct {
+	Key PrimaryDocumentSpisanieProsrochennykhSertifikatov
+}
+type DocumentSpisanieProsrochennykhSertifikatovsArgs struct {
+}
+type DocumentSpisanieProsrochennykhSertifikatovSertifikatyArgs struct {
+	Key PrimaryDocumentSpisanieProsrochennykhSertifikatovSertifikaty
+}
+type DocumentSpisanieProsrochennykhSertifikatovSertifikatysArgs struct {
+}
+type DocumentZakrytieAvansovPoGrafikuPlatezheiArgs struct {
+	Key PrimaryDocumentZakrytieAvansovPoGrafikuPlatezhei
+}
+type DocumentZakrytieAvansovPoGrafikuPlatezheisArgs struct {
+}
+type DocumentZakrytieAvansovPoGrafikuPlatezheiKontragentyArgs struct {
+	Key PrimaryDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty
+}
+type DocumentZakrytieAvansovPoGrafikuPlatezheiKontragentysArgs struct {
+}
+type CatalogTipySistemNalogooblozheniiaKKTArgs struct {
+	Key PrimaryCatalogTipySistemNalogooblozheniiaKKT
+}
+type CatalogTipySistemNalogooblozheniiaKKTsArgs struct {
+}
+type DocumentAkkreditivPeredannyiArgs struct {
+	Key PrimaryDocumentAkkreditivPeredannyi
+}
+type DocumentAkkreditivPeredannyisArgs struct {
+}
+type DocumentAkkreditivPeredannyiRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentAkkreditivPeredannyiRasshifrovkaPlatezha
+}
+type DocumentAkkreditivPeredannyiRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentAkkreditivPeredannyiRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentAkkreditivPeredannyiRekvizityKontragenta
+}
+type DocumentAkkreditivPeredannyiRekvizityKontragentasArgs struct {
+}
+type SupplierArgs struct {
+	Key PrimarySupplier
+}
+type SuppliersArgs struct {
+}
+type CatalogKontragentyVidyDeiatelnostiArgs struct {
+	Key PrimaryCatalogKontragentyVidyDeiatelnosti
+}
+type CatalogKontragentyVidyDeiatelnostisArgs struct {
+}
+type DocumentInformatsionnoeSoobshchenieArgs struct {
+	Key PrimaryDocumentInformatsionnoeSoobshchenie
+}
+type DocumentInformatsionnoeSoobshcheniesArgs struct {
+}
+type CatalogVlozheniiaElektronnykhPisemArgs struct {
+	Key PrimaryCatalogVlozheniiaElektronnykhPisem
+}
+type CatalogVlozheniiaElektronnykhPisemsArgs struct {
+}
+type DocumentPlatezhnoeTrebovanieVystavlennoeArgs struct {
+	Key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoe
+}
+type DocumentPlatezhnoeTrebovanieVystavlennoesArgs struct {
+}
+type DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha
+}
+type DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta
+}
+type DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragentasArgs struct {
+}
+type DocumentMarketingovaiaAktsiiaArgs struct {
+	Key PrimaryDocumentMarketingovaiaAktsiia
+}
+type DocumentMarketingovaiaAktsiiasArgs struct {
+}
+type DocumentMarketingovaiaAktsiiaMagazinyArgs struct {
+	Key PrimaryDocumentMarketingovaiaAktsiiaMagaziny
+}
+type DocumentMarketingovaiaAktsiiaMagazinysArgs struct {
+}
+type DocumentMarketingovaiaAktsiiaSkidkiNatsenkiArgs struct {
+	Key PrimaryDocumentMarketingovaiaAktsiiaSkidkiNatsenki
+}
+type DocumentMarketingovaiaAktsiiaSkidkiNatsenkisArgs struct {
+}
+type DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupaArgs struct {
+	Key PrimaryDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa
+}
+type DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupasArgs struct {
+}
+type CatalogStsenariiObmenovDannymiArgs struct {
+	Key PrimaryCatalogStsenariiObmenovDannymi
+}
+type CatalogStsenariiObmenovDannymisArgs struct {
+}
+type CatalogStsenariiObmenovDannymiNastroikiObmenaArgs struct {
+	Key PrimaryCatalogStsenariiObmenovDannymiNastroikiObmena
+}
+type CatalogStsenariiObmenovDannymiNastroikiObmenasArgs struct {
+}
+type ItemArgs struct {
+	Key PrimaryItem
+}
+type ItemsArgs struct {
+}
+type CatalogNomenklaturaSostavLigaturyArgs struct {
+	Key PrimaryCatalogNomenklaturaSostavLigatury
+}
+type CatalogNomenklaturaSostavLigaturysArgs struct {
+}
+type DocumentOprosArgs struct {
+	Key PrimaryDocumentOpros
+}
+type DocumentOprossArgs struct {
+}
+type DocumentOprosVoprosyArgs struct {
+	Key PrimaryDocumentOprosVoprosy
+}
+type DocumentOprosVoprosysArgs struct {
+}
+type DocumentOprosSostavnoiOtvetArgs struct {
+	Key PrimaryDocumentOprosSostavnoiOtvet
+}
+type DocumentOprosSostavnoiOtvetsArgs struct {
+}
+type CatalogGruppyPoluchateleiSkidkiArgs struct {
+	Key PrimaryCatalogGruppyPoluchateleiSkidki
+}
+type CatalogGruppyPoluchateleiSkidkisArgs struct {
+}
+type ReassessmentArgs struct {
+	Key PrimaryReassessment
+}
+type ReassessmentsArgs struct {
+}
+type DocumentPereotsenkaTovarovVNTTTovaryArgs struct {
+	Key PrimaryDocumentPereotsenkaTovarovVNTTTovary
+}
+type DocumentPereotsenkaTovarovVNTTTovarysArgs struct {
+}
+type CatalogTomaKhraneniiaFailovArgs struct {
+	Key PrimaryCatalogTomaKhraneniiaFailov
+}
+type CatalogTomaKhraneniiaFailovsArgs struct {
+}
+type DocumentJournalProizvodstvennyeDokumentyArgs struct {
+	Key PrimaryDocumentJournalProizvodstvennyeDokumenty
+}
+type DocumentJournalProizvodstvennyeDokumentysArgs struct {
+}
+type DocumentIzmeneniePravDostupaArgs struct {
+	Key PrimaryDocumentIzmeneniePravDostupa
+}
+type DocumentIzmeneniePravDostupasArgs struct {
+}
+type CatalogNastroikaAssortimentnoiMatritsyArgs struct {
+	Key PrimaryCatalogNastroikaAssortimentnoiMatritsy
+}
+type CatalogNastroikaAssortimentnoiMatritsysArgs struct {
+}
+type CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGruppArgs struct {
+	Key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp
+}
+type CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGruppsArgs struct {
+}
+type CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategoriiArgs struct {
+	Key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii
+}
+type CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategoriisArgs struct {
+}
+type CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsiiArgs struct {
+	Key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii
+}
+type CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsiisArgs struct {
+}
+type DocumentJournalDokumentyKontragentovArgs struct {
+	Key PrimaryDocumentJournalDokumentyKontragentov
+}
+type DocumentJournalDokumentyKontragentovsArgs struct {
+}
+type MoveInstanceArgs struct {
+	Key PrimaryMoveInstance
+}
+type MoveInstancesArgs struct {
+}
+type DocumentPeremeshchenieTovarovSertifikatyArgs struct {
+	Key PrimaryDocumentPeremeshchenieTovarovSertifikaty
+}
+type DocumentPeremeshchenieTovarovSertifikatysArgs struct {
+}
+type DocumentPeremeshchenieTovarovTovaryArgs struct {
+	Key PrimaryDocumentPeremeshchenieTovarovTovary
+}
+type DocumentPeremeshchenieTovarovTovarysArgs struct {
+}
+type DocumentPeremeshchenieTovarovSpisokZaiavokArgs struct {
+	Key PrimaryDocumentPeremeshchenieTovarovSpisokZaiavok
+}
+type DocumentPeremeshchenieTovarovSpisokZaiavoksArgs struct {
+}
+type DocumentZakrytieZaiavokNaRaskhodovanieSredstvArgs struct {
+	Key PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstv
+}
+type DocumentZakrytieZaiavokNaRaskhodovanieSredstvsArgs struct {
+}
+type DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstvArgs struct {
+	Key PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv
+}
+type DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstvsArgs struct {
+}
+type MemberCardArgs struct {
+	Key PrimaryMemberCard
+}
+type MemberCardsArgs struct {
+}
+type DocumentABCKlassifikatsiiaPokupateleiArgs struct {
+	Key PrimaryDocumentABCKlassifikatsiiaPokupatelei
+}
+type DocumentABCKlassifikatsiiaPokupateleisArgs struct {
+}
+type DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentovArgs struct {
+	Key PrimaryDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov
+}
+type DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentovsArgs struct {
+}
+type CatalogIdentifikatoryObieektovMetadannykhArgs struct {
+	Key PrimaryCatalogIdentifikatoryObieektovMetadannykh
+}
+type CatalogIdentifikatoryObieektovMetadannykhsArgs struct {
+}
+type DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeArgs struct {
+	Key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSklade
+}
+type DocumentSvodnaiaInventarizatsiiaTovarovNaSkladesArgs struct {
+}
+type DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikatyArgs struct {
+	Key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty
+}
+type DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikatysArgs struct {
+}
+type DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiiArgs struct {
+	Key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii
+}
+type DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiisArgs struct {
+}
+type DocumentKorrektirovkaRealizatsiiArgs struct {
+	Key PrimaryDocumentKorrektirovkaRealizatsii
+}
+type DocumentKorrektirovkaRealizatsiisArgs struct {
+}
+type DocumentKorrektirovkaRealizatsiiTovaryArgs struct {
+	Key PrimaryDocumentKorrektirovkaRealizatsiiTovary
+}
+type DocumentKorrektirovkaRealizatsiiTovarysArgs struct {
+}
+type DocumentKorrektirovkaRealizatsiiUslugiArgs struct {
+	Key PrimaryDocumentKorrektirovkaRealizatsiiUslugi
+}
+type DocumentKorrektirovkaRealizatsiiUslugisArgs struct {
+}
+type CatalogVidyDefektovArgs struct {
+	Key PrimaryCatalogVidyDefektov
+}
+type CatalogVidyDefektovsArgs struct {
+}
+type DocumentDoverennostArgs struct {
+	Key PrimaryDocumentDoverennost
+}
+type DocumentDoverennostsArgs struct {
+}
+type DocumentDoverennostTovaryArgs struct {
+	Key PrimaryDocumentDoverennostTovary
+}
+type DocumentDoverennostTovarysArgs struct {
+}
+type CatalogShablonyZapolneniiaKUArgs struct {
+	Key PrimaryCatalogShablonyZapolneniiaKU
+}
+type CatalogShablonyZapolneniiaKUsArgs struct {
+}
+type CatalogShablonyZapolneniiaKUPrazdnichnyeDniArgs struct {
+	Key PrimaryCatalogShablonyZapolneniiaKUPrazdnichnyeDni
+}
+type CatalogShablonyZapolneniiaKUPrazdnichnyeDnisArgs struct {
+}
+type CatalogShablonyZapolneniiaKUKUNaNedeliuArgs struct {
+	Key PrimaryCatalogShablonyZapolneniiaKUKUNaNedeliu
+}
+type CatalogShablonyZapolneniiaKUKUNaNedeliusArgs struct {
+}
+type CatalogShablonyZapolneniiaKUSalonyArgs struct {
+	Key PrimaryCatalogShablonyZapolneniiaKUSalony
+}
+type CatalogShablonyZapolneniiaKUSalonysArgs struct {
+}
+type DocumentPlanZapolneniiaVitrinArgs struct {
+	Key PrimaryDocumentPlanZapolneniiaVitrin
+}
+type DocumentPlanZapolneniiaVitrinsArgs struct {
+}
+type DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrinArgs struct {
+	Key PrimaryDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin
+}
+type DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrinsArgs struct {
+}
+type InstanceArgs struct {
+	Key PrimaryInstance
+}
+type InstancesArgs struct {
+}
+type ReturnToManufacturingArgs struct {
+	Key PrimaryReturnToManufacturing
+}
+type ReturnToManufacturingsArgs struct {
+}
+type DocumentVozvratProduktsiiVProizvodstvoTovaryArgs struct {
+	Key PrimaryDocumentVozvratProduktsiiVProizvodstvoTovary
+}
+type DocumentVozvratProduktsiiVProizvodstvoTovarysArgs struct {
+}
+type CatalogNomeraGTDArgs struct {
+	Key PrimaryCatalogNomeraGTD
+}
+type CatalogNomeraGTDsArgs struct {
+}
+type CatalogNastroikiRabochegoMestaPolzovateliaArgs struct {
+	Key PrimaryCatalogNastroikiRabochegoMestaPolzovatelia
+}
+type CatalogNastroikiRabochegoMestaPolzovateliasArgs struct {
+}
+type CatalogNastroikiRabochegoMestaPolzovateliaNastroikiArgs struct {
+	Key PrimaryCatalogNastroikiRabochegoMestaPolzovateliaNastroiki
+}
+type CatalogNastroikiRabochegoMestaPolzovateliaNastroikisArgs struct {
+}
+type CatalogsmsShablonyArgs struct {
+	Key PrimaryCatalogsmsShablony
+}
+type CatalogsmsShablonysArgs struct {
+}
+type WriteOffArgs struct {
+	Key PrimaryWriteOff
+}
+type WriteOffsArgs struct {
+}
+type DocumentSpisanieTovarovTovaryArgs struct {
+	Key PrimaryDocumentSpisanieTovarovTovary
+}
+type DocumentSpisanieTovarovTovarysArgs struct {
+}
+type DocumentSpisanieTovarovSertifikatyArgs struct {
+	Key PrimaryDocumentSpisanieTovarovSertifikaty
+}
+type DocumentSpisanieTovarovSertifikatysArgs struct {
+}
+type DocumentsmsSoobshchenieArgs struct {
+	Key PrimaryDocumentsmsSoobshchenie
+}
+type DocumentsmsSoobshcheniesArgs struct {
+}
+type DocumentsmsSoobshcheniePoluchateliArgs struct {
+	Key PrimaryDocumentsmsSoobshcheniePoluchateli
+}
+type DocumentsmsSoobshcheniePoluchatelisArgs struct {
+}
+type DocumentOplataOtPokupateliaPlatezhnoiKartoiArgs struct {
+	Key PrimaryDocumentOplataOtPokupateliaPlatezhnoiKartoi
+}
+type DocumentOplataOtPokupateliaPlatezhnoiKartoisArgs struct {
+}
+type CatalogDragotsennyeKamniArgs struct {
+	Key PrimaryCatalogDragotsennyeKamni
+}
+type CatalogDragotsennyeKamnisArgs struct {
+}
+type CatalogKalendariPlanirovaniiaProdazhArgs struct {
+	Key PrimaryCatalogKalendariPlanirovaniiaProdazh
+}
+type CatalogKalendariPlanirovaniiaProdazhsArgs struct {
+}
+type CatalogKalendariPlanirovaniiaProdazhKUPoDniamArgs struct {
+	Key PrimaryCatalogKalendariPlanirovaniiaProdazhKUPoDniam
+}
+type CatalogKalendariPlanirovaniiaProdazhKUPoDniamsArgs struct {
+}
+type CatalogKalendariPlanirovaniiaProdazhSalonyArgs struct {
+	Key PrimaryCatalogKalendariPlanirovaniiaProdazhSalony
+}
+type CatalogKalendariPlanirovaniiaProdazhSalonysArgs struct {
+}
+type CatalogKontaktnyeLitsaArgs struct {
+	Key PrimaryCatalogKontaktnyeLitsa
+}
+type CatalogKontaktnyeLitsasArgs struct {
+}
+type CatalogFizicheskieLitsaArgs struct {
+	Key PrimaryCatalogFizicheskieLitsa
+}
+type CatalogFizicheskieLitsasArgs struct {
+}
+type CatalogTipovyeAnketyArgs struct {
+	Key PrimaryCatalogTipovyeAnkety
+}
+type CatalogTipovyeAnketysArgs struct {
+}
+type CatalogTipovyeAnketyVoprosyAnketyArgs struct {
+	Key PrimaryCatalogTipovyeAnketyVoprosyAnkety
+}
+type CatalogTipovyeAnketyVoprosyAnketysArgs struct {
+}
+type DocumentNachislenieSpisanieBonusovArgs struct {
+	Key PrimaryDocumentNachislenieSpisanieBonusov
+}
+type DocumentNachislenieSpisanieBonusovsArgs struct {
+}
+type DocumentNachislenieSpisanieBonusovDiskontnyeKartyArgs struct {
+	Key PrimaryDocumentNachislenieSpisanieBonusovDiskontnyeKarty
+}
+type DocumentNachislenieSpisanieBonusovDiskontnyeKartysArgs struct {
+}
+type TypeArgs struct {
+	Key PrimaryType
+}
+type TypesArgs struct {
+}
+type CatalogfmKodyVidovDokumentovArgs struct {
+	Key PrimaryCatalogfmKodyVidovDokumentov
+}
+type CatalogfmKodyVidovDokumentovsArgs struct {
+}
+type DocumentPlatezhnoeTrebovaniePoluchennoeArgs struct {
+	Key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoe
+}
+type DocumentPlatezhnoeTrebovaniePoluchennoesArgs struct {
+}
+type DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha
+}
+type DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta
+}
+type DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragentasArgs struct {
+}
+type DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvArgs struct {
+	Key PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv
+}
+type DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvsArgs struct {
+}
+type DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDSArgs struct {
+	Key PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS
+}
+type DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDSsArgs struct {
+}
+type CatalogRazdelyAnketyArgs struct {
+	Key PrimaryCatalogRazdelyAnkety
+}
+type CatalogRazdelyAnketysArgs struct {
+}
+type DocumentOtchetPoFinMonitoringuArgs struct {
+	Key PrimaryDocumentOtchetPoFinMonitoringu
+}
+type DocumentOtchetPoFinMonitoringusArgs struct {
+}
+type DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringaArgs struct {
+	Key PrimaryDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa
+}
+type DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringasArgs struct {
+}
+type DocumentOtchetPoFinMonitoringuDannyeDokumentaArgs struct {
+	Key PrimaryDocumentOtchetPoFinMonitoringuDannyeDokumenta
+}
+type DocumentOtchetPoFinMonitoringuDannyeDokumentasArgs struct {
+}
+type CatalogKliuchiAnalitikiUchetaNomenklaturyArgs struct {
+	Key PrimaryCatalogKliuchiAnalitikiUchetaNomenklatury
+}
+type CatalogKliuchiAnalitikiUchetaNomenklaturysArgs struct {
+}
+type CatalogVersiiFailovArgs struct {
+	Key PrimaryCatalogVersiiFailov
+}
+type CatalogVersiiFailovsArgs struct {
+}
+type CatalogVersiiFailovElektronnyePodpisiArgs struct {
+	Key PrimaryCatalogVersiiFailovElektronnyePodpisi
+}
+type CatalogVersiiFailovElektronnyePodpisisArgs struct {
+}
+type DocumentUstanovkaTsenNomenklaturyArgs struct {
+	Key PrimaryDocumentUstanovkaTsenNomenklatury
+}
+type DocumentUstanovkaTsenNomenklaturysArgs struct {
+}
+type DocumentUstanovkaTsenNomenklaturyTipyTsenArgs struct {
+	Key PrimaryDocumentUstanovkaTsenNomenklaturyTipyTsen
+}
+type DocumentUstanovkaTsenNomenklaturyTipyTsensArgs struct {
+}
+type DocumentUstanovkaTsenNomenklaturyTovaryArgs struct {
+	Key PrimaryDocumentUstanovkaTsenNomenklaturyTovary
+}
+type DocumentUstanovkaTsenNomenklaturyTovarysArgs struct {
+}
+type DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvArgs struct {
+	Key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv
+}
+type DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvsArgs struct {
+}
+type DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha
+}
+type DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta
+}
+type DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragentasArgs struct {
+}
+type DocumentPreiskurantNaSkupkuArgs struct {
+	Key PrimaryDocumentPreiskurantNaSkupku
+}
+type DocumentPreiskurantNaSkupkusArgs struct {
+}
+type DocumentPreiskurantNaSkupkuProbyArgs struct {
+	Key PrimaryDocumentPreiskurantNaSkupkuProby
+}
+type DocumentPreiskurantNaSkupkuProbysArgs struct {
+}
+type DocumentPeredachaMaterialovVProizvodstvoArgs struct {
+	Key PrimaryDocumentPeredachaMaterialovVProizvodstvo
+}
+type DocumentPeredachaMaterialovVProizvodstvosArgs struct {
+}
+type DocumentPeredachaMaterialovVProizvodstvoTovaryArgs struct {
+	Key PrimaryDocumentPeredachaMaterialovVProizvodstvoTovary
+}
+type DocumentPeredachaMaterialovVProizvodstvoTovarysArgs struct {
+}
+type DocumentVnutrenniiZakazArgs struct {
+	Key PrimaryDocumentVnutrenniiZakaz
+}
+type DocumentVnutrenniiZakazsArgs struct {
+}
+type DocumentVnutrenniiZakazTovaryArgs struct {
+	Key PrimaryDocumentVnutrenniiZakazTovary
+}
+type DocumentVnutrenniiZakazTovarysArgs struct {
+}
+type CatalogKhranilishcheDopolnitelnoiInformatsiiArgs struct {
+	Key PrimaryCatalogKhranilishcheDopolnitelnoiInformatsii
+}
+type CatalogKhranilishcheDopolnitelnoiInformatsiisArgs struct {
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiArgs struct {
+	Key PrimaryCatalogDopolnitelnyeVneshnieObrabotki
+}
+type CatalogDopolnitelnyeVneshnieObrabotkisArgs struct {
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnostArgs struct {
+	Key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnostsArgs struct {
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiKomandyArgs struct {
+	Key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiKomandy
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiKomandysArgs struct {
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiRazdelyArgs struct {
+	Key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazdely
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiRazdelysArgs struct {
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiNaznachenieArgs struct {
+	Key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiNaznacheniesArgs struct {
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiRazresheniiaArgs struct {
+	Key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia
+}
+type CatalogDopolnitelnyeVneshnieObrabotkiRazresheniiasArgs struct {
+}
+type CatalogGruppyPolzovateleiArgs struct {
+	Key PrimaryCatalogGruppyPolzovatelei
+}
+type CatalogGruppyPolzovateleisArgs struct {
+}
+type CatalogGruppyPolzovateleiPolzovateliGruppyArgs struct {
+	Key PrimaryCatalogGruppyPolzovateleiPolzovateliGruppy
+}
+type CatalogGruppyPolzovateleiPolzovateliGruppysArgs struct {
+}
+type DocumentJournalZakazyKlientovArgs struct {
+	Key PrimaryDocumentJournalZakazyKlientov
+}
+type DocumentJournalZakazyKlientovsArgs struct {
+}
+type DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiArgs struct {
+	Key PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki
+}
+type DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkisArgs struct {
+}
+type DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovaryArgs struct {
+	Key PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary
+}
+type DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovarysArgs struct {
+}
+type DocumentZaiavkaNaPeremeshchenieTovarovArgs struct {
+	Key PrimaryDocumentZaiavkaNaPeremeshchenieTovarov
+}
+type DocumentZaiavkaNaPeremeshchenieTovarovsArgs struct {
+}
+type DocumentZaiavkaNaPeremeshchenieTovarovTovaryArgs struct {
+	Key PrimaryDocumentZaiavkaNaPeremeshchenieTovarovTovary
+}
+type DocumentZaiavkaNaPeremeshchenieTovarovTovarysArgs struct {
+}
+type CatalogUsloviiaProdazhArgs struct {
+	Key PrimaryCatalogUsloviiaProdazh
+}
+type CatalogUsloviiaProdazhsArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoFinMonitoringuArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringu
+}
+type DocumentVvodNachalnykhOstatkovPoFinMonitoringusArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovoraArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora
+}
+type DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovorasArgs struct {
+}
+type CatalogOrganizatsiiArgs struct {
+	Key PrimaryCatalogOrganizatsii
+}
+type CatalogOrganizatsiisArgs struct {
+}
+type CatalogUsloviiaOplatyArgs struct {
+	Key PrimaryCatalogUsloviiaOplaty
+}
+type CatalogUsloviiaOplatysArgs struct {
+}
+type CatalogUsloviiaOplatyTablitsaVyplatArgs struct {
+	Key PrimaryCatalogUsloviiaOplatyTablitsaVyplat
+}
+type CatalogUsloviiaOplatyTablitsaVyplatsArgs struct {
+}
+type CatalogKategoriiObieektovArgs struct {
+	Key PrimaryCatalogKategoriiObieektov
+}
+type CatalogKategoriiObieektovsArgs struct {
+}
+type CatalogfmZnacheniiaDliaZapolneniiaArgs struct {
+	Key PrimaryCatalogfmZnacheniiaDliaZapolneniia
+}
+type CatalogfmZnacheniiaDliaZapolneniiasArgs struct {
+}
+type DocumentUdalitNariadZakazArgs struct {
+	Key PrimaryDocumentUdalitNariadZakaz
+}
+type DocumentUdalitNariadZakazsArgs struct {
+}
+type DocumentUdalitNariadZakazIzdeliiaArgs struct {
+	Key PrimaryDocumentUdalitNariadZakazIzdeliia
+}
+type DocumentUdalitNariadZakazIzdeliiasArgs struct {
+}
+type DocumentUdalitNariadZakazUslugiArgs struct {
+	Key PrimaryDocumentUdalitNariadZakazUslugi
+}
+type DocumentUdalitNariadZakazUslugisArgs struct {
+}
+type DocumentUdalitNariadZakazSpetsifikatsiiaArgs struct {
+	Key PrimaryDocumentUdalitNariadZakazSpetsifikatsiia
+}
+type DocumentUdalitNariadZakazSpetsifikatsiiasArgs struct {
+}
+type DocumentUdalitNariadZakazMetallyArgs struct {
+	Key PrimaryDocumentUdalitNariadZakazMetally
+}
+type DocumentUdalitNariadZakazMetallysArgs struct {
+}
+type DocumentUdalitNariadZakazVstavkiArgs struct {
+	Key PrimaryDocumentUdalitNariadZakazVstavki
+}
+type DocumentUdalitNariadZakazVstavkisArgs struct {
+}
+type CatalogBankiArgs struct {
+	Key PrimaryCatalogBanki
+}
+type CatalogBankisArgs struct {
+}
+type CatalogRoliKontaktnykhLitsArgs struct {
+	Key PrimaryCatalogRoliKontaktnykhLits
+}
+type CatalogRoliKontaktnykhLitssArgs struct {
+}
+type DocumentRestrukturizatsiiaDolgaArgs struct {
+	Key PrimaryDocumentRestrukturizatsiiaDolga
+}
+type DocumentRestrukturizatsiiaDolgasArgs struct {
+}
+type DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennostiArgs struct {
+	Key PrimaryDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti
+}
+type DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennostisArgs struct {
+}
+type DocumentAkkreditivPoluchennyiArgs struct {
+	Key PrimaryDocumentAkkreditivPoluchennyi
+}
+type DocumentAkkreditivPoluchennyisArgs struct {
+}
+type DocumentAkkreditivPoluchennyiRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha
+}
+type DocumentAkkreditivPoluchennyiRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentAkkreditivPoluchennyiRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentAkkreditivPoluchennyiRekvizityKontragenta
+}
+type DocumentAkkreditivPoluchennyiRekvizityKontragentasArgs struct {
+}
+type DocumentPriemIzRemontaArgs struct {
+	Key PrimaryDocumentPriemIzRemonta
+}
+type DocumentPriemIzRemontasArgs struct {
+}
+type DocumentPriemIzRemontaIzdeliiaArgs struct {
+	Key PrimaryDocumentPriemIzRemontaIzdeliia
+}
+type DocumentPriemIzRemontaIzdeliiasArgs struct {
+}
+type DocumentPriemIzRemontaMaterialyArgs struct {
+	Key PrimaryDocumentPriemIzRemontaMaterialy
+}
+type DocumentPriemIzRemontaMaterialysArgs struct {
+}
+type CatalogTsvetaArgs struct {
+	Key PrimaryCatalogTsveta
+}
+type CatalogTsvetasArgs struct {
+}
+type DocumentStornirovanieOtchetaKomissioneraOProdazhakhArgs struct {
+	Key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakh
+}
+type DocumentStornirovanieOtchetaKomissioneraOProdazhakhsArgs struct {
+}
+type DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstvaArgs struct {
+	Key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva
+}
+type DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstvasArgs struct {
+}
+type DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovaryArgs struct {
+	Key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary
+}
+type DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovarysArgs struct {
+}
+type DocumentJournalDavalcheskieDokumentyArgs struct {
+	Key PrimaryDocumentJournalDavalcheskieDokumenty
+}
+type DocumentJournalDavalcheskieDokumentysArgs struct {
+}
+type CatalogfmAnketaKlientaArgs struct {
+	Key PrimaryCatalogfmAnketaKlienta
+}
+type CatalogfmAnketaKlientasArgs struct {
+}
+type CatalogfmAnketaKlientaDannyeKontragentaArgs struct {
+	Key PrimaryCatalogfmAnketaKlientaDannyeKontragenta
+}
+type CatalogfmAnketaKlientaDannyeKontragentasArgs struct {
+}
+type CatalogVidyVzaimoraschetovArgs struct {
+	Key PrimaryCatalogVidyVzaimoraschetov
+}
+type CatalogVidyVzaimoraschetovsArgs struct {
+}
+type DocumentUstanovkaZnacheniiTochkiZakazaArgs struct {
+	Key PrimaryDocumentUstanovkaZnacheniiTochkiZakaza
+}
+type DocumentUstanovkaZnacheniiTochkiZakazasArgs struct {
+}
+type DocumentUstanovkaZnacheniiTochkiZakazaTovaryArgs struct {
+	Key PrimaryDocumentUstanovkaZnacheniiTochkiZakazaTovary
+}
+type DocumentUstanovkaZnacheniiTochkiZakazaTovarysArgs struct {
+}
+type CatalogZnacheniiaKodirovkiArgs struct {
+	Key PrimaryCatalogZnacheniiaKodirovki
+}
+type CatalogZnacheniiaKodirovkisArgs struct {
+}
+type CatalogPravilaProdazhArgs struct {
+	Key PrimaryCatalogPravilaProdazh
+}
+type CatalogPravilaProdazhsArgs struct {
+}
+type CatalogPravilaProdazhTovaryArgs struct {
+	Key PrimaryCatalogPravilaProdazhTovary
+}
+type CatalogPravilaProdazhTovarysArgs struct {
+}
+type DocumentPostuplenieDopRaskhodovArgs struct {
+	Key PrimaryDocumentPostuplenieDopRaskhodov
+}
+type DocumentPostuplenieDopRaskhodovsArgs struct {
+}
+type DocumentPostuplenieDopRaskhodovTovaryArgs struct {
+	Key PrimaryDocumentPostuplenieDopRaskhodovTovary
+}
+type DocumentPostuplenieDopRaskhodovTovarysArgs struct {
+}
+type CatalogKhoziaistvennyeOperatsiiArgs struct {
+	Key PrimaryCatalogKhoziaistvennyeOperatsii
+}
+type CatalogKhoziaistvennyeOperatsiisArgs struct {
+}
+type DocumentAvansovyiOtchetArgs struct {
+	Key PrimaryDocumentAvansovyiOtchet
+}
+type DocumentAvansovyiOtchetsArgs struct {
+}
+type DocumentAvansovyiOtchetVydannyeAvansyArgs struct {
+	Key PrimaryDocumentAvansovyiOtchetVydannyeAvansy
+}
+type DocumentAvansovyiOtchetVydannyeAvansysArgs struct {
+}
+type DocumentAvansovyiOtchetTovaryArgs struct {
+	Key PrimaryDocumentAvansovyiOtchetTovary
+}
+type DocumentAvansovyiOtchetTovarysArgs struct {
+}
+type DocumentAvansovyiOtchetOplataPostavshchikamArgs struct {
+	Key PrimaryDocumentAvansovyiOtchetOplataPostavshchikam
+}
+type DocumentAvansovyiOtchetOplataPostavshchikamsArgs struct {
+}
+type DocumentAvansovyiOtchetProcheeArgs struct {
+	Key PrimaryDocumentAvansovyiOtchetProchee
+}
+type DocumentAvansovyiOtchetProcheesArgs struct {
+}
+type CatalogDolzhnostiOrganizatsiiArgs struct {
+	Key PrimaryCatalogDolzhnostiOrganizatsii
+}
+type CatalogDolzhnostiOrganizatsiisArgs struct {
+}
+type CatalogAnalitikaTipaIzdeliiaArgs struct {
+	Key PrimaryCatalogAnalitikaTipaIzdeliia
+}
+type CatalogAnalitikaTipaIzdeliiasArgs struct {
+}
+type CatalogDopolnitelnyePechatnyeFormyArgs struct {
+	Key PrimaryCatalogDopolnitelnyePechatnyeFormy
+}
+type CatalogDopolnitelnyePechatnyeFormysArgs struct {
+}
+type CatalogDopolnitelnyePechatnyeFormyPrinadlezhnostArgs struct {
+	Key PrimaryCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost
+}
+type CatalogDopolnitelnyePechatnyeFormyPrinadlezhnostsArgs struct {
+}
+type MemberCardsTypeArgs struct {
+	Key PrimaryMemberCardsType
+}
+type MemberCardsTypesArgs struct {
+}
+type DocumentRegistratsiiaNaSaiteArgs struct {
+	Key PrimaryDocumentRegistratsiiaNaSaite
+}
+type DocumentRegistratsiiaNaSaitesArgs struct {
+}
+type CatalogObrabotkiObsluzhivaniiaTOArgs struct {
+	Key PrimaryCatalogObrabotkiObsluzhivaniiaTO
+}
+type CatalogObrabotkiObsluzhivaniiaTOsArgs struct {
+}
+type CatalogObrabotkiObsluzhivaniiaTOModeliArgs struct {
+	Key PrimaryCatalogObrabotkiObsluzhivaniiaTOModeli
+}
+type CatalogObrabotkiObsluzhivaniiaTOModelisArgs struct {
+}
+type CatalogNastroikaIntervalovArgs struct {
+	Key PrimaryCatalogNastroikaIntervalov
+}
+type CatalogNastroikaIntervalovsArgs struct {
+}
+type CatalogNastroikaIntervalovTablichnaiaChastArgs struct {
+	Key PrimaryCatalogNastroikaIntervalovTablichnaiaChast
+}
+type CatalogNastroikaIntervalovTablichnaiaChastsArgs struct {
+}
+type CatalogProfiliGruppDostupaArgs struct {
+	Key PrimaryCatalogProfiliGruppDostupa
+}
+type CatalogProfiliGruppDostupasArgs struct {
+}
+type CatalogProfiliGruppDostupaRoliArgs struct {
+	Key PrimaryCatalogProfiliGruppDostupaRoli
+}
+type CatalogProfiliGruppDostupaRolisArgs struct {
+}
+type CatalogProfiliGruppDostupaVidyDostupaArgs struct {
+	Key PrimaryCatalogProfiliGruppDostupaVidyDostupa
+}
+type CatalogProfiliGruppDostupaVidyDostupasArgs struct {
+}
+type CatalogProfiliGruppDostupaZnacheniiaDostupaArgs struct {
+	Key PrimaryCatalogProfiliGruppDostupaZnacheniiaDostupa
+}
+type CatalogProfiliGruppDostupaZnacheniiaDostupasArgs struct {
+}
+type CatalogProfiliGruppDostupaDostupPoPodsistemamArgs struct {
+	Key PrimaryCatalogProfiliGruppDostupaDostupPoPodsistemam
+}
+type CatalogProfiliGruppDostupaDostupPoPodsistemamsArgs struct {
+}
+type CatalogNastroikiDliaKureraArgs struct {
+	Key PrimaryCatalogNastroikiDliaKurera
+}
+type CatalogNastroikiDliaKurerasArgs struct {
+}
+type CatalogNastroikiDliaKureraSostavNaimenovaniiaArgs struct {
+	Key PrimaryCatalogNastroikiDliaKureraSostavNaimenovaniia
+}
+type CatalogNastroikiDliaKureraSostavNaimenovaniiasArgs struct {
+}
+type CatalogTipyTsenNomenklaturyKontragentovArgs struct {
+	Key PrimaryCatalogTipyTsenNomenklaturyKontragentov
+}
+type CatalogTipyTsenNomenklaturyKontragentovsArgs struct {
+}
+type DocumentJournalTsenoobrazovanieArgs struct {
+	Key PrimaryDocumentJournalTsenoobrazovanie
+}
+type DocumentJournalTsenoobrazovaniesArgs struct {
+}
+type CatalogEdinitsyIzmereniiaArgs struct {
+	Key PrimaryCatalogEdinitsyIzmereniia
+}
+type CatalogEdinitsyIzmereniiasArgs struct {
+}
+type CatalogStatiDvizheniiaDenezhnykhSredstvArgs struct {
+	Key PrimaryCatalogStatiDvizheniiaDenezhnykhSredstv
+}
+type CatalogStatiDvizheniiaDenezhnykhSredstvsArgs struct {
+}
+type DocumentInkassovoePorucheniePoluchennoeArgs struct {
+	Key PrimaryDocumentInkassovoePorucheniePoluchennoe
+}
+type DocumentInkassovoePorucheniePoluchennoesArgs struct {
+}
+type DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha
+}
+type DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentInkassovoePorucheniePoluchennoeRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta
+}
+type DocumentInkassovoePorucheniePoluchennoeRekvizityKontragentasArgs struct {
+}
+type CatalogNastroikiObmenaDannymiShtrikhMArgs struct {
+	Key PrimaryCatalogNastroikiObmenaDannymiShtrikhM
+}
+type CatalogNastroikiObmenaDannymiShtrikhMsArgs struct {
+}
+type CatalogStatiZatratArgs struct {
+	Key PrimaryCatalogStatiZatrat
+}
+type CatalogStatiZatratsArgs struct {
+}
+type DocumentVozvratTovarovOtPokupateliaArgs struct {
+	Key PrimaryDocumentVozvratTovarovOtPokupatelia
+}
+type DocumentVozvratTovarovOtPokupateliasArgs struct {
+}
+type DocumentVozvratTovarovOtPokupateliaTovaryArgs struct {
+	Key PrimaryDocumentVozvratTovarovOtPokupateliaTovary
+}
+type DocumentVozvratTovarovOtPokupateliaTovarysArgs struct {
+}
+type DocumentVozvratTovarovOtPokupateliaUslugiArgs struct {
+	Key PrimaryDocumentVozvratTovarovOtPokupateliaUslugi
+}
+type DocumentVozvratTovarovOtPokupateliaUslugisArgs struct {
+}
+type DocumentZakazPostavshchikuArgs struct {
+	Key PrimaryDocumentZakazPostavshchiku
+}
+type DocumentZakazPostavshchikusArgs struct {
+}
+type DocumentZakazPostavshchikuTovaryArgs struct {
+	Key PrimaryDocumentZakazPostavshchikuTovary
+}
+type DocumentZakazPostavshchikuTovarysArgs struct {
+}
+type CatalogSkidkiNatsenkiArgs struct {
+	Key PrimaryCatalogSkidkiNatsenki
+}
+type CatalogSkidkiNatsenkisArgs struct {
+}
+type CatalogSkidkiNatsenkiUsloviiaPredostavleniiaArgs struct {
+	Key PrimaryCatalogSkidkiNatsenkiUsloviiaPredostavleniia
+}
+type CatalogSkidkiNatsenkiUsloviiaPredostavleniiasArgs struct {
+}
+type CatalogSkidkiNatsenkiTsenovyeGruppyArgs struct {
+	Key PrimaryCatalogSkidkiNatsenkiTsenovyeGruppy
+}
+type CatalogSkidkiNatsenkiTsenovyeGruppysArgs struct {
+}
+type CatalogSkidkiNatsenkiNaborPodarkovArgs struct {
+	Key PrimaryCatalogSkidkiNatsenkiNaborPodarkov
+}
+type CatalogSkidkiNatsenkiNaborPodarkovsArgs struct {
+}
+type CatalogGruppyTsvetovArgs struct {
+	Key PrimaryCatalogGruppyTsvetov
+}
+type CatalogGruppyTsvetovsArgs struct {
+}
+type DocumentDokumentRaschetovSKontragentomArgs struct {
+	Key PrimaryDocumentDokumentRaschetovSKontragentom
+}
+type DocumentDokumentRaschetovSKontragentomsArgs struct {
+}
+type CatalogDogovoryEkvairingaArgs struct {
+	Key PrimaryCatalogDogovoryEkvairinga
+}
+type CatalogDogovoryEkvairingasArgs struct {
+}
+type CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanieArgs struct {
+	Key PrimaryCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie
+}
+type CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivaniesArgs struct {
+}
+type CatalogKachestvoArgs struct {
+	Key PrimaryCatalogKachestvo
+}
+type CatalogKachestvosArgs struct {
+}
+type DocumentUstanovkaTsenNomenklaturyKontragentovArgs struct {
+	Key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentov
+}
+type DocumentUstanovkaTsenNomenklaturyKontragentovsArgs struct {
+}
+type DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsenArgs struct {
+	Key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen
+}
+type DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsensArgs struct {
+}
+type DocumentUstanovkaTsenNomenklaturyKontragentovTovaryArgs struct {
+	Key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTovary
+}
+type DocumentUstanovkaTsenNomenklaturyKontragentovTovarysArgs struct {
+}
+type DocumentProtsentPoterPoDavaltsamArgs struct {
+	Key PrimaryDocumentProtsentPoterPoDavaltsam
+}
+type DocumentProtsentPoterPoDavaltsamsArgs struct {
+}
+type DocumentProtsentPoterPoDavaltsamProtsentyArgs struct {
+	Key PrimaryDocumentProtsentPoterPoDavaltsamProtsenty
+}
+type DocumentProtsentPoterPoDavaltsamProtsentysArgs struct {
+}
+type CatalogTovarnyePozitsiiArgs struct {
+	Key PrimaryCatalogTovarnyePozitsii
+}
+type CatalogTovarnyePozitsiisArgs struct {
+}
+type DocumentPlatezhnoePoruchenieIskhodiashcheeArgs struct {
+	Key PrimaryDocumentPlatezhnoePoruchenieIskhodiashchee
+}
+type DocumentPlatezhnoePoruchenieIskhodiashcheesArgs struct {
+}
+type DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha
+}
+type DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragentaArgs struct {
+	Key PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta
+}
+type DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragentasArgs struct {
+}
+type CatalogfmOrganizatsionnoPravovyeFormyArgs struct {
+	Key PrimaryCatalogfmOrganizatsionnoPravovyeFormy
+}
+type CatalogfmOrganizatsionnoPravovyeFormysArgs struct {
+}
+type CatalogTipyTsenNomenklaturyArgs struct {
+	Key PrimaryCatalogTipyTsenNomenklatury
+}
+type CatalogTipyTsenNomenklaturysArgs struct {
+}
+type CatalogStatiOtchetaPoProdazhamArgs struct {
+	Key PrimaryCatalogStatiOtchetaPoProdazham
+}
+type CatalogStatiOtchetaPoProdazhamsArgs struct {
+}
+type CatalogVidyKodirovokiIzdeliiArgs struct {
+	Key PrimaryCatalogVidyKodirovokiIzdelii
+}
+type CatalogVidyKodirovokiIzdeliisArgs struct {
+}
+type CatalogVidyKodirovokiIzdeliiElementyKodirovkiArgs struct {
+	Key PrimaryCatalogVidyKodirovokiIzdeliiElementyKodirovki
+}
+type CatalogVidyKodirovokiIzdeliiElementyKodirovkisArgs struct {
+}
+type DocumentUstanovkaSkidokNomenklaturyArgs struct {
+	Key PrimaryDocumentUstanovkaSkidokNomenklatury
+}
+type DocumentUstanovkaSkidokNomenklaturysArgs struct {
+}
+type DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeliArgs struct {
+	Key PrimaryDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli
+}
+type DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedelisArgs struct {
+}
+type DocumentUstanovkaSkidokNomenklaturyDiskontnyeKartyArgs struct {
+	Key PrimaryDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty
+}
+type DocumentUstanovkaSkidokNomenklaturyDiskontnyeKartysArgs struct {
+}
+type DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidkiArgs struct {
+	Key PrimaryDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki
+}
+type DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidkisArgs struct {
+}
+type DocumentUstanovkaSkidokNomenklaturyTovaryArgs struct {
+	Key PrimaryDocumentUstanovkaSkidokNomenklaturyTovary
+}
+type DocumentUstanovkaSkidokNomenklaturyTovarysArgs struct {
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokArgs struct {
+	Key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenok
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenoksArgs struct {
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviiaArgs struct {
+	Key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviiasArgs struct {
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateliArgs struct {
+	Key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchatelisArgs struct {
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupkiArgs struct {
+	Key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki
+}
+type CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupkisArgs struct {
+}
+type OutPayArgs struct {
+	Key PrimaryOutPay
+}
+type OutPaysArgs struct {
+}
+type DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezhaArgs struct {
+	Key PrimaryDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha
+}
+type DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezhasArgs struct {
+}
+type DocumentRaskhodnyiKassovyiOrderOplataArgs struct {
+	Key PrimaryDocumentRaskhodnyiKassovyiOrderOplata
+}
+type DocumentRaskhodnyiKassovyiOrderOplatasArgs struct {
+}
+type DocumentRaskhodnyiKassovyiOrderTovaryArgs struct {
+	Key PrimaryDocumentRaskhodnyiKassovyiOrderTovary
+}
+type DocumentRaskhodnyiKassovyiOrderTovarysArgs struct {
+}
+type DocumentSchetNaOplatuPostavshchikaArgs struct {
+	Key PrimaryDocumentSchetNaOplatuPostavshchika
+}
+type DocumentSchetNaOplatuPostavshchikasArgs struct {
+}
+type DocumentSchetNaOplatuPostavshchikaTovaryArgs struct {
+	Key PrimaryDocumentSchetNaOplatuPostavshchikaTovary
+}
+type DocumentSchetNaOplatuPostavshchikaTovarysArgs struct {
+}
+type DocumentSchetNaOplatuPostavshchikaUslugiArgs struct {
+	Key PrimaryDocumentSchetNaOplatuPostavshchikaUslugi
+}
+type DocumentSchetNaOplatuPostavshchikaUslugisArgs struct {
+}
+type DocumentReestrSpetssviazArgs struct {
+	Key PrimaryDocumentReestrSpetssviaz
+}
+type DocumentReestrSpetssviazsArgs struct {
+}
+type DocumentReestrSpetssviazKlientyArgs struct {
+	Key PrimaryDocumentReestrSpetssviazKlienty
+}
+type DocumentReestrSpetssviazKlientysArgs struct {
+}
+type DocumentJournalKassovyeDokumentyArgs struct {
+	Key PrimaryDocumentJournalKassovyeDokumenty
+}
+type DocumentJournalKassovyeDokumentysArgs struct {
+}
+type InitialInstanceArgs struct {
+	Key PrimaryInitialInstance
+}
+type InitialInstancesArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovVzaimoraschetyArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovVzaimoraschety
+}
+type DocumentVvodNachalnykhOstatkovVzaimoraschetysArgs struct {
+}
+type DocumentVvodNachalnykhOstatkovTovaryArgs struct {
+	Key PrimaryDocumentVvodNachalnykhOstatkovTovary
+}
+type DocumentVvodNachalnykhOstatkovTovarysArgs struct {
+}
+type PostingArgs struct {
+	Key PrimaryPosting
+}
+type PostingsArgs struct {
+}
+type DocumentOprikhodovanieTovarovTovaryArgs struct {
+	Key PrimaryDocumentOprikhodovanieTovarovTovary
+}
+type DocumentOprikhodovanieTovarovTovarysArgs struct {
+}
+type DocumentOprikhodovanieTovarovSertifikatyArgs struct {
+	Key PrimaryDocumentOprikhodovanieTovarovSertifikaty
+}
+type DocumentOprikhodovanieTovarovSertifikatysArgs struct {
+}
+type CatalogKomplektyArgs struct {
+	Key PrimaryCatalogKomplekty
+}
+type CatalogKomplektysArgs struct {
+}
+type DocumentPereotsenkaTovarovPriniatykhNaKomissiiuArgs struct {
+	Key PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiu
+}
+type DocumentPereotsenkaTovarovPriniatykhNaKomissiiusArgs struct {
+}
+type DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovaryArgs struct {
+	Key PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary
+}
+type DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovarysArgs struct {
+}
+type DocumentElektronnoePismoArgs struct {
+	Key PrimaryDocumentElektronnoePismo
+}
+type DocumentElektronnoePismosArgs struct {
+}
+type DocumentElektronnoePismoKomuTChArgs struct {
+	Key PrimaryDocumentElektronnoePismoKomuTCh
+}
+type DocumentElektronnoePismoKomuTChsArgs struct {
+}
+type DocumentElektronnoePismoKopiiTChArgs struct {
+	Key PrimaryDocumentElektronnoePismoKopiiTCh
+}
+type DocumentElektronnoePismoKopiiTChsArgs struct {
+}
+type DocumentElektronnoePismoSkrytyeKopiiTChArgs struct {
+	Key PrimaryDocumentElektronnoePismoSkrytyeKopiiTCh
+}
+type DocumentElektronnoePismoSkrytyeKopiiTChsArgs struct {
+}
+type CatalogGruppyDefektovArgs struct {
+	Key PrimaryCatalogGruppyDefektov
+}
+type CatalogGruppyDefektovsArgs struct {
+}
+type CatalogfmAnketaKlientaBenefitsariiaArgs struct {
+	Key PrimaryCatalogfmAnketaKlientaBenefitsariia
+}
+type CatalogfmAnketaKlientaBenefitsariiasArgs struct {
+}
+type CatalogfmAnketaKlientaBenefitsariiaDannyeKontragentaArgs struct {
+	Key PrimaryCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta
+}
+type CatalogfmAnketaKlientaBenefitsariiaDannyeKontragentasArgs struct {
+}
+type CatalogTsenovyeGruppyArgs struct {
+	Key PrimaryCatalogTsenovyeGruppy
+}
+type CatalogTsenovyeGruppysArgs struct {
+}
+type CatalogPravilaTsenoobrazovaniiaArgs struct {
+	Key PrimaryCatalogPravilaTsenoobrazovaniia
+}
+type CatalogPravilaTsenoobrazovaniiasArgs struct {
+}
+type CatalogPravilaTsenoobrazovaniiaTsenovyeGruppyArgs struct {
+	Key PrimaryCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy
+}
+type CatalogPravilaTsenoobrazovaniiaTsenovyeGruppysArgs struct {
+}
+type DocumentObieiavlenieNaVznosNalichnymiArgs struct {
+	Key PrimaryDocumentObieiavlenieNaVznosNalichnymi
+}
+type DocumentObieiavlenieNaVznosNalichnymisArgs struct {
+}
+type CatalogValiutyArgs struct {
+	Key PrimaryCatalogValiuty
+}
+type CatalogValiutysArgs struct {
+}
+type DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuArgs struct {
+	Key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku
+}
+type DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkusArgs struct {
+}
+type DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovaryArgs struct {
+	Key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary
+}
+type DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovarysArgs struct {
+}
+type DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugiArgs struct {
+	Key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi
+}
+type DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugisArgs struct {
+}
+type CatalogKassyKKMArgs struct {
+	Key PrimaryCatalogKassyKKM
+}
+type CatalogKassyKKMsArgs struct {
+}
+type ProbeArgs struct {
+	Key PrimaryProbe
+}
+type ProbesArgs struct {
+}
+type CatalogGruppyDostupaArgs struct {
+	Key PrimaryCatalogGruppyDostupa
+}
+type CatalogGruppyDostupasArgs struct {
+}
+type CatalogGruppyDostupaPolzovateliArgs struct {
+	Key PrimaryCatalogGruppyDostupaPolzovateli
+}
+type CatalogGruppyDostupaPolzovatelisArgs struct {
+}
+type CatalogGruppyDostupaVidyDostupaArgs struct {
+	Key PrimaryCatalogGruppyDostupaVidyDostupa
+}
+type CatalogGruppyDostupaVidyDostupasArgs struct {
+}
+type CatalogGruppyDostupaZnacheniiaDostupaArgs struct {
+	Key PrimaryCatalogGruppyDostupaZnacheniiaDostupa
+}
+type CatalogGruppyDostupaZnacheniiaDostupasArgs struct {
+}
+type CatalogGruppyDostupaDostupPoPodsistemamArgs struct {
+	Key PrimaryCatalogGruppyDostupaDostupPoPodsistemam
+}
+type CatalogGruppyDostupaDostupPoPodsistemamsArgs struct {
+}
+type CatalogVidyKontaktnoiInformatsiiArgs struct {
+	Key PrimaryCatalogVidyKontaktnoiInformatsii
+}
+type CatalogVidyKontaktnoiInformatsiisArgs struct {
+}
+type CatalogNomenklaturnyeGruppyArgs struct {
+	Key PrimaryCatalogNomenklaturnyeGruppy
+}
+type CatalogNomenklaturnyeGruppysArgs struct {
+}
+type DocumentReestrSchetovArgs struct {
+	Key PrimaryDocumentReestrSchetov
+}
+type DocumentReestrSchetovsArgs struct {
+}
+type DocumentReestrSchetovReestrArgs struct {
+	Key PrimaryDocumentReestrSchetovReestr
+}
+type DocumentReestrSchetovReestrsArgs struct {
+}
+type DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu
+}
+type DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiusArgs struct {
+}
+type DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovaryArgs struct {
+	Key PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary
+}
+type DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovarysArgs struct {
+}
+type CatalogKlassifikatorStranMiraArgs struct {
+	Key PrimaryCatalogKlassifikatorStranMira
+}
+type CatalogKlassifikatorStranMirasArgs struct {
+}
+type CatalogKlassifikatorEdinitsIzmereniiaArgs struct {
+	Key PrimaryCatalogKlassifikatorEdinitsIzmereniia
+}
+type CatalogKlassifikatorEdinitsIzmereniiasArgs struct {
+}
+type CatalogNastroikiRMKArgs struct {
+	Key PrimaryCatalogNastroikiRMK
+}
+type CatalogNastroikiRMKsArgs struct {
+}
+type CatalogNastroikiRMKPoriadokPrimeneniiaSkidokArgs struct {
+	Key PrimaryCatalogNastroikiRMKPoriadokPrimeneniiaSkidok
+}
+type CatalogNastroikiRMKPoriadokPrimeneniiaSkidoksArgs struct {
+}
+type CatalogNastroikiRMKSostavNaimenovaniiaArgs struct {
+	Key PrimaryCatalogNastroikiRMKSostavNaimenovaniia
+}
+type CatalogNastroikiRMKSostavNaimenovaniiasArgs struct {
+}
+type CatalogKharakteristikiNomenklaturyArgs struct {
+	Key PrimaryCatalogKharakteristikiNomenklatury
+}
+type CatalogKharakteristikiNomenklaturysArgs struct {
+}
+type CatalogKharakteristikiNomenklaturySpetsifikatsiiaArgs struct {
+	Key PrimaryCatalogKharakteristikiNomenklaturySpetsifikatsiia
+}
+type CatalogKharakteristikiNomenklaturySpetsifikatsiiasArgs struct {
+}
+type DocumentOtborTovarovArgs struct {
+	Key PrimaryDocumentOtborTovarov
+}
+type DocumentOtborTovarovsArgs struct {
+}
+type DocumentOtborTovarovTovaryArgs struct {
+	Key PrimaryDocumentOtborTovarovTovary
+}
+type DocumentOtborTovarovTovarysArgs struct {
+}
+type DocumentOtborTovarovTovaryKOtboruArgs struct {
+	Key PrimaryDocumentOtborTovarovTovaryKOtboru
+}
+type DocumentOtborTovarovTovaryKOtborusArgs struct {
+}
+type CatalogSposobyDostavkiTovaraArgs struct {
+	Key PrimaryCatalogSposobyDostavkiTovara
+}
+type CatalogSposobyDostavkiTovarasArgs struct {
+}
+type CatalogPodrazdeleniiaArgs struct {
+	Key PrimaryCatalogPodrazdeleniia
+}
+type CatalogPodrazdeleniiasArgs struct {
+}
+type DocumentJournalPreiskurantyArgs struct {
+	Key PrimaryDocumentJournalPreiskuranty
+}
+type DocumentJournalPreiskurantysArgs struct {
+}
+type CatalogRelizyIuvelirnykhSalonovArgs struct {
+	Key PrimaryCatalogRelizyIuvelirnykhSalonov
+}
+type CatalogRelizyIuvelirnykhSalonovsArgs struct {
+}
+type CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizyArgs struct {
+	Key PrimaryCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy
+}
+type CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizysArgs struct {
+}
+type DocumentOtchetKomissioneraOProdazhakhArgs struct {
+	Key PrimaryDocumentOtchetKomissioneraOProdazhakh
+}
+type DocumentOtchetKomissioneraOProdazhakhsArgs struct {
+}
+type DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstvaArgs struct {
+	Key PrimaryDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva
+}
+type DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstvasArgs struct {
+}
+type DocumentOtchetKomissioneraOProdazhakhTovaryArgs struct {
+	Key PrimaryDocumentOtchetKomissioneraOProdazhakhTovary
+}
+type DocumentOtchetKomissioneraOProdazhakhTovarysArgs struct {
+}
+type CatalogTovarnyeKategoriiArgs struct {
+	Key PrimaryCatalogTovarnyeKategorii
+}
+type CatalogTovarnyeKategoriisArgs struct {
+}
+type CatalogDokumentyUdostoveriaiushchieLichnostArgs struct {
+	Key PrimaryCatalogDokumentyUdostoveriaiushchieLichnost
+}
+type CatalogDokumentyUdostoveriaiushchieLichnostsArgs struct {
+}
+type CatalogFiltryDliaElektronnykhPisemArgs struct {
+	Key PrimaryCatalogFiltryDliaElektronnykhPisem
+}
+type CatalogFiltryDliaElektronnykhPisemsArgs struct {
+}
+type CatalogFiltryDliaElektronnykhPisemDeistviiaFiltraArgs struct {
+	Key PrimaryCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra
+}
+type CatalogFiltryDliaElektronnykhPisemDeistviiaFiltrasArgs struct {
+}
+type CatalogFiltryDliaElektronnykhPisemUsloviiaFiltraArgs struct {
+	Key PrimaryCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra
+}
+type CatalogFiltryDliaElektronnykhPisemUsloviiaFiltrasArgs struct {
+}
+type DocumentPreiskurantTsenNaTsvKamniArgs struct {
+	Key PrimaryDocumentPreiskurantTsenNaTsvKamni
+}
+type DocumentPreiskurantTsenNaTsvKamnisArgs struct {
+}
+type DocumentPreiskurantTsenNaTsvKamniTablitsaArgs struct {
+	Key PrimaryDocumentPreiskurantTsenNaTsvKamniTablitsa
+}
+type DocumentPreiskurantTsenNaTsvKamniTablitsasArgs struct {
+}
+type SizeArgs struct {
+	Key PrimarySize
+}
+type SizesArgs struct {
+}
+type CatalogTipyDragotsennykhMetallovArgs struct {
+	Key PrimaryCatalogTipyDragotsennykhMetallov
+}
+type CatalogTipyDragotsennykhMetallovsArgs struct {
+}
+type DocumentTelemarketingArgs struct {
+	Key PrimaryDocumentTelemarketing
+}
+type DocumentTelemarketingsArgs struct {
+}
+type DocumentTelemarketingUchastnikiArgs struct {
+	Key PrimaryDocumentTelemarketingUchastniki
+}
+type DocumentTelemarketingUchastnikisArgs struct {
+}
+type DocumentVozvratDavalcheskogoMetallaArgs struct {
+	Key PrimaryDocumentVozvratDavalcheskogoMetalla
+}
+type DocumentVozvratDavalcheskogoMetallasArgs struct {
+}
+type CatalogAdresnyeSokrashcheniiaArgs struct {
+	Key PrimaryCatalogAdresnyeSokrashcheniia
+}
+type CatalogAdresnyeSokrashcheniiasArgs struct {
+}
+type DocumentRassylkaAnketArgs struct {
+	Key PrimaryDocumentRassylkaAnket
+}
+type DocumentRassylkaAnketsArgs struct {
+}
+type DocumentRassylkaAnketVlozheniiaArgs struct {
+	Key PrimaryDocumentRassylkaAnketVlozheniia
+}
+type DocumentRassylkaAnketVlozheniiasArgs struct {
+}
+type DocumentRassylkaAnketPoluchateliArgs struct {
+	Key PrimaryDocumentRassylkaAnketPoluchateli
+}
+type DocumentRassylkaAnketPoluchatelisArgs struct {
+}
+type CatalogVidyDeiatelnostiKontragentovArgs struct {
+	Key PrimaryCatalogVidyDeiatelnostiKontragentov
+}
+type CatalogVidyDeiatelnostiKontragentovsArgs struct {
+}
+type CatalogTorgovoeOborudovanieArgs struct {
+	Key PrimaryCatalogTorgovoeOborudovanie
+}
+type CatalogTorgovoeOborudovaniesArgs struct {
+}
+type CatalogSkhemyRealizatsiiArgs struct {
+	Key PrimaryCatalogSkhemyRealizatsii
+}
+type CatalogSkhemyRealizatsiisArgs struct {
+}
+type CatalogSkhemyRealizatsiiEtapySkhemyArgs struct {
+	Key PrimaryCatalogSkhemyRealizatsiiEtapySkhemy
+}
+type CatalogSkhemyRealizatsiiEtapySkhemysArgs struct {
+}
+type CatalogPodkliuchaemoeOborudovanieArgs struct {
+	Key PrimaryCatalogPodkliuchaemoeOborudovanie
+}
+type CatalogPodkliuchaemoeOborudovaniesArgs struct {
+}
+type DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiArgs struct {
+	Key PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii
+}
+type DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniisArgs struct {
+}
+type DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentovArgs struct {
+	Key PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov
+}
+type DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentovsArgs struct {
+}
+type CatalogGabarityArgs struct {
+	Key PrimaryCatalogGabarity
+}
+type CatalogGabaritysArgs struct {
+}
+type DocumentZakazKlientaArgs struct {
+	Key PrimaryDocumentZakazKlienta
+}
+type DocumentZakazKlientasArgs struct {
+}
+type DocumentZakazKlientaTovaryArgs struct {
+	Key PrimaryDocumentZakazKlientaTovary
+}
+type DocumentZakazKlientaTovarysArgs struct {
+}
+type ArriveFromManufacturingArgs struct {
+	Key PrimaryArriveFromManufacturing
+}
+type ArriveFromManufacturingsArgs struct {
+}
+type ArriveFromManufacturingInstanceArgs struct {
+	Key PrimaryArriveFromManufacturingInstance
+}
+type ArriveFromManufacturingInstancesArgs struct {
+}
+type DocumentPostuplenieProduktsiiIzProizvodstvaMaterialyArgs struct {
+	Key PrimaryDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy
+}
+type DocumentPostuplenieProduktsiiIzProizvodstvaMaterialysArgs struct {
+}
+type DocumentJournalZakazyPostavshchikamArgs struct {
+	Key PrimaryDocumentJournalZakazyPostavshchikam
+}
+type DocumentJournalZakazyPostavshchikamsArgs struct {
+}
+type DocumentJournalSkladskieDokumentyArgs struct {
+	Key PrimaryDocumentJournalSkladskieDokumenty
+}
+type DocumentJournalSkladskieDokumentysArgs struct {
+}
+type CatalogsmsUsloviiaOtboraDiskontnykhKartArgs struct {
+	Key PrimaryCatalogsmsUsloviiaOtboraDiskontnykhKart
+}
+type CatalogsmsUsloviiaOtboraDiskontnykhKartsArgs struct {
+}
+type ArriveArgs struct {
+	Key PrimaryArrive
+}
+type ArrivesArgs struct {
+}
+type DocumentPostuplenieTovarovUslugTovaryArgs struct {
+	Key PrimaryDocumentPostuplenieTovarovUslugTovary
+}
+type DocumentPostuplenieTovarovUslugTovarysArgs struct {
+}
+type DocumentPostuplenieTovarovUslugUslugiArgs struct {
+	Key PrimaryDocumentPostuplenieTovarovUslugUslugi
+}
+type DocumentPostuplenieTovarovUslugUslugisArgs struct {
+}
+type DocumentSchetFakturaVydannyiArgs struct {
+	Key PrimaryDocumentSchetFakturaVydannyi
+}
+type DocumentSchetFakturaVydannyisArgs struct {
+}
+type DocumentPlanProdazhPoSalonamArgs struct {
+	Key PrimaryDocumentPlanProdazhPoSalonam
+}
+type DocumentPlanProdazhPoSalonamsArgs struct {
+}
+type DocumentPlanProdazhPoSalonamSalonyArgs struct {
+	Key PrimaryDocumentPlanProdazhPoSalonamSalony
+}
+type DocumentPlanProdazhPoSalonamSalonysArgs struct {
+}
+type DocumentPlanProdazhPoSalonamDniPoGrafikuArgs struct {
+	Key PrimaryDocumentPlanProdazhPoSalonamDniPoGrafiku
+}
+type DocumentPlanProdazhPoSalonamDniPoGrafikusArgs struct {
+}
+type CatalogBankovskieSchetaArgs struct {
+	Key PrimaryCatalogBankovskieScheta
+}
+type CatalogBankovskieSchetasArgs struct {
+}
+type DocumentStornirovanieOtchetaKomitentuOProdazhakhArgs struct {
+	Key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakh
+}
+type DocumentStornirovanieOtchetaKomitentuOProdazhakhsArgs struct {
+}
+type DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstvaArgs struct {
+	Key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva
+}
+type DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstvasArgs struct {
+}
+type DocumentStornirovanieOtchetaKomitentuOProdazhakhTovaryArgs struct {
+	Key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary
+}
+type DocumentStornirovanieOtchetaKomitentuOProdazhakhTovarysArgs struct {
+}
+type DocumentPeredachaVRemontArgs struct {
+	Key PrimaryDocumentPeredachaVRemont
+}
+type DocumentPeredachaVRemontsArgs struct {
+}
+type DocumentPeredachaVRemontIzdeliiaPriniatyeVRemontArgs struct {
+	Key PrimaryDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont
+}
+type DocumentPeredachaVRemontIzdeliiaPriniatyeVRemontsArgs struct {
+}
+type DocumentPeredachaVRemontTovaryArgs struct {
+	Key PrimaryDocumentPeredachaVRemontTovary
+}
+type DocumentPeredachaVRemontTovarysArgs struct {
+}
+type CatalogPolzovateliArgs struct {
+	Key PrimaryCatalogPolzovateli
+}
+type CatalogPolzovatelisArgs struct {
+}
+type CatalogTsenovyeKoridoryArgs struct {
+	Key PrimaryCatalogTsenovyeKoridory
+}
+type CatalogTsenovyeKoridorysArgs struct {
+}
+type CatalogGruppySkladovArgs struct {
+	Key PrimaryCatalogGruppySkladov
+}
+type CatalogGruppySkladovsArgs struct {
+}
+type CatalogGruppySkladovSkladyArgs struct {
+	Key PrimaryCatalogGruppySkladovSklady
+}
+type CatalogGruppySkladovSkladysArgs struct {
+}

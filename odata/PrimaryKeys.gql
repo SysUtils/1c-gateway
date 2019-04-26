@@ -1,0 +1,2154 @@
+input PrimaryAccumulationRegisterPartiiTovarovVProizvodstve {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterPartiiTovarovVProizvodstveRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVnutrennieZakazy {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVnutrennieZakazyRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKomitenta {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterZakazyKlientov {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterZakazyKlientovRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsa {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiu {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterProdazhiPoDiskontnymKartam {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterProdazhiPoDiskontnymKartamRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryPoluchennye {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryPoluchennyeRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSvobodnyeOstatki {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSvobodnyeOstatkiRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyVRassrochku {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyVRassrochkuRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterGrafikPlatezhei {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterGrafikPlatezheiRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterRoznichnaiaVyruchka {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterRoznichnaiaVyruchkaRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryVPuti {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryVPutiRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterPoteriMetallaVProizvodstve {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterPoteriMetallaVProizvodstveRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterPartiiTovarovNaSkladakh {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryProductActionDocument {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyDokumentovDliaObmena {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyDokumentovDliaObmenaRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstv {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterProdazhiPoStatiam {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterProdazhiPoStatiamRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryInformationRegisterTsenyNomenklatury {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryInformationRegisterTsenyNomenklaturyRecordType {
+	Period: DateTime!
+	TipTsenKey: Guid!
+	SegmentNomenklaturyKey: Guid!
+	ItemKey: Guid!
+	InstanceKey: Guid!
+	KharakteristikaNomenklaturyKey: Guid!
+	SizeKey: Guid!
+}
+input PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerve {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDavalcheskiiMetallPoteri {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDavalcheskiiMetallPoteriRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryInformationRegisterTsenyPoPreiskurantu {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryInformationRegisterTsenyPoPreiskurantuRecordType {
+	Period: DateTime!
+	KamenKey: Guid!
+	FormaOgrankiKey: Guid!
+	TsvetKamniaKey: Guid!
+	GruppaTsvetaKey: Guid!
+	GruppaDefektaKey: Guid!
+	RassevKey: Guid!
+	Razmer1Ot: Double!
+	Razmer1Do: Double!
+}
+input PrimaryAccumulationRegisterTovaryVOtbore {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryVOtboreRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterRealizovannyeTovary {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterRealizovannyeTovaryRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKomissionera {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterProdazhi1 {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterProdazhi1RecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryNaSkladakhAM {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryNaSkladakhAMRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyPoFinmonitoringu {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyPoFinmonitoringuRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryInformationRegisterTsenyNomenklaturyKontragentov {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryInformationRegisterTsenyNomenklaturyKontragentovRecordType {
+	Period: DateTime!
+	TipTsenKey: Guid!
+	ItemKey: Guid!
+	InstanceKey: Guid!
+	KharakteristikaNomenklaturyKey: Guid!
+	SizeKey: Guid!
+}
+input PrimaryAccumulationRegisterVzaimoraschetySKontragentami {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVzaimoraschetySKontragentamiRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartam {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVypolneniePlanaProdazh {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterVypolneniePlanaProdazhRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDavalcheskiiMetall {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDavalcheskiiMetallRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstva {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryPeredannye {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterTovaryPeredannyeRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiu {
+	Recorder: String!
+	RecorderType: String!
+}
+input PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType {
+	Recorder: String!
+	LineNumber: Int64!
+	RecorderType: String!
+}
+input PrimaryCatalogDogovoryKontragentov {
+	Key: Guid!
+}
+input PrimaryOrder {
+	Key: Guid!
+}
+input PrimaryDocumentChekKKMOplata {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMOplataSertifikatami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMProdazhaSertifikatov {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMDokumentyObmena {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMDogovoraRassrochkiProdazha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMDogovoraRassrochkiOplata {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMOplataBallami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMSkidkiNatsenki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMUpravliaemyeSkidki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMPodarki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentChekKKMKupony {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPereotsenkaValiutnykhSredstv {
+	Key: Guid!
+}
+input PrimaryCatalogTipySkidokNatsenok {
+	Key: Guid!
+}
+input PrimaryCatalogTipySkidokNatsenokVremiaPoDniamNedeli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyKodirovokiTsepei {
+	Key: Guid!
+}
+input PrimaryCatalogVidyKodirovokiTsepeiElementyKodirovki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetKomitentuOProdazhakh {
+	Key: Guid!
+}
+input PrimaryDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetKomitentuOProdazhakhTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKassy {
+	Key: Guid!
+}
+input PrimaryCatalogKassiry {
+	Key: Guid!
+}
+input PrimaryDocumentZaiavkaNaPereotsenkuTovarov {
+	Key: Guid!
+}
+input PrimaryDocumentZaiavkaNaPereotsenkuTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogProizvodstvennyeUchastki {
+	Key: Guid!
+}
+input PrimaryDocumentZakrytieZakazovKlientov {
+	Key: Guid!
+}
+input PrimaryDocumentZakrytieZakazovKlientovZakazy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogProekty {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoePoruchenieVkhodiashchee {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVydachaZakaza {
+	Key: Guid!
+}
+input PrimaryCatalogFormyOgranki {
+	Key: Guid!
+}
+input PrimaryCatalogFormatyMagazinov {
+	Key: Guid!
+}
+input PrimaryCatalogRabochieMesta {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiVypolneniiaObmena {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiVypolneniiaObmenaNastroikiObmena {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogZnacheniiaSvoistvObieektov {
+	Key: Guid!
+}
+input PrimaryDocumentRealizatsiiaTovarovUslug {
+	Key: Guid!
+}
+input PrimaryDocumentRealizatsiiaTovarovUslugTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentRealizatsiiaTovarovUslugUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSobytie {
+	Key: Guid!
+}
+input PrimaryDocumentSobytieStoronnieLitsa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVariantyOtvetovOprosov {
+	Key: Guid!
+}
+input PrimaryCatalogGruppyPisemElektronnoiPochty {
+	Key: Guid!
+}
+input PrimaryCatalogGruppyPochtovoiRassylki {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiOtchetov {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiOtchetovGruppyNastroekIPolzovateli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam {
+	Key: Guid!
+}
+input PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDepartment {
+	Key: Guid!
+}
+input PrimaryCatalogKodyVidovTovarov {
+	Key: Guid!
+}
+input PrimaryCatalogRassevy {
+	Key: Guid!
+}
+input PrimaryCatalogPrichinyZakrytiiaZakazov {
+	Key: Guid!
+}
+input PrimaryCatalogSegmentyNomenklatury {
+	Key: Guid!
+}
+input PrimaryCatalogSostavStrokiCheka {
+	Key: Guid!
+}
+input PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiu {
+	Key: Guid!
+}
+input PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei {
+	Key: Guid!
+}
+input PrimaryDocumentKorrektirovkaDolga {
+	Key: Guid!
+}
+input PrimaryDocumentKorrektirovkaDolgaSummyDolga {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryPayType {
+	Key: Guid!
+}
+input PrimaryCatalogKhranilishcheShablonov {
+	Key: Guid!
+}
+input PrimaryDocumentZaiavkaNaRaskhodovanieSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZakrytieZakazovPostavshchikam {
+	Key: Guid!
+}
+input PrimaryDocumentZakrytieZakazovPostavshchikamZakazy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyKamnei {
+	Key: Guid!
+}
+input PrimaryDocumentAnketyKlientovDliaFinMonitoringa {
+	Key: Guid!
+}
+input PrimaryDocumentAnketyKlientovDliaFinMonitoringaAnkety {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogDogovoryRassrochki {
+	Key: Guid!
+}
+input PrimaryCatalogSertifikaty {
+	Key: Guid!
+}
+input PrimaryDocumentPostuplenieDavalcheskogoMetalla {
+	Key: Guid!
+}
+input PrimaryDocumentInkassovoePorucheniePeredannoe {
+	Key: Guid!
+}
+input PrimaryDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogFormulyDliaRascheta {
+	Key: Guid!
+}
+input PrimaryCatalogKupony {
+	Key: Guid!
+}
+input PrimaryCorrecting {
+	Key: Guid!
+}
+input PrimaryDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInternetZakaz {
+	Key: Guid!
+}
+input PrimaryDocumentInternetZakazTovaryInternetZakaza {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInternetZakazTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogRegiony {
+	Key: Guid!
+}
+input PrimarySaleJournal {
+	Key: Guid!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhBonusy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhDokumentyObmena {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBallami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetORoznichnykhProdazhakhKupony {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtmenaSkidokNomenklatury {
+	Key: Guid!
+}
+input PrimaryDocumentOtmenaSkidokNomenklaturyDokumenty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTovarnyeGruppy {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogOrderKey {
+	Key: Guid!
+}
+input PrimaryDocumentKassovyiChekKorrektsii {
+	Key: Guid!
+}
+input PrimaryDocumentKassovyiChekKorrektsiiOplata {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSchetNaOplatuPokupateliu {
+	Key: Guid!
+}
+input PrimaryDocumentSchetNaOplatuPokupateliuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSchetNaOplatuPokupateliuUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiObmenaDannymi {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentJournalBankovskieRaschetnyeDokumenty {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryDocumentZamenaDiskontnoiKarty {
+	Key: Guid!
+}
+input PrimaryReturnToSupplier {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratTovarovPostavshchikuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInventarizatsiiaTovarovNaSklade {
+	Key: Guid!
+}
+input PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInventarizatsiiaTovarovNaSkladeSertifikaty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPrikhodnyiKassovyiOrder {
+	Key: Guid!
+}
+input PrimaryDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPrikhodnyiKassovyiOrderOplata {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPrikhodnyiKassovyiOrderTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogPrichinyVozvrata {
+	Key: Guid!
+}
+input PrimaryDocumentDenezhnyiChek {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratMaterialovIzProizvodstva {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratMaterialovIzProizvodstvaTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiu {
+	Key: Guid!
+}
+input PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSN {
+	Key: Guid!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentGTDImport {
+	Key: Guid!
+}
+input PrimaryDocumentGTDImportRazdely {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentGTDImportTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAktSverki {
+	Key: Guid!
+}
+input PrimaryDocumentAktSverkiTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogFaily {
+	Key: Guid!
+}
+input PrimaryCatalogFailyDopolnitelnyeRekvizity {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogFailySertifikatyShifrovaniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogUchetnyeZapisiElektronnoiPochty {
+	Key: Guid!
+}
+input PrimaryCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPreiskurantTsenNaKamni {
+	Key: Guid!
+}
+input PrimaryPurchase {
+	Key: Guid!
+}
+input PrimaryDocumentSkupkaTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSchetFakturaPoluchennyi {
+	Key: Guid!
+}
+input PrimaryDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAktKhimicheskogoAnalizaMetalla {
+	Key: Guid!
+}
+input PrimaryCatalogfmKartochkaKontragenta {
+	Key: Guid!
+}
+input PrimaryCatalogfmKartochkaKontragentaDannyeKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSpisanieProsrochennykhSertifikatov {
+	Key: Guid!
+}
+input PrimaryDocumentSpisanieProsrochennykhSertifikatovSertifikaty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZakrytieAvansovPoGrafikuPlatezhei {
+	Key: Guid!
+}
+input PrimaryDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTipySistemNalogooblozheniiaKKT {
+	Key: Guid!
+}
+input PrimaryDocumentAkkreditivPeredannyi {
+	Key: Guid!
+}
+input PrimaryDocumentAkkreditivPeredannyiRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAkkreditivPeredannyiRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimarySupplier {
+	Key: Guid!
+}
+input PrimaryCatalogKontragentyVidyDeiatelnosti {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInformatsionnoeSoobshchenie {
+	Key: Guid!
+}
+input PrimaryCatalogVlozheniiaElektronnykhPisem {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoeTrebovanieVystavlennoe {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentMarketingovaiaAktsiia {
+	Key: Guid!
+}
+input PrimaryDocumentMarketingovaiaAktsiiaMagaziny {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentMarketingovaiaAktsiiaSkidkiNatsenki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogStsenariiObmenovDannymi {
+	Key: Guid!
+}
+input PrimaryCatalogStsenariiObmenovDannymiNastroikiObmena {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryItem {
+	Key: Guid!
+}
+input PrimaryCatalogNomenklaturaSostavLigatury {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOpros {
+	Key: Guid!
+}
+input PrimaryDocumentOprosVoprosy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOprosSostavnoiOtvet {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyPoluchateleiSkidki {
+	Key: Guid!
+}
+input PrimaryReassessment {
+	Key: Guid!
+}
+input PrimaryDocumentPereotsenkaTovarovVNTTTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTomaKhraneniiaFailov {
+	Key: Guid!
+}
+input PrimaryDocumentJournalProizvodstvennyeDokumenty {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryDocumentIzmeneniePravDostupa {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikaAssortimentnoiMatritsy {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentJournalDokumentyKontragentov {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryMoveInstance {
+	Key: Guid!
+}
+input PrimaryDocumentPeremeshchenieTovarovSertifikaty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPeremeshchenieTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPeremeshchenieTovarovSpisokZaiavok {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryMemberCard {
+	Key: Guid!
+}
+input PrimaryDocumentABCKlassifikatsiiaPokupatelei {
+	Key: Guid!
+}
+input PrimaryDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogIdentifikatoryObieektovMetadannykh {
+	Key: Guid!
+}
+input PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSklade {
+	Key: Guid!
+}
+input PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentKorrektirovkaRealizatsii {
+	Key: Guid!
+}
+input PrimaryDocumentKorrektirovkaRealizatsiiTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentKorrektirovkaRealizatsiiUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyDefektov {
+	Key: Guid!
+}
+input PrimaryDocumentDoverennost {
+	Key: Guid!
+}
+input PrimaryDocumentDoverennostTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogShablonyZapolneniiaKU {
+	Key: Guid!
+}
+input PrimaryCatalogShablonyZapolneniiaKUPrazdnichnyeDni {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogShablonyZapolneniiaKUKUNaNedeliu {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogShablonyZapolneniiaKUSalony {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlanZapolneniiaVitrin {
+	Key: Guid!
+}
+input PrimaryDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryInstance {
+	Key: Guid!
+}
+input PrimaryReturnToManufacturing {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratProduktsiiVProizvodstvoTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNomeraGTD {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiRabochegoMestaPolzovatelia {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiRabochegoMestaPolzovateliaNastroiki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogsmsShablony {
+	Key: Guid!
+}
+input PrimaryWriteOff {
+	Key: Guid!
+}
+input PrimaryDocumentSpisanieTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSpisanieTovarovSertifikaty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentsmsSoobshchenie {
+	Key: Guid!
+}
+input PrimaryDocumentsmsSoobshcheniePoluchateli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOplataOtPokupateliaPlatezhnoiKartoi {
+	Key: Guid!
+}
+input PrimaryCatalogDragotsennyeKamni {
+	Key: Guid!
+}
+input PrimaryCatalogKalendariPlanirovaniiaProdazh {
+	Key: Guid!
+}
+input PrimaryCatalogKalendariPlanirovaniiaProdazhKUPoDniam {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKalendariPlanirovaniiaProdazhSalony {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKontaktnyeLitsa {
+	Key: Guid!
+}
+input PrimaryCatalogFizicheskieLitsa {
+	Key: Guid!
+}
+input PrimaryCatalogTipovyeAnkety {
+	Key: Guid!
+}
+input PrimaryCatalogTipovyeAnketyVoprosyAnkety {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentNachislenieSpisanieBonusov {
+	Key: Guid!
+}
+input PrimaryDocumentNachislenieSpisanieBonusovDiskontnyeKarty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryType {
+	Key: Guid!
+}
+input PrimaryCatalogfmKodyVidovDokumentov {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoeTrebovaniePoluchennoe {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogRazdelyAnkety {
+	Key: Guid!
+}
+input PrimaryDocumentOtchetPoFinMonitoringu {
+	Key: Guid!
+}
+input PrimaryDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetPoFinMonitoringuDannyeDokumenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKliuchiAnalitikiUchetaNomenklatury {
+	Key: Guid!
+}
+input PrimaryCatalogVersiiFailov {
+	Key: Guid!
+}
+input PrimaryCatalogVersiiFailovElektronnyePodpisi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaTsenNomenklatury {
+	Key: Guid!
+}
+input PrimaryDocumentUstanovkaTsenNomenklaturyTipyTsen {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaTsenNomenklaturyTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPreiskurantNaSkupku {
+	Key: Guid!
+}
+input PrimaryDocumentPreiskurantNaSkupkuProby {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPeredachaMaterialovVProizvodstvo {
+	Key: Guid!
+}
+input PrimaryDocumentPeredachaMaterialovVProizvodstvoTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVnutrenniiZakaz {
+	Key: Guid!
+}
+input PrimaryDocumentVnutrenniiZakazTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKhranilishcheDopolnitelnoiInformatsii {
+	Key: Guid!
+}
+input PrimaryCatalogDopolnitelnyeVneshnieObrabotki {
+	Key: Guid!
+}
+input PrimaryCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogDopolnitelnyeVneshnieObrabotkiKomandy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazdely {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyPolzovatelei {
+	Key: Guid!
+}
+input PrimaryCatalogGruppyPolzovateleiPolzovateliGruppy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentJournalZakazyKlientov {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZaiavkaNaPeremeshchenieTovarov {
+	Key: Guid!
+}
+input PrimaryDocumentZaiavkaNaPeremeshchenieTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogUsloviiaProdazh {
+	Key: Guid!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringu {
+	Key: Guid!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogOrganizatsii {
+	Key: Guid!
+}
+input PrimaryCatalogUsloviiaOplaty {
+	Key: Guid!
+}
+input PrimaryCatalogUsloviiaOplatyTablitsaVyplat {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKategoriiObieektov {
+	Key: Guid!
+}
+input PrimaryCatalogfmZnacheniiaDliaZapolneniia {
+	Key: Guid!
+}
+input PrimaryDocumentUdalitNariadZakaz {
+	Key: Guid!
+}
+input PrimaryDocumentUdalitNariadZakazIzdeliia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUdalitNariadZakazUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUdalitNariadZakazSpetsifikatsiia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUdalitNariadZakazMetally {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUdalitNariadZakazVstavki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogBanki {
+	Key: Guid!
+}
+input PrimaryCatalogRoliKontaktnykhLits {
+	Key: Guid!
+}
+input PrimaryDocumentRestrukturizatsiiaDolga {
+	Key: Guid!
+}
+input PrimaryDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAkkreditivPoluchennyi {
+	Key: Guid!
+}
+input PrimaryDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAkkreditivPoluchennyiRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPriemIzRemonta {
+	Key: Guid!
+}
+input PrimaryDocumentPriemIzRemontaIzdeliia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPriemIzRemontaMaterialy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTsveta {
+	Key: Guid!
+}
+input PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakh {
+	Key: Guid!
+}
+input PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentJournalDavalcheskieDokumenty {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryCatalogfmAnketaKlienta {
+	Key: Guid!
+}
+input PrimaryCatalogfmAnketaKlientaDannyeKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyVzaimoraschetov {
+	Key: Guid!
+}
+input PrimaryDocumentUstanovkaZnacheniiTochkiZakaza {
+	Key: Guid!
+}
+input PrimaryDocumentUstanovkaZnacheniiTochkiZakazaTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogZnacheniiaKodirovki {
+	Key: Guid!
+}
+input PrimaryCatalogPravilaProdazh {
+	Key: Guid!
+}
+input PrimaryCatalogPravilaProdazhTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPostuplenieDopRaskhodov {
+	Key: Guid!
+}
+input PrimaryDocumentPostuplenieDopRaskhodovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKhoziaistvennyeOperatsii {
+	Key: Guid!
+}
+input PrimaryDocumentAvansovyiOtchet {
+	Key: Guid!
+}
+input PrimaryDocumentAvansovyiOtchetVydannyeAvansy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAvansovyiOtchetTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAvansovyiOtchetOplataPostavshchikam {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentAvansovyiOtchetProchee {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogDolzhnostiOrganizatsii {
+	Key: Guid!
+}
+input PrimaryCatalogAnalitikaTipaIzdeliia {
+	Key: Guid!
+}
+input PrimaryCatalogDopolnitelnyePechatnyeFormy {
+	Key: Guid!
+}
+input PrimaryCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryMemberCardsType {
+	Key: Guid!
+}
+input PrimaryDocumentRegistratsiiaNaSaite {
+	Key: Guid!
+}
+input PrimaryCatalogObrabotkiObsluzhivaniiaTO {
+	Key: Guid!
+}
+input PrimaryCatalogObrabotkiObsluzhivaniiaTOModeli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikaIntervalov {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikaIntervalovTablichnaiaChast {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogProfiliGruppDostupa {
+	Key: Guid!
+}
+input PrimaryCatalogProfiliGruppDostupaRoli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogProfiliGruppDostupaVidyDostupa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogProfiliGruppDostupaZnacheniiaDostupa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogProfiliGruppDostupaDostupPoPodsistemam {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiDliaKurera {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiDliaKureraSostavNaimenovaniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTipyTsenNomenklaturyKontragentov {
+	Key: Guid!
+}
+input PrimaryDocumentJournalTsenoobrazovanie {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryCatalogEdinitsyIzmereniia {
+	Key: Guid!
+}
+input PrimaryCatalogStatiDvizheniiaDenezhnykhSredstv {
+	Key: Guid!
+}
+input PrimaryDocumentInkassovoePorucheniePoluchennoe {
+	Key: Guid!
+}
+input PrimaryDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiObmenaDannymiShtrikhM {
+	Key: Guid!
+}
+input PrimaryCatalogStatiZatrat {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratTovarovOtPokupatelia {
+	Key: Guid!
+}
+input PrimaryDocumentVozvratTovarovOtPokupateliaTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVozvratTovarovOtPokupateliaUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentZakazPostavshchiku {
+	Key: Guid!
+}
+input PrimaryDocumentZakazPostavshchikuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogSkidkiNatsenki {
+	Key: Guid!
+}
+input PrimaryCatalogSkidkiNatsenkiUsloviiaPredostavleniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogSkidkiNatsenkiTsenovyeGruppy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogSkidkiNatsenkiNaborPodarkov {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyTsvetov {
+	Key: Guid!
+}
+input PrimaryDocumentDokumentRaschetovSKontragentom {
+	Key: Guid!
+}
+input PrimaryCatalogDogovoryEkvairinga {
+	Key: Guid!
+}
+input PrimaryCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKachestvo {
+	Key: Guid!
+}
+input PrimaryDocumentUstanovkaTsenNomenklaturyKontragentov {
+	Key: Guid!
+}
+input PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentProtsentPoterPoDavaltsam {
+	Key: Guid!
+}
+input PrimaryDocumentProtsentPoterPoDavaltsamProtsenty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTovarnyePozitsii {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoePoruchenieIskhodiashchee {
+	Key: Guid!
+}
+input PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogfmOrganizatsionnoPravovyeFormy {
+	Key: Guid!
+}
+input PrimaryCatalogTipyTsenNomenklatury {
+	Key: Guid!
+}
+input PrimaryCatalogStatiOtchetaPoProdazham {
+	Key: Guid!
+}
+input PrimaryCatalogVidyKodirovokiIzdelii {
+	Key: Guid!
+}
+input PrimaryCatalogVidyKodirovokiIzdeliiElementyKodirovki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaSkidokNomenklatury {
+	Key: Guid!
+}
+input PrimaryDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentUstanovkaSkidokNomenklaturyTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenok {
+	Key: Guid!
+}
+input PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryOutPay {
+	Key: Guid!
+}
+input PrimaryDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentRaskhodnyiKassovyiOrderOplata {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentRaskhodnyiKassovyiOrderTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSchetNaOplatuPostavshchika {
+	Key: Guid!
+}
+input PrimaryDocumentSchetNaOplatuPostavshchikaTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSchetNaOplatuPostavshchikaUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentReestrSpetssviaz {
+	Key: Guid!
+}
+input PrimaryDocumentReestrSpetssviazKlienty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentJournalKassovyeDokumenty {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryInitialInstance {
+	Key: Guid!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovVzaimoraschety {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVvodNachalnykhOstatkovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryPosting {
+	Key: Guid!
+}
+input PrimaryDocumentOprikhodovanieTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOprikhodovanieTovarovSertifikaty {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKomplekty {
+	Key: Guid!
+}
+input PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiu {
+	Key: Guid!
+}
+input PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentElektronnoePismo {
+	Key: Guid!
+}
+input PrimaryDocumentElektronnoePismoKomuTCh {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentElektronnoePismoKopiiTCh {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentElektronnoePismoSkrytyeKopiiTCh {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyDefektov {
+	Key: Guid!
+}
+input PrimaryCatalogfmAnketaKlientaBenefitsariia {
+	Key: Guid!
+}
+input PrimaryCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTsenovyeGruppy {
+	Key: Guid!
+}
+input PrimaryCatalogPravilaTsenoobrazovaniia {
+	Key: Guid!
+}
+input PrimaryCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentObieiavlenieNaVznosNalichnymi {
+	Key: Guid!
+}
+input PrimaryCatalogValiuty {
+	Key: Guid!
+}
+input PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku {
+	Key: Guid!
+}
+input PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKassyKKM {
+	Key: Guid!
+}
+input PrimaryProbe {
+	Key: Guid!
+}
+input PrimaryCatalogGruppyDostupa {
+	Key: Guid!
+}
+input PrimaryCatalogGruppyDostupaPolzovateli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyDostupaVidyDostupa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyDostupaZnacheniiaDostupa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGruppyDostupaDostupPoPodsistemam {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyKontaktnoiInformatsii {
+	Key: Guid!
+}
+input PrimaryCatalogNomenklaturnyeGruppy {
+	Key: Guid!
+}
+input PrimaryDocumentReestrSchetov {
+	Key: Guid!
+}
+input PrimaryDocumentReestrSchetovReestr {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu {
+	Key: Guid!
+}
+input PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKlassifikatorStranMira {
+	Key: Guid!
+}
+input PrimaryCatalogKlassifikatorEdinitsIzmereniia {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiRMK {
+	Key: Guid!
+}
+input PrimaryCatalogNastroikiRMKPoriadokPrimeneniiaSkidok {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogNastroikiRMKSostavNaimenovaniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogKharakteristikiNomenklatury {
+	Key: Guid!
+}
+input PrimaryCatalogKharakteristikiNomenklaturySpetsifikatsiia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtborTovarov {
+	Key: Guid!
+}
+input PrimaryDocumentOtborTovarovTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtborTovarovTovaryKOtboru {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogSposobyDostavkiTovara {
+	Key: Guid!
+}
+input PrimaryCatalogPodrazdeleniia {
+	Key: Guid!
+}
+input PrimaryDocumentJournalPreiskuranty {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryCatalogRelizyIuvelirnykhSalonov {
+	Key: Guid!
+}
+input PrimaryCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetKomissioneraOProdazhakh {
+	Key: Guid!
+}
+input PrimaryDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentOtchetKomissioneraOProdazhakhTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogTovarnyeKategorii {
+	Key: Guid!
+}
+input PrimaryCatalogDokumentyUdostoveriaiushchieLichnost {
+	Key: Guid!
+}
+input PrimaryCatalogFiltryDliaElektronnykhPisem {
+	Key: Guid!
+}
+input PrimaryCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPreiskurantTsenNaTsvKamni {
+	Key: Guid!
+}
+input PrimaryDocumentPreiskurantTsenNaTsvKamniTablitsa {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimarySize {
+	Key: Guid!
+}
+input PrimaryCatalogTipyDragotsennykhMetallov {
+	Key: Guid!
+}
+input PrimaryDocumentTelemarketing {
+	Key: Guid!
+}
+input PrimaryDocumentTelemarketingUchastniki {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentVozvratDavalcheskogoMetalla {
+	Key: Guid!
+}
+input PrimaryCatalogAdresnyeSokrashcheniia {
+	Key: Guid!
+}
+input PrimaryDocumentRassylkaAnket {
+	Key: Guid!
+}
+input PrimaryDocumentRassylkaAnketVlozheniia {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentRassylkaAnketPoluchateli {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogVidyDeiatelnostiKontragentov {
+	Key: Guid!
+}
+input PrimaryCatalogTorgovoeOborudovanie {
+	Key: Guid!
+}
+input PrimaryCatalogSkhemyRealizatsii {
+	Key: Guid!
+}
+input PrimaryCatalogSkhemyRealizatsiiEtapySkhemy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogPodkliuchaemoeOborudovanie {
+	Key: Guid!
+}
+input PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii {
+	Key: Guid!
+}
+input PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogGabarity {
+	Key: Guid!
+}
+input PrimaryDocumentZakazKlienta {
+	Key: Guid!
+}
+input PrimaryDocumentZakazKlientaTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryArriveFromManufacturing {
+	Key: Guid!
+}
+input PrimaryArriveFromManufacturingInstance {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentJournalZakazyPostavshchikam {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryDocumentJournalSkladskieDokumenty {
+	Ref: String!
+	RefType: String!
+}
+input PrimaryCatalogsmsUsloviiaOtboraDiskontnykhKart {
+	Key: Guid!
+}
+input PrimaryArrive {
+	Key: Guid!
+}
+input PrimaryDocumentPostuplenieTovarovUslugTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPostuplenieTovarovUslugUslugi {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentSchetFakturaVydannyi {
+	Key: Guid!
+}
+input PrimaryDocumentPlanProdazhPoSalonam {
+	Key: Guid!
+}
+input PrimaryDocumentPlanProdazhPoSalonamSalony {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPlanProdazhPoSalonamDniPoGrafiku {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogBankovskieScheta {
+	Key: Guid!
+}
+input PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakh {
+	Key: Guid!
+}
+input PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPeredachaVRemont {
+	Key: Guid!
+}
+input PrimaryDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryDocumentPeredachaVRemontTovary {
+	Key: Guid!
+	LineNumber: Int64!
+}
+input PrimaryCatalogPolzovateli {
+	Key: Guid!
+}
+input PrimaryCatalogTsenovyeKoridory {
+	Key: Guid!
+}
+input PrimaryCatalogGruppySkladov {
+	Key: Guid!
+}
+input PrimaryCatalogGruppySkladovSklady {
+	Key: Guid!
+	LineNumber: Int64!
+}
