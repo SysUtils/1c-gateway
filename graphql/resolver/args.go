@@ -9,6 +9,8 @@ func (g *Generator) GenArgs(source []shared.OneCType) string {
 		result += "\n"
 		result += g.GenEntitiesArgs(entity)
 		result += "\n"
+		result += g.GenCreateArgs(entity)
+		result += "\n"
 		result += g.GenRemoveArgs(entity)
 		result += "\n"
 		result += g.GenUpdateArgs(entity)
@@ -34,10 +36,18 @@ func (g *Generator) GenEntitiesArgs(source shared.OneCType) string {
 	return result
 }
 
+func (g *Generator) GenCreateArgs(source shared.OneCType) string {
+	result := ""
+	result += "type " + g.TranslateType(source.Name) + "CreateArgs struct {\n"
+	result += "	Entity " + g.TranslateType(source.Name) + "\n"
+	result += "}"
+	return result
+}
+
 func (g *Generator) GenRemoveArgs(source shared.OneCType) string {
 	result := ""
 	result += "type " + g.TranslateType(source.Name) + "RemoveArgs struct {\n"
-	result += "	Key Primary" + g.TranslateType(source.Name)
+	result += "	Key Primary" + g.TranslateType(source.Name) + "\n"
 	result += "}"
 	return result
 }

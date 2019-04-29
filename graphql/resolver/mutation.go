@@ -16,6 +16,8 @@ func (g *Generator) GenMutation(source shared.OneCType) string {
 	result += g.GenMutationRemove(source)
 	result += "\n"
 	result += g.GenMutationUpdate(source)
+	result += "\n"
+	result += g.GenMutationCreate(source)
 	return result
 }
 
@@ -29,6 +31,12 @@ func (g *Generator) GenMutationRemove(source shared.OneCType) string {
 func (g *Generator) GenMutationUpdate(source shared.OneCType) string {
 	result := "func (r *GqlResolver) Update" + g.TranslateType(source.Name) + "(ctx context.Context, args " + g.TranslateType(source.Name) + "UpdateArgs) (*" + g.TranslateType(source.Name) + ", error) {\n"
 	result += "	return r.Client.Update" + g.TranslateType(source.Name) + "(args.Key, args.Entity)\n"
+	result += "}"
+	return result
+}
+func (g *Generator) GenMutationCreate(source shared.OneCType) string {
+	result := "func (r *GqlResolver) Create" + g.TranslateType(source.Name) + "(ctx context.Context, args " + g.TranslateType(source.Name) + "CreateArgs) (*" + g.TranslateType(source.Name) + ", error) {\n"
+	result += "	return r.Client.Create" + g.TranslateType(source.Name) + "(args.Entity)\n"
 	result += "}"
 	return result
 }

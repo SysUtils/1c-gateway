@@ -15,6 +15,7 @@ func (g *Generator) GenMutations(source []shared.OneCType) string {
 
 func (g *Generator) GenMutation(source shared.OneCType) string {
 	result := ""
+	result += "	Create" + g.TranslateType(source.Name) + "(Entity: " + g.TranslateType(source.Name) + "Input!): " + g.TranslateType(source.Name) + "\n"
 	result += "	Update" + g.TranslateType(source.Name) + "(Key: Primary" + g.TranslateType(source.Name) + "!," + "Entity: " + g.TranslateType(source.Name) + "Input!): " + g.TranslateType(source.Name) + "\n"
 	result += "	Remove" + g.TranslateType(source.Name) + "(Key: Primary" + g.TranslateType(source.Name) + "!): Boolean!"
 	return result
