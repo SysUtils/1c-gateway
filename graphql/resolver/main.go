@@ -2,7 +2,6 @@ package resolver
 
 import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
-	"log"
 	"os"
 )
 
@@ -17,18 +16,12 @@ func NewGenerator(schema shared.Schema) *Generator {
 }
 
 func (g *Generator) Start() {
-	f, err := os.Create("odata/Resolver_args.go")
-	if err != nil {
-		log.Fatal(err)
-	}
+	f, _ := os.Create("odata/Resolver_args.go")
 	f.WriteString("package odata\n\n")
 	f.WriteString(g.GenArgs(g.schema.Entities))
 	f.Close()
 
-	f, err = os.Create("odata/Resolver.go")
-	if err != nil {
-		log.Fatal(err)
-	}
+	f, _ = os.Create("odata/Resolver.go")
 	f.WriteString(`package odata
 import "context"
 
@@ -38,5 +31,10 @@ type GqlResolver struct {
 
 `)
 	f.WriteString(g.GenResolvers(g.schema.Entities))
+	f.Close()
+
+	f, _ = os.Create("odata/Resolver_filter.go")
+	f.WriteString("package odata\n\n")
+	f.WriteString(g.GenFilters(g.schema.Entities))
 	f.Close()
 }

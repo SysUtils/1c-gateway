@@ -45,4 +45,10 @@ func (g *Generator) Start() {
 	f.WriteString(g.GenQueries(g.schema.Entities))
 	f.Close()
 
+	f, err = os.Create("odata/Filters.gql")
+	f.WriteString(g.GenFilters(g.schema.Entities))
+	f.WriteString("\n")
+	f.WriteString(g.GenFilters(g.schema.Complexes))
+	f.Close()
+
 }

@@ -72,7 +72,7 @@ func (g *Generator) GenRead(source shared.OneCType) string {
 	result := fmt.Sprintf("func (c *Client) %s(key Primary%s, fields []string) (*%s, error) {\n", g.TranslateType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name))
 	result += fmt.Sprintf(`	return New%s(c.getEntity(key, fields))`+"\n", g.TranslateType(source.Name))
 	result += "}\n"
-	result += fmt.Sprintf(`func (c *Client) %ss(where Where) ([]%s, error) {
+	result += fmt.Sprintf(`func (c *Client) %ss(where Where) (*[]%s, error) {
 	type ReturnObj struct {
 		Value []%s `+"`"+`json:"value"`+"`"+`
 	}
@@ -88,7 +88,7 @@ func (g *Generator) GenRead(source shared.OneCType) string {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }`, g.TranslateType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name), source.Name)
 	return result
 }

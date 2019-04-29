@@ -17,6 +17,10 @@ func (t *Int16) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case int:
 		*t = Int16(input)
+	case int32:
+		*t = Int16(input)
+	case int64:
+		*t = Int16(input)
 	case string:
 		val, err := strconv.Atoi(strings.Trim(input, `"`))
 		if err != nil {

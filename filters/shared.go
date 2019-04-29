@@ -25,6 +25,6 @@ func (f Filter) Or(f1 *Filter) *Filter {
 	return &Filter{f.ToString() + " or " + f1.ToString()}
 }
 
-func (f Filter) AntNot(f1 *Filter) *Filter {
+func (f Filter) AndNot(f1 *Filter) *Filter {
 	return &Filter{f.ToString() + " and not " + f1.ToString()}
 }

@@ -11,8 +11,8 @@ type IFilter interface {
 }
 
 type Where struct {
-	Top     int
-	Skip    int
+	Top     int32
+	Skip    int32
 	Filter  IFilter
 	Orderby string
 	Fields  []string

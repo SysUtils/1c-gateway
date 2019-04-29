@@ -23,8 +23,17 @@ func (g *Generator) GenEntityResolver(source shared.OneCType) string {
 
 func (g *Generator) GenEntitiesResolver(source shared.OneCType) string {
 	result := ""
-	result += "func (r *GqlResolver) " + g.TranslateType(source.Name) + "s() (*" + g.TranslateType(source.Name) + ", error) {\n"
-	result += "	return nil, nil\n"
+	result += "func (r *GqlResolver) " + g.TranslateType(source.Name) + "s(ctx context.Context, args " + g.TranslateType(source.Name) + "sArgs) (*[]" + g.TranslateType(source.Name) + ", error) {\n"
+	result += "	if args.BaseWhere != nil {\n"
+	result += "		if args.Filter != nil {\n"
+	result += "			args.BaseWhere.Filter = *args.Filter\n"
+	result += "		}\n"
+	result += "		return r.Client." + g.TranslateType(source.Name) + "s(*args.BaseWhere)\n"
+	result += "	}\n"
+	result += "	if args.Filter != nil {\n"
+	result += "		return r.Client." + g.TranslateType(source.Name) + "s(Where {Filter: *args.Filter})\n"
+	result += "	}\n"
+	result += "	return r.Client." + g.TranslateType(source.Name) + "s(Where {})\n"
 	result += "}"
 	return result
 }

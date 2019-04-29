@@ -1,0 +1,17 @@
+input BaseWhere {
+	Top: Int!
+	Skip: Int!
+	Orderby: String!
+}
+
+scalar String
+scalar Int
+scalar Int16
+scalar Int64
+scalar Double
+scalar Float
+scalar DateTime
+scalar Binary
+scalar Stream
+scalar Boolean
+scalar Guid

@@ -28,7 +28,7 @@ func (c *Client) CreateAccumulationRegisterPartiiTovarovVProizvodstve(entity Acc
 func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstve(key PrimaryAccumulationRegisterPartiiTovarovVProizvodstve, fields []string) (*AccumulationRegisterPartiiTovarovVProizvodstve, error) {
 	return NewAccumulationRegisterPartiiTovarovVProizvodstve(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstves(where Where) ([]AccumulationRegisterPartiiTovarovVProizvodstve, error) {
+func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstves(where Where) (*[]AccumulationRegisterPartiiTovarovVProizvodstve, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterPartiiTovarovVProizvodstve `json:"value"`
 	}
@@ -44,7 +44,7 @@ func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstves(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterPartiiTovarovVProizvodstve(key PrimaryAccumulationRegisterPartiiTovarovVProizvodstve, entity AccumulationRegisterPartiiTovarovVProizvodstve) (*AccumulationRegisterPartiiTovarovVProizvodstve, error) {
 	return NewAccumulationRegisterPartiiTovarovVProizvodstve(c.updateEntity(key, entity))
@@ -100,7 +100,7 @@ func (c *Client) CreateAccumulationRegisterPartiiTovarovVProizvodstveRecordType(
 func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstveRecordType(key PrimaryAccumulationRegisterPartiiTovarovVProizvodstveRecordType, fields []string) (*AccumulationRegisterPartiiTovarovVProizvodstveRecordType, error) {
 	return NewAccumulationRegisterPartiiTovarovVProizvodstveRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstveRecordTypes(where Where) ([]AccumulationRegisterPartiiTovarovVProizvodstveRecordType, error) {
+func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstveRecordTypes(where Where) (*[]AccumulationRegisterPartiiTovarovVProizvodstveRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterPartiiTovarovVProizvodstveRecordType `json:"value"`
 	}
@@ -116,7 +116,7 @@ func (c *Client) AccumulationRegisterPartiiTovarovVProizvodstveRecordTypes(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterPartiiTovarovVProizvodstveRecordType(key PrimaryAccumulationRegisterPartiiTovarovVProizvodstveRecordType, entity AccumulationRegisterPartiiTovarovVProizvodstveRecordType) (*AccumulationRegisterPartiiTovarovVProizvodstveRecordType, error) {
 	return NewAccumulationRegisterPartiiTovarovVProizvodstveRecordType(c.updateEntity(key, entity))
@@ -151,7 +151,7 @@ func (c *Client) CreateAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami(e
 func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami(key PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami, fields []string) (*AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami, error) {
 	return NewAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamis(where Where) ([]AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami, error) {
+func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamis(where Where) (*[]AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami `json:"value"`
 	}
@@ -167,7 +167,7 @@ func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamis(where 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami(key PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami, entity AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami) (*AccumulationRegisterVzaimoraschetySPodotchetnymiLitsami, error) {
 	return NewAccumulationRegisterVzaimoraschetySPodotchetnymiLitsami(c.updateEntity(key, entity))
@@ -211,7 +211,7 @@ func (c *Client) CreateAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRe
 func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType(key PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType, fields []string) (*AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType, error) {
 	return NewAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordTypes(where Where) ([]AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType, error) {
+func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordTypes(where Where) (*[]AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType `json:"value"`
 	}
@@ -227,7 +227,7 @@ func (c *Client) AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordTy
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType(key PrimaryAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType, entity AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType) (*AccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType, error) {
 	return NewAccumulationRegisterVzaimoraschetySPodotchetnymiLitsamiRecordType(c.updateEntity(key, entity))
@@ -262,7 +262,7 @@ func (c *Client) CreateAccumulationRegisterVnutrennieZakazy(entity AccumulationR
 func (c *Client) AccumulationRegisterVnutrennieZakazy(key PrimaryAccumulationRegisterVnutrennieZakazy, fields []string) (*AccumulationRegisterVnutrennieZakazy, error) {
 	return NewAccumulationRegisterVnutrennieZakazy(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVnutrennieZakazys(where Where) ([]AccumulationRegisterVnutrennieZakazy, error) {
+func (c *Client) AccumulationRegisterVnutrennieZakazys(where Where) (*[]AccumulationRegisterVnutrennieZakazy, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVnutrennieZakazy `json:"value"`
 	}
@@ -278,7 +278,7 @@ func (c *Client) AccumulationRegisterVnutrennieZakazys(where Where) ([]Accumulat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVnutrennieZakazy(key PrimaryAccumulationRegisterVnutrennieZakazy, entity AccumulationRegisterVnutrennieZakazy) (*AccumulationRegisterVnutrennieZakazy, error) {
 	return NewAccumulationRegisterVnutrennieZakazy(c.updateEntity(key, entity))
@@ -326,7 +326,7 @@ func (c *Client) CreateAccumulationRegisterVnutrennieZakazyRecordType(entity Acc
 func (c *Client) AccumulationRegisterVnutrennieZakazyRecordType(key PrimaryAccumulationRegisterVnutrennieZakazyRecordType, fields []string) (*AccumulationRegisterVnutrennieZakazyRecordType, error) {
 	return NewAccumulationRegisterVnutrennieZakazyRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVnutrennieZakazyRecordTypes(where Where) ([]AccumulationRegisterVnutrennieZakazyRecordType, error) {
+func (c *Client) AccumulationRegisterVnutrennieZakazyRecordTypes(where Where) (*[]AccumulationRegisterVnutrennieZakazyRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVnutrennieZakazyRecordType `json:"value"`
 	}
@@ -342,7 +342,7 @@ func (c *Client) AccumulationRegisterVnutrennieZakazyRecordTypes(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVnutrennieZakazyRecordType(key PrimaryAccumulationRegisterVnutrennieZakazyRecordType, entity AccumulationRegisterVnutrennieZakazyRecordType) (*AccumulationRegisterVnutrennieZakazyRecordType, error) {
 	return NewAccumulationRegisterVnutrennieZakazyRecordType(c.updateEntity(key, entity))
@@ -377,7 +377,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKomitenta(entity Acc
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitenta(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomitenta, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKomitenta, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomitenta(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentas(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKomitenta, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentas(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKomitenta, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKomitenta `json:"value"`
 	}
@@ -393,7 +393,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentas(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKomitenta(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomitenta, entity AccumulationRegisterDenezhnyeSredstvaKomitenta) (*AccumulationRegisterDenezhnyeSredstvaKomitenta, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomitenta(c.updateEntity(key, entity))
@@ -436,7 +436,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType(
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentaRecordTypes(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentaRecordTypes(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType `json:"value"`
 	}
@@ -452,7 +452,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomitentaRecordTypes(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType, entity AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType) (*AccumulationRegisterDenezhnyeSredstvaKomitentaRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomitentaRecordType(c.updateEntity(key, entity))
@@ -487,7 +487,7 @@ func (c *Client) CreateAccumulationRegisterZakazyKlientov(entity AccumulationReg
 func (c *Client) AccumulationRegisterZakazyKlientov(key PrimaryAccumulationRegisterZakazyKlientov, fields []string) (*AccumulationRegisterZakazyKlientov, error) {
 	return NewAccumulationRegisterZakazyKlientov(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterZakazyKlientovs(where Where) ([]AccumulationRegisterZakazyKlientov, error) {
+func (c *Client) AccumulationRegisterZakazyKlientovs(where Where) (*[]AccumulationRegisterZakazyKlientov, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterZakazyKlientov `json:"value"`
 	}
@@ -503,7 +503,7 @@ func (c *Client) AccumulationRegisterZakazyKlientovs(where Where) ([]Accumulatio
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterZakazyKlientov(key PrimaryAccumulationRegisterZakazyKlientov, entity AccumulationRegisterZakazyKlientov) (*AccumulationRegisterZakazyKlientov, error) {
 	return NewAccumulationRegisterZakazyKlientov(c.updateEntity(key, entity))
@@ -550,7 +550,7 @@ func (c *Client) CreateAccumulationRegisterZakazyKlientovRecordType(entity Accum
 func (c *Client) AccumulationRegisterZakazyKlientovRecordType(key PrimaryAccumulationRegisterZakazyKlientovRecordType, fields []string) (*AccumulationRegisterZakazyKlientovRecordType, error) {
 	return NewAccumulationRegisterZakazyKlientovRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterZakazyKlientovRecordTypes(where Where) ([]AccumulationRegisterZakazyKlientovRecordType, error) {
+func (c *Client) AccumulationRegisterZakazyKlientovRecordTypes(where Where) (*[]AccumulationRegisterZakazyKlientovRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterZakazyKlientovRecordType `json:"value"`
 	}
@@ -566,7 +566,7 @@ func (c *Client) AccumulationRegisterZakazyKlientovRecordTypes(where Where) ([]A
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterZakazyKlientovRecordType(key PrimaryAccumulationRegisterZakazyKlientovRecordType, entity AccumulationRegisterZakazyKlientovRecordType) (*AccumulationRegisterZakazyKlientovRecordType, error) {
 	return NewAccumulationRegisterZakazyKlientovRecordType(c.updateEntity(key, entity))
@@ -601,7 +601,7 @@ func (c *Client) CreateAccumulationRegisterSummyPoFinmonitoringuRoznitsa(entity 
 func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsa(key PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsa, fields []string) (*AccumulationRegisterSummyPoFinmonitoringuRoznitsa, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringuRoznitsa(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsas(where Where) ([]AccumulationRegisterSummyPoFinmonitoringuRoznitsa, error) {
+func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsas(where Where) (*[]AccumulationRegisterSummyPoFinmonitoringuRoznitsa, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyPoFinmonitoringuRoznitsa `json:"value"`
 	}
@@ -617,7 +617,7 @@ func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsas(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyPoFinmonitoringuRoznitsa(key PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsa, entity AccumulationRegisterSummyPoFinmonitoringuRoznitsa) (*AccumulationRegisterSummyPoFinmonitoringuRoznitsa, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringuRoznitsa(c.updateEntity(key, entity))
@@ -659,7 +659,7 @@ func (c *Client) CreateAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordTy
 func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType(key PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType, fields []string) (*AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordTypes(where Where) ([]AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType, error) {
+func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordTypes(where Where) (*[]AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType `json:"value"`
 	}
@@ -675,7 +675,7 @@ func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordTypes(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType(key PrimaryAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType, entity AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType) (*AccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringuRoznitsaRecordType(c.updateEntity(key, entity))
@@ -710,7 +710,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKPolucheniiu(entity 
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniiu(key PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiu, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKPolucheniiu, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKPolucheniiu(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniius(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKPolucheniiu, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniius(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKPolucheniiu, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKPolucheniiu `json:"value"`
 	}
@@ -726,7 +726,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniius(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKPolucheniiu(key PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiu, entity AccumulationRegisterDenezhnyeSredstvaKPolucheniiu) (*AccumulationRegisterDenezhnyeSredstvaKPolucheniiu, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKPolucheniiu(c.updateEntity(key, entity))
@@ -772,7 +772,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordTy
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordTypes(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordTypes(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType `json:"value"`
 	}
@@ -788,7 +788,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordTypes(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType, entity AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType) (*AccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKPolucheniiuRecordType(c.updateEntity(key, entity))
@@ -823,7 +823,7 @@ func (c *Client) CreateAccumulationRegisterProdazhiPoDiskontnymKartam(entity Acc
 func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartam(key PrimaryAccumulationRegisterProdazhiPoDiskontnymKartam, fields []string) (*AccumulationRegisterProdazhiPoDiskontnymKartam, error) {
 	return NewAccumulationRegisterProdazhiPoDiskontnymKartam(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartams(where Where) ([]AccumulationRegisterProdazhiPoDiskontnymKartam, error) {
+func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartams(where Where) (*[]AccumulationRegisterProdazhiPoDiskontnymKartam, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterProdazhiPoDiskontnymKartam `json:"value"`
 	}
@@ -839,7 +839,7 @@ func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartams(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterProdazhiPoDiskontnymKartam(key PrimaryAccumulationRegisterProdazhiPoDiskontnymKartam, entity AccumulationRegisterProdazhiPoDiskontnymKartam) (*AccumulationRegisterProdazhiPoDiskontnymKartam, error) {
 	return NewAccumulationRegisterProdazhiPoDiskontnymKartam(c.updateEntity(key, entity))
@@ -886,7 +886,7 @@ func (c *Client) CreateAccumulationRegisterProdazhiPoDiskontnymKartamRecordType(
 func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartamRecordType(key PrimaryAccumulationRegisterProdazhiPoDiskontnymKartamRecordType, fields []string) (*AccumulationRegisterProdazhiPoDiskontnymKartamRecordType, error) {
 	return NewAccumulationRegisterProdazhiPoDiskontnymKartamRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartamRecordTypes(where Where) ([]AccumulationRegisterProdazhiPoDiskontnymKartamRecordType, error) {
+func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartamRecordTypes(where Where) (*[]AccumulationRegisterProdazhiPoDiskontnymKartamRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterProdazhiPoDiskontnymKartamRecordType `json:"value"`
 	}
@@ -902,7 +902,7 @@ func (c *Client) AccumulationRegisterProdazhiPoDiskontnymKartamRecordTypes(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterProdazhiPoDiskontnymKartamRecordType(key PrimaryAccumulationRegisterProdazhiPoDiskontnymKartamRecordType, entity AccumulationRegisterProdazhiPoDiskontnymKartamRecordType) (*AccumulationRegisterProdazhiPoDiskontnymKartamRecordType, error) {
 	return NewAccumulationRegisterProdazhiPoDiskontnymKartamRecordType(c.updateEntity(key, entity))
@@ -937,7 +937,7 @@ func (c *Client) CreateAccumulationRegisterTovaryPoluchennye(entity Accumulation
 func (c *Client) AccumulationRegisterTovaryPoluchennye(key PrimaryAccumulationRegisterTovaryPoluchennye, fields []string) (*AccumulationRegisterTovaryPoluchennye, error) {
 	return NewAccumulationRegisterTovaryPoluchennye(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryPoluchennyes(where Where) ([]AccumulationRegisterTovaryPoluchennye, error) {
+func (c *Client) AccumulationRegisterTovaryPoluchennyes(where Where) (*[]AccumulationRegisterTovaryPoluchennye, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryPoluchennye `json:"value"`
 	}
@@ -953,7 +953,7 @@ func (c *Client) AccumulationRegisterTovaryPoluchennyes(where Where) ([]Accumula
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryPoluchennye(key PrimaryAccumulationRegisterTovaryPoluchennye, entity AccumulationRegisterTovaryPoluchennye) (*AccumulationRegisterTovaryPoluchennye, error) {
 	return NewAccumulationRegisterTovaryPoluchennye(c.updateEntity(key, entity))
@@ -1001,7 +1001,7 @@ func (c *Client) CreateAccumulationRegisterTovaryPoluchennyeRecordType(entity Ac
 func (c *Client) AccumulationRegisterTovaryPoluchennyeRecordType(key PrimaryAccumulationRegisterTovaryPoluchennyeRecordType, fields []string) (*AccumulationRegisterTovaryPoluchennyeRecordType, error) {
 	return NewAccumulationRegisterTovaryPoluchennyeRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryPoluchennyeRecordTypes(where Where) ([]AccumulationRegisterTovaryPoluchennyeRecordType, error) {
+func (c *Client) AccumulationRegisterTovaryPoluchennyeRecordTypes(where Where) (*[]AccumulationRegisterTovaryPoluchennyeRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryPoluchennyeRecordType `json:"value"`
 	}
@@ -1017,7 +1017,7 @@ func (c *Client) AccumulationRegisterTovaryPoluchennyeRecordTypes(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryPoluchennyeRecordType(key PrimaryAccumulationRegisterTovaryPoluchennyeRecordType, entity AccumulationRegisterTovaryPoluchennyeRecordType) (*AccumulationRegisterTovaryPoluchennyeRecordType, error) {
 	return NewAccumulationRegisterTovaryPoluchennyeRecordType(c.updateEntity(key, entity))
@@ -1052,7 +1052,7 @@ func (c *Client) CreateAccumulationRegisterSvobodnyeOstatki(entity AccumulationR
 func (c *Client) AccumulationRegisterSvobodnyeOstatki(key PrimaryAccumulationRegisterSvobodnyeOstatki, fields []string) (*AccumulationRegisterSvobodnyeOstatki, error) {
 	return NewAccumulationRegisterSvobodnyeOstatki(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSvobodnyeOstatkis(where Where) ([]AccumulationRegisterSvobodnyeOstatki, error) {
+func (c *Client) AccumulationRegisterSvobodnyeOstatkis(where Where) (*[]AccumulationRegisterSvobodnyeOstatki, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSvobodnyeOstatki `json:"value"`
 	}
@@ -1068,7 +1068,7 @@ func (c *Client) AccumulationRegisterSvobodnyeOstatkis(where Where) ([]Accumulat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSvobodnyeOstatki(key PrimaryAccumulationRegisterSvobodnyeOstatki, entity AccumulationRegisterSvobodnyeOstatki) (*AccumulationRegisterSvobodnyeOstatki, error) {
 	return NewAccumulationRegisterSvobodnyeOstatki(c.updateEntity(key, entity))
@@ -1111,7 +1111,7 @@ func (c *Client) CreateAccumulationRegisterSvobodnyeOstatkiRecordType(entity Acc
 func (c *Client) AccumulationRegisterSvobodnyeOstatkiRecordType(key PrimaryAccumulationRegisterSvobodnyeOstatkiRecordType, fields []string) (*AccumulationRegisterSvobodnyeOstatkiRecordType, error) {
 	return NewAccumulationRegisterSvobodnyeOstatkiRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSvobodnyeOstatkiRecordTypes(where Where) ([]AccumulationRegisterSvobodnyeOstatkiRecordType, error) {
+func (c *Client) AccumulationRegisterSvobodnyeOstatkiRecordTypes(where Where) (*[]AccumulationRegisterSvobodnyeOstatkiRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSvobodnyeOstatkiRecordType `json:"value"`
 	}
@@ -1127,7 +1127,7 @@ func (c *Client) AccumulationRegisterSvobodnyeOstatkiRecordTypes(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSvobodnyeOstatkiRecordType(key PrimaryAccumulationRegisterSvobodnyeOstatkiRecordType, entity AccumulationRegisterSvobodnyeOstatkiRecordType) (*AccumulationRegisterSvobodnyeOstatkiRecordType, error) {
 	return NewAccumulationRegisterSvobodnyeOstatkiRecordType(c.updateEntity(key, entity))
@@ -1162,7 +1162,7 @@ func (c *Client) CreateAccumulationRegisterSummyVRassrochku(entity AccumulationR
 func (c *Client) AccumulationRegisterSummyVRassrochku(key PrimaryAccumulationRegisterSummyVRassrochku, fields []string) (*AccumulationRegisterSummyVRassrochku, error) {
 	return NewAccumulationRegisterSummyVRassrochku(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyVRassrochkus(where Where) ([]AccumulationRegisterSummyVRassrochku, error) {
+func (c *Client) AccumulationRegisterSummyVRassrochkus(where Where) (*[]AccumulationRegisterSummyVRassrochku, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyVRassrochku `json:"value"`
 	}
@@ -1178,7 +1178,7 @@ func (c *Client) AccumulationRegisterSummyVRassrochkus(where Where) ([]Accumulat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyVRassrochku(key PrimaryAccumulationRegisterSummyVRassrochku, entity AccumulationRegisterSummyVRassrochku) (*AccumulationRegisterSummyVRassrochku, error) {
 	return NewAccumulationRegisterSummyVRassrochku(c.updateEntity(key, entity))
@@ -1221,7 +1221,7 @@ func (c *Client) CreateAccumulationRegisterSummyVRassrochkuRecordType(entity Acc
 func (c *Client) AccumulationRegisterSummyVRassrochkuRecordType(key PrimaryAccumulationRegisterSummyVRassrochkuRecordType, fields []string) (*AccumulationRegisterSummyVRassrochkuRecordType, error) {
 	return NewAccumulationRegisterSummyVRassrochkuRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyVRassrochkuRecordTypes(where Where) ([]AccumulationRegisterSummyVRassrochkuRecordType, error) {
+func (c *Client) AccumulationRegisterSummyVRassrochkuRecordTypes(where Where) (*[]AccumulationRegisterSummyVRassrochkuRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyVRassrochkuRecordType `json:"value"`
 	}
@@ -1237,7 +1237,7 @@ func (c *Client) AccumulationRegisterSummyVRassrochkuRecordTypes(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyVRassrochkuRecordType(key PrimaryAccumulationRegisterSummyVRassrochkuRecordType, entity AccumulationRegisterSummyVRassrochkuRecordType) (*AccumulationRegisterSummyVRassrochkuRecordType, error) {
 	return NewAccumulationRegisterSummyVRassrochkuRecordType(c.updateEntity(key, entity))
@@ -1272,7 +1272,7 @@ func (c *Client) CreateAccumulationRegisterGrafikPlatezhei(entity AccumulationRe
 func (c *Client) AccumulationRegisterGrafikPlatezhei(key PrimaryAccumulationRegisterGrafikPlatezhei, fields []string) (*AccumulationRegisterGrafikPlatezhei, error) {
 	return NewAccumulationRegisterGrafikPlatezhei(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterGrafikPlatezheis(where Where) ([]AccumulationRegisterGrafikPlatezhei, error) {
+func (c *Client) AccumulationRegisterGrafikPlatezheis(where Where) (*[]AccumulationRegisterGrafikPlatezhei, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterGrafikPlatezhei `json:"value"`
 	}
@@ -1288,7 +1288,7 @@ func (c *Client) AccumulationRegisterGrafikPlatezheis(where Where) ([]Accumulati
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterGrafikPlatezhei(key PrimaryAccumulationRegisterGrafikPlatezhei, entity AccumulationRegisterGrafikPlatezhei) (*AccumulationRegisterGrafikPlatezhei, error) {
 	return NewAccumulationRegisterGrafikPlatezhei(c.updateEntity(key, entity))
@@ -1338,7 +1338,7 @@ func (c *Client) CreateAccumulationRegisterGrafikPlatezheiRecordType(entity Accu
 func (c *Client) AccumulationRegisterGrafikPlatezheiRecordType(key PrimaryAccumulationRegisterGrafikPlatezheiRecordType, fields []string) (*AccumulationRegisterGrafikPlatezheiRecordType, error) {
 	return NewAccumulationRegisterGrafikPlatezheiRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterGrafikPlatezheiRecordTypes(where Where) ([]AccumulationRegisterGrafikPlatezheiRecordType, error) {
+func (c *Client) AccumulationRegisterGrafikPlatezheiRecordTypes(where Where) (*[]AccumulationRegisterGrafikPlatezheiRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterGrafikPlatezheiRecordType `json:"value"`
 	}
@@ -1354,7 +1354,7 @@ func (c *Client) AccumulationRegisterGrafikPlatezheiRecordTypes(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterGrafikPlatezheiRecordType(key PrimaryAccumulationRegisterGrafikPlatezheiRecordType, entity AccumulationRegisterGrafikPlatezheiRecordType) (*AccumulationRegisterGrafikPlatezheiRecordType, error) {
 	return NewAccumulationRegisterGrafikPlatezheiRecordType(c.updateEntity(key, entity))
@@ -1389,7 +1389,7 @@ func (c *Client) CreateAccumulationRegisterRoznichnaiaVyruchka(entity Accumulati
 func (c *Client) AccumulationRegisterRoznichnaiaVyruchka(key PrimaryAccumulationRegisterRoznichnaiaVyruchka, fields []string) (*AccumulationRegisterRoznichnaiaVyruchka, error) {
 	return NewAccumulationRegisterRoznichnaiaVyruchka(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterRoznichnaiaVyruchkas(where Where) ([]AccumulationRegisterRoznichnaiaVyruchka, error) {
+func (c *Client) AccumulationRegisterRoznichnaiaVyruchkas(where Where) (*[]AccumulationRegisterRoznichnaiaVyruchka, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterRoznichnaiaVyruchka `json:"value"`
 	}
@@ -1405,7 +1405,7 @@ func (c *Client) AccumulationRegisterRoznichnaiaVyruchkas(where Where) ([]Accumu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterRoznichnaiaVyruchka(key PrimaryAccumulationRegisterRoznichnaiaVyruchka, entity AccumulationRegisterRoznichnaiaVyruchka) (*AccumulationRegisterRoznichnaiaVyruchka, error) {
 	return NewAccumulationRegisterRoznichnaiaVyruchka(c.updateEntity(key, entity))
@@ -1447,7 +1447,7 @@ func (c *Client) CreateAccumulationRegisterRoznichnaiaVyruchkaRecordType(entity 
 func (c *Client) AccumulationRegisterRoznichnaiaVyruchkaRecordType(key PrimaryAccumulationRegisterRoznichnaiaVyruchkaRecordType, fields []string) (*AccumulationRegisterRoznichnaiaVyruchkaRecordType, error) {
 	return NewAccumulationRegisterRoznichnaiaVyruchkaRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterRoznichnaiaVyruchkaRecordTypes(where Where) ([]AccumulationRegisterRoznichnaiaVyruchkaRecordType, error) {
+func (c *Client) AccumulationRegisterRoznichnaiaVyruchkaRecordTypes(where Where) (*[]AccumulationRegisterRoznichnaiaVyruchkaRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterRoznichnaiaVyruchkaRecordType `json:"value"`
 	}
@@ -1463,7 +1463,7 @@ func (c *Client) AccumulationRegisterRoznichnaiaVyruchkaRecordTypes(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterRoznichnaiaVyruchkaRecordType(key PrimaryAccumulationRegisterRoznichnaiaVyruchkaRecordType, entity AccumulationRegisterRoznichnaiaVyruchkaRecordType) (*AccumulationRegisterRoznichnaiaVyruchkaRecordType, error) {
 	return NewAccumulationRegisterRoznichnaiaVyruchkaRecordType(c.updateEntity(key, entity))
@@ -1498,7 +1498,7 @@ func (c *Client) CreateAccumulationRegisterTovaryVPuti(entity AccumulationRegist
 func (c *Client) AccumulationRegisterTovaryVPuti(key PrimaryAccumulationRegisterTovaryVPuti, fields []string) (*AccumulationRegisterTovaryVPuti, error) {
 	return NewAccumulationRegisterTovaryVPuti(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryVPutis(where Where) ([]AccumulationRegisterTovaryVPuti, error) {
+func (c *Client) AccumulationRegisterTovaryVPutis(where Where) (*[]AccumulationRegisterTovaryVPuti, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryVPuti `json:"value"`
 	}
@@ -1514,7 +1514,7 @@ func (c *Client) AccumulationRegisterTovaryVPutis(where Where) ([]AccumulationRe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryVPuti(key PrimaryAccumulationRegisterTovaryVPuti, entity AccumulationRegisterTovaryVPuti) (*AccumulationRegisterTovaryVPuti, error) {
 	return NewAccumulationRegisterTovaryVPuti(c.updateEntity(key, entity))
@@ -1563,7 +1563,7 @@ func (c *Client) CreateAccumulationRegisterTovaryVPutiRecordType(entity Accumula
 func (c *Client) AccumulationRegisterTovaryVPutiRecordType(key PrimaryAccumulationRegisterTovaryVPutiRecordType, fields []string) (*AccumulationRegisterTovaryVPutiRecordType, error) {
 	return NewAccumulationRegisterTovaryVPutiRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryVPutiRecordTypes(where Where) ([]AccumulationRegisterTovaryVPutiRecordType, error) {
+func (c *Client) AccumulationRegisterTovaryVPutiRecordTypes(where Where) (*[]AccumulationRegisterTovaryVPutiRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryVPutiRecordType `json:"value"`
 	}
@@ -1579,7 +1579,7 @@ func (c *Client) AccumulationRegisterTovaryVPutiRecordTypes(where Where) ([]Accu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryVPutiRecordType(key PrimaryAccumulationRegisterTovaryVPutiRecordType, entity AccumulationRegisterTovaryVPutiRecordType) (*AccumulationRegisterTovaryVPutiRecordType, error) {
 	return NewAccumulationRegisterTovaryVPutiRecordType(c.updateEntity(key, entity))
@@ -1614,7 +1614,7 @@ func (c *Client) CreateAccumulationRegisterPoteriMetallaVProizvodstve(entity Acc
 func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstve(key PrimaryAccumulationRegisterPoteriMetallaVProizvodstve, fields []string) (*AccumulationRegisterPoteriMetallaVProizvodstve, error) {
 	return NewAccumulationRegisterPoteriMetallaVProizvodstve(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstves(where Where) ([]AccumulationRegisterPoteriMetallaVProizvodstve, error) {
+func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstves(where Where) (*[]AccumulationRegisterPoteriMetallaVProizvodstve, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterPoteriMetallaVProizvodstve `json:"value"`
 	}
@@ -1630,7 +1630,7 @@ func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstves(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterPoteriMetallaVProizvodstve(key PrimaryAccumulationRegisterPoteriMetallaVProizvodstve, entity AccumulationRegisterPoteriMetallaVProizvodstve) (*AccumulationRegisterPoteriMetallaVProizvodstve, error) {
 	return NewAccumulationRegisterPoteriMetallaVProizvodstve(c.updateEntity(key, entity))
@@ -1674,7 +1674,7 @@ func (c *Client) CreateAccumulationRegisterPoteriMetallaVProizvodstveRecordType(
 func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstveRecordType(key PrimaryAccumulationRegisterPoteriMetallaVProizvodstveRecordType, fields []string) (*AccumulationRegisterPoteriMetallaVProizvodstveRecordType, error) {
 	return NewAccumulationRegisterPoteriMetallaVProizvodstveRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstveRecordTypes(where Where) ([]AccumulationRegisterPoteriMetallaVProizvodstveRecordType, error) {
+func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstveRecordTypes(where Where) (*[]AccumulationRegisterPoteriMetallaVProizvodstveRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterPoteriMetallaVProizvodstveRecordType `json:"value"`
 	}
@@ -1690,7 +1690,7 @@ func (c *Client) AccumulationRegisterPoteriMetallaVProizvodstveRecordTypes(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterPoteriMetallaVProizvodstveRecordType(key PrimaryAccumulationRegisterPoteriMetallaVProizvodstveRecordType, entity AccumulationRegisterPoteriMetallaVProizvodstveRecordType) (*AccumulationRegisterPoteriMetallaVProizvodstveRecordType, error) {
 	return NewAccumulationRegisterPoteriMetallaVProizvodstveRecordType(c.updateEntity(key, entity))
@@ -1725,7 +1725,7 @@ func (c *Client) CreateAccumulationRegisterPartiiTovarovNaSkladakh(entity Accumu
 func (c *Client) AccumulationRegisterPartiiTovarovNaSkladakh(key PrimaryAccumulationRegisterPartiiTovarovNaSkladakh, fields []string) (*AccumulationRegisterPartiiTovarovNaSkladakh, error) {
 	return NewAccumulationRegisterPartiiTovarovNaSkladakh(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterPartiiTovarovNaSkladakhs(where Where) ([]AccumulationRegisterPartiiTovarovNaSkladakh, error) {
+func (c *Client) AccumulationRegisterPartiiTovarovNaSkladakhs(where Where) (*[]AccumulationRegisterPartiiTovarovNaSkladakh, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterPartiiTovarovNaSkladakh `json:"value"`
 	}
@@ -1741,7 +1741,7 @@ func (c *Client) AccumulationRegisterPartiiTovarovNaSkladakhs(where Where) ([]Ac
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterPartiiTovarovNaSkladakh(key PrimaryAccumulationRegisterPartiiTovarovNaSkladakh, entity AccumulationRegisterPartiiTovarovNaSkladakh) (*AccumulationRegisterPartiiTovarovNaSkladakh, error) {
 	return NewAccumulationRegisterPartiiTovarovNaSkladakh(c.updateEntity(key, entity))
@@ -1797,7 +1797,7 @@ func (c *Client) CreateProductActionDocument(entity ProductActionDocument) (*Pro
 func (c *Client) ProductActionDocument(key PrimaryProductActionDocument, fields []string) (*ProductActionDocument, error) {
 	return NewProductActionDocument(c.getEntity(key, fields))
 }
-func (c *Client) ProductActionDocuments(where Where) ([]ProductActionDocument, error) {
+func (c *Client) ProductActionDocuments(where Where) (*[]ProductActionDocument, error) {
 	type ReturnObj struct {
 		Value []ProductActionDocument `json:"value"`
 	}
@@ -1813,7 +1813,7 @@ func (c *Client) ProductActionDocuments(where Where) ([]ProductActionDocument, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateProductActionDocument(key PrimaryProductActionDocument, entity ProductActionDocument) (*ProductActionDocument, error) {
 	return NewProductActionDocument(c.updateEntity(key, entity))
@@ -1848,7 +1848,7 @@ func (c *Client) CreateAccumulationRegisterSummyDokumentovDliaObmena(entity Accu
 func (c *Client) AccumulationRegisterSummyDokumentovDliaObmena(key PrimaryAccumulationRegisterSummyDokumentovDliaObmena, fields []string) (*AccumulationRegisterSummyDokumentovDliaObmena, error) {
 	return NewAccumulationRegisterSummyDokumentovDliaObmena(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenas(where Where) ([]AccumulationRegisterSummyDokumentovDliaObmena, error) {
+func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenas(where Where) (*[]AccumulationRegisterSummyDokumentovDliaObmena, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyDokumentovDliaObmena `json:"value"`
 	}
@@ -1864,7 +1864,7 @@ func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenas(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyDokumentovDliaObmena(key PrimaryAccumulationRegisterSummyDokumentovDliaObmena, entity AccumulationRegisterSummyDokumentovDliaObmena) (*AccumulationRegisterSummyDokumentovDliaObmena, error) {
 	return NewAccumulationRegisterSummyDokumentovDliaObmena(c.updateEntity(key, entity))
@@ -1906,7 +1906,7 @@ func (c *Client) CreateAccumulationRegisterSummyDokumentovDliaObmenaRecordType(e
 func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenaRecordType(key PrimaryAccumulationRegisterSummyDokumentovDliaObmenaRecordType, fields []string) (*AccumulationRegisterSummyDokumentovDliaObmenaRecordType, error) {
 	return NewAccumulationRegisterSummyDokumentovDliaObmenaRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenaRecordTypes(where Where) ([]AccumulationRegisterSummyDokumentovDliaObmenaRecordType, error) {
+func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenaRecordTypes(where Where) (*[]AccumulationRegisterSummyDokumentovDliaObmenaRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyDokumentovDliaObmenaRecordType `json:"value"`
 	}
@@ -1922,7 +1922,7 @@ func (c *Client) AccumulationRegisterSummyDokumentovDliaObmenaRecordTypes(where 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyDokumentovDliaObmenaRecordType(key PrimaryAccumulationRegisterSummyDokumentovDliaObmenaRecordType, entity AccumulationRegisterSummyDokumentovDliaObmenaRecordType) (*AccumulationRegisterSummyDokumentovDliaObmenaRecordType, error) {
 	return NewAccumulationRegisterSummyDokumentovDliaObmenaRecordType(c.updateEntity(key, entity))
@@ -1957,7 +1957,7 @@ func (c *Client) CreateAccumulationRegisterDvizheniiaDenezhnykhSredstv(entity Ac
 func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstv(key PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstv, fields []string) (*AccumulationRegisterDvizheniiaDenezhnykhSredstv, error) {
 	return NewAccumulationRegisterDvizheniiaDenezhnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvs(where Where) ([]AccumulationRegisterDvizheniiaDenezhnykhSredstv, error) {
+func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvs(where Where) (*[]AccumulationRegisterDvizheniiaDenezhnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDvizheniiaDenezhnykhSredstv `json:"value"`
 	}
@@ -1973,7 +1973,7 @@ func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvs(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDvizheniiaDenezhnykhSredstv(key PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstv, entity AccumulationRegisterDvizheniiaDenezhnykhSredstv) (*AccumulationRegisterDvizheniiaDenezhnykhSredstv, error) {
 	return NewAccumulationRegisterDvizheniiaDenezhnykhSredstv(c.updateEntity(key, entity))
@@ -2027,7 +2027,7 @@ func (c *Client) CreateAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType
 func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType(key PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType, fields []string) (*AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType, error) {
 	return NewAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordTypes(where Where) ([]AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType, error) {
+func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordTypes(where Where) (*[]AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType `json:"value"`
 	}
@@ -2043,7 +2043,7 @@ func (c *Client) AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordTypes(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType(key PrimaryAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType, entity AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType) (*AccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType, error) {
 	return NewAccumulationRegisterDvizheniiaDenezhnykhSredstvRecordType(c.updateEntity(key, entity))
@@ -2078,7 +2078,7 @@ func (c *Client) CreateAccumulationRegisterProdazhiPoStatiam(entity Accumulation
 func (c *Client) AccumulationRegisterProdazhiPoStatiam(key PrimaryAccumulationRegisterProdazhiPoStatiam, fields []string) (*AccumulationRegisterProdazhiPoStatiam, error) {
 	return NewAccumulationRegisterProdazhiPoStatiam(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterProdazhiPoStatiams(where Where) ([]AccumulationRegisterProdazhiPoStatiam, error) {
+func (c *Client) AccumulationRegisterProdazhiPoStatiams(where Where) (*[]AccumulationRegisterProdazhiPoStatiam, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterProdazhiPoStatiam `json:"value"`
 	}
@@ -2094,7 +2094,7 @@ func (c *Client) AccumulationRegisterProdazhiPoStatiams(where Where) ([]Accumula
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterProdazhiPoStatiam(key PrimaryAccumulationRegisterProdazhiPoStatiam, entity AccumulationRegisterProdazhiPoStatiam) (*AccumulationRegisterProdazhiPoStatiam, error) {
 	return NewAccumulationRegisterProdazhiPoStatiam(c.updateEntity(key, entity))
@@ -2137,7 +2137,7 @@ func (c *Client) CreateAccumulationRegisterProdazhiPoStatiamRecordType(entity Ac
 func (c *Client) AccumulationRegisterProdazhiPoStatiamRecordType(key PrimaryAccumulationRegisterProdazhiPoStatiamRecordType, fields []string) (*AccumulationRegisterProdazhiPoStatiamRecordType, error) {
 	return NewAccumulationRegisterProdazhiPoStatiamRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterProdazhiPoStatiamRecordTypes(where Where) ([]AccumulationRegisterProdazhiPoStatiamRecordType, error) {
+func (c *Client) AccumulationRegisterProdazhiPoStatiamRecordTypes(where Where) (*[]AccumulationRegisterProdazhiPoStatiamRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterProdazhiPoStatiamRecordType `json:"value"`
 	}
@@ -2153,7 +2153,7 @@ func (c *Client) AccumulationRegisterProdazhiPoStatiamRecordTypes(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterProdazhiPoStatiamRecordType(key PrimaryAccumulationRegisterProdazhiPoStatiamRecordType, entity AccumulationRegisterProdazhiPoStatiamRecordType) (*AccumulationRegisterProdazhiPoStatiamRecordType, error) {
 	return NewAccumulationRegisterProdazhiPoStatiamRecordType(c.updateEntity(key, entity))
@@ -2188,7 +2188,7 @@ func (c *Client) CreateInformationRegisterTsenyNomenklatury(entity InformationRe
 func (c *Client) InformationRegisterTsenyNomenklatury(key PrimaryInformationRegisterTsenyNomenklatury, fields []string) (*InformationRegisterTsenyNomenklatury, error) {
 	return NewInformationRegisterTsenyNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) InformationRegisterTsenyNomenklaturys(where Where) ([]InformationRegisterTsenyNomenklatury, error) {
+func (c *Client) InformationRegisterTsenyNomenklaturys(where Where) (*[]InformationRegisterTsenyNomenklatury, error) {
 	type ReturnObj struct {
 		Value []InformationRegisterTsenyNomenklatury `json:"value"`
 	}
@@ -2204,7 +2204,7 @@ func (c *Client) InformationRegisterTsenyNomenklaturys(where Where) ([]Informati
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInformationRegisterTsenyNomenklatury(key PrimaryInformationRegisterTsenyNomenklatury, entity InformationRegisterTsenyNomenklatury) (*InformationRegisterTsenyNomenklatury, error) {
 	return NewInformationRegisterTsenyNomenklatury(c.updateEntity(key, entity))
@@ -2251,7 +2251,7 @@ func (c *Client) CreateInformationRegisterTsenyNomenklaturyRecordType(entity Inf
 func (c *Client) InformationRegisterTsenyNomenklaturyRecordType(key PrimaryInformationRegisterTsenyNomenklaturyRecordType, fields []string) (*InformationRegisterTsenyNomenklaturyRecordType, error) {
 	return NewInformationRegisterTsenyNomenklaturyRecordType(c.getEntity(key, fields))
 }
-func (c *Client) InformationRegisterTsenyNomenklaturyRecordTypes(where Where) ([]InformationRegisterTsenyNomenklaturyRecordType, error) {
+func (c *Client) InformationRegisterTsenyNomenklaturyRecordTypes(where Where) (*[]InformationRegisterTsenyNomenklaturyRecordType, error) {
 	type ReturnObj struct {
 		Value []InformationRegisterTsenyNomenklaturyRecordType `json:"value"`
 	}
@@ -2267,7 +2267,7 @@ func (c *Client) InformationRegisterTsenyNomenklaturyRecordTypes(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInformationRegisterTsenyNomenklaturyRecordType(key PrimaryInformationRegisterTsenyNomenklaturyRecordType, entity InformationRegisterTsenyNomenklaturyRecordType) (*InformationRegisterTsenyNomenklaturyRecordType, error) {
 	return NewInformationRegisterTsenyNomenklaturyRecordType(c.updateEntity(key, entity))
@@ -2302,7 +2302,7 @@ func (c *Client) CreateAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse(ent
 func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse(key PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse, fields []string) (*AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse, error) {
 	return NewAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitses(where Where) ([]AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse, error) {
+func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitses(where Where) (*[]AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse `json:"value"`
 	}
@@ -2318,7 +2318,7 @@ func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitses(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse(key PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse, entity AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse) (*AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse, error) {
 	return NewAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitse(c.updateEntity(key, entity))
@@ -2379,7 +2379,7 @@ func (c *Client) CreateAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseReco
 func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType(key PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType, fields []string) (*AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType, error) {
 	return NewAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordTypes(where Where) ([]AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType, error) {
+func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordTypes(where Where) (*[]AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType `json:"value"`
 	}
@@ -2395,7 +2395,7 @@ func (c *Client) AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType(key PrimaryAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType, entity AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType) (*AccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType, error) {
 	return NewAccumulationRegisterSvodnyeDannyePoProdazhamVRoznitseRecordType(c.updateEntity(key, entity))
@@ -2430,7 +2430,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaVRezerve(entity Accu
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerve(key PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerve, fields []string) (*AccumulationRegisterDenezhnyeSredstvaVRezerve, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaVRezerve(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerves(where Where) ([]AccumulationRegisterDenezhnyeSredstvaVRezerve, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerves(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaVRezerve, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaVRezerve `json:"value"`
 	}
@@ -2446,7 +2446,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerves(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaVRezerve(key PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerve, entity AccumulationRegisterDenezhnyeSredstvaVRezerve) (*AccumulationRegisterDenezhnyeSredstvaVRezerve, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaVRezerve(c.updateEntity(key, entity))
@@ -2489,7 +2489,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType(e
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType, fields []string) (*AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerveRecordTypes(where Where) ([]AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerveRecordTypes(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType `json:"value"`
 	}
@@ -2505,7 +2505,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaVRezerveRecordTypes(where 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType, entity AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType) (*AccumulationRegisterDenezhnyeSredstvaVRezerveRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaVRezerveRecordType(c.updateEntity(key, entity))
@@ -2540,7 +2540,7 @@ func (c *Client) CreateAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykh
 func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh(key PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh, fields []string) (*AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh, error) {
 	return NewAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhs(where Where) ([]AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh, error) {
+func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhs(where Where) (*[]AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh `json:"value"`
 	}
@@ -2556,7 +2556,7 @@ func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochka
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh(key PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh, entity AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh) (*AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh, error) {
 	return NewAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakh(c.updateEntity(key, entity))
@@ -2602,7 +2602,7 @@ func (c *Client) CreateAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykh
 func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType(key PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType, fields []string) (*AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType, error) {
 	return NewAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordTypes(where Where) ([]AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType, error) {
+func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordTypes(where Where) (*[]AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType `json:"value"`
 	}
@@ -2618,7 +2618,7 @@ func (c *Client) AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochka
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType(key PrimaryAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType, entity AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType) (*AccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType, error) {
 	return NewAccumulationRegisterTovaryVNeavtomatizirovannykhTorgovykhTochkakhRecordType(c.updateEntity(key, entity))
@@ -2653,7 +2653,7 @@ func (c *Client) CreateAccumulationRegisterDavalcheskiiMetallPoteri(entity Accum
 func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteri(key PrimaryAccumulationRegisterDavalcheskiiMetallPoteri, fields []string) (*AccumulationRegisterDavalcheskiiMetallPoteri, error) {
 	return NewAccumulationRegisterDavalcheskiiMetallPoteri(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteris(where Where) ([]AccumulationRegisterDavalcheskiiMetallPoteri, error) {
+func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteris(where Where) (*[]AccumulationRegisterDavalcheskiiMetallPoteri, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDavalcheskiiMetallPoteri `json:"value"`
 	}
@@ -2669,7 +2669,7 @@ func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteris(where Where) ([]A
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDavalcheskiiMetallPoteri(key PrimaryAccumulationRegisterDavalcheskiiMetallPoteri, entity AccumulationRegisterDavalcheskiiMetallPoteri) (*AccumulationRegisterDavalcheskiiMetallPoteri, error) {
 	return NewAccumulationRegisterDavalcheskiiMetallPoteri(c.updateEntity(key, entity))
@@ -2711,7 +2711,7 @@ func (c *Client) CreateAccumulationRegisterDavalcheskiiMetallPoteriRecordType(en
 func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteriRecordType(key PrimaryAccumulationRegisterDavalcheskiiMetallPoteriRecordType, fields []string) (*AccumulationRegisterDavalcheskiiMetallPoteriRecordType, error) {
 	return NewAccumulationRegisterDavalcheskiiMetallPoteriRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteriRecordTypes(where Where) ([]AccumulationRegisterDavalcheskiiMetallPoteriRecordType, error) {
+func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteriRecordTypes(where Where) (*[]AccumulationRegisterDavalcheskiiMetallPoteriRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDavalcheskiiMetallPoteriRecordType `json:"value"`
 	}
@@ -2727,7 +2727,7 @@ func (c *Client) AccumulationRegisterDavalcheskiiMetallPoteriRecordTypes(where W
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDavalcheskiiMetallPoteriRecordType(key PrimaryAccumulationRegisterDavalcheskiiMetallPoteriRecordType, entity AccumulationRegisterDavalcheskiiMetallPoteriRecordType) (*AccumulationRegisterDavalcheskiiMetallPoteriRecordType, error) {
 	return NewAccumulationRegisterDavalcheskiiMetallPoteriRecordType(c.updateEntity(key, entity))
@@ -2762,7 +2762,7 @@ func (c *Client) CreateInformationRegisterTsenyPoPreiskurantu(entity Information
 func (c *Client) InformationRegisterTsenyPoPreiskurantu(key PrimaryInformationRegisterTsenyPoPreiskurantu, fields []string) (*InformationRegisterTsenyPoPreiskurantu, error) {
 	return NewInformationRegisterTsenyPoPreiskurantu(c.getEntity(key, fields))
 }
-func (c *Client) InformationRegisterTsenyPoPreiskurantus(where Where) ([]InformationRegisterTsenyPoPreiskurantu, error) {
+func (c *Client) InformationRegisterTsenyPoPreiskurantus(where Where) (*[]InformationRegisterTsenyPoPreiskurantu, error) {
 	type ReturnObj struct {
 		Value []InformationRegisterTsenyPoPreiskurantu `json:"value"`
 	}
@@ -2778,7 +2778,7 @@ func (c *Client) InformationRegisterTsenyPoPreiskurantus(where Where) ([]Informa
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInformationRegisterTsenyPoPreiskurantu(key PrimaryInformationRegisterTsenyPoPreiskurantu, entity InformationRegisterTsenyPoPreiskurantu) (*InformationRegisterTsenyPoPreiskurantu, error) {
 	return NewInformationRegisterTsenyPoPreiskurantu(c.updateEntity(key, entity))
@@ -2825,7 +2825,7 @@ func (c *Client) CreateInformationRegisterTsenyPoPreiskurantuRecordType(entity I
 func (c *Client) InformationRegisterTsenyPoPreiskurantuRecordType(key PrimaryInformationRegisterTsenyPoPreiskurantuRecordType, fields []string) (*InformationRegisterTsenyPoPreiskurantuRecordType, error) {
 	return NewInformationRegisterTsenyPoPreiskurantuRecordType(c.getEntity(key, fields))
 }
-func (c *Client) InformationRegisterTsenyPoPreiskurantuRecordTypes(where Where) ([]InformationRegisterTsenyPoPreiskurantuRecordType, error) {
+func (c *Client) InformationRegisterTsenyPoPreiskurantuRecordTypes(where Where) (*[]InformationRegisterTsenyPoPreiskurantuRecordType, error) {
 	type ReturnObj struct {
 		Value []InformationRegisterTsenyPoPreiskurantuRecordType `json:"value"`
 	}
@@ -2841,7 +2841,7 @@ func (c *Client) InformationRegisterTsenyPoPreiskurantuRecordTypes(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInformationRegisterTsenyPoPreiskurantuRecordType(key PrimaryInformationRegisterTsenyPoPreiskurantuRecordType, entity InformationRegisterTsenyPoPreiskurantuRecordType) (*InformationRegisterTsenyPoPreiskurantuRecordType, error) {
 	return NewInformationRegisterTsenyPoPreiskurantuRecordType(c.updateEntity(key, entity))
@@ -2876,7 +2876,7 @@ func (c *Client) CreateAccumulationRegisterTovaryVOtbore(entity AccumulationRegi
 func (c *Client) AccumulationRegisterTovaryVOtbore(key PrimaryAccumulationRegisterTovaryVOtbore, fields []string) (*AccumulationRegisterTovaryVOtbore, error) {
 	return NewAccumulationRegisterTovaryVOtbore(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryVOtbores(where Where) ([]AccumulationRegisterTovaryVOtbore, error) {
+func (c *Client) AccumulationRegisterTovaryVOtbores(where Where) (*[]AccumulationRegisterTovaryVOtbore, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryVOtbore `json:"value"`
 	}
@@ -2892,7 +2892,7 @@ func (c *Client) AccumulationRegisterTovaryVOtbores(where Where) ([]Accumulation
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryVOtbore(key PrimaryAccumulationRegisterTovaryVOtbore, entity AccumulationRegisterTovaryVOtbore) (*AccumulationRegisterTovaryVOtbore, error) {
 	return NewAccumulationRegisterTovaryVOtbore(c.updateEntity(key, entity))
@@ -2940,7 +2940,7 @@ func (c *Client) CreateAccumulationRegisterTovaryVOtboreRecordType(entity Accumu
 func (c *Client) AccumulationRegisterTovaryVOtboreRecordType(key PrimaryAccumulationRegisterTovaryVOtboreRecordType, fields []string) (*AccumulationRegisterTovaryVOtboreRecordType, error) {
 	return NewAccumulationRegisterTovaryVOtboreRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryVOtboreRecordTypes(where Where) ([]AccumulationRegisterTovaryVOtboreRecordType, error) {
+func (c *Client) AccumulationRegisterTovaryVOtboreRecordTypes(where Where) (*[]AccumulationRegisterTovaryVOtboreRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryVOtboreRecordType `json:"value"`
 	}
@@ -2956,7 +2956,7 @@ func (c *Client) AccumulationRegisterTovaryVOtboreRecordTypes(where Where) ([]Ac
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryVOtboreRecordType(key PrimaryAccumulationRegisterTovaryVOtboreRecordType, entity AccumulationRegisterTovaryVOtboreRecordType) (*AccumulationRegisterTovaryVOtboreRecordType, error) {
 	return NewAccumulationRegisterTovaryVOtboreRecordType(c.updateEntity(key, entity))
@@ -2991,7 +2991,7 @@ func (c *Client) CreateAccumulationRegisterRealizovannyeTovary(entity Accumulati
 func (c *Client) AccumulationRegisterRealizovannyeTovary(key PrimaryAccumulationRegisterRealizovannyeTovary, fields []string) (*AccumulationRegisterRealizovannyeTovary, error) {
 	return NewAccumulationRegisterRealizovannyeTovary(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterRealizovannyeTovarys(where Where) ([]AccumulationRegisterRealizovannyeTovary, error) {
+func (c *Client) AccumulationRegisterRealizovannyeTovarys(where Where) (*[]AccumulationRegisterRealizovannyeTovary, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterRealizovannyeTovary `json:"value"`
 	}
@@ -3007,7 +3007,7 @@ func (c *Client) AccumulationRegisterRealizovannyeTovarys(where Where) ([]Accumu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterRealizovannyeTovary(key PrimaryAccumulationRegisterRealizovannyeTovary, entity AccumulationRegisterRealizovannyeTovary) (*AccumulationRegisterRealizovannyeTovary, error) {
 	return NewAccumulationRegisterRealizovannyeTovary(c.updateEntity(key, entity))
@@ -3057,7 +3057,7 @@ func (c *Client) CreateAccumulationRegisterRealizovannyeTovaryRecordType(entity 
 func (c *Client) AccumulationRegisterRealizovannyeTovaryRecordType(key PrimaryAccumulationRegisterRealizovannyeTovaryRecordType, fields []string) (*AccumulationRegisterRealizovannyeTovaryRecordType, error) {
 	return NewAccumulationRegisterRealizovannyeTovaryRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterRealizovannyeTovaryRecordTypes(where Where) ([]AccumulationRegisterRealizovannyeTovaryRecordType, error) {
+func (c *Client) AccumulationRegisterRealizovannyeTovaryRecordTypes(where Where) (*[]AccumulationRegisterRealizovannyeTovaryRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterRealizovannyeTovaryRecordType `json:"value"`
 	}
@@ -3073,7 +3073,7 @@ func (c *Client) AccumulationRegisterRealizovannyeTovaryRecordTypes(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterRealizovannyeTovaryRecordType(key PrimaryAccumulationRegisterRealizovannyeTovaryRecordType, entity AccumulationRegisterRealizovannyeTovaryRecordType) (*AccumulationRegisterRealizovannyeTovaryRecordType, error) {
 	return NewAccumulationRegisterRealizovannyeTovaryRecordType(c.updateEntity(key, entity))
@@ -3108,7 +3108,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKomissionera(entity 
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissionera(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomissionera, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKomissionera, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomissionera(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneras(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKomissionera, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneras(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKomissionera, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKomissionera `json:"value"`
 	}
@@ -3124,7 +3124,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneras(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKomissionera(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomissionera, entity AccumulationRegisterDenezhnyeSredstvaKomissionera) (*AccumulationRegisterDenezhnyeSredstvaKomissionera, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomissionera(c.updateEntity(key, entity))
@@ -3167,7 +3167,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordTy
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordTypes(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordTypes(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType `json:"value"`
 	}
@@ -3183,7 +3183,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordTypes(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType, entity AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType) (*AccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKomissioneraRecordType(c.updateEntity(key, entity))
@@ -3218,7 +3218,7 @@ func (c *Client) CreateAccumulationRegisterProdazhi1(entity AccumulationRegister
 func (c *Client) AccumulationRegisterProdazhi1(key PrimaryAccumulationRegisterProdazhi1, fields []string) (*AccumulationRegisterProdazhi1, error) {
 	return NewAccumulationRegisterProdazhi1(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterProdazhi1s(where Where) ([]AccumulationRegisterProdazhi1, error) {
+func (c *Client) AccumulationRegisterProdazhi1s(where Where) (*[]AccumulationRegisterProdazhi1, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterProdazhi1 `json:"value"`
 	}
@@ -3234,7 +3234,7 @@ func (c *Client) AccumulationRegisterProdazhi1s(where Where) ([]AccumulationRegi
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterProdazhi1(key PrimaryAccumulationRegisterProdazhi1, entity AccumulationRegisterProdazhi1) (*AccumulationRegisterProdazhi1, error) {
 	return NewAccumulationRegisterProdazhi1(c.updateEntity(key, entity))
@@ -3306,7 +3306,7 @@ func (c *Client) CreateAccumulationRegisterProdazhi1RecordType(entity Accumulati
 func (c *Client) AccumulationRegisterProdazhi1RecordType(key PrimaryAccumulationRegisterProdazhi1RecordType, fields []string) (*AccumulationRegisterProdazhi1RecordType, error) {
 	return NewAccumulationRegisterProdazhi1RecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterProdazhi1RecordTypes(where Where) ([]AccumulationRegisterProdazhi1RecordType, error) {
+func (c *Client) AccumulationRegisterProdazhi1RecordTypes(where Where) (*[]AccumulationRegisterProdazhi1RecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterProdazhi1RecordType `json:"value"`
 	}
@@ -3322,7 +3322,7 @@ func (c *Client) AccumulationRegisterProdazhi1RecordTypes(where Where) ([]Accumu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterProdazhi1RecordType(key PrimaryAccumulationRegisterProdazhi1RecordType, entity AccumulationRegisterProdazhi1RecordType) (*AccumulationRegisterProdazhi1RecordType, error) {
 	return NewAccumulationRegisterProdazhi1RecordType(c.updateEntity(key, entity))
@@ -3357,7 +3357,7 @@ func (c *Client) CreateAccumulationRegisterTovaryNaSkladakhAM(entity Accumulatio
 func (c *Client) AccumulationRegisterTovaryNaSkladakhAM(key PrimaryAccumulationRegisterTovaryNaSkladakhAM, fields []string) (*AccumulationRegisterTovaryNaSkladakhAM, error) {
 	return NewAccumulationRegisterTovaryNaSkladakhAM(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryNaSkladakhAMs(where Where) ([]AccumulationRegisterTovaryNaSkladakhAM, error) {
+func (c *Client) AccumulationRegisterTovaryNaSkladakhAMs(where Where) (*[]AccumulationRegisterTovaryNaSkladakhAM, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryNaSkladakhAM `json:"value"`
 	}
@@ -3373,7 +3373,7 @@ func (c *Client) AccumulationRegisterTovaryNaSkladakhAMs(where Where) ([]Accumul
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryNaSkladakhAM(key PrimaryAccumulationRegisterTovaryNaSkladakhAM, entity AccumulationRegisterTovaryNaSkladakhAM) (*AccumulationRegisterTovaryNaSkladakhAM, error) {
 	return NewAccumulationRegisterTovaryNaSkladakhAM(c.updateEntity(key, entity))
@@ -3420,7 +3420,7 @@ func (c *Client) CreateAccumulationRegisterTovaryNaSkladakhAMRecordType(entity A
 func (c *Client) AccumulationRegisterTovaryNaSkladakhAMRecordType(key PrimaryAccumulationRegisterTovaryNaSkladakhAMRecordType, fields []string) (*AccumulationRegisterTovaryNaSkladakhAMRecordType, error) {
 	return NewAccumulationRegisterTovaryNaSkladakhAMRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryNaSkladakhAMRecordTypes(where Where) ([]AccumulationRegisterTovaryNaSkladakhAMRecordType, error) {
+func (c *Client) AccumulationRegisterTovaryNaSkladakhAMRecordTypes(where Where) (*[]AccumulationRegisterTovaryNaSkladakhAMRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryNaSkladakhAMRecordType `json:"value"`
 	}
@@ -3436,7 +3436,7 @@ func (c *Client) AccumulationRegisterTovaryNaSkladakhAMRecordTypes(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryNaSkladakhAMRecordType(key PrimaryAccumulationRegisterTovaryNaSkladakhAMRecordType, entity AccumulationRegisterTovaryNaSkladakhAMRecordType) (*AccumulationRegisterTovaryNaSkladakhAMRecordType, error) {
 	return NewAccumulationRegisterTovaryNaSkladakhAMRecordType(c.updateEntity(key, entity))
@@ -3471,7 +3471,7 @@ func (c *Client) CreateAccumulationRegisterSummyPoFinmonitoringu(entity Accumula
 func (c *Client) AccumulationRegisterSummyPoFinmonitoringu(key PrimaryAccumulationRegisterSummyPoFinmonitoringu, fields []string) (*AccumulationRegisterSummyPoFinmonitoringu, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringu(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyPoFinmonitoringus(where Where) ([]AccumulationRegisterSummyPoFinmonitoringu, error) {
+func (c *Client) AccumulationRegisterSummyPoFinmonitoringus(where Where) (*[]AccumulationRegisterSummyPoFinmonitoringu, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyPoFinmonitoringu `json:"value"`
 	}
@@ -3487,7 +3487,7 @@ func (c *Client) AccumulationRegisterSummyPoFinmonitoringus(where Where) ([]Accu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyPoFinmonitoringu(key PrimaryAccumulationRegisterSummyPoFinmonitoringu, entity AccumulationRegisterSummyPoFinmonitoringu) (*AccumulationRegisterSummyPoFinmonitoringu, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringu(c.updateEntity(key, entity))
@@ -3532,7 +3532,7 @@ func (c *Client) CreateAccumulationRegisterSummyPoFinmonitoringuRecordType(entit
 func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRecordType(key PrimaryAccumulationRegisterSummyPoFinmonitoringuRecordType, fields []string) (*AccumulationRegisterSummyPoFinmonitoringuRecordType, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringuRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRecordTypes(where Where) ([]AccumulationRegisterSummyPoFinmonitoringuRecordType, error) {
+func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRecordTypes(where Where) (*[]AccumulationRegisterSummyPoFinmonitoringuRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyPoFinmonitoringuRecordType `json:"value"`
 	}
@@ -3548,7 +3548,7 @@ func (c *Client) AccumulationRegisterSummyPoFinmonitoringuRecordTypes(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyPoFinmonitoringuRecordType(key PrimaryAccumulationRegisterSummyPoFinmonitoringuRecordType, entity AccumulationRegisterSummyPoFinmonitoringuRecordType) (*AccumulationRegisterSummyPoFinmonitoringuRecordType, error) {
 	return NewAccumulationRegisterSummyPoFinmonitoringuRecordType(c.updateEntity(key, entity))
@@ -3583,7 +3583,7 @@ func (c *Client) CreateInformationRegisterTsenyNomenklaturyKontragentov(entity I
 func (c *Client) InformationRegisterTsenyNomenklaturyKontragentov(key PrimaryInformationRegisterTsenyNomenklaturyKontragentov, fields []string) (*InformationRegisterTsenyNomenklaturyKontragentov, error) {
 	return NewInformationRegisterTsenyNomenklaturyKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovs(where Where) ([]InformationRegisterTsenyNomenklaturyKontragentov, error) {
+func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovs(where Where) (*[]InformationRegisterTsenyNomenklaturyKontragentov, error) {
 	type ReturnObj struct {
 		Value []InformationRegisterTsenyNomenklaturyKontragentov `json:"value"`
 	}
@@ -3599,7 +3599,7 @@ func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovs(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInformationRegisterTsenyNomenklaturyKontragentov(key PrimaryInformationRegisterTsenyNomenklaturyKontragentov, entity InformationRegisterTsenyNomenklaturyKontragentov) (*InformationRegisterTsenyNomenklaturyKontragentov, error) {
 	return NewInformationRegisterTsenyNomenklaturyKontragentov(c.updateEntity(key, entity))
@@ -3644,7 +3644,7 @@ func (c *Client) CreateInformationRegisterTsenyNomenklaturyKontragentovRecordTyp
 func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovRecordType(key PrimaryInformationRegisterTsenyNomenklaturyKontragentovRecordType, fields []string) (*InformationRegisterTsenyNomenklaturyKontragentovRecordType, error) {
 	return NewInformationRegisterTsenyNomenklaturyKontragentovRecordType(c.getEntity(key, fields))
 }
-func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovRecordTypes(where Where) ([]InformationRegisterTsenyNomenklaturyKontragentovRecordType, error) {
+func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovRecordTypes(where Where) (*[]InformationRegisterTsenyNomenklaturyKontragentovRecordType, error) {
 	type ReturnObj struct {
 		Value []InformationRegisterTsenyNomenklaturyKontragentovRecordType `json:"value"`
 	}
@@ -3660,7 +3660,7 @@ func (c *Client) InformationRegisterTsenyNomenklaturyKontragentovRecordTypes(whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInformationRegisterTsenyNomenklaturyKontragentovRecordType(key PrimaryInformationRegisterTsenyNomenklaturyKontragentovRecordType, entity InformationRegisterTsenyNomenklaturyKontragentovRecordType) (*InformationRegisterTsenyNomenklaturyKontragentovRecordType, error) {
 	return NewInformationRegisterTsenyNomenklaturyKontragentovRecordType(c.updateEntity(key, entity))
@@ -3695,7 +3695,7 @@ func (c *Client) CreateAccumulationRegisterVzaimoraschetySKontragentami(entity A
 func (c *Client) AccumulationRegisterVzaimoraschetySKontragentami(key PrimaryAccumulationRegisterVzaimoraschetySKontragentami, fields []string) (*AccumulationRegisterVzaimoraschetySKontragentami, error) {
 	return NewAccumulationRegisterVzaimoraschetySKontragentami(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamis(where Where) ([]AccumulationRegisterVzaimoraschetySKontragentami, error) {
+func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamis(where Where) (*[]AccumulationRegisterVzaimoraschetySKontragentami, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVzaimoraschetySKontragentami `json:"value"`
 	}
@@ -3711,7 +3711,7 @@ func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamis(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVzaimoraschetySKontragentami(key PrimaryAccumulationRegisterVzaimoraschetySKontragentami, entity AccumulationRegisterVzaimoraschetySKontragentami) (*AccumulationRegisterVzaimoraschetySKontragentami, error) {
 	return NewAccumulationRegisterVzaimoraschetySKontragentami(c.updateEntity(key, entity))
@@ -3754,7 +3754,7 @@ func (c *Client) CreateAccumulationRegisterVzaimoraschetySKontragentamiRecordTyp
 func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamiRecordType(key PrimaryAccumulationRegisterVzaimoraschetySKontragentamiRecordType, fields []string) (*AccumulationRegisterVzaimoraschetySKontragentamiRecordType, error) {
 	return NewAccumulationRegisterVzaimoraschetySKontragentamiRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamiRecordTypes(where Where) ([]AccumulationRegisterVzaimoraschetySKontragentamiRecordType, error) {
+func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamiRecordTypes(where Where) (*[]AccumulationRegisterVzaimoraschetySKontragentamiRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVzaimoraschetySKontragentamiRecordType `json:"value"`
 	}
@@ -3770,7 +3770,7 @@ func (c *Client) AccumulationRegisterVzaimoraschetySKontragentamiRecordTypes(whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVzaimoraschetySKontragentamiRecordType(key PrimaryAccumulationRegisterVzaimoraschetySKontragentamiRecordType, entity AccumulationRegisterVzaimoraschetySKontragentamiRecordType) (*AccumulationRegisterVzaimoraschetySKontragentamiRecordType, error) {
 	return NewAccumulationRegisterVzaimoraschetySKontragentamiRecordType(c.updateEntity(key, entity))
@@ -3805,7 +3805,7 @@ func (c *Client) CreateAccumulationRegisterSummyPokupokPoDiskontnymKartam(entity
 func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartam(key PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartam, fields []string) (*AccumulationRegisterSummyPokupokPoDiskontnymKartam, error) {
 	return NewAccumulationRegisterSummyPokupokPoDiskontnymKartam(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartams(where Where) ([]AccumulationRegisterSummyPokupokPoDiskontnymKartam, error) {
+func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartams(where Where) (*[]AccumulationRegisterSummyPokupokPoDiskontnymKartam, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyPokupokPoDiskontnymKartam `json:"value"`
 	}
@@ -3821,7 +3821,7 @@ func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartams(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyPokupokPoDiskontnymKartam(key PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartam, entity AccumulationRegisterSummyPokupokPoDiskontnymKartam) (*AccumulationRegisterSummyPokupokPoDiskontnymKartam, error) {
 	return NewAccumulationRegisterSummyPokupokPoDiskontnymKartam(c.updateEntity(key, entity))
@@ -3864,7 +3864,7 @@ func (c *Client) CreateAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordT
 func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType(key PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType, fields []string) (*AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType, error) {
 	return NewAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordTypes(where Where) ([]AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType, error) {
+func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordTypes(where Where) (*[]AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType `json:"value"`
 	}
@@ -3880,7 +3880,7 @@ func (c *Client) AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordTypes(w
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType(key PrimaryAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType, entity AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType) (*AccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType, error) {
 	return NewAccumulationRegisterSummyPokupokPoDiskontnymKartamRecordType(c.updateEntity(key, entity))
@@ -3915,7 +3915,7 @@ func (c *Client) CreateAccumulationRegisterVypolneniePlanaProdazh(entity Accumul
 func (c *Client) AccumulationRegisterVypolneniePlanaProdazh(key PrimaryAccumulationRegisterVypolneniePlanaProdazh, fields []string) (*AccumulationRegisterVypolneniePlanaProdazh, error) {
 	return NewAccumulationRegisterVypolneniePlanaProdazh(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVypolneniePlanaProdazhs(where Where) ([]AccumulationRegisterVypolneniePlanaProdazh, error) {
+func (c *Client) AccumulationRegisterVypolneniePlanaProdazhs(where Where) (*[]AccumulationRegisterVypolneniePlanaProdazh, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVypolneniePlanaProdazh `json:"value"`
 	}
@@ -3931,7 +3931,7 @@ func (c *Client) AccumulationRegisterVypolneniePlanaProdazhs(where Where) ([]Acc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVypolneniePlanaProdazh(key PrimaryAccumulationRegisterVypolneniePlanaProdazh, entity AccumulationRegisterVypolneniePlanaProdazh) (*AccumulationRegisterVypolneniePlanaProdazh, error) {
 	return NewAccumulationRegisterVypolneniePlanaProdazh(c.updateEntity(key, entity))
@@ -3971,7 +3971,7 @@ func (c *Client) CreateAccumulationRegisterVypolneniePlanaProdazhRecordType(enti
 func (c *Client) AccumulationRegisterVypolneniePlanaProdazhRecordType(key PrimaryAccumulationRegisterVypolneniePlanaProdazhRecordType, fields []string) (*AccumulationRegisterVypolneniePlanaProdazhRecordType, error) {
 	return NewAccumulationRegisterVypolneniePlanaProdazhRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterVypolneniePlanaProdazhRecordTypes(where Where) ([]AccumulationRegisterVypolneniePlanaProdazhRecordType, error) {
+func (c *Client) AccumulationRegisterVypolneniePlanaProdazhRecordTypes(where Where) (*[]AccumulationRegisterVypolneniePlanaProdazhRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterVypolneniePlanaProdazhRecordType `json:"value"`
 	}
@@ -3987,7 +3987,7 @@ func (c *Client) AccumulationRegisterVypolneniePlanaProdazhRecordTypes(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterVypolneniePlanaProdazhRecordType(key PrimaryAccumulationRegisterVypolneniePlanaProdazhRecordType, entity AccumulationRegisterVypolneniePlanaProdazhRecordType) (*AccumulationRegisterVypolneniePlanaProdazhRecordType, error) {
 	return NewAccumulationRegisterVypolneniePlanaProdazhRecordType(c.updateEntity(key, entity))
@@ -4022,7 +4022,7 @@ func (c *Client) CreateAccumulationRegisterDavalcheskiiMetall(entity Accumulatio
 func (c *Client) AccumulationRegisterDavalcheskiiMetall(key PrimaryAccumulationRegisterDavalcheskiiMetall, fields []string) (*AccumulationRegisterDavalcheskiiMetall, error) {
 	return NewAccumulationRegisterDavalcheskiiMetall(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDavalcheskiiMetalls(where Where) ([]AccumulationRegisterDavalcheskiiMetall, error) {
+func (c *Client) AccumulationRegisterDavalcheskiiMetalls(where Where) (*[]AccumulationRegisterDavalcheskiiMetall, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDavalcheskiiMetall `json:"value"`
 	}
@@ -4038,7 +4038,7 @@ func (c *Client) AccumulationRegisterDavalcheskiiMetalls(where Where) ([]Accumul
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDavalcheskiiMetall(key PrimaryAccumulationRegisterDavalcheskiiMetall, entity AccumulationRegisterDavalcheskiiMetall) (*AccumulationRegisterDavalcheskiiMetall, error) {
 	return NewAccumulationRegisterDavalcheskiiMetall(c.updateEntity(key, entity))
@@ -4080,7 +4080,7 @@ func (c *Client) CreateAccumulationRegisterDavalcheskiiMetallRecordType(entity A
 func (c *Client) AccumulationRegisterDavalcheskiiMetallRecordType(key PrimaryAccumulationRegisterDavalcheskiiMetallRecordType, fields []string) (*AccumulationRegisterDavalcheskiiMetallRecordType, error) {
 	return NewAccumulationRegisterDavalcheskiiMetallRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDavalcheskiiMetallRecordTypes(where Where) ([]AccumulationRegisterDavalcheskiiMetallRecordType, error) {
+func (c *Client) AccumulationRegisterDavalcheskiiMetallRecordTypes(where Where) (*[]AccumulationRegisterDavalcheskiiMetallRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDavalcheskiiMetallRecordType `json:"value"`
 	}
@@ -4096,7 +4096,7 @@ func (c *Client) AccumulationRegisterDavalcheskiiMetallRecordTypes(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDavalcheskiiMetallRecordType(key PrimaryAccumulationRegisterDavalcheskiiMetallRecordType, entity AccumulationRegisterDavalcheskiiMetallRecordType) (*AccumulationRegisterDavalcheskiiMetallRecordType, error) {
 	return NewAccumulationRegisterDavalcheskiiMetallRecordType(c.updateEntity(key, entity))
@@ -4131,7 +4131,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstva(entity Accumulation
 func (c *Client) AccumulationRegisterDenezhnyeSredstva(key PrimaryAccumulationRegisterDenezhnyeSredstva, fields []string) (*AccumulationRegisterDenezhnyeSredstva, error) {
 	return NewAccumulationRegisterDenezhnyeSredstva(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvas(where Where) ([]AccumulationRegisterDenezhnyeSredstva, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvas(where Where) (*[]AccumulationRegisterDenezhnyeSredstva, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstva `json:"value"`
 	}
@@ -4147,7 +4147,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvas(where Where) ([]Accumula
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstva(key PrimaryAccumulationRegisterDenezhnyeSredstva, entity AccumulationRegisterDenezhnyeSredstva) (*AccumulationRegisterDenezhnyeSredstva, error) {
 	return NewAccumulationRegisterDenezhnyeSredstva(c.updateEntity(key, entity))
@@ -4191,7 +4191,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaRecordType(entity Ac
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaRecordType, fields []string) (*AccumulationRegisterDenezhnyeSredstvaRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaRecordTypes(where Where) ([]AccumulationRegisterDenezhnyeSredstvaRecordType, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaRecordTypes(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaRecordType `json:"value"`
 	}
@@ -4207,7 +4207,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaRecordTypes(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaRecordType, entity AccumulationRegisterDenezhnyeSredstvaRecordType) (*AccumulationRegisterDenezhnyeSredstvaRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaRecordType(c.updateEntity(key, entity))
@@ -4242,7 +4242,7 @@ func (c *Client) CreateAccumulationRegisterTovaryPeredannye(entity AccumulationR
 func (c *Client) AccumulationRegisterTovaryPeredannye(key PrimaryAccumulationRegisterTovaryPeredannye, fields []string) (*AccumulationRegisterTovaryPeredannye, error) {
 	return NewAccumulationRegisterTovaryPeredannye(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryPeredannyes(where Where) ([]AccumulationRegisterTovaryPeredannye, error) {
+func (c *Client) AccumulationRegisterTovaryPeredannyes(where Where) (*[]AccumulationRegisterTovaryPeredannye, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryPeredannye `json:"value"`
 	}
@@ -4258,7 +4258,7 @@ func (c *Client) AccumulationRegisterTovaryPeredannyes(where Where) ([]Accumulat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryPeredannye(key PrimaryAccumulationRegisterTovaryPeredannye, entity AccumulationRegisterTovaryPeredannye) (*AccumulationRegisterTovaryPeredannye, error) {
 	return NewAccumulationRegisterTovaryPeredannye(c.updateEntity(key, entity))
@@ -4306,7 +4306,7 @@ func (c *Client) CreateAccumulationRegisterTovaryPeredannyeRecordType(entity Acc
 func (c *Client) AccumulationRegisterTovaryPeredannyeRecordType(key PrimaryAccumulationRegisterTovaryPeredannyeRecordType, fields []string) (*AccumulationRegisterTovaryPeredannyeRecordType, error) {
 	return NewAccumulationRegisterTovaryPeredannyeRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterTovaryPeredannyeRecordTypes(where Where) ([]AccumulationRegisterTovaryPeredannyeRecordType, error) {
+func (c *Client) AccumulationRegisterTovaryPeredannyeRecordTypes(where Where) (*[]AccumulationRegisterTovaryPeredannyeRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterTovaryPeredannyeRecordType `json:"value"`
 	}
@@ -4322,7 +4322,7 @@ func (c *Client) AccumulationRegisterTovaryPeredannyeRecordTypes(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterTovaryPeredannyeRecordType(key PrimaryAccumulationRegisterTovaryPeredannyeRecordType, entity AccumulationRegisterTovaryPeredannyeRecordType) (*AccumulationRegisterTovaryPeredannyeRecordType, error) {
 	return NewAccumulationRegisterTovaryPeredannyeRecordType(c.updateEntity(key, entity))
@@ -4357,7 +4357,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKSpisaniiu(entity Ac
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniiu(key PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiu, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKSpisaniiu, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKSpisaniiu(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniius(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKSpisaniiu, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniius(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKSpisaniiu, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKSpisaniiu `json:"value"`
 	}
@@ -4373,7 +4373,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniius(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKSpisaniiu(key PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiu, entity AccumulationRegisterDenezhnyeSredstvaKSpisaniiu) (*AccumulationRegisterDenezhnyeSredstvaKSpisaniiu, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKSpisaniiu(c.updateEntity(key, entity))
@@ -4418,7 +4418,7 @@ func (c *Client) CreateAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType
 func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType, fields []string) (*AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType(c.getEntity(key, fields))
 }
-func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordTypes(where Where) ([]AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType, error) {
+func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordTypes(where Where) (*[]AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType, error) {
 	type ReturnObj struct {
 		Value []AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType `json:"value"`
 	}
@@ -4434,7 +4434,7 @@ func (c *Client) AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordTypes(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType(key PrimaryAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType, entity AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType) (*AccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType, error) {
 	return NewAccumulationRegisterDenezhnyeSredstvaKSpisaniiuRecordType(c.updateEntity(key, entity))
@@ -4509,7 +4509,7 @@ func (c *Client) CreateCatalogDogovoryKontragentov(entity CatalogDogovoryKontrag
 func (c *Client) CatalogDogovoryKontragentov(key PrimaryCatalogDogovoryKontragentov, fields []string) (*CatalogDogovoryKontragentov, error) {
 	return NewCatalogDogovoryKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDogovoryKontragentovs(where Where) ([]CatalogDogovoryKontragentov, error) {
+func (c *Client) CatalogDogovoryKontragentovs(where Where) (*[]CatalogDogovoryKontragentov, error) {
 	type ReturnObj struct {
 		Value []CatalogDogovoryKontragentov `json:"value"`
 	}
@@ -4525,7 +4525,7 @@ func (c *Client) CatalogDogovoryKontragentovs(where Where) ([]CatalogDogovoryKon
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDogovoryKontragentov(key PrimaryCatalogDogovoryKontragentov, entity CatalogDogovoryKontragentov) (*CatalogDogovoryKontragentov, error) {
 	return NewCatalogDogovoryKontragentov(c.updateEntity(key, entity))
@@ -4601,7 +4601,7 @@ func (c *Client) CreateOrder(entity Order) (*Order, error) {
 func (c *Client) Order(key PrimaryOrder, fields []string) (*Order, error) {
 	return NewOrder(c.getEntity(key, fields))
 }
-func (c *Client) Orders(where Where) ([]Order, error) {
+func (c *Client) Orders(where Where) (*[]Order, error) {
 	type ReturnObj struct {
 		Value []Order `json:"value"`
 	}
@@ -4617,7 +4617,7 @@ func (c *Client) Orders(where Where) ([]Order, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateOrder(key PrimaryOrder, entity Order) (*Order, error) {
 	return NewOrder(c.updateEntity(key, entity))
@@ -4662,7 +4662,7 @@ func (c *Client) CreateDocumentChekKKMOplata(entity DocumentChekKKMOplata) (*Doc
 func (c *Client) DocumentChekKKMOplata(key PrimaryDocumentChekKKMOplata, fields []string) (*DocumentChekKKMOplata, error) {
 	return NewDocumentChekKKMOplata(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMOplatas(where Where) ([]DocumentChekKKMOplata, error) {
+func (c *Client) DocumentChekKKMOplatas(where Where) (*[]DocumentChekKKMOplata, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMOplata `json:"value"`
 	}
@@ -4678,7 +4678,7 @@ func (c *Client) DocumentChekKKMOplatas(where Where) ([]DocumentChekKKMOplata, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMOplata(key PrimaryDocumentChekKKMOplata, entity DocumentChekKKMOplata) (*DocumentChekKKMOplata, error) {
 	return NewDocumentChekKKMOplata(c.updateEntity(key, entity))
@@ -4716,7 +4716,7 @@ func (c *Client) CreateDocumentChekKKMOplataSertifikatami(entity DocumentChekKKM
 func (c *Client) DocumentChekKKMOplataSertifikatami(key PrimaryDocumentChekKKMOplataSertifikatami, fields []string) (*DocumentChekKKMOplataSertifikatami, error) {
 	return NewDocumentChekKKMOplataSertifikatami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMOplataSertifikatamis(where Where) ([]DocumentChekKKMOplataSertifikatami, error) {
+func (c *Client) DocumentChekKKMOplataSertifikatamis(where Where) (*[]DocumentChekKKMOplataSertifikatami, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMOplataSertifikatami `json:"value"`
 	}
@@ -4732,7 +4732,7 @@ func (c *Client) DocumentChekKKMOplataSertifikatamis(where Where) ([]DocumentChe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMOplataSertifikatami(key PrimaryDocumentChekKKMOplataSertifikatami, entity DocumentChekKKMOplataSertifikatami) (*DocumentChekKKMOplataSertifikatami, error) {
 	return NewDocumentChekKKMOplataSertifikatami(c.updateEntity(key, entity))
@@ -4771,7 +4771,7 @@ func (c *Client) CreateDocumentChekKKMProdazhaSertifikatov(entity DocumentChekKK
 func (c *Client) DocumentChekKKMProdazhaSertifikatov(key PrimaryDocumentChekKKMProdazhaSertifikatov, fields []string) (*DocumentChekKKMProdazhaSertifikatov, error) {
 	return NewDocumentChekKKMProdazhaSertifikatov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMProdazhaSertifikatovs(where Where) ([]DocumentChekKKMProdazhaSertifikatov, error) {
+func (c *Client) DocumentChekKKMProdazhaSertifikatovs(where Where) (*[]DocumentChekKKMProdazhaSertifikatov, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMProdazhaSertifikatov `json:"value"`
 	}
@@ -4787,7 +4787,7 @@ func (c *Client) DocumentChekKKMProdazhaSertifikatovs(where Where) ([]DocumentCh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMProdazhaSertifikatov(key PrimaryDocumentChekKKMProdazhaSertifikatov, entity DocumentChekKKMProdazhaSertifikatov) (*DocumentChekKKMProdazhaSertifikatov, error) {
 	return NewDocumentChekKKMProdazhaSertifikatov(c.updateEntity(key, entity))
@@ -4850,7 +4850,7 @@ func (c *Client) CreateDocumentChekKKMTovary(entity DocumentChekKKMTovary) (*Doc
 func (c *Client) DocumentChekKKMTovary(key PrimaryDocumentChekKKMTovary, fields []string) (*DocumentChekKKMTovary, error) {
 	return NewDocumentChekKKMTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMTovarys(where Where) ([]DocumentChekKKMTovary, error) {
+func (c *Client) DocumentChekKKMTovarys(where Where) (*[]DocumentChekKKMTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMTovary `json:"value"`
 	}
@@ -4866,7 +4866,7 @@ func (c *Client) DocumentChekKKMTovarys(where Where) ([]DocumentChekKKMTovary, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMTovary(key PrimaryDocumentChekKKMTovary, entity DocumentChekKKMTovary) (*DocumentChekKKMTovary, error) {
 	return NewDocumentChekKKMTovary(c.updateEntity(key, entity))
@@ -4902,7 +4902,7 @@ func (c *Client) CreateDocumentChekKKMDokumentyObmena(entity DocumentChekKKMDoku
 func (c *Client) DocumentChekKKMDokumentyObmena(key PrimaryDocumentChekKKMDokumentyObmena, fields []string) (*DocumentChekKKMDokumentyObmena, error) {
 	return NewDocumentChekKKMDokumentyObmena(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMDokumentyObmenas(where Where) ([]DocumentChekKKMDokumentyObmena, error) {
+func (c *Client) DocumentChekKKMDokumentyObmenas(where Where) (*[]DocumentChekKKMDokumentyObmena, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMDokumentyObmena `json:"value"`
 	}
@@ -4918,7 +4918,7 @@ func (c *Client) DocumentChekKKMDokumentyObmenas(where Where) ([]DocumentChekKKM
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMDokumentyObmena(key PrimaryDocumentChekKKMDokumentyObmena, entity DocumentChekKKMDokumentyObmena) (*DocumentChekKKMDokumentyObmena, error) {
 	return NewDocumentChekKKMDokumentyObmena(c.updateEntity(key, entity))
@@ -4954,7 +4954,7 @@ func (c *Client) CreateDocumentChekKKMDogovoraRassrochkiProdazha(entity Document
 func (c *Client) DocumentChekKKMDogovoraRassrochkiProdazha(key PrimaryDocumentChekKKMDogovoraRassrochkiProdazha, fields []string) (*DocumentChekKKMDogovoraRassrochkiProdazha, error) {
 	return NewDocumentChekKKMDogovoraRassrochkiProdazha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMDogovoraRassrochkiProdazhas(where Where) ([]DocumentChekKKMDogovoraRassrochkiProdazha, error) {
+func (c *Client) DocumentChekKKMDogovoraRassrochkiProdazhas(where Where) (*[]DocumentChekKKMDogovoraRassrochkiProdazha, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMDogovoraRassrochkiProdazha `json:"value"`
 	}
@@ -4970,7 +4970,7 @@ func (c *Client) DocumentChekKKMDogovoraRassrochkiProdazhas(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMDogovoraRassrochkiProdazha(key PrimaryDocumentChekKKMDogovoraRassrochkiProdazha, entity DocumentChekKKMDogovoraRassrochkiProdazha) (*DocumentChekKKMDogovoraRassrochkiProdazha, error) {
 	return NewDocumentChekKKMDogovoraRassrochkiProdazha(c.updateEntity(key, entity))
@@ -5006,7 +5006,7 @@ func (c *Client) CreateDocumentChekKKMDogovoraRassrochkiOplata(entity DocumentCh
 func (c *Client) DocumentChekKKMDogovoraRassrochkiOplata(key PrimaryDocumentChekKKMDogovoraRassrochkiOplata, fields []string) (*DocumentChekKKMDogovoraRassrochkiOplata, error) {
 	return NewDocumentChekKKMDogovoraRassrochkiOplata(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMDogovoraRassrochkiOplatas(where Where) ([]DocumentChekKKMDogovoraRassrochkiOplata, error) {
+func (c *Client) DocumentChekKKMDogovoraRassrochkiOplatas(where Where) (*[]DocumentChekKKMDogovoraRassrochkiOplata, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMDogovoraRassrochkiOplata `json:"value"`
 	}
@@ -5022,7 +5022,7 @@ func (c *Client) DocumentChekKKMDogovoraRassrochkiOplatas(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMDogovoraRassrochkiOplata(key PrimaryDocumentChekKKMDogovoraRassrochkiOplata, entity DocumentChekKKMDogovoraRassrochkiOplata) (*DocumentChekKKMDogovoraRassrochkiOplata, error) {
 	return NewDocumentChekKKMDogovoraRassrochkiOplata(c.updateEntity(key, entity))
@@ -5062,7 +5062,7 @@ func (c *Client) CreateDocumentChekKKMOplataBallami(entity DocumentChekKKMOplata
 func (c *Client) DocumentChekKKMOplataBallami(key PrimaryDocumentChekKKMOplataBallami, fields []string) (*DocumentChekKKMOplataBallami, error) {
 	return NewDocumentChekKKMOplataBallami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMOplataBallamis(where Where) ([]DocumentChekKKMOplataBallami, error) {
+func (c *Client) DocumentChekKKMOplataBallamis(where Where) (*[]DocumentChekKKMOplataBallami, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMOplataBallami `json:"value"`
 	}
@@ -5078,7 +5078,7 @@ func (c *Client) DocumentChekKKMOplataBallamis(where Where) ([]DocumentChekKKMOp
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMOplataBallami(key PrimaryDocumentChekKKMOplataBallami, entity DocumentChekKKMOplataBallami) (*DocumentChekKKMOplataBallami, error) {
 	return NewDocumentChekKKMOplataBallami(c.updateEntity(key, entity))
@@ -5115,7 +5115,7 @@ func (c *Client) CreateDocumentChekKKMSkidkiNatsenki(entity DocumentChekKKMSkidk
 func (c *Client) DocumentChekKKMSkidkiNatsenki(key PrimaryDocumentChekKKMSkidkiNatsenki, fields []string) (*DocumentChekKKMSkidkiNatsenki, error) {
 	return NewDocumentChekKKMSkidkiNatsenki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMSkidkiNatsenkis(where Where) ([]DocumentChekKKMSkidkiNatsenki, error) {
+func (c *Client) DocumentChekKKMSkidkiNatsenkis(where Where) (*[]DocumentChekKKMSkidkiNatsenki, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMSkidkiNatsenki `json:"value"`
 	}
@@ -5131,7 +5131,7 @@ func (c *Client) DocumentChekKKMSkidkiNatsenkis(where Where) ([]DocumentChekKKMS
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMSkidkiNatsenki(key PrimaryDocumentChekKKMSkidkiNatsenki, entity DocumentChekKKMSkidkiNatsenki) (*DocumentChekKKMSkidkiNatsenki, error) {
 	return NewDocumentChekKKMSkidkiNatsenki(c.updateEntity(key, entity))
@@ -5166,7 +5166,7 @@ func (c *Client) CreateDocumentChekKKMUpravliaemyeSkidki(entity DocumentChekKKMU
 func (c *Client) DocumentChekKKMUpravliaemyeSkidki(key PrimaryDocumentChekKKMUpravliaemyeSkidki, fields []string) (*DocumentChekKKMUpravliaemyeSkidki, error) {
 	return NewDocumentChekKKMUpravliaemyeSkidki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMUpravliaemyeSkidkis(where Where) ([]DocumentChekKKMUpravliaemyeSkidki, error) {
+func (c *Client) DocumentChekKKMUpravliaemyeSkidkis(where Where) (*[]DocumentChekKKMUpravliaemyeSkidki, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMUpravliaemyeSkidki `json:"value"`
 	}
@@ -5182,7 +5182,7 @@ func (c *Client) DocumentChekKKMUpravliaemyeSkidkis(where Where) ([]DocumentChek
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMUpravliaemyeSkidki(key PrimaryDocumentChekKKMUpravliaemyeSkidki, entity DocumentChekKKMUpravliaemyeSkidki) (*DocumentChekKKMUpravliaemyeSkidki, error) {
 	return NewDocumentChekKKMUpravliaemyeSkidki(c.updateEntity(key, entity))
@@ -5227,7 +5227,7 @@ func (c *Client) CreateDocumentChekKKMPodarki(entity DocumentChekKKMPodarki) (*D
 func (c *Client) DocumentChekKKMPodarki(key PrimaryDocumentChekKKMPodarki, fields []string) (*DocumentChekKKMPodarki, error) {
 	return NewDocumentChekKKMPodarki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMPodarkis(where Where) ([]DocumentChekKKMPodarki, error) {
+func (c *Client) DocumentChekKKMPodarkis(where Where) (*[]DocumentChekKKMPodarki, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMPodarki `json:"value"`
 	}
@@ -5243,7 +5243,7 @@ func (c *Client) DocumentChekKKMPodarkis(where Where) ([]DocumentChekKKMPodarki,
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMPodarki(key PrimaryDocumentChekKKMPodarki, entity DocumentChekKKMPodarki) (*DocumentChekKKMPodarki, error) {
 	return NewDocumentChekKKMPodarki(c.updateEntity(key, entity))
@@ -5281,7 +5281,7 @@ func (c *Client) CreateDocumentChekKKMKupony(entity DocumentChekKKMKupony) (*Doc
 func (c *Client) DocumentChekKKMKupony(key PrimaryDocumentChekKKMKupony, fields []string) (*DocumentChekKKMKupony, error) {
 	return NewDocumentChekKKMKupony(c.getEntity(key, fields))
 }
-func (c *Client) DocumentChekKKMKuponys(where Where) ([]DocumentChekKKMKupony, error) {
+func (c *Client) DocumentChekKKMKuponys(where Where) (*[]DocumentChekKKMKupony, error) {
 	type ReturnObj struct {
 		Value []DocumentChekKKMKupony `json:"value"`
 	}
@@ -5297,7 +5297,7 @@ func (c *Client) DocumentChekKKMKuponys(where Where) ([]DocumentChekKKMKupony, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentChekKKMKupony(key PrimaryDocumentChekKKMKupony, entity DocumentChekKKMKupony) (*DocumentChekKKMKupony, error) {
 	return NewDocumentChekKKMKupony(c.updateEntity(key, entity))
@@ -5345,7 +5345,7 @@ func (c *Client) CreateDocumentPereotsenkaValiutnykhSredstv(entity DocumentPereo
 func (c *Client) DocumentPereotsenkaValiutnykhSredstv(key PrimaryDocumentPereotsenkaValiutnykhSredstv, fields []string) (*DocumentPereotsenkaValiutnykhSredstv, error) {
 	return NewDocumentPereotsenkaValiutnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPereotsenkaValiutnykhSredstvs(where Where) ([]DocumentPereotsenkaValiutnykhSredstv, error) {
+func (c *Client) DocumentPereotsenkaValiutnykhSredstvs(where Where) (*[]DocumentPereotsenkaValiutnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentPereotsenkaValiutnykhSredstv `json:"value"`
 	}
@@ -5361,7 +5361,7 @@ func (c *Client) DocumentPereotsenkaValiutnykhSredstvs(where Where) ([]DocumentP
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPereotsenkaValiutnykhSredstv(key PrimaryDocumentPereotsenkaValiutnykhSredstv, entity DocumentPereotsenkaValiutnykhSredstv) (*DocumentPereotsenkaValiutnykhSredstv, error) {
 	return NewDocumentPereotsenkaValiutnykhSredstv(c.updateEntity(key, entity))
@@ -5411,7 +5411,7 @@ func (c *Client) CreateCatalogTipySkidokNatsenok(entity CatalogTipySkidokNatseno
 func (c *Client) CatalogTipySkidokNatsenok(key PrimaryCatalogTipySkidokNatsenok, fields []string) (*CatalogTipySkidokNatsenok, error) {
 	return NewCatalogTipySkidokNatsenok(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipySkidokNatsenoks(where Where) ([]CatalogTipySkidokNatsenok, error) {
+func (c *Client) CatalogTipySkidokNatsenoks(where Where) (*[]CatalogTipySkidokNatsenok, error) {
 	type ReturnObj struct {
 		Value []CatalogTipySkidokNatsenok `json:"value"`
 	}
@@ -5427,7 +5427,7 @@ func (c *Client) CatalogTipySkidokNatsenoks(where Where) ([]CatalogTipySkidokNat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipySkidokNatsenok(key PrimaryCatalogTipySkidokNatsenok, entity CatalogTipySkidokNatsenok) (*CatalogTipySkidokNatsenok, error) {
 	return NewCatalogTipySkidokNatsenok(c.updateEntity(key, entity))
@@ -5465,7 +5465,7 @@ func (c *Client) CreateCatalogTipySkidokNatsenokVremiaPoDniamNedeli(entity Catal
 func (c *Client) CatalogTipySkidokNatsenokVremiaPoDniamNedeli(key PrimaryCatalogTipySkidokNatsenokVremiaPoDniamNedeli, fields []string) (*CatalogTipySkidokNatsenokVremiaPoDniamNedeli, error) {
 	return NewCatalogTipySkidokNatsenokVremiaPoDniamNedeli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipySkidokNatsenokVremiaPoDniamNedelis(where Where) ([]CatalogTipySkidokNatsenokVremiaPoDniamNedeli, error) {
+func (c *Client) CatalogTipySkidokNatsenokVremiaPoDniamNedelis(where Where) (*[]CatalogTipySkidokNatsenokVremiaPoDniamNedeli, error) {
 	type ReturnObj struct {
 		Value []CatalogTipySkidokNatsenokVremiaPoDniamNedeli `json:"value"`
 	}
@@ -5481,7 +5481,7 @@ func (c *Client) CatalogTipySkidokNatsenokVremiaPoDniamNedelis(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipySkidokNatsenokVremiaPoDniamNedeli(key PrimaryCatalogTipySkidokNatsenokVremiaPoDniamNedeli, entity CatalogTipySkidokNatsenokVremiaPoDniamNedeli) (*CatalogTipySkidokNatsenokVremiaPoDniamNedeli, error) {
 	return NewCatalogTipySkidokNatsenokVremiaPoDniamNedeli(c.updateEntity(key, entity))
@@ -5525,7 +5525,7 @@ func (c *Client) CreateCatalogVidyKodirovokiTsepei(entity CatalogVidyKodirovokiT
 func (c *Client) CatalogVidyKodirovokiTsepei(key PrimaryCatalogVidyKodirovokiTsepei, fields []string) (*CatalogVidyKodirovokiTsepei, error) {
 	return NewCatalogVidyKodirovokiTsepei(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKodirovokiTsepeis(where Where) ([]CatalogVidyKodirovokiTsepei, error) {
+func (c *Client) CatalogVidyKodirovokiTsepeis(where Where) (*[]CatalogVidyKodirovokiTsepei, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKodirovokiTsepei `json:"value"`
 	}
@@ -5541,7 +5541,7 @@ func (c *Client) CatalogVidyKodirovokiTsepeis(where Where) ([]CatalogVidyKodirov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKodirovokiTsepei(key PrimaryCatalogVidyKodirovokiTsepei, entity CatalogVidyKodirovokiTsepei) (*CatalogVidyKodirovokiTsepei, error) {
 	return NewCatalogVidyKodirovokiTsepei(c.updateEntity(key, entity))
@@ -5582,7 +5582,7 @@ func (c *Client) CreateCatalogVidyKodirovokiTsepeiElementyKodirovki(entity Catal
 func (c *Client) CatalogVidyKodirovokiTsepeiElementyKodirovki(key PrimaryCatalogVidyKodirovokiTsepeiElementyKodirovki, fields []string) (*CatalogVidyKodirovokiTsepeiElementyKodirovki, error) {
 	return NewCatalogVidyKodirovokiTsepeiElementyKodirovki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKodirovokiTsepeiElementyKodirovkis(where Where) ([]CatalogVidyKodirovokiTsepeiElementyKodirovki, error) {
+func (c *Client) CatalogVidyKodirovokiTsepeiElementyKodirovkis(where Where) (*[]CatalogVidyKodirovokiTsepeiElementyKodirovki, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKodirovokiTsepeiElementyKodirovki `json:"value"`
 	}
@@ -5598,7 +5598,7 @@ func (c *Client) CatalogVidyKodirovokiTsepeiElementyKodirovkis(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKodirovokiTsepeiElementyKodirovki(key PrimaryCatalogVidyKodirovokiTsepeiElementyKodirovki, entity CatalogVidyKodirovokiTsepeiElementyKodirovki) (*CatalogVidyKodirovokiTsepeiElementyKodirovki, error) {
 	return NewCatalogVidyKodirovokiTsepeiElementyKodirovki(c.updateEntity(key, entity))
@@ -5636,7 +5636,7 @@ func (c *Client) CreateCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZ
 func (c *Client) CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv(key PrimaryCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv, fields []string) (*CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv, error) {
 	return NewCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistvs(where Where) ([]CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv, error) {
+func (c *Client) CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistvs(where Where) (*[]CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv `json:"value"`
 	}
@@ -5652,7 +5652,7 @@ func (c *Client) CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnachen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv(key PrimaryCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv, entity CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv) (*CatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv, error) {
 	return NewCatalogVidyKodirovokiTsepeiSootvetstvieZnacheniiKodrovkiZnacheniiamSvoistv(c.updateEntity(key, entity))
@@ -5718,7 +5718,7 @@ func (c *Client) CreateDocumentOtchetKomitentuOProdazhakh(entity DocumentOtchetK
 func (c *Client) DocumentOtchetKomitentuOProdazhakh(key PrimaryDocumentOtchetKomitentuOProdazhakh, fields []string) (*DocumentOtchetKomitentuOProdazhakh, error) {
 	return NewDocumentOtchetKomitentuOProdazhakh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetKomitentuOProdazhakhs(where Where) ([]DocumentOtchetKomitentuOProdazhakh, error) {
+func (c *Client) DocumentOtchetKomitentuOProdazhakhs(where Where) (*[]DocumentOtchetKomitentuOProdazhakh, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetKomitentuOProdazhakh `json:"value"`
 	}
@@ -5734,7 +5734,7 @@ func (c *Client) DocumentOtchetKomitentuOProdazhakhs(where Where) ([]DocumentOtc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetKomitentuOProdazhakh(key PrimaryDocumentOtchetKomitentuOProdazhakh, entity DocumentOtchetKomitentuOProdazhakh) (*DocumentOtchetKomitentuOProdazhakh, error) {
 	return NewDocumentOtchetKomitentuOProdazhakh(c.updateEntity(key, entity))
@@ -5772,7 +5772,7 @@ func (c *Client) CreateDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva(entit
 func (c *Client) DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva(key PrimaryDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva, fields []string) (*DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstvas(where Where) ([]DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva, error) {
+func (c *Client) DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstvas(where Where) (*[]DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva `json:"value"`
 	}
@@ -5788,7 +5788,7 @@ func (c *Client) DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstvas(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva(key PrimaryDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva, entity DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva) (*DocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentOtchetKomitentuOProdazhakhDenezhnyeSredstva(c.updateEntity(key, entity))
@@ -5842,7 +5842,7 @@ func (c *Client) CreateDocumentOtchetKomitentuOProdazhakhTovary(entity DocumentO
 func (c *Client) DocumentOtchetKomitentuOProdazhakhTovary(key PrimaryDocumentOtchetKomitentuOProdazhakhTovary, fields []string) (*DocumentOtchetKomitentuOProdazhakhTovary, error) {
 	return NewDocumentOtchetKomitentuOProdazhakhTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetKomitentuOProdazhakhTovarys(where Where) ([]DocumentOtchetKomitentuOProdazhakhTovary, error) {
+func (c *Client) DocumentOtchetKomitentuOProdazhakhTovarys(where Where) (*[]DocumentOtchetKomitentuOProdazhakhTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetKomitentuOProdazhakhTovary `json:"value"`
 	}
@@ -5858,7 +5858,7 @@ func (c *Client) DocumentOtchetKomitentuOProdazhakhTovarys(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetKomitentuOProdazhakhTovary(key PrimaryDocumentOtchetKomitentuOProdazhakhTovary, entity DocumentOtchetKomitentuOProdazhakhTovary) (*DocumentOtchetKomitentuOProdazhakhTovary, error) {
 	return NewDocumentOtchetKomitentuOProdazhakhTovary(c.updateEntity(key, entity))
@@ -5898,7 +5898,7 @@ func (c *Client) CreateCatalogKassy(entity CatalogKassy) (*CatalogKassy, error) 
 func (c *Client) CatalogKassy(key PrimaryCatalogKassy, fields []string) (*CatalogKassy, error) {
 	return NewCatalogKassy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKassys(where Where) ([]CatalogKassy, error) {
+func (c *Client) CatalogKassys(where Where) (*[]CatalogKassy, error) {
 	type ReturnObj struct {
 		Value []CatalogKassy `json:"value"`
 	}
@@ -5914,7 +5914,7 @@ func (c *Client) CatalogKassys(where Where) ([]CatalogKassy, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKassy(key PrimaryCatalogKassy, entity CatalogKassy) (*CatalogKassy, error) {
 	return NewCatalogKassy(c.updateEntity(key, entity))
@@ -5958,7 +5958,7 @@ func (c *Client) CreateCatalogKassiry(entity CatalogKassiry) (*CatalogKassiry, e
 func (c *Client) CatalogKassiry(key PrimaryCatalogKassiry, fields []string) (*CatalogKassiry, error) {
 	return NewCatalogKassiry(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKassirys(where Where) ([]CatalogKassiry, error) {
+func (c *Client) CatalogKassirys(where Where) (*[]CatalogKassiry, error) {
 	type ReturnObj struct {
 		Value []CatalogKassiry `json:"value"`
 	}
@@ -5974,7 +5974,7 @@ func (c *Client) CatalogKassirys(where Where) ([]CatalogKassiry, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKassiry(key PrimaryCatalogKassiry, entity CatalogKassiry) (*CatalogKassiry, error) {
 	return NewCatalogKassiry(c.updateEntity(key, entity))
@@ -6030,7 +6030,7 @@ func (c *Client) CreateDocumentZaiavkaNaPereotsenkuTovarov(entity DocumentZaiavk
 func (c *Client) DocumentZaiavkaNaPereotsenkuTovarov(key PrimaryDocumentZaiavkaNaPereotsenkuTovarov, fields []string) (*DocumentZaiavkaNaPereotsenkuTovarov, error) {
 	return NewDocumentZaiavkaNaPereotsenkuTovarov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovs(where Where) ([]DocumentZaiavkaNaPereotsenkuTovarov, error) {
+func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovs(where Where) (*[]DocumentZaiavkaNaPereotsenkuTovarov, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaPereotsenkuTovarov `json:"value"`
 	}
@@ -6046,7 +6046,7 @@ func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovs(where Where) ([]DocumentZa
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaPereotsenkuTovarov(key PrimaryDocumentZaiavkaNaPereotsenkuTovarov, entity DocumentZaiavkaNaPereotsenkuTovarov) (*DocumentZaiavkaNaPereotsenkuTovarov, error) {
 	return NewDocumentZaiavkaNaPereotsenkuTovarov(c.updateEntity(key, entity))
@@ -6089,7 +6089,7 @@ func (c *Client) CreateDocumentZaiavkaNaPereotsenkuTovarovTovary(entity Document
 func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovTovary(key PrimaryDocumentZaiavkaNaPereotsenkuTovarovTovary, fields []string) (*DocumentZaiavkaNaPereotsenkuTovarovTovary, error) {
 	return NewDocumentZaiavkaNaPereotsenkuTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovTovarys(where Where) ([]DocumentZaiavkaNaPereotsenkuTovarovTovary, error) {
+func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovTovarys(where Where) (*[]DocumentZaiavkaNaPereotsenkuTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaPereotsenkuTovarovTovary `json:"value"`
 	}
@@ -6105,7 +6105,7 @@ func (c *Client) DocumentZaiavkaNaPereotsenkuTovarovTovarys(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaPereotsenkuTovarovTovary(key PrimaryDocumentZaiavkaNaPereotsenkuTovarovTovary, entity DocumentZaiavkaNaPereotsenkuTovarovTovary) (*DocumentZaiavkaNaPereotsenkuTovarovTovary, error) {
 	return NewDocumentZaiavkaNaPereotsenkuTovarovTovary(c.updateEntity(key, entity))
@@ -6145,7 +6145,7 @@ func (c *Client) CreateCatalogProizvodstvennyeUchastki(entity CatalogProizvodstv
 func (c *Client) CatalogProizvodstvennyeUchastki(key PrimaryCatalogProizvodstvennyeUchastki, fields []string) (*CatalogProizvodstvennyeUchastki, error) {
 	return NewCatalogProizvodstvennyeUchastki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProizvodstvennyeUchastkis(where Where) ([]CatalogProizvodstvennyeUchastki, error) {
+func (c *Client) CatalogProizvodstvennyeUchastkis(where Where) (*[]CatalogProizvodstvennyeUchastki, error) {
 	type ReturnObj struct {
 		Value []CatalogProizvodstvennyeUchastki `json:"value"`
 	}
@@ -6161,7 +6161,7 @@ func (c *Client) CatalogProizvodstvennyeUchastkis(where Where) ([]CatalogProizvo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProizvodstvennyeUchastki(key PrimaryCatalogProizvodstvennyeUchastki, entity CatalogProizvodstvennyeUchastki) (*CatalogProizvodstvennyeUchastki, error) {
 	return NewCatalogProizvodstvennyeUchastki(c.updateEntity(key, entity))
@@ -6204,7 +6204,7 @@ func (c *Client) CreateDocumentZakrytieZakazovKlientov(entity DocumentZakrytieZa
 func (c *Client) DocumentZakrytieZakazovKlientov(key PrimaryDocumentZakrytieZakazovKlientov, fields []string) (*DocumentZakrytieZakazovKlientov, error) {
 	return NewDocumentZakrytieZakazovKlientov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieZakazovKlientovs(where Where) ([]DocumentZakrytieZakazovKlientov, error) {
+func (c *Client) DocumentZakrytieZakazovKlientovs(where Where) (*[]DocumentZakrytieZakazovKlientov, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieZakazovKlientov `json:"value"`
 	}
@@ -6220,7 +6220,7 @@ func (c *Client) DocumentZakrytieZakazovKlientovs(where Where) ([]DocumentZakryt
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieZakazovKlientov(key PrimaryDocumentZakrytieZakazovKlientov, entity DocumentZakrytieZakazovKlientov) (*DocumentZakrytieZakazovKlientov, error) {
 	return NewDocumentZakrytieZakazovKlientov(c.updateEntity(key, entity))
@@ -6256,7 +6256,7 @@ func (c *Client) CreateDocumentZakrytieZakazovKlientovZakazy(entity DocumentZakr
 func (c *Client) DocumentZakrytieZakazovKlientovZakazy(key PrimaryDocumentZakrytieZakazovKlientovZakazy, fields []string) (*DocumentZakrytieZakazovKlientovZakazy, error) {
 	return NewDocumentZakrytieZakazovKlientovZakazy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieZakazovKlientovZakazys(where Where) ([]DocumentZakrytieZakazovKlientovZakazy, error) {
+func (c *Client) DocumentZakrytieZakazovKlientovZakazys(where Where) (*[]DocumentZakrytieZakazovKlientovZakazy, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieZakazovKlientovZakazy `json:"value"`
 	}
@@ -6272,7 +6272,7 @@ func (c *Client) DocumentZakrytieZakazovKlientovZakazys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieZakazovKlientovZakazy(key PrimaryDocumentZakrytieZakazovKlientovZakazy, entity DocumentZakrytieZakazovKlientovZakazy) (*DocumentZakrytieZakazovKlientovZakazy, error) {
 	return NewDocumentZakrytieZakazovKlientovZakazy(c.updateEntity(key, entity))
@@ -6317,7 +6317,7 @@ func (c *Client) CreateCatalogProekty(entity CatalogProekty) (*CatalogProekty, e
 func (c *Client) CatalogProekty(key PrimaryCatalogProekty, fields []string) (*CatalogProekty, error) {
 	return NewCatalogProekty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProektys(where Where) ([]CatalogProekty, error) {
+func (c *Client) CatalogProektys(where Where) (*[]CatalogProekty, error) {
 	type ReturnObj struct {
 		Value []CatalogProekty `json:"value"`
 	}
@@ -6333,7 +6333,7 @@ func (c *Client) CatalogProektys(where Where) ([]CatalogProekty, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProekty(key PrimaryCatalogProekty, entity CatalogProekty) (*CatalogProekty, error) {
 	return NewCatalogProekty(c.updateEntity(key, entity))
@@ -6398,7 +6398,7 @@ func (c *Client) CreateDocumentPlatezhnoePoruchenieVkhodiashchee(entity Document
 func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashchee(key PrimaryDocumentPlatezhnoePoruchenieVkhodiashchee, fields []string) (*DocumentPlatezhnoePoruchenieVkhodiashchee, error) {
 	return NewDocumentPlatezhnoePoruchenieVkhodiashchee(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashchees(where Where) ([]DocumentPlatezhnoePoruchenieVkhodiashchee, error) {
+func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashchees(where Where) (*[]DocumentPlatezhnoePoruchenieVkhodiashchee, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoePoruchenieVkhodiashchee `json:"value"`
 	}
@@ -6414,7 +6414,7 @@ func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashchees(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoePoruchenieVkhodiashchee(key PrimaryDocumentPlatezhnoePoruchenieVkhodiashchee, entity DocumentPlatezhnoePoruchenieVkhodiashchee) (*DocumentPlatezhnoePoruchenieVkhodiashchee, error) {
 	return NewDocumentPlatezhnoePoruchenieVkhodiashchee(c.updateEntity(key, entity))
@@ -6462,7 +6462,7 @@ func (c *Client) CreateDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlat
 func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha, fields []string) (*DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezhas(where Where) ([]DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezhas(where Where) (*[]DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha `json:"value"`
 	}
@@ -6478,7 +6478,7 @@ func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezhas(
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha, entity DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha) (*DocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoePoruchenieVkhodiashcheeRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -6516,7 +6516,7 @@ func (c *Client) CreateDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontrag
 func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta(key PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta, fields []string) (*DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragentas(where Where) ([]DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta, error) {
+func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragentas(where Where) (*[]DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta `json:"value"`
 	}
@@ -6532,7 +6532,7 @@ func (c *Client) DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragentas(
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta(key PrimaryDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta, entity DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta) (*DocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoePoruchenieVkhodiashcheeRekvizityKontragenta(c.updateEntity(key, entity))
@@ -6572,7 +6572,7 @@ func (c *Client) CreateDocumentVydachaZakaza(entity DocumentVydachaZakaza) (*Doc
 func (c *Client) DocumentVydachaZakaza(key PrimaryDocumentVydachaZakaza, fields []string) (*DocumentVydachaZakaza, error) {
 	return NewDocumentVydachaZakaza(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVydachaZakazas(where Where) ([]DocumentVydachaZakaza, error) {
+func (c *Client) DocumentVydachaZakazas(where Where) (*[]DocumentVydachaZakaza, error) {
 	type ReturnObj struct {
 		Value []DocumentVydachaZakaza `json:"value"`
 	}
@@ -6588,7 +6588,7 @@ func (c *Client) DocumentVydachaZakazas(where Where) ([]DocumentVydachaZakaza, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVydachaZakaza(key PrimaryDocumentVydachaZakaza, entity DocumentVydachaZakaza) (*DocumentVydachaZakaza, error) {
 	return NewDocumentVydachaZakaza(c.updateEntity(key, entity))
@@ -6626,7 +6626,7 @@ func (c *Client) CreateCatalogFormyOgranki(entity CatalogFormyOgranki) (*Catalog
 func (c *Client) CatalogFormyOgranki(key PrimaryCatalogFormyOgranki, fields []string) (*CatalogFormyOgranki, error) {
 	return NewCatalogFormyOgranki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFormyOgrankis(where Where) ([]CatalogFormyOgranki, error) {
+func (c *Client) CatalogFormyOgrankis(where Where) (*[]CatalogFormyOgranki, error) {
 	type ReturnObj struct {
 		Value []CatalogFormyOgranki `json:"value"`
 	}
@@ -6642,7 +6642,7 @@ func (c *Client) CatalogFormyOgrankis(where Where) ([]CatalogFormyOgranki, error
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFormyOgranki(key PrimaryCatalogFormyOgranki, entity CatalogFormyOgranki) (*CatalogFormyOgranki, error) {
 	return NewCatalogFormyOgranki(c.updateEntity(key, entity))
@@ -6679,7 +6679,7 @@ func (c *Client) CreateCatalogFormatyMagazinov(entity CatalogFormatyMagazinov) (
 func (c *Client) CatalogFormatyMagazinov(key PrimaryCatalogFormatyMagazinov, fields []string) (*CatalogFormatyMagazinov, error) {
 	return NewCatalogFormatyMagazinov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFormatyMagazinovs(where Where) ([]CatalogFormatyMagazinov, error) {
+func (c *Client) CatalogFormatyMagazinovs(where Where) (*[]CatalogFormatyMagazinov, error) {
 	type ReturnObj struct {
 		Value []CatalogFormatyMagazinov `json:"value"`
 	}
@@ -6695,7 +6695,7 @@ func (c *Client) CatalogFormatyMagazinovs(where Where) ([]CatalogFormatyMagazino
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFormatyMagazinov(key PrimaryCatalogFormatyMagazinov, entity CatalogFormatyMagazinov) (*CatalogFormatyMagazinov, error) {
 	return NewCatalogFormatyMagazinov(c.updateEntity(key, entity))
@@ -6734,7 +6734,7 @@ func (c *Client) CreateCatalogRabochieMesta(entity CatalogRabochieMesta) (*Catal
 func (c *Client) CatalogRabochieMesta(key PrimaryCatalogRabochieMesta, fields []string) (*CatalogRabochieMesta, error) {
 	return NewCatalogRabochieMesta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRabochieMestas(where Where) ([]CatalogRabochieMesta, error) {
+func (c *Client) CatalogRabochieMestas(where Where) (*[]CatalogRabochieMesta, error) {
 	type ReturnObj struct {
 		Value []CatalogRabochieMesta `json:"value"`
 	}
@@ -6750,7 +6750,7 @@ func (c *Client) CatalogRabochieMestas(where Where) ([]CatalogRabochieMesta, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRabochieMesta(key PrimaryCatalogRabochieMesta, entity CatalogRabochieMesta) (*CatalogRabochieMesta, error) {
 	return NewCatalogRabochieMesta(c.updateEntity(key, entity))
@@ -6805,7 +6805,7 @@ func (c *Client) CreateCatalogNastroikiVypolneniiaObmena(entity CatalogNastroiki
 func (c *Client) CatalogNastroikiVypolneniiaObmena(key PrimaryCatalogNastroikiVypolneniiaObmena, fields []string) (*CatalogNastroikiVypolneniiaObmena, error) {
 	return NewCatalogNastroikiVypolneniiaObmena(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiVypolneniiaObmenas(where Where) ([]CatalogNastroikiVypolneniiaObmena, error) {
+func (c *Client) CatalogNastroikiVypolneniiaObmenas(where Where) (*[]CatalogNastroikiVypolneniiaObmena, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiVypolneniiaObmena `json:"value"`
 	}
@@ -6821,7 +6821,7 @@ func (c *Client) CatalogNastroikiVypolneniiaObmenas(where Where) ([]CatalogNastr
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiVypolneniiaObmena(key PrimaryCatalogNastroikiVypolneniiaObmena, entity CatalogNastroikiVypolneniiaObmena) (*CatalogNastroikiVypolneniiaObmena, error) {
 	return NewCatalogNastroikiVypolneniiaObmena(c.updateEntity(key, entity))
@@ -6858,7 +6858,7 @@ func (c *Client) CreateCatalogNastroikiVypolneniiaObmenaNastroikiObmena(entity C
 func (c *Client) CatalogNastroikiVypolneniiaObmenaNastroikiObmena(key PrimaryCatalogNastroikiVypolneniiaObmenaNastroikiObmena, fields []string) (*CatalogNastroikiVypolneniiaObmenaNastroikiObmena, error) {
 	return NewCatalogNastroikiVypolneniiaObmenaNastroikiObmena(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiVypolneniiaObmenaNastroikiObmenas(where Where) ([]CatalogNastroikiVypolneniiaObmenaNastroikiObmena, error) {
+func (c *Client) CatalogNastroikiVypolneniiaObmenaNastroikiObmenas(where Where) (*[]CatalogNastroikiVypolneniiaObmenaNastroikiObmena, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiVypolneniiaObmenaNastroikiObmena `json:"value"`
 	}
@@ -6874,7 +6874,7 @@ func (c *Client) CatalogNastroikiVypolneniiaObmenaNastroikiObmenas(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiVypolneniiaObmenaNastroikiObmena(key PrimaryCatalogNastroikiVypolneniiaObmenaNastroikiObmena, entity CatalogNastroikiVypolneniiaObmenaNastroikiObmena) (*CatalogNastroikiVypolneniiaObmenaNastroikiObmena, error) {
 	return NewCatalogNastroikiVypolneniiaObmenaNastroikiObmena(c.updateEntity(key, entity))
@@ -6909,7 +6909,7 @@ func (c *Client) CreateCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaius
 func (c *Client) CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami(key PrimaryCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami, fields []string) (*CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
 	return NewCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkamis(where Where) ([]CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
+func (c *Client) CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkamis(where Where) (*[]CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami `json:"value"`
 	}
@@ -6925,7 +6925,7 @@ func (c *Client) CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchies
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami(key PrimaryCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami, entity CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami) (*CatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
 	return NewCatalogNastroikiVypolneniiaObmenaSoobshcheniiaNeIavliaiushchiesiaOshibkami(c.updateEntity(key, entity))
@@ -6965,7 +6965,7 @@ func (c *Client) CreateCatalogZnacheniiaSvoistvObieektov(entity CatalogZnachenii
 func (c *Client) CatalogZnacheniiaSvoistvObieektov(key PrimaryCatalogZnacheniiaSvoistvObieektov, fields []string) (*CatalogZnacheniiaSvoistvObieektov, error) {
 	return NewCatalogZnacheniiaSvoistvObieektov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogZnacheniiaSvoistvObieektovs(where Where) ([]CatalogZnacheniiaSvoistvObieektov, error) {
+func (c *Client) CatalogZnacheniiaSvoistvObieektovs(where Where) (*[]CatalogZnacheniiaSvoistvObieektov, error) {
 	type ReturnObj struct {
 		Value []CatalogZnacheniiaSvoistvObieektov `json:"value"`
 	}
@@ -6981,7 +6981,7 @@ func (c *Client) CatalogZnacheniiaSvoistvObieektovs(where Where) ([]CatalogZnach
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogZnacheniiaSvoistvObieektov(key PrimaryCatalogZnacheniiaSvoistvObieektov, entity CatalogZnacheniiaSvoistvObieektov) (*CatalogZnacheniiaSvoistvObieektov, error) {
 	return NewCatalogZnacheniiaSvoistvObieektov(c.updateEntity(key, entity))
@@ -7063,7 +7063,7 @@ func (c *Client) CreateDocumentRealizatsiiaTovarovUslug(entity DocumentRealizats
 func (c *Client) DocumentRealizatsiiaTovarovUslug(key PrimaryDocumentRealizatsiiaTovarovUslug, fields []string) (*DocumentRealizatsiiaTovarovUslug, error) {
 	return NewDocumentRealizatsiiaTovarovUslug(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRealizatsiiaTovarovUslugs(where Where) ([]DocumentRealizatsiiaTovarovUslug, error) {
+func (c *Client) DocumentRealizatsiiaTovarovUslugs(where Where) (*[]DocumentRealizatsiiaTovarovUslug, error) {
 	type ReturnObj struct {
 		Value []DocumentRealizatsiiaTovarovUslug `json:"value"`
 	}
@@ -7079,7 +7079,7 @@ func (c *Client) DocumentRealizatsiiaTovarovUslugs(where Where) ([]DocumentReali
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRealizatsiiaTovarovUslug(key PrimaryDocumentRealizatsiiaTovarovUslug, entity DocumentRealizatsiiaTovarovUslug) (*DocumentRealizatsiiaTovarovUslug, error) {
 	return NewDocumentRealizatsiiaTovarovUslug(c.updateEntity(key, entity))
@@ -7133,7 +7133,7 @@ func (c *Client) CreateDocumentRealizatsiiaTovarovUslugTovary(entity DocumentRea
 func (c *Client) DocumentRealizatsiiaTovarovUslugTovary(key PrimaryDocumentRealizatsiiaTovarovUslugTovary, fields []string) (*DocumentRealizatsiiaTovarovUslugTovary, error) {
 	return NewDocumentRealizatsiiaTovarovUslugTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRealizatsiiaTovarovUslugTovarys(where Where) ([]DocumentRealizatsiiaTovarovUslugTovary, error) {
+func (c *Client) DocumentRealizatsiiaTovarovUslugTovarys(where Where) (*[]DocumentRealizatsiiaTovarovUslugTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentRealizatsiiaTovarovUslugTovary `json:"value"`
 	}
@@ -7149,7 +7149,7 @@ func (c *Client) DocumentRealizatsiiaTovarovUslugTovarys(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRealizatsiiaTovarovUslugTovary(key PrimaryDocumentRealizatsiiaTovarovUslugTovary, entity DocumentRealizatsiiaTovarovUslugTovary) (*DocumentRealizatsiiaTovarovUslugTovary, error) {
 	return NewDocumentRealizatsiiaTovarovUslugTovary(c.updateEntity(key, entity))
@@ -7193,7 +7193,7 @@ func (c *Client) CreateDocumentRealizatsiiaTovarovUslugUslugi(entity DocumentRea
 func (c *Client) DocumentRealizatsiiaTovarovUslugUslugi(key PrimaryDocumentRealizatsiiaTovarovUslugUslugi, fields []string) (*DocumentRealizatsiiaTovarovUslugUslugi, error) {
 	return NewDocumentRealizatsiiaTovarovUslugUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRealizatsiiaTovarovUslugUslugis(where Where) ([]DocumentRealizatsiiaTovarovUslugUslugi, error) {
+func (c *Client) DocumentRealizatsiiaTovarovUslugUslugis(where Where) (*[]DocumentRealizatsiiaTovarovUslugUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentRealizatsiiaTovarovUslugUslugi `json:"value"`
 	}
@@ -7209,7 +7209,7 @@ func (c *Client) DocumentRealizatsiiaTovarovUslugUslugis(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRealizatsiiaTovarovUslugUslugi(key PrimaryDocumentRealizatsiiaTovarovUslugUslugi, entity DocumentRealizatsiiaTovarovUslugUslugi) (*DocumentRealizatsiiaTovarovUslugUslugi, error) {
 	return NewDocumentRealizatsiiaTovarovUslugUslugi(c.updateEntity(key, entity))
@@ -7270,7 +7270,7 @@ func (c *Client) CreateDocumentSobytie(entity DocumentSobytie) (*DocumentSobytie
 func (c *Client) DocumentSobytie(key PrimaryDocumentSobytie, fields []string) (*DocumentSobytie, error) {
 	return NewDocumentSobytie(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSobyties(where Where) ([]DocumentSobytie, error) {
+func (c *Client) DocumentSobyties(where Where) (*[]DocumentSobytie, error) {
 	type ReturnObj struct {
 		Value []DocumentSobytie `json:"value"`
 	}
@@ -7286,7 +7286,7 @@ func (c *Client) DocumentSobyties(where Where) ([]DocumentSobytie, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSobytie(key PrimaryDocumentSobytie, entity DocumentSobytie) (*DocumentSobytie, error) {
 	return NewDocumentSobytie(c.updateEntity(key, entity))
@@ -7322,7 +7322,7 @@ func (c *Client) CreateDocumentSobytieStoronnieLitsa(entity DocumentSobytieStoro
 func (c *Client) DocumentSobytieStoronnieLitsa(key PrimaryDocumentSobytieStoronnieLitsa, fields []string) (*DocumentSobytieStoronnieLitsa, error) {
 	return NewDocumentSobytieStoronnieLitsa(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSobytieStoronnieLitsas(where Where) ([]DocumentSobytieStoronnieLitsa, error) {
+func (c *Client) DocumentSobytieStoronnieLitsas(where Where) (*[]DocumentSobytieStoronnieLitsa, error) {
 	type ReturnObj struct {
 		Value []DocumentSobytieStoronnieLitsa `json:"value"`
 	}
@@ -7338,7 +7338,7 @@ func (c *Client) DocumentSobytieStoronnieLitsas(where Where) ([]DocumentSobytieS
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSobytieStoronnieLitsa(key PrimaryDocumentSobytieStoronnieLitsa, entity DocumentSobytieStoronnieLitsa) (*DocumentSobytieStoronnieLitsa, error) {
 	return NewDocumentSobytieStoronnieLitsa(c.updateEntity(key, entity))
@@ -7378,7 +7378,7 @@ func (c *Client) CreateCatalogVariantyOtvetovOprosov(entity CatalogVariantyOtvet
 func (c *Client) CatalogVariantyOtvetovOprosov(key PrimaryCatalogVariantyOtvetovOprosov, fields []string) (*CatalogVariantyOtvetovOprosov, error) {
 	return NewCatalogVariantyOtvetovOprosov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVariantyOtvetovOprosovs(where Where) ([]CatalogVariantyOtvetovOprosov, error) {
+func (c *Client) CatalogVariantyOtvetovOprosovs(where Where) (*[]CatalogVariantyOtvetovOprosov, error) {
 	type ReturnObj struct {
 		Value []CatalogVariantyOtvetovOprosov `json:"value"`
 	}
@@ -7394,7 +7394,7 @@ func (c *Client) CatalogVariantyOtvetovOprosovs(where Where) ([]CatalogVariantyO
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVariantyOtvetovOprosov(key PrimaryCatalogVariantyOtvetovOprosov, entity CatalogVariantyOtvetovOprosov) (*CatalogVariantyOtvetovOprosov, error) {
 	return NewCatalogVariantyOtvetovOprosov(c.updateEntity(key, entity))
@@ -7435,7 +7435,7 @@ func (c *Client) CreateCatalogGruppyPisemElektronnoiPochty(entity CatalogGruppyP
 func (c *Client) CatalogGruppyPisemElektronnoiPochty(key PrimaryCatalogGruppyPisemElektronnoiPochty, fields []string) (*CatalogGruppyPisemElektronnoiPochty, error) {
 	return NewCatalogGruppyPisemElektronnoiPochty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyPisemElektronnoiPochtys(where Where) ([]CatalogGruppyPisemElektronnoiPochty, error) {
+func (c *Client) CatalogGruppyPisemElektronnoiPochtys(where Where) (*[]CatalogGruppyPisemElektronnoiPochty, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyPisemElektronnoiPochty `json:"value"`
 	}
@@ -7451,7 +7451,7 @@ func (c *Client) CatalogGruppyPisemElektronnoiPochtys(where Where) ([]CatalogGru
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyPisemElektronnoiPochty(key PrimaryCatalogGruppyPisemElektronnoiPochty, entity CatalogGruppyPisemElektronnoiPochty) (*CatalogGruppyPisemElektronnoiPochty, error) {
 	return NewCatalogGruppyPisemElektronnoiPochty(c.updateEntity(key, entity))
@@ -7491,7 +7491,7 @@ func (c *Client) CreateCatalogGruppyPochtovoiRassylki(entity CatalogGruppyPochto
 func (c *Client) CatalogGruppyPochtovoiRassylki(key PrimaryCatalogGruppyPochtovoiRassylki, fields []string) (*CatalogGruppyPochtovoiRassylki, error) {
 	return NewCatalogGruppyPochtovoiRassylki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyPochtovoiRassylkis(where Where) ([]CatalogGruppyPochtovoiRassylki, error) {
+func (c *Client) CatalogGruppyPochtovoiRassylkis(where Where) (*[]CatalogGruppyPochtovoiRassylki, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyPochtovoiRassylki `json:"value"`
 	}
@@ -7507,7 +7507,7 @@ func (c *Client) CatalogGruppyPochtovoiRassylkis(where Where) ([]CatalogGruppyPo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyPochtovoiRassylki(key PrimaryCatalogGruppyPochtovoiRassylki, entity CatalogGruppyPochtovoiRassylki) (*CatalogGruppyPochtovoiRassylki, error) {
 	return NewCatalogGruppyPochtovoiRassylki(c.updateEntity(key, entity))
@@ -7556,7 +7556,7 @@ func (c *Client) CreateCatalogNastroikiOtchetov(entity CatalogNastroikiOtchetov)
 func (c *Client) CatalogNastroikiOtchetov(key PrimaryCatalogNastroikiOtchetov, fields []string) (*CatalogNastroikiOtchetov, error) {
 	return NewCatalogNastroikiOtchetov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiOtchetovs(where Where) ([]CatalogNastroikiOtchetov, error) {
+func (c *Client) CatalogNastroikiOtchetovs(where Where) (*[]CatalogNastroikiOtchetov, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiOtchetov `json:"value"`
 	}
@@ -7572,7 +7572,7 @@ func (c *Client) CatalogNastroikiOtchetovs(where Where) ([]CatalogNastroikiOtche
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiOtchetov(key PrimaryCatalogNastroikiOtchetov, entity CatalogNastroikiOtchetov) (*CatalogNastroikiOtchetov, error) {
 	return NewCatalogNastroikiOtchetov(c.updateEntity(key, entity))
@@ -7608,7 +7608,7 @@ func (c *Client) CreateCatalogNastroikiOtchetovGruppyNastroekIPolzovateli(entity
 func (c *Client) CatalogNastroikiOtchetovGruppyNastroekIPolzovateli(key PrimaryCatalogNastroikiOtchetovGruppyNastroekIPolzovateli, fields []string) (*CatalogNastroikiOtchetovGruppyNastroekIPolzovateli, error) {
 	return NewCatalogNastroikiOtchetovGruppyNastroekIPolzovateli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiOtchetovGruppyNastroekIPolzovatelis(where Where) ([]CatalogNastroikiOtchetovGruppyNastroekIPolzovateli, error) {
+func (c *Client) CatalogNastroikiOtchetovGruppyNastroekIPolzovatelis(where Where) (*[]CatalogNastroikiOtchetovGruppyNastroekIPolzovateli, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiOtchetovGruppyNastroekIPolzovateli `json:"value"`
 	}
@@ -7624,7 +7624,7 @@ func (c *Client) CatalogNastroikiOtchetovGruppyNastroekIPolzovatelis(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiOtchetovGruppyNastroekIPolzovateli(key PrimaryCatalogNastroikiOtchetovGruppyNastroekIPolzovateli, entity CatalogNastroikiOtchetovGruppyNastroekIPolzovateli) (*CatalogNastroikiOtchetovGruppyNastroekIPolzovateli, error) {
 	return NewCatalogNastroikiOtchetovGruppyNastroekIPolzovateli(c.updateEntity(key, entity))
@@ -7664,7 +7664,7 @@ func (c *Client) CreateCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam(entity
 func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam(key PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam, fields []string) (*CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam, error) {
 	return NewCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartams(where Where) ([]CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam, error) {
+func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartams(where Where) (*[]CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam, error) {
 	type ReturnObj struct {
 		Value []CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam `json:"value"`
 	}
@@ -7680,7 +7680,7 @@ func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartams(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam(key PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam, entity CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam) (*CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam, error) {
 	return NewCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartam(c.updateEntity(key, entity))
@@ -7720,7 +7720,7 @@ func (c *Client) CreateCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki(
 func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki(key PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki, fields []string) (*CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki, error) {
 	return NewCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidkis(where Where) ([]CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki, error) {
+func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidkis(where Where) (*[]CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki, error) {
 	type ReturnObj struct {
 		Value []CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki `json:"value"`
 	}
@@ -7736,7 +7736,7 @@ func (c *Client) CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidkis(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki(key PrimaryCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki, entity CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki) (*CatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki, error) {
 	return NewCatalogSkhemyNakopitelnykhSkidokPoDiskontnymKartamSkidki(c.updateEntity(key, entity))
@@ -7792,7 +7792,7 @@ func (c *Client) CreateDepartment(entity Department) (*Department, error) {
 func (c *Client) Department(key PrimaryDepartment, fields []string) (*Department, error) {
 	return NewDepartment(c.getEntity(key, fields))
 }
-func (c *Client) Departments(where Where) ([]Department, error) {
+func (c *Client) Departments(where Where) (*[]Department, error) {
 	type ReturnObj struct {
 		Value []Department `json:"value"`
 	}
@@ -7808,7 +7808,7 @@ func (c *Client) Departments(where Where) ([]Department, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDepartment(key PrimaryDepartment, entity Department) (*Department, error) {
 	return NewDepartment(c.updateEntity(key, entity))
@@ -7849,7 +7849,7 @@ func (c *Client) CreateCatalogKodyVidovTovarov(entity CatalogKodyVidovTovarov) (
 func (c *Client) CatalogKodyVidovTovarov(key PrimaryCatalogKodyVidovTovarov, fields []string) (*CatalogKodyVidovTovarov, error) {
 	return NewCatalogKodyVidovTovarov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKodyVidovTovarovs(where Where) ([]CatalogKodyVidovTovarov, error) {
+func (c *Client) CatalogKodyVidovTovarovs(where Where) (*[]CatalogKodyVidovTovarov, error) {
 	type ReturnObj struct {
 		Value []CatalogKodyVidovTovarov `json:"value"`
 	}
@@ -7865,7 +7865,7 @@ func (c *Client) CatalogKodyVidovTovarovs(where Where) ([]CatalogKodyVidovTovaro
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKodyVidovTovarov(key PrimaryCatalogKodyVidovTovarov, entity CatalogKodyVidovTovarov) (*CatalogKodyVidovTovarov, error) {
 	return NewCatalogKodyVidovTovarov(c.updateEntity(key, entity))
@@ -7905,7 +7905,7 @@ func (c *Client) CreateCatalogRassevy(entity CatalogRassevy) (*CatalogRassevy, e
 func (c *Client) CatalogRassevy(key PrimaryCatalogRassevy, fields []string) (*CatalogRassevy, error) {
 	return NewCatalogRassevy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRassevys(where Where) ([]CatalogRassevy, error) {
+func (c *Client) CatalogRassevys(where Where) (*[]CatalogRassevy, error) {
 	type ReturnObj struct {
 		Value []CatalogRassevy `json:"value"`
 	}
@@ -7921,7 +7921,7 @@ func (c *Client) CatalogRassevys(where Where) ([]CatalogRassevy, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRassevy(key PrimaryCatalogRassevy, entity CatalogRassevy) (*CatalogRassevy, error) {
 	return NewCatalogRassevy(c.updateEntity(key, entity))
@@ -7958,7 +7958,7 @@ func (c *Client) CreateCatalogPrichinyZakrytiiaZakazov(entity CatalogPrichinyZak
 func (c *Client) CatalogPrichinyZakrytiiaZakazov(key PrimaryCatalogPrichinyZakrytiiaZakazov, fields []string) (*CatalogPrichinyZakrytiiaZakazov, error) {
 	return NewCatalogPrichinyZakrytiiaZakazov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPrichinyZakrytiiaZakazovs(where Where) ([]CatalogPrichinyZakrytiiaZakazov, error) {
+func (c *Client) CatalogPrichinyZakrytiiaZakazovs(where Where) (*[]CatalogPrichinyZakrytiiaZakazov, error) {
 	type ReturnObj struct {
 		Value []CatalogPrichinyZakrytiiaZakazov `json:"value"`
 	}
@@ -7974,7 +7974,7 @@ func (c *Client) CatalogPrichinyZakrytiiaZakazovs(where Where) ([]CatalogPrichin
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPrichinyZakrytiiaZakazov(key PrimaryCatalogPrichinyZakrytiiaZakazov, entity CatalogPrichinyZakrytiiaZakazov) (*CatalogPrichinyZakrytiiaZakazov, error) {
 	return NewCatalogPrichinyZakrytiiaZakazov(c.updateEntity(key, entity))
@@ -8022,7 +8022,7 @@ func (c *Client) CreateCatalogSegmentyNomenklatury(entity CatalogSegmentyNomenkl
 func (c *Client) CatalogSegmentyNomenklatury(key PrimaryCatalogSegmentyNomenklatury, fields []string) (*CatalogSegmentyNomenklatury, error) {
 	return NewCatalogSegmentyNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSegmentyNomenklaturys(where Where) ([]CatalogSegmentyNomenklatury, error) {
+func (c *Client) CatalogSegmentyNomenklaturys(where Where) (*[]CatalogSegmentyNomenklatury, error) {
 	type ReturnObj struct {
 		Value []CatalogSegmentyNomenklatury `json:"value"`
 	}
@@ -8038,7 +8038,7 @@ func (c *Client) CatalogSegmentyNomenklaturys(where Where) ([]CatalogSegmentyNom
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSegmentyNomenklatury(key PrimaryCatalogSegmentyNomenklatury, entity CatalogSegmentyNomenklatury) (*CatalogSegmentyNomenklatury, error) {
 	return NewCatalogSegmentyNomenklatury(c.updateEntity(key, entity))
@@ -8081,7 +8081,7 @@ func (c *Client) CreateCatalogSostavStrokiCheka(entity CatalogSostavStrokiCheka)
 func (c *Client) CatalogSostavStrokiCheka(key PrimaryCatalogSostavStrokiCheka, fields []string) (*CatalogSostavStrokiCheka, error) {
 	return NewCatalogSostavStrokiCheka(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSostavStrokiChekas(where Where) ([]CatalogSostavStrokiCheka, error) {
+func (c *Client) CatalogSostavStrokiChekas(where Where) (*[]CatalogSostavStrokiCheka, error) {
 	type ReturnObj struct {
 		Value []CatalogSostavStrokiCheka `json:"value"`
 	}
@@ -8097,7 +8097,7 @@ func (c *Client) CatalogSostavStrokiChekas(where Where) ([]CatalogSostavStrokiCh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSostavStrokiCheka(key PrimaryCatalogSostavStrokiCheka, entity CatalogSostavStrokiCheka) (*CatalogSostavStrokiCheka, error) {
 	return NewCatalogSostavStrokiCheka(c.updateEntity(key, entity))
@@ -8143,7 +8143,7 @@ func (c *Client) CreateCatalogUsloviiaPriemaIzdeliiNaKomissiiu(entity CatalogUsl
 func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiiu(key PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiu, fields []string) (*CatalogUsloviiaPriemaIzdeliiNaKomissiiu, error) {
 	return NewCatalogUsloviiaPriemaIzdeliiNaKomissiiu(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiius(where Where) ([]CatalogUsloviiaPriemaIzdeliiNaKomissiiu, error) {
+func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiius(where Where) (*[]CatalogUsloviiaPriemaIzdeliiNaKomissiiu, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaPriemaIzdeliiNaKomissiiu `json:"value"`
 	}
@@ -8159,7 +8159,7 @@ func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiius(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaPriemaIzdeliiNaKomissiiu(key PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiu, entity CatalogUsloviiaPriemaIzdeliiNaKomissiiu) (*CatalogUsloviiaPriemaIzdeliiNaKomissiiu, error) {
 	return NewCatalogUsloviiaPriemaIzdeliiNaKomissiiu(c.updateEntity(key, entity))
@@ -8195,7 +8195,7 @@ func (c *Client) CreateCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok(enti
 func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok(key PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok, fields []string) (*CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok, error) {
 	return NewCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenoks(where Where) ([]CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok, error) {
+func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenoks(where Where) (*[]CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok `json:"value"`
 	}
@@ -8211,7 +8211,7 @@ func (c *Client) CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenoks(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok(key PrimaryCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok, entity CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok) (*CatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok, error) {
 	return NewCatalogUsloviiaPriemaIzdeliiNaKomissiiuGrafikUtsenok(c.updateEntity(key, entity))
@@ -8248,7 +8248,7 @@ func (c *Client) CreateCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei(en
 func (c *Client) CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei(key PrimaryCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei, fields []string) (*CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei, error) {
 	return NewCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei(c.getEntity(key, fields))
 }
-func (c *Client) CatalogIstochnikiInformatsiiPriObrashcheniiPokupateleis(where Where) ([]CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei, error) {
+func (c *Client) CatalogIstochnikiInformatsiiPriObrashcheniiPokupateleis(where Where) (*[]CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei, error) {
 	type ReturnObj struct {
 		Value []CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei `json:"value"`
 	}
@@ -8264,7 +8264,7 @@ func (c *Client) CatalogIstochnikiInformatsiiPriObrashcheniiPokupateleis(where W
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei(key PrimaryCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei, entity CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei) (*CatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei, error) {
 	return NewCatalogIstochnikiInformatsiiPriObrashcheniiPokupatelei(c.updateEntity(key, entity))
@@ -8311,7 +8311,7 @@ func (c *Client) CreateDocumentKorrektirovkaDolga(entity DocumentKorrektirovkaDo
 func (c *Client) DocumentKorrektirovkaDolga(key PrimaryDocumentKorrektirovkaDolga, fields []string) (*DocumentKorrektirovkaDolga, error) {
 	return NewDocumentKorrektirovkaDolga(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKorrektirovkaDolgas(where Where) ([]DocumentKorrektirovkaDolga, error) {
+func (c *Client) DocumentKorrektirovkaDolgas(where Where) (*[]DocumentKorrektirovkaDolga, error) {
 	type ReturnObj struct {
 		Value []DocumentKorrektirovkaDolga `json:"value"`
 	}
@@ -8327,7 +8327,7 @@ func (c *Client) DocumentKorrektirovkaDolgas(where Where) ([]DocumentKorrektirov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKorrektirovkaDolga(key PrimaryDocumentKorrektirovkaDolga, entity DocumentKorrektirovkaDolga) (*DocumentKorrektirovkaDolga, error) {
 	return NewDocumentKorrektirovkaDolga(c.updateEntity(key, entity))
@@ -8369,7 +8369,7 @@ func (c *Client) CreateDocumentKorrektirovkaDolgaSummyDolga(entity DocumentKorre
 func (c *Client) DocumentKorrektirovkaDolgaSummyDolga(key PrimaryDocumentKorrektirovkaDolgaSummyDolga, fields []string) (*DocumentKorrektirovkaDolgaSummyDolga, error) {
 	return NewDocumentKorrektirovkaDolgaSummyDolga(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKorrektirovkaDolgaSummyDolgas(where Where) ([]DocumentKorrektirovkaDolgaSummyDolga, error) {
+func (c *Client) DocumentKorrektirovkaDolgaSummyDolgas(where Where) (*[]DocumentKorrektirovkaDolgaSummyDolga, error) {
 	type ReturnObj struct {
 		Value []DocumentKorrektirovkaDolgaSummyDolga `json:"value"`
 	}
@@ -8385,7 +8385,7 @@ func (c *Client) DocumentKorrektirovkaDolgaSummyDolgas(where Where) ([]DocumentK
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKorrektirovkaDolgaSummyDolga(key PrimaryDocumentKorrektirovkaDolgaSummyDolga, entity DocumentKorrektirovkaDolgaSummyDolga) (*DocumentKorrektirovkaDolgaSummyDolga, error) {
 	return NewDocumentKorrektirovkaDolgaSummyDolga(c.updateEntity(key, entity))
@@ -8431,7 +8431,7 @@ func (c *Client) CreatePayType(entity PayType) (*PayType, error) {
 func (c *Client) PayType(key PrimaryPayType, fields []string) (*PayType, error) {
 	return NewPayType(c.getEntity(key, fields))
 }
-func (c *Client) PayTypes(where Where) ([]PayType, error) {
+func (c *Client) PayTypes(where Where) (*[]PayType, error) {
 	type ReturnObj struct {
 		Value []PayType `json:"value"`
 	}
@@ -8447,7 +8447,7 @@ func (c *Client) PayTypes(where Where) ([]PayType, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdatePayType(key PrimaryPayType, entity PayType) (*PayType, error) {
 	return NewPayType(c.updateEntity(key, entity))
@@ -8489,7 +8489,7 @@ func (c *Client) CreateCatalogKhranilishcheShablonov(entity CatalogKhranilishche
 func (c *Client) CatalogKhranilishcheShablonov(key PrimaryCatalogKhranilishcheShablonov, fields []string) (*CatalogKhranilishcheShablonov, error) {
 	return NewCatalogKhranilishcheShablonov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKhranilishcheShablonovs(where Where) ([]CatalogKhranilishcheShablonov, error) {
+func (c *Client) CatalogKhranilishcheShablonovs(where Where) (*[]CatalogKhranilishcheShablonov, error) {
 	type ReturnObj struct {
 		Value []CatalogKhranilishcheShablonov `json:"value"`
 	}
@@ -8505,7 +8505,7 @@ func (c *Client) CatalogKhranilishcheShablonovs(where Where) ([]CatalogKhranilis
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKhranilishcheShablonov(key PrimaryCatalogKhranilishcheShablonov, entity CatalogKhranilishcheShablonov) (*CatalogKhranilishcheShablonov, error) {
 	return NewCatalogKhranilishcheShablonov(c.updateEntity(key, entity))
@@ -8575,7 +8575,7 @@ func (c *Client) CreateDocumentZaiavkaNaRaskhodovanieSredstv(entity DocumentZaia
 func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstv(key PrimaryDocumentZaiavkaNaRaskhodovanieSredstv, fields []string) (*DocumentZaiavkaNaRaskhodovanieSredstv, error) {
 	return NewDocumentZaiavkaNaRaskhodovanieSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvs(where Where) ([]DocumentZaiavkaNaRaskhodovanieSredstv, error) {
+func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvs(where Where) (*[]DocumentZaiavkaNaRaskhodovanieSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaRaskhodovanieSredstv `json:"value"`
 	}
@@ -8591,7 +8591,7 @@ func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvs(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaRaskhodovanieSredstv(key PrimaryDocumentZaiavkaNaRaskhodovanieSredstv, entity DocumentZaiavkaNaRaskhodovanieSredstv) (*DocumentZaiavkaNaRaskhodovanieSredstv, error) {
 	return NewDocumentZaiavkaNaRaskhodovanieSredstv(c.updateEntity(key, entity))
@@ -8634,7 +8634,7 @@ func (c *Client) CreateDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha
 func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha(key PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha, fields []string) (*DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezhas(where Where) ([]DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezhas(where Where) (*[]DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha `json:"value"`
 	}
@@ -8650,7 +8650,7 @@ func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezhas(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha(key PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha, entity DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha) (*DocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentZaiavkaNaRaskhodovanieSredstvRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -8687,7 +8687,7 @@ func (c *Client) CreateDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki
 func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki(key PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki, fields []string) (*DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki, error) {
 	return NewDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavkis(where Where) ([]DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki, error) {
+func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavkis(where Where) (*[]DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki `json:"value"`
 	}
@@ -8703,7 +8703,7 @@ func (c *Client) DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavkis(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki(key PrimaryDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki, entity DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki) (*DocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki, error) {
 	return NewDocumentZaiavkaNaRaskhodovanieSredstvRazmeshchenieZaiavki(c.updateEntity(key, entity))
@@ -8746,7 +8746,7 @@ func (c *Client) CreateDocumentZakrytieZakazovPostavshchikam(entity DocumentZakr
 func (c *Client) DocumentZakrytieZakazovPostavshchikam(key PrimaryDocumentZakrytieZakazovPostavshchikam, fields []string) (*DocumentZakrytieZakazovPostavshchikam, error) {
 	return NewDocumentZakrytieZakazovPostavshchikam(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieZakazovPostavshchikams(where Where) ([]DocumentZakrytieZakazovPostavshchikam, error) {
+func (c *Client) DocumentZakrytieZakazovPostavshchikams(where Where) (*[]DocumentZakrytieZakazovPostavshchikam, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieZakazovPostavshchikam `json:"value"`
 	}
@@ -8762,7 +8762,7 @@ func (c *Client) DocumentZakrytieZakazovPostavshchikams(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieZakazovPostavshchikam(key PrimaryDocumentZakrytieZakazovPostavshchikam, entity DocumentZakrytieZakazovPostavshchikam) (*DocumentZakrytieZakazovPostavshchikam, error) {
 	return NewDocumentZakrytieZakazovPostavshchikam(c.updateEntity(key, entity))
@@ -8798,7 +8798,7 @@ func (c *Client) CreateDocumentZakrytieZakazovPostavshchikamZakazy(entity Docume
 func (c *Client) DocumentZakrytieZakazovPostavshchikamZakazy(key PrimaryDocumentZakrytieZakazovPostavshchikamZakazy, fields []string) (*DocumentZakrytieZakazovPostavshchikamZakazy, error) {
 	return NewDocumentZakrytieZakazovPostavshchikamZakazy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieZakazovPostavshchikamZakazys(where Where) ([]DocumentZakrytieZakazovPostavshchikamZakazy, error) {
+func (c *Client) DocumentZakrytieZakazovPostavshchikamZakazys(where Where) (*[]DocumentZakrytieZakazovPostavshchikamZakazy, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieZakazovPostavshchikamZakazy `json:"value"`
 	}
@@ -8814,7 +8814,7 @@ func (c *Client) DocumentZakrytieZakazovPostavshchikamZakazys(where Where) ([]Do
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieZakazovPostavshchikamZakazy(key PrimaryDocumentZakrytieZakazovPostavshchikamZakazy, entity DocumentZakrytieZakazovPostavshchikamZakazy) (*DocumentZakrytieZakazovPostavshchikamZakazy, error) {
 	return NewDocumentZakrytieZakazovPostavshchikamZakazy(c.updateEntity(key, entity))
@@ -8851,7 +8851,7 @@ func (c *Client) CreateCatalogVidyKamnei(entity CatalogVidyKamnei) (*CatalogVidy
 func (c *Client) CatalogVidyKamnei(key PrimaryCatalogVidyKamnei, fields []string) (*CatalogVidyKamnei, error) {
 	return NewCatalogVidyKamnei(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKamneis(where Where) ([]CatalogVidyKamnei, error) {
+func (c *Client) CatalogVidyKamneis(where Where) (*[]CatalogVidyKamnei, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKamnei `json:"value"`
 	}
@@ -8867,7 +8867,7 @@ func (c *Client) CatalogVidyKamneis(where Where) ([]CatalogVidyKamnei, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKamnei(key PrimaryCatalogVidyKamnei, entity CatalogVidyKamnei) (*CatalogVidyKamnei, error) {
 	return NewCatalogVidyKamnei(c.updateEntity(key, entity))
@@ -8922,7 +8922,7 @@ func (c *Client) CreateDocumentAnketyKlientovDliaFinMonitoringa(entity DocumentA
 func (c *Client) DocumentAnketyKlientovDliaFinMonitoringa(key PrimaryDocumentAnketyKlientovDliaFinMonitoringa, fields []string) (*DocumentAnketyKlientovDliaFinMonitoringa, error) {
 	return NewDocumentAnketyKlientovDliaFinMonitoringa(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAnketyKlientovDliaFinMonitoringas(where Where) ([]DocumentAnketyKlientovDliaFinMonitoringa, error) {
+func (c *Client) DocumentAnketyKlientovDliaFinMonitoringas(where Where) (*[]DocumentAnketyKlientovDliaFinMonitoringa, error) {
 	type ReturnObj struct {
 		Value []DocumentAnketyKlientovDliaFinMonitoringa `json:"value"`
 	}
@@ -8938,7 +8938,7 @@ func (c *Client) DocumentAnketyKlientovDliaFinMonitoringas(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAnketyKlientovDliaFinMonitoringa(key PrimaryDocumentAnketyKlientovDliaFinMonitoringa, entity DocumentAnketyKlientovDliaFinMonitoringa) (*DocumentAnketyKlientovDliaFinMonitoringa, error) {
 	return NewDocumentAnketyKlientovDliaFinMonitoringa(c.updateEntity(key, entity))
@@ -8978,7 +8978,7 @@ func (c *Client) CreateDocumentAnketyKlientovDliaFinMonitoringaAnkety(entity Doc
 func (c *Client) DocumentAnketyKlientovDliaFinMonitoringaAnkety(key PrimaryDocumentAnketyKlientovDliaFinMonitoringaAnkety, fields []string) (*DocumentAnketyKlientovDliaFinMonitoringaAnkety, error) {
 	return NewDocumentAnketyKlientovDliaFinMonitoringaAnkety(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAnketyKlientovDliaFinMonitoringaAnketys(where Where) ([]DocumentAnketyKlientovDliaFinMonitoringaAnkety, error) {
+func (c *Client) DocumentAnketyKlientovDliaFinMonitoringaAnketys(where Where) (*[]DocumentAnketyKlientovDliaFinMonitoringaAnkety, error) {
 	type ReturnObj struct {
 		Value []DocumentAnketyKlientovDliaFinMonitoringaAnkety `json:"value"`
 	}
@@ -8994,7 +8994,7 @@ func (c *Client) DocumentAnketyKlientovDliaFinMonitoringaAnketys(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAnketyKlientovDliaFinMonitoringaAnkety(key PrimaryDocumentAnketyKlientovDliaFinMonitoringaAnkety, entity DocumentAnketyKlientovDliaFinMonitoringaAnkety) (*DocumentAnketyKlientovDliaFinMonitoringaAnkety, error) {
 	return NewDocumentAnketyKlientovDliaFinMonitoringaAnkety(c.updateEntity(key, entity))
@@ -9039,7 +9039,7 @@ func (c *Client) CreateCatalogDogovoryRassrochki(entity CatalogDogovoryRassrochk
 func (c *Client) CatalogDogovoryRassrochki(key PrimaryCatalogDogovoryRassrochki, fields []string) (*CatalogDogovoryRassrochki, error) {
 	return NewCatalogDogovoryRassrochki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDogovoryRassrochkis(where Where) ([]CatalogDogovoryRassrochki, error) {
+func (c *Client) CatalogDogovoryRassrochkis(where Where) (*[]CatalogDogovoryRassrochki, error) {
 	type ReturnObj struct {
 		Value []CatalogDogovoryRassrochki `json:"value"`
 	}
@@ -9055,7 +9055,7 @@ func (c *Client) CatalogDogovoryRassrochkis(where Where) ([]CatalogDogovoryRassr
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDogovoryRassrochki(key PrimaryCatalogDogovoryRassrochki, entity CatalogDogovoryRassrochki) (*CatalogDogovoryRassrochki, error) {
 	return NewCatalogDogovoryRassrochki(c.updateEntity(key, entity))
@@ -9099,7 +9099,7 @@ func (c *Client) CreateCatalogSertifikaty(entity CatalogSertifikaty) (*CatalogSe
 func (c *Client) CatalogSertifikaty(key PrimaryCatalogSertifikaty, fields []string) (*CatalogSertifikaty, error) {
 	return NewCatalogSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSertifikatys(where Where) ([]CatalogSertifikaty, error) {
+func (c *Client) CatalogSertifikatys(where Where) (*[]CatalogSertifikaty, error) {
 	type ReturnObj struct {
 		Value []CatalogSertifikaty `json:"value"`
 	}
@@ -9115,7 +9115,7 @@ func (c *Client) CatalogSertifikatys(where Where) ([]CatalogSertifikaty, error) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSertifikaty(key PrimaryCatalogSertifikaty, entity CatalogSertifikaty) (*CatalogSertifikaty, error) {
 	return NewCatalogSertifikaty(c.updateEntity(key, entity))
@@ -9169,7 +9169,7 @@ func (c *Client) CreateDocumentPostuplenieDavalcheskogoMetalla(entity DocumentPo
 func (c *Client) DocumentPostuplenieDavalcheskogoMetalla(key PrimaryDocumentPostuplenieDavalcheskogoMetalla, fields []string) (*DocumentPostuplenieDavalcheskogoMetalla, error) {
 	return NewDocumentPostuplenieDavalcheskogoMetalla(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieDavalcheskogoMetallas(where Where) ([]DocumentPostuplenieDavalcheskogoMetalla, error) {
+func (c *Client) DocumentPostuplenieDavalcheskogoMetallas(where Where) (*[]DocumentPostuplenieDavalcheskogoMetalla, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieDavalcheskogoMetalla `json:"value"`
 	}
@@ -9185,7 +9185,7 @@ func (c *Client) DocumentPostuplenieDavalcheskogoMetallas(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieDavalcheskogoMetalla(key PrimaryDocumentPostuplenieDavalcheskogoMetalla, entity DocumentPostuplenieDavalcheskogoMetalla) (*DocumentPostuplenieDavalcheskogoMetalla, error) {
 	return NewDocumentPostuplenieDavalcheskogoMetalla(c.updateEntity(key, entity))
@@ -9253,7 +9253,7 @@ func (c *Client) CreateDocumentInkassovoePorucheniePeredannoe(entity DocumentInk
 func (c *Client) DocumentInkassovoePorucheniePeredannoe(key PrimaryDocumentInkassovoePorucheniePeredannoe, fields []string) (*DocumentInkassovoePorucheniePeredannoe, error) {
 	return NewDocumentInkassovoePorucheniePeredannoe(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInkassovoePorucheniePeredannoes(where Where) ([]DocumentInkassovoePorucheniePeredannoe, error) {
+func (c *Client) DocumentInkassovoePorucheniePeredannoes(where Where) (*[]DocumentInkassovoePorucheniePeredannoe, error) {
 	type ReturnObj struct {
 		Value []DocumentInkassovoePorucheniePeredannoe `json:"value"`
 	}
@@ -9269,7 +9269,7 @@ func (c *Client) DocumentInkassovoePorucheniePeredannoes(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInkassovoePorucheniePeredannoe(key PrimaryDocumentInkassovoePorucheniePeredannoe, entity DocumentInkassovoePorucheniePeredannoe) (*DocumentInkassovoePorucheniePeredannoe, error) {
 	return NewDocumentInkassovoePorucheniePeredannoe(c.updateEntity(key, entity))
@@ -9317,7 +9317,7 @@ func (c *Client) CreateDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezh
 func (c *Client) DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha(key PrimaryDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha, fields []string) (*DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha, error) {
 	return NewDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezhas(where Where) ([]DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezhas(where Where) (*[]DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha `json:"value"`
 	}
@@ -9333,7 +9333,7 @@ func (c *Client) DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezhas(whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha(key PrimaryDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha, entity DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha) (*DocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha, error) {
 	return NewDocumentInkassovoePorucheniePeredannoeRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -9371,7 +9371,7 @@ func (c *Client) CreateDocumentInkassovoePorucheniePeredannoeRekvizityKontragent
 func (c *Client) DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta(key PrimaryDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta, fields []string) (*DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta, error) {
 	return NewDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInkassovoePorucheniePeredannoeRekvizityKontragentas(where Where) ([]DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta, error) {
+func (c *Client) DocumentInkassovoePorucheniePeredannoeRekvizityKontragentas(where Where) (*[]DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta `json:"value"`
 	}
@@ -9387,7 +9387,7 @@ func (c *Client) DocumentInkassovoePorucheniePeredannoeRekvizityKontragentas(whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta(key PrimaryDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta, entity DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta) (*DocumentInkassovoePorucheniePeredannoeRekvizityKontragenta, error) {
 	return NewDocumentInkassovoePorucheniePeredannoeRekvizityKontragenta(c.updateEntity(key, entity))
@@ -9426,7 +9426,7 @@ func (c *Client) CreateCatalogFormulyDliaRascheta(entity CatalogFormulyDliaRasch
 func (c *Client) CatalogFormulyDliaRascheta(key PrimaryCatalogFormulyDliaRascheta, fields []string) (*CatalogFormulyDliaRascheta, error) {
 	return NewCatalogFormulyDliaRascheta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFormulyDliaRaschetas(where Where) ([]CatalogFormulyDliaRascheta, error) {
+func (c *Client) CatalogFormulyDliaRaschetas(where Where) (*[]CatalogFormulyDliaRascheta, error) {
 	type ReturnObj struct {
 		Value []CatalogFormulyDliaRascheta `json:"value"`
 	}
@@ -9442,7 +9442,7 @@ func (c *Client) CatalogFormulyDliaRaschetas(where Where) ([]CatalogFormulyDliaR
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFormulyDliaRascheta(key PrimaryCatalogFormulyDliaRascheta, entity CatalogFormulyDliaRascheta) (*CatalogFormulyDliaRascheta, error) {
 	return NewCatalogFormulyDliaRascheta(c.updateEntity(key, entity))
@@ -9489,7 +9489,7 @@ func (c *Client) CreateCatalogKupony(entity CatalogKupony) (*CatalogKupony, erro
 func (c *Client) CatalogKupony(key PrimaryCatalogKupony, fields []string) (*CatalogKupony, error) {
 	return NewCatalogKupony(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKuponys(where Where) ([]CatalogKupony, error) {
+func (c *Client) CatalogKuponys(where Where) (*[]CatalogKupony, error) {
 	type ReturnObj struct {
 		Value []CatalogKupony `json:"value"`
 	}
@@ -9505,7 +9505,7 @@ func (c *Client) CatalogKuponys(where Where) ([]CatalogKupony, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKupony(key PrimaryCatalogKupony, entity CatalogKupony) (*CatalogKupony, error) {
 	return NewCatalogKupony(c.updateEntity(key, entity))
@@ -9547,7 +9547,7 @@ func (c *Client) CreateCorrecting(entity Correcting) (*Correcting, error) {
 func (c *Client) Correcting(key PrimaryCorrecting, fields []string) (*Correcting, error) {
 	return NewCorrecting(c.getEntity(key, fields))
 }
-func (c *Client) Correctings(where Where) ([]Correcting, error) {
+func (c *Client) Correctings(where Where) (*[]Correcting, error) {
 	type ReturnObj struct {
 		Value []Correcting `json:"value"`
 	}
@@ -9563,7 +9563,7 @@ func (c *Client) Correctings(where Where) ([]Correcting, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCorrecting(key PrimaryCorrecting, entity Correcting) (*Correcting, error) {
 	return NewCorrecting(c.updateEntity(key, entity))
@@ -9599,7 +9599,7 @@ func (c *Client) CreateDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaR
 func (c *Client) DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia(key PrimaryDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia, fields []string) (*DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia, error) {
 	return NewDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniias(where Where) ([]DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia, error) {
+func (c *Client) DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniias(where Where) (*[]DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia, error) {
 	type ReturnObj struct {
 		Value []DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia `json:"value"`
 	}
@@ -9615,7 +9615,7 @@ func (c *Client) DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistr
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia(key PrimaryDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia, entity DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia) (*DocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia, error) {
 	return NewDocumentKorrektirovkaZapiseiRegistrovNakopleniiaTablitsaRegistrovNakopleniia(c.updateEntity(key, entity))
@@ -9676,7 +9676,7 @@ func (c *Client) CreateDocumentInternetZakaz(entity DocumentInternetZakaz) (*Doc
 func (c *Client) DocumentInternetZakaz(key PrimaryDocumentInternetZakaz, fields []string) (*DocumentInternetZakaz, error) {
 	return NewDocumentInternetZakaz(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInternetZakazs(where Where) ([]DocumentInternetZakaz, error) {
+func (c *Client) DocumentInternetZakazs(where Where) (*[]DocumentInternetZakaz, error) {
 	type ReturnObj struct {
 		Value []DocumentInternetZakaz `json:"value"`
 	}
@@ -9692,7 +9692,7 @@ func (c *Client) DocumentInternetZakazs(where Where) ([]DocumentInternetZakaz, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInternetZakaz(key PrimaryDocumentInternetZakaz, entity DocumentInternetZakaz) (*DocumentInternetZakaz, error) {
 	return NewDocumentInternetZakaz(c.updateEntity(key, entity))
@@ -9738,7 +9738,7 @@ func (c *Client) CreateDocumentInternetZakazTovaryInternetZakaza(entity Document
 func (c *Client) DocumentInternetZakazTovaryInternetZakaza(key PrimaryDocumentInternetZakazTovaryInternetZakaza, fields []string) (*DocumentInternetZakazTovaryInternetZakaza, error) {
 	return NewDocumentInternetZakazTovaryInternetZakaza(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInternetZakazTovaryInternetZakazas(where Where) ([]DocumentInternetZakazTovaryInternetZakaza, error) {
+func (c *Client) DocumentInternetZakazTovaryInternetZakazas(where Where) (*[]DocumentInternetZakazTovaryInternetZakaza, error) {
 	type ReturnObj struct {
 		Value []DocumentInternetZakazTovaryInternetZakaza `json:"value"`
 	}
@@ -9754,7 +9754,7 @@ func (c *Client) DocumentInternetZakazTovaryInternetZakazas(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInternetZakazTovaryInternetZakaza(key PrimaryDocumentInternetZakazTovaryInternetZakaza, entity DocumentInternetZakazTovaryInternetZakaza) (*DocumentInternetZakazTovaryInternetZakaza, error) {
 	return NewDocumentInternetZakazTovaryInternetZakaza(c.updateEntity(key, entity))
@@ -9800,7 +9800,7 @@ func (c *Client) CreateDocumentInternetZakazTovary(entity DocumentInternetZakazT
 func (c *Client) DocumentInternetZakazTovary(key PrimaryDocumentInternetZakazTovary, fields []string) (*DocumentInternetZakazTovary, error) {
 	return NewDocumentInternetZakazTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInternetZakazTovarys(where Where) ([]DocumentInternetZakazTovary, error) {
+func (c *Client) DocumentInternetZakazTovarys(where Where) (*[]DocumentInternetZakazTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentInternetZakazTovary `json:"value"`
 	}
@@ -9816,7 +9816,7 @@ func (c *Client) DocumentInternetZakazTovarys(where Where) ([]DocumentInternetZa
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInternetZakazTovary(key PrimaryDocumentInternetZakazTovary, entity DocumentInternetZakazTovary) (*DocumentInternetZakazTovary, error) {
 	return NewDocumentInternetZakazTovary(c.updateEntity(key, entity))
@@ -9853,7 +9853,7 @@ func (c *Client) CreateCatalogRegiony(entity CatalogRegiony) (*CatalogRegiony, e
 func (c *Client) CatalogRegiony(key PrimaryCatalogRegiony, fields []string) (*CatalogRegiony, error) {
 	return NewCatalogRegiony(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRegionys(where Where) ([]CatalogRegiony, error) {
+func (c *Client) CatalogRegionys(where Where) (*[]CatalogRegiony, error) {
 	type ReturnObj struct {
 		Value []CatalogRegiony `json:"value"`
 	}
@@ -9869,7 +9869,7 @@ func (c *Client) CatalogRegionys(where Where) ([]CatalogRegiony, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRegiony(key PrimaryCatalogRegiony, entity CatalogRegiony) (*CatalogRegiony, error) {
 	return NewCatalogRegiony(c.updateEntity(key, entity))
@@ -9938,7 +9938,7 @@ func (c *Client) CreateSaleJournal(entity SaleJournal) (*SaleJournal, error) {
 func (c *Client) SaleJournal(key PrimarySaleJournal, fields []string) (*SaleJournal, error) {
 	return NewSaleJournal(c.getEntity(key, fields))
 }
-func (c *Client) SaleJournals(where Where) ([]SaleJournal, error) {
+func (c *Client) SaleJournals(where Where) (*[]SaleJournal, error) {
 	type ReturnObj struct {
 		Value []SaleJournal `json:"value"`
 	}
@@ -9954,7 +9954,7 @@ func (c *Client) SaleJournals(where Where) ([]SaleJournal, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateSaleJournal(key PrimarySaleJournal, entity SaleJournal) (*SaleJournal, error) {
 	return NewSaleJournal(c.updateEntity(key, entity))
@@ -9996,7 +9996,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhBonusy(entity Documen
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhBonusy(key PrimaryDocumentOtchetORoznichnykhProdazhakhBonusy, fields []string) (*DocumentOtchetORoznichnykhProdazhakhBonusy, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhBonusy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhBonusys(where Where) ([]DocumentOtchetORoznichnykhProdazhakhBonusy, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhBonusys(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhBonusy, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhBonusy `json:"value"`
 	}
@@ -10012,7 +10012,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhBonusys(where Where) ([]Doc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhBonusy(key PrimaryDocumentOtchetORoznichnykhProdazhakhBonusy, entity DocumentOtchetORoznichnykhProdazhakhBonusy) (*DocumentOtchetORoznichnykhProdazhakhBonusy, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhBonusy(c.updateEntity(key, entity))
@@ -10054,7 +10054,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKred
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami, fields []string) (*DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditamis(where Where) ([]DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditamis(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami `json:"value"`
 	}
@@ -10070,7 +10070,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditamis
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami, entity DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami) (*DocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataBankovskimiKreditami(c.updateEntity(key, entity))
@@ -10110,7 +10110,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKart
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami, fields []string) (*DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartamis(where Where) ([]DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartamis(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami `json:"value"`
 	}
@@ -10126,7 +10126,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartamis(w
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami, entity DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami) (*DocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataPlatezhnymiKartami(c.updateEntity(key, entity))
@@ -10167,7 +10167,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami(e
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami, fields []string) (*DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataSertifikatamis(where Where) ([]DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataSertifikatamis(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami `json:"value"`
 	}
@@ -10183,7 +10183,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataSertifikatamis(where 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami, entity DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami) (*DocumentOtchetORoznichnykhProdazhakhOplataSertifikatami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataSertifikatami(c.updateEntity(key, entity))
@@ -10222,7 +10222,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov(
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov(key PrimaryDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov, fields []string) (*DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatovs(where Where) ([]DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatovs(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov `json:"value"`
 	}
@@ -10238,7 +10238,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatovs(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov(key PrimaryDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov, entity DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov) (*DocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhProdazhaSertifikatov(c.updateEntity(key, entity))
@@ -10298,7 +10298,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhTovary(entity Documen
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhTovary(key PrimaryDocumentOtchetORoznichnykhProdazhakhTovary, fields []string) (*DocumentOtchetORoznichnykhProdazhakhTovary, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhTovarys(where Where) ([]DocumentOtchetORoznichnykhProdazhakhTovary, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhTovarys(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhTovary `json:"value"`
 	}
@@ -10314,7 +10314,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhTovarys(where Where) ([]Doc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhTovary(key PrimaryDocumentOtchetORoznichnykhProdazhakhTovary, entity DocumentOtchetORoznichnykhProdazhakhTovary) (*DocumentOtchetORoznichnykhProdazhakhTovary, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhTovary(c.updateEntity(key, entity))
@@ -10352,7 +10352,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiPro
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha(key PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha, fields []string) (*DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazhas(where Where) ([]DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazhas(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha `json:"value"`
 	}
@@ -10368,7 +10368,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazhas
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha(key PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha, entity DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha) (*DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiProdazha(c.updateEntity(key, entity))
@@ -10406,7 +10406,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhDokumentyObmena(entit
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhDokumentyObmena(key PrimaryDocumentOtchetORoznichnykhProdazhakhDokumentyObmena, fields []string) (*DocumentOtchetORoznichnykhProdazhakhDokumentyObmena, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhDokumentyObmena(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhDokumentyObmenas(where Where) ([]DocumentOtchetORoznichnykhProdazhakhDokumentyObmena, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhDokumentyObmenas(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhDokumentyObmena, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhDokumentyObmena `json:"value"`
 	}
@@ -10422,7 +10422,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhDokumentyObmenas(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhDokumentyObmena(key PrimaryDocumentOtchetORoznichnykhProdazhakhDokumentyObmena, entity DocumentOtchetORoznichnykhProdazhakhDokumentyObmena) (*DocumentOtchetORoznichnykhProdazhakhDokumentyObmena, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhDokumentyObmena(c.updateEntity(key, entity))
@@ -10460,7 +10460,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOpl
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata(key PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata, fields []string) (*DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplatas(where Where) ([]DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplatas(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata `json:"value"`
 	}
@@ -10476,7 +10476,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplatas(w
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata(key PrimaryDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata, entity DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata) (*DocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhDogovoraRassrochkiOplata(c.updateEntity(key, entity))
@@ -10518,7 +10518,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhOplataBallami(entity 
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBallami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBallami, fields []string) (*DocumentOtchetORoznichnykhProdazhakhOplataBallami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataBallami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBallamis(where Where) ([]DocumentOtchetORoznichnykhProdazhakhOplataBallami, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBallamis(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhOplataBallami, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhOplataBallami `json:"value"`
 	}
@@ -10534,7 +10534,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhOplataBallamis(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhOplataBallami(key PrimaryDocumentOtchetORoznichnykhProdazhakhOplataBallami, entity DocumentOtchetORoznichnykhProdazhakhOplataBallami) (*DocumentOtchetORoznichnykhProdazhakhOplataBallami, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhOplataBallami(c.updateEntity(key, entity))
@@ -10572,7 +10572,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki(entity
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki(key PrimaryDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki, fields []string) (*DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenkis(where Where) ([]DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenkis(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki `json:"value"`
 	}
@@ -10588,7 +10588,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenkis(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki(key PrimaryDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki, entity DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki) (*DocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhSkidkiNatsenki(c.updateEntity(key, entity))
@@ -10626,7 +10626,7 @@ func (c *Client) CreateDocumentOtchetORoznichnykhProdazhakhKupony(entity Documen
 func (c *Client) DocumentOtchetORoznichnykhProdazhakhKupony(key PrimaryDocumentOtchetORoznichnykhProdazhakhKupony, fields []string) (*DocumentOtchetORoznichnykhProdazhakhKupony, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhKupony(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetORoznichnykhProdazhakhKuponys(where Where) ([]DocumentOtchetORoznichnykhProdazhakhKupony, error) {
+func (c *Client) DocumentOtchetORoznichnykhProdazhakhKuponys(where Where) (*[]DocumentOtchetORoznichnykhProdazhakhKupony, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetORoznichnykhProdazhakhKupony `json:"value"`
 	}
@@ -10642,7 +10642,7 @@ func (c *Client) DocumentOtchetORoznichnykhProdazhakhKuponys(where Where) ([]Doc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetORoznichnykhProdazhakhKupony(key PrimaryDocumentOtchetORoznichnykhProdazhakhKupony, entity DocumentOtchetORoznichnykhProdazhakhKupony) (*DocumentOtchetORoznichnykhProdazhakhKupony, error) {
 	return NewDocumentOtchetORoznichnykhProdazhakhKupony(c.updateEntity(key, entity))
@@ -10685,7 +10685,7 @@ func (c *Client) CreateDocumentOtmenaSkidokNomenklatury(entity DocumentOtmenaSki
 func (c *Client) DocumentOtmenaSkidokNomenklatury(key PrimaryDocumentOtmenaSkidokNomenklatury, fields []string) (*DocumentOtmenaSkidokNomenklatury, error) {
 	return NewDocumentOtmenaSkidokNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtmenaSkidokNomenklaturys(where Where) ([]DocumentOtmenaSkidokNomenklatury, error) {
+func (c *Client) DocumentOtmenaSkidokNomenklaturys(where Where) (*[]DocumentOtmenaSkidokNomenklatury, error) {
 	type ReturnObj struct {
 		Value []DocumentOtmenaSkidokNomenklatury `json:"value"`
 	}
@@ -10701,7 +10701,7 @@ func (c *Client) DocumentOtmenaSkidokNomenklaturys(where Where) ([]DocumentOtmen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtmenaSkidokNomenklatury(key PrimaryDocumentOtmenaSkidokNomenklatury, entity DocumentOtmenaSkidokNomenklatury) (*DocumentOtmenaSkidokNomenklatury, error) {
 	return NewDocumentOtmenaSkidokNomenklatury(c.updateEntity(key, entity))
@@ -10736,7 +10736,7 @@ func (c *Client) CreateDocumentOtmenaSkidokNomenklaturyDokumenty(entity Document
 func (c *Client) DocumentOtmenaSkidokNomenklaturyDokumenty(key PrimaryDocumentOtmenaSkidokNomenklaturyDokumenty, fields []string) (*DocumentOtmenaSkidokNomenklaturyDokumenty, error) {
 	return NewDocumentOtmenaSkidokNomenklaturyDokumenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtmenaSkidokNomenklaturyDokumentys(where Where) ([]DocumentOtmenaSkidokNomenklaturyDokumenty, error) {
+func (c *Client) DocumentOtmenaSkidokNomenklaturyDokumentys(where Where) (*[]DocumentOtmenaSkidokNomenklaturyDokumenty, error) {
 	type ReturnObj struct {
 		Value []DocumentOtmenaSkidokNomenklaturyDokumenty `json:"value"`
 	}
@@ -10752,7 +10752,7 @@ func (c *Client) DocumentOtmenaSkidokNomenklaturyDokumentys(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtmenaSkidokNomenklaturyDokumenty(key PrimaryDocumentOtmenaSkidokNomenklaturyDokumenty, entity DocumentOtmenaSkidokNomenklaturyDokumenty) (*DocumentOtmenaSkidokNomenklaturyDokumenty, error) {
 	return NewDocumentOtmenaSkidokNomenklaturyDokumenty(c.updateEntity(key, entity))
@@ -10788,7 +10788,7 @@ func (c *Client) CreateCatalogTovarnyeGruppy(entity CatalogTovarnyeGruppy) (*Cat
 func (c *Client) CatalogTovarnyeGruppy(key PrimaryCatalogTovarnyeGruppy, fields []string) (*CatalogTovarnyeGruppy, error) {
 	return NewCatalogTovarnyeGruppy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTovarnyeGruppys(where Where) ([]CatalogTovarnyeGruppy, error) {
+func (c *Client) CatalogTovarnyeGruppys(where Where) (*[]CatalogTovarnyeGruppy, error) {
 	type ReturnObj struct {
 		Value []CatalogTovarnyeGruppy `json:"value"`
 	}
@@ -10804,7 +10804,7 @@ func (c *Client) CatalogTovarnyeGruppys(where Where) ([]CatalogTovarnyeGruppy, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTovarnyeGruppy(key PrimaryCatalogTovarnyeGruppy, entity CatalogTovarnyeGruppy) (*CatalogTovarnyeGruppy, error) {
 	return NewCatalogTovarnyeGruppy(c.updateEntity(key, entity))
@@ -10868,7 +10868,7 @@ func (c *Client) CreateDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv(entit
 func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv(key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv, fields []string) (*DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv, error) {
 	return NewDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvs(where Where) ([]DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv, error) {
+func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvs(where Where) (*[]DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv `json:"value"`
 	}
@@ -10884,7 +10884,7 @@ func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvs(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv(key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv, entity DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv) (*DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv, error) {
 	return NewDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstv(c.updateEntity(key, entity))
@@ -10932,7 +10932,7 @@ func (c *Client) CreateDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshi
 func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, fields []string) (*DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezhas(where Where) ([]DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezhas(where Where) (*[]DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha `json:"value"`
 	}
@@ -10948,7 +10948,7 @@ func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovka
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, entity DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha) (*DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -10986,7 +10986,7 @@ func (c *Client) CreateDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekviz
 func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta(key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta, fields []string) (*DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragentas(where Where) ([]DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta, error) {
+func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragentas(where Where) (*[]DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta `json:"value"`
 	}
@@ -11002,7 +11002,7 @@ func (c *Client) DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKon
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta(key PrimaryDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta, entity DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta) (*DocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnyiOrderPostuplenieDenezhnykhSredstvRekvizityKontragenta(c.updateEntity(key, entity))
@@ -11048,7 +11048,7 @@ func (c *Client) CreateCatalogOrderKey(entity CatalogOrderKey) (*CatalogOrderKey
 func (c *Client) CatalogOrderKey(key PrimaryCatalogOrderKey, fields []string) (*CatalogOrderKey, error) {
 	return NewCatalogOrderKey(c.getEntity(key, fields))
 }
-func (c *Client) CatalogOrderKeys(where Where) ([]CatalogOrderKey, error) {
+func (c *Client) CatalogOrderKeys(where Where) (*[]CatalogOrderKey, error) {
 	type ReturnObj struct {
 		Value []CatalogOrderKey `json:"value"`
 	}
@@ -11064,7 +11064,7 @@ func (c *Client) CatalogOrderKeys(where Where) ([]CatalogOrderKey, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogOrderKey(key PrimaryCatalogOrderKey, entity CatalogOrderKey) (*CatalogOrderKey, error) {
 	return NewCatalogOrderKey(c.updateEntity(key, entity))
@@ -11122,7 +11122,7 @@ func (c *Client) CreateDocumentKassovyiChekKorrektsii(entity DocumentKassovyiChe
 func (c *Client) DocumentKassovyiChekKorrektsii(key PrimaryDocumentKassovyiChekKorrektsii, fields []string) (*DocumentKassovyiChekKorrektsii, error) {
 	return NewDocumentKassovyiChekKorrektsii(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKassovyiChekKorrektsiis(where Where) ([]DocumentKassovyiChekKorrektsii, error) {
+func (c *Client) DocumentKassovyiChekKorrektsiis(where Where) (*[]DocumentKassovyiChekKorrektsii, error) {
 	type ReturnObj struct {
 		Value []DocumentKassovyiChekKorrektsii `json:"value"`
 	}
@@ -11138,7 +11138,7 @@ func (c *Client) DocumentKassovyiChekKorrektsiis(where Where) ([]DocumentKassovy
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKassovyiChekKorrektsii(key PrimaryDocumentKassovyiChekKorrektsii, entity DocumentKassovyiChekKorrektsii) (*DocumentKassovyiChekKorrektsii, error) {
 	return NewDocumentKassovyiChekKorrektsii(c.updateEntity(key, entity))
@@ -11174,7 +11174,7 @@ func (c *Client) CreateDocumentKassovyiChekKorrektsiiOplata(entity DocumentKasso
 func (c *Client) DocumentKassovyiChekKorrektsiiOplata(key PrimaryDocumentKassovyiChekKorrektsiiOplata, fields []string) (*DocumentKassovyiChekKorrektsiiOplata, error) {
 	return NewDocumentKassovyiChekKorrektsiiOplata(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKassovyiChekKorrektsiiOplatas(where Where) ([]DocumentKassovyiChekKorrektsiiOplata, error) {
+func (c *Client) DocumentKassovyiChekKorrektsiiOplatas(where Where) (*[]DocumentKassovyiChekKorrektsiiOplata, error) {
 	type ReturnObj struct {
 		Value []DocumentKassovyiChekKorrektsiiOplata `json:"value"`
 	}
@@ -11190,7 +11190,7 @@ func (c *Client) DocumentKassovyiChekKorrektsiiOplatas(where Where) ([]DocumentK
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKassovyiChekKorrektsiiOplata(key PrimaryDocumentKassovyiChekKorrektsiiOplata, entity DocumentKassovyiChekKorrektsiiOplata) (*DocumentKassovyiChekKorrektsiiOplata, error) {
 	return NewDocumentKassovyiChekKorrektsiiOplata(c.updateEntity(key, entity))
@@ -11258,7 +11258,7 @@ func (c *Client) CreateDocumentSchetNaOplatuPokupateliu(entity DocumentSchetNaOp
 func (c *Client) DocumentSchetNaOplatuPokupateliu(key PrimaryDocumentSchetNaOplatuPokupateliu, fields []string) (*DocumentSchetNaOplatuPokupateliu, error) {
 	return NewDocumentSchetNaOplatuPokupateliu(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetNaOplatuPokupatelius(where Where) ([]DocumentSchetNaOplatuPokupateliu, error) {
+func (c *Client) DocumentSchetNaOplatuPokupatelius(where Where) (*[]DocumentSchetNaOplatuPokupateliu, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetNaOplatuPokupateliu `json:"value"`
 	}
@@ -11274,7 +11274,7 @@ func (c *Client) DocumentSchetNaOplatuPokupatelius(where Where) ([]DocumentSchet
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetNaOplatuPokupateliu(key PrimaryDocumentSchetNaOplatuPokupateliu, entity DocumentSchetNaOplatuPokupateliu) (*DocumentSchetNaOplatuPokupateliu, error) {
 	return NewDocumentSchetNaOplatuPokupateliu(c.updateEntity(key, entity))
@@ -11325,7 +11325,7 @@ func (c *Client) CreateDocumentSchetNaOplatuPokupateliuTovary(entity DocumentSch
 func (c *Client) DocumentSchetNaOplatuPokupateliuTovary(key PrimaryDocumentSchetNaOplatuPokupateliuTovary, fields []string) (*DocumentSchetNaOplatuPokupateliuTovary, error) {
 	return NewDocumentSchetNaOplatuPokupateliuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetNaOplatuPokupateliuTovarys(where Where) ([]DocumentSchetNaOplatuPokupateliuTovary, error) {
+func (c *Client) DocumentSchetNaOplatuPokupateliuTovarys(where Where) (*[]DocumentSchetNaOplatuPokupateliuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetNaOplatuPokupateliuTovary `json:"value"`
 	}
@@ -11341,7 +11341,7 @@ func (c *Client) DocumentSchetNaOplatuPokupateliuTovarys(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetNaOplatuPokupateliuTovary(key PrimaryDocumentSchetNaOplatuPokupateliuTovary, entity DocumentSchetNaOplatuPokupateliuTovary) (*DocumentSchetNaOplatuPokupateliuTovary, error) {
 	return NewDocumentSchetNaOplatuPokupateliuTovary(c.updateEntity(key, entity))
@@ -11384,7 +11384,7 @@ func (c *Client) CreateDocumentSchetNaOplatuPokupateliuUslugi(entity DocumentSch
 func (c *Client) DocumentSchetNaOplatuPokupateliuUslugi(key PrimaryDocumentSchetNaOplatuPokupateliuUslugi, fields []string) (*DocumentSchetNaOplatuPokupateliuUslugi, error) {
 	return NewDocumentSchetNaOplatuPokupateliuUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetNaOplatuPokupateliuUslugis(where Where) ([]DocumentSchetNaOplatuPokupateliuUslugi, error) {
+func (c *Client) DocumentSchetNaOplatuPokupateliuUslugis(where Where) (*[]DocumentSchetNaOplatuPokupateliuUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetNaOplatuPokupateliuUslugi `json:"value"`
 	}
@@ -11400,7 +11400,7 @@ func (c *Client) DocumentSchetNaOplatuPokupateliuUslugis(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetNaOplatuPokupateliuUslugi(key PrimaryDocumentSchetNaOplatuPokupateliuUslugi, entity DocumentSchetNaOplatuPokupateliuUslugi) (*DocumentSchetNaOplatuPokupateliuUslugi, error) {
 	return NewDocumentSchetNaOplatuPokupateliuUslugi(c.updateEntity(key, entity))
@@ -11501,7 +11501,7 @@ func (c *Client) CreateCatalogNastroikiObmenaDannymi(entity CatalogNastroikiObme
 func (c *Client) CatalogNastroikiObmenaDannymi(key PrimaryCatalogNastroikiObmenaDannymi, fields []string) (*CatalogNastroikiObmenaDannymi, error) {
 	return NewCatalogNastroikiObmenaDannymi(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiObmenaDannymis(where Where) ([]CatalogNastroikiObmenaDannymi, error) {
+func (c *Client) CatalogNastroikiObmenaDannymis(where Where) (*[]CatalogNastroikiObmenaDannymi, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiObmenaDannymi `json:"value"`
 	}
@@ -11517,7 +11517,7 @@ func (c *Client) CatalogNastroikiObmenaDannymis(where Where) ([]CatalogNastroiki
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiObmenaDannymi(key PrimaryCatalogNastroikiObmenaDannymi, entity CatalogNastroikiObmenaDannymi) (*CatalogNastroikiObmenaDannymi, error) {
 	return NewCatalogNastroikiObmenaDannymi(c.updateEntity(key, entity))
@@ -11559,7 +11559,7 @@ func (c *Client) CreateCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObie
 func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov(key PrimaryCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov, fields []string) (*CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov, error) {
 	return NewCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektovs(where Where) ([]CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov, error) {
+func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektovs(where Where) (*[]CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov `json:"value"`
 	}
@@ -11575,7 +11575,7 @@ func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektovs
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov(key PrimaryCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov, entity CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov) (*CatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov, error) {
 	return NewCatalogNastroikiObmenaDannymiNastroikaVariantovPoiskaObieektov(c.updateEntity(key, entity))
@@ -11616,7 +11616,7 @@ func (c *Client) CreateCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh(ent
 func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh(key PrimaryCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh, fields []string) (*CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh, error) {
 	return NewCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykhs(where Where) ([]CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh, error) {
+func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykhs(where Where) (*[]CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh `json:"value"`
 	}
@@ -11632,7 +11632,7 @@ func (c *Client) CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykhs(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh(key PrimaryCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh, entity CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh) (*CatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh, error) {
 	return NewCatalogNastroikiObmenaDannymiNastroikaVygruzkiDannykh(c.updateEntity(key, entity))
@@ -11667,7 +11667,7 @@ func (c *Client) CreateCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchi
 func (c *Client) CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami(key PrimaryCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami, fields []string) (*CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
 	return NewCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkamis(where Where) ([]CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
+func (c *Client) CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkamis(where Where) (*[]CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami `json:"value"`
 	}
@@ -11683,7 +11683,7 @@ func (c *Client) CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOs
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami(key PrimaryCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami, entity CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami) (*CatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami, error) {
 	return NewCatalogNastroikiObmenaDannymiSoobshcheniiaNeIavliaiushchiesiaOshibkami(c.updateEntity(key, entity))
@@ -11736,7 +11736,7 @@ func (c *Client) CreateDocumentJournalBankovskieRaschetnyeDokumenty(entity Docum
 func (c *Client) DocumentJournalBankovskieRaschetnyeDokumenty(key PrimaryDocumentJournalBankovskieRaschetnyeDokumenty, fields []string) (*DocumentJournalBankovskieRaschetnyeDokumenty, error) {
 	return NewDocumentJournalBankovskieRaschetnyeDokumenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalBankovskieRaschetnyeDokumentys(where Where) ([]DocumentJournalBankovskieRaschetnyeDokumenty, error) {
+func (c *Client) DocumentJournalBankovskieRaschetnyeDokumentys(where Where) (*[]DocumentJournalBankovskieRaschetnyeDokumenty, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalBankovskieRaschetnyeDokumenty `json:"value"`
 	}
@@ -11752,7 +11752,7 @@ func (c *Client) DocumentJournalBankovskieRaschetnyeDokumentys(where Where) ([]D
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalBankovskieRaschetnyeDokumenty(key PrimaryDocumentJournalBankovskieRaschetnyeDokumenty, entity DocumentJournalBankovskieRaschetnyeDokumenty) (*DocumentJournalBankovskieRaschetnyeDokumenty, error) {
 	return NewDocumentJournalBankovskieRaschetnyeDokumenty(c.updateEntity(key, entity))
@@ -11799,7 +11799,7 @@ func (c *Client) CreateDocumentZamenaDiskontnoiKarty(entity DocumentZamenaDiskon
 func (c *Client) DocumentZamenaDiskontnoiKarty(key PrimaryDocumentZamenaDiskontnoiKarty, fields []string) (*DocumentZamenaDiskontnoiKarty, error) {
 	return NewDocumentZamenaDiskontnoiKarty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZamenaDiskontnoiKartys(where Where) ([]DocumentZamenaDiskontnoiKarty, error) {
+func (c *Client) DocumentZamenaDiskontnoiKartys(where Where) (*[]DocumentZamenaDiskontnoiKarty, error) {
 	type ReturnObj struct {
 		Value []DocumentZamenaDiskontnoiKarty `json:"value"`
 	}
@@ -11815,7 +11815,7 @@ func (c *Client) DocumentZamenaDiskontnoiKartys(where Where) ([]DocumentZamenaDi
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZamenaDiskontnoiKarty(key PrimaryDocumentZamenaDiskontnoiKarty, entity DocumentZamenaDiskontnoiKarty) (*DocumentZamenaDiskontnoiKarty, error) {
 	return NewDocumentZamenaDiskontnoiKarty(c.updateEntity(key, entity))
@@ -11883,7 +11883,7 @@ func (c *Client) CreateReturnToSupplier(entity ReturnToSupplier) (*ReturnToSuppl
 func (c *Client) ReturnToSupplier(key PrimaryReturnToSupplier, fields []string) (*ReturnToSupplier, error) {
 	return NewReturnToSupplier(c.getEntity(key, fields))
 }
-func (c *Client) ReturnToSuppliers(where Where) ([]ReturnToSupplier, error) {
+func (c *Client) ReturnToSuppliers(where Where) (*[]ReturnToSupplier, error) {
 	type ReturnObj struct {
 		Value []ReturnToSupplier `json:"value"`
 	}
@@ -11899,7 +11899,7 @@ func (c *Client) ReturnToSuppliers(where Where) ([]ReturnToSupplier, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateReturnToSupplier(key PrimaryReturnToSupplier, entity ReturnToSupplier) (*ReturnToSupplier, error) {
 	return NewReturnToSupplier(c.updateEntity(key, entity))
@@ -11950,7 +11950,7 @@ func (c *Client) CreateDocumentVozvratTovarovPostavshchikuTovary(entity Document
 func (c *Client) DocumentVozvratTovarovPostavshchikuTovary(key PrimaryDocumentVozvratTovarovPostavshchikuTovary, fields []string) (*DocumentVozvratTovarovPostavshchikuTovary, error) {
 	return NewDocumentVozvratTovarovPostavshchikuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratTovarovPostavshchikuTovarys(where Where) ([]DocumentVozvratTovarovPostavshchikuTovary, error) {
+func (c *Client) DocumentVozvratTovarovPostavshchikuTovarys(where Where) (*[]DocumentVozvratTovarovPostavshchikuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratTovarovPostavshchikuTovary `json:"value"`
 	}
@@ -11966,7 +11966,7 @@ func (c *Client) DocumentVozvratTovarovPostavshchikuTovarys(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratTovarovPostavshchikuTovary(key PrimaryDocumentVozvratTovarovPostavshchikuTovary, entity DocumentVozvratTovarovPostavshchikuTovary) (*DocumentVozvratTovarovPostavshchikuTovary, error) {
 	return NewDocumentVozvratTovarovPostavshchikuTovary(c.updateEntity(key, entity))
@@ -12027,7 +12027,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovNaSklade(entity DocumentIn
 func (c *Client) DocumentInventarizatsiiaTovarovNaSklade(key PrimaryDocumentInventarizatsiiaTovarovNaSklade, fields []string) (*DocumentInventarizatsiiaTovarovNaSklade, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSklade(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovNaSklades(where Where) ([]DocumentInventarizatsiiaTovarovNaSklade, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovNaSklades(where Where) (*[]DocumentInventarizatsiiaTovarovNaSklade, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovNaSklade `json:"value"`
 	}
@@ -12043,7 +12043,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovNaSklades(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovNaSklade(key PrimaryDocumentInventarizatsiiaTovarovNaSklade, entity DocumentInventarizatsiiaTovarovNaSklade) (*DocumentInventarizatsiiaTovarovNaSklade, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSklade(c.updateEntity(key, entity))
@@ -12094,7 +12094,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovNaSkladeTovary(entity Docu
 func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovary(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovary, fields []string) (*DocumentInventarizatsiiaTovarovNaSkladeTovary, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovarys(where Where) ([]DocumentInventarizatsiiaTovarovNaSkladeTovary, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovarys(where Where) (*[]DocumentInventarizatsiiaTovarovNaSkladeTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovNaSkladeTovary `json:"value"`
 	}
@@ -12110,7 +12110,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovarys(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovNaSkladeTovary(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovary, entity DocumentInventarizatsiiaTovarovNaSkladeTovary) (*DocumentInventarizatsiiaTovarovNaSkladeTovary, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeTovary(c.updateEntity(key, entity))
@@ -12148,7 +12148,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedenii
 func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, fields []string) (*DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiis(where Where) ([]DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiis(where Where) (*[]DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii `json:"value"`
 	}
@@ -12164,7 +12164,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInven
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, entity DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii) (*DocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(c.updateEntity(key, entity))
@@ -12204,7 +12204,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovNaSkladeSertifikaty(entity
 func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeSertifikaty(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeSertifikaty, fields []string) (*DocumentInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeSertifikatys(where Where) ([]DocumentInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeSertifikatys(where Where) (*[]DocumentInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovNaSkladeSertifikaty `json:"value"`
 	}
@@ -12220,7 +12220,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeSertifikatys(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovNaSkladeSertifikaty(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeSertifikaty, entity DocumentInventarizatsiiaTovarovNaSkladeSertifikaty) (*DocumentInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeSertifikaty(c.updateEntity(key, entity))
@@ -12265,7 +12265,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti(entity
 func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti, fields []string) (*DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovaryVPutis(where Where) ([]DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovaryVPutis(where Where) (*[]DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti `json:"value"`
 	}
@@ -12281,7 +12281,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovNaSkladeTovaryVPutis(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti(key PrimaryDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti, entity DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti) (*DocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti, error) {
 	return NewDocumentInventarizatsiiaTovarovNaSkladeTovaryVPuti(c.updateEntity(key, entity))
@@ -12362,7 +12362,7 @@ func (c *Client) CreateDocumentPrikhodnyiKassovyiOrder(entity DocumentPrikhodnyi
 func (c *Client) DocumentPrikhodnyiKassovyiOrder(key PrimaryDocumentPrikhodnyiKassovyiOrder, fields []string) (*DocumentPrikhodnyiKassovyiOrder, error) {
 	return NewDocumentPrikhodnyiKassovyiOrder(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPrikhodnyiKassovyiOrders(where Where) ([]DocumentPrikhodnyiKassovyiOrder, error) {
+func (c *Client) DocumentPrikhodnyiKassovyiOrders(where Where) (*[]DocumentPrikhodnyiKassovyiOrder, error) {
 	type ReturnObj struct {
 		Value []DocumentPrikhodnyiKassovyiOrder `json:"value"`
 	}
@@ -12378,7 +12378,7 @@ func (c *Client) DocumentPrikhodnyiKassovyiOrders(where Where) ([]DocumentPrikho
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPrikhodnyiKassovyiOrder(key PrimaryDocumentPrikhodnyiKassovyiOrder, entity DocumentPrikhodnyiKassovyiOrder) (*DocumentPrikhodnyiKassovyiOrder, error) {
 	return NewDocumentPrikhodnyiKassovyiOrder(c.updateEntity(key, entity))
@@ -12426,7 +12426,7 @@ func (c *Client) CreateDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha(entit
 func (c *Client) DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha(key PrimaryDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha, fields []string) (*DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
 	return NewDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezhas(where Where) ([]DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezhas(where Where) (*[]DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha `json:"value"`
 	}
@@ -12442,7 +12442,7 @@ func (c *Client) DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezhas(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha(key PrimaryDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha, entity DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha) (*DocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
 	return NewDocumentPrikhodnyiKassovyiOrderRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -12478,7 +12478,7 @@ func (c *Client) CreateDocumentPrikhodnyiKassovyiOrderOplata(entity DocumentPrik
 func (c *Client) DocumentPrikhodnyiKassovyiOrderOplata(key PrimaryDocumentPrikhodnyiKassovyiOrderOplata, fields []string) (*DocumentPrikhodnyiKassovyiOrderOplata, error) {
 	return NewDocumentPrikhodnyiKassovyiOrderOplata(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPrikhodnyiKassovyiOrderOplatas(where Where) ([]DocumentPrikhodnyiKassovyiOrderOplata, error) {
+func (c *Client) DocumentPrikhodnyiKassovyiOrderOplatas(where Where) (*[]DocumentPrikhodnyiKassovyiOrderOplata, error) {
 	type ReturnObj struct {
 		Value []DocumentPrikhodnyiKassovyiOrderOplata `json:"value"`
 	}
@@ -12494,7 +12494,7 @@ func (c *Client) DocumentPrikhodnyiKassovyiOrderOplatas(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPrikhodnyiKassovyiOrderOplata(key PrimaryDocumentPrikhodnyiKassovyiOrderOplata, entity DocumentPrikhodnyiKassovyiOrderOplata) (*DocumentPrikhodnyiKassovyiOrderOplata, error) {
 	return NewDocumentPrikhodnyiKassovyiOrderOplata(c.updateEntity(key, entity))
@@ -12546,7 +12546,7 @@ func (c *Client) CreateDocumentPrikhodnyiKassovyiOrderTovary(entity DocumentPrik
 func (c *Client) DocumentPrikhodnyiKassovyiOrderTovary(key PrimaryDocumentPrikhodnyiKassovyiOrderTovary, fields []string) (*DocumentPrikhodnyiKassovyiOrderTovary, error) {
 	return NewDocumentPrikhodnyiKassovyiOrderTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPrikhodnyiKassovyiOrderTovarys(where Where) ([]DocumentPrikhodnyiKassovyiOrderTovary, error) {
+func (c *Client) DocumentPrikhodnyiKassovyiOrderTovarys(where Where) (*[]DocumentPrikhodnyiKassovyiOrderTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPrikhodnyiKassovyiOrderTovary `json:"value"`
 	}
@@ -12562,7 +12562,7 @@ func (c *Client) DocumentPrikhodnyiKassovyiOrderTovarys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPrikhodnyiKassovyiOrderTovary(key PrimaryDocumentPrikhodnyiKassovyiOrderTovary, entity DocumentPrikhodnyiKassovyiOrderTovary) (*DocumentPrikhodnyiKassovyiOrderTovary, error) {
 	return NewDocumentPrikhodnyiKassovyiOrderTovary(c.updateEntity(key, entity))
@@ -12599,7 +12599,7 @@ func (c *Client) CreateCatalogPrichinyVozvrata(entity CatalogPrichinyVozvrata) (
 func (c *Client) CatalogPrichinyVozvrata(key PrimaryCatalogPrichinyVozvrata, fields []string) (*CatalogPrichinyVozvrata, error) {
 	return NewCatalogPrichinyVozvrata(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPrichinyVozvratas(where Where) ([]CatalogPrichinyVozvrata, error) {
+func (c *Client) CatalogPrichinyVozvratas(where Where) (*[]CatalogPrichinyVozvrata, error) {
 	type ReturnObj struct {
 		Value []CatalogPrichinyVozvrata `json:"value"`
 	}
@@ -12615,7 +12615,7 @@ func (c *Client) CatalogPrichinyVozvratas(where Where) ([]CatalogPrichinyVozvrat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPrichinyVozvrata(key PrimaryCatalogPrichinyVozvrata, entity CatalogPrichinyVozvrata) (*CatalogPrichinyVozvrata, error) {
 	return NewCatalogPrichinyVozvrata(c.updateEntity(key, entity))
@@ -12664,7 +12664,7 @@ func (c *Client) CreateDocumentDenezhnyiChek(entity DocumentDenezhnyiChek) (*Doc
 func (c *Client) DocumentDenezhnyiChek(key PrimaryDocumentDenezhnyiChek, fields []string) (*DocumentDenezhnyiChek, error) {
 	return NewDocumentDenezhnyiChek(c.getEntity(key, fields))
 }
-func (c *Client) DocumentDenezhnyiCheks(where Where) ([]DocumentDenezhnyiChek, error) {
+func (c *Client) DocumentDenezhnyiCheks(where Where) (*[]DocumentDenezhnyiChek, error) {
 	type ReturnObj struct {
 		Value []DocumentDenezhnyiChek `json:"value"`
 	}
@@ -12680,7 +12680,7 @@ func (c *Client) DocumentDenezhnyiCheks(where Where) ([]DocumentDenezhnyiChek, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentDenezhnyiChek(key PrimaryDocumentDenezhnyiChek, entity DocumentDenezhnyiChek) (*DocumentDenezhnyiChek, error) {
 	return NewDocumentDenezhnyiChek(c.updateEntity(key, entity))
@@ -12737,7 +12737,7 @@ func (c *Client) CreateDocumentVozvratMaterialovIzProizvodstva(entity DocumentVo
 func (c *Client) DocumentVozvratMaterialovIzProizvodstva(key PrimaryDocumentVozvratMaterialovIzProizvodstva, fields []string) (*DocumentVozvratMaterialovIzProizvodstva, error) {
 	return NewDocumentVozvratMaterialovIzProizvodstva(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratMaterialovIzProizvodstvas(where Where) ([]DocumentVozvratMaterialovIzProizvodstva, error) {
+func (c *Client) DocumentVozvratMaterialovIzProizvodstvas(where Where) (*[]DocumentVozvratMaterialovIzProizvodstva, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratMaterialovIzProizvodstva `json:"value"`
 	}
@@ -12753,7 +12753,7 @@ func (c *Client) DocumentVozvratMaterialovIzProizvodstvas(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratMaterialovIzProizvodstva(key PrimaryDocumentVozvratMaterialovIzProizvodstva, entity DocumentVozvratMaterialovIzProizvodstva) (*DocumentVozvratMaterialovIzProizvodstva, error) {
 	return NewDocumentVozvratMaterialovIzProizvodstva(c.updateEntity(key, entity))
@@ -12794,7 +12794,7 @@ func (c *Client) CreateDocumentVozvratMaterialovIzProizvodstvaTovary(entity Docu
 func (c *Client) DocumentVozvratMaterialovIzProizvodstvaTovary(key PrimaryDocumentVozvratMaterialovIzProizvodstvaTovary, fields []string) (*DocumentVozvratMaterialovIzProizvodstvaTovary, error) {
 	return NewDocumentVozvratMaterialovIzProizvodstvaTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratMaterialovIzProizvodstvaTovarys(where Where) ([]DocumentVozvratMaterialovIzProizvodstvaTovary, error) {
+func (c *Client) DocumentVozvratMaterialovIzProizvodstvaTovarys(where Where) (*[]DocumentVozvratMaterialovIzProizvodstvaTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratMaterialovIzProizvodstvaTovary `json:"value"`
 	}
@@ -12810,7 +12810,7 @@ func (c *Client) DocumentVozvratMaterialovIzProizvodstvaTovarys(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratMaterialovIzProizvodstvaTovary(key PrimaryDocumentVozvratMaterialovIzProizvodstvaTovary, entity DocumentVozvratMaterialovIzProizvodstvaTovary) (*DocumentVozvratMaterialovIzProizvodstvaTovary, error) {
 	return NewDocumentVozvratMaterialovIzProizvodstvaTovary(c.updateEntity(key, entity))
@@ -12868,7 +12868,7 @@ func (c *Client) CreateDocumentPereotsenkaTovarovOtdannykhNaKomissiiu(entity Doc
 func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiiu(key PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiu, fields []string) (*DocumentPereotsenkaTovarovOtdannykhNaKomissiiu, error) {
 	return NewDocumentPereotsenkaTovarovOtdannykhNaKomissiiu(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiius(where Where) ([]DocumentPereotsenkaTovarovOtdannykhNaKomissiiu, error) {
+func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiius(where Where) (*[]DocumentPereotsenkaTovarovOtdannykhNaKomissiiu, error) {
 	type ReturnObj struct {
 		Value []DocumentPereotsenkaTovarovOtdannykhNaKomissiiu `json:"value"`
 	}
@@ -12884,7 +12884,7 @@ func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiius(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPereotsenkaTovarovOtdannykhNaKomissiiu(key PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiu, entity DocumentPereotsenkaTovarovOtdannykhNaKomissiiu) (*DocumentPereotsenkaTovarovOtdannykhNaKomissiiu, error) {
 	return NewDocumentPereotsenkaTovarovOtdannykhNaKomissiiu(c.updateEntity(key, entity))
@@ -12928,7 +12928,7 @@ func (c *Client) CreateDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary(enti
 func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary(key PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary, fields []string) (*DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary, error) {
 	return NewDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovarys(where Where) ([]DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary, error) {
+func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovarys(where Where) (*[]DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary `json:"value"`
 	}
@@ -12944,7 +12944,7 @@ func (c *Client) DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovarys(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary(key PrimaryDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary, entity DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary) (*DocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary, error) {
 	return NewDocumentPereotsenkaTovarovOtdannykhNaKomissiiuTovary(c.updateEntity(key, entity))
@@ -12989,7 +12989,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoRaskhodamUSN(entity Docum
 func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSN(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSN, fields []string) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSN, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSN(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNs(where Where) ([]DocumentVvodNachalnykhOstatkovPoRaskhodamUSN, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNs(where Where) (*[]DocumentVvodNachalnykhOstatkovPoRaskhodamUSN, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoRaskhodamUSN `json:"value"`
 	}
@@ -13005,7 +13005,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNs(where Where) ([]D
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoRaskhodamUSN(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSN, entity DocumentVvodNachalnykhOstatkovPoRaskhodamUSN) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSN, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSN(c.updateEntity(key, entity))
@@ -13045,7 +13045,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschet
 func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami, fields []string) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliamis(where Where) ([]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliamis(where Where) (*[]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami `json:"value"`
 	}
@@ -13061,7 +13061,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPoku
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami, entity DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPokupateliami(c.updateEntity(key, entity))
@@ -13110,7 +13110,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdann
 func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye, fields []string) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannyes(where Where) ([]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannyes(where Where) (*[]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye `json:"value"`
 	}
@@ -13126,7 +13126,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannyes(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye, entity DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryProdannye(c.updateEntity(key, entity))
@@ -13164,7 +13164,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschet
 func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami, fields []string) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikamis(where Where) ([]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikamis(where Where) (*[]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami `json:"value"`
 	}
@@ -13180,7 +13180,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPost
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami, entity DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNVzaimoraschetySPostavshchikami(c.updateEntity(key, entity))
@@ -13225,7 +13225,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstat
 func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh, fields []string) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakhs(where Where) ([]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakhs(where Where) (*[]DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh `json:"value"`
 	}
@@ -13241,7 +13241,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakhs(
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh(key PrimaryDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh, entity DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh) (*DocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoRaskhodamUSNTovaryNaOstatkakh(c.updateEntity(key, entity))
@@ -13299,7 +13299,7 @@ func (c *Client) CreateDocumentGTDImport(entity DocumentGTDImport) (*DocumentGTD
 func (c *Client) DocumentGTDImport(key PrimaryDocumentGTDImport, fields []string) (*DocumentGTDImport, error) {
 	return NewDocumentGTDImport(c.getEntity(key, fields))
 }
-func (c *Client) DocumentGTDImports(where Where) ([]DocumentGTDImport, error) {
+func (c *Client) DocumentGTDImports(where Where) (*[]DocumentGTDImport, error) {
 	type ReturnObj struct {
 		Value []DocumentGTDImport `json:"value"`
 	}
@@ -13315,7 +13315,7 @@ func (c *Client) DocumentGTDImports(where Where) ([]DocumentGTDImport, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentGTDImport(key PrimaryDocumentGTDImport, entity DocumentGTDImport) (*DocumentGTDImport, error) {
 	return NewDocumentGTDImport(c.updateEntity(key, entity))
@@ -13357,7 +13357,7 @@ func (c *Client) CreateDocumentGTDImportRazdely(entity DocumentGTDImportRazdely)
 func (c *Client) DocumentGTDImportRazdely(key PrimaryDocumentGTDImportRazdely, fields []string) (*DocumentGTDImportRazdely, error) {
 	return NewDocumentGTDImportRazdely(c.getEntity(key, fields))
 }
-func (c *Client) DocumentGTDImportRazdelys(where Where) ([]DocumentGTDImportRazdely, error) {
+func (c *Client) DocumentGTDImportRazdelys(where Where) (*[]DocumentGTDImportRazdely, error) {
 	type ReturnObj struct {
 		Value []DocumentGTDImportRazdely `json:"value"`
 	}
@@ -13373,7 +13373,7 @@ func (c *Client) DocumentGTDImportRazdelys(where Where) ([]DocumentGTDImportRazd
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentGTDImportRazdely(key PrimaryDocumentGTDImportRazdely, entity DocumentGTDImportRazdely) (*DocumentGTDImportRazdely, error) {
 	return NewDocumentGTDImportRazdely(c.updateEntity(key, entity))
@@ -13420,7 +13420,7 @@ func (c *Client) CreateDocumentGTDImportTovary(entity DocumentGTDImportTovary) (
 func (c *Client) DocumentGTDImportTovary(key PrimaryDocumentGTDImportTovary, fields []string) (*DocumentGTDImportTovary, error) {
 	return NewDocumentGTDImportTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentGTDImportTovarys(where Where) ([]DocumentGTDImportTovary, error) {
+func (c *Client) DocumentGTDImportTovarys(where Where) (*[]DocumentGTDImportTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentGTDImportTovary `json:"value"`
 	}
@@ -13436,7 +13436,7 @@ func (c *Client) DocumentGTDImportTovarys(where Where) ([]DocumentGTDImportTovar
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentGTDImportTovary(key PrimaryDocumentGTDImportTovary, entity DocumentGTDImportTovary) (*DocumentGTDImportTovary, error) {
 	return NewDocumentGTDImportTovary(c.updateEntity(key, entity))
@@ -13481,7 +13481,7 @@ func (c *Client) CreateDocumentAktSverki(entity DocumentAktSverki) (*DocumentAkt
 func (c *Client) DocumentAktSverki(key PrimaryDocumentAktSverki, fields []string) (*DocumentAktSverki, error) {
 	return NewDocumentAktSverki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAktSverkis(where Where) ([]DocumentAktSverki, error) {
+func (c *Client) DocumentAktSverkis(where Where) (*[]DocumentAktSverki, error) {
 	type ReturnObj struct {
 		Value []DocumentAktSverki `json:"value"`
 	}
@@ -13497,7 +13497,7 @@ func (c *Client) DocumentAktSverkis(where Where) ([]DocumentAktSverki, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAktSverki(key PrimaryDocumentAktSverki, entity DocumentAktSverki) (*DocumentAktSverki, error) {
 	return NewDocumentAktSverki(c.updateEntity(key, entity))
@@ -13551,7 +13551,7 @@ func (c *Client) CreateDocumentAktSverkiTovary(entity DocumentAktSverkiTovary) (
 func (c *Client) DocumentAktSverkiTovary(key PrimaryDocumentAktSverkiTovary, fields []string) (*DocumentAktSverkiTovary, error) {
 	return NewDocumentAktSverkiTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAktSverkiTovarys(where Where) ([]DocumentAktSverkiTovary, error) {
+func (c *Client) DocumentAktSverkiTovarys(where Where) (*[]DocumentAktSverkiTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentAktSverkiTovary `json:"value"`
 	}
@@ -13567,7 +13567,7 @@ func (c *Client) DocumentAktSverkiTovarys(where Where) ([]DocumentAktSverkiTovar
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAktSverkiTovary(key PrimaryDocumentAktSverkiTovary, entity DocumentAktSverkiTovary) (*DocumentAktSverkiTovary, error) {
 	return NewDocumentAktSverkiTovary(c.updateEntity(key, entity))
@@ -13630,7 +13630,7 @@ func (c *Client) CreateCatalogFaily(entity CatalogFaily) (*CatalogFaily, error) 
 func (c *Client) CatalogFaily(key PrimaryCatalogFaily, fields []string) (*CatalogFaily, error) {
 	return NewCatalogFaily(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFailys(where Where) ([]CatalogFaily, error) {
+func (c *Client) CatalogFailys(where Where) (*[]CatalogFaily, error) {
 	type ReturnObj struct {
 		Value []CatalogFaily `json:"value"`
 	}
@@ -13646,7 +13646,7 @@ func (c *Client) CatalogFailys(where Where) ([]CatalogFaily, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFaily(key PrimaryCatalogFaily, entity CatalogFaily) (*CatalogFaily, error) {
 	return NewCatalogFaily(c.updateEntity(key, entity))
@@ -13684,7 +13684,7 @@ func (c *Client) CreateCatalogFailyDopolnitelnyeRekvizity(entity CatalogFailyDop
 func (c *Client) CatalogFailyDopolnitelnyeRekvizity(key PrimaryCatalogFailyDopolnitelnyeRekvizity, fields []string) (*CatalogFailyDopolnitelnyeRekvizity, error) {
 	return NewCatalogFailyDopolnitelnyeRekvizity(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFailyDopolnitelnyeRekvizitys(where Where) ([]CatalogFailyDopolnitelnyeRekvizity, error) {
+func (c *Client) CatalogFailyDopolnitelnyeRekvizitys(where Where) (*[]CatalogFailyDopolnitelnyeRekvizity, error) {
 	type ReturnObj struct {
 		Value []CatalogFailyDopolnitelnyeRekvizity `json:"value"`
 	}
@@ -13700,7 +13700,7 @@ func (c *Client) CatalogFailyDopolnitelnyeRekvizitys(where Where) ([]CatalogFail
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFailyDopolnitelnyeRekvizity(key PrimaryCatalogFailyDopolnitelnyeRekvizity, entity CatalogFailyDopolnitelnyeRekvizity) (*CatalogFailyDopolnitelnyeRekvizity, error) {
 	return NewCatalogFailyDopolnitelnyeRekvizity(c.updateEntity(key, entity))
@@ -13739,7 +13739,7 @@ func (c *Client) CreateCatalogFailySertifikatyShifrovaniia(entity CatalogFailySe
 func (c *Client) CatalogFailySertifikatyShifrovaniia(key PrimaryCatalogFailySertifikatyShifrovaniia, fields []string) (*CatalogFailySertifikatyShifrovaniia, error) {
 	return NewCatalogFailySertifikatyShifrovaniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFailySertifikatyShifrovaniias(where Where) ([]CatalogFailySertifikatyShifrovaniia, error) {
+func (c *Client) CatalogFailySertifikatyShifrovaniias(where Where) (*[]CatalogFailySertifikatyShifrovaniia, error) {
 	type ReturnObj struct {
 		Value []CatalogFailySertifikatyShifrovaniia `json:"value"`
 	}
@@ -13755,7 +13755,7 @@ func (c *Client) CatalogFailySertifikatyShifrovaniias(where Where) ([]CatalogFai
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFailySertifikatyShifrovaniia(key PrimaryCatalogFailySertifikatyShifrovaniia, entity CatalogFailySertifikatyShifrovaniia) (*CatalogFailySertifikatyShifrovaniia, error) {
 	return NewCatalogFailySertifikatyShifrovaniia(c.updateEntity(key, entity))
@@ -13840,7 +13840,7 @@ func (c *Client) CreateCatalogUchetnyeZapisiElektronnoiPochty(entity CatalogUche
 func (c *Client) CatalogUchetnyeZapisiElektronnoiPochty(key PrimaryCatalogUchetnyeZapisiElektronnoiPochty, fields []string) (*CatalogUchetnyeZapisiElektronnoiPochty, error) {
 	return NewCatalogUchetnyeZapisiElektronnoiPochty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtys(where Where) ([]CatalogUchetnyeZapisiElektronnoiPochty, error) {
+func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtys(where Where) (*[]CatalogUchetnyeZapisiElektronnoiPochty, error) {
 	type ReturnObj struct {
 		Value []CatalogUchetnyeZapisiElektronnoiPochty `json:"value"`
 	}
@@ -13856,7 +13856,7 @@ func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtys(where Where) ([]Catalog
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUchetnyeZapisiElektronnoiPochty(key PrimaryCatalogUchetnyeZapisiElektronnoiPochty, entity CatalogUchetnyeZapisiElektronnoiPochty) (*CatalogUchetnyeZapisiElektronnoiPochty, error) {
 	return NewCatalogUchetnyeZapisiElektronnoiPochty(c.updateEntity(key, entity))
@@ -13894,7 +13894,7 @@ func (c *Client) CreateCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapi
 func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi(key PrimaryCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi, fields []string) (*CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi, error) {
 	return NewCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisis(where Where) ([]CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi, error) {
+func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisis(where Where) (*[]CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi, error) {
 	type ReturnObj struct {
 		Value []CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi `json:"value"`
 	}
@@ -13910,7 +13910,7 @@ func (c *Client) CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisis(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi(key PrimaryCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi, entity CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi) (*CatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi, error) {
 	return NewCatalogUchetnyeZapisiElektronnoiPochtyDostupKUchetnoiZapisi(c.updateEntity(key, entity))
@@ -13973,7 +13973,7 @@ func (c *Client) CreateDocumentPlaniruemoePostuplenieDenezhnykhSredstv(entity Do
 func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstv(key PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstv, fields []string) (*DocumentPlaniruemoePostuplenieDenezhnykhSredstv, error) {
 	return NewDocumentPlaniruemoePostuplenieDenezhnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvs(where Where) ([]DocumentPlaniruemoePostuplenieDenezhnykhSredstv, error) {
+func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvs(where Where) (*[]DocumentPlaniruemoePostuplenieDenezhnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentPlaniruemoePostuplenieDenezhnykhSredstv `json:"value"`
 	}
@@ -13989,7 +13989,7 @@ func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvs(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlaniruemoePostuplenieDenezhnykhSredstv(key PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstv, entity DocumentPlaniruemoePostuplenieDenezhnykhSredstv) (*DocumentPlaniruemoePostuplenieDenezhnykhSredstv, error) {
 	return NewDocumentPlaniruemoePostuplenieDenezhnykhSredstv(c.updateEntity(key, entity))
@@ -14032,7 +14032,7 @@ func (c *Client) CreateDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrov
 func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(key PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, fields []string) (*DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezhas(where Where) ([]DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezhas(where Where) (*[]DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha `json:"value"`
 	}
@@ -14048,7 +14048,7 @@ func (c *Client) DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(key PrimaryDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, entity DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha) (*DocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentPlaniruemoePostuplenieDenezhnykhSredstvRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -14091,7 +14091,7 @@ func (c *Client) CreateDocumentPreiskurantTsenNaKamni(entity DocumentPreiskurant
 func (c *Client) DocumentPreiskurantTsenNaKamni(key PrimaryDocumentPreiskurantTsenNaKamni, fields []string) (*DocumentPreiskurantTsenNaKamni, error) {
 	return NewDocumentPreiskurantTsenNaKamni(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPreiskurantTsenNaKamnis(where Where) ([]DocumentPreiskurantTsenNaKamni, error) {
+func (c *Client) DocumentPreiskurantTsenNaKamnis(where Where) (*[]DocumentPreiskurantTsenNaKamni, error) {
 	type ReturnObj struct {
 		Value []DocumentPreiskurantTsenNaKamni `json:"value"`
 	}
@@ -14107,7 +14107,7 @@ func (c *Client) DocumentPreiskurantTsenNaKamnis(where Where) ([]DocumentPreisku
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPreiskurantTsenNaKamni(key PrimaryDocumentPreiskurantTsenNaKamni, entity DocumentPreiskurantTsenNaKamni) (*DocumentPreiskurantTsenNaKamni, error) {
 	return NewDocumentPreiskurantTsenNaKamni(c.updateEntity(key, entity))
@@ -14168,7 +14168,7 @@ func (c *Client) CreatePurchase(entity Purchase) (*Purchase, error) {
 func (c *Client) Purchase(key PrimaryPurchase, fields []string) (*Purchase, error) {
 	return NewPurchase(c.getEntity(key, fields))
 }
-func (c *Client) Purchases(where Where) ([]Purchase, error) {
+func (c *Client) Purchases(where Where) (*[]Purchase, error) {
 	type ReturnObj struct {
 		Value []Purchase `json:"value"`
 	}
@@ -14184,7 +14184,7 @@ func (c *Client) Purchases(where Where) ([]Purchase, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdatePurchase(key PrimaryPurchase, entity Purchase) (*Purchase, error) {
 	return NewPurchase(c.updateEntity(key, entity))
@@ -14224,7 +14224,7 @@ func (c *Client) CreateDocumentSkupkaTovarovTovary(entity DocumentSkupkaTovarovT
 func (c *Client) DocumentSkupkaTovarovTovary(key PrimaryDocumentSkupkaTovarovTovary, fields []string) (*DocumentSkupkaTovarovTovary, error) {
 	return NewDocumentSkupkaTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSkupkaTovarovTovarys(where Where) ([]DocumentSkupkaTovarovTovary, error) {
+func (c *Client) DocumentSkupkaTovarovTovarys(where Where) (*[]DocumentSkupkaTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentSkupkaTovarovTovary `json:"value"`
 	}
@@ -14240,7 +14240,7 @@ func (c *Client) DocumentSkupkaTovarovTovarys(where Where) ([]DocumentSkupkaTova
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSkupkaTovarovTovary(key PrimaryDocumentSkupkaTovarovTovary, entity DocumentSkupkaTovarovTovary) (*DocumentSkupkaTovarovTovary, error) {
 	return NewDocumentSkupkaTovarovTovary(c.updateEntity(key, entity))
@@ -14292,7 +14292,7 @@ func (c *Client) CreateDocumentSchetFakturaPoluchennyi(entity DocumentSchetFaktu
 func (c *Client) DocumentSchetFakturaPoluchennyi(key PrimaryDocumentSchetFakturaPoluchennyi, fields []string) (*DocumentSchetFakturaPoluchennyi, error) {
 	return NewDocumentSchetFakturaPoluchennyi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetFakturaPoluchennyis(where Where) ([]DocumentSchetFakturaPoluchennyi, error) {
+func (c *Client) DocumentSchetFakturaPoluchennyis(where Where) (*[]DocumentSchetFakturaPoluchennyi, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetFakturaPoluchennyi `json:"value"`
 	}
@@ -14308,7 +14308,7 @@ func (c *Client) DocumentSchetFakturaPoluchennyis(where Where) ([]DocumentSchetF
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetFakturaPoluchennyi(key PrimaryDocumentSchetFakturaPoluchennyi, entity DocumentSchetFakturaPoluchennyi) (*DocumentSchetFakturaPoluchennyi, error) {
 	return NewDocumentSchetFakturaPoluchennyi(c.updateEntity(key, entity))
@@ -14351,7 +14351,7 @@ func (c *Client) CreateDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokup
 func (c *Client) DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam(key PrimaryDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam, fields []string) (*DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam, error) {
 	return NewDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliams(where Where) ([]DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam, error) {
+func (c *Client) DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliams(where Where) (*[]DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam `json:"value"`
 	}
@@ -14367,7 +14367,7 @@ func (c *Client) DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupatelia
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam(key PrimaryDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam, entity DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam) (*DocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam, error) {
 	return NewDocumentSchetFakturaPoluchennyiSchetaFakturyVydannyePokupateliam(c.updateEntity(key, entity))
@@ -14422,7 +14422,7 @@ func (c *Client) CreateDocumentAktKhimicheskogoAnalizaMetalla(entity DocumentAkt
 func (c *Client) DocumentAktKhimicheskogoAnalizaMetalla(key PrimaryDocumentAktKhimicheskogoAnalizaMetalla, fields []string) (*DocumentAktKhimicheskogoAnalizaMetalla, error) {
 	return NewDocumentAktKhimicheskogoAnalizaMetalla(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAktKhimicheskogoAnalizaMetallas(where Where) ([]DocumentAktKhimicheskogoAnalizaMetalla, error) {
+func (c *Client) DocumentAktKhimicheskogoAnalizaMetallas(where Where) (*[]DocumentAktKhimicheskogoAnalizaMetalla, error) {
 	type ReturnObj struct {
 		Value []DocumentAktKhimicheskogoAnalizaMetalla `json:"value"`
 	}
@@ -14438,7 +14438,7 @@ func (c *Client) DocumentAktKhimicheskogoAnalizaMetallas(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAktKhimicheskogoAnalizaMetalla(key PrimaryDocumentAktKhimicheskogoAnalizaMetalla, entity DocumentAktKhimicheskogoAnalizaMetalla) (*DocumentAktKhimicheskogoAnalizaMetalla, error) {
 	return NewDocumentAktKhimicheskogoAnalizaMetalla(c.updateEntity(key, entity))
@@ -14478,7 +14478,7 @@ func (c *Client) CreateCatalogfmKartochkaKontragenta(entity CatalogfmKartochkaKo
 func (c *Client) CatalogfmKartochkaKontragenta(key PrimaryCatalogfmKartochkaKontragenta, fields []string) (*CatalogfmKartochkaKontragenta, error) {
 	return NewCatalogfmKartochkaKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmKartochkaKontragentas(where Where) ([]CatalogfmKartochkaKontragenta, error) {
+func (c *Client) CatalogfmKartochkaKontragentas(where Where) (*[]CatalogfmKartochkaKontragenta, error) {
 	type ReturnObj struct {
 		Value []CatalogfmKartochkaKontragenta `json:"value"`
 	}
@@ -14494,7 +14494,7 @@ func (c *Client) CatalogfmKartochkaKontragentas(where Where) ([]CatalogfmKartoch
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmKartochkaKontragenta(key PrimaryCatalogfmKartochkaKontragenta, entity CatalogfmKartochkaKontragenta) (*CatalogfmKartochkaKontragenta, error) {
 	return NewCatalogfmKartochkaKontragenta(c.updateEntity(key, entity))
@@ -14531,7 +14531,7 @@ func (c *Client) CreateCatalogfmKartochkaKontragentaDannyeKontragenta(entity Cat
 func (c *Client) CatalogfmKartochkaKontragentaDannyeKontragenta(key PrimaryCatalogfmKartochkaKontragentaDannyeKontragenta, fields []string) (*CatalogfmKartochkaKontragentaDannyeKontragenta, error) {
 	return NewCatalogfmKartochkaKontragentaDannyeKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmKartochkaKontragentaDannyeKontragentas(where Where) ([]CatalogfmKartochkaKontragentaDannyeKontragenta, error) {
+func (c *Client) CatalogfmKartochkaKontragentaDannyeKontragentas(where Where) (*[]CatalogfmKartochkaKontragentaDannyeKontragenta, error) {
 	type ReturnObj struct {
 		Value []CatalogfmKartochkaKontragentaDannyeKontragenta `json:"value"`
 	}
@@ -14547,7 +14547,7 @@ func (c *Client) CatalogfmKartochkaKontragentaDannyeKontragentas(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmKartochkaKontragentaDannyeKontragenta(key PrimaryCatalogfmKartochkaKontragentaDannyeKontragenta, entity CatalogfmKartochkaKontragentaDannyeKontragenta) (*CatalogfmKartochkaKontragentaDannyeKontragenta, error) {
 	return NewCatalogfmKartochkaKontragentaDannyeKontragenta(c.updateEntity(key, entity))
@@ -14591,7 +14591,7 @@ func (c *Client) CreateDocumentSpisanieProsrochennykhSertifikatov(entity Documen
 func (c *Client) DocumentSpisanieProsrochennykhSertifikatov(key PrimaryDocumentSpisanieProsrochennykhSertifikatov, fields []string) (*DocumentSpisanieProsrochennykhSertifikatov, error) {
 	return NewDocumentSpisanieProsrochennykhSertifikatov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSpisanieProsrochennykhSertifikatovs(where Where) ([]DocumentSpisanieProsrochennykhSertifikatov, error) {
+func (c *Client) DocumentSpisanieProsrochennykhSertifikatovs(where Where) (*[]DocumentSpisanieProsrochennykhSertifikatov, error) {
 	type ReturnObj struct {
 		Value []DocumentSpisanieProsrochennykhSertifikatov `json:"value"`
 	}
@@ -14607,7 +14607,7 @@ func (c *Client) DocumentSpisanieProsrochennykhSertifikatovs(where Where) ([]Doc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSpisanieProsrochennykhSertifikatov(key PrimaryDocumentSpisanieProsrochennykhSertifikatov, entity DocumentSpisanieProsrochennykhSertifikatov) (*DocumentSpisanieProsrochennykhSertifikatov, error) {
 	return NewDocumentSpisanieProsrochennykhSertifikatov(c.updateEntity(key, entity))
@@ -14648,7 +14648,7 @@ func (c *Client) CreateDocumentSpisanieProsrochennykhSertifikatovSertifikaty(ent
 func (c *Client) DocumentSpisanieProsrochennykhSertifikatovSertifikaty(key PrimaryDocumentSpisanieProsrochennykhSertifikatovSertifikaty, fields []string) (*DocumentSpisanieProsrochennykhSertifikatovSertifikaty, error) {
 	return NewDocumentSpisanieProsrochennykhSertifikatovSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSpisanieProsrochennykhSertifikatovSertifikatys(where Where) ([]DocumentSpisanieProsrochennykhSertifikatovSertifikaty, error) {
+func (c *Client) DocumentSpisanieProsrochennykhSertifikatovSertifikatys(where Where) (*[]DocumentSpisanieProsrochennykhSertifikatovSertifikaty, error) {
 	type ReturnObj struct {
 		Value []DocumentSpisanieProsrochennykhSertifikatovSertifikaty `json:"value"`
 	}
@@ -14664,7 +14664,7 @@ func (c *Client) DocumentSpisanieProsrochennykhSertifikatovSertifikatys(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSpisanieProsrochennykhSertifikatovSertifikaty(key PrimaryDocumentSpisanieProsrochennykhSertifikatovSertifikaty, entity DocumentSpisanieProsrochennykhSertifikatovSertifikaty) (*DocumentSpisanieProsrochennykhSertifikatovSertifikaty, error) {
 	return NewDocumentSpisanieProsrochennykhSertifikatovSertifikaty(c.updateEntity(key, entity))
@@ -14704,7 +14704,7 @@ func (c *Client) CreateDocumentZakrytieAvansovPoGrafikuPlatezhei(entity Document
 func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezhei(key PrimaryDocumentZakrytieAvansovPoGrafikuPlatezhei, fields []string) (*DocumentZakrytieAvansovPoGrafikuPlatezhei, error) {
 	return NewDocumentZakrytieAvansovPoGrafikuPlatezhei(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheis(where Where) ([]DocumentZakrytieAvansovPoGrafikuPlatezhei, error) {
+func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheis(where Where) (*[]DocumentZakrytieAvansovPoGrafikuPlatezhei, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieAvansovPoGrafikuPlatezhei `json:"value"`
 	}
@@ -14720,7 +14720,7 @@ func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheis(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieAvansovPoGrafikuPlatezhei(key PrimaryDocumentZakrytieAvansovPoGrafikuPlatezhei, entity DocumentZakrytieAvansovPoGrafikuPlatezhei) (*DocumentZakrytieAvansovPoGrafikuPlatezhei, error) {
 	return NewDocumentZakrytieAvansovPoGrafikuPlatezhei(c.updateEntity(key, entity))
@@ -14756,7 +14756,7 @@ func (c *Client) CreateDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty(enti
 func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty(key PrimaryDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty, fields []string) (*DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty, error) {
 	return NewDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheiKontragentys(where Where) ([]DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty, error) {
+func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheiKontragentys(where Where) (*[]DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty `json:"value"`
 	}
@@ -14772,7 +14772,7 @@ func (c *Client) DocumentZakrytieAvansovPoGrafikuPlatezheiKontragentys(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty(key PrimaryDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty, entity DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty) (*DocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty, error) {
 	return NewDocumentZakrytieAvansovPoGrafikuPlatezheiKontragenty(c.updateEntity(key, entity))
@@ -14813,7 +14813,7 @@ func (c *Client) CreateCatalogTipySistemNalogooblozheniiaKKT(entity CatalogTipyS
 func (c *Client) CatalogTipySistemNalogooblozheniiaKKT(key PrimaryCatalogTipySistemNalogooblozheniiaKKT, fields []string) (*CatalogTipySistemNalogooblozheniiaKKT, error) {
 	return NewCatalogTipySistemNalogooblozheniiaKKT(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipySistemNalogooblozheniiaKKTs(where Where) ([]CatalogTipySistemNalogooblozheniiaKKT, error) {
+func (c *Client) CatalogTipySistemNalogooblozheniiaKKTs(where Where) (*[]CatalogTipySistemNalogooblozheniiaKKT, error) {
 	type ReturnObj struct {
 		Value []CatalogTipySistemNalogooblozheniiaKKT `json:"value"`
 	}
@@ -14829,7 +14829,7 @@ func (c *Client) CatalogTipySistemNalogooblozheniiaKKTs(where Where) ([]CatalogT
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipySistemNalogooblozheniiaKKT(key PrimaryCatalogTipySistemNalogooblozheniiaKKT, entity CatalogTipySistemNalogooblozheniiaKKT) (*CatalogTipySistemNalogooblozheniiaKKT, error) {
 	return NewCatalogTipySistemNalogooblozheniiaKKT(c.updateEntity(key, entity))
@@ -14902,7 +14902,7 @@ func (c *Client) CreateDocumentAkkreditivPeredannyi(entity DocumentAkkreditivPer
 func (c *Client) DocumentAkkreditivPeredannyi(key PrimaryDocumentAkkreditivPeredannyi, fields []string) (*DocumentAkkreditivPeredannyi, error) {
 	return NewDocumentAkkreditivPeredannyi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAkkreditivPeredannyis(where Where) ([]DocumentAkkreditivPeredannyi, error) {
+func (c *Client) DocumentAkkreditivPeredannyis(where Where) (*[]DocumentAkkreditivPeredannyi, error) {
 	type ReturnObj struct {
 		Value []DocumentAkkreditivPeredannyi `json:"value"`
 	}
@@ -14918,7 +14918,7 @@ func (c *Client) DocumentAkkreditivPeredannyis(where Where) ([]DocumentAkkrediti
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAkkreditivPeredannyi(key PrimaryDocumentAkkreditivPeredannyi, entity DocumentAkkreditivPeredannyi) (*DocumentAkkreditivPeredannyi, error) {
 	return NewDocumentAkkreditivPeredannyi(c.updateEntity(key, entity))
@@ -14966,7 +14966,7 @@ func (c *Client) CreateDocumentAkkreditivPeredannyiRasshifrovkaPlatezha(entity D
 func (c *Client) DocumentAkkreditivPeredannyiRasshifrovkaPlatezha(key PrimaryDocumentAkkreditivPeredannyiRasshifrovkaPlatezha, fields []string) (*DocumentAkkreditivPeredannyiRasshifrovkaPlatezha, error) {
 	return NewDocumentAkkreditivPeredannyiRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAkkreditivPeredannyiRasshifrovkaPlatezhas(where Where) ([]DocumentAkkreditivPeredannyiRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentAkkreditivPeredannyiRasshifrovkaPlatezhas(where Where) (*[]DocumentAkkreditivPeredannyiRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentAkkreditivPeredannyiRasshifrovkaPlatezha `json:"value"`
 	}
@@ -14982,7 +14982,7 @@ func (c *Client) DocumentAkkreditivPeredannyiRasshifrovkaPlatezhas(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAkkreditivPeredannyiRasshifrovkaPlatezha(key PrimaryDocumentAkkreditivPeredannyiRasshifrovkaPlatezha, entity DocumentAkkreditivPeredannyiRasshifrovkaPlatezha) (*DocumentAkkreditivPeredannyiRasshifrovkaPlatezha, error) {
 	return NewDocumentAkkreditivPeredannyiRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -15020,7 +15020,7 @@ func (c *Client) CreateDocumentAkkreditivPeredannyiRekvizityKontragenta(entity D
 func (c *Client) DocumentAkkreditivPeredannyiRekvizityKontragenta(key PrimaryDocumentAkkreditivPeredannyiRekvizityKontragenta, fields []string) (*DocumentAkkreditivPeredannyiRekvizityKontragenta, error) {
 	return NewDocumentAkkreditivPeredannyiRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAkkreditivPeredannyiRekvizityKontragentas(where Where) ([]DocumentAkkreditivPeredannyiRekvizityKontragenta, error) {
+func (c *Client) DocumentAkkreditivPeredannyiRekvizityKontragentas(where Where) (*[]DocumentAkkreditivPeredannyiRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentAkkreditivPeredannyiRekvizityKontragenta `json:"value"`
 	}
@@ -15036,7 +15036,7 @@ func (c *Client) DocumentAkkreditivPeredannyiRekvizityKontragentas(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAkkreditivPeredannyiRekvizityKontragenta(key PrimaryDocumentAkkreditivPeredannyiRekvizityKontragenta, entity DocumentAkkreditivPeredannyiRekvizityKontragenta) (*DocumentAkkreditivPeredannyiRekvizityKontragenta, error) {
 	return NewDocumentAkkreditivPeredannyiRekvizityKontragenta(c.updateEntity(key, entity))
@@ -15112,7 +15112,7 @@ func (c *Client) CreateSupplier(entity Supplier) (*Supplier, error) {
 func (c *Client) Supplier(key PrimarySupplier, fields []string) (*Supplier, error) {
 	return NewSupplier(c.getEntity(key, fields))
 }
-func (c *Client) Suppliers(where Where) ([]Supplier, error) {
+func (c *Client) Suppliers(where Where) (*[]Supplier, error) {
 	type ReturnObj struct {
 		Value []Supplier `json:"value"`
 	}
@@ -15128,7 +15128,7 @@ func (c *Client) Suppliers(where Where) ([]Supplier, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateSupplier(key PrimarySupplier, entity Supplier) (*Supplier, error) {
 	return NewSupplier(c.updateEntity(key, entity))
@@ -15163,7 +15163,7 @@ func (c *Client) CreateCatalogKontragentyVidyDeiatelnosti(entity CatalogKontrage
 func (c *Client) CatalogKontragentyVidyDeiatelnosti(key PrimaryCatalogKontragentyVidyDeiatelnosti, fields []string) (*CatalogKontragentyVidyDeiatelnosti, error) {
 	return NewCatalogKontragentyVidyDeiatelnosti(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKontragentyVidyDeiatelnostis(where Where) ([]CatalogKontragentyVidyDeiatelnosti, error) {
+func (c *Client) CatalogKontragentyVidyDeiatelnostis(where Where) (*[]CatalogKontragentyVidyDeiatelnosti, error) {
 	type ReturnObj struct {
 		Value []CatalogKontragentyVidyDeiatelnosti `json:"value"`
 	}
@@ -15179,7 +15179,7 @@ func (c *Client) CatalogKontragentyVidyDeiatelnostis(where Where) ([]CatalogKont
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKontragentyVidyDeiatelnosti(key PrimaryCatalogKontragentyVidyDeiatelnosti, entity CatalogKontragentyVidyDeiatelnosti) (*CatalogKontragentyVidyDeiatelnosti, error) {
 	return NewCatalogKontragentyVidyDeiatelnosti(c.updateEntity(key, entity))
@@ -15236,7 +15236,7 @@ func (c *Client) CreateDocumentInformatsionnoeSoobshchenie(entity DocumentInform
 func (c *Client) DocumentInformatsionnoeSoobshchenie(key PrimaryDocumentInformatsionnoeSoobshchenie, fields []string) (*DocumentInformatsionnoeSoobshchenie, error) {
 	return NewDocumentInformatsionnoeSoobshchenie(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInformatsionnoeSoobshchenies(where Where) ([]DocumentInformatsionnoeSoobshchenie, error) {
+func (c *Client) DocumentInformatsionnoeSoobshchenies(where Where) (*[]DocumentInformatsionnoeSoobshchenie, error) {
 	type ReturnObj struct {
 		Value []DocumentInformatsionnoeSoobshchenie `json:"value"`
 	}
@@ -15252,7 +15252,7 @@ func (c *Client) DocumentInformatsionnoeSoobshchenies(where Where) ([]DocumentIn
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInformatsionnoeSoobshchenie(key PrimaryDocumentInformatsionnoeSoobshchenie, entity DocumentInformatsionnoeSoobshchenie) (*DocumentInformatsionnoeSoobshchenie, error) {
 	return NewDocumentInformatsionnoeSoobshchenie(c.updateEntity(key, entity))
@@ -15296,7 +15296,7 @@ func (c *Client) CreateCatalogVlozheniiaElektronnykhPisem(entity CatalogVlozheni
 func (c *Client) CatalogVlozheniiaElektronnykhPisem(key PrimaryCatalogVlozheniiaElektronnykhPisem, fields []string) (*CatalogVlozheniiaElektronnykhPisem, error) {
 	return NewCatalogVlozheniiaElektronnykhPisem(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVlozheniiaElektronnykhPisems(where Where) ([]CatalogVlozheniiaElektronnykhPisem, error) {
+func (c *Client) CatalogVlozheniiaElektronnykhPisems(where Where) (*[]CatalogVlozheniiaElektronnykhPisem, error) {
 	type ReturnObj struct {
 		Value []CatalogVlozheniiaElektronnykhPisem `json:"value"`
 	}
@@ -15312,7 +15312,7 @@ func (c *Client) CatalogVlozheniiaElektronnykhPisems(where Where) ([]CatalogVloz
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVlozheniiaElektronnykhPisem(key PrimaryCatalogVlozheniiaElektronnykhPisem, entity CatalogVlozheniiaElektronnykhPisem) (*CatalogVlozheniiaElektronnykhPisem, error) {
 	return NewCatalogVlozheniiaElektronnykhPisem(c.updateEntity(key, entity))
@@ -15385,7 +15385,7 @@ func (c *Client) CreateDocumentPlatezhnoeTrebovanieVystavlennoe(entity DocumentP
 func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoe(key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoe, fields []string) (*DocumentPlatezhnoeTrebovanieVystavlennoe, error) {
 	return NewDocumentPlatezhnoeTrebovanieVystavlennoe(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoes(where Where) ([]DocumentPlatezhnoeTrebovanieVystavlennoe, error) {
+func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoes(where Where) (*[]DocumentPlatezhnoeTrebovanieVystavlennoe, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoeTrebovanieVystavlennoe `json:"value"`
 	}
@@ -15401,7 +15401,7 @@ func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoes(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoeTrebovanieVystavlennoe(key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoe, entity DocumentPlatezhnoeTrebovanieVystavlennoe) (*DocumentPlatezhnoeTrebovanieVystavlennoe, error) {
 	return NewDocumentPlatezhnoeTrebovanieVystavlennoe(c.updateEntity(key, entity))
@@ -15449,7 +15449,7 @@ func (c *Client) CreateDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlate
 func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha, fields []string) (*DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezhas(where Where) ([]DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezhas(where Where) (*[]DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha `json:"value"`
 	}
@@ -15465,7 +15465,7 @@ func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezhas(w
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha, entity DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha) (*DocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoeTrebovanieVystavlennoeRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -15503,7 +15503,7 @@ func (c *Client) CreateDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontrage
 func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta(key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta, fields []string) (*DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragentas(where Where) ([]DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta, error) {
+func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragentas(where Where) (*[]DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta `json:"value"`
 	}
@@ -15519,7 +15519,7 @@ func (c *Client) DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragentas(w
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta(key PrimaryDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta, entity DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta) (*DocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoeTrebovanieVystavlennoeRekvizityKontragenta(c.updateEntity(key, entity))
@@ -15568,7 +15568,7 @@ func (c *Client) CreateDocumentMarketingovaiaAktsiia(entity DocumentMarketingova
 func (c *Client) DocumentMarketingovaiaAktsiia(key PrimaryDocumentMarketingovaiaAktsiia, fields []string) (*DocumentMarketingovaiaAktsiia, error) {
 	return NewDocumentMarketingovaiaAktsiia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentMarketingovaiaAktsiias(where Where) ([]DocumentMarketingovaiaAktsiia, error) {
+func (c *Client) DocumentMarketingovaiaAktsiias(where Where) (*[]DocumentMarketingovaiaAktsiia, error) {
 	type ReturnObj struct {
 		Value []DocumentMarketingovaiaAktsiia `json:"value"`
 	}
@@ -15584,7 +15584,7 @@ func (c *Client) DocumentMarketingovaiaAktsiias(where Where) ([]DocumentMarketin
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentMarketingovaiaAktsiia(key PrimaryDocumentMarketingovaiaAktsiia, entity DocumentMarketingovaiaAktsiia) (*DocumentMarketingovaiaAktsiia, error) {
 	return NewDocumentMarketingovaiaAktsiia(c.updateEntity(key, entity))
@@ -15619,7 +15619,7 @@ func (c *Client) CreateDocumentMarketingovaiaAktsiiaMagaziny(entity DocumentMark
 func (c *Client) DocumentMarketingovaiaAktsiiaMagaziny(key PrimaryDocumentMarketingovaiaAktsiiaMagaziny, fields []string) (*DocumentMarketingovaiaAktsiiaMagaziny, error) {
 	return NewDocumentMarketingovaiaAktsiiaMagaziny(c.getEntity(key, fields))
 }
-func (c *Client) DocumentMarketingovaiaAktsiiaMagazinys(where Where) ([]DocumentMarketingovaiaAktsiiaMagaziny, error) {
+func (c *Client) DocumentMarketingovaiaAktsiiaMagazinys(where Where) (*[]DocumentMarketingovaiaAktsiiaMagaziny, error) {
 	type ReturnObj struct {
 		Value []DocumentMarketingovaiaAktsiiaMagaziny `json:"value"`
 	}
@@ -15635,7 +15635,7 @@ func (c *Client) DocumentMarketingovaiaAktsiiaMagazinys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentMarketingovaiaAktsiiaMagaziny(key PrimaryDocumentMarketingovaiaAktsiiaMagaziny, entity DocumentMarketingovaiaAktsiiaMagaziny) (*DocumentMarketingovaiaAktsiiaMagaziny, error) {
 	return NewDocumentMarketingovaiaAktsiiaMagaziny(c.updateEntity(key, entity))
@@ -15673,7 +15673,7 @@ func (c *Client) CreateDocumentMarketingovaiaAktsiiaSkidkiNatsenki(entity Docume
 func (c *Client) DocumentMarketingovaiaAktsiiaSkidkiNatsenki(key PrimaryDocumentMarketingovaiaAktsiiaSkidkiNatsenki, fields []string) (*DocumentMarketingovaiaAktsiiaSkidkiNatsenki, error) {
 	return NewDocumentMarketingovaiaAktsiiaSkidkiNatsenki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentMarketingovaiaAktsiiaSkidkiNatsenkis(where Where) ([]DocumentMarketingovaiaAktsiiaSkidkiNatsenki, error) {
+func (c *Client) DocumentMarketingovaiaAktsiiaSkidkiNatsenkis(where Where) (*[]DocumentMarketingovaiaAktsiiaSkidkiNatsenki, error) {
 	type ReturnObj struct {
 		Value []DocumentMarketingovaiaAktsiiaSkidkiNatsenki `json:"value"`
 	}
@@ -15689,7 +15689,7 @@ func (c *Client) DocumentMarketingovaiaAktsiiaSkidkiNatsenkis(where Where) ([]Do
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentMarketingovaiaAktsiiaSkidkiNatsenki(key PrimaryDocumentMarketingovaiaAktsiiaSkidkiNatsenki, entity DocumentMarketingovaiaAktsiiaSkidkiNatsenki) (*DocumentMarketingovaiaAktsiiaSkidkiNatsenki, error) {
 	return NewDocumentMarketingovaiaAktsiiaSkidkiNatsenki(c.updateEntity(key, entity))
@@ -15731,7 +15731,7 @@ func (c *Client) CreateDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa(entit
 func (c *Client) DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa(key PrimaryDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa, fields []string) (*DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa, error) {
 	return NewDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa(c.getEntity(key, fields))
 }
-func (c *Client) DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupas(where Where) ([]DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa, error) {
+func (c *Client) DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupas(where Where) (*[]DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa, error) {
 	type ReturnObj struct {
 		Value []DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa `json:"value"`
 	}
@@ -15747,7 +15747,7 @@ func (c *Client) DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupas(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa(key PrimaryDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa, entity DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa) (*DocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa, error) {
 	return NewDocumentMarketingovaiaAktsiiaNaboryZnacheniiDostupa(c.updateEntity(key, entity))
@@ -15788,7 +15788,7 @@ func (c *Client) CreateCatalogStsenariiObmenovDannymi(entity CatalogStsenariiObm
 func (c *Client) CatalogStsenariiObmenovDannymi(key PrimaryCatalogStsenariiObmenovDannymi, fields []string) (*CatalogStsenariiObmenovDannymi, error) {
 	return NewCatalogStsenariiObmenovDannymi(c.getEntity(key, fields))
 }
-func (c *Client) CatalogStsenariiObmenovDannymis(where Where) ([]CatalogStsenariiObmenovDannymi, error) {
+func (c *Client) CatalogStsenariiObmenovDannymis(where Where) (*[]CatalogStsenariiObmenovDannymi, error) {
 	type ReturnObj struct {
 		Value []CatalogStsenariiObmenovDannymi `json:"value"`
 	}
@@ -15804,7 +15804,7 @@ func (c *Client) CatalogStsenariiObmenovDannymis(where Where) ([]CatalogStsenari
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogStsenariiObmenovDannymi(key PrimaryCatalogStsenariiObmenovDannymi, entity CatalogStsenariiObmenovDannymi) (*CatalogStsenariiObmenovDannymi, error) {
 	return NewCatalogStsenariiObmenovDannymi(c.updateEntity(key, entity))
@@ -15843,7 +15843,7 @@ func (c *Client) CreateCatalogStsenariiObmenovDannymiNastroikiObmena(entity Cata
 func (c *Client) CatalogStsenariiObmenovDannymiNastroikiObmena(key PrimaryCatalogStsenariiObmenovDannymiNastroikiObmena, fields []string) (*CatalogStsenariiObmenovDannymiNastroikiObmena, error) {
 	return NewCatalogStsenariiObmenovDannymiNastroikiObmena(c.getEntity(key, fields))
 }
-func (c *Client) CatalogStsenariiObmenovDannymiNastroikiObmenas(where Where) ([]CatalogStsenariiObmenovDannymiNastroikiObmena, error) {
+func (c *Client) CatalogStsenariiObmenovDannymiNastroikiObmenas(where Where) (*[]CatalogStsenariiObmenovDannymiNastroikiObmena, error) {
 	type ReturnObj struct {
 		Value []CatalogStsenariiObmenovDannymiNastroikiObmena `json:"value"`
 	}
@@ -15859,7 +15859,7 @@ func (c *Client) CatalogStsenariiObmenovDannymiNastroikiObmenas(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogStsenariiObmenovDannymiNastroikiObmena(key PrimaryCatalogStsenariiObmenovDannymiNastroikiObmena, entity CatalogStsenariiObmenovDannymiNastroikiObmena) (*CatalogStsenariiObmenovDannymiNastroikiObmena, error) {
 	return NewCatalogStsenariiObmenovDannymiNastroikiObmena(c.updateEntity(key, entity))
@@ -15952,7 +15952,7 @@ func (c *Client) CreateItem(entity Item) (*Item, error) {
 func (c *Client) Item(key PrimaryItem, fields []string) (*Item, error) {
 	return NewItem(c.getEntity(key, fields))
 }
-func (c *Client) Items(where Where) ([]Item, error) {
+func (c *Client) Items(where Where) (*[]Item, error) {
 	type ReturnObj struct {
 		Value []Item `json:"value"`
 	}
@@ -15968,7 +15968,7 @@ func (c *Client) Items(where Where) ([]Item, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateItem(key PrimaryItem, entity Item) (*Item, error) {
 	return NewItem(c.updateEntity(key, entity))
@@ -16004,7 +16004,7 @@ func (c *Client) CreateCatalogNomenklaturaSostavLigatury(entity CatalogNomenklat
 func (c *Client) CatalogNomenklaturaSostavLigatury(key PrimaryCatalogNomenklaturaSostavLigatury, fields []string) (*CatalogNomenklaturaSostavLigatury, error) {
 	return NewCatalogNomenklaturaSostavLigatury(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNomenklaturaSostavLigaturys(where Where) ([]CatalogNomenklaturaSostavLigatury, error) {
+func (c *Client) CatalogNomenklaturaSostavLigaturys(where Where) (*[]CatalogNomenklaturaSostavLigatury, error) {
 	type ReturnObj struct {
 		Value []CatalogNomenklaturaSostavLigatury `json:"value"`
 	}
@@ -16020,7 +16020,7 @@ func (c *Client) CatalogNomenklaturaSostavLigaturys(where Where) ([]CatalogNomen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNomenklaturaSostavLigatury(key PrimaryCatalogNomenklaturaSostavLigatury, entity CatalogNomenklaturaSostavLigatury) (*CatalogNomenklaturaSostavLigatury, error) {
 	return NewCatalogNomenklaturaSostavLigatury(c.updateEntity(key, entity))
@@ -16066,7 +16066,7 @@ func (c *Client) CreateDocumentOpros(entity DocumentOpros) (*DocumentOpros, erro
 func (c *Client) DocumentOpros(key PrimaryDocumentOpros, fields []string) (*DocumentOpros, error) {
 	return NewDocumentOpros(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOpross(where Where) ([]DocumentOpros, error) {
+func (c *Client) DocumentOpross(where Where) (*[]DocumentOpros, error) {
 	type ReturnObj struct {
 		Value []DocumentOpros `json:"value"`
 	}
@@ -16082,7 +16082,7 @@ func (c *Client) DocumentOpross(where Where) ([]DocumentOpros, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOpros(key PrimaryDocumentOpros, entity DocumentOpros) (*DocumentOpros, error) {
 	return NewDocumentOpros(c.updateEntity(key, entity))
@@ -16120,7 +16120,7 @@ func (c *Client) CreateDocumentOprosVoprosy(entity DocumentOprosVoprosy) (*Docum
 func (c *Client) DocumentOprosVoprosy(key PrimaryDocumentOprosVoprosy, fields []string) (*DocumentOprosVoprosy, error) {
 	return NewDocumentOprosVoprosy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOprosVoprosys(where Where) ([]DocumentOprosVoprosy, error) {
+func (c *Client) DocumentOprosVoprosys(where Where) (*[]DocumentOprosVoprosy, error) {
 	type ReturnObj struct {
 		Value []DocumentOprosVoprosy `json:"value"`
 	}
@@ -16136,7 +16136,7 @@ func (c *Client) DocumentOprosVoprosys(where Where) ([]DocumentOprosVoprosy, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOprosVoprosy(key PrimaryDocumentOprosVoprosy, entity DocumentOprosVoprosy) (*DocumentOprosVoprosy, error) {
 	return NewDocumentOprosVoprosy(c.updateEntity(key, entity))
@@ -16176,7 +16176,7 @@ func (c *Client) CreateDocumentOprosSostavnoiOtvet(entity DocumentOprosSostavnoi
 func (c *Client) DocumentOprosSostavnoiOtvet(key PrimaryDocumentOprosSostavnoiOtvet, fields []string) (*DocumentOprosSostavnoiOtvet, error) {
 	return NewDocumentOprosSostavnoiOtvet(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOprosSostavnoiOtvets(where Where) ([]DocumentOprosSostavnoiOtvet, error) {
+func (c *Client) DocumentOprosSostavnoiOtvets(where Where) (*[]DocumentOprosSostavnoiOtvet, error) {
 	type ReturnObj struct {
 		Value []DocumentOprosSostavnoiOtvet `json:"value"`
 	}
@@ -16192,7 +16192,7 @@ func (c *Client) DocumentOprosSostavnoiOtvets(where Where) ([]DocumentOprosSosta
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOprosSostavnoiOtvet(key PrimaryDocumentOprosSostavnoiOtvet, entity DocumentOprosSostavnoiOtvet) (*DocumentOprosSostavnoiOtvet, error) {
 	return NewDocumentOprosSostavnoiOtvet(c.updateEntity(key, entity))
@@ -16239,7 +16239,7 @@ func (c *Client) CreateCatalogGruppyPoluchateleiSkidki(entity CatalogGruppyPoluc
 func (c *Client) CatalogGruppyPoluchateleiSkidki(key PrimaryCatalogGruppyPoluchateleiSkidki, fields []string) (*CatalogGruppyPoluchateleiSkidki, error) {
 	return NewCatalogGruppyPoluchateleiSkidki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyPoluchateleiSkidkis(where Where) ([]CatalogGruppyPoluchateleiSkidki, error) {
+func (c *Client) CatalogGruppyPoluchateleiSkidkis(where Where) (*[]CatalogGruppyPoluchateleiSkidki, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyPoluchateleiSkidki `json:"value"`
 	}
@@ -16255,7 +16255,7 @@ func (c *Client) CatalogGruppyPoluchateleiSkidkis(where Where) ([]CatalogGruppyP
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyPoluchateleiSkidki(key PrimaryCatalogGruppyPoluchateleiSkidki, entity CatalogGruppyPoluchateleiSkidki) (*CatalogGruppyPoluchateleiSkidki, error) {
 	return NewCatalogGruppyPoluchateleiSkidki(c.updateEntity(key, entity))
@@ -16318,7 +16318,7 @@ func (c *Client) CreateReassessment(entity Reassessment) (*Reassessment, error) 
 func (c *Client) Reassessment(key PrimaryReassessment, fields []string) (*Reassessment, error) {
 	return NewReassessment(c.getEntity(key, fields))
 }
-func (c *Client) Reassessments(where Where) ([]Reassessment, error) {
+func (c *Client) Reassessments(where Where) (*[]Reassessment, error) {
 	type ReturnObj struct {
 		Value []Reassessment `json:"value"`
 	}
@@ -16334,7 +16334,7 @@ func (c *Client) Reassessments(where Where) ([]Reassessment, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateReassessment(key PrimaryReassessment, entity Reassessment) (*Reassessment, error) {
 	return NewReassessment(c.updateEntity(key, entity))
@@ -16381,7 +16381,7 @@ func (c *Client) CreateDocumentPereotsenkaTovarovVNTTTovary(entity DocumentPereo
 func (c *Client) DocumentPereotsenkaTovarovVNTTTovary(key PrimaryDocumentPereotsenkaTovarovVNTTTovary, fields []string) (*DocumentPereotsenkaTovarovVNTTTovary, error) {
 	return NewDocumentPereotsenkaTovarovVNTTTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPereotsenkaTovarovVNTTTovarys(where Where) ([]DocumentPereotsenkaTovarovVNTTTovary, error) {
+func (c *Client) DocumentPereotsenkaTovarovVNTTTovarys(where Where) (*[]DocumentPereotsenkaTovarovVNTTTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPereotsenkaTovarovVNTTTovary `json:"value"`
 	}
@@ -16397,7 +16397,7 @@ func (c *Client) DocumentPereotsenkaTovarovVNTTTovarys(where Where) ([]DocumentP
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPereotsenkaTovarovVNTTTovary(key PrimaryDocumentPereotsenkaTovarovVNTTTovary, entity DocumentPereotsenkaTovarovVNTTTovary) (*DocumentPereotsenkaTovarovVNTTTovary, error) {
 	return NewDocumentPereotsenkaTovarovVNTTTovary(c.updateEntity(key, entity))
@@ -16439,7 +16439,7 @@ func (c *Client) CreateCatalogTomaKhraneniiaFailov(entity CatalogTomaKhraneniiaF
 func (c *Client) CatalogTomaKhraneniiaFailov(key PrimaryCatalogTomaKhraneniiaFailov, fields []string) (*CatalogTomaKhraneniiaFailov, error) {
 	return NewCatalogTomaKhraneniiaFailov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTomaKhraneniiaFailovs(where Where) ([]CatalogTomaKhraneniiaFailov, error) {
+func (c *Client) CatalogTomaKhraneniiaFailovs(where Where) (*[]CatalogTomaKhraneniiaFailov, error) {
 	type ReturnObj struct {
 		Value []CatalogTomaKhraneniiaFailov `json:"value"`
 	}
@@ -16455,7 +16455,7 @@ func (c *Client) CatalogTomaKhraneniiaFailovs(where Where) ([]CatalogTomaKhranen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTomaKhraneniiaFailov(key PrimaryCatalogTomaKhraneniiaFailov, entity CatalogTomaKhraneniiaFailov) (*CatalogTomaKhraneniiaFailov, error) {
 	return NewCatalogTomaKhraneniiaFailov(c.updateEntity(key, entity))
@@ -16503,7 +16503,7 @@ func (c *Client) CreateDocumentJournalProizvodstvennyeDokumenty(entity DocumentJ
 func (c *Client) DocumentJournalProizvodstvennyeDokumenty(key PrimaryDocumentJournalProizvodstvennyeDokumenty, fields []string) (*DocumentJournalProizvodstvennyeDokumenty, error) {
 	return NewDocumentJournalProizvodstvennyeDokumenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalProizvodstvennyeDokumentys(where Where) ([]DocumentJournalProizvodstvennyeDokumenty, error) {
+func (c *Client) DocumentJournalProizvodstvennyeDokumentys(where Where) (*[]DocumentJournalProizvodstvennyeDokumenty, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalProizvodstvennyeDokumenty `json:"value"`
 	}
@@ -16519,7 +16519,7 @@ func (c *Client) DocumentJournalProizvodstvennyeDokumentys(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalProizvodstvennyeDokumenty(key PrimaryDocumentJournalProizvodstvennyeDokumenty, entity DocumentJournalProizvodstvennyeDokumenty) (*DocumentJournalProizvodstvennyeDokumenty, error) {
 	return NewDocumentJournalProizvodstvennyeDokumenty(c.updateEntity(key, entity))
@@ -16566,7 +16566,7 @@ func (c *Client) CreateDocumentIzmeneniePravDostupa(entity DocumentIzmeneniePrav
 func (c *Client) DocumentIzmeneniePravDostupa(key PrimaryDocumentIzmeneniePravDostupa, fields []string) (*DocumentIzmeneniePravDostupa, error) {
 	return NewDocumentIzmeneniePravDostupa(c.getEntity(key, fields))
 }
-func (c *Client) DocumentIzmeneniePravDostupas(where Where) ([]DocumentIzmeneniePravDostupa, error) {
+func (c *Client) DocumentIzmeneniePravDostupas(where Where) (*[]DocumentIzmeneniePravDostupa, error) {
 	type ReturnObj struct {
 		Value []DocumentIzmeneniePravDostupa `json:"value"`
 	}
@@ -16582,7 +16582,7 @@ func (c *Client) DocumentIzmeneniePravDostupas(where Where) ([]DocumentIzmenenie
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentIzmeneniePravDostupa(key PrimaryDocumentIzmeneniePravDostupa, entity DocumentIzmeneniePravDostupa) (*DocumentIzmeneniePravDostupa, error) {
 	return NewDocumentIzmeneniePravDostupa(c.updateEntity(key, entity))
@@ -16622,7 +16622,7 @@ func (c *Client) CreateCatalogNastroikaAssortimentnoiMatritsy(entity CatalogNast
 func (c *Client) CatalogNastroikaAssortimentnoiMatritsy(key PrimaryCatalogNastroikaAssortimentnoiMatritsy, fields []string) (*CatalogNastroikaAssortimentnoiMatritsy, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikaAssortimentnoiMatritsys(where Where) ([]CatalogNastroikaAssortimentnoiMatritsy, error) {
+func (c *Client) CatalogNastroikaAssortimentnoiMatritsys(where Where) (*[]CatalogNastroikaAssortimentnoiMatritsy, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikaAssortimentnoiMatritsy `json:"value"`
 	}
@@ -16638,7 +16638,7 @@ func (c *Client) CatalogNastroikaAssortimentnoiMatritsys(where Where) ([]Catalog
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikaAssortimentnoiMatritsy(key PrimaryCatalogNastroikaAssortimentnoiMatritsy, entity CatalogNastroikaAssortimentnoiMatritsy) (*CatalogNastroikaAssortimentnoiMatritsy, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsy(c.updateEntity(key, entity))
@@ -16680,7 +16680,7 @@ func (c *Client) CreateCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhG
 func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp(key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp, fields []string) (*CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupps(where Where) ([]CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp, error) {
+func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupps(where Where) (*[]CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp `json:"value"`
 	}
@@ -16696,7 +16696,7 @@ func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupps(
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp(key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp, entity CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp) (*CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhGrupp(c.updateEntity(key, entity))
@@ -16738,7 +16738,7 @@ func (c *Client) CreateCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhK
 func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii(key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii, fields []string) (*CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategoriis(where Where) ([]CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii, error) {
+func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategoriis(where Where) (*[]CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii `json:"value"`
 	}
@@ -16754,7 +16754,7 @@ func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategor
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii(key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii, entity CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii) (*CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhKategorii(c.updateEntity(key, entity))
@@ -16793,7 +16793,7 @@ func (c *Client) CreateCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhP
 func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii(key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii, fields []string) (*CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsiis(where Where) ([]CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii, error) {
+func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsiis(where Where) (*[]CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii `json:"value"`
 	}
@@ -16809,7 +16809,7 @@ func (c *Client) CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsi
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii(key PrimaryCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii, entity CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii) (*CatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii, error) {
 	return NewCatalogNastroikaAssortimentnoiMatritsyNastroikaTovarnykhPozitsii(c.updateEntity(key, entity))
@@ -16862,7 +16862,7 @@ func (c *Client) CreateDocumentJournalDokumentyKontragentov(entity DocumentJourn
 func (c *Client) DocumentJournalDokumentyKontragentov(key PrimaryDocumentJournalDokumentyKontragentov, fields []string) (*DocumentJournalDokumentyKontragentov, error) {
 	return NewDocumentJournalDokumentyKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalDokumentyKontragentovs(where Where) ([]DocumentJournalDokumentyKontragentov, error) {
+func (c *Client) DocumentJournalDokumentyKontragentovs(where Where) (*[]DocumentJournalDokumentyKontragentov, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalDokumentyKontragentov `json:"value"`
 	}
@@ -16878,7 +16878,7 @@ func (c *Client) DocumentJournalDokumentyKontragentovs(where Where) ([]DocumentJ
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalDokumentyKontragentov(key PrimaryDocumentJournalDokumentyKontragentov, entity DocumentJournalDokumentyKontragentov) (*DocumentJournalDokumentyKontragentov, error) {
 	return NewDocumentJournalDokumentyKontragentov(c.updateEntity(key, entity))
@@ -16942,7 +16942,7 @@ func (c *Client) CreateMoveInstance(entity MoveInstance) (*MoveInstance, error) 
 func (c *Client) MoveInstance(key PrimaryMoveInstance, fields []string) (*MoveInstance, error) {
 	return NewMoveInstance(c.getEntity(key, fields))
 }
-func (c *Client) MoveInstances(where Where) ([]MoveInstance, error) {
+func (c *Client) MoveInstances(where Where) (*[]MoveInstance, error) {
 	type ReturnObj struct {
 		Value []MoveInstance `json:"value"`
 	}
@@ -16958,7 +16958,7 @@ func (c *Client) MoveInstances(where Where) ([]MoveInstance, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateMoveInstance(key PrimaryMoveInstance, entity MoveInstance) (*MoveInstance, error) {
 	return NewMoveInstance(c.updateEntity(key, entity))
@@ -16994,7 +16994,7 @@ func (c *Client) CreateDocumentPeremeshchenieTovarovSertifikaty(entity DocumentP
 func (c *Client) DocumentPeremeshchenieTovarovSertifikaty(key PrimaryDocumentPeremeshchenieTovarovSertifikaty, fields []string) (*DocumentPeremeshchenieTovarovSertifikaty, error) {
 	return NewDocumentPeremeshchenieTovarovSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeremeshchenieTovarovSertifikatys(where Where) ([]DocumentPeremeshchenieTovarovSertifikaty, error) {
+func (c *Client) DocumentPeremeshchenieTovarovSertifikatys(where Where) (*[]DocumentPeremeshchenieTovarovSertifikaty, error) {
 	type ReturnObj struct {
 		Value []DocumentPeremeshchenieTovarovSertifikaty `json:"value"`
 	}
@@ -17010,7 +17010,7 @@ func (c *Client) DocumentPeremeshchenieTovarovSertifikatys(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeremeshchenieTovarovSertifikaty(key PrimaryDocumentPeremeshchenieTovarovSertifikaty, entity DocumentPeremeshchenieTovarovSertifikaty) (*DocumentPeremeshchenieTovarovSertifikaty, error) {
 	return NewDocumentPeremeshchenieTovarovSertifikaty(c.updateEntity(key, entity))
@@ -17063,7 +17063,7 @@ func (c *Client) CreateDocumentPeremeshchenieTovarovTovary(entity DocumentPereme
 func (c *Client) DocumentPeremeshchenieTovarovTovary(key PrimaryDocumentPeremeshchenieTovarovTovary, fields []string) (*DocumentPeremeshchenieTovarovTovary, error) {
 	return NewDocumentPeremeshchenieTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeremeshchenieTovarovTovarys(where Where) ([]DocumentPeremeshchenieTovarovTovary, error) {
+func (c *Client) DocumentPeremeshchenieTovarovTovarys(where Where) (*[]DocumentPeremeshchenieTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPeremeshchenieTovarovTovary `json:"value"`
 	}
@@ -17079,7 +17079,7 @@ func (c *Client) DocumentPeremeshchenieTovarovTovarys(where Where) ([]DocumentPe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeremeshchenieTovarovTovary(key PrimaryDocumentPeremeshchenieTovarovTovary, entity DocumentPeremeshchenieTovarovTovary) (*DocumentPeremeshchenieTovarovTovary, error) {
 	return NewDocumentPeremeshchenieTovarovTovary(c.updateEntity(key, entity))
@@ -17114,7 +17114,7 @@ func (c *Client) CreateDocumentPeremeshchenieTovarovSpisokZaiavok(entity Documen
 func (c *Client) DocumentPeremeshchenieTovarovSpisokZaiavok(key PrimaryDocumentPeremeshchenieTovarovSpisokZaiavok, fields []string) (*DocumentPeremeshchenieTovarovSpisokZaiavok, error) {
 	return NewDocumentPeremeshchenieTovarovSpisokZaiavok(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeremeshchenieTovarovSpisokZaiavoks(where Where) ([]DocumentPeremeshchenieTovarovSpisokZaiavok, error) {
+func (c *Client) DocumentPeremeshchenieTovarovSpisokZaiavoks(where Where) (*[]DocumentPeremeshchenieTovarovSpisokZaiavok, error) {
 	type ReturnObj struct {
 		Value []DocumentPeremeshchenieTovarovSpisokZaiavok `json:"value"`
 	}
@@ -17130,7 +17130,7 @@ func (c *Client) DocumentPeremeshchenieTovarovSpisokZaiavoks(where Where) ([]Doc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeremeshchenieTovarovSpisokZaiavok(key PrimaryDocumentPeremeshchenieTovarovSpisokZaiavok, entity DocumentPeremeshchenieTovarovSpisokZaiavok) (*DocumentPeremeshchenieTovarovSpisokZaiavok, error) {
 	return NewDocumentPeremeshchenieTovarovSpisokZaiavok(c.updateEntity(key, entity))
@@ -17181,7 +17181,7 @@ func (c *Client) CreateDocumentZakrytieZaiavokNaRaskhodovanieSredstv(entity Docu
 func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstv(key PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstv, fields []string) (*DocumentZakrytieZaiavokNaRaskhodovanieSredstv, error) {
 	return NewDocumentZakrytieZaiavokNaRaskhodovanieSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvs(where Where) ([]DocumentZakrytieZaiavokNaRaskhodovanieSredstv, error) {
+func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvs(where Where) (*[]DocumentZakrytieZaiavokNaRaskhodovanieSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieZaiavokNaRaskhodovanieSredstv `json:"value"`
 	}
@@ -17197,7 +17197,7 @@ func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvs(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieZaiavokNaRaskhodovanieSredstv(key PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstv, entity DocumentZakrytieZaiavokNaRaskhodovanieSredstv) (*DocumentZakrytieZaiavokNaRaskhodovanieSredstv, error) {
 	return NewDocumentZakrytieZaiavokNaRaskhodovanieSredstv(c.updateEntity(key, entity))
@@ -17238,7 +17238,7 @@ func (c *Client) CreateDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRas
 func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv(key PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv, fields []string) (*DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv, error) {
 	return NewDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstvs(where Where) ([]DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv, error) {
+func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstvs(where Where) (*[]DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv `json:"value"`
 	}
@@ -17254,7 +17254,7 @@ func (c *Client) DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv(key PrimaryDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv, entity DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv) (*DocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv, error) {
 	return NewDocumentZakrytieZaiavokNaRaskhodovanieSredstvZaiavkiNaRaskhodovanieSredstv(c.updateEntity(key, entity))
@@ -17312,7 +17312,7 @@ func (c *Client) CreateMemberCard(entity MemberCard) (*MemberCard, error) {
 func (c *Client) MemberCard(key PrimaryMemberCard, fields []string) (*MemberCard, error) {
 	return NewMemberCard(c.getEntity(key, fields))
 }
-func (c *Client) MemberCards(where Where) ([]MemberCard, error) {
+func (c *Client) MemberCards(where Where) (*[]MemberCard, error) {
 	type ReturnObj struct {
 		Value []MemberCard `json:"value"`
 	}
@@ -17328,7 +17328,7 @@ func (c *Client) MemberCards(where Where) ([]MemberCard, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateMemberCard(key PrimaryMemberCard, entity MemberCard) (*MemberCard, error) {
 	return NewMemberCard(c.updateEntity(key, entity))
@@ -17373,7 +17373,7 @@ func (c *Client) CreateDocumentABCKlassifikatsiiaPokupatelei(entity DocumentABCK
 func (c *Client) DocumentABCKlassifikatsiiaPokupatelei(key PrimaryDocumentABCKlassifikatsiiaPokupatelei, fields []string) (*DocumentABCKlassifikatsiiaPokupatelei, error) {
 	return NewDocumentABCKlassifikatsiiaPokupatelei(c.getEntity(key, fields))
 }
-func (c *Client) DocumentABCKlassifikatsiiaPokupateleis(where Where) ([]DocumentABCKlassifikatsiiaPokupatelei, error) {
+func (c *Client) DocumentABCKlassifikatsiiaPokupateleis(where Where) (*[]DocumentABCKlassifikatsiiaPokupatelei, error) {
 	type ReturnObj struct {
 		Value []DocumentABCKlassifikatsiiaPokupatelei `json:"value"`
 	}
@@ -17389,7 +17389,7 @@ func (c *Client) DocumentABCKlassifikatsiiaPokupateleis(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentABCKlassifikatsiiaPokupatelei(key PrimaryDocumentABCKlassifikatsiiaPokupatelei, entity DocumentABCKlassifikatsiiaPokupatelei) (*DocumentABCKlassifikatsiiaPokupatelei, error) {
 	return NewDocumentABCKlassifikatsiiaPokupatelei(c.updateEntity(key, entity))
@@ -17428,7 +17428,7 @@ func (c *Client) CreateDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleni
 func (c *Client) DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov(key PrimaryDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov, fields []string) (*DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov, error) {
 	return NewDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentovs(where Where) ([]DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov, error) {
+func (c *Client) DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentovs(where Where) (*[]DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov, error) {
 	type ReturnObj struct {
 		Value []DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov `json:"value"`
 	}
@@ -17444,7 +17444,7 @@ func (c *Client) DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKont
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov(key PrimaryDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov, entity DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov) (*DocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov, error) {
 	return NewDocumentABCKlassifikatsiiaPokupateleiTablitsaRaspredeleniiaKontragentov(c.updateEntity(key, entity))
@@ -17493,7 +17493,7 @@ func (c *Client) CreateCatalogIdentifikatoryObieektovMetadannykh(entity CatalogI
 func (c *Client) CatalogIdentifikatoryObieektovMetadannykh(key PrimaryCatalogIdentifikatoryObieektovMetadannykh, fields []string) (*CatalogIdentifikatoryObieektovMetadannykh, error) {
 	return NewCatalogIdentifikatoryObieektovMetadannykh(c.getEntity(key, fields))
 }
-func (c *Client) CatalogIdentifikatoryObieektovMetadannykhs(where Where) ([]CatalogIdentifikatoryObieektovMetadannykh, error) {
+func (c *Client) CatalogIdentifikatoryObieektovMetadannykhs(where Where) (*[]CatalogIdentifikatoryObieektovMetadannykh, error) {
 	type ReturnObj struct {
 		Value []CatalogIdentifikatoryObieektovMetadannykh `json:"value"`
 	}
@@ -17509,7 +17509,7 @@ func (c *Client) CatalogIdentifikatoryObieektovMetadannykhs(where Where) ([]Cata
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogIdentifikatoryObieektovMetadannykh(key PrimaryCatalogIdentifikatoryObieektovMetadannykh, entity CatalogIdentifikatoryObieektovMetadannykh) (*CatalogIdentifikatoryObieektovMetadannykh, error) {
 	return NewCatalogIdentifikatoryObieektovMetadannykh(c.updateEntity(key, entity))
@@ -17565,7 +17565,7 @@ func (c *Client) CreateDocumentSvodnaiaInventarizatsiiaTovarovNaSklade(entity Do
 func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSklade(key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSklade, fields []string) (*DocumentSvodnaiaInventarizatsiiaTovarovNaSklade, error) {
 	return NewDocumentSvodnaiaInventarizatsiiaTovarovNaSklade(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSklades(where Where) ([]DocumentSvodnaiaInventarizatsiiaTovarovNaSklade, error) {
+func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSklades(where Where) (*[]DocumentSvodnaiaInventarizatsiiaTovarovNaSklade, error) {
 	type ReturnObj struct {
 		Value []DocumentSvodnaiaInventarizatsiiaTovarovNaSklade `json:"value"`
 	}
@@ -17581,7 +17581,7 @@ func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSklades(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSvodnaiaInventarizatsiiaTovarovNaSklade(key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSklade, entity DocumentSvodnaiaInventarizatsiiaTovarovNaSklade) (*DocumentSvodnaiaInventarizatsiiaTovarovNaSklade, error) {
 	return NewDocumentSvodnaiaInventarizatsiiaTovarovNaSklade(c.updateEntity(key, entity))
@@ -17620,7 +17620,7 @@ func (c *Client) CreateDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikat
 func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty(key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty, fields []string) (*DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
 	return NewDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikatys(where Where) ([]DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
+func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikatys(where Where) (*[]DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
 	type ReturnObj struct {
 		Value []DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty `json:"value"`
 	}
@@ -17636,7 +17636,7 @@ func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikatys(whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty(key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty, entity DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty) (*DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty, error) {
 	return NewDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeSertifikaty(c.updateEntity(key, entity))
@@ -17674,7 +17674,7 @@ func (c *Client) CreateDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaPr
 func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, fields []string) (*DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
 	return NewDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiis(where Where) ([]DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
+func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsiis(where Where) (*[]DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
 	type ReturnObj struct {
 		Value []DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii `json:"value"`
 	}
@@ -17690,7 +17690,7 @@ func (c *Client) DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProveden
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(key PrimaryDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, entity DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii) (*DocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii, error) {
 	return NewDocumentSvodnaiaInventarizatsiiaTovarovNaSkladeUsloviiaProvedeniiaInventarizatsii(c.updateEntity(key, entity))
@@ -17755,7 +17755,7 @@ func (c *Client) CreateDocumentKorrektirovkaRealizatsii(entity DocumentKorrektir
 func (c *Client) DocumentKorrektirovkaRealizatsii(key PrimaryDocumentKorrektirovkaRealizatsii, fields []string) (*DocumentKorrektirovkaRealizatsii, error) {
 	return NewDocumentKorrektirovkaRealizatsii(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKorrektirovkaRealizatsiis(where Where) ([]DocumentKorrektirovkaRealizatsii, error) {
+func (c *Client) DocumentKorrektirovkaRealizatsiis(where Where) (*[]DocumentKorrektirovkaRealizatsii, error) {
 	type ReturnObj struct {
 		Value []DocumentKorrektirovkaRealizatsii `json:"value"`
 	}
@@ -17771,7 +17771,7 @@ func (c *Client) DocumentKorrektirovkaRealizatsiis(where Where) ([]DocumentKorre
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKorrektirovkaRealizatsii(key PrimaryDocumentKorrektirovkaRealizatsii, entity DocumentKorrektirovkaRealizatsii) (*DocumentKorrektirovkaRealizatsii, error) {
 	return NewDocumentKorrektirovkaRealizatsii(c.updateEntity(key, entity))
@@ -17841,7 +17841,7 @@ func (c *Client) CreateDocumentKorrektirovkaRealizatsiiTovary(entity DocumentKor
 func (c *Client) DocumentKorrektirovkaRealizatsiiTovary(key PrimaryDocumentKorrektirovkaRealizatsiiTovary, fields []string) (*DocumentKorrektirovkaRealizatsiiTovary, error) {
 	return NewDocumentKorrektirovkaRealizatsiiTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKorrektirovkaRealizatsiiTovarys(where Where) ([]DocumentKorrektirovkaRealizatsiiTovary, error) {
+func (c *Client) DocumentKorrektirovkaRealizatsiiTovarys(where Where) (*[]DocumentKorrektirovkaRealizatsiiTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentKorrektirovkaRealizatsiiTovary `json:"value"`
 	}
@@ -17857,7 +17857,7 @@ func (c *Client) DocumentKorrektirovkaRealizatsiiTovarys(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKorrektirovkaRealizatsiiTovary(key PrimaryDocumentKorrektirovkaRealizatsiiTovary, entity DocumentKorrektirovkaRealizatsiiTovary) (*DocumentKorrektirovkaRealizatsiiTovary, error) {
 	return NewDocumentKorrektirovkaRealizatsiiTovary(c.updateEntity(key, entity))
@@ -17908,7 +17908,7 @@ func (c *Client) CreateDocumentKorrektirovkaRealizatsiiUslugi(entity DocumentKor
 func (c *Client) DocumentKorrektirovkaRealizatsiiUslugi(key PrimaryDocumentKorrektirovkaRealizatsiiUslugi, fields []string) (*DocumentKorrektirovkaRealizatsiiUslugi, error) {
 	return NewDocumentKorrektirovkaRealizatsiiUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKorrektirovkaRealizatsiiUslugis(where Where) ([]DocumentKorrektirovkaRealizatsiiUslugi, error) {
+func (c *Client) DocumentKorrektirovkaRealizatsiiUslugis(where Where) (*[]DocumentKorrektirovkaRealizatsiiUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentKorrektirovkaRealizatsiiUslugi `json:"value"`
 	}
@@ -17924,7 +17924,7 @@ func (c *Client) DocumentKorrektirovkaRealizatsiiUslugis(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKorrektirovkaRealizatsiiUslugi(key PrimaryDocumentKorrektirovkaRealizatsiiUslugi, entity DocumentKorrektirovkaRealizatsiiUslugi) (*DocumentKorrektirovkaRealizatsiiUslugi, error) {
 	return NewDocumentKorrektirovkaRealizatsiiUslugi(c.updateEntity(key, entity))
@@ -17961,7 +17961,7 @@ func (c *Client) CreateCatalogVidyDefektov(entity CatalogVidyDefektov) (*Catalog
 func (c *Client) CatalogVidyDefektov(key PrimaryCatalogVidyDefektov, fields []string) (*CatalogVidyDefektov, error) {
 	return NewCatalogVidyDefektov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyDefektovs(where Where) ([]CatalogVidyDefektov, error) {
+func (c *Client) CatalogVidyDefektovs(where Where) (*[]CatalogVidyDefektov, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyDefektov `json:"value"`
 	}
@@ -17977,7 +17977,7 @@ func (c *Client) CatalogVidyDefektovs(where Where) ([]CatalogVidyDefektov, error
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyDefektov(key PrimaryCatalogVidyDefektov, entity CatalogVidyDefektov) (*CatalogVidyDefektov, error) {
 	return NewCatalogVidyDefektov(c.updateEntity(key, entity))
@@ -18030,7 +18030,7 @@ func (c *Client) CreateDocumentDoverennost(entity DocumentDoverennost) (*Documen
 func (c *Client) DocumentDoverennost(key PrimaryDocumentDoverennost, fields []string) (*DocumentDoverennost, error) {
 	return NewDocumentDoverennost(c.getEntity(key, fields))
 }
-func (c *Client) DocumentDoverennosts(where Where) ([]DocumentDoverennost, error) {
+func (c *Client) DocumentDoverennosts(where Where) (*[]DocumentDoverennost, error) {
 	type ReturnObj struct {
 		Value []DocumentDoverennost `json:"value"`
 	}
@@ -18046,7 +18046,7 @@ func (c *Client) DocumentDoverennosts(where Where) ([]DocumentDoverennost, error
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentDoverennost(key PrimaryDocumentDoverennost, entity DocumentDoverennost) (*DocumentDoverennost, error) {
 	return NewDocumentDoverennost(c.updateEntity(key, entity))
@@ -18085,7 +18085,7 @@ func (c *Client) CreateDocumentDoverennostTovary(entity DocumentDoverennostTovar
 func (c *Client) DocumentDoverennostTovary(key PrimaryDocumentDoverennostTovary, fields []string) (*DocumentDoverennostTovary, error) {
 	return NewDocumentDoverennostTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentDoverennostTovarys(where Where) ([]DocumentDoverennostTovary, error) {
+func (c *Client) DocumentDoverennostTovarys(where Where) (*[]DocumentDoverennostTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentDoverennostTovary `json:"value"`
 	}
@@ -18101,7 +18101,7 @@ func (c *Client) DocumentDoverennostTovarys(where Where) ([]DocumentDoverennostT
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentDoverennostTovary(key PrimaryDocumentDoverennostTovary, entity DocumentDoverennostTovary) (*DocumentDoverennostTovary, error) {
 	return NewDocumentDoverennostTovary(c.updateEntity(key, entity))
@@ -18147,7 +18147,7 @@ func (c *Client) CreateCatalogShablonyZapolneniiaKU(entity CatalogShablonyZapoln
 func (c *Client) CatalogShablonyZapolneniiaKU(key PrimaryCatalogShablonyZapolneniiaKU, fields []string) (*CatalogShablonyZapolneniiaKU, error) {
 	return NewCatalogShablonyZapolneniiaKU(c.getEntity(key, fields))
 }
-func (c *Client) CatalogShablonyZapolneniiaKUs(where Where) ([]CatalogShablonyZapolneniiaKU, error) {
+func (c *Client) CatalogShablonyZapolneniiaKUs(where Where) (*[]CatalogShablonyZapolneniiaKU, error) {
 	type ReturnObj struct {
 		Value []CatalogShablonyZapolneniiaKU `json:"value"`
 	}
@@ -18163,7 +18163,7 @@ func (c *Client) CatalogShablonyZapolneniiaKUs(where Where) ([]CatalogShablonyZa
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogShablonyZapolneniiaKU(key PrimaryCatalogShablonyZapolneniiaKU, entity CatalogShablonyZapolneniiaKU) (*CatalogShablonyZapolneniiaKU, error) {
 	return NewCatalogShablonyZapolneniiaKU(c.updateEntity(key, entity))
@@ -18202,7 +18202,7 @@ func (c *Client) CreateCatalogShablonyZapolneniiaKUPrazdnichnyeDni(entity Catalo
 func (c *Client) CatalogShablonyZapolneniiaKUPrazdnichnyeDni(key PrimaryCatalogShablonyZapolneniiaKUPrazdnichnyeDni, fields []string) (*CatalogShablonyZapolneniiaKUPrazdnichnyeDni, error) {
 	return NewCatalogShablonyZapolneniiaKUPrazdnichnyeDni(c.getEntity(key, fields))
 }
-func (c *Client) CatalogShablonyZapolneniiaKUPrazdnichnyeDnis(where Where) ([]CatalogShablonyZapolneniiaKUPrazdnichnyeDni, error) {
+func (c *Client) CatalogShablonyZapolneniiaKUPrazdnichnyeDnis(where Where) (*[]CatalogShablonyZapolneniiaKUPrazdnichnyeDni, error) {
 	type ReturnObj struct {
 		Value []CatalogShablonyZapolneniiaKUPrazdnichnyeDni `json:"value"`
 	}
@@ -18218,7 +18218,7 @@ func (c *Client) CatalogShablonyZapolneniiaKUPrazdnichnyeDnis(where Where) ([]Ca
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogShablonyZapolneniiaKUPrazdnichnyeDni(key PrimaryCatalogShablonyZapolneniiaKUPrazdnichnyeDni, entity CatalogShablonyZapolneniiaKUPrazdnichnyeDni) (*CatalogShablonyZapolneniiaKUPrazdnichnyeDni, error) {
 	return NewCatalogShablonyZapolneniiaKUPrazdnichnyeDni(c.updateEntity(key, entity))
@@ -18254,7 +18254,7 @@ func (c *Client) CreateCatalogShablonyZapolneniiaKUKUNaNedeliu(entity CatalogSha
 func (c *Client) CatalogShablonyZapolneniiaKUKUNaNedeliu(key PrimaryCatalogShablonyZapolneniiaKUKUNaNedeliu, fields []string) (*CatalogShablonyZapolneniiaKUKUNaNedeliu, error) {
 	return NewCatalogShablonyZapolneniiaKUKUNaNedeliu(c.getEntity(key, fields))
 }
-func (c *Client) CatalogShablonyZapolneniiaKUKUNaNedelius(where Where) ([]CatalogShablonyZapolneniiaKUKUNaNedeliu, error) {
+func (c *Client) CatalogShablonyZapolneniiaKUKUNaNedelius(where Where) (*[]CatalogShablonyZapolneniiaKUKUNaNedeliu, error) {
 	type ReturnObj struct {
 		Value []CatalogShablonyZapolneniiaKUKUNaNedeliu `json:"value"`
 	}
@@ -18270,7 +18270,7 @@ func (c *Client) CatalogShablonyZapolneniiaKUKUNaNedelius(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogShablonyZapolneniiaKUKUNaNedeliu(key PrimaryCatalogShablonyZapolneniiaKUKUNaNedeliu, entity CatalogShablonyZapolneniiaKUKUNaNedeliu) (*CatalogShablonyZapolneniiaKUKUNaNedeliu, error) {
 	return NewCatalogShablonyZapolneniiaKUKUNaNedeliu(c.updateEntity(key, entity))
@@ -18305,7 +18305,7 @@ func (c *Client) CreateCatalogShablonyZapolneniiaKUSalony(entity CatalogShablony
 func (c *Client) CatalogShablonyZapolneniiaKUSalony(key PrimaryCatalogShablonyZapolneniiaKUSalony, fields []string) (*CatalogShablonyZapolneniiaKUSalony, error) {
 	return NewCatalogShablonyZapolneniiaKUSalony(c.getEntity(key, fields))
 }
-func (c *Client) CatalogShablonyZapolneniiaKUSalonys(where Where) ([]CatalogShablonyZapolneniiaKUSalony, error) {
+func (c *Client) CatalogShablonyZapolneniiaKUSalonys(where Where) (*[]CatalogShablonyZapolneniiaKUSalony, error) {
 	type ReturnObj struct {
 		Value []CatalogShablonyZapolneniiaKUSalony `json:"value"`
 	}
@@ -18321,7 +18321,7 @@ func (c *Client) CatalogShablonyZapolneniiaKUSalonys(where Where) ([]CatalogShab
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogShablonyZapolneniiaKUSalony(key PrimaryCatalogShablonyZapolneniiaKUSalony, entity CatalogShablonyZapolneniiaKUSalony) (*CatalogShablonyZapolneniiaKUSalony, error) {
 	return NewCatalogShablonyZapolneniiaKUSalony(c.updateEntity(key, entity))
@@ -18362,7 +18362,7 @@ func (c *Client) CreateDocumentPlanZapolneniiaVitrin(entity DocumentPlanZapolnen
 func (c *Client) DocumentPlanZapolneniiaVitrin(key PrimaryDocumentPlanZapolneniiaVitrin, fields []string) (*DocumentPlanZapolneniiaVitrin, error) {
 	return NewDocumentPlanZapolneniiaVitrin(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlanZapolneniiaVitrins(where Where) ([]DocumentPlanZapolneniiaVitrin, error) {
+func (c *Client) DocumentPlanZapolneniiaVitrins(where Where) (*[]DocumentPlanZapolneniiaVitrin, error) {
 	type ReturnObj struct {
 		Value []DocumentPlanZapolneniiaVitrin `json:"value"`
 	}
@@ -18378,7 +18378,7 @@ func (c *Client) DocumentPlanZapolneniiaVitrins(where Where) ([]DocumentPlanZapo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlanZapolneniiaVitrin(key PrimaryDocumentPlanZapolneniiaVitrin, entity DocumentPlanZapolneniiaVitrin) (*DocumentPlanZapolneniiaVitrin, error) {
 	return NewDocumentPlanZapolneniiaVitrin(c.updateEntity(key, entity))
@@ -18420,7 +18420,7 @@ func (c *Client) CreateDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin(ent
 func (c *Client) DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin(key PrimaryDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin, fields []string) (*DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin, error) {
 	return NewDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrins(where Where) ([]DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin, error) {
+func (c *Client) DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrins(where Where) (*[]DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin, error) {
 	type ReturnObj struct {
 		Value []DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin `json:"value"`
 	}
@@ -18436,7 +18436,7 @@ func (c *Client) DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrins(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin(key PrimaryDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin, entity DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin) (*DocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin, error) {
 	return NewDocumentPlanZapolneniiaVitrinPlanovoeZapolnenieVitrin(c.updateEntity(key, entity))
@@ -18499,7 +18499,7 @@ func (c *Client) CreateInstance(entity Instance) (*Instance, error) {
 func (c *Client) Instance(key PrimaryInstance, fields []string) (*Instance, error) {
 	return NewInstance(c.getEntity(key, fields))
 }
-func (c *Client) Instances(where Where) ([]Instance, error) {
+func (c *Client) Instances(where Where) (*[]Instance, error) {
 	type ReturnObj struct {
 		Value []Instance `json:"value"`
 	}
@@ -18515,7 +18515,7 @@ func (c *Client) Instances(where Where) ([]Instance, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInstance(key PrimaryInstance, entity Instance) (*Instance, error) {
 	return NewInstance(c.updateEntity(key, entity))
@@ -18583,7 +18583,7 @@ func (c *Client) CreateReturnToManufacturing(entity ReturnToManufacturing) (*Ret
 func (c *Client) ReturnToManufacturing(key PrimaryReturnToManufacturing, fields []string) (*ReturnToManufacturing, error) {
 	return NewReturnToManufacturing(c.getEntity(key, fields))
 }
-func (c *Client) ReturnToManufacturings(where Where) ([]ReturnToManufacturing, error) {
+func (c *Client) ReturnToManufacturings(where Where) (*[]ReturnToManufacturing, error) {
 	type ReturnObj struct {
 		Value []ReturnToManufacturing `json:"value"`
 	}
@@ -18599,7 +18599,7 @@ func (c *Client) ReturnToManufacturings(where Where) ([]ReturnToManufacturing, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateReturnToManufacturing(key PrimaryReturnToManufacturing, entity ReturnToManufacturing) (*ReturnToManufacturing, error) {
 	return NewReturnToManufacturing(c.updateEntity(key, entity))
@@ -18653,7 +18653,7 @@ func (c *Client) CreateDocumentVozvratProduktsiiVProizvodstvoTovary(entity Docum
 func (c *Client) DocumentVozvratProduktsiiVProizvodstvoTovary(key PrimaryDocumentVozvratProduktsiiVProizvodstvoTovary, fields []string) (*DocumentVozvratProduktsiiVProizvodstvoTovary, error) {
 	return NewDocumentVozvratProduktsiiVProizvodstvoTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratProduktsiiVProizvodstvoTovarys(where Where) ([]DocumentVozvratProduktsiiVProizvodstvoTovary, error) {
+func (c *Client) DocumentVozvratProduktsiiVProizvodstvoTovarys(where Where) (*[]DocumentVozvratProduktsiiVProizvodstvoTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratProduktsiiVProizvodstvoTovary `json:"value"`
 	}
@@ -18669,7 +18669,7 @@ func (c *Client) DocumentVozvratProduktsiiVProizvodstvoTovarys(where Where) ([]D
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratProduktsiiVProizvodstvoTovary(key PrimaryDocumentVozvratProduktsiiVProizvodstvoTovary, entity DocumentVozvratProduktsiiVProizvodstvoTovary) (*DocumentVozvratProduktsiiVProizvodstvoTovary, error) {
 	return NewDocumentVozvratProduktsiiVProizvodstvoTovary(c.updateEntity(key, entity))
@@ -18706,7 +18706,7 @@ func (c *Client) CreateCatalogNomeraGTD(entity CatalogNomeraGTD) (*CatalogNomera
 func (c *Client) CatalogNomeraGTD(key PrimaryCatalogNomeraGTD, fields []string) (*CatalogNomeraGTD, error) {
 	return NewCatalogNomeraGTD(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNomeraGTDs(where Where) ([]CatalogNomeraGTD, error) {
+func (c *Client) CatalogNomeraGTDs(where Where) (*[]CatalogNomeraGTD, error) {
 	type ReturnObj struct {
 		Value []CatalogNomeraGTD `json:"value"`
 	}
@@ -18722,7 +18722,7 @@ func (c *Client) CatalogNomeraGTDs(where Where) ([]CatalogNomeraGTD, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNomeraGTD(key PrimaryCatalogNomeraGTD, entity CatalogNomeraGTD) (*CatalogNomeraGTD, error) {
 	return NewCatalogNomeraGTD(c.updateEntity(key, entity))
@@ -18760,7 +18760,7 @@ func (c *Client) CreateCatalogNastroikiRabochegoMestaPolzovatelia(entity Catalog
 func (c *Client) CatalogNastroikiRabochegoMestaPolzovatelia(key PrimaryCatalogNastroikiRabochegoMestaPolzovatelia, fields []string) (*CatalogNastroikiRabochegoMestaPolzovatelia, error) {
 	return NewCatalogNastroikiRabochegoMestaPolzovatelia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiRabochegoMestaPolzovatelias(where Where) ([]CatalogNastroikiRabochegoMestaPolzovatelia, error) {
+func (c *Client) CatalogNastroikiRabochegoMestaPolzovatelias(where Where) (*[]CatalogNastroikiRabochegoMestaPolzovatelia, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiRabochegoMestaPolzovatelia `json:"value"`
 	}
@@ -18776,7 +18776,7 @@ func (c *Client) CatalogNastroikiRabochegoMestaPolzovatelias(where Where) ([]Cat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiRabochegoMestaPolzovatelia(key PrimaryCatalogNastroikiRabochegoMestaPolzovatelia, entity CatalogNastroikiRabochegoMestaPolzovatelia) (*CatalogNastroikiRabochegoMestaPolzovatelia, error) {
 	return NewCatalogNastroikiRabochegoMestaPolzovatelia(c.updateEntity(key, entity))
@@ -18817,7 +18817,7 @@ func (c *Client) CreateCatalogNastroikiRabochegoMestaPolzovateliaNastroiki(entit
 func (c *Client) CatalogNastroikiRabochegoMestaPolzovateliaNastroiki(key PrimaryCatalogNastroikiRabochegoMestaPolzovateliaNastroiki, fields []string) (*CatalogNastroikiRabochegoMestaPolzovateliaNastroiki, error) {
 	return NewCatalogNastroikiRabochegoMestaPolzovateliaNastroiki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiRabochegoMestaPolzovateliaNastroikis(where Where) ([]CatalogNastroikiRabochegoMestaPolzovateliaNastroiki, error) {
+func (c *Client) CatalogNastroikiRabochegoMestaPolzovateliaNastroikis(where Where) (*[]CatalogNastroikiRabochegoMestaPolzovateliaNastroiki, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiRabochegoMestaPolzovateliaNastroiki `json:"value"`
 	}
@@ -18833,7 +18833,7 @@ func (c *Client) CatalogNastroikiRabochegoMestaPolzovateliaNastroikis(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiRabochegoMestaPolzovateliaNastroiki(key PrimaryCatalogNastroikiRabochegoMestaPolzovateliaNastroiki, entity CatalogNastroikiRabochegoMestaPolzovateliaNastroiki) (*CatalogNastroikiRabochegoMestaPolzovateliaNastroiki, error) {
 	return NewCatalogNastroikiRabochegoMestaPolzovateliaNastroiki(c.updateEntity(key, entity))
@@ -18873,7 +18873,7 @@ func (c *Client) CreateCatalogsmsShablony(entity CatalogsmsShablony) (*Catalogsm
 func (c *Client) CatalogsmsShablony(key PrimaryCatalogsmsShablony, fields []string) (*CatalogsmsShablony, error) {
 	return NewCatalogsmsShablony(c.getEntity(key, fields))
 }
-func (c *Client) CatalogsmsShablonys(where Where) ([]CatalogsmsShablony, error) {
+func (c *Client) CatalogsmsShablonys(where Where) (*[]CatalogsmsShablony, error) {
 	type ReturnObj struct {
 		Value []CatalogsmsShablony `json:"value"`
 	}
@@ -18889,7 +18889,7 @@ func (c *Client) CatalogsmsShablonys(where Where) ([]CatalogsmsShablony, error) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogsmsShablony(key PrimaryCatalogsmsShablony, entity CatalogsmsShablony) (*CatalogsmsShablony, error) {
 	return NewCatalogsmsShablony(c.updateEntity(key, entity))
@@ -18944,7 +18944,7 @@ func (c *Client) CreateWriteOff(entity WriteOff) (*WriteOff, error) {
 func (c *Client) WriteOff(key PrimaryWriteOff, fields []string) (*WriteOff, error) {
 	return NewWriteOff(c.getEntity(key, fields))
 }
-func (c *Client) WriteOffs(where Where) ([]WriteOff, error) {
+func (c *Client) WriteOffs(where Where) (*[]WriteOff, error) {
 	type ReturnObj struct {
 		Value []WriteOff `json:"value"`
 	}
@@ -18960,7 +18960,7 @@ func (c *Client) WriteOffs(where Where) ([]WriteOff, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateWriteOff(key PrimaryWriteOff, entity WriteOff) (*WriteOff, error) {
 	return NewWriteOff(c.updateEntity(key, entity))
@@ -19007,7 +19007,7 @@ func (c *Client) CreateDocumentSpisanieTovarovTovary(entity DocumentSpisanieTova
 func (c *Client) DocumentSpisanieTovarovTovary(key PrimaryDocumentSpisanieTovarovTovary, fields []string) (*DocumentSpisanieTovarovTovary, error) {
 	return NewDocumentSpisanieTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSpisanieTovarovTovarys(where Where) ([]DocumentSpisanieTovarovTovary, error) {
+func (c *Client) DocumentSpisanieTovarovTovarys(where Where) (*[]DocumentSpisanieTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentSpisanieTovarovTovary `json:"value"`
 	}
@@ -19023,7 +19023,7 @@ func (c *Client) DocumentSpisanieTovarovTovarys(where Where) ([]DocumentSpisanie
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSpisanieTovarovTovary(key PrimaryDocumentSpisanieTovarovTovary, entity DocumentSpisanieTovarovTovary) (*DocumentSpisanieTovarovTovary, error) {
 	return NewDocumentSpisanieTovarovTovary(c.updateEntity(key, entity))
@@ -19059,7 +19059,7 @@ func (c *Client) CreateDocumentSpisanieTovarovSertifikaty(entity DocumentSpisani
 func (c *Client) DocumentSpisanieTovarovSertifikaty(key PrimaryDocumentSpisanieTovarovSertifikaty, fields []string) (*DocumentSpisanieTovarovSertifikaty, error) {
 	return NewDocumentSpisanieTovarovSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSpisanieTovarovSertifikatys(where Where) ([]DocumentSpisanieTovarovSertifikaty, error) {
+func (c *Client) DocumentSpisanieTovarovSertifikatys(where Where) (*[]DocumentSpisanieTovarovSertifikaty, error) {
 	type ReturnObj struct {
 		Value []DocumentSpisanieTovarovSertifikaty `json:"value"`
 	}
@@ -19075,7 +19075,7 @@ func (c *Client) DocumentSpisanieTovarovSertifikatys(where Where) ([]DocumentSpi
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSpisanieTovarovSertifikaty(key PrimaryDocumentSpisanieTovarovSertifikaty, entity DocumentSpisanieTovarovSertifikaty) (*DocumentSpisanieTovarovSertifikaty, error) {
 	return NewDocumentSpisanieTovarovSertifikaty(c.updateEntity(key, entity))
@@ -19134,7 +19134,7 @@ func (c *Client) CreateDocumentsmsSoobshchenie(entity DocumentsmsSoobshchenie) (
 func (c *Client) DocumentsmsSoobshchenie(key PrimaryDocumentsmsSoobshchenie, fields []string) (*DocumentsmsSoobshchenie, error) {
 	return NewDocumentsmsSoobshchenie(c.getEntity(key, fields))
 }
-func (c *Client) DocumentsmsSoobshchenies(where Where) ([]DocumentsmsSoobshchenie, error) {
+func (c *Client) DocumentsmsSoobshchenies(where Where) (*[]DocumentsmsSoobshchenie, error) {
 	type ReturnObj struct {
 		Value []DocumentsmsSoobshchenie `json:"value"`
 	}
@@ -19150,7 +19150,7 @@ func (c *Client) DocumentsmsSoobshchenies(where Where) ([]DocumentsmsSoobshcheni
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentsmsSoobshchenie(key PrimaryDocumentsmsSoobshchenie, entity DocumentsmsSoobshchenie) (*DocumentsmsSoobshchenie, error) {
 	return NewDocumentsmsSoobshchenie(c.updateEntity(key, entity))
@@ -19193,7 +19193,7 @@ func (c *Client) CreateDocumentsmsSoobshcheniePoluchateli(entity DocumentsmsSoob
 func (c *Client) DocumentsmsSoobshcheniePoluchateli(key PrimaryDocumentsmsSoobshcheniePoluchateli, fields []string) (*DocumentsmsSoobshcheniePoluchateli, error) {
 	return NewDocumentsmsSoobshcheniePoluchateli(c.getEntity(key, fields))
 }
-func (c *Client) DocumentsmsSoobshcheniePoluchatelis(where Where) ([]DocumentsmsSoobshcheniePoluchateli, error) {
+func (c *Client) DocumentsmsSoobshcheniePoluchatelis(where Where) (*[]DocumentsmsSoobshcheniePoluchateli, error) {
 	type ReturnObj struct {
 		Value []DocumentsmsSoobshcheniePoluchateli `json:"value"`
 	}
@@ -19209,7 +19209,7 @@ func (c *Client) DocumentsmsSoobshcheniePoluchatelis(where Where) ([]Documentsms
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentsmsSoobshcheniePoluchateli(key PrimaryDocumentsmsSoobshcheniePoluchateli, entity DocumentsmsSoobshcheniePoluchateli) (*DocumentsmsSoobshcheniePoluchateli, error) {
 	return NewDocumentsmsSoobshcheniePoluchateli(c.updateEntity(key, entity))
@@ -19280,7 +19280,7 @@ func (c *Client) CreateDocumentOplataOtPokupateliaPlatezhnoiKartoi(entity Docume
 func (c *Client) DocumentOplataOtPokupateliaPlatezhnoiKartoi(key PrimaryDocumentOplataOtPokupateliaPlatezhnoiKartoi, fields []string) (*DocumentOplataOtPokupateliaPlatezhnoiKartoi, error) {
 	return NewDocumentOplataOtPokupateliaPlatezhnoiKartoi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOplataOtPokupateliaPlatezhnoiKartois(where Where) ([]DocumentOplataOtPokupateliaPlatezhnoiKartoi, error) {
+func (c *Client) DocumentOplataOtPokupateliaPlatezhnoiKartois(where Where) (*[]DocumentOplataOtPokupateliaPlatezhnoiKartoi, error) {
 	type ReturnObj struct {
 		Value []DocumentOplataOtPokupateliaPlatezhnoiKartoi `json:"value"`
 	}
@@ -19296,7 +19296,7 @@ func (c *Client) DocumentOplataOtPokupateliaPlatezhnoiKartois(where Where) ([]Do
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOplataOtPokupateliaPlatezhnoiKartoi(key PrimaryDocumentOplataOtPokupateliaPlatezhnoiKartoi, entity DocumentOplataOtPokupateliaPlatezhnoiKartoi) (*DocumentOplataOtPokupateliaPlatezhnoiKartoi, error) {
 	return NewDocumentOplataOtPokupateliaPlatezhnoiKartoi(c.updateEntity(key, entity))
@@ -19342,7 +19342,7 @@ func (c *Client) CreateCatalogDragotsennyeKamni(entity CatalogDragotsennyeKamni)
 func (c *Client) CatalogDragotsennyeKamni(key PrimaryCatalogDragotsennyeKamni, fields []string) (*CatalogDragotsennyeKamni, error) {
 	return NewCatalogDragotsennyeKamni(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDragotsennyeKamnis(where Where) ([]CatalogDragotsennyeKamni, error) {
+func (c *Client) CatalogDragotsennyeKamnis(where Where) (*[]CatalogDragotsennyeKamni, error) {
 	type ReturnObj struct {
 		Value []CatalogDragotsennyeKamni `json:"value"`
 	}
@@ -19358,7 +19358,7 @@ func (c *Client) CatalogDragotsennyeKamnis(where Where) ([]CatalogDragotsennyeKa
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDragotsennyeKamni(key PrimaryCatalogDragotsennyeKamni, entity CatalogDragotsennyeKamni) (*CatalogDragotsennyeKamni, error) {
 	return NewCatalogDragotsennyeKamni(c.updateEntity(key, entity))
@@ -19402,7 +19402,7 @@ func (c *Client) CreateCatalogKalendariPlanirovaniiaProdazh(entity CatalogKalend
 func (c *Client) CatalogKalendariPlanirovaniiaProdazh(key PrimaryCatalogKalendariPlanirovaniiaProdazh, fields []string) (*CatalogKalendariPlanirovaniiaProdazh, error) {
 	return NewCatalogKalendariPlanirovaniiaProdazh(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKalendariPlanirovaniiaProdazhs(where Where) ([]CatalogKalendariPlanirovaniiaProdazh, error) {
+func (c *Client) CatalogKalendariPlanirovaniiaProdazhs(where Where) (*[]CatalogKalendariPlanirovaniiaProdazh, error) {
 	type ReturnObj struct {
 		Value []CatalogKalendariPlanirovaniiaProdazh `json:"value"`
 	}
@@ -19418,7 +19418,7 @@ func (c *Client) CatalogKalendariPlanirovaniiaProdazhs(where Where) ([]CatalogKa
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKalendariPlanirovaniiaProdazh(key PrimaryCatalogKalendariPlanirovaniiaProdazh, entity CatalogKalendariPlanirovaniiaProdazh) (*CatalogKalendariPlanirovaniiaProdazh, error) {
 	return NewCatalogKalendariPlanirovaniiaProdazh(c.updateEntity(key, entity))
@@ -19454,7 +19454,7 @@ func (c *Client) CreateCatalogKalendariPlanirovaniiaProdazhKUPoDniam(entity Cata
 func (c *Client) CatalogKalendariPlanirovaniiaProdazhKUPoDniam(key PrimaryCatalogKalendariPlanirovaniiaProdazhKUPoDniam, fields []string) (*CatalogKalendariPlanirovaniiaProdazhKUPoDniam, error) {
 	return NewCatalogKalendariPlanirovaniiaProdazhKUPoDniam(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKalendariPlanirovaniiaProdazhKUPoDniams(where Where) ([]CatalogKalendariPlanirovaniiaProdazhKUPoDniam, error) {
+func (c *Client) CatalogKalendariPlanirovaniiaProdazhKUPoDniams(where Where) (*[]CatalogKalendariPlanirovaniiaProdazhKUPoDniam, error) {
 	type ReturnObj struct {
 		Value []CatalogKalendariPlanirovaniiaProdazhKUPoDniam `json:"value"`
 	}
@@ -19470,7 +19470,7 @@ func (c *Client) CatalogKalendariPlanirovaniiaProdazhKUPoDniams(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKalendariPlanirovaniiaProdazhKUPoDniam(key PrimaryCatalogKalendariPlanirovaniiaProdazhKUPoDniam, entity CatalogKalendariPlanirovaniiaProdazhKUPoDniam) (*CatalogKalendariPlanirovaniiaProdazhKUPoDniam, error) {
 	return NewCatalogKalendariPlanirovaniiaProdazhKUPoDniam(c.updateEntity(key, entity))
@@ -19505,7 +19505,7 @@ func (c *Client) CreateCatalogKalendariPlanirovaniiaProdazhSalony(entity Catalog
 func (c *Client) CatalogKalendariPlanirovaniiaProdazhSalony(key PrimaryCatalogKalendariPlanirovaniiaProdazhSalony, fields []string) (*CatalogKalendariPlanirovaniiaProdazhSalony, error) {
 	return NewCatalogKalendariPlanirovaniiaProdazhSalony(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKalendariPlanirovaniiaProdazhSalonys(where Where) ([]CatalogKalendariPlanirovaniiaProdazhSalony, error) {
+func (c *Client) CatalogKalendariPlanirovaniiaProdazhSalonys(where Where) (*[]CatalogKalendariPlanirovaniiaProdazhSalony, error) {
 	type ReturnObj struct {
 		Value []CatalogKalendariPlanirovaniiaProdazhSalony `json:"value"`
 	}
@@ -19521,7 +19521,7 @@ func (c *Client) CatalogKalendariPlanirovaniiaProdazhSalonys(where Where) ([]Cat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKalendariPlanirovaniiaProdazhSalony(key PrimaryCatalogKalendariPlanirovaniiaProdazhSalony, entity CatalogKalendariPlanirovaniiaProdazhSalony) (*CatalogKalendariPlanirovaniiaProdazhSalony, error) {
 	return NewCatalogKalendariPlanirovaniiaProdazhSalony(c.updateEntity(key, entity))
@@ -19572,7 +19572,7 @@ func (c *Client) CreateCatalogKontaktnyeLitsa(entity CatalogKontaktnyeLitsa) (*C
 func (c *Client) CatalogKontaktnyeLitsa(key PrimaryCatalogKontaktnyeLitsa, fields []string) (*CatalogKontaktnyeLitsa, error) {
 	return NewCatalogKontaktnyeLitsa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKontaktnyeLitsas(where Where) ([]CatalogKontaktnyeLitsa, error) {
+func (c *Client) CatalogKontaktnyeLitsas(where Where) (*[]CatalogKontaktnyeLitsa, error) {
 	type ReturnObj struct {
 		Value []CatalogKontaktnyeLitsa `json:"value"`
 	}
@@ -19588,7 +19588,7 @@ func (c *Client) CatalogKontaktnyeLitsas(where Where) ([]CatalogKontaktnyeLitsa,
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKontaktnyeLitsa(key PrimaryCatalogKontaktnyeLitsa, entity CatalogKontaktnyeLitsa) (*CatalogKontaktnyeLitsa, error) {
 	return NewCatalogKontaktnyeLitsa(c.updateEntity(key, entity))
@@ -19638,7 +19638,7 @@ func (c *Client) CreateCatalogFizicheskieLitsa(entity CatalogFizicheskieLitsa) (
 func (c *Client) CatalogFizicheskieLitsa(key PrimaryCatalogFizicheskieLitsa, fields []string) (*CatalogFizicheskieLitsa, error) {
 	return NewCatalogFizicheskieLitsa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFizicheskieLitsas(where Where) ([]CatalogFizicheskieLitsa, error) {
+func (c *Client) CatalogFizicheskieLitsas(where Where) (*[]CatalogFizicheskieLitsa, error) {
 	type ReturnObj struct {
 		Value []CatalogFizicheskieLitsa `json:"value"`
 	}
@@ -19654,7 +19654,7 @@ func (c *Client) CatalogFizicheskieLitsas(where Where) ([]CatalogFizicheskieLits
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFizicheskieLitsa(key PrimaryCatalogFizicheskieLitsa, entity CatalogFizicheskieLitsa) (*CatalogFizicheskieLitsa, error) {
 	return NewCatalogFizicheskieLitsa(c.updateEntity(key, entity))
@@ -19702,7 +19702,7 @@ func (c *Client) CreateCatalogTipovyeAnkety(entity CatalogTipovyeAnkety) (*Catal
 func (c *Client) CatalogTipovyeAnkety(key PrimaryCatalogTipovyeAnkety, fields []string) (*CatalogTipovyeAnkety, error) {
 	return NewCatalogTipovyeAnkety(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipovyeAnketys(where Where) ([]CatalogTipovyeAnkety, error) {
+func (c *Client) CatalogTipovyeAnketys(where Where) (*[]CatalogTipovyeAnkety, error) {
 	type ReturnObj struct {
 		Value []CatalogTipovyeAnkety `json:"value"`
 	}
@@ -19718,7 +19718,7 @@ func (c *Client) CatalogTipovyeAnketys(where Where) ([]CatalogTipovyeAnkety, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipovyeAnkety(key PrimaryCatalogTipovyeAnkety, entity CatalogTipovyeAnkety) (*CatalogTipovyeAnkety, error) {
 	return NewCatalogTipovyeAnkety(c.updateEntity(key, entity))
@@ -19754,7 +19754,7 @@ func (c *Client) CreateCatalogTipovyeAnketyVoprosyAnkety(entity CatalogTipovyeAn
 func (c *Client) CatalogTipovyeAnketyVoprosyAnkety(key PrimaryCatalogTipovyeAnketyVoprosyAnkety, fields []string) (*CatalogTipovyeAnketyVoprosyAnkety, error) {
 	return NewCatalogTipovyeAnketyVoprosyAnkety(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipovyeAnketyVoprosyAnketys(where Where) ([]CatalogTipovyeAnketyVoprosyAnkety, error) {
+func (c *Client) CatalogTipovyeAnketyVoprosyAnketys(where Where) (*[]CatalogTipovyeAnketyVoprosyAnkety, error) {
 	type ReturnObj struct {
 		Value []CatalogTipovyeAnketyVoprosyAnkety `json:"value"`
 	}
@@ -19770,7 +19770,7 @@ func (c *Client) CatalogTipovyeAnketyVoprosyAnketys(where Where) ([]CatalogTipov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipovyeAnketyVoprosyAnkety(key PrimaryCatalogTipovyeAnketyVoprosyAnkety, entity CatalogTipovyeAnketyVoprosyAnkety) (*CatalogTipovyeAnketyVoprosyAnkety, error) {
 	return NewCatalogTipovyeAnketyVoprosyAnkety(c.updateEntity(key, entity))
@@ -19818,7 +19818,7 @@ func (c *Client) CreateDocumentNachislenieSpisanieBonusov(entity DocumentNachisl
 func (c *Client) DocumentNachislenieSpisanieBonusov(key PrimaryDocumentNachislenieSpisanieBonusov, fields []string) (*DocumentNachislenieSpisanieBonusov, error) {
 	return NewDocumentNachislenieSpisanieBonusov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentNachislenieSpisanieBonusovs(where Where) ([]DocumentNachislenieSpisanieBonusov, error) {
+func (c *Client) DocumentNachislenieSpisanieBonusovs(where Where) (*[]DocumentNachislenieSpisanieBonusov, error) {
 	type ReturnObj struct {
 		Value []DocumentNachislenieSpisanieBonusov `json:"value"`
 	}
@@ -19834,7 +19834,7 @@ func (c *Client) DocumentNachislenieSpisanieBonusovs(where Where) ([]DocumentNac
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentNachislenieSpisanieBonusov(key PrimaryDocumentNachislenieSpisanieBonusov, entity DocumentNachislenieSpisanieBonusov) (*DocumentNachislenieSpisanieBonusov, error) {
 	return NewDocumentNachislenieSpisanieBonusov(c.updateEntity(key, entity))
@@ -19871,7 +19871,7 @@ func (c *Client) CreateDocumentNachislenieSpisanieBonusovDiskontnyeKarty(entity 
 func (c *Client) DocumentNachislenieSpisanieBonusovDiskontnyeKarty(key PrimaryDocumentNachislenieSpisanieBonusovDiskontnyeKarty, fields []string) (*DocumentNachislenieSpisanieBonusovDiskontnyeKarty, error) {
 	return NewDocumentNachislenieSpisanieBonusovDiskontnyeKarty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentNachislenieSpisanieBonusovDiskontnyeKartys(where Where) ([]DocumentNachislenieSpisanieBonusovDiskontnyeKarty, error) {
+func (c *Client) DocumentNachislenieSpisanieBonusovDiskontnyeKartys(where Where) (*[]DocumentNachislenieSpisanieBonusovDiskontnyeKarty, error) {
 	type ReturnObj struct {
 		Value []DocumentNachislenieSpisanieBonusovDiskontnyeKarty `json:"value"`
 	}
@@ -19887,7 +19887,7 @@ func (c *Client) DocumentNachislenieSpisanieBonusovDiskontnyeKartys(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentNachislenieSpisanieBonusovDiskontnyeKarty(key PrimaryDocumentNachislenieSpisanieBonusovDiskontnyeKarty, entity DocumentNachislenieSpisanieBonusovDiskontnyeKarty) (*DocumentNachislenieSpisanieBonusovDiskontnyeKarty, error) {
 	return NewDocumentNachislenieSpisanieBonusovDiskontnyeKarty(c.updateEntity(key, entity))
@@ -19930,7 +19930,7 @@ func (c *Client) CreateType(entity Type) (*Type, error) {
 func (c *Client) Type(key PrimaryType, fields []string) (*Type, error) {
 	return NewType(c.getEntity(key, fields))
 }
-func (c *Client) Types(where Where) ([]Type, error) {
+func (c *Client) Types(where Where) (*[]Type, error) {
 	type ReturnObj struct {
 		Value []Type `json:"value"`
 	}
@@ -19946,7 +19946,7 @@ func (c *Client) Types(where Where) ([]Type, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateType(key PrimaryType, entity Type) (*Type, error) {
 	return NewType(c.updateEntity(key, entity))
@@ -19986,7 +19986,7 @@ func (c *Client) CreateCatalogfmKodyVidovDokumentov(entity CatalogfmKodyVidovDok
 func (c *Client) CatalogfmKodyVidovDokumentov(key PrimaryCatalogfmKodyVidovDokumentov, fields []string) (*CatalogfmKodyVidovDokumentov, error) {
 	return NewCatalogfmKodyVidovDokumentov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmKodyVidovDokumentovs(where Where) ([]CatalogfmKodyVidovDokumentov, error) {
+func (c *Client) CatalogfmKodyVidovDokumentovs(where Where) (*[]CatalogfmKodyVidovDokumentov, error) {
 	type ReturnObj struct {
 		Value []CatalogfmKodyVidovDokumentov `json:"value"`
 	}
@@ -20002,7 +20002,7 @@ func (c *Client) CatalogfmKodyVidovDokumentovs(where Where) ([]CatalogfmKodyVido
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmKodyVidovDokumentov(key PrimaryCatalogfmKodyVidovDokumentov, entity CatalogfmKodyVidovDokumentov) (*CatalogfmKodyVidovDokumentov, error) {
 	return NewCatalogfmKodyVidovDokumentov(c.updateEntity(key, entity))
@@ -20066,7 +20066,7 @@ func (c *Client) CreateDocumentPlatezhnoeTrebovaniePoluchennoe(entity DocumentPl
 func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoe(key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoe, fields []string) (*DocumentPlatezhnoeTrebovaniePoluchennoe, error) {
 	return NewDocumentPlatezhnoeTrebovaniePoluchennoe(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoes(where Where) ([]DocumentPlatezhnoeTrebovaniePoluchennoe, error) {
+func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoes(where Where) (*[]DocumentPlatezhnoeTrebovaniePoluchennoe, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoeTrebovaniePoluchennoe `json:"value"`
 	}
@@ -20082,7 +20082,7 @@ func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoes(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoeTrebovaniePoluchennoe(key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoe, entity DocumentPlatezhnoeTrebovaniePoluchennoe) (*DocumentPlatezhnoeTrebovaniePoluchennoe, error) {
 	return NewDocumentPlatezhnoeTrebovaniePoluchennoe(c.updateEntity(key, entity))
@@ -20131,7 +20131,7 @@ func (c *Client) CreateDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatez
 func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha, fields []string) (*DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezhas(where Where) ([]DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezhas(where Where) (*[]DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha `json:"value"`
 	}
@@ -20147,7 +20147,7 @@ func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezhas(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha, entity DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha) (*DocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoeTrebovaniePoluchennoeRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -20185,7 +20185,7 @@ func (c *Client) CreateDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragen
 func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta(key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta, fields []string) (*DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragentas(where Where) ([]DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta, error) {
+func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragentas(where Where) (*[]DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta `json:"value"`
 	}
@@ -20201,7 +20201,7 @@ func (c *Client) DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragentas(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta(key PrimaryDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta, entity DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta) (*DocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoeTrebovaniePoluchennoeRekvizityKontragenta(c.updateEntity(key, entity))
@@ -20252,7 +20252,7 @@ func (c *Client) CreateDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv(
 func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv(key PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv, fields []string) (*DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv, error) {
 	return NewDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvs(where Where) ([]DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv, error) {
+func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvs(where Where) (*[]DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv `json:"value"`
 	}
@@ -20268,7 +20268,7 @@ func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvs(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv(key PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv, entity DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv) (*DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv, error) {
 	return NewDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstv(c.updateEntity(key, entity))
@@ -20308,7 +20308,7 @@ func (c *Client) CreateDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvP
 func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS(key PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS, fields []string) (*DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS, error) {
 	return NewDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDSs(where Where) ([]DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS, error) {
+func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDSs(where Where) (*[]DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS, error) {
 	type ReturnObj struct {
 		Value []DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS `json:"value"`
 	}
@@ -20324,7 +20324,7 @@ func (c *Client) DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniru
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS(key PrimaryDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS, entity DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS) (*DocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS, error) {
 	return NewDocumentZakrytiePlaniruemykhPostupleniiDenezhnykhSredstvPlaniruemyePostupleniiaDS(c.updateEntity(key, entity))
@@ -20362,7 +20362,7 @@ func (c *Client) CreateCatalogRazdelyAnkety(entity CatalogRazdelyAnkety) (*Catal
 func (c *Client) CatalogRazdelyAnkety(key PrimaryCatalogRazdelyAnkety, fields []string) (*CatalogRazdelyAnkety, error) {
 	return NewCatalogRazdelyAnkety(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRazdelyAnketys(where Where) ([]CatalogRazdelyAnkety, error) {
+func (c *Client) CatalogRazdelyAnketys(where Where) (*[]CatalogRazdelyAnkety, error) {
 	type ReturnObj struct {
 		Value []CatalogRazdelyAnkety `json:"value"`
 	}
@@ -20378,7 +20378,7 @@ func (c *Client) CatalogRazdelyAnketys(where Where) ([]CatalogRazdelyAnkety, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRazdelyAnkety(key PrimaryCatalogRazdelyAnkety, entity CatalogRazdelyAnkety) (*CatalogRazdelyAnkety, error) {
 	return NewCatalogRazdelyAnkety(c.updateEntity(key, entity))
@@ -20432,7 +20432,7 @@ func (c *Client) CreateDocumentOtchetPoFinMonitoringu(entity DocumentOtchetPoFin
 func (c *Client) DocumentOtchetPoFinMonitoringu(key PrimaryDocumentOtchetPoFinMonitoringu, fields []string) (*DocumentOtchetPoFinMonitoringu, error) {
 	return NewDocumentOtchetPoFinMonitoringu(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetPoFinMonitoringus(where Where) ([]DocumentOtchetPoFinMonitoringu, error) {
+func (c *Client) DocumentOtchetPoFinMonitoringus(where Where) (*[]DocumentOtchetPoFinMonitoringu, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetPoFinMonitoringu `json:"value"`
 	}
@@ -20448,7 +20448,7 @@ func (c *Client) DocumentOtchetPoFinMonitoringus(where Where) ([]DocumentOtchetP
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetPoFinMonitoringu(key PrimaryDocumentOtchetPoFinMonitoringu, entity DocumentOtchetPoFinMonitoringu) (*DocumentOtchetPoFinMonitoringu, error) {
 	return NewDocumentOtchetPoFinMonitoringu(c.updateEntity(key, entity))
@@ -20490,7 +20490,7 @@ func (c *Client) CreateDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa(ent
 func (c *Client) DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa(key PrimaryDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa, fields []string) (*DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa, error) {
 	return NewDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringas(where Where) ([]DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa, error) {
+func (c *Client) DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringas(where Where) (*[]DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa `json:"value"`
 	}
@@ -20506,7 +20506,7 @@ func (c *Client) DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringas(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa(key PrimaryDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa, entity DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa) (*DocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa, error) {
 	return NewDocumentOtchetPoFinMonitoringuDokumentyFinMonitoringa(c.updateEntity(key, entity))
@@ -20543,7 +20543,7 @@ func (c *Client) CreateDocumentOtchetPoFinMonitoringuDannyeDokumenta(entity Docu
 func (c *Client) DocumentOtchetPoFinMonitoringuDannyeDokumenta(key PrimaryDocumentOtchetPoFinMonitoringuDannyeDokumenta, fields []string) (*DocumentOtchetPoFinMonitoringuDannyeDokumenta, error) {
 	return NewDocumentOtchetPoFinMonitoringuDannyeDokumenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetPoFinMonitoringuDannyeDokumentas(where Where) ([]DocumentOtchetPoFinMonitoringuDannyeDokumenta, error) {
+func (c *Client) DocumentOtchetPoFinMonitoringuDannyeDokumentas(where Where) (*[]DocumentOtchetPoFinMonitoringuDannyeDokumenta, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetPoFinMonitoringuDannyeDokumenta `json:"value"`
 	}
@@ -20559,7 +20559,7 @@ func (c *Client) DocumentOtchetPoFinMonitoringuDannyeDokumentas(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetPoFinMonitoringuDannyeDokumenta(key PrimaryDocumentOtchetPoFinMonitoringuDannyeDokumenta, entity DocumentOtchetPoFinMonitoringuDannyeDokumenta) (*DocumentOtchetPoFinMonitoringuDannyeDokumenta, error) {
 	return NewDocumentOtchetPoFinMonitoringuDannyeDokumenta(c.updateEntity(key, entity))
@@ -20610,7 +20610,7 @@ func (c *Client) CreateCatalogKliuchiAnalitikiUchetaNomenklatury(entity CatalogK
 func (c *Client) CatalogKliuchiAnalitikiUchetaNomenklatury(key PrimaryCatalogKliuchiAnalitikiUchetaNomenklatury, fields []string) (*CatalogKliuchiAnalitikiUchetaNomenklatury, error) {
 	return NewCatalogKliuchiAnalitikiUchetaNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKliuchiAnalitikiUchetaNomenklaturys(where Where) ([]CatalogKliuchiAnalitikiUchetaNomenklatury, error) {
+func (c *Client) CatalogKliuchiAnalitikiUchetaNomenklaturys(where Where) (*[]CatalogKliuchiAnalitikiUchetaNomenklatury, error) {
 	type ReturnObj struct {
 		Value []CatalogKliuchiAnalitikiUchetaNomenklatury `json:"value"`
 	}
@@ -20626,7 +20626,7 @@ func (c *Client) CatalogKliuchiAnalitikiUchetaNomenklaturys(where Where) ([]Cata
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKliuchiAnalitikiUchetaNomenklatury(key PrimaryCatalogKliuchiAnalitikiUchetaNomenklatury, entity CatalogKliuchiAnalitikiUchetaNomenklatury) (*CatalogKliuchiAnalitikiUchetaNomenklatury, error) {
 	return NewCatalogKliuchiAnalitikiUchetaNomenklatury(c.updateEntity(key, entity))
@@ -20688,7 +20688,7 @@ func (c *Client) CreateCatalogVersiiFailov(entity CatalogVersiiFailov) (*Catalog
 func (c *Client) CatalogVersiiFailov(key PrimaryCatalogVersiiFailov, fields []string) (*CatalogVersiiFailov, error) {
 	return NewCatalogVersiiFailov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVersiiFailovs(where Where) ([]CatalogVersiiFailov, error) {
+func (c *Client) CatalogVersiiFailovs(where Where) (*[]CatalogVersiiFailov, error) {
 	type ReturnObj struct {
 		Value []CatalogVersiiFailov `json:"value"`
 	}
@@ -20704,7 +20704,7 @@ func (c *Client) CatalogVersiiFailovs(where Where) ([]CatalogVersiiFailov, error
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVersiiFailov(key PrimaryCatalogVersiiFailov, entity CatalogVersiiFailov) (*CatalogVersiiFailov, error) {
 	return NewCatalogVersiiFailov(c.updateEntity(key, entity))
@@ -20750,7 +20750,7 @@ func (c *Client) CreateCatalogVersiiFailovElektronnyePodpisi(entity CatalogVersi
 func (c *Client) CatalogVersiiFailovElektronnyePodpisi(key PrimaryCatalogVersiiFailovElektronnyePodpisi, fields []string) (*CatalogVersiiFailovElektronnyePodpisi, error) {
 	return NewCatalogVersiiFailovElektronnyePodpisi(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVersiiFailovElektronnyePodpisis(where Where) ([]CatalogVersiiFailovElektronnyePodpisi, error) {
+func (c *Client) CatalogVersiiFailovElektronnyePodpisis(where Where) (*[]CatalogVersiiFailovElektronnyePodpisi, error) {
 	type ReturnObj struct {
 		Value []CatalogVersiiFailovElektronnyePodpisi `json:"value"`
 	}
@@ -20766,7 +20766,7 @@ func (c *Client) CatalogVersiiFailovElektronnyePodpisis(where Where) ([]CatalogV
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVersiiFailovElektronnyePodpisi(key PrimaryCatalogVersiiFailovElektronnyePodpisi, entity CatalogVersiiFailovElektronnyePodpisi) (*CatalogVersiiFailovElektronnyePodpisi, error) {
 	return NewCatalogVersiiFailovElektronnyePodpisi(c.updateEntity(key, entity))
@@ -20821,7 +20821,7 @@ func (c *Client) CreateDocumentUstanovkaTsenNomenklatury(entity DocumentUstanovk
 func (c *Client) DocumentUstanovkaTsenNomenklatury(key PrimaryDocumentUstanovkaTsenNomenklatury, fields []string) (*DocumentUstanovkaTsenNomenklatury, error) {
 	return NewDocumentUstanovkaTsenNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaTsenNomenklaturys(where Where) ([]DocumentUstanovkaTsenNomenklatury, error) {
+func (c *Client) DocumentUstanovkaTsenNomenklaturys(where Where) (*[]DocumentUstanovkaTsenNomenklatury, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaTsenNomenklatury `json:"value"`
 	}
@@ -20837,7 +20837,7 @@ func (c *Client) DocumentUstanovkaTsenNomenklaturys(where Where) ([]DocumentUsta
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaTsenNomenklatury(key PrimaryDocumentUstanovkaTsenNomenklatury, entity DocumentUstanovkaTsenNomenklatury) (*DocumentUstanovkaTsenNomenklatury, error) {
 	return NewDocumentUstanovkaTsenNomenklatury(c.updateEntity(key, entity))
@@ -20872,7 +20872,7 @@ func (c *Client) CreateDocumentUstanovkaTsenNomenklaturyTipyTsen(entity Document
 func (c *Client) DocumentUstanovkaTsenNomenklaturyTipyTsen(key PrimaryDocumentUstanovkaTsenNomenklaturyTipyTsen, fields []string) (*DocumentUstanovkaTsenNomenklaturyTipyTsen, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyTipyTsen(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaTsenNomenklaturyTipyTsens(where Where) ([]DocumentUstanovkaTsenNomenklaturyTipyTsen, error) {
+func (c *Client) DocumentUstanovkaTsenNomenklaturyTipyTsens(where Where) (*[]DocumentUstanovkaTsenNomenklaturyTipyTsen, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaTsenNomenklaturyTipyTsen `json:"value"`
 	}
@@ -20888,7 +20888,7 @@ func (c *Client) DocumentUstanovkaTsenNomenklaturyTipyTsens(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaTsenNomenklaturyTipyTsen(key PrimaryDocumentUstanovkaTsenNomenklaturyTipyTsen, entity DocumentUstanovkaTsenNomenklaturyTipyTsen) (*DocumentUstanovkaTsenNomenklaturyTipyTsen, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyTipyTsen(c.updateEntity(key, entity))
@@ -20932,7 +20932,7 @@ func (c *Client) CreateDocumentUstanovkaTsenNomenklaturyTovary(entity DocumentUs
 func (c *Client) DocumentUstanovkaTsenNomenklaturyTovary(key PrimaryDocumentUstanovkaTsenNomenklaturyTovary, fields []string) (*DocumentUstanovkaTsenNomenklaturyTovary, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaTsenNomenklaturyTovarys(where Where) ([]DocumentUstanovkaTsenNomenklaturyTovary, error) {
+func (c *Client) DocumentUstanovkaTsenNomenklaturyTovarys(where Where) (*[]DocumentUstanovkaTsenNomenklaturyTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaTsenNomenklaturyTovary `json:"value"`
 	}
@@ -20948,7 +20948,7 @@ func (c *Client) DocumentUstanovkaTsenNomenklaturyTovarys(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaTsenNomenklaturyTovary(key PrimaryDocumentUstanovkaTsenNomenklaturyTovary, entity DocumentUstanovkaTsenNomenklaturyTovary) (*DocumentUstanovkaTsenNomenklaturyTovary, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyTovary(c.updateEntity(key, entity))
@@ -21011,7 +21011,7 @@ func (c *Client) CreateDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv(entity D
 func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv(key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv, fields []string) (*DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv, error) {
 	return NewDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvs(where Where) ([]DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv, error) {
+func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvs(where Where) (*[]DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv `json:"value"`
 	}
@@ -21027,7 +21027,7 @@ func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvs(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv(key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv, entity DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv) (*DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv, error) {
 	return NewDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstv(c.updateEntity(key, entity))
@@ -21075,7 +21075,7 @@ func (c *Client) CreateDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifro
 func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha, fields []string) (*DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezhas(where Where) ([]DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezhas(where Where) (*[]DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha `json:"value"`
 	}
@@ -21091,7 +21091,7 @@ func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPla
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha, entity DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha) (*DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -21129,7 +21129,7 @@ func (c *Client) CreateDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizity
 func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta(key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta, fields []string) (*DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragentas(where Where) ([]DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta, error) {
+func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragentas(where Where) (*[]DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta `json:"value"`
 	}
@@ -21145,7 +21145,7 @@ func (c *Client) DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontra
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta(key PrimaryDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta, entity DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta) (*DocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnyiOrderSpisanieDenezhnykhSredstvRekvizityKontragenta(c.updateEntity(key, entity))
@@ -21190,7 +21190,7 @@ func (c *Client) CreateDocumentPreiskurantNaSkupku(entity DocumentPreiskurantNaS
 func (c *Client) DocumentPreiskurantNaSkupku(key PrimaryDocumentPreiskurantNaSkupku, fields []string) (*DocumentPreiskurantNaSkupku, error) {
 	return NewDocumentPreiskurantNaSkupku(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPreiskurantNaSkupkus(where Where) ([]DocumentPreiskurantNaSkupku, error) {
+func (c *Client) DocumentPreiskurantNaSkupkus(where Where) (*[]DocumentPreiskurantNaSkupku, error) {
 	type ReturnObj struct {
 		Value []DocumentPreiskurantNaSkupku `json:"value"`
 	}
@@ -21206,7 +21206,7 @@ func (c *Client) DocumentPreiskurantNaSkupkus(where Where) ([]DocumentPreiskuran
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPreiskurantNaSkupku(key PrimaryDocumentPreiskurantNaSkupku, entity DocumentPreiskurantNaSkupku) (*DocumentPreiskurantNaSkupku, error) {
 	return NewDocumentPreiskurantNaSkupku(c.updateEntity(key, entity))
@@ -21242,7 +21242,7 @@ func (c *Client) CreateDocumentPreiskurantNaSkupkuProby(entity DocumentPreiskura
 func (c *Client) DocumentPreiskurantNaSkupkuProby(key PrimaryDocumentPreiskurantNaSkupkuProby, fields []string) (*DocumentPreiskurantNaSkupkuProby, error) {
 	return NewDocumentPreiskurantNaSkupkuProby(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPreiskurantNaSkupkuProbys(where Where) ([]DocumentPreiskurantNaSkupkuProby, error) {
+func (c *Client) DocumentPreiskurantNaSkupkuProbys(where Where) (*[]DocumentPreiskurantNaSkupkuProby, error) {
 	type ReturnObj struct {
 		Value []DocumentPreiskurantNaSkupkuProby `json:"value"`
 	}
@@ -21258,7 +21258,7 @@ func (c *Client) DocumentPreiskurantNaSkupkuProbys(where Where) ([]DocumentPreis
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPreiskurantNaSkupkuProby(key PrimaryDocumentPreiskurantNaSkupkuProby, entity DocumentPreiskurantNaSkupkuProby) (*DocumentPreiskurantNaSkupkuProby, error) {
 	return NewDocumentPreiskurantNaSkupkuProby(c.updateEntity(key, entity))
@@ -21316,7 +21316,7 @@ func (c *Client) CreateDocumentPeredachaMaterialovVProizvodstvo(entity DocumentP
 func (c *Client) DocumentPeredachaMaterialovVProizvodstvo(key PrimaryDocumentPeredachaMaterialovVProizvodstvo, fields []string) (*DocumentPeredachaMaterialovVProizvodstvo, error) {
 	return NewDocumentPeredachaMaterialovVProizvodstvo(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeredachaMaterialovVProizvodstvos(where Where) ([]DocumentPeredachaMaterialovVProizvodstvo, error) {
+func (c *Client) DocumentPeredachaMaterialovVProizvodstvos(where Where) (*[]DocumentPeredachaMaterialovVProizvodstvo, error) {
 	type ReturnObj struct {
 		Value []DocumentPeredachaMaterialovVProizvodstvo `json:"value"`
 	}
@@ -21332,7 +21332,7 @@ func (c *Client) DocumentPeredachaMaterialovVProizvodstvos(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeredachaMaterialovVProizvodstvo(key PrimaryDocumentPeredachaMaterialovVProizvodstvo, entity DocumentPeredachaMaterialovVProizvodstvo) (*DocumentPeredachaMaterialovVProizvodstvo, error) {
 	return NewDocumentPeredachaMaterialovVProizvodstvo(c.updateEntity(key, entity))
@@ -21373,7 +21373,7 @@ func (c *Client) CreateDocumentPeredachaMaterialovVProizvodstvoTovary(entity Doc
 func (c *Client) DocumentPeredachaMaterialovVProizvodstvoTovary(key PrimaryDocumentPeredachaMaterialovVProizvodstvoTovary, fields []string) (*DocumentPeredachaMaterialovVProizvodstvoTovary, error) {
 	return NewDocumentPeredachaMaterialovVProizvodstvoTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeredachaMaterialovVProizvodstvoTovarys(where Where) ([]DocumentPeredachaMaterialovVProizvodstvoTovary, error) {
+func (c *Client) DocumentPeredachaMaterialovVProizvodstvoTovarys(where Where) (*[]DocumentPeredachaMaterialovVProizvodstvoTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPeredachaMaterialovVProizvodstvoTovary `json:"value"`
 	}
@@ -21389,7 +21389,7 @@ func (c *Client) DocumentPeredachaMaterialovVProizvodstvoTovarys(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeredachaMaterialovVProizvodstvoTovary(key PrimaryDocumentPeredachaMaterialovVProizvodstvoTovary, entity DocumentPeredachaMaterialovVProizvodstvoTovary) (*DocumentPeredachaMaterialovVProizvodstvoTovary, error) {
 	return NewDocumentPeredachaMaterialovVProizvodstvoTovary(c.updateEntity(key, entity))
@@ -21443,7 +21443,7 @@ func (c *Client) CreateDocumentVnutrenniiZakaz(entity DocumentVnutrenniiZakaz) (
 func (c *Client) DocumentVnutrenniiZakaz(key PrimaryDocumentVnutrenniiZakaz, fields []string) (*DocumentVnutrenniiZakaz, error) {
 	return NewDocumentVnutrenniiZakaz(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVnutrenniiZakazs(where Where) ([]DocumentVnutrenniiZakaz, error) {
+func (c *Client) DocumentVnutrenniiZakazs(where Where) (*[]DocumentVnutrenniiZakaz, error) {
 	type ReturnObj struct {
 		Value []DocumentVnutrenniiZakaz `json:"value"`
 	}
@@ -21459,7 +21459,7 @@ func (c *Client) DocumentVnutrenniiZakazs(where Where) ([]DocumentVnutrenniiZaka
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVnutrenniiZakaz(key PrimaryDocumentVnutrenniiZakaz, entity DocumentVnutrenniiZakaz) (*DocumentVnutrenniiZakaz, error) {
 	return NewDocumentVnutrenniiZakaz(c.updateEntity(key, entity))
@@ -21501,7 +21501,7 @@ func (c *Client) CreateDocumentVnutrenniiZakazTovary(entity DocumentVnutrenniiZa
 func (c *Client) DocumentVnutrenniiZakazTovary(key PrimaryDocumentVnutrenniiZakazTovary, fields []string) (*DocumentVnutrenniiZakazTovary, error) {
 	return NewDocumentVnutrenniiZakazTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVnutrenniiZakazTovarys(where Where) ([]DocumentVnutrenniiZakazTovary, error) {
+func (c *Client) DocumentVnutrenniiZakazTovarys(where Where) (*[]DocumentVnutrenniiZakazTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVnutrenniiZakazTovary `json:"value"`
 	}
@@ -21517,7 +21517,7 @@ func (c *Client) DocumentVnutrenniiZakazTovarys(where Where) ([]DocumentVnutrenn
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVnutrenniiZakazTovary(key PrimaryDocumentVnutrenniiZakazTovary, entity DocumentVnutrenniiZakazTovary) (*DocumentVnutrenniiZakazTovary, error) {
 	return NewDocumentVnutrenniiZakazTovary(c.updateEntity(key, entity))
@@ -21563,7 +21563,7 @@ func (c *Client) CreateCatalogKhranilishcheDopolnitelnoiInformatsii(entity Catal
 func (c *Client) CatalogKhranilishcheDopolnitelnoiInformatsii(key PrimaryCatalogKhranilishcheDopolnitelnoiInformatsii, fields []string) (*CatalogKhranilishcheDopolnitelnoiInformatsii, error) {
 	return NewCatalogKhranilishcheDopolnitelnoiInformatsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKhranilishcheDopolnitelnoiInformatsiis(where Where) ([]CatalogKhranilishcheDopolnitelnoiInformatsii, error) {
+func (c *Client) CatalogKhranilishcheDopolnitelnoiInformatsiis(where Where) (*[]CatalogKhranilishcheDopolnitelnoiInformatsii, error) {
 	type ReturnObj struct {
 		Value []CatalogKhranilishcheDopolnitelnoiInformatsii `json:"value"`
 	}
@@ -21579,7 +21579,7 @@ func (c *Client) CatalogKhranilishcheDopolnitelnoiInformatsiis(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKhranilishcheDopolnitelnoiInformatsii(key PrimaryCatalogKhranilishcheDopolnitelnoiInformatsii, entity CatalogKhranilishcheDopolnitelnoiInformatsii) (*CatalogKhranilishcheDopolnitelnoiInformatsii, error) {
 	return NewCatalogKhranilishcheDopolnitelnoiInformatsii(c.updateEntity(key, entity))
@@ -21641,7 +21641,7 @@ func (c *Client) CreateCatalogDopolnitelnyeVneshnieObrabotki(entity CatalogDopol
 func (c *Client) CatalogDopolnitelnyeVneshnieObrabotki(key PrimaryCatalogDopolnitelnyeVneshnieObrabotki, fields []string) (*CatalogDopolnitelnyeVneshnieObrabotki, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkis(where Where) ([]CatalogDopolnitelnyeVneshnieObrabotki, error) {
+func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkis(where Where) (*[]CatalogDopolnitelnyeVneshnieObrabotki, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyeVneshnieObrabotki `json:"value"`
 	}
@@ -21657,7 +21657,7 @@ func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkis(where Where) ([]CatalogD
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyeVneshnieObrabotki(key PrimaryCatalogDopolnitelnyeVneshnieObrabotki, entity CatalogDopolnitelnyeVneshnieObrabotki) (*CatalogDopolnitelnyeVneshnieObrabotki, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotki(c.updateEntity(key, entity))
@@ -21704,7 +21704,7 @@ func (c *Client) CreateCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost(entit
 func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost, fields []string) (*CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnosts(where Where) ([]CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost, error) {
+func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnosts(where Where) (*[]CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost `json:"value"`
 	}
@@ -21720,7 +21720,7 @@ func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnosts(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost, entity CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost) (*CatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiPrinadlezhnost(c.updateEntity(key, entity))
@@ -21762,7 +21762,7 @@ func (c *Client) CreateCatalogDopolnitelnyeVneshnieObrabotkiKomandy(entity Catal
 func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiKomandy(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiKomandy, fields []string) (*CatalogDopolnitelnyeVneshnieObrabotkiKomandy, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiKomandy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiKomandys(where Where) ([]CatalogDopolnitelnyeVneshnieObrabotkiKomandy, error) {
+func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiKomandys(where Where) (*[]CatalogDopolnitelnyeVneshnieObrabotkiKomandy, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyeVneshnieObrabotkiKomandy `json:"value"`
 	}
@@ -21778,7 +21778,7 @@ func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiKomandys(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyeVneshnieObrabotkiKomandy(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiKomandy, entity CatalogDopolnitelnyeVneshnieObrabotkiKomandy) (*CatalogDopolnitelnyeVneshnieObrabotkiKomandy, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiKomandy(c.updateEntity(key, entity))
@@ -21814,7 +21814,7 @@ func (c *Client) CreateCatalogDopolnitelnyeVneshnieObrabotkiRazdely(entity Catal
 func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazdely(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazdely, fields []string) (*CatalogDopolnitelnyeVneshnieObrabotkiRazdely, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiRazdely(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazdelys(where Where) ([]CatalogDopolnitelnyeVneshnieObrabotkiRazdely, error) {
+func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazdelys(where Where) (*[]CatalogDopolnitelnyeVneshnieObrabotkiRazdely, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyeVneshnieObrabotkiRazdely `json:"value"`
 	}
@@ -21830,7 +21830,7 @@ func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazdelys(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyeVneshnieObrabotkiRazdely(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazdely, entity CatalogDopolnitelnyeVneshnieObrabotkiRazdely) (*CatalogDopolnitelnyeVneshnieObrabotkiRazdely, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiRazdely(c.updateEntity(key, entity))
@@ -21866,7 +21866,7 @@ func (c *Client) CreateCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie(entity C
 func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie, fields []string) (*CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiNaznachenies(where Where) ([]CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie, error) {
+func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiNaznachenies(where Where) (*[]CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie `json:"value"`
 	}
@@ -21882,7 +21882,7 @@ func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiNaznachenies(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie, entity CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie) (*CatalogDopolnitelnyeVneshnieObrabotkiNaznachenie, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiNaznachenie(c.updateEntity(key, entity))
@@ -21920,7 +21920,7 @@ func (c *Client) CreateCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia(entity 
 func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia, fields []string) (*CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazresheniias(where Where) ([]CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia, error) {
+func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazresheniias(where Where) (*[]CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia `json:"value"`
 	}
@@ -21936,7 +21936,7 @@ func (c *Client) CatalogDopolnitelnyeVneshnieObrabotkiRazresheniias(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia(key PrimaryCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia, entity CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia) (*CatalogDopolnitelnyeVneshnieObrabotkiRazresheniia, error) {
 	return NewCatalogDopolnitelnyeVneshnieObrabotkiRazresheniia(c.updateEntity(key, entity))
@@ -21975,7 +21975,7 @@ func (c *Client) CreateCatalogGruppyPolzovatelei(entity CatalogGruppyPolzovatele
 func (c *Client) CatalogGruppyPolzovatelei(key PrimaryCatalogGruppyPolzovatelei, fields []string) (*CatalogGruppyPolzovatelei, error) {
 	return NewCatalogGruppyPolzovatelei(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyPolzovateleis(where Where) ([]CatalogGruppyPolzovatelei, error) {
+func (c *Client) CatalogGruppyPolzovateleis(where Where) (*[]CatalogGruppyPolzovatelei, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyPolzovatelei `json:"value"`
 	}
@@ -21991,7 +21991,7 @@ func (c *Client) CatalogGruppyPolzovateleis(where Where) ([]CatalogGruppyPolzova
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyPolzovatelei(key PrimaryCatalogGruppyPolzovatelei, entity CatalogGruppyPolzovatelei) (*CatalogGruppyPolzovatelei, error) {
 	return NewCatalogGruppyPolzovatelei(c.updateEntity(key, entity))
@@ -22026,7 +22026,7 @@ func (c *Client) CreateCatalogGruppyPolzovateleiPolzovateliGruppy(entity Catalog
 func (c *Client) CatalogGruppyPolzovateleiPolzovateliGruppy(key PrimaryCatalogGruppyPolzovateleiPolzovateliGruppy, fields []string) (*CatalogGruppyPolzovateleiPolzovateliGruppy, error) {
 	return NewCatalogGruppyPolzovateleiPolzovateliGruppy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyPolzovateleiPolzovateliGruppys(where Where) ([]CatalogGruppyPolzovateleiPolzovateliGruppy, error) {
+func (c *Client) CatalogGruppyPolzovateleiPolzovateliGruppys(where Where) (*[]CatalogGruppyPolzovateleiPolzovateliGruppy, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyPolzovateleiPolzovateliGruppy `json:"value"`
 	}
@@ -22042,7 +22042,7 @@ func (c *Client) CatalogGruppyPolzovateleiPolzovateliGruppys(where Where) ([]Cat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyPolzovateleiPolzovateliGruppy(key PrimaryCatalogGruppyPolzovateleiPolzovateliGruppy, entity CatalogGruppyPolzovateleiPolzovateliGruppy) (*CatalogGruppyPolzovateleiPolzovateliGruppy, error) {
 	return NewCatalogGruppyPolzovateleiPolzovateliGruppy(c.updateEntity(key, entity))
@@ -22090,7 +22090,7 @@ func (c *Client) CreateDocumentJournalZakazyKlientov(entity DocumentJournalZakaz
 func (c *Client) DocumentJournalZakazyKlientov(key PrimaryDocumentJournalZakazyKlientov, fields []string) (*DocumentJournalZakazyKlientov, error) {
 	return NewDocumentJournalZakazyKlientov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalZakazyKlientovs(where Where) ([]DocumentJournalZakazyKlientov, error) {
+func (c *Client) DocumentJournalZakazyKlientovs(where Where) (*[]DocumentJournalZakazyKlientov, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalZakazyKlientov `json:"value"`
 	}
@@ -22106,7 +22106,7 @@ func (c *Client) DocumentJournalZakazyKlientovs(where Where) ([]DocumentJournalZ
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalZakazyKlientov(key PrimaryDocumentJournalZakazyKlientov, entity DocumentJournalZakazyKlientov) (*DocumentJournalZakazyKlientov, error) {
 	return NewDocumentJournalZakazyKlientov(c.updateEntity(key, entity))
@@ -22174,7 +22174,7 @@ func (c *Client) CreateDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoi
 func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki(key PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki, fields []string) (*DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki, error) {
 	return NewDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkis(where Where) ([]DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki, error) {
+func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkis(where Where) (*[]DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki `json:"value"`
 	}
@@ -22190,7 +22190,7 @@ func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki(key PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki, entity DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki) (*DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki, error) {
 	return NewDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochki(c.updateEntity(key, entity))
@@ -22239,7 +22239,7 @@ func (c *Client) CreateDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoi
 func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary(key PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary, fields []string) (*DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary, error) {
 	return NewDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovarys(where Where) ([]DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary, error) {
+func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovarys(where Where) (*[]DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary `json:"value"`
 	}
@@ -22255,7 +22255,7 @@ func (c *Client) DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary(key PrimaryDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary, entity DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary) (*DocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary, error) {
 	return NewDocumentVozvratTovarovPostavshchikuIzNeavtomatizirovannoiTorgovoiTochkiTovary(c.updateEntity(key, entity))
@@ -22309,7 +22309,7 @@ func (c *Client) CreateDocumentZaiavkaNaPeremeshchenieTovarov(entity DocumentZai
 func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarov(key PrimaryDocumentZaiavkaNaPeremeshchenieTovarov, fields []string) (*DocumentZaiavkaNaPeremeshchenieTovarov, error) {
 	return NewDocumentZaiavkaNaPeremeshchenieTovarov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovs(where Where) ([]DocumentZaiavkaNaPeremeshchenieTovarov, error) {
+func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovs(where Where) (*[]DocumentZaiavkaNaPeremeshchenieTovarov, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaPeremeshchenieTovarov `json:"value"`
 	}
@@ -22325,7 +22325,7 @@ func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovs(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaPeremeshchenieTovarov(key PrimaryDocumentZaiavkaNaPeremeshchenieTovarov, entity DocumentZaiavkaNaPeremeshchenieTovarov) (*DocumentZaiavkaNaPeremeshchenieTovarov, error) {
 	return NewDocumentZaiavkaNaPeremeshchenieTovarov(c.updateEntity(key, entity))
@@ -22374,7 +22374,7 @@ func (c *Client) CreateDocumentZaiavkaNaPeremeshchenieTovarovTovary(entity Docum
 func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovTovary(key PrimaryDocumentZaiavkaNaPeremeshchenieTovarovTovary, fields []string) (*DocumentZaiavkaNaPeremeshchenieTovarovTovary, error) {
 	return NewDocumentZaiavkaNaPeremeshchenieTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovTovarys(where Where) ([]DocumentZaiavkaNaPeremeshchenieTovarovTovary, error) {
+func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovTovarys(where Where) (*[]DocumentZaiavkaNaPeremeshchenieTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentZaiavkaNaPeremeshchenieTovarovTovary `json:"value"`
 	}
@@ -22390,7 +22390,7 @@ func (c *Client) DocumentZaiavkaNaPeremeshchenieTovarovTovarys(where Where) ([]D
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZaiavkaNaPeremeshchenieTovarovTovary(key PrimaryDocumentZaiavkaNaPeremeshchenieTovarovTovary, entity DocumentZaiavkaNaPeremeshchenieTovarovTovary) (*DocumentZaiavkaNaPeremeshchenieTovarovTovary, error) {
 	return NewDocumentZaiavkaNaPeremeshchenieTovarovTovary(c.updateEntity(key, entity))
@@ -22427,7 +22427,7 @@ func (c *Client) CreateCatalogUsloviiaProdazh(entity CatalogUsloviiaProdazh) (*C
 func (c *Client) CatalogUsloviiaProdazh(key PrimaryCatalogUsloviiaProdazh, fields []string) (*CatalogUsloviiaProdazh, error) {
 	return NewCatalogUsloviiaProdazh(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaProdazhs(where Where) ([]CatalogUsloviiaProdazh, error) {
+func (c *Client) CatalogUsloviiaProdazhs(where Where) (*[]CatalogUsloviiaProdazh, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaProdazh `json:"value"`
 	}
@@ -22443,7 +22443,7 @@ func (c *Client) CatalogUsloviiaProdazhs(where Where) ([]CatalogUsloviiaProdazh,
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaProdazh(key PrimaryCatalogUsloviiaProdazh, entity CatalogUsloviiaProdazh) (*CatalogUsloviiaProdazh, error) {
 	return NewCatalogUsloviiaProdazh(c.updateEntity(key, entity))
@@ -22487,7 +22487,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoFinMonitoringu(entity Doc
 func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringu(key PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringu, fields []string) (*DocumentVvodNachalnykhOstatkovPoFinMonitoringu, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoFinMonitoringu(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringus(where Where) ([]DocumentVvodNachalnykhOstatkovPoFinMonitoringu, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringus(where Where) (*[]DocumentVvodNachalnykhOstatkovPoFinMonitoringu, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoFinMonitoringu `json:"value"`
 	}
@@ -22503,7 +22503,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringus(where Where) ([
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoFinMonitoringu(key PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringu, entity DocumentVvodNachalnykhOstatkovPoFinMonitoringu) (*DocumentVvodNachalnykhOstatkovPoFinMonitoringu, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoFinMonitoringu(c.updateEntity(key, entity))
@@ -22546,7 +22546,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora(en
 func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora(key PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora, fields []string) (*DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovoras(where Where) ([]DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovoras(where Where) (*[]DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora `json:"value"`
 	}
@@ -22562,7 +22562,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovoras(where W
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora(key PrimaryDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora, entity DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora) (*DocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora, error) {
 	return NewDocumentVvodNachalnykhOstatkovPoFinMonitoringuDogovora(c.updateEntity(key, entity))
@@ -22621,7 +22621,7 @@ func (c *Client) CreateCatalogOrganizatsii(entity CatalogOrganizatsii) (*Catalog
 func (c *Client) CatalogOrganizatsii(key PrimaryCatalogOrganizatsii, fields []string) (*CatalogOrganizatsii, error) {
 	return NewCatalogOrganizatsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogOrganizatsiis(where Where) ([]CatalogOrganizatsii, error) {
+func (c *Client) CatalogOrganizatsiis(where Where) (*[]CatalogOrganizatsii, error) {
 	type ReturnObj struct {
 		Value []CatalogOrganizatsii `json:"value"`
 	}
@@ -22637,7 +22637,7 @@ func (c *Client) CatalogOrganizatsiis(where Where) ([]CatalogOrganizatsii, error
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogOrganizatsii(key PrimaryCatalogOrganizatsii, entity CatalogOrganizatsii) (*CatalogOrganizatsii, error) {
 	return NewCatalogOrganizatsii(c.updateEntity(key, entity))
@@ -22676,7 +22676,7 @@ func (c *Client) CreateCatalogUsloviiaOplaty(entity CatalogUsloviiaOplaty) (*Cat
 func (c *Client) CatalogUsloviiaOplaty(key PrimaryCatalogUsloviiaOplaty, fields []string) (*CatalogUsloviiaOplaty, error) {
 	return NewCatalogUsloviiaOplaty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaOplatys(where Where) ([]CatalogUsloviiaOplaty, error) {
+func (c *Client) CatalogUsloviiaOplatys(where Where) (*[]CatalogUsloviiaOplaty, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaOplaty `json:"value"`
 	}
@@ -22692,7 +22692,7 @@ func (c *Client) CatalogUsloviiaOplatys(where Where) ([]CatalogUsloviiaOplaty, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaOplaty(key PrimaryCatalogUsloviiaOplaty, entity CatalogUsloviiaOplaty) (*CatalogUsloviiaOplaty, error) {
 	return NewCatalogUsloviiaOplaty(c.updateEntity(key, entity))
@@ -22728,7 +22728,7 @@ func (c *Client) CreateCatalogUsloviiaOplatyTablitsaVyplat(entity CatalogUslovii
 func (c *Client) CatalogUsloviiaOplatyTablitsaVyplat(key PrimaryCatalogUsloviiaOplatyTablitsaVyplat, fields []string) (*CatalogUsloviiaOplatyTablitsaVyplat, error) {
 	return NewCatalogUsloviiaOplatyTablitsaVyplat(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaOplatyTablitsaVyplats(where Where) ([]CatalogUsloviiaOplatyTablitsaVyplat, error) {
+func (c *Client) CatalogUsloviiaOplatyTablitsaVyplats(where Where) (*[]CatalogUsloviiaOplatyTablitsaVyplat, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaOplatyTablitsaVyplat `json:"value"`
 	}
@@ -22744,7 +22744,7 @@ func (c *Client) CatalogUsloviiaOplatyTablitsaVyplats(where Where) ([]CatalogUsl
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaOplatyTablitsaVyplat(key PrimaryCatalogUsloviiaOplatyTablitsaVyplat, entity CatalogUsloviiaOplatyTablitsaVyplat) (*CatalogUsloviiaOplatyTablitsaVyplat, error) {
 	return NewCatalogUsloviiaOplatyTablitsaVyplat(c.updateEntity(key, entity))
@@ -22782,7 +22782,7 @@ func (c *Client) CreateCatalogKategoriiObieektov(entity CatalogKategoriiObieekto
 func (c *Client) CatalogKategoriiObieektov(key PrimaryCatalogKategoriiObieektov, fields []string) (*CatalogKategoriiObieektov, error) {
 	return NewCatalogKategoriiObieektov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKategoriiObieektovs(where Where) ([]CatalogKategoriiObieektov, error) {
+func (c *Client) CatalogKategoriiObieektovs(where Where) (*[]CatalogKategoriiObieektov, error) {
 	type ReturnObj struct {
 		Value []CatalogKategoriiObieektov `json:"value"`
 	}
@@ -22798,7 +22798,7 @@ func (c *Client) CatalogKategoriiObieektovs(where Where) ([]CatalogKategoriiObie
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKategoriiObieektov(key PrimaryCatalogKategoriiObieektov, entity CatalogKategoriiObieektov) (*CatalogKategoriiObieektov, error) {
 	return NewCatalogKategoriiObieektov(c.updateEntity(key, entity))
@@ -22837,7 +22837,7 @@ func (c *Client) CreateCatalogfmZnacheniiaDliaZapolneniia(entity CatalogfmZnache
 func (c *Client) CatalogfmZnacheniiaDliaZapolneniia(key PrimaryCatalogfmZnacheniiaDliaZapolneniia, fields []string) (*CatalogfmZnacheniiaDliaZapolneniia, error) {
 	return NewCatalogfmZnacheniiaDliaZapolneniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmZnacheniiaDliaZapolneniias(where Where) ([]CatalogfmZnacheniiaDliaZapolneniia, error) {
+func (c *Client) CatalogfmZnacheniiaDliaZapolneniias(where Where) (*[]CatalogfmZnacheniiaDliaZapolneniia, error) {
 	type ReturnObj struct {
 		Value []CatalogfmZnacheniiaDliaZapolneniia `json:"value"`
 	}
@@ -22853,7 +22853,7 @@ func (c *Client) CatalogfmZnacheniiaDliaZapolneniias(where Where) ([]CatalogfmZn
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmZnacheniiaDliaZapolneniia(key PrimaryCatalogfmZnacheniiaDliaZapolneniia, entity CatalogfmZnacheniiaDliaZapolneniia) (*CatalogfmZnacheniiaDliaZapolneniia, error) {
 	return NewCatalogfmZnacheniiaDliaZapolneniia(c.updateEntity(key, entity))
@@ -22907,7 +22907,7 @@ func (c *Client) CreateDocumentUdalitNariadZakaz(entity DocumentUdalitNariadZaka
 func (c *Client) DocumentUdalitNariadZakaz(key PrimaryDocumentUdalitNariadZakaz, fields []string) (*DocumentUdalitNariadZakaz, error) {
 	return NewDocumentUdalitNariadZakaz(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUdalitNariadZakazs(where Where) ([]DocumentUdalitNariadZakaz, error) {
+func (c *Client) DocumentUdalitNariadZakazs(where Where) (*[]DocumentUdalitNariadZakaz, error) {
 	type ReturnObj struct {
 		Value []DocumentUdalitNariadZakaz `json:"value"`
 	}
@@ -22923,7 +22923,7 @@ func (c *Client) DocumentUdalitNariadZakazs(where Where) ([]DocumentUdalitNariad
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUdalitNariadZakaz(key PrimaryDocumentUdalitNariadZakaz, entity DocumentUdalitNariadZakaz) (*DocumentUdalitNariadZakaz, error) {
 	return NewDocumentUdalitNariadZakaz(c.updateEntity(key, entity))
@@ -22968,7 +22968,7 @@ func (c *Client) CreateDocumentUdalitNariadZakazIzdeliia(entity DocumentUdalitNa
 func (c *Client) DocumentUdalitNariadZakazIzdeliia(key PrimaryDocumentUdalitNariadZakazIzdeliia, fields []string) (*DocumentUdalitNariadZakazIzdeliia, error) {
 	return NewDocumentUdalitNariadZakazIzdeliia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUdalitNariadZakazIzdeliias(where Where) ([]DocumentUdalitNariadZakazIzdeliia, error) {
+func (c *Client) DocumentUdalitNariadZakazIzdeliias(where Where) (*[]DocumentUdalitNariadZakazIzdeliia, error) {
 	type ReturnObj struct {
 		Value []DocumentUdalitNariadZakazIzdeliia `json:"value"`
 	}
@@ -22984,7 +22984,7 @@ func (c *Client) DocumentUdalitNariadZakazIzdeliias(where Where) ([]DocumentUdal
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUdalitNariadZakazIzdeliia(key PrimaryDocumentUdalitNariadZakazIzdeliia, entity DocumentUdalitNariadZakazIzdeliia) (*DocumentUdalitNariadZakazIzdeliia, error) {
 	return NewDocumentUdalitNariadZakazIzdeliia(c.updateEntity(key, entity))
@@ -23025,7 +23025,7 @@ func (c *Client) CreateDocumentUdalitNariadZakazUslugi(entity DocumentUdalitNari
 func (c *Client) DocumentUdalitNariadZakazUslugi(key PrimaryDocumentUdalitNariadZakazUslugi, fields []string) (*DocumentUdalitNariadZakazUslugi, error) {
 	return NewDocumentUdalitNariadZakazUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUdalitNariadZakazUslugis(where Where) ([]DocumentUdalitNariadZakazUslugi, error) {
+func (c *Client) DocumentUdalitNariadZakazUslugis(where Where) (*[]DocumentUdalitNariadZakazUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentUdalitNariadZakazUslugi `json:"value"`
 	}
@@ -23041,7 +23041,7 @@ func (c *Client) DocumentUdalitNariadZakazUslugis(where Where) ([]DocumentUdalit
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUdalitNariadZakazUslugi(key PrimaryDocumentUdalitNariadZakazUslugi, entity DocumentUdalitNariadZakazUslugi) (*DocumentUdalitNariadZakazUslugi, error) {
 	return NewDocumentUdalitNariadZakazUslugi(c.updateEntity(key, entity))
@@ -23088,7 +23088,7 @@ func (c *Client) CreateDocumentUdalitNariadZakazSpetsifikatsiia(entity DocumentU
 func (c *Client) DocumentUdalitNariadZakazSpetsifikatsiia(key PrimaryDocumentUdalitNariadZakazSpetsifikatsiia, fields []string) (*DocumentUdalitNariadZakazSpetsifikatsiia, error) {
 	return NewDocumentUdalitNariadZakazSpetsifikatsiia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUdalitNariadZakazSpetsifikatsiias(where Where) ([]DocumentUdalitNariadZakazSpetsifikatsiia, error) {
+func (c *Client) DocumentUdalitNariadZakazSpetsifikatsiias(where Where) (*[]DocumentUdalitNariadZakazSpetsifikatsiia, error) {
 	type ReturnObj struct {
 		Value []DocumentUdalitNariadZakazSpetsifikatsiia `json:"value"`
 	}
@@ -23104,7 +23104,7 @@ func (c *Client) DocumentUdalitNariadZakazSpetsifikatsiias(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUdalitNariadZakazSpetsifikatsiia(key PrimaryDocumentUdalitNariadZakazSpetsifikatsiia, entity DocumentUdalitNariadZakazSpetsifikatsiia) (*DocumentUdalitNariadZakazSpetsifikatsiia, error) {
 	return NewDocumentUdalitNariadZakazSpetsifikatsiia(c.updateEntity(key, entity))
@@ -23141,7 +23141,7 @@ func (c *Client) CreateDocumentUdalitNariadZakazMetally(entity DocumentUdalitNar
 func (c *Client) DocumentUdalitNariadZakazMetally(key PrimaryDocumentUdalitNariadZakazMetally, fields []string) (*DocumentUdalitNariadZakazMetally, error) {
 	return NewDocumentUdalitNariadZakazMetally(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUdalitNariadZakazMetallys(where Where) ([]DocumentUdalitNariadZakazMetally, error) {
+func (c *Client) DocumentUdalitNariadZakazMetallys(where Where) (*[]DocumentUdalitNariadZakazMetally, error) {
 	type ReturnObj struct {
 		Value []DocumentUdalitNariadZakazMetally `json:"value"`
 	}
@@ -23157,7 +23157,7 @@ func (c *Client) DocumentUdalitNariadZakazMetallys(where Where) ([]DocumentUdali
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUdalitNariadZakazMetally(key PrimaryDocumentUdalitNariadZakazMetally, entity DocumentUdalitNariadZakazMetally) (*DocumentUdalitNariadZakazMetally, error) {
 	return NewDocumentUdalitNariadZakazMetally(c.updateEntity(key, entity))
@@ -23203,7 +23203,7 @@ func (c *Client) CreateDocumentUdalitNariadZakazVstavki(entity DocumentUdalitNar
 func (c *Client) DocumentUdalitNariadZakazVstavki(key PrimaryDocumentUdalitNariadZakazVstavki, fields []string) (*DocumentUdalitNariadZakazVstavki, error) {
 	return NewDocumentUdalitNariadZakazVstavki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUdalitNariadZakazVstavkis(where Where) ([]DocumentUdalitNariadZakazVstavki, error) {
+func (c *Client) DocumentUdalitNariadZakazVstavkis(where Where) (*[]DocumentUdalitNariadZakazVstavki, error) {
 	type ReturnObj struct {
 		Value []DocumentUdalitNariadZakazVstavki `json:"value"`
 	}
@@ -23219,7 +23219,7 @@ func (c *Client) DocumentUdalitNariadZakazVstavkis(where Where) ([]DocumentUdali
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUdalitNariadZakazVstavki(key PrimaryDocumentUdalitNariadZakazVstavki, entity DocumentUdalitNariadZakazVstavki) (*DocumentUdalitNariadZakazVstavki, error) {
 	return NewDocumentUdalitNariadZakazVstavki(c.updateEntity(key, entity))
@@ -23262,7 +23262,7 @@ func (c *Client) CreateCatalogBanki(entity CatalogBanki) (*CatalogBanki, error) 
 func (c *Client) CatalogBanki(key PrimaryCatalogBanki, fields []string) (*CatalogBanki, error) {
 	return NewCatalogBanki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogBankis(where Where) ([]CatalogBanki, error) {
+func (c *Client) CatalogBankis(where Where) (*[]CatalogBanki, error) {
 	type ReturnObj struct {
 		Value []CatalogBanki `json:"value"`
 	}
@@ -23278,7 +23278,7 @@ func (c *Client) CatalogBankis(where Where) ([]CatalogBanki, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogBanki(key PrimaryCatalogBanki, entity CatalogBanki) (*CatalogBanki, error) {
 	return NewCatalogBanki(c.updateEntity(key, entity))
@@ -23315,7 +23315,7 @@ func (c *Client) CreateCatalogRoliKontaktnykhLits(entity CatalogRoliKontaktnykhL
 func (c *Client) CatalogRoliKontaktnykhLits(key PrimaryCatalogRoliKontaktnykhLits, fields []string) (*CatalogRoliKontaktnykhLits, error) {
 	return NewCatalogRoliKontaktnykhLits(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRoliKontaktnykhLitss(where Where) ([]CatalogRoliKontaktnykhLits, error) {
+func (c *Client) CatalogRoliKontaktnykhLitss(where Where) (*[]CatalogRoliKontaktnykhLits, error) {
 	type ReturnObj struct {
 		Value []CatalogRoliKontaktnykhLits `json:"value"`
 	}
@@ -23331,7 +23331,7 @@ func (c *Client) CatalogRoliKontaktnykhLitss(where Where) ([]CatalogRoliKontaktn
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRoliKontaktnykhLits(key PrimaryCatalogRoliKontaktnykhLits, entity CatalogRoliKontaktnykhLits) (*CatalogRoliKontaktnykhLits, error) {
 	return NewCatalogRoliKontaktnykhLits(c.updateEntity(key, entity))
@@ -23373,7 +23373,7 @@ func (c *Client) CreateDocumentRestrukturizatsiiaDolga(entity DocumentRestruktur
 func (c *Client) DocumentRestrukturizatsiiaDolga(key PrimaryDocumentRestrukturizatsiiaDolga, fields []string) (*DocumentRestrukturizatsiiaDolga, error) {
 	return NewDocumentRestrukturizatsiiaDolga(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRestrukturizatsiiaDolgas(where Where) ([]DocumentRestrukturizatsiiaDolga, error) {
+func (c *Client) DocumentRestrukturizatsiiaDolgas(where Where) (*[]DocumentRestrukturizatsiiaDolga, error) {
 	type ReturnObj struct {
 		Value []DocumentRestrukturizatsiiaDolga `json:"value"`
 	}
@@ -23389,7 +23389,7 @@ func (c *Client) DocumentRestrukturizatsiiaDolgas(where Where) ([]DocumentRestru
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRestrukturizatsiiaDolga(key PrimaryDocumentRestrukturizatsiiaDolga, entity DocumentRestrukturizatsiiaDolga) (*DocumentRestrukturizatsiiaDolga, error) {
 	return NewDocumentRestrukturizatsiiaDolga(c.updateEntity(key, entity))
@@ -23429,7 +23429,7 @@ func (c *Client) CreateDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti
 func (c *Client) DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti(key PrimaryDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti, fields []string) (*DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti, error) {
 	return NewDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennostis(where Where) ([]DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti, error) {
+func (c *Client) DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennostis(where Where) (*[]DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti, error) {
 	type ReturnObj struct {
 		Value []DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti `json:"value"`
 	}
@@ -23445,7 +23445,7 @@ func (c *Client) DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennostis(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti(key PrimaryDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti, entity DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti) (*DocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti, error) {
 	return NewDocumentRestrukturizatsiiaDolgaRasshifrovkaZadolzhennosti(c.updateEntity(key, entity))
@@ -23506,7 +23506,7 @@ func (c *Client) CreateDocumentAkkreditivPoluchennyi(entity DocumentAkkreditivPo
 func (c *Client) DocumentAkkreditivPoluchennyi(key PrimaryDocumentAkkreditivPoluchennyi, fields []string) (*DocumentAkkreditivPoluchennyi, error) {
 	return NewDocumentAkkreditivPoluchennyi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAkkreditivPoluchennyis(where Where) ([]DocumentAkkreditivPoluchennyi, error) {
+func (c *Client) DocumentAkkreditivPoluchennyis(where Where) (*[]DocumentAkkreditivPoluchennyi, error) {
 	type ReturnObj struct {
 		Value []DocumentAkkreditivPoluchennyi `json:"value"`
 	}
@@ -23522,7 +23522,7 @@ func (c *Client) DocumentAkkreditivPoluchennyis(where Where) ([]DocumentAkkredit
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAkkreditivPoluchennyi(key PrimaryDocumentAkkreditivPoluchennyi, entity DocumentAkkreditivPoluchennyi) (*DocumentAkkreditivPoluchennyi, error) {
 	return NewDocumentAkkreditivPoluchennyi(c.updateEntity(key, entity))
@@ -23570,7 +23570,7 @@ func (c *Client) CreateDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha(entity 
 func (c *Client) DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha(key PrimaryDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha, fields []string) (*DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha, error) {
 	return NewDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAkkreditivPoluchennyiRasshifrovkaPlatezhas(where Where) ([]DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentAkkreditivPoluchennyiRasshifrovkaPlatezhas(where Where) (*[]DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha `json:"value"`
 	}
@@ -23586,7 +23586,7 @@ func (c *Client) DocumentAkkreditivPoluchennyiRasshifrovkaPlatezhas(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha(key PrimaryDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha, entity DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha) (*DocumentAkkreditivPoluchennyiRasshifrovkaPlatezha, error) {
 	return NewDocumentAkkreditivPoluchennyiRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -23624,7 +23624,7 @@ func (c *Client) CreateDocumentAkkreditivPoluchennyiRekvizityKontragenta(entity 
 func (c *Client) DocumentAkkreditivPoluchennyiRekvizityKontragenta(key PrimaryDocumentAkkreditivPoluchennyiRekvizityKontragenta, fields []string) (*DocumentAkkreditivPoluchennyiRekvizityKontragenta, error) {
 	return NewDocumentAkkreditivPoluchennyiRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAkkreditivPoluchennyiRekvizityKontragentas(where Where) ([]DocumentAkkreditivPoluchennyiRekvizityKontragenta, error) {
+func (c *Client) DocumentAkkreditivPoluchennyiRekvizityKontragentas(where Where) (*[]DocumentAkkreditivPoluchennyiRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentAkkreditivPoluchennyiRekvizityKontragenta `json:"value"`
 	}
@@ -23640,7 +23640,7 @@ func (c *Client) DocumentAkkreditivPoluchennyiRekvizityKontragentas(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAkkreditivPoluchennyiRekvizityKontragenta(key PrimaryDocumentAkkreditivPoluchennyiRekvizityKontragenta, entity DocumentAkkreditivPoluchennyiRekvizityKontragenta) (*DocumentAkkreditivPoluchennyiRekvizityKontragenta, error) {
 	return NewDocumentAkkreditivPoluchennyiRekvizityKontragenta(c.updateEntity(key, entity))
@@ -23687,7 +23687,7 @@ func (c *Client) CreateDocumentPriemIzRemonta(entity DocumentPriemIzRemonta) (*D
 func (c *Client) DocumentPriemIzRemonta(key PrimaryDocumentPriemIzRemonta, fields []string) (*DocumentPriemIzRemonta, error) {
 	return NewDocumentPriemIzRemonta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPriemIzRemontas(where Where) ([]DocumentPriemIzRemonta, error) {
+func (c *Client) DocumentPriemIzRemontas(where Where) (*[]DocumentPriemIzRemonta, error) {
 	type ReturnObj struct {
 		Value []DocumentPriemIzRemonta `json:"value"`
 	}
@@ -23703,7 +23703,7 @@ func (c *Client) DocumentPriemIzRemontas(where Where) ([]DocumentPriemIzRemonta,
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPriemIzRemonta(key PrimaryDocumentPriemIzRemonta, entity DocumentPriemIzRemonta) (*DocumentPriemIzRemonta, error) {
 	return NewDocumentPriemIzRemonta(c.updateEntity(key, entity))
@@ -23745,7 +23745,7 @@ func (c *Client) CreateDocumentPriemIzRemontaIzdeliia(entity DocumentPriemIzRemo
 func (c *Client) DocumentPriemIzRemontaIzdeliia(key PrimaryDocumentPriemIzRemontaIzdeliia, fields []string) (*DocumentPriemIzRemontaIzdeliia, error) {
 	return NewDocumentPriemIzRemontaIzdeliia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPriemIzRemontaIzdeliias(where Where) ([]DocumentPriemIzRemontaIzdeliia, error) {
+func (c *Client) DocumentPriemIzRemontaIzdeliias(where Where) (*[]DocumentPriemIzRemontaIzdeliia, error) {
 	type ReturnObj struct {
 		Value []DocumentPriemIzRemontaIzdeliia `json:"value"`
 	}
@@ -23761,7 +23761,7 @@ func (c *Client) DocumentPriemIzRemontaIzdeliias(where Where) ([]DocumentPriemIz
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPriemIzRemontaIzdeliia(key PrimaryDocumentPriemIzRemontaIzdeliia, entity DocumentPriemIzRemontaIzdeliia) (*DocumentPriemIzRemontaIzdeliia, error) {
 	return NewDocumentPriemIzRemontaIzdeliia(c.updateEntity(key, entity))
@@ -23802,7 +23802,7 @@ func (c *Client) CreateDocumentPriemIzRemontaMaterialy(entity DocumentPriemIzRem
 func (c *Client) DocumentPriemIzRemontaMaterialy(key PrimaryDocumentPriemIzRemontaMaterialy, fields []string) (*DocumentPriemIzRemontaMaterialy, error) {
 	return NewDocumentPriemIzRemontaMaterialy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPriemIzRemontaMaterialys(where Where) ([]DocumentPriemIzRemontaMaterialy, error) {
+func (c *Client) DocumentPriemIzRemontaMaterialys(where Where) (*[]DocumentPriemIzRemontaMaterialy, error) {
 	type ReturnObj struct {
 		Value []DocumentPriemIzRemontaMaterialy `json:"value"`
 	}
@@ -23818,7 +23818,7 @@ func (c *Client) DocumentPriemIzRemontaMaterialys(where Where) ([]DocumentPriemI
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPriemIzRemontaMaterialy(key PrimaryDocumentPriemIzRemontaMaterialy, entity DocumentPriemIzRemontaMaterialy) (*DocumentPriemIzRemontaMaterialy, error) {
 	return NewDocumentPriemIzRemontaMaterialy(c.updateEntity(key, entity))
@@ -23859,7 +23859,7 @@ func (c *Client) CreateCatalogTsveta(entity CatalogTsveta) (*CatalogTsveta, erro
 func (c *Client) CatalogTsveta(key PrimaryCatalogTsveta, fields []string) (*CatalogTsveta, error) {
 	return NewCatalogTsveta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTsvetas(where Where) ([]CatalogTsveta, error) {
+func (c *Client) CatalogTsvetas(where Where) (*[]CatalogTsveta, error) {
 	type ReturnObj struct {
 		Value []CatalogTsveta `json:"value"`
 	}
@@ -23875,7 +23875,7 @@ func (c *Client) CatalogTsvetas(where Where) ([]CatalogTsveta, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTsveta(key PrimaryCatalogTsveta, entity CatalogTsveta) (*CatalogTsveta, error) {
 	return NewCatalogTsveta(c.updateEntity(key, entity))
@@ -23945,7 +23945,7 @@ func (c *Client) CreateDocumentStornirovanieOtchetaKomissioneraOProdazhakh(entit
 func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakh(key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakh, fields []string) (*DocumentStornirovanieOtchetaKomissioneraOProdazhakh, error) {
 	return NewDocumentStornirovanieOtchetaKomissioneraOProdazhakh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhs(where Where) ([]DocumentStornirovanieOtchetaKomissioneraOProdazhakh, error) {
+func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhs(where Where) (*[]DocumentStornirovanieOtchetaKomissioneraOProdazhakh, error) {
 	type ReturnObj struct {
 		Value []DocumentStornirovanieOtchetaKomissioneraOProdazhakh `json:"value"`
 	}
@@ -23961,7 +23961,7 @@ func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhs(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentStornirovanieOtchetaKomissioneraOProdazhakh(key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakh, entity DocumentStornirovanieOtchetaKomissioneraOProdazhakh) (*DocumentStornirovanieOtchetaKomissioneraOProdazhakh, error) {
 	return NewDocumentStornirovanieOtchetaKomissioneraOProdazhakh(c.updateEntity(key, entity))
@@ -23999,7 +23999,7 @@ func (c *Client) CreateDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezh
 func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva(key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva, fields []string) (*DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva(c.getEntity(key, fields))
 }
-func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstvas(where Where) ([]DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva, error) {
+func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstvas(where Where) (*[]DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva, error) {
 	type ReturnObj struct {
 		Value []DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva `json:"value"`
 	}
@@ -24015,7 +24015,7 @@ func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSre
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva(key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva, entity DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva) (*DocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentStornirovanieOtchetaKomissioneraOProdazhakhDenezhnyeSredstva(c.updateEntity(key, entity))
@@ -24065,7 +24065,7 @@ func (c *Client) CreateDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary
 func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary(key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary, fields []string) (*DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary, error) {
 	return NewDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovarys(where Where) ([]DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary, error) {
+func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovarys(where Where) (*[]DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary `json:"value"`
 	}
@@ -24081,7 +24081,7 @@ func (c *Client) DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovarys(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary(key PrimaryDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary, entity DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary) (*DocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary, error) {
 	return NewDocumentStornirovanieOtchetaKomissioneraOProdazhakhTovary(c.updateEntity(key, entity))
@@ -24129,7 +24129,7 @@ func (c *Client) CreateDocumentJournalDavalcheskieDokumenty(entity DocumentJourn
 func (c *Client) DocumentJournalDavalcheskieDokumenty(key PrimaryDocumentJournalDavalcheskieDokumenty, fields []string) (*DocumentJournalDavalcheskieDokumenty, error) {
 	return NewDocumentJournalDavalcheskieDokumenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalDavalcheskieDokumentys(where Where) ([]DocumentJournalDavalcheskieDokumenty, error) {
+func (c *Client) DocumentJournalDavalcheskieDokumentys(where Where) (*[]DocumentJournalDavalcheskieDokumenty, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalDavalcheskieDokumenty `json:"value"`
 	}
@@ -24145,7 +24145,7 @@ func (c *Client) DocumentJournalDavalcheskieDokumentys(where Where) ([]DocumentJ
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalDavalcheskieDokumenty(key PrimaryDocumentJournalDavalcheskieDokumenty, entity DocumentJournalDavalcheskieDokumenty) (*DocumentJournalDavalcheskieDokumenty, error) {
 	return NewDocumentJournalDavalcheskieDokumenty(c.updateEntity(key, entity))
@@ -24184,7 +24184,7 @@ func (c *Client) CreateCatalogfmAnketaKlienta(entity CatalogfmAnketaKlienta) (*C
 func (c *Client) CatalogfmAnketaKlienta(key PrimaryCatalogfmAnketaKlienta, fields []string) (*CatalogfmAnketaKlienta, error) {
 	return NewCatalogfmAnketaKlienta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmAnketaKlientas(where Where) ([]CatalogfmAnketaKlienta, error) {
+func (c *Client) CatalogfmAnketaKlientas(where Where) (*[]CatalogfmAnketaKlienta, error) {
 	type ReturnObj struct {
 		Value []CatalogfmAnketaKlienta `json:"value"`
 	}
@@ -24200,7 +24200,7 @@ func (c *Client) CatalogfmAnketaKlientas(where Where) ([]CatalogfmAnketaKlienta,
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmAnketaKlienta(key PrimaryCatalogfmAnketaKlienta, entity CatalogfmAnketaKlienta) (*CatalogfmAnketaKlienta, error) {
 	return NewCatalogfmAnketaKlienta(c.updateEntity(key, entity))
@@ -24237,7 +24237,7 @@ func (c *Client) CreateCatalogfmAnketaKlientaDannyeKontragenta(entity CatalogfmA
 func (c *Client) CatalogfmAnketaKlientaDannyeKontragenta(key PrimaryCatalogfmAnketaKlientaDannyeKontragenta, fields []string) (*CatalogfmAnketaKlientaDannyeKontragenta, error) {
 	return NewCatalogfmAnketaKlientaDannyeKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmAnketaKlientaDannyeKontragentas(where Where) ([]CatalogfmAnketaKlientaDannyeKontragenta, error) {
+func (c *Client) CatalogfmAnketaKlientaDannyeKontragentas(where Where) (*[]CatalogfmAnketaKlientaDannyeKontragenta, error) {
 	type ReturnObj struct {
 		Value []CatalogfmAnketaKlientaDannyeKontragenta `json:"value"`
 	}
@@ -24253,7 +24253,7 @@ func (c *Client) CatalogfmAnketaKlientaDannyeKontragentas(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmAnketaKlientaDannyeKontragenta(key PrimaryCatalogfmAnketaKlientaDannyeKontragenta, entity CatalogfmAnketaKlientaDannyeKontragenta) (*CatalogfmAnketaKlientaDannyeKontragenta, error) {
 	return NewCatalogfmAnketaKlientaDannyeKontragenta(c.updateEntity(key, entity))
@@ -24290,7 +24290,7 @@ func (c *Client) CreateCatalogVidyVzaimoraschetov(entity CatalogVidyVzaimorasche
 func (c *Client) CatalogVidyVzaimoraschetov(key PrimaryCatalogVidyVzaimoraschetov, fields []string) (*CatalogVidyVzaimoraschetov, error) {
 	return NewCatalogVidyVzaimoraschetov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyVzaimoraschetovs(where Where) ([]CatalogVidyVzaimoraschetov, error) {
+func (c *Client) CatalogVidyVzaimoraschetovs(where Where) (*[]CatalogVidyVzaimoraschetov, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyVzaimoraschetov `json:"value"`
 	}
@@ -24306,7 +24306,7 @@ func (c *Client) CatalogVidyVzaimoraschetovs(where Where) ([]CatalogVidyVzaimora
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyVzaimoraschetov(key PrimaryCatalogVidyVzaimoraschetov, entity CatalogVidyVzaimoraschetov) (*CatalogVidyVzaimoraschetov, error) {
 	return NewCatalogVidyVzaimoraschetov(c.updateEntity(key, entity))
@@ -24349,7 +24349,7 @@ func (c *Client) CreateDocumentUstanovkaZnacheniiTochkiZakaza(entity DocumentUst
 func (c *Client) DocumentUstanovkaZnacheniiTochkiZakaza(key PrimaryDocumentUstanovkaZnacheniiTochkiZakaza, fields []string) (*DocumentUstanovkaZnacheniiTochkiZakaza, error) {
 	return NewDocumentUstanovkaZnacheniiTochkiZakaza(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazas(where Where) ([]DocumentUstanovkaZnacheniiTochkiZakaza, error) {
+func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazas(where Where) (*[]DocumentUstanovkaZnacheniiTochkiZakaza, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaZnacheniiTochkiZakaza `json:"value"`
 	}
@@ -24365,7 +24365,7 @@ func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazas(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaZnacheniiTochkiZakaza(key PrimaryDocumentUstanovkaZnacheniiTochkiZakaza, entity DocumentUstanovkaZnacheniiTochkiZakaza) (*DocumentUstanovkaZnacheniiTochkiZakaza, error) {
 	return NewDocumentUstanovkaZnacheniiTochkiZakaza(c.updateEntity(key, entity))
@@ -24410,7 +24410,7 @@ func (c *Client) CreateDocumentUstanovkaZnacheniiTochkiZakazaTovary(entity Docum
 func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazaTovary(key PrimaryDocumentUstanovkaZnacheniiTochkiZakazaTovary, fields []string) (*DocumentUstanovkaZnacheniiTochkiZakazaTovary, error) {
 	return NewDocumentUstanovkaZnacheniiTochkiZakazaTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazaTovarys(where Where) ([]DocumentUstanovkaZnacheniiTochkiZakazaTovary, error) {
+func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazaTovarys(where Where) (*[]DocumentUstanovkaZnacheniiTochkiZakazaTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaZnacheniiTochkiZakazaTovary `json:"value"`
 	}
@@ -24426,7 +24426,7 @@ func (c *Client) DocumentUstanovkaZnacheniiTochkiZakazaTovarys(where Where) ([]D
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaZnacheniiTochkiZakazaTovary(key PrimaryDocumentUstanovkaZnacheniiTochkiZakazaTovary, entity DocumentUstanovkaZnacheniiTochkiZakazaTovary) (*DocumentUstanovkaZnacheniiTochkiZakazaTovary, error) {
 	return NewDocumentUstanovkaZnacheniiTochkiZakazaTovary(c.updateEntity(key, entity))
@@ -24464,7 +24464,7 @@ func (c *Client) CreateCatalogZnacheniiaKodirovki(entity CatalogZnacheniiaKodiro
 func (c *Client) CatalogZnacheniiaKodirovki(key PrimaryCatalogZnacheniiaKodirovki, fields []string) (*CatalogZnacheniiaKodirovki, error) {
 	return NewCatalogZnacheniiaKodirovki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogZnacheniiaKodirovkis(where Where) ([]CatalogZnacheniiaKodirovki, error) {
+func (c *Client) CatalogZnacheniiaKodirovkis(where Where) (*[]CatalogZnacheniiaKodirovki, error) {
 	type ReturnObj struct {
 		Value []CatalogZnacheniiaKodirovki `json:"value"`
 	}
@@ -24480,7 +24480,7 @@ func (c *Client) CatalogZnacheniiaKodirovkis(where Where) ([]CatalogZnacheniiaKo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogZnacheniiaKodirovki(key PrimaryCatalogZnacheniiaKodirovki, entity CatalogZnacheniiaKodirovki) (*CatalogZnacheniiaKodirovki, error) {
 	return NewCatalogZnacheniiaKodirovki(c.updateEntity(key, entity))
@@ -24521,7 +24521,7 @@ func (c *Client) CreateCatalogPravilaProdazh(entity CatalogPravilaProdazh) (*Cat
 func (c *Client) CatalogPravilaProdazh(key PrimaryCatalogPravilaProdazh, fields []string) (*CatalogPravilaProdazh, error) {
 	return NewCatalogPravilaProdazh(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPravilaProdazhs(where Where) ([]CatalogPravilaProdazh, error) {
+func (c *Client) CatalogPravilaProdazhs(where Where) (*[]CatalogPravilaProdazh, error) {
 	type ReturnObj struct {
 		Value []CatalogPravilaProdazh `json:"value"`
 	}
@@ -24537,7 +24537,7 @@ func (c *Client) CatalogPravilaProdazhs(where Where) ([]CatalogPravilaProdazh, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPravilaProdazh(key PrimaryCatalogPravilaProdazh, entity CatalogPravilaProdazh) (*CatalogPravilaProdazh, error) {
 	return NewCatalogPravilaProdazh(c.updateEntity(key, entity))
@@ -24578,7 +24578,7 @@ func (c *Client) CreateCatalogPravilaProdazhTovary(entity CatalogPravilaProdazhT
 func (c *Client) CatalogPravilaProdazhTovary(key PrimaryCatalogPravilaProdazhTovary, fields []string) (*CatalogPravilaProdazhTovary, error) {
 	return NewCatalogPravilaProdazhTovary(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPravilaProdazhTovarys(where Where) ([]CatalogPravilaProdazhTovary, error) {
+func (c *Client) CatalogPravilaProdazhTovarys(where Where) (*[]CatalogPravilaProdazhTovary, error) {
 	type ReturnObj struct {
 		Value []CatalogPravilaProdazhTovary `json:"value"`
 	}
@@ -24594,7 +24594,7 @@ func (c *Client) CatalogPravilaProdazhTovarys(where Where) ([]CatalogPravilaProd
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPravilaProdazhTovary(key PrimaryCatalogPravilaProdazhTovary, entity CatalogPravilaProdazhTovary) (*CatalogPravilaProdazhTovary, error) {
 	return NewCatalogPravilaProdazhTovary(c.updateEntity(key, entity))
@@ -24663,7 +24663,7 @@ func (c *Client) CreateDocumentPostuplenieDopRaskhodov(entity DocumentPostupleni
 func (c *Client) DocumentPostuplenieDopRaskhodov(key PrimaryDocumentPostuplenieDopRaskhodov, fields []string) (*DocumentPostuplenieDopRaskhodov, error) {
 	return NewDocumentPostuplenieDopRaskhodov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieDopRaskhodovs(where Where) ([]DocumentPostuplenieDopRaskhodov, error) {
+func (c *Client) DocumentPostuplenieDopRaskhodovs(where Where) (*[]DocumentPostuplenieDopRaskhodov, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieDopRaskhodov `json:"value"`
 	}
@@ -24679,7 +24679,7 @@ func (c *Client) DocumentPostuplenieDopRaskhodovs(where Where) ([]DocumentPostup
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieDopRaskhodov(key PrimaryDocumentPostuplenieDopRaskhodov, entity DocumentPostuplenieDopRaskhodov) (*DocumentPostuplenieDopRaskhodov, error) {
 	return NewDocumentPostuplenieDopRaskhodov(c.updateEntity(key, entity))
@@ -24727,7 +24727,7 @@ func (c *Client) CreateDocumentPostuplenieDopRaskhodovTovary(entity DocumentPost
 func (c *Client) DocumentPostuplenieDopRaskhodovTovary(key PrimaryDocumentPostuplenieDopRaskhodovTovary, fields []string) (*DocumentPostuplenieDopRaskhodovTovary, error) {
 	return NewDocumentPostuplenieDopRaskhodovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieDopRaskhodovTovarys(where Where) ([]DocumentPostuplenieDopRaskhodovTovary, error) {
+func (c *Client) DocumentPostuplenieDopRaskhodovTovarys(where Where) (*[]DocumentPostuplenieDopRaskhodovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieDopRaskhodovTovary `json:"value"`
 	}
@@ -24743,7 +24743,7 @@ func (c *Client) DocumentPostuplenieDopRaskhodovTovarys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieDopRaskhodovTovary(key PrimaryDocumentPostuplenieDopRaskhodovTovary, entity DocumentPostuplenieDopRaskhodovTovary) (*DocumentPostuplenieDopRaskhodovTovary, error) {
 	return NewDocumentPostuplenieDopRaskhodovTovary(c.updateEntity(key, entity))
@@ -24781,7 +24781,7 @@ func (c *Client) CreateCatalogKhoziaistvennyeOperatsii(entity CatalogKhoziaistve
 func (c *Client) CatalogKhoziaistvennyeOperatsii(key PrimaryCatalogKhoziaistvennyeOperatsii, fields []string) (*CatalogKhoziaistvennyeOperatsii, error) {
 	return NewCatalogKhoziaistvennyeOperatsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKhoziaistvennyeOperatsiis(where Where) ([]CatalogKhoziaistvennyeOperatsii, error) {
+func (c *Client) CatalogKhoziaistvennyeOperatsiis(where Where) (*[]CatalogKhoziaistvennyeOperatsii, error) {
 	type ReturnObj struct {
 		Value []CatalogKhoziaistvennyeOperatsii `json:"value"`
 	}
@@ -24797,7 +24797,7 @@ func (c *Client) CatalogKhoziaistvennyeOperatsiis(where Where) ([]CatalogKhoziai
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKhoziaistvennyeOperatsii(key PrimaryCatalogKhoziaistvennyeOperatsii, entity CatalogKhoziaistvennyeOperatsii) (*CatalogKhoziaistvennyeOperatsii, error) {
 	return NewCatalogKhoziaistvennyeOperatsii(c.updateEntity(key, entity))
@@ -24857,7 +24857,7 @@ func (c *Client) CreateDocumentAvansovyiOtchet(entity DocumentAvansovyiOtchet) (
 func (c *Client) DocumentAvansovyiOtchet(key PrimaryDocumentAvansovyiOtchet, fields []string) (*DocumentAvansovyiOtchet, error) {
 	return NewDocumentAvansovyiOtchet(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAvansovyiOtchets(where Where) ([]DocumentAvansovyiOtchet, error) {
+func (c *Client) DocumentAvansovyiOtchets(where Where) (*[]DocumentAvansovyiOtchet, error) {
 	type ReturnObj struct {
 		Value []DocumentAvansovyiOtchet `json:"value"`
 	}
@@ -24873,7 +24873,7 @@ func (c *Client) DocumentAvansovyiOtchets(where Where) ([]DocumentAvansovyiOtche
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAvansovyiOtchet(key PrimaryDocumentAvansovyiOtchet, entity DocumentAvansovyiOtchet) (*DocumentAvansovyiOtchet, error) {
 	return NewDocumentAvansovyiOtchet(c.updateEntity(key, entity))
@@ -24909,7 +24909,7 @@ func (c *Client) CreateDocumentAvansovyiOtchetVydannyeAvansy(entity DocumentAvan
 func (c *Client) DocumentAvansovyiOtchetVydannyeAvansy(key PrimaryDocumentAvansovyiOtchetVydannyeAvansy, fields []string) (*DocumentAvansovyiOtchetVydannyeAvansy, error) {
 	return NewDocumentAvansovyiOtchetVydannyeAvansy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAvansovyiOtchetVydannyeAvansys(where Where) ([]DocumentAvansovyiOtchetVydannyeAvansy, error) {
+func (c *Client) DocumentAvansovyiOtchetVydannyeAvansys(where Where) (*[]DocumentAvansovyiOtchetVydannyeAvansy, error) {
 	type ReturnObj struct {
 		Value []DocumentAvansovyiOtchetVydannyeAvansy `json:"value"`
 	}
@@ -24925,7 +24925,7 @@ func (c *Client) DocumentAvansovyiOtchetVydannyeAvansys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAvansovyiOtchetVydannyeAvansy(key PrimaryDocumentAvansovyiOtchetVydannyeAvansy, entity DocumentAvansovyiOtchetVydannyeAvansy) (*DocumentAvansovyiOtchetVydannyeAvansy, error) {
 	return NewDocumentAvansovyiOtchetVydannyeAvansy(c.updateEntity(key, entity))
@@ -24983,7 +24983,7 @@ func (c *Client) CreateDocumentAvansovyiOtchetTovary(entity DocumentAvansovyiOtc
 func (c *Client) DocumentAvansovyiOtchetTovary(key PrimaryDocumentAvansovyiOtchetTovary, fields []string) (*DocumentAvansovyiOtchetTovary, error) {
 	return NewDocumentAvansovyiOtchetTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAvansovyiOtchetTovarys(where Where) ([]DocumentAvansovyiOtchetTovary, error) {
+func (c *Client) DocumentAvansovyiOtchetTovarys(where Where) (*[]DocumentAvansovyiOtchetTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentAvansovyiOtchetTovary `json:"value"`
 	}
@@ -24999,7 +24999,7 @@ func (c *Client) DocumentAvansovyiOtchetTovarys(where Where) ([]DocumentAvansovy
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAvansovyiOtchetTovary(key PrimaryDocumentAvansovyiOtchetTovary, entity DocumentAvansovyiOtchetTovary) (*DocumentAvansovyiOtchetTovary, error) {
 	return NewDocumentAvansovyiOtchetTovary(c.updateEntity(key, entity))
@@ -25045,7 +25045,7 @@ func (c *Client) CreateDocumentAvansovyiOtchetOplataPostavshchikam(entity Docume
 func (c *Client) DocumentAvansovyiOtchetOplataPostavshchikam(key PrimaryDocumentAvansovyiOtchetOplataPostavshchikam, fields []string) (*DocumentAvansovyiOtchetOplataPostavshchikam, error) {
 	return NewDocumentAvansovyiOtchetOplataPostavshchikam(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAvansovyiOtchetOplataPostavshchikams(where Where) ([]DocumentAvansovyiOtchetOplataPostavshchikam, error) {
+func (c *Client) DocumentAvansovyiOtchetOplataPostavshchikams(where Where) (*[]DocumentAvansovyiOtchetOplataPostavshchikam, error) {
 	type ReturnObj struct {
 		Value []DocumentAvansovyiOtchetOplataPostavshchikam `json:"value"`
 	}
@@ -25061,7 +25061,7 @@ func (c *Client) DocumentAvansovyiOtchetOplataPostavshchikams(where Where) ([]Do
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAvansovyiOtchetOplataPostavshchikam(key PrimaryDocumentAvansovyiOtchetOplataPostavshchikam, entity DocumentAvansovyiOtchetOplataPostavshchikam) (*DocumentAvansovyiOtchetOplataPostavshchikam, error) {
 	return NewDocumentAvansovyiOtchetOplataPostavshchikam(c.updateEntity(key, entity))
@@ -25114,7 +25114,7 @@ func (c *Client) CreateDocumentAvansovyiOtchetProchee(entity DocumentAvansovyiOt
 func (c *Client) DocumentAvansovyiOtchetProchee(key PrimaryDocumentAvansovyiOtchetProchee, fields []string) (*DocumentAvansovyiOtchetProchee, error) {
 	return NewDocumentAvansovyiOtchetProchee(c.getEntity(key, fields))
 }
-func (c *Client) DocumentAvansovyiOtchetProchees(where Where) ([]DocumentAvansovyiOtchetProchee, error) {
+func (c *Client) DocumentAvansovyiOtchetProchees(where Where) (*[]DocumentAvansovyiOtchetProchee, error) {
 	type ReturnObj struct {
 		Value []DocumentAvansovyiOtchetProchee `json:"value"`
 	}
@@ -25130,7 +25130,7 @@ func (c *Client) DocumentAvansovyiOtchetProchees(where Where) ([]DocumentAvansov
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentAvansovyiOtchetProchee(key PrimaryDocumentAvansovyiOtchetProchee, entity DocumentAvansovyiOtchetProchee) (*DocumentAvansovyiOtchetProchee, error) {
 	return NewDocumentAvansovyiOtchetProchee(c.updateEntity(key, entity))
@@ -25167,7 +25167,7 @@ func (c *Client) CreateCatalogDolzhnostiOrganizatsii(entity CatalogDolzhnostiOrg
 func (c *Client) CatalogDolzhnostiOrganizatsii(key PrimaryCatalogDolzhnostiOrganizatsii, fields []string) (*CatalogDolzhnostiOrganizatsii, error) {
 	return NewCatalogDolzhnostiOrganizatsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDolzhnostiOrganizatsiis(where Where) ([]CatalogDolzhnostiOrganizatsii, error) {
+func (c *Client) CatalogDolzhnostiOrganizatsiis(where Where) (*[]CatalogDolzhnostiOrganizatsii, error) {
 	type ReturnObj struct {
 		Value []CatalogDolzhnostiOrganizatsii `json:"value"`
 	}
@@ -25183,7 +25183,7 @@ func (c *Client) CatalogDolzhnostiOrganizatsiis(where Where) ([]CatalogDolzhnost
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDolzhnostiOrganizatsii(key PrimaryCatalogDolzhnostiOrganizatsii, entity CatalogDolzhnostiOrganizatsii) (*CatalogDolzhnostiOrganizatsii, error) {
 	return NewCatalogDolzhnostiOrganizatsii(c.updateEntity(key, entity))
@@ -25224,7 +25224,7 @@ func (c *Client) CreateCatalogAnalitikaTipaIzdeliia(entity CatalogAnalitikaTipaI
 func (c *Client) CatalogAnalitikaTipaIzdeliia(key PrimaryCatalogAnalitikaTipaIzdeliia, fields []string) (*CatalogAnalitikaTipaIzdeliia, error) {
 	return NewCatalogAnalitikaTipaIzdeliia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogAnalitikaTipaIzdeliias(where Where) ([]CatalogAnalitikaTipaIzdeliia, error) {
+func (c *Client) CatalogAnalitikaTipaIzdeliias(where Where) (*[]CatalogAnalitikaTipaIzdeliia, error) {
 	type ReturnObj struct {
 		Value []CatalogAnalitikaTipaIzdeliia `json:"value"`
 	}
@@ -25240,7 +25240,7 @@ func (c *Client) CatalogAnalitikaTipaIzdeliias(where Where) ([]CatalogAnalitikaT
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogAnalitikaTipaIzdeliia(key PrimaryCatalogAnalitikaTipaIzdeliia, entity CatalogAnalitikaTipaIzdeliia) (*CatalogAnalitikaTipaIzdeliia, error) {
 	return NewCatalogAnalitikaTipaIzdeliia(c.updateEntity(key, entity))
@@ -25281,7 +25281,7 @@ func (c *Client) CreateCatalogDopolnitelnyePechatnyeFormy(entity CatalogDopolnit
 func (c *Client) CatalogDopolnitelnyePechatnyeFormy(key PrimaryCatalogDopolnitelnyePechatnyeFormy, fields []string) (*CatalogDopolnitelnyePechatnyeFormy, error) {
 	return NewCatalogDopolnitelnyePechatnyeFormy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyePechatnyeFormys(where Where) ([]CatalogDopolnitelnyePechatnyeFormy, error) {
+func (c *Client) CatalogDopolnitelnyePechatnyeFormys(where Where) (*[]CatalogDopolnitelnyePechatnyeFormy, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyePechatnyeFormy `json:"value"`
 	}
@@ -25297,7 +25297,7 @@ func (c *Client) CatalogDopolnitelnyePechatnyeFormys(where Where) ([]CatalogDopo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyePechatnyeFormy(key PrimaryCatalogDopolnitelnyePechatnyeFormy, entity CatalogDopolnitelnyePechatnyeFormy) (*CatalogDopolnitelnyePechatnyeFormy, error) {
 	return NewCatalogDopolnitelnyePechatnyeFormy(c.updateEntity(key, entity))
@@ -25334,7 +25334,7 @@ func (c *Client) CreateCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost(entity C
 func (c *Client) CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost(key PrimaryCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost, fields []string) (*CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost, error) {
 	return NewCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDopolnitelnyePechatnyeFormyPrinadlezhnosts(where Where) ([]CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost, error) {
+func (c *Client) CatalogDopolnitelnyePechatnyeFormyPrinadlezhnosts(where Where) (*[]CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost, error) {
 	type ReturnObj struct {
 		Value []CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost `json:"value"`
 	}
@@ -25350,7 +25350,7 @@ func (c *Client) CatalogDopolnitelnyePechatnyeFormyPrinadlezhnosts(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost(key PrimaryCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost, entity CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost) (*CatalogDopolnitelnyePechatnyeFormyPrinadlezhnost, error) {
 	return NewCatalogDopolnitelnyePechatnyeFormyPrinadlezhnost(c.updateEntity(key, entity))
@@ -25387,7 +25387,7 @@ func (c *Client) CreateMemberCardsType(entity MemberCardsType) (*MemberCardsType
 func (c *Client) MemberCardsType(key PrimaryMemberCardsType, fields []string) (*MemberCardsType, error) {
 	return NewMemberCardsType(c.getEntity(key, fields))
 }
-func (c *Client) MemberCardsTypes(where Where) ([]MemberCardsType, error) {
+func (c *Client) MemberCardsTypes(where Where) (*[]MemberCardsType, error) {
 	type ReturnObj struct {
 		Value []MemberCardsType `json:"value"`
 	}
@@ -25403,7 +25403,7 @@ func (c *Client) MemberCardsTypes(where Where) ([]MemberCardsType, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateMemberCardsType(key PrimaryMemberCardsType, entity MemberCardsType) (*MemberCardsType, error) {
 	return NewMemberCardsType(c.updateEntity(key, entity))
@@ -25454,7 +25454,7 @@ func (c *Client) CreateDocumentRegistratsiiaNaSaite(entity DocumentRegistratsiia
 func (c *Client) DocumentRegistratsiiaNaSaite(key PrimaryDocumentRegistratsiiaNaSaite, fields []string) (*DocumentRegistratsiiaNaSaite, error) {
 	return NewDocumentRegistratsiiaNaSaite(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRegistratsiiaNaSaites(where Where) ([]DocumentRegistratsiiaNaSaite, error) {
+func (c *Client) DocumentRegistratsiiaNaSaites(where Where) (*[]DocumentRegistratsiiaNaSaite, error) {
 	type ReturnObj struct {
 		Value []DocumentRegistratsiiaNaSaite `json:"value"`
 	}
@@ -25470,7 +25470,7 @@ func (c *Client) DocumentRegistratsiiaNaSaites(where Where) ([]DocumentRegistrat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRegistratsiiaNaSaite(key PrimaryDocumentRegistratsiiaNaSaite, entity DocumentRegistratsiiaNaSaite) (*DocumentRegistratsiiaNaSaite, error) {
 	return NewDocumentRegistratsiiaNaSaite(c.updateEntity(key, entity))
@@ -25517,7 +25517,7 @@ func (c *Client) CreateCatalogObrabotkiObsluzhivaniiaTO(entity CatalogObrabotkiO
 func (c *Client) CatalogObrabotkiObsluzhivaniiaTO(key PrimaryCatalogObrabotkiObsluzhivaniiaTO, fields []string) (*CatalogObrabotkiObsluzhivaniiaTO, error) {
 	return NewCatalogObrabotkiObsluzhivaniiaTO(c.getEntity(key, fields))
 }
-func (c *Client) CatalogObrabotkiObsluzhivaniiaTOs(where Where) ([]CatalogObrabotkiObsluzhivaniiaTO, error) {
+func (c *Client) CatalogObrabotkiObsluzhivaniiaTOs(where Where) (*[]CatalogObrabotkiObsluzhivaniiaTO, error) {
 	type ReturnObj struct {
 		Value []CatalogObrabotkiObsluzhivaniiaTO `json:"value"`
 	}
@@ -25533,7 +25533,7 @@ func (c *Client) CatalogObrabotkiObsluzhivaniiaTOs(where Where) ([]CatalogObrabo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogObrabotkiObsluzhivaniiaTO(key PrimaryCatalogObrabotkiObsluzhivaniiaTO, entity CatalogObrabotkiObsluzhivaniiaTO) (*CatalogObrabotkiObsluzhivaniiaTO, error) {
 	return NewCatalogObrabotkiObsluzhivaniiaTO(c.updateEntity(key, entity))
@@ -25568,7 +25568,7 @@ func (c *Client) CreateCatalogObrabotkiObsluzhivaniiaTOModeli(entity CatalogObra
 func (c *Client) CatalogObrabotkiObsluzhivaniiaTOModeli(key PrimaryCatalogObrabotkiObsluzhivaniiaTOModeli, fields []string) (*CatalogObrabotkiObsluzhivaniiaTOModeli, error) {
 	return NewCatalogObrabotkiObsluzhivaniiaTOModeli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogObrabotkiObsluzhivaniiaTOModelis(where Where) ([]CatalogObrabotkiObsluzhivaniiaTOModeli, error) {
+func (c *Client) CatalogObrabotkiObsluzhivaniiaTOModelis(where Where) (*[]CatalogObrabotkiObsluzhivaniiaTOModeli, error) {
 	type ReturnObj struct {
 		Value []CatalogObrabotkiObsluzhivaniiaTOModeli `json:"value"`
 	}
@@ -25584,7 +25584,7 @@ func (c *Client) CatalogObrabotkiObsluzhivaniiaTOModelis(where Where) ([]Catalog
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogObrabotkiObsluzhivaniiaTOModeli(key PrimaryCatalogObrabotkiObsluzhivaniiaTOModeli, entity CatalogObrabotkiObsluzhivaniiaTOModeli) (*CatalogObrabotkiObsluzhivaniiaTOModeli, error) {
 	return NewCatalogObrabotkiObsluzhivaniiaTOModeli(c.updateEntity(key, entity))
@@ -25621,7 +25621,7 @@ func (c *Client) CreateCatalogNastroikaIntervalov(entity CatalogNastroikaInterva
 func (c *Client) CatalogNastroikaIntervalov(key PrimaryCatalogNastroikaIntervalov, fields []string) (*CatalogNastroikaIntervalov, error) {
 	return NewCatalogNastroikaIntervalov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikaIntervalovs(where Where) ([]CatalogNastroikaIntervalov, error) {
+func (c *Client) CatalogNastroikaIntervalovs(where Where) (*[]CatalogNastroikaIntervalov, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikaIntervalov `json:"value"`
 	}
@@ -25637,7 +25637,7 @@ func (c *Client) CatalogNastroikaIntervalovs(where Where) ([]CatalogNastroikaInt
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikaIntervalov(key PrimaryCatalogNastroikaIntervalov, entity CatalogNastroikaIntervalov) (*CatalogNastroikaIntervalov, error) {
 	return NewCatalogNastroikaIntervalov(c.updateEntity(key, entity))
@@ -25674,7 +25674,7 @@ func (c *Client) CreateCatalogNastroikaIntervalovTablichnaiaChast(entity Catalog
 func (c *Client) CatalogNastroikaIntervalovTablichnaiaChast(key PrimaryCatalogNastroikaIntervalovTablichnaiaChast, fields []string) (*CatalogNastroikaIntervalovTablichnaiaChast, error) {
 	return NewCatalogNastroikaIntervalovTablichnaiaChast(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikaIntervalovTablichnaiaChasts(where Where) ([]CatalogNastroikaIntervalovTablichnaiaChast, error) {
+func (c *Client) CatalogNastroikaIntervalovTablichnaiaChasts(where Where) (*[]CatalogNastroikaIntervalovTablichnaiaChast, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikaIntervalovTablichnaiaChast `json:"value"`
 	}
@@ -25690,7 +25690,7 @@ func (c *Client) CatalogNastroikaIntervalovTablichnaiaChasts(where Where) ([]Cat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikaIntervalovTablichnaiaChast(key PrimaryCatalogNastroikaIntervalovTablichnaiaChast, entity CatalogNastroikaIntervalovTablichnaiaChast) (*CatalogNastroikaIntervalovTablichnaiaChast, error) {
 	return NewCatalogNastroikaIntervalovTablichnaiaChast(c.updateEntity(key, entity))
@@ -25733,7 +25733,7 @@ func (c *Client) CreateCatalogProfiliGruppDostupa(entity CatalogProfiliGruppDost
 func (c *Client) CatalogProfiliGruppDostupa(key PrimaryCatalogProfiliGruppDostupa, fields []string) (*CatalogProfiliGruppDostupa, error) {
 	return NewCatalogProfiliGruppDostupa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProfiliGruppDostupas(where Where) ([]CatalogProfiliGruppDostupa, error) {
+func (c *Client) CatalogProfiliGruppDostupas(where Where) (*[]CatalogProfiliGruppDostupa, error) {
 	type ReturnObj struct {
 		Value []CatalogProfiliGruppDostupa `json:"value"`
 	}
@@ -25749,7 +25749,7 @@ func (c *Client) CatalogProfiliGruppDostupas(where Where) ([]CatalogProfiliGrupp
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProfiliGruppDostupa(key PrimaryCatalogProfiliGruppDostupa, entity CatalogProfiliGruppDostupa) (*CatalogProfiliGruppDostupa, error) {
 	return NewCatalogProfiliGruppDostupa(c.updateEntity(key, entity))
@@ -25784,7 +25784,7 @@ func (c *Client) CreateCatalogProfiliGruppDostupaRoli(entity CatalogProfiliGrupp
 func (c *Client) CatalogProfiliGruppDostupaRoli(key PrimaryCatalogProfiliGruppDostupaRoli, fields []string) (*CatalogProfiliGruppDostupaRoli, error) {
 	return NewCatalogProfiliGruppDostupaRoli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProfiliGruppDostupaRolis(where Where) ([]CatalogProfiliGruppDostupaRoli, error) {
+func (c *Client) CatalogProfiliGruppDostupaRolis(where Where) (*[]CatalogProfiliGruppDostupaRoli, error) {
 	type ReturnObj struct {
 		Value []CatalogProfiliGruppDostupaRoli `json:"value"`
 	}
@@ -25800,7 +25800,7 @@ func (c *Client) CatalogProfiliGruppDostupaRolis(where Where) ([]CatalogProfiliG
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProfiliGruppDostupaRoli(key PrimaryCatalogProfiliGruppDostupaRoli, entity CatalogProfiliGruppDostupaRoli) (*CatalogProfiliGruppDostupaRoli, error) {
 	return NewCatalogProfiliGruppDostupaRoli(c.updateEntity(key, entity))
@@ -25838,7 +25838,7 @@ func (c *Client) CreateCatalogProfiliGruppDostupaVidyDostupa(entity CatalogProfi
 func (c *Client) CatalogProfiliGruppDostupaVidyDostupa(key PrimaryCatalogProfiliGruppDostupaVidyDostupa, fields []string) (*CatalogProfiliGruppDostupaVidyDostupa, error) {
 	return NewCatalogProfiliGruppDostupaVidyDostupa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProfiliGruppDostupaVidyDostupas(where Where) ([]CatalogProfiliGruppDostupaVidyDostupa, error) {
+func (c *Client) CatalogProfiliGruppDostupaVidyDostupas(where Where) (*[]CatalogProfiliGruppDostupaVidyDostupa, error) {
 	type ReturnObj struct {
 		Value []CatalogProfiliGruppDostupaVidyDostupa `json:"value"`
 	}
@@ -25854,7 +25854,7 @@ func (c *Client) CatalogProfiliGruppDostupaVidyDostupas(where Where) ([]CatalogP
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProfiliGruppDostupaVidyDostupa(key PrimaryCatalogProfiliGruppDostupaVidyDostupa, entity CatalogProfiliGruppDostupaVidyDostupa) (*CatalogProfiliGruppDostupaVidyDostupa, error) {
 	return NewCatalogProfiliGruppDostupaVidyDostupa(c.updateEntity(key, entity))
@@ -25892,7 +25892,7 @@ func (c *Client) CreateCatalogProfiliGruppDostupaZnacheniiaDostupa(entity Catalo
 func (c *Client) CatalogProfiliGruppDostupaZnacheniiaDostupa(key PrimaryCatalogProfiliGruppDostupaZnacheniiaDostupa, fields []string) (*CatalogProfiliGruppDostupaZnacheniiaDostupa, error) {
 	return NewCatalogProfiliGruppDostupaZnacheniiaDostupa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProfiliGruppDostupaZnacheniiaDostupas(where Where) ([]CatalogProfiliGruppDostupaZnacheniiaDostupa, error) {
+func (c *Client) CatalogProfiliGruppDostupaZnacheniiaDostupas(where Where) (*[]CatalogProfiliGruppDostupaZnacheniiaDostupa, error) {
 	type ReturnObj struct {
 		Value []CatalogProfiliGruppDostupaZnacheniiaDostupa `json:"value"`
 	}
@@ -25908,7 +25908,7 @@ func (c *Client) CatalogProfiliGruppDostupaZnacheniiaDostupas(where Where) ([]Ca
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProfiliGruppDostupaZnacheniiaDostupa(key PrimaryCatalogProfiliGruppDostupaZnacheniiaDostupa, entity CatalogProfiliGruppDostupaZnacheniiaDostupa) (*CatalogProfiliGruppDostupaZnacheniiaDostupa, error) {
 	return NewCatalogProfiliGruppDostupaZnacheniiaDostupa(c.updateEntity(key, entity))
@@ -25948,7 +25948,7 @@ func (c *Client) CreateCatalogProfiliGruppDostupaDostupPoPodsistemam(entity Cata
 func (c *Client) CatalogProfiliGruppDostupaDostupPoPodsistemam(key PrimaryCatalogProfiliGruppDostupaDostupPoPodsistemam, fields []string) (*CatalogProfiliGruppDostupaDostupPoPodsistemam, error) {
 	return NewCatalogProfiliGruppDostupaDostupPoPodsistemam(c.getEntity(key, fields))
 }
-func (c *Client) CatalogProfiliGruppDostupaDostupPoPodsistemams(where Where) ([]CatalogProfiliGruppDostupaDostupPoPodsistemam, error) {
+func (c *Client) CatalogProfiliGruppDostupaDostupPoPodsistemams(where Where) (*[]CatalogProfiliGruppDostupaDostupPoPodsistemam, error) {
 	type ReturnObj struct {
 		Value []CatalogProfiliGruppDostupaDostupPoPodsistemam `json:"value"`
 	}
@@ -25964,7 +25964,7 @@ func (c *Client) CatalogProfiliGruppDostupaDostupPoPodsistemams(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogProfiliGruppDostupaDostupPoPodsistemam(key PrimaryCatalogProfiliGruppDostupaDostupPoPodsistemam, entity CatalogProfiliGruppDostupaDostupPoPodsistemam) (*CatalogProfiliGruppDostupaDostupPoPodsistemam, error) {
 	return NewCatalogProfiliGruppDostupaDostupPoPodsistemam(c.updateEntity(key, entity))
@@ -26017,7 +26017,7 @@ func (c *Client) CreateCatalogNastroikiDliaKurera(entity CatalogNastroikiDliaKur
 func (c *Client) CatalogNastroikiDliaKurera(key PrimaryCatalogNastroikiDliaKurera, fields []string) (*CatalogNastroikiDliaKurera, error) {
 	return NewCatalogNastroikiDliaKurera(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiDliaKureras(where Where) ([]CatalogNastroikiDliaKurera, error) {
+func (c *Client) CatalogNastroikiDliaKureras(where Where) (*[]CatalogNastroikiDliaKurera, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiDliaKurera `json:"value"`
 	}
@@ -26033,7 +26033,7 @@ func (c *Client) CatalogNastroikiDliaKureras(where Where) ([]CatalogNastroikiDli
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiDliaKurera(key PrimaryCatalogNastroikiDliaKurera, entity CatalogNastroikiDliaKurera) (*CatalogNastroikiDliaKurera, error) {
 	return NewCatalogNastroikiDliaKurera(c.updateEntity(key, entity))
@@ -26070,7 +26070,7 @@ func (c *Client) CreateCatalogNastroikiDliaKureraSostavNaimenovaniia(entity Cata
 func (c *Client) CatalogNastroikiDliaKureraSostavNaimenovaniia(key PrimaryCatalogNastroikiDliaKureraSostavNaimenovaniia, fields []string) (*CatalogNastroikiDliaKureraSostavNaimenovaniia, error) {
 	return NewCatalogNastroikiDliaKureraSostavNaimenovaniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiDliaKureraSostavNaimenovaniias(where Where) ([]CatalogNastroikiDliaKureraSostavNaimenovaniia, error) {
+func (c *Client) CatalogNastroikiDliaKureraSostavNaimenovaniias(where Where) (*[]CatalogNastroikiDliaKureraSostavNaimenovaniia, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiDliaKureraSostavNaimenovaniia `json:"value"`
 	}
@@ -26086,7 +26086,7 @@ func (c *Client) CatalogNastroikiDliaKureraSostavNaimenovaniias(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiDliaKureraSostavNaimenovaniia(key PrimaryCatalogNastroikiDliaKureraSostavNaimenovaniia, entity CatalogNastroikiDliaKureraSostavNaimenovaniia) (*CatalogNastroikiDliaKureraSostavNaimenovaniia, error) {
 	return NewCatalogNastroikiDliaKureraSostavNaimenovaniia(c.updateEntity(key, entity))
@@ -26129,7 +26129,7 @@ func (c *Client) CreateCatalogTipyTsenNomenklaturyKontragentov(entity CatalogTip
 func (c *Client) CatalogTipyTsenNomenklaturyKontragentov(key PrimaryCatalogTipyTsenNomenklaturyKontragentov, fields []string) (*CatalogTipyTsenNomenklaturyKontragentov, error) {
 	return NewCatalogTipyTsenNomenklaturyKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipyTsenNomenklaturyKontragentovs(where Where) ([]CatalogTipyTsenNomenklaturyKontragentov, error) {
+func (c *Client) CatalogTipyTsenNomenklaturyKontragentovs(where Where) (*[]CatalogTipyTsenNomenklaturyKontragentov, error) {
 	type ReturnObj struct {
 		Value []CatalogTipyTsenNomenklaturyKontragentov `json:"value"`
 	}
@@ -26145,7 +26145,7 @@ func (c *Client) CatalogTipyTsenNomenklaturyKontragentovs(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipyTsenNomenklaturyKontragentov(key PrimaryCatalogTipyTsenNomenklaturyKontragentov, entity CatalogTipyTsenNomenklaturyKontragentov) (*CatalogTipyTsenNomenklaturyKontragentov, error) {
 	return NewCatalogTipyTsenNomenklaturyKontragentov(c.updateEntity(key, entity))
@@ -26189,7 +26189,7 @@ func (c *Client) CreateDocumentJournalTsenoobrazovanie(entity DocumentJournalTse
 func (c *Client) DocumentJournalTsenoobrazovanie(key PrimaryDocumentJournalTsenoobrazovanie, fields []string) (*DocumentJournalTsenoobrazovanie, error) {
 	return NewDocumentJournalTsenoobrazovanie(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalTsenoobrazovanies(where Where) ([]DocumentJournalTsenoobrazovanie, error) {
+func (c *Client) DocumentJournalTsenoobrazovanies(where Where) (*[]DocumentJournalTsenoobrazovanie, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalTsenoobrazovanie `json:"value"`
 	}
@@ -26205,7 +26205,7 @@ func (c *Client) DocumentJournalTsenoobrazovanies(where Where) ([]DocumentJourna
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalTsenoobrazovanie(key PrimaryDocumentJournalTsenoobrazovanie, entity DocumentJournalTsenoobrazovanie) (*DocumentJournalTsenoobrazovanie, error) {
 	return NewDocumentJournalTsenoobrazovanie(c.updateEntity(key, entity))
@@ -26250,7 +26250,7 @@ func (c *Client) CreateCatalogEdinitsyIzmereniia(entity CatalogEdinitsyIzmerenii
 func (c *Client) CatalogEdinitsyIzmereniia(key PrimaryCatalogEdinitsyIzmereniia, fields []string) (*CatalogEdinitsyIzmereniia, error) {
 	return NewCatalogEdinitsyIzmereniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogEdinitsyIzmereniias(where Where) ([]CatalogEdinitsyIzmereniia, error) {
+func (c *Client) CatalogEdinitsyIzmereniias(where Where) (*[]CatalogEdinitsyIzmereniia, error) {
 	type ReturnObj struct {
 		Value []CatalogEdinitsyIzmereniia `json:"value"`
 	}
@@ -26266,7 +26266,7 @@ func (c *Client) CatalogEdinitsyIzmereniias(where Where) ([]CatalogEdinitsyIzmer
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogEdinitsyIzmereniia(key PrimaryCatalogEdinitsyIzmereniia, entity CatalogEdinitsyIzmereniia) (*CatalogEdinitsyIzmereniia, error) {
 	return NewCatalogEdinitsyIzmereniia(c.updateEntity(key, entity))
@@ -26304,7 +26304,7 @@ func (c *Client) CreateCatalogStatiDvizheniiaDenezhnykhSredstv(entity CatalogSta
 func (c *Client) CatalogStatiDvizheniiaDenezhnykhSredstv(key PrimaryCatalogStatiDvizheniiaDenezhnykhSredstv, fields []string) (*CatalogStatiDvizheniiaDenezhnykhSredstv, error) {
 	return NewCatalogStatiDvizheniiaDenezhnykhSredstv(c.getEntity(key, fields))
 }
-func (c *Client) CatalogStatiDvizheniiaDenezhnykhSredstvs(where Where) ([]CatalogStatiDvizheniiaDenezhnykhSredstv, error) {
+func (c *Client) CatalogStatiDvizheniiaDenezhnykhSredstvs(where Where) (*[]CatalogStatiDvizheniiaDenezhnykhSredstv, error) {
 	type ReturnObj struct {
 		Value []CatalogStatiDvizheniiaDenezhnykhSredstv `json:"value"`
 	}
@@ -26320,7 +26320,7 @@ func (c *Client) CatalogStatiDvizheniiaDenezhnykhSredstvs(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogStatiDvizheniiaDenezhnykhSredstv(key PrimaryCatalogStatiDvizheniiaDenezhnykhSredstv, entity CatalogStatiDvizheniiaDenezhnykhSredstv) (*CatalogStatiDvizheniiaDenezhnykhSredstv, error) {
 	return NewCatalogStatiDvizheniiaDenezhnykhSredstv(c.updateEntity(key, entity))
@@ -26385,7 +26385,7 @@ func (c *Client) CreateDocumentInkassovoePorucheniePoluchennoe(entity DocumentIn
 func (c *Client) DocumentInkassovoePorucheniePoluchennoe(key PrimaryDocumentInkassovoePorucheniePoluchennoe, fields []string) (*DocumentInkassovoePorucheniePoluchennoe, error) {
 	return NewDocumentInkassovoePorucheniePoluchennoe(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInkassovoePorucheniePoluchennoes(where Where) ([]DocumentInkassovoePorucheniePoluchennoe, error) {
+func (c *Client) DocumentInkassovoePorucheniePoluchennoes(where Where) (*[]DocumentInkassovoePorucheniePoluchennoe, error) {
 	type ReturnObj struct {
 		Value []DocumentInkassovoePorucheniePoluchennoe `json:"value"`
 	}
@@ -26401,7 +26401,7 @@ func (c *Client) DocumentInkassovoePorucheniePoluchennoes(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInkassovoePorucheniePoluchennoe(key PrimaryDocumentInkassovoePorucheniePoluchennoe, entity DocumentInkassovoePorucheniePoluchennoe) (*DocumentInkassovoePorucheniePoluchennoe, error) {
 	return NewDocumentInkassovoePorucheniePoluchennoe(c.updateEntity(key, entity))
@@ -26450,7 +26450,7 @@ func (c *Client) CreateDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatez
 func (c *Client) DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha(key PrimaryDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha, fields []string) (*DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha, error) {
 	return NewDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezhas(where Where) ([]DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezhas(where Where) (*[]DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha `json:"value"`
 	}
@@ -26466,7 +26466,7 @@ func (c *Client) DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezhas(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha(key PrimaryDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha, entity DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha) (*DocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha, error) {
 	return NewDocumentInkassovoePorucheniePoluchennoeRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -26504,7 +26504,7 @@ func (c *Client) CreateDocumentInkassovoePorucheniePoluchennoeRekvizityKontragen
 func (c *Client) DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta(key PrimaryDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta, fields []string) (*DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta, error) {
 	return NewDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInkassovoePorucheniePoluchennoeRekvizityKontragentas(where Where) ([]DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta, error) {
+func (c *Client) DocumentInkassovoePorucheniePoluchennoeRekvizityKontragentas(where Where) (*[]DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta `json:"value"`
 	}
@@ -26520,7 +26520,7 @@ func (c *Client) DocumentInkassovoePorucheniePoluchennoeRekvizityKontragentas(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta(key PrimaryDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta, entity DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta) (*DocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta, error) {
 	return NewDocumentInkassovoePorucheniePoluchennoeRekvizityKontragenta(c.updateEntity(key, entity))
@@ -26566,7 +26566,7 @@ func (c *Client) CreateCatalogNastroikiObmenaDannymiShtrikhM(entity CatalogNastr
 func (c *Client) CatalogNastroikiObmenaDannymiShtrikhM(key PrimaryCatalogNastroikiObmenaDannymiShtrikhM, fields []string) (*CatalogNastroikiObmenaDannymiShtrikhM, error) {
 	return NewCatalogNastroikiObmenaDannymiShtrikhM(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiObmenaDannymiShtrikhMs(where Where) ([]CatalogNastroikiObmenaDannymiShtrikhM, error) {
+func (c *Client) CatalogNastroikiObmenaDannymiShtrikhMs(where Where) (*[]CatalogNastroikiObmenaDannymiShtrikhM, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiObmenaDannymiShtrikhM `json:"value"`
 	}
@@ -26582,7 +26582,7 @@ func (c *Client) CatalogNastroikiObmenaDannymiShtrikhMs(where Where) ([]CatalogN
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiObmenaDannymiShtrikhM(key PrimaryCatalogNastroikiObmenaDannymiShtrikhM, entity CatalogNastroikiObmenaDannymiShtrikhM) (*CatalogNastroikiObmenaDannymiShtrikhM, error) {
 	return NewCatalogNastroikiObmenaDannymiShtrikhM(c.updateEntity(key, entity))
@@ -26626,7 +26626,7 @@ func (c *Client) CreateCatalogStatiZatrat(entity CatalogStatiZatrat) (*CatalogSt
 func (c *Client) CatalogStatiZatrat(key PrimaryCatalogStatiZatrat, fields []string) (*CatalogStatiZatrat, error) {
 	return NewCatalogStatiZatrat(c.getEntity(key, fields))
 }
-func (c *Client) CatalogStatiZatrats(where Where) ([]CatalogStatiZatrat, error) {
+func (c *Client) CatalogStatiZatrats(where Where) (*[]CatalogStatiZatrat, error) {
 	type ReturnObj struct {
 		Value []CatalogStatiZatrat `json:"value"`
 	}
@@ -26642,7 +26642,7 @@ func (c *Client) CatalogStatiZatrats(where Where) ([]CatalogStatiZatrat, error) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogStatiZatrat(key PrimaryCatalogStatiZatrat, entity CatalogStatiZatrat) (*CatalogStatiZatrat, error) {
 	return NewCatalogStatiZatrat(c.updateEntity(key, entity))
@@ -26714,7 +26714,7 @@ func (c *Client) CreateDocumentVozvratTovarovOtPokupatelia(entity DocumentVozvra
 func (c *Client) DocumentVozvratTovarovOtPokupatelia(key PrimaryDocumentVozvratTovarovOtPokupatelia, fields []string) (*DocumentVozvratTovarovOtPokupatelia, error) {
 	return NewDocumentVozvratTovarovOtPokupatelia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratTovarovOtPokupatelias(where Where) ([]DocumentVozvratTovarovOtPokupatelia, error) {
+func (c *Client) DocumentVozvratTovarovOtPokupatelias(where Where) (*[]DocumentVozvratTovarovOtPokupatelia, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratTovarovOtPokupatelia `json:"value"`
 	}
@@ -26730,7 +26730,7 @@ func (c *Client) DocumentVozvratTovarovOtPokupatelias(where Where) ([]DocumentVo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratTovarovOtPokupatelia(key PrimaryDocumentVozvratTovarovOtPokupatelia, entity DocumentVozvratTovarovOtPokupatelia) (*DocumentVozvratTovarovOtPokupatelia, error) {
 	return NewDocumentVozvratTovarovOtPokupatelia(c.updateEntity(key, entity))
@@ -26788,7 +26788,7 @@ func (c *Client) CreateDocumentVozvratTovarovOtPokupateliaTovary(entity Document
 func (c *Client) DocumentVozvratTovarovOtPokupateliaTovary(key PrimaryDocumentVozvratTovarovOtPokupateliaTovary, fields []string) (*DocumentVozvratTovarovOtPokupateliaTovary, error) {
 	return NewDocumentVozvratTovarovOtPokupateliaTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratTovarovOtPokupateliaTovarys(where Where) ([]DocumentVozvratTovarovOtPokupateliaTovary, error) {
+func (c *Client) DocumentVozvratTovarovOtPokupateliaTovarys(where Where) (*[]DocumentVozvratTovarovOtPokupateliaTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratTovarovOtPokupateliaTovary `json:"value"`
 	}
@@ -26804,7 +26804,7 @@ func (c *Client) DocumentVozvratTovarovOtPokupateliaTovarys(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratTovarovOtPokupateliaTovary(key PrimaryDocumentVozvratTovarovOtPokupateliaTovary, entity DocumentVozvratTovarovOtPokupateliaTovary) (*DocumentVozvratTovarovOtPokupateliaTovary, error) {
 	return NewDocumentVozvratTovarovOtPokupateliaTovary(c.updateEntity(key, entity))
@@ -26848,7 +26848,7 @@ func (c *Client) CreateDocumentVozvratTovarovOtPokupateliaUslugi(entity Document
 func (c *Client) DocumentVozvratTovarovOtPokupateliaUslugi(key PrimaryDocumentVozvratTovarovOtPokupateliaUslugi, fields []string) (*DocumentVozvratTovarovOtPokupateliaUslugi, error) {
 	return NewDocumentVozvratTovarovOtPokupateliaUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratTovarovOtPokupateliaUslugis(where Where) ([]DocumentVozvratTovarovOtPokupateliaUslugi, error) {
+func (c *Client) DocumentVozvratTovarovOtPokupateliaUslugis(where Where) (*[]DocumentVozvratTovarovOtPokupateliaUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratTovarovOtPokupateliaUslugi `json:"value"`
 	}
@@ -26864,7 +26864,7 @@ func (c *Client) DocumentVozvratTovarovOtPokupateliaUslugis(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratTovarovOtPokupateliaUslugi(key PrimaryDocumentVozvratTovarovOtPokupateliaUslugi, entity DocumentVozvratTovarovOtPokupateliaUslugi) (*DocumentVozvratTovarovOtPokupateliaUslugi, error) {
 	return NewDocumentVozvratTovarovOtPokupateliaUslugi(c.updateEntity(key, entity))
@@ -26934,7 +26934,7 @@ func (c *Client) CreateDocumentZakazPostavshchiku(entity DocumentZakazPostavshch
 func (c *Client) DocumentZakazPostavshchiku(key PrimaryDocumentZakazPostavshchiku, fields []string) (*DocumentZakazPostavshchiku, error) {
 	return NewDocumentZakazPostavshchiku(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakazPostavshchikus(where Where) ([]DocumentZakazPostavshchiku, error) {
+func (c *Client) DocumentZakazPostavshchikus(where Where) (*[]DocumentZakazPostavshchiku, error) {
 	type ReturnObj struct {
 		Value []DocumentZakazPostavshchiku `json:"value"`
 	}
@@ -26950,7 +26950,7 @@ func (c *Client) DocumentZakazPostavshchikus(where Where) ([]DocumentZakazPostav
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakazPostavshchiku(key PrimaryDocumentZakazPostavshchiku, entity DocumentZakazPostavshchiku) (*DocumentZakazPostavshchiku, error) {
 	return NewDocumentZakazPostavshchiku(c.updateEntity(key, entity))
@@ -26993,7 +26993,7 @@ func (c *Client) CreateDocumentZakazPostavshchikuTovary(entity DocumentZakazPost
 func (c *Client) DocumentZakazPostavshchikuTovary(key PrimaryDocumentZakazPostavshchikuTovary, fields []string) (*DocumentZakazPostavshchikuTovary, error) {
 	return NewDocumentZakazPostavshchikuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakazPostavshchikuTovarys(where Where) ([]DocumentZakazPostavshchikuTovary, error) {
+func (c *Client) DocumentZakazPostavshchikuTovarys(where Where) (*[]DocumentZakazPostavshchikuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentZakazPostavshchikuTovary `json:"value"`
 	}
@@ -27009,7 +27009,7 @@ func (c *Client) DocumentZakazPostavshchikuTovarys(where Where) ([]DocumentZakaz
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakazPostavshchikuTovary(key PrimaryDocumentZakazPostavshchikuTovary, entity DocumentZakazPostavshchikuTovary) (*DocumentZakazPostavshchikuTovary, error) {
 	return NewDocumentZakazPostavshchikuTovary(c.updateEntity(key, entity))
@@ -27079,7 +27079,7 @@ func (c *Client) CreateCatalogSkidkiNatsenki(entity CatalogSkidkiNatsenki) (*Cat
 func (c *Client) CatalogSkidkiNatsenki(key PrimaryCatalogSkidkiNatsenki, fields []string) (*CatalogSkidkiNatsenki, error) {
 	return NewCatalogSkidkiNatsenki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkidkiNatsenkis(where Where) ([]CatalogSkidkiNatsenki, error) {
+func (c *Client) CatalogSkidkiNatsenkis(where Where) (*[]CatalogSkidkiNatsenki, error) {
 	type ReturnObj struct {
 		Value []CatalogSkidkiNatsenki `json:"value"`
 	}
@@ -27095,7 +27095,7 @@ func (c *Client) CatalogSkidkiNatsenkis(where Where) ([]CatalogSkidkiNatsenki, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkidkiNatsenki(key PrimaryCatalogSkidkiNatsenki, entity CatalogSkidkiNatsenki) (*CatalogSkidkiNatsenki, error) {
 	return NewCatalogSkidkiNatsenki(c.updateEntity(key, entity))
@@ -27130,7 +27130,7 @@ func (c *Client) CreateCatalogSkidkiNatsenkiUsloviiaPredostavleniia(entity Catal
 func (c *Client) CatalogSkidkiNatsenkiUsloviiaPredostavleniia(key PrimaryCatalogSkidkiNatsenkiUsloviiaPredostavleniia, fields []string) (*CatalogSkidkiNatsenkiUsloviiaPredostavleniia, error) {
 	return NewCatalogSkidkiNatsenkiUsloviiaPredostavleniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkidkiNatsenkiUsloviiaPredostavleniias(where Where) ([]CatalogSkidkiNatsenkiUsloviiaPredostavleniia, error) {
+func (c *Client) CatalogSkidkiNatsenkiUsloviiaPredostavleniias(where Where) (*[]CatalogSkidkiNatsenkiUsloviiaPredostavleniia, error) {
 	type ReturnObj struct {
 		Value []CatalogSkidkiNatsenkiUsloviiaPredostavleniia `json:"value"`
 	}
@@ -27146,7 +27146,7 @@ func (c *Client) CatalogSkidkiNatsenkiUsloviiaPredostavleniias(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkidkiNatsenkiUsloviiaPredostavleniia(key PrimaryCatalogSkidkiNatsenkiUsloviiaPredostavleniia, entity CatalogSkidkiNatsenkiUsloviiaPredostavleniia) (*CatalogSkidkiNatsenkiUsloviiaPredostavleniia, error) {
 	return NewCatalogSkidkiNatsenkiUsloviiaPredostavleniia(c.updateEntity(key, entity))
@@ -27182,7 +27182,7 @@ func (c *Client) CreateCatalogSkidkiNatsenkiTsenovyeGruppy(entity CatalogSkidkiN
 func (c *Client) CatalogSkidkiNatsenkiTsenovyeGruppy(key PrimaryCatalogSkidkiNatsenkiTsenovyeGruppy, fields []string) (*CatalogSkidkiNatsenkiTsenovyeGruppy, error) {
 	return NewCatalogSkidkiNatsenkiTsenovyeGruppy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkidkiNatsenkiTsenovyeGruppys(where Where) ([]CatalogSkidkiNatsenkiTsenovyeGruppy, error) {
+func (c *Client) CatalogSkidkiNatsenkiTsenovyeGruppys(where Where) (*[]CatalogSkidkiNatsenkiTsenovyeGruppy, error) {
 	type ReturnObj struct {
 		Value []CatalogSkidkiNatsenkiTsenovyeGruppy `json:"value"`
 	}
@@ -27198,7 +27198,7 @@ func (c *Client) CatalogSkidkiNatsenkiTsenovyeGruppys(where Where) ([]CatalogSki
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkidkiNatsenkiTsenovyeGruppy(key PrimaryCatalogSkidkiNatsenkiTsenovyeGruppy, entity CatalogSkidkiNatsenkiTsenovyeGruppy) (*CatalogSkidkiNatsenkiTsenovyeGruppy, error) {
 	return NewCatalogSkidkiNatsenkiTsenovyeGruppy(c.updateEntity(key, entity))
@@ -27237,7 +27237,7 @@ func (c *Client) CreateCatalogSkidkiNatsenkiNaborPodarkov(entity CatalogSkidkiNa
 func (c *Client) CatalogSkidkiNatsenkiNaborPodarkov(key PrimaryCatalogSkidkiNatsenkiNaborPodarkov, fields []string) (*CatalogSkidkiNatsenkiNaborPodarkov, error) {
 	return NewCatalogSkidkiNatsenkiNaborPodarkov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkidkiNatsenkiNaborPodarkovs(where Where) ([]CatalogSkidkiNatsenkiNaborPodarkov, error) {
+func (c *Client) CatalogSkidkiNatsenkiNaborPodarkovs(where Where) (*[]CatalogSkidkiNatsenkiNaborPodarkov, error) {
 	type ReturnObj struct {
 		Value []CatalogSkidkiNatsenkiNaborPodarkov `json:"value"`
 	}
@@ -27253,7 +27253,7 @@ func (c *Client) CatalogSkidkiNatsenkiNaborPodarkovs(where Where) ([]CatalogSkid
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkidkiNatsenkiNaborPodarkov(key PrimaryCatalogSkidkiNatsenkiNaborPodarkov, entity CatalogSkidkiNatsenkiNaborPodarkov) (*CatalogSkidkiNatsenkiNaborPodarkov, error) {
 	return NewCatalogSkidkiNatsenkiNaborPodarkov(c.updateEntity(key, entity))
@@ -27291,7 +27291,7 @@ func (c *Client) CreateCatalogGruppyTsvetov(entity CatalogGruppyTsvetov) (*Catal
 func (c *Client) CatalogGruppyTsvetov(key PrimaryCatalogGruppyTsvetov, fields []string) (*CatalogGruppyTsvetov, error) {
 	return NewCatalogGruppyTsvetov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyTsvetovs(where Where) ([]CatalogGruppyTsvetov, error) {
+func (c *Client) CatalogGruppyTsvetovs(where Where) (*[]CatalogGruppyTsvetov, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyTsvetov `json:"value"`
 	}
@@ -27307,7 +27307,7 @@ func (c *Client) CatalogGruppyTsvetovs(where Where) ([]CatalogGruppyTsvetov, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyTsvetov(key PrimaryCatalogGruppyTsvetov, entity CatalogGruppyTsvetov) (*CatalogGruppyTsvetov, error) {
 	return NewCatalogGruppyTsvetov(c.updateEntity(key, entity))
@@ -27355,7 +27355,7 @@ func (c *Client) CreateDocumentDokumentRaschetovSKontragentom(entity DocumentDok
 func (c *Client) DocumentDokumentRaschetovSKontragentom(key PrimaryDocumentDokumentRaschetovSKontragentom, fields []string) (*DocumentDokumentRaschetovSKontragentom, error) {
 	return NewDocumentDokumentRaschetovSKontragentom(c.getEntity(key, fields))
 }
-func (c *Client) DocumentDokumentRaschetovSKontragentoms(where Where) ([]DocumentDokumentRaschetovSKontragentom, error) {
+func (c *Client) DocumentDokumentRaschetovSKontragentoms(where Where) (*[]DocumentDokumentRaschetovSKontragentom, error) {
 	type ReturnObj struct {
 		Value []DocumentDokumentRaschetovSKontragentom `json:"value"`
 	}
@@ -27371,7 +27371,7 @@ func (c *Client) DocumentDokumentRaschetovSKontragentoms(where Where) ([]Documen
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentDokumentRaschetovSKontragentom(key PrimaryDocumentDokumentRaschetovSKontragentom, entity DocumentDokumentRaschetovSKontragentom) (*DocumentDokumentRaschetovSKontragentom, error) {
 	return NewDocumentDokumentRaschetovSKontragentom(c.updateEntity(key, entity))
@@ -27412,7 +27412,7 @@ func (c *Client) CreateCatalogDogovoryEkvairinga(entity CatalogDogovoryEkvairing
 func (c *Client) CatalogDogovoryEkvairinga(key PrimaryCatalogDogovoryEkvairinga, fields []string) (*CatalogDogovoryEkvairinga, error) {
 	return NewCatalogDogovoryEkvairinga(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDogovoryEkvairingas(where Where) ([]CatalogDogovoryEkvairinga, error) {
+func (c *Client) CatalogDogovoryEkvairingas(where Where) (*[]CatalogDogovoryEkvairinga, error) {
 	type ReturnObj struct {
 		Value []CatalogDogovoryEkvairinga `json:"value"`
 	}
@@ -27428,7 +27428,7 @@ func (c *Client) CatalogDogovoryEkvairingas(where Where) ([]CatalogDogovoryEkvai
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDogovoryEkvairinga(key PrimaryCatalogDogovoryEkvairinga, entity CatalogDogovoryEkvairinga) (*CatalogDogovoryEkvairinga, error) {
 	return NewCatalogDogovoryEkvairinga(c.updateEntity(key, entity))
@@ -27464,7 +27464,7 @@ func (c *Client) CreateCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie(
 func (c *Client) CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie(key PrimaryCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie, fields []string) (*CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie, error) {
 	return NewCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanies(where Where) ([]CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie, error) {
+func (c *Client) CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanies(where Where) (*[]CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie, error) {
 	type ReturnObj struct {
 		Value []CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie `json:"value"`
 	}
@@ -27480,7 +27480,7 @@ func (c *Client) CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanies(where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie(key PrimaryCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie, entity CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie) (*CatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie, error) {
 	return NewCatalogDogovoryEkvairingaTarifyZaRaschetnoeObsluzhivanie(c.updateEntity(key, entity))
@@ -27517,7 +27517,7 @@ func (c *Client) CreateCatalogKachestvo(entity CatalogKachestvo) (*CatalogKaches
 func (c *Client) CatalogKachestvo(key PrimaryCatalogKachestvo, fields []string) (*CatalogKachestvo, error) {
 	return NewCatalogKachestvo(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKachestvos(where Where) ([]CatalogKachestvo, error) {
+func (c *Client) CatalogKachestvos(where Where) (*[]CatalogKachestvo, error) {
 	type ReturnObj struct {
 		Value []CatalogKachestvo `json:"value"`
 	}
@@ -27533,7 +27533,7 @@ func (c *Client) CatalogKachestvos(where Where) ([]CatalogKachestvo, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKachestvo(key PrimaryCatalogKachestvo, entity CatalogKachestvo) (*CatalogKachestvo, error) {
 	return NewCatalogKachestvo(c.updateEntity(key, entity))
@@ -27580,7 +27580,7 @@ func (c *Client) CreateDocumentUstanovkaTsenNomenklaturyKontragentov(entity Docu
 func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentov(key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentov, fields []string) (*DocumentUstanovkaTsenNomenklaturyKontragentov, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovs(where Where) ([]DocumentUstanovkaTsenNomenklaturyKontragentov, error) {
+func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovs(where Where) (*[]DocumentUstanovkaTsenNomenklaturyKontragentov, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaTsenNomenklaturyKontragentov `json:"value"`
 	}
@@ -27596,7 +27596,7 @@ func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovs(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaTsenNomenklaturyKontragentov(key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentov, entity DocumentUstanovkaTsenNomenklaturyKontragentov) (*DocumentUstanovkaTsenNomenklaturyKontragentov, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyKontragentov(c.updateEntity(key, entity))
@@ -27631,7 +27631,7 @@ func (c *Client) CreateDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen(ent
 func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen(key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen, fields []string) (*DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsens(where Where) ([]DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen, error) {
+func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsens(where Where) (*[]DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen `json:"value"`
 	}
@@ -27647,7 +27647,7 @@ func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsens(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen(key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen, entity DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen) (*DocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyKontragentovTipyTsen(c.updateEntity(key, entity))
@@ -27688,7 +27688,7 @@ func (c *Client) CreateDocumentUstanovkaTsenNomenklaturyKontragentovTovary(entit
 func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTovary(key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTovary, fields []string) (*DocumentUstanovkaTsenNomenklaturyKontragentovTovary, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyKontragentovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTovarys(where Where) ([]DocumentUstanovkaTsenNomenklaturyKontragentovTovary, error) {
+func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTovarys(where Where) (*[]DocumentUstanovkaTsenNomenklaturyKontragentovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaTsenNomenklaturyKontragentovTovary `json:"value"`
 	}
@@ -27704,7 +27704,7 @@ func (c *Client) DocumentUstanovkaTsenNomenklaturyKontragentovTovarys(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaTsenNomenklaturyKontragentovTovary(key PrimaryDocumentUstanovkaTsenNomenklaturyKontragentovTovary, entity DocumentUstanovkaTsenNomenklaturyKontragentovTovary) (*DocumentUstanovkaTsenNomenklaturyKontragentovTovary, error) {
 	return NewDocumentUstanovkaTsenNomenklaturyKontragentovTovary(c.updateEntity(key, entity))
@@ -27749,7 +27749,7 @@ func (c *Client) CreateDocumentProtsentPoterPoDavaltsam(entity DocumentProtsentP
 func (c *Client) DocumentProtsentPoterPoDavaltsam(key PrimaryDocumentProtsentPoterPoDavaltsam, fields []string) (*DocumentProtsentPoterPoDavaltsam, error) {
 	return NewDocumentProtsentPoterPoDavaltsam(c.getEntity(key, fields))
 }
-func (c *Client) DocumentProtsentPoterPoDavaltsams(where Where) ([]DocumentProtsentPoterPoDavaltsam, error) {
+func (c *Client) DocumentProtsentPoterPoDavaltsams(where Where) (*[]DocumentProtsentPoterPoDavaltsam, error) {
 	type ReturnObj struct {
 		Value []DocumentProtsentPoterPoDavaltsam `json:"value"`
 	}
@@ -27765,7 +27765,7 @@ func (c *Client) DocumentProtsentPoterPoDavaltsams(where Where) ([]DocumentProts
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentProtsentPoterPoDavaltsam(key PrimaryDocumentProtsentPoterPoDavaltsam, entity DocumentProtsentPoterPoDavaltsam) (*DocumentProtsentPoterPoDavaltsam, error) {
 	return NewDocumentProtsentPoterPoDavaltsam(c.updateEntity(key, entity))
@@ -27801,7 +27801,7 @@ func (c *Client) CreateDocumentProtsentPoterPoDavaltsamProtsenty(entity Document
 func (c *Client) DocumentProtsentPoterPoDavaltsamProtsenty(key PrimaryDocumentProtsentPoterPoDavaltsamProtsenty, fields []string) (*DocumentProtsentPoterPoDavaltsamProtsenty, error) {
 	return NewDocumentProtsentPoterPoDavaltsamProtsenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentProtsentPoterPoDavaltsamProtsentys(where Where) ([]DocumentProtsentPoterPoDavaltsamProtsenty, error) {
+func (c *Client) DocumentProtsentPoterPoDavaltsamProtsentys(where Where) (*[]DocumentProtsentPoterPoDavaltsamProtsenty, error) {
 	type ReturnObj struct {
 		Value []DocumentProtsentPoterPoDavaltsamProtsenty `json:"value"`
 	}
@@ -27817,7 +27817,7 @@ func (c *Client) DocumentProtsentPoterPoDavaltsamProtsentys(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentProtsentPoterPoDavaltsamProtsenty(key PrimaryDocumentProtsentPoterPoDavaltsamProtsenty, entity DocumentProtsentPoterPoDavaltsamProtsenty) (*DocumentProtsentPoterPoDavaltsamProtsenty, error) {
 	return NewDocumentProtsentPoterPoDavaltsamProtsenty(c.updateEntity(key, entity))
@@ -27867,7 +27867,7 @@ func (c *Client) CreateCatalogTovarnyePozitsii(entity CatalogTovarnyePozitsii) (
 func (c *Client) CatalogTovarnyePozitsii(key PrimaryCatalogTovarnyePozitsii, fields []string) (*CatalogTovarnyePozitsii, error) {
 	return NewCatalogTovarnyePozitsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTovarnyePozitsiis(where Where) ([]CatalogTovarnyePozitsii, error) {
+func (c *Client) CatalogTovarnyePozitsiis(where Where) (*[]CatalogTovarnyePozitsii, error) {
 	type ReturnObj struct {
 		Value []CatalogTovarnyePozitsii `json:"value"`
 	}
@@ -27883,7 +27883,7 @@ func (c *Client) CatalogTovarnyePozitsiis(where Where) ([]CatalogTovarnyePozitsi
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTovarnyePozitsii(key PrimaryCatalogTovarnyePozitsii, entity CatalogTovarnyePozitsii) (*CatalogTovarnyePozitsii, error) {
 	return NewCatalogTovarnyePozitsii(c.updateEntity(key, entity))
@@ -27963,7 +27963,7 @@ func (c *Client) CreateDocumentPlatezhnoePoruchenieIskhodiashchee(entity Documen
 func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashchee(key PrimaryDocumentPlatezhnoePoruchenieIskhodiashchee, fields []string) (*DocumentPlatezhnoePoruchenieIskhodiashchee, error) {
 	return NewDocumentPlatezhnoePoruchenieIskhodiashchee(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashchees(where Where) ([]DocumentPlatezhnoePoruchenieIskhodiashchee, error) {
+func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashchees(where Where) (*[]DocumentPlatezhnoePoruchenieIskhodiashchee, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoePoruchenieIskhodiashchee `json:"value"`
 	}
@@ -27979,7 +27979,7 @@ func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashchees(where Where) ([]Doc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoePoruchenieIskhodiashchee(key PrimaryDocumentPlatezhnoePoruchenieIskhodiashchee, entity DocumentPlatezhnoePoruchenieIskhodiashchee) (*DocumentPlatezhnoePoruchenieIskhodiashchee, error) {
 	return NewDocumentPlatezhnoePoruchenieIskhodiashchee(c.updateEntity(key, entity))
@@ -28027,7 +28027,7 @@ func (c *Client) CreateDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPla
 func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha, fields []string) (*DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezhas(where Where) ([]DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezhas(where Where) (*[]DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha `json:"value"`
 	}
@@ -28043,7 +28043,7 @@ func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezhas
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha(key PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha, entity DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha) (*DocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha, error) {
 	return NewDocumentPlatezhnoePoruchenieIskhodiashcheeRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -28081,7 +28081,7 @@ func (c *Client) CreateDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontra
 func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta(key PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta, fields []string) (*DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragentas(where Where) ([]DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta, error) {
+func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragentas(where Where) (*[]DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta, error) {
 	type ReturnObj struct {
 		Value []DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta `json:"value"`
 	}
@@ -28097,7 +28097,7 @@ func (c *Client) DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragentas
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta(key PrimaryDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta, entity DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta) (*DocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta, error) {
 	return NewDocumentPlatezhnoePoruchenieIskhodiashcheeRekvizityKontragenta(c.updateEntity(key, entity))
@@ -28135,7 +28135,7 @@ func (c *Client) CreateCatalogfmOrganizatsionnoPravovyeFormy(entity CatalogfmOrg
 func (c *Client) CatalogfmOrganizatsionnoPravovyeFormy(key PrimaryCatalogfmOrganizatsionnoPravovyeFormy, fields []string) (*CatalogfmOrganizatsionnoPravovyeFormy, error) {
 	return NewCatalogfmOrganizatsionnoPravovyeFormy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmOrganizatsionnoPravovyeFormys(where Where) ([]CatalogfmOrganizatsionnoPravovyeFormy, error) {
+func (c *Client) CatalogfmOrganizatsionnoPravovyeFormys(where Where) (*[]CatalogfmOrganizatsionnoPravovyeFormy, error) {
 	type ReturnObj struct {
 		Value []CatalogfmOrganizatsionnoPravovyeFormy `json:"value"`
 	}
@@ -28151,7 +28151,7 @@ func (c *Client) CatalogfmOrganizatsionnoPravovyeFormys(where Where) ([]Catalogf
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmOrganizatsionnoPravovyeFormy(key PrimaryCatalogfmOrganizatsionnoPravovyeFormy, entity CatalogfmOrganizatsionnoPravovyeFormy) (*CatalogfmOrganizatsionnoPravovyeFormy, error) {
 	return NewCatalogfmOrganizatsionnoPravovyeFormy(c.updateEntity(key, entity))
@@ -28202,7 +28202,7 @@ func (c *Client) CreateCatalogTipyTsenNomenklatury(entity CatalogTipyTsenNomenkl
 func (c *Client) CatalogTipyTsenNomenklatury(key PrimaryCatalogTipyTsenNomenklatury, fields []string) (*CatalogTipyTsenNomenklatury, error) {
 	return NewCatalogTipyTsenNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipyTsenNomenklaturys(where Where) ([]CatalogTipyTsenNomenklatury, error) {
+func (c *Client) CatalogTipyTsenNomenklaturys(where Where) (*[]CatalogTipyTsenNomenklatury, error) {
 	type ReturnObj struct {
 		Value []CatalogTipyTsenNomenklatury `json:"value"`
 	}
@@ -28218,7 +28218,7 @@ func (c *Client) CatalogTipyTsenNomenklaturys(where Where) ([]CatalogTipyTsenNom
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipyTsenNomenklatury(key PrimaryCatalogTipyTsenNomenklatury, entity CatalogTipyTsenNomenklatury) (*CatalogTipyTsenNomenklatury, error) {
 	return NewCatalogTipyTsenNomenklatury(c.updateEntity(key, entity))
@@ -28257,7 +28257,7 @@ func (c *Client) CreateCatalogStatiOtchetaPoProdazham(entity CatalogStatiOtcheta
 func (c *Client) CatalogStatiOtchetaPoProdazham(key PrimaryCatalogStatiOtchetaPoProdazham, fields []string) (*CatalogStatiOtchetaPoProdazham, error) {
 	return NewCatalogStatiOtchetaPoProdazham(c.getEntity(key, fields))
 }
-func (c *Client) CatalogStatiOtchetaPoProdazhams(where Where) ([]CatalogStatiOtchetaPoProdazham, error) {
+func (c *Client) CatalogStatiOtchetaPoProdazhams(where Where) (*[]CatalogStatiOtchetaPoProdazham, error) {
 	type ReturnObj struct {
 		Value []CatalogStatiOtchetaPoProdazham `json:"value"`
 	}
@@ -28273,7 +28273,7 @@ func (c *Client) CatalogStatiOtchetaPoProdazhams(where Where) ([]CatalogStatiOtc
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogStatiOtchetaPoProdazham(key PrimaryCatalogStatiOtchetaPoProdazham, entity CatalogStatiOtchetaPoProdazham) (*CatalogStatiOtchetaPoProdazham, error) {
 	return NewCatalogStatiOtchetaPoProdazham(c.updateEntity(key, entity))
@@ -28311,7 +28311,7 @@ func (c *Client) CreateCatalogVidyKodirovokiIzdelii(entity CatalogVidyKodirovoki
 func (c *Client) CatalogVidyKodirovokiIzdelii(key PrimaryCatalogVidyKodirovokiIzdelii, fields []string) (*CatalogVidyKodirovokiIzdelii, error) {
 	return NewCatalogVidyKodirovokiIzdelii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKodirovokiIzdeliis(where Where) ([]CatalogVidyKodirovokiIzdelii, error) {
+func (c *Client) CatalogVidyKodirovokiIzdeliis(where Where) (*[]CatalogVidyKodirovokiIzdelii, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKodirovokiIzdelii `json:"value"`
 	}
@@ -28327,7 +28327,7 @@ func (c *Client) CatalogVidyKodirovokiIzdeliis(where Where) ([]CatalogVidyKodiro
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKodirovokiIzdelii(key PrimaryCatalogVidyKodirovokiIzdelii, entity CatalogVidyKodirovokiIzdelii) (*CatalogVidyKodirovokiIzdelii, error) {
 	return NewCatalogVidyKodirovokiIzdelii(c.updateEntity(key, entity))
@@ -28365,7 +28365,7 @@ func (c *Client) CreateCatalogVidyKodirovokiIzdeliiElementyKodirovki(entity Cata
 func (c *Client) CatalogVidyKodirovokiIzdeliiElementyKodirovki(key PrimaryCatalogVidyKodirovokiIzdeliiElementyKodirovki, fields []string) (*CatalogVidyKodirovokiIzdeliiElementyKodirovki, error) {
 	return NewCatalogVidyKodirovokiIzdeliiElementyKodirovki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKodirovokiIzdeliiElementyKodirovkis(where Where) ([]CatalogVidyKodirovokiIzdeliiElementyKodirovki, error) {
+func (c *Client) CatalogVidyKodirovokiIzdeliiElementyKodirovkis(where Where) (*[]CatalogVidyKodirovokiIzdeliiElementyKodirovki, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKodirovokiIzdeliiElementyKodirovki `json:"value"`
 	}
@@ -28381,7 +28381,7 @@ func (c *Client) CatalogVidyKodirovokiIzdeliiElementyKodirovkis(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKodirovokiIzdeliiElementyKodirovki(key PrimaryCatalogVidyKodirovokiIzdeliiElementyKodirovki, entity CatalogVidyKodirovokiIzdeliiElementyKodirovki) (*CatalogVidyKodirovokiIzdeliiElementyKodirovki, error) {
 	return NewCatalogVidyKodirovokiIzdeliiElementyKodirovki(c.updateEntity(key, entity))
@@ -28444,7 +28444,7 @@ func (c *Client) CreateDocumentUstanovkaSkidokNomenklatury(entity DocumentUstano
 func (c *Client) DocumentUstanovkaSkidokNomenklatury(key PrimaryDocumentUstanovkaSkidokNomenklatury, fields []string) (*DocumentUstanovkaSkidokNomenklatury, error) {
 	return NewDocumentUstanovkaSkidokNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaSkidokNomenklaturys(where Where) ([]DocumentUstanovkaSkidokNomenklatury, error) {
+func (c *Client) DocumentUstanovkaSkidokNomenklaturys(where Where) (*[]DocumentUstanovkaSkidokNomenklatury, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaSkidokNomenklatury `json:"value"`
 	}
@@ -28460,7 +28460,7 @@ func (c *Client) DocumentUstanovkaSkidokNomenklaturys(where Where) ([]DocumentUs
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaSkidokNomenklatury(key PrimaryDocumentUstanovkaSkidokNomenklatury, entity DocumentUstanovkaSkidokNomenklatury) (*DocumentUstanovkaSkidokNomenklatury, error) {
 	return NewDocumentUstanovkaSkidokNomenklatury(c.updateEntity(key, entity))
@@ -28498,7 +28498,7 @@ func (c *Client) CreateDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli(en
 func (c *Client) DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli(key PrimaryDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli, fields []string) (*DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedelis(where Where) ([]DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli, error) {
+func (c *Client) DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedelis(where Where) (*[]DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli `json:"value"`
 	}
@@ -28514,7 +28514,7 @@ func (c *Client) DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedelis(where W
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli(key PrimaryDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli, entity DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli) (*DocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyVremiaPoDniamNedeli(c.updateEntity(key, entity))
@@ -28549,7 +28549,7 @@ func (c *Client) CreateDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty(entity
 func (c *Client) DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty(key PrimaryDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty, fields []string) (*DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaSkidokNomenklaturyDiskontnyeKartys(where Where) ([]DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty, error) {
+func (c *Client) DocumentUstanovkaSkidokNomenklaturyDiskontnyeKartys(where Where) (*[]DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty `json:"value"`
 	}
@@ -28565,7 +28565,7 @@ func (c *Client) DocumentUstanovkaSkidokNomenklaturyDiskontnyeKartys(where Where
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty(key PrimaryDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty, entity DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty) (*DocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyDiskontnyeKarty(c.updateEntity(key, entity))
@@ -28601,7 +28601,7 @@ func (c *Client) CreateDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki(enti
 func (c *Client) DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki(key PrimaryDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki, fields []string) (*DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidkis(where Where) ([]DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki, error) {
+func (c *Client) DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidkis(where Where) (*[]DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki `json:"value"`
 	}
@@ -28617,7 +28617,7 @@ func (c *Client) DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidkis(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki(key PrimaryDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki, entity DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki) (*DocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyPoluchateliSkidki(c.updateEntity(key, entity))
@@ -28654,7 +28654,7 @@ func (c *Client) CreateDocumentUstanovkaSkidokNomenklaturyTovary(entity Document
 func (c *Client) DocumentUstanovkaSkidokNomenklaturyTovary(key PrimaryDocumentUstanovkaSkidokNomenklaturyTovary, fields []string) (*DocumentUstanovkaSkidokNomenklaturyTovary, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentUstanovkaSkidokNomenklaturyTovarys(where Where) ([]DocumentUstanovkaSkidokNomenklaturyTovary, error) {
+func (c *Client) DocumentUstanovkaSkidokNomenklaturyTovarys(where Where) (*[]DocumentUstanovkaSkidokNomenklaturyTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentUstanovkaSkidokNomenklaturyTovary `json:"value"`
 	}
@@ -28670,7 +28670,7 @@ func (c *Client) DocumentUstanovkaSkidokNomenklaturyTovarys(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentUstanovkaSkidokNomenklaturyTovary(key PrimaryDocumentUstanovkaSkidokNomenklaturyTovary, entity DocumentUstanovkaSkidokNomenklaturyTovary) (*DocumentUstanovkaSkidokNomenklaturyTovary, error) {
 	return NewDocumentUstanovkaSkidokNomenklaturyTovary(c.updateEntity(key, entity))
@@ -28730,7 +28730,7 @@ func (c *Client) CreateCatalogUsloviiaPredostavleniiaSkidokNatsenok(entity Catal
 func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenok(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenok, fields []string) (*CatalogUsloviiaPredostavleniiaSkidokNatsenok, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenok(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenoks(where Where) ([]CatalogUsloviiaPredostavleniiaSkidokNatsenok, error) {
+func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenoks(where Where) (*[]CatalogUsloviiaPredostavleniiaSkidokNatsenok, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaPredostavleniiaSkidokNatsenok `json:"value"`
 	}
@@ -28746,7 +28746,7 @@ func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenoks(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaPredostavleniiaSkidokNatsenok(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenok, entity CatalogUsloviiaPredostavleniiaSkidokNatsenok) (*CatalogUsloviiaPredostavleniiaSkidokNatsenok, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenok(c.updateEntity(key, entity))
@@ -28783,7 +28783,7 @@ func (c *Client) CreateCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistvi
 func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia, fields []string) (*CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviias(where Where) ([]CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia, error) {
+func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviias(where Where) (*[]CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia `json:"value"`
 	}
@@ -28799,7 +28799,7 @@ func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviias(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia, entity CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia) (*CatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenokVremiaDeistviia(c.updateEntity(key, entity))
@@ -28835,7 +28835,7 @@ func (c *Client) CreateCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli(e
 func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli, fields []string) (*CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchatelis(where Where) ([]CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli, error) {
+func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchatelis(where Where) (*[]CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli `json:"value"`
 	}
@@ -28851,7 +28851,7 @@ func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchatelis(where 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli, entity CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli) (*CatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenokPoluchateli(c.updateEntity(key, entity))
@@ -28890,7 +28890,7 @@ func (c *Client) CreateCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokup
 func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki, fields []string) (*CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki(c.getEntity(key, fields))
 }
-func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupkis(where Where) ([]CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki, error) {
+func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupkis(where Where) (*[]CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki, error) {
 	type ReturnObj struct {
 		Value []CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki `json:"value"`
 	}
@@ -28906,7 +28906,7 @@ func (c *Client) CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupkis(wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki(key PrimaryCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki, entity CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki) (*CatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki, error) {
 	return NewCatalogUsloviiaPredostavleniiaSkidokNatsenokKomplektPokupki(c.updateEntity(key, entity))
@@ -28983,7 +28983,7 @@ func (c *Client) CreateOutPay(entity OutPay) (*OutPay, error) {
 func (c *Client) OutPay(key PrimaryOutPay, fields []string) (*OutPay, error) {
 	return NewOutPay(c.getEntity(key, fields))
 }
-func (c *Client) OutPays(where Where) ([]OutPay, error) {
+func (c *Client) OutPays(where Where) (*[]OutPay, error) {
 	type ReturnObj struct {
 		Value []OutPay `json:"value"`
 	}
@@ -28999,7 +28999,7 @@ func (c *Client) OutPays(where Where) ([]OutPay, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateOutPay(key PrimaryOutPay, entity OutPay) (*OutPay, error) {
 	return NewOutPay(c.updateEntity(key, entity))
@@ -29047,7 +29047,7 @@ func (c *Client) CreateDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha(entit
 func (c *Client) DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha(key PrimaryDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha, fields []string) (*DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
 	return NewDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezhas(where Where) ([]DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
+func (c *Client) DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezhas(where Where) (*[]DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
 	type ReturnObj struct {
 		Value []DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha `json:"value"`
 	}
@@ -29063,7 +29063,7 @@ func (c *Client) DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezhas(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha(key PrimaryDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha, entity DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha) (*DocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha, error) {
 	return NewDocumentRaskhodnyiKassovyiOrderRasshifrovkaPlatezha(c.updateEntity(key, entity))
@@ -29099,7 +29099,7 @@ func (c *Client) CreateDocumentRaskhodnyiKassovyiOrderOplata(entity DocumentRask
 func (c *Client) DocumentRaskhodnyiKassovyiOrderOplata(key PrimaryDocumentRaskhodnyiKassovyiOrderOplata, fields []string) (*DocumentRaskhodnyiKassovyiOrderOplata, error) {
 	return NewDocumentRaskhodnyiKassovyiOrderOplata(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRaskhodnyiKassovyiOrderOplatas(where Where) ([]DocumentRaskhodnyiKassovyiOrderOplata, error) {
+func (c *Client) DocumentRaskhodnyiKassovyiOrderOplatas(where Where) (*[]DocumentRaskhodnyiKassovyiOrderOplata, error) {
 	type ReturnObj struct {
 		Value []DocumentRaskhodnyiKassovyiOrderOplata `json:"value"`
 	}
@@ -29115,7 +29115,7 @@ func (c *Client) DocumentRaskhodnyiKassovyiOrderOplatas(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRaskhodnyiKassovyiOrderOplata(key PrimaryDocumentRaskhodnyiKassovyiOrderOplata, entity DocumentRaskhodnyiKassovyiOrderOplata) (*DocumentRaskhodnyiKassovyiOrderOplata, error) {
 	return NewDocumentRaskhodnyiKassovyiOrderOplata(c.updateEntity(key, entity))
@@ -29167,7 +29167,7 @@ func (c *Client) CreateDocumentRaskhodnyiKassovyiOrderTovary(entity DocumentRask
 func (c *Client) DocumentRaskhodnyiKassovyiOrderTovary(key PrimaryDocumentRaskhodnyiKassovyiOrderTovary, fields []string) (*DocumentRaskhodnyiKassovyiOrderTovary, error) {
 	return NewDocumentRaskhodnyiKassovyiOrderTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRaskhodnyiKassovyiOrderTovarys(where Where) ([]DocumentRaskhodnyiKassovyiOrderTovary, error) {
+func (c *Client) DocumentRaskhodnyiKassovyiOrderTovarys(where Where) (*[]DocumentRaskhodnyiKassovyiOrderTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentRaskhodnyiKassovyiOrderTovary `json:"value"`
 	}
@@ -29183,7 +29183,7 @@ func (c *Client) DocumentRaskhodnyiKassovyiOrderTovarys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRaskhodnyiKassovyiOrderTovary(key PrimaryDocumentRaskhodnyiKassovyiOrderTovary, entity DocumentRaskhodnyiKassovyiOrderTovary) (*DocumentRaskhodnyiKassovyiOrderTovary, error) {
 	return NewDocumentRaskhodnyiKassovyiOrderTovary(c.updateEntity(key, entity))
@@ -29249,7 +29249,7 @@ func (c *Client) CreateDocumentSchetNaOplatuPostavshchika(entity DocumentSchetNa
 func (c *Client) DocumentSchetNaOplatuPostavshchika(key PrimaryDocumentSchetNaOplatuPostavshchika, fields []string) (*DocumentSchetNaOplatuPostavshchika, error) {
 	return NewDocumentSchetNaOplatuPostavshchika(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetNaOplatuPostavshchikas(where Where) ([]DocumentSchetNaOplatuPostavshchika, error) {
+func (c *Client) DocumentSchetNaOplatuPostavshchikas(where Where) (*[]DocumentSchetNaOplatuPostavshchika, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetNaOplatuPostavshchika `json:"value"`
 	}
@@ -29265,7 +29265,7 @@ func (c *Client) DocumentSchetNaOplatuPostavshchikas(where Where) ([]DocumentSch
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetNaOplatuPostavshchika(key PrimaryDocumentSchetNaOplatuPostavshchika, entity DocumentSchetNaOplatuPostavshchika) (*DocumentSchetNaOplatuPostavshchika, error) {
 	return NewDocumentSchetNaOplatuPostavshchika(c.updateEntity(key, entity))
@@ -29309,7 +29309,7 @@ func (c *Client) CreateDocumentSchetNaOplatuPostavshchikaTovary(entity DocumentS
 func (c *Client) DocumentSchetNaOplatuPostavshchikaTovary(key PrimaryDocumentSchetNaOplatuPostavshchikaTovary, fields []string) (*DocumentSchetNaOplatuPostavshchikaTovary, error) {
 	return NewDocumentSchetNaOplatuPostavshchikaTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetNaOplatuPostavshchikaTovarys(where Where) ([]DocumentSchetNaOplatuPostavshchikaTovary, error) {
+func (c *Client) DocumentSchetNaOplatuPostavshchikaTovarys(where Where) (*[]DocumentSchetNaOplatuPostavshchikaTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetNaOplatuPostavshchikaTovary `json:"value"`
 	}
@@ -29325,7 +29325,7 @@ func (c *Client) DocumentSchetNaOplatuPostavshchikaTovarys(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetNaOplatuPostavshchikaTovary(key PrimaryDocumentSchetNaOplatuPostavshchikaTovary, entity DocumentSchetNaOplatuPostavshchikaTovary) (*DocumentSchetNaOplatuPostavshchikaTovary, error) {
 	return NewDocumentSchetNaOplatuPostavshchikaTovary(c.updateEntity(key, entity))
@@ -29366,7 +29366,7 @@ func (c *Client) CreateDocumentSchetNaOplatuPostavshchikaUslugi(entity DocumentS
 func (c *Client) DocumentSchetNaOplatuPostavshchikaUslugi(key PrimaryDocumentSchetNaOplatuPostavshchikaUslugi, fields []string) (*DocumentSchetNaOplatuPostavshchikaUslugi, error) {
 	return NewDocumentSchetNaOplatuPostavshchikaUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetNaOplatuPostavshchikaUslugis(where Where) ([]DocumentSchetNaOplatuPostavshchikaUslugi, error) {
+func (c *Client) DocumentSchetNaOplatuPostavshchikaUslugis(where Where) (*[]DocumentSchetNaOplatuPostavshchikaUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetNaOplatuPostavshchikaUslugi `json:"value"`
 	}
@@ -29382,7 +29382,7 @@ func (c *Client) DocumentSchetNaOplatuPostavshchikaUslugis(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetNaOplatuPostavshchikaUslugi(key PrimaryDocumentSchetNaOplatuPostavshchikaUslugi, entity DocumentSchetNaOplatuPostavshchikaUslugi) (*DocumentSchetNaOplatuPostavshchikaUslugi, error) {
 	return NewDocumentSchetNaOplatuPostavshchikaUslugi(c.updateEntity(key, entity))
@@ -29426,7 +29426,7 @@ func (c *Client) CreateDocumentReestrSpetssviaz(entity DocumentReestrSpetssviaz)
 func (c *Client) DocumentReestrSpetssviaz(key PrimaryDocumentReestrSpetssviaz, fields []string) (*DocumentReestrSpetssviaz, error) {
 	return NewDocumentReestrSpetssviaz(c.getEntity(key, fields))
 }
-func (c *Client) DocumentReestrSpetssviazs(where Where) ([]DocumentReestrSpetssviaz, error) {
+func (c *Client) DocumentReestrSpetssviazs(where Where) (*[]DocumentReestrSpetssviaz, error) {
 	type ReturnObj struct {
 		Value []DocumentReestrSpetssviaz `json:"value"`
 	}
@@ -29442,7 +29442,7 @@ func (c *Client) DocumentReestrSpetssviazs(where Where) ([]DocumentReestrSpetssv
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentReestrSpetssviaz(key PrimaryDocumentReestrSpetssviaz, entity DocumentReestrSpetssviaz) (*DocumentReestrSpetssviaz, error) {
 	return NewDocumentReestrSpetssviaz(c.updateEntity(key, entity))
@@ -29484,7 +29484,7 @@ func (c *Client) CreateDocumentReestrSpetssviazKlienty(entity DocumentReestrSpet
 func (c *Client) DocumentReestrSpetssviazKlienty(key PrimaryDocumentReestrSpetssviazKlienty, fields []string) (*DocumentReestrSpetssviazKlienty, error) {
 	return NewDocumentReestrSpetssviazKlienty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentReestrSpetssviazKlientys(where Where) ([]DocumentReestrSpetssviazKlienty, error) {
+func (c *Client) DocumentReestrSpetssviazKlientys(where Where) (*[]DocumentReestrSpetssviazKlienty, error) {
 	type ReturnObj struct {
 		Value []DocumentReestrSpetssviazKlienty `json:"value"`
 	}
@@ -29500,7 +29500,7 @@ func (c *Client) DocumentReestrSpetssviazKlientys(where Where) ([]DocumentReestr
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentReestrSpetssviazKlienty(key PrimaryDocumentReestrSpetssviazKlienty, entity DocumentReestrSpetssviazKlienty) (*DocumentReestrSpetssviazKlienty, error) {
 	return NewDocumentReestrSpetssviazKlienty(c.updateEntity(key, entity))
@@ -29554,7 +29554,7 @@ func (c *Client) CreateDocumentJournalKassovyeDokumenty(entity DocumentJournalKa
 func (c *Client) DocumentJournalKassovyeDokumenty(key PrimaryDocumentJournalKassovyeDokumenty, fields []string) (*DocumentJournalKassovyeDokumenty, error) {
 	return NewDocumentJournalKassovyeDokumenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalKassovyeDokumentys(where Where) ([]DocumentJournalKassovyeDokumenty, error) {
+func (c *Client) DocumentJournalKassovyeDokumentys(where Where) (*[]DocumentJournalKassovyeDokumenty, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalKassovyeDokumenty `json:"value"`
 	}
@@ -29570,7 +29570,7 @@ func (c *Client) DocumentJournalKassovyeDokumentys(where Where) ([]DocumentJourn
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalKassovyeDokumenty(key PrimaryDocumentJournalKassovyeDokumenty, entity DocumentJournalKassovyeDokumenty) (*DocumentJournalKassovyeDokumenty, error) {
 	return NewDocumentJournalKassovyeDokumenty(c.updateEntity(key, entity))
@@ -29619,7 +29619,7 @@ func (c *Client) CreateInitialInstance(entity InitialInstance) (*InitialInstance
 func (c *Client) InitialInstance(key PrimaryInitialInstance, fields []string) (*InitialInstance, error) {
 	return NewInitialInstance(c.getEntity(key, fields))
 }
-func (c *Client) InitialInstances(where Where) ([]InitialInstance, error) {
+func (c *Client) InitialInstances(where Where) (*[]InitialInstance, error) {
 	type ReturnObj struct {
 		Value []InitialInstance `json:"value"`
 	}
@@ -29635,7 +29635,7 @@ func (c *Client) InitialInstances(where Where) ([]InitialInstance, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateInitialInstance(key PrimaryInitialInstance, entity InitialInstance) (*InitialInstance, error) {
 	return NewInitialInstance(c.updateEntity(key, entity))
@@ -29672,7 +29672,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovVzaimoraschety(entity Docum
 func (c *Client) DocumentVvodNachalnykhOstatkovVzaimoraschety(key PrimaryDocumentVvodNachalnykhOstatkovVzaimoraschety, fields []string) (*DocumentVvodNachalnykhOstatkovVzaimoraschety, error) {
 	return NewDocumentVvodNachalnykhOstatkovVzaimoraschety(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovVzaimoraschetys(where Where) ([]DocumentVvodNachalnykhOstatkovVzaimoraschety, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovVzaimoraschetys(where Where) (*[]DocumentVvodNachalnykhOstatkovVzaimoraschety, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovVzaimoraschety `json:"value"`
 	}
@@ -29688,7 +29688,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovVzaimoraschetys(where Where) ([]D
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovVzaimoraschety(key PrimaryDocumentVvodNachalnykhOstatkovVzaimoraschety, entity DocumentVvodNachalnykhOstatkovVzaimoraschety) (*DocumentVvodNachalnykhOstatkovVzaimoraschety, error) {
 	return NewDocumentVvodNachalnykhOstatkovVzaimoraschety(c.updateEntity(key, entity))
@@ -29751,7 +29751,7 @@ func (c *Client) CreateDocumentVvodNachalnykhOstatkovTovary(entity DocumentVvodN
 func (c *Client) DocumentVvodNachalnykhOstatkovTovary(key PrimaryDocumentVvodNachalnykhOstatkovTovary, fields []string) (*DocumentVvodNachalnykhOstatkovTovary, error) {
 	return NewDocumentVvodNachalnykhOstatkovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVvodNachalnykhOstatkovTovarys(where Where) ([]DocumentVvodNachalnykhOstatkovTovary, error) {
+func (c *Client) DocumentVvodNachalnykhOstatkovTovarys(where Where) (*[]DocumentVvodNachalnykhOstatkovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentVvodNachalnykhOstatkovTovary `json:"value"`
 	}
@@ -29767,7 +29767,7 @@ func (c *Client) DocumentVvodNachalnykhOstatkovTovarys(where Where) ([]DocumentV
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVvodNachalnykhOstatkovTovary(key PrimaryDocumentVvodNachalnykhOstatkovTovary, entity DocumentVvodNachalnykhOstatkovTovary) (*DocumentVvodNachalnykhOstatkovTovary, error) {
 	return NewDocumentVvodNachalnykhOstatkovTovary(c.updateEntity(key, entity))
@@ -29825,7 +29825,7 @@ func (c *Client) CreatePosting(entity Posting) (*Posting, error) {
 func (c *Client) Posting(key PrimaryPosting, fields []string) (*Posting, error) {
 	return NewPosting(c.getEntity(key, fields))
 }
-func (c *Client) Postings(where Where) ([]Posting, error) {
+func (c *Client) Postings(where Where) (*[]Posting, error) {
 	type ReturnObj struct {
 		Value []Posting `json:"value"`
 	}
@@ -29841,7 +29841,7 @@ func (c *Client) Postings(where Where) ([]Posting, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdatePosting(key PrimaryPosting, entity Posting) (*Posting, error) {
 	return NewPosting(c.updateEntity(key, entity))
@@ -29889,7 +29889,7 @@ func (c *Client) CreateDocumentOprikhodovanieTovarovTovary(entity DocumentOprikh
 func (c *Client) DocumentOprikhodovanieTovarovTovary(key PrimaryDocumentOprikhodovanieTovarovTovary, fields []string) (*DocumentOprikhodovanieTovarovTovary, error) {
 	return NewDocumentOprikhodovanieTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOprikhodovanieTovarovTovarys(where Where) ([]DocumentOprikhodovanieTovarovTovary, error) {
+func (c *Client) DocumentOprikhodovanieTovarovTovarys(where Where) (*[]DocumentOprikhodovanieTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentOprikhodovanieTovarovTovary `json:"value"`
 	}
@@ -29905,7 +29905,7 @@ func (c *Client) DocumentOprikhodovanieTovarovTovarys(where Where) ([]DocumentOp
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOprikhodovanieTovarovTovary(key PrimaryDocumentOprikhodovanieTovarovTovary, entity DocumentOprikhodovanieTovarovTovary) (*DocumentOprikhodovanieTovarovTovary, error) {
 	return NewDocumentOprikhodovanieTovarovTovary(c.updateEntity(key, entity))
@@ -29941,7 +29941,7 @@ func (c *Client) CreateDocumentOprikhodovanieTovarovSertifikaty(entity DocumentO
 func (c *Client) DocumentOprikhodovanieTovarovSertifikaty(key PrimaryDocumentOprikhodovanieTovarovSertifikaty, fields []string) (*DocumentOprikhodovanieTovarovSertifikaty, error) {
 	return NewDocumentOprikhodovanieTovarovSertifikaty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOprikhodovanieTovarovSertifikatys(where Where) ([]DocumentOprikhodovanieTovarovSertifikaty, error) {
+func (c *Client) DocumentOprikhodovanieTovarovSertifikatys(where Where) (*[]DocumentOprikhodovanieTovarovSertifikaty, error) {
 	type ReturnObj struct {
 		Value []DocumentOprikhodovanieTovarovSertifikaty `json:"value"`
 	}
@@ -29957,7 +29957,7 @@ func (c *Client) DocumentOprikhodovanieTovarovSertifikatys(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOprikhodovanieTovarovSertifikaty(key PrimaryDocumentOprikhodovanieTovarovSertifikaty, entity DocumentOprikhodovanieTovarovSertifikaty) (*DocumentOprikhodovanieTovarovSertifikaty, error) {
 	return NewDocumentOprikhodovanieTovarovSertifikaty(c.updateEntity(key, entity))
@@ -29996,7 +29996,7 @@ func (c *Client) CreateCatalogKomplekty(entity CatalogKomplekty) (*CatalogKomple
 func (c *Client) CatalogKomplekty(key PrimaryCatalogKomplekty, fields []string) (*CatalogKomplekty, error) {
 	return NewCatalogKomplekty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKomplektys(where Where) ([]CatalogKomplekty, error) {
+func (c *Client) CatalogKomplektys(where Where) (*[]CatalogKomplekty, error) {
 	type ReturnObj struct {
 		Value []CatalogKomplekty `json:"value"`
 	}
@@ -30012,7 +30012,7 @@ func (c *Client) CatalogKomplektys(where Where) ([]CatalogKomplekty, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKomplekty(key PrimaryCatalogKomplekty, entity CatalogKomplekty) (*CatalogKomplekty, error) {
 	return NewCatalogKomplekty(c.updateEntity(key, entity))
@@ -30074,7 +30074,7 @@ func (c *Client) CreateDocumentPereotsenkaTovarovPriniatykhNaKomissiiu(entity Do
 func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiiu(key PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiu, fields []string) (*DocumentPereotsenkaTovarovPriniatykhNaKomissiiu, error) {
 	return NewDocumentPereotsenkaTovarovPriniatykhNaKomissiiu(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiius(where Where) ([]DocumentPereotsenkaTovarovPriniatykhNaKomissiiu, error) {
+func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiius(where Where) (*[]DocumentPereotsenkaTovarovPriniatykhNaKomissiiu, error) {
 	type ReturnObj struct {
 		Value []DocumentPereotsenkaTovarovPriniatykhNaKomissiiu `json:"value"`
 	}
@@ -30090,7 +30090,7 @@ func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiius(where Where) (
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPereotsenkaTovarovPriniatykhNaKomissiiu(key PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiu, entity DocumentPereotsenkaTovarovPriniatykhNaKomissiiu) (*DocumentPereotsenkaTovarovPriniatykhNaKomissiiu, error) {
 	return NewDocumentPereotsenkaTovarovPriniatykhNaKomissiiu(c.updateEntity(key, entity))
@@ -30136,7 +30136,7 @@ func (c *Client) CreateDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary(ent
 func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary(key PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary, fields []string) (*DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary, error) {
 	return NewDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovarys(where Where) ([]DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary, error) {
+func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovarys(where Where) (*[]DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary `json:"value"`
 	}
@@ -30152,7 +30152,7 @@ func (c *Client) DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovarys(where Wh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary(key PrimaryDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary, entity DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary) (*DocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary, error) {
 	return NewDocumentPereotsenkaTovarovPriniatykhNaKomissiiuTovary(c.updateEntity(key, entity))
@@ -30227,7 +30227,7 @@ func (c *Client) CreateDocumentElektronnoePismo(entity DocumentElektronnoePismo)
 func (c *Client) DocumentElektronnoePismo(key PrimaryDocumentElektronnoePismo, fields []string) (*DocumentElektronnoePismo, error) {
 	return NewDocumentElektronnoePismo(c.getEntity(key, fields))
 }
-func (c *Client) DocumentElektronnoePismos(where Where) ([]DocumentElektronnoePismo, error) {
+func (c *Client) DocumentElektronnoePismos(where Where) (*[]DocumentElektronnoePismo, error) {
 	type ReturnObj struct {
 		Value []DocumentElektronnoePismo `json:"value"`
 	}
@@ -30243,7 +30243,7 @@ func (c *Client) DocumentElektronnoePismos(where Where) ([]DocumentElektronnoePi
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentElektronnoePismo(key PrimaryDocumentElektronnoePismo, entity DocumentElektronnoePismo) (*DocumentElektronnoePismo, error) {
 	return NewDocumentElektronnoePismo(c.updateEntity(key, entity))
@@ -30279,7 +30279,7 @@ func (c *Client) CreateDocumentElektronnoePismoKomuTCh(entity DocumentElektronno
 func (c *Client) DocumentElektronnoePismoKomuTCh(key PrimaryDocumentElektronnoePismoKomuTCh, fields []string) (*DocumentElektronnoePismoKomuTCh, error) {
 	return NewDocumentElektronnoePismoKomuTCh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentElektronnoePismoKomuTChs(where Where) ([]DocumentElektronnoePismoKomuTCh, error) {
+func (c *Client) DocumentElektronnoePismoKomuTChs(where Where) (*[]DocumentElektronnoePismoKomuTCh, error) {
 	type ReturnObj struct {
 		Value []DocumentElektronnoePismoKomuTCh `json:"value"`
 	}
@@ -30295,7 +30295,7 @@ func (c *Client) DocumentElektronnoePismoKomuTChs(where Where) ([]DocumentElektr
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentElektronnoePismoKomuTCh(key PrimaryDocumentElektronnoePismoKomuTCh, entity DocumentElektronnoePismoKomuTCh) (*DocumentElektronnoePismoKomuTCh, error) {
 	return NewDocumentElektronnoePismoKomuTCh(c.updateEntity(key, entity))
@@ -30331,7 +30331,7 @@ func (c *Client) CreateDocumentElektronnoePismoKopiiTCh(entity DocumentElektronn
 func (c *Client) DocumentElektronnoePismoKopiiTCh(key PrimaryDocumentElektronnoePismoKopiiTCh, fields []string) (*DocumentElektronnoePismoKopiiTCh, error) {
 	return NewDocumentElektronnoePismoKopiiTCh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentElektronnoePismoKopiiTChs(where Where) ([]DocumentElektronnoePismoKopiiTCh, error) {
+func (c *Client) DocumentElektronnoePismoKopiiTChs(where Where) (*[]DocumentElektronnoePismoKopiiTCh, error) {
 	type ReturnObj struct {
 		Value []DocumentElektronnoePismoKopiiTCh `json:"value"`
 	}
@@ -30347,7 +30347,7 @@ func (c *Client) DocumentElektronnoePismoKopiiTChs(where Where) ([]DocumentElekt
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentElektronnoePismoKopiiTCh(key PrimaryDocumentElektronnoePismoKopiiTCh, entity DocumentElektronnoePismoKopiiTCh) (*DocumentElektronnoePismoKopiiTCh, error) {
 	return NewDocumentElektronnoePismoKopiiTCh(c.updateEntity(key, entity))
@@ -30383,7 +30383,7 @@ func (c *Client) CreateDocumentElektronnoePismoSkrytyeKopiiTCh(entity DocumentEl
 func (c *Client) DocumentElektronnoePismoSkrytyeKopiiTCh(key PrimaryDocumentElektronnoePismoSkrytyeKopiiTCh, fields []string) (*DocumentElektronnoePismoSkrytyeKopiiTCh, error) {
 	return NewDocumentElektronnoePismoSkrytyeKopiiTCh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentElektronnoePismoSkrytyeKopiiTChs(where Where) ([]DocumentElektronnoePismoSkrytyeKopiiTCh, error) {
+func (c *Client) DocumentElektronnoePismoSkrytyeKopiiTChs(where Where) (*[]DocumentElektronnoePismoSkrytyeKopiiTCh, error) {
 	type ReturnObj struct {
 		Value []DocumentElektronnoePismoSkrytyeKopiiTCh `json:"value"`
 	}
@@ -30399,7 +30399,7 @@ func (c *Client) DocumentElektronnoePismoSkrytyeKopiiTChs(where Where) ([]Docume
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentElektronnoePismoSkrytyeKopiiTCh(key PrimaryDocumentElektronnoePismoSkrytyeKopiiTCh, entity DocumentElektronnoePismoSkrytyeKopiiTCh) (*DocumentElektronnoePismoSkrytyeKopiiTCh, error) {
 	return NewDocumentElektronnoePismoSkrytyeKopiiTCh(c.updateEntity(key, entity))
@@ -30437,7 +30437,7 @@ func (c *Client) CreateCatalogGruppyDefektov(entity CatalogGruppyDefektov) (*Cat
 func (c *Client) CatalogGruppyDefektov(key PrimaryCatalogGruppyDefektov, fields []string) (*CatalogGruppyDefektov, error) {
 	return NewCatalogGruppyDefektov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyDefektovs(where Where) ([]CatalogGruppyDefektov, error) {
+func (c *Client) CatalogGruppyDefektovs(where Where) (*[]CatalogGruppyDefektov, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyDefektov `json:"value"`
 	}
@@ -30453,7 +30453,7 @@ func (c *Client) CatalogGruppyDefektovs(where Where) ([]CatalogGruppyDefektov, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyDefektov(key PrimaryCatalogGruppyDefektov, entity CatalogGruppyDefektov) (*CatalogGruppyDefektov, error) {
 	return NewCatalogGruppyDefektov(c.updateEntity(key, entity))
@@ -30497,7 +30497,7 @@ func (c *Client) CreateCatalogfmAnketaKlientaBenefitsariia(entity CatalogfmAnket
 func (c *Client) CatalogfmAnketaKlientaBenefitsariia(key PrimaryCatalogfmAnketaKlientaBenefitsariia, fields []string) (*CatalogfmAnketaKlientaBenefitsariia, error) {
 	return NewCatalogfmAnketaKlientaBenefitsariia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmAnketaKlientaBenefitsariias(where Where) ([]CatalogfmAnketaKlientaBenefitsariia, error) {
+func (c *Client) CatalogfmAnketaKlientaBenefitsariias(where Where) (*[]CatalogfmAnketaKlientaBenefitsariia, error) {
 	type ReturnObj struct {
 		Value []CatalogfmAnketaKlientaBenefitsariia `json:"value"`
 	}
@@ -30513,7 +30513,7 @@ func (c *Client) CatalogfmAnketaKlientaBenefitsariias(where Where) ([]CatalogfmA
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmAnketaKlientaBenefitsariia(key PrimaryCatalogfmAnketaKlientaBenefitsariia, entity CatalogfmAnketaKlientaBenefitsariia) (*CatalogfmAnketaKlientaBenefitsariia, error) {
 	return NewCatalogfmAnketaKlientaBenefitsariia(c.updateEntity(key, entity))
@@ -30550,7 +30550,7 @@ func (c *Client) CreateCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta(enti
 func (c *Client) CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta(key PrimaryCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta, fields []string) (*CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta, error) {
 	return NewCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogfmAnketaKlientaBenefitsariiaDannyeKontragentas(where Where) ([]CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta, error) {
+func (c *Client) CatalogfmAnketaKlientaBenefitsariiaDannyeKontragentas(where Where) (*[]CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta, error) {
 	type ReturnObj struct {
 		Value []CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta `json:"value"`
 	}
@@ -30566,7 +30566,7 @@ func (c *Client) CatalogfmAnketaKlientaBenefitsariiaDannyeKontragentas(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta(key PrimaryCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta, entity CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta) (*CatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta, error) {
 	return NewCatalogfmAnketaKlientaBenefitsariiaDannyeKontragenta(c.updateEntity(key, entity))
@@ -30602,7 +30602,7 @@ func (c *Client) CreateCatalogTsenovyeGruppy(entity CatalogTsenovyeGruppy) (*Cat
 func (c *Client) CatalogTsenovyeGruppy(key PrimaryCatalogTsenovyeGruppy, fields []string) (*CatalogTsenovyeGruppy, error) {
 	return NewCatalogTsenovyeGruppy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTsenovyeGruppys(where Where) ([]CatalogTsenovyeGruppy, error) {
+func (c *Client) CatalogTsenovyeGruppys(where Where) (*[]CatalogTsenovyeGruppy, error) {
 	type ReturnObj struct {
 		Value []CatalogTsenovyeGruppy `json:"value"`
 	}
@@ -30618,7 +30618,7 @@ func (c *Client) CatalogTsenovyeGruppys(where Where) ([]CatalogTsenovyeGruppy, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTsenovyeGruppy(key PrimaryCatalogTsenovyeGruppy, entity CatalogTsenovyeGruppy) (*CatalogTsenovyeGruppy, error) {
 	return NewCatalogTsenovyeGruppy(c.updateEntity(key, entity))
@@ -30658,7 +30658,7 @@ func (c *Client) CreateCatalogPravilaTsenoobrazovaniia(entity CatalogPravilaTsen
 func (c *Client) CatalogPravilaTsenoobrazovaniia(key PrimaryCatalogPravilaTsenoobrazovaniia, fields []string) (*CatalogPravilaTsenoobrazovaniia, error) {
 	return NewCatalogPravilaTsenoobrazovaniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPravilaTsenoobrazovaniias(where Where) ([]CatalogPravilaTsenoobrazovaniia, error) {
+func (c *Client) CatalogPravilaTsenoobrazovaniias(where Where) (*[]CatalogPravilaTsenoobrazovaniia, error) {
 	type ReturnObj struct {
 		Value []CatalogPravilaTsenoobrazovaniia `json:"value"`
 	}
@@ -30674,7 +30674,7 @@ func (c *Client) CatalogPravilaTsenoobrazovaniias(where Where) ([]CatalogPravila
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPravilaTsenoobrazovaniia(key PrimaryCatalogPravilaTsenoobrazovaniia, entity CatalogPravilaTsenoobrazovaniia) (*CatalogPravilaTsenoobrazovaniia, error) {
 	return NewCatalogPravilaTsenoobrazovaniia(c.updateEntity(key, entity))
@@ -30710,7 +30710,7 @@ func (c *Client) CreateCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy(entity Cata
 func (c *Client) CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy(key PrimaryCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy, fields []string) (*CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy, error) {
 	return NewCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPravilaTsenoobrazovaniiaTsenovyeGruppys(where Where) ([]CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy, error) {
+func (c *Client) CatalogPravilaTsenoobrazovaniiaTsenovyeGruppys(where Where) (*[]CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy, error) {
 	type ReturnObj struct {
 		Value []CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy `json:"value"`
 	}
@@ -30726,7 +30726,7 @@ func (c *Client) CatalogPravilaTsenoobrazovaniiaTsenovyeGruppys(where Where) ([]
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy(key PrimaryCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy, entity CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy) (*CatalogPravilaTsenoobrazovaniiaTsenovyeGruppy, error) {
 	return NewCatalogPravilaTsenoobrazovaniiaTsenovyeGruppy(c.updateEntity(key, entity))
@@ -30777,7 +30777,7 @@ func (c *Client) CreateDocumentObieiavlenieNaVznosNalichnymi(entity DocumentObie
 func (c *Client) DocumentObieiavlenieNaVznosNalichnymi(key PrimaryDocumentObieiavlenieNaVznosNalichnymi, fields []string) (*DocumentObieiavlenieNaVznosNalichnymi, error) {
 	return NewDocumentObieiavlenieNaVznosNalichnymi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentObieiavlenieNaVznosNalichnymis(where Where) ([]DocumentObieiavlenieNaVznosNalichnymi, error) {
+func (c *Client) DocumentObieiavlenieNaVznosNalichnymis(where Where) (*[]DocumentObieiavlenieNaVznosNalichnymi, error) {
 	type ReturnObj struct {
 		Value []DocumentObieiavlenieNaVznosNalichnymi `json:"value"`
 	}
@@ -30793,7 +30793,7 @@ func (c *Client) DocumentObieiavlenieNaVznosNalichnymis(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentObieiavlenieNaVznosNalichnymi(key PrimaryDocumentObieiavlenieNaVznosNalichnymi, entity DocumentObieiavlenieNaVznosNalichnymi) (*DocumentObieiavlenieNaVznosNalichnymi, error) {
 	return NewDocumentObieiavlenieNaVznosNalichnymi(c.updateEntity(key, entity))
@@ -30835,7 +30835,7 @@ func (c *Client) CreateCatalogValiuty(entity CatalogValiuty) (*CatalogValiuty, e
 func (c *Client) CatalogValiuty(key PrimaryCatalogValiuty, fields []string) (*CatalogValiuty, error) {
 	return NewCatalogValiuty(c.getEntity(key, fields))
 }
-func (c *Client) CatalogValiutys(where Where) ([]CatalogValiuty, error) {
+func (c *Client) CatalogValiutys(where Where) (*[]CatalogValiuty, error) {
 	type ReturnObj struct {
 		Value []CatalogValiuty `json:"value"`
 	}
@@ -30851,7 +30851,7 @@ func (c *Client) CatalogValiutys(where Where) ([]CatalogValiuty, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogValiuty(key PrimaryCatalogValiuty, entity CatalogValiuty) (*CatalogValiuty, error) {
 	return NewCatalogValiuty(c.updateEntity(key, entity))
@@ -30928,7 +30928,7 @@ func (c *Client) CreateDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorg
 func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku(key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku, fields []string) (*DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku, error) {
 	return NewDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkus(where Where) ([]DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku, error) {
+func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkus(where Where) (*[]DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku `json:"value"`
 	}
@@ -30944,7 +30944,7 @@ func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuT
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku(key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku, entity DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku) (*DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku, error) {
 	return NewDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochku(c.updateEntity(key, entity))
@@ -30997,7 +30997,7 @@ func (c *Client) CreateDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorg
 func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary(key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary, fields []string) (*DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary, error) {
 	return NewDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovarys(where Where) ([]DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary, error) {
+func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovarys(where Where) (*[]DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary `json:"value"`
 	}
@@ -31013,7 +31013,7 @@ func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuT
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary(key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary, entity DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary) (*DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary, error) {
 	return NewDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuTovary(c.updateEntity(key, entity))
@@ -31058,7 +31058,7 @@ func (c *Client) CreateDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorg
 func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi(key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi, fields []string) (*DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi, error) {
 	return NewDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugis(where Where) ([]DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi, error) {
+func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugis(where Where) (*[]DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi `json:"value"`
 	}
@@ -31074,7 +31074,7 @@ func (c *Client) DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuT
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi(key PrimaryDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi, entity DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi) (*DocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi, error) {
 	return NewDocumentPostuplenieTovarovUslugVNeavtomatizirovannuiuTorgovuiuTochkuUslugi(c.updateEntity(key, entity))
@@ -31112,7 +31112,7 @@ func (c *Client) CreateCatalogKassyKKM(entity CatalogKassyKKM) (*CatalogKassyKKM
 func (c *Client) CatalogKassyKKM(key PrimaryCatalogKassyKKM, fields []string) (*CatalogKassyKKM, error) {
 	return NewCatalogKassyKKM(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKassyKKMs(where Where) ([]CatalogKassyKKM, error) {
+func (c *Client) CatalogKassyKKMs(where Where) (*[]CatalogKassyKKM, error) {
 	type ReturnObj struct {
 		Value []CatalogKassyKKM `json:"value"`
 	}
@@ -31128,7 +31128,7 @@ func (c *Client) CatalogKassyKKMs(where Where) ([]CatalogKassyKKM, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKassyKKM(key PrimaryCatalogKassyKKM, entity CatalogKassyKKM) (*CatalogKassyKKM, error) {
 	return NewCatalogKassyKKM(c.updateEntity(key, entity))
@@ -31168,7 +31168,7 @@ func (c *Client) CreateProbe(entity Probe) (*Probe, error) {
 func (c *Client) Probe(key PrimaryProbe, fields []string) (*Probe, error) {
 	return NewProbe(c.getEntity(key, fields))
 }
-func (c *Client) Probes(where Where) ([]Probe, error) {
+func (c *Client) Probes(where Where) (*[]Probe, error) {
 	type ReturnObj struct {
 		Value []Probe `json:"value"`
 	}
@@ -31184,7 +31184,7 @@ func (c *Client) Probes(where Where) ([]Probe, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateProbe(key PrimaryProbe, entity Probe) (*Probe, error) {
 	return NewProbe(c.updateEntity(key, entity))
@@ -31232,7 +31232,7 @@ func (c *Client) CreateCatalogGruppyDostupa(entity CatalogGruppyDostupa) (*Catal
 func (c *Client) CatalogGruppyDostupa(key PrimaryCatalogGruppyDostupa, fields []string) (*CatalogGruppyDostupa, error) {
 	return NewCatalogGruppyDostupa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyDostupas(where Where) ([]CatalogGruppyDostupa, error) {
+func (c *Client) CatalogGruppyDostupas(where Where) (*[]CatalogGruppyDostupa, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyDostupa `json:"value"`
 	}
@@ -31248,7 +31248,7 @@ func (c *Client) CatalogGruppyDostupas(where Where) ([]CatalogGruppyDostupa, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyDostupa(key PrimaryCatalogGruppyDostupa, entity CatalogGruppyDostupa) (*CatalogGruppyDostupa, error) {
 	return NewCatalogGruppyDostupa(c.updateEntity(key, entity))
@@ -31284,7 +31284,7 @@ func (c *Client) CreateCatalogGruppyDostupaPolzovateli(entity CatalogGruppyDostu
 func (c *Client) CatalogGruppyDostupaPolzovateli(key PrimaryCatalogGruppyDostupaPolzovateli, fields []string) (*CatalogGruppyDostupaPolzovateli, error) {
 	return NewCatalogGruppyDostupaPolzovateli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyDostupaPolzovatelis(where Where) ([]CatalogGruppyDostupaPolzovateli, error) {
+func (c *Client) CatalogGruppyDostupaPolzovatelis(where Where) (*[]CatalogGruppyDostupaPolzovateli, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyDostupaPolzovateli `json:"value"`
 	}
@@ -31300,7 +31300,7 @@ func (c *Client) CatalogGruppyDostupaPolzovatelis(where Where) ([]CatalogGruppyD
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyDostupaPolzovateli(key PrimaryCatalogGruppyDostupaPolzovateli, entity CatalogGruppyDostupaPolzovateli) (*CatalogGruppyDostupaPolzovateli, error) {
 	return NewCatalogGruppyDostupaPolzovateli(c.updateEntity(key, entity))
@@ -31337,7 +31337,7 @@ func (c *Client) CreateCatalogGruppyDostupaVidyDostupa(entity CatalogGruppyDostu
 func (c *Client) CatalogGruppyDostupaVidyDostupa(key PrimaryCatalogGruppyDostupaVidyDostupa, fields []string) (*CatalogGruppyDostupaVidyDostupa, error) {
 	return NewCatalogGruppyDostupaVidyDostupa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyDostupaVidyDostupas(where Where) ([]CatalogGruppyDostupaVidyDostupa, error) {
+func (c *Client) CatalogGruppyDostupaVidyDostupas(where Where) (*[]CatalogGruppyDostupaVidyDostupa, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyDostupaVidyDostupa `json:"value"`
 	}
@@ -31353,7 +31353,7 @@ func (c *Client) CatalogGruppyDostupaVidyDostupas(where Where) ([]CatalogGruppyD
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyDostupaVidyDostupa(key PrimaryCatalogGruppyDostupaVidyDostupa, entity CatalogGruppyDostupaVidyDostupa) (*CatalogGruppyDostupaVidyDostupa, error) {
 	return NewCatalogGruppyDostupaVidyDostupa(c.updateEntity(key, entity))
@@ -31391,7 +31391,7 @@ func (c *Client) CreateCatalogGruppyDostupaZnacheniiaDostupa(entity CatalogGrupp
 func (c *Client) CatalogGruppyDostupaZnacheniiaDostupa(key PrimaryCatalogGruppyDostupaZnacheniiaDostupa, fields []string) (*CatalogGruppyDostupaZnacheniiaDostupa, error) {
 	return NewCatalogGruppyDostupaZnacheniiaDostupa(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyDostupaZnacheniiaDostupas(where Where) ([]CatalogGruppyDostupaZnacheniiaDostupa, error) {
+func (c *Client) CatalogGruppyDostupaZnacheniiaDostupas(where Where) (*[]CatalogGruppyDostupaZnacheniiaDostupa, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyDostupaZnacheniiaDostupa `json:"value"`
 	}
@@ -31407,7 +31407,7 @@ func (c *Client) CatalogGruppyDostupaZnacheniiaDostupas(where Where) ([]CatalogG
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyDostupaZnacheniiaDostupa(key PrimaryCatalogGruppyDostupaZnacheniiaDostupa, entity CatalogGruppyDostupaZnacheniiaDostupa) (*CatalogGruppyDostupaZnacheniiaDostupa, error) {
 	return NewCatalogGruppyDostupaZnacheniiaDostupa(c.updateEntity(key, entity))
@@ -31447,7 +31447,7 @@ func (c *Client) CreateCatalogGruppyDostupaDostupPoPodsistemam(entity CatalogGru
 func (c *Client) CatalogGruppyDostupaDostupPoPodsistemam(key PrimaryCatalogGruppyDostupaDostupPoPodsistemam, fields []string) (*CatalogGruppyDostupaDostupPoPodsistemam, error) {
 	return NewCatalogGruppyDostupaDostupPoPodsistemam(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppyDostupaDostupPoPodsistemams(where Where) ([]CatalogGruppyDostupaDostupPoPodsistemam, error) {
+func (c *Client) CatalogGruppyDostupaDostupPoPodsistemams(where Where) (*[]CatalogGruppyDostupaDostupPoPodsistemam, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppyDostupaDostupPoPodsistemam `json:"value"`
 	}
@@ -31463,7 +31463,7 @@ func (c *Client) CatalogGruppyDostupaDostupPoPodsistemams(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppyDostupaDostupPoPodsistemam(key PrimaryCatalogGruppyDostupaDostupPoPodsistemam, entity CatalogGruppyDostupaDostupPoPodsistemam) (*CatalogGruppyDostupaDostupPoPodsistemam, error) {
 	return NewCatalogGruppyDostupaDostupPoPodsistemam(c.updateEntity(key, entity))
@@ -31502,7 +31502,7 @@ func (c *Client) CreateCatalogVidyKontaktnoiInformatsii(entity CatalogVidyKontak
 func (c *Client) CatalogVidyKontaktnoiInformatsii(key PrimaryCatalogVidyKontaktnoiInformatsii, fields []string) (*CatalogVidyKontaktnoiInformatsii, error) {
 	return NewCatalogVidyKontaktnoiInformatsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyKontaktnoiInformatsiis(where Where) ([]CatalogVidyKontaktnoiInformatsii, error) {
+func (c *Client) CatalogVidyKontaktnoiInformatsiis(where Where) (*[]CatalogVidyKontaktnoiInformatsii, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyKontaktnoiInformatsii `json:"value"`
 	}
@@ -31518,7 +31518,7 @@ func (c *Client) CatalogVidyKontaktnoiInformatsiis(where Where) ([]CatalogVidyKo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyKontaktnoiInformatsii(key PrimaryCatalogVidyKontaktnoiInformatsii, entity CatalogVidyKontaktnoiInformatsii) (*CatalogVidyKontaktnoiInformatsii, error) {
 	return NewCatalogVidyKontaktnoiInformatsii(c.updateEntity(key, entity))
@@ -31557,7 +31557,7 @@ func (c *Client) CreateCatalogNomenklaturnyeGruppy(entity CatalogNomenklaturnyeG
 func (c *Client) CatalogNomenklaturnyeGruppy(key PrimaryCatalogNomenklaturnyeGruppy, fields []string) (*CatalogNomenklaturnyeGruppy, error) {
 	return NewCatalogNomenklaturnyeGruppy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNomenklaturnyeGruppys(where Where) ([]CatalogNomenklaturnyeGruppy, error) {
+func (c *Client) CatalogNomenklaturnyeGruppys(where Where) (*[]CatalogNomenklaturnyeGruppy, error) {
 	type ReturnObj struct {
 		Value []CatalogNomenklaturnyeGruppy `json:"value"`
 	}
@@ -31573,7 +31573,7 @@ func (c *Client) CatalogNomenklaturnyeGruppys(where Where) ([]CatalogNomenklatur
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNomenklaturnyeGruppy(key PrimaryCatalogNomenklaturnyeGruppy, entity CatalogNomenklaturnyeGruppy) (*CatalogNomenklaturnyeGruppy, error) {
 	return NewCatalogNomenklaturnyeGruppy(c.updateEntity(key, entity))
@@ -31624,7 +31624,7 @@ func (c *Client) CreateDocumentReestrSchetov(entity DocumentReestrSchetov) (*Doc
 func (c *Client) DocumentReestrSchetov(key PrimaryDocumentReestrSchetov, fields []string) (*DocumentReestrSchetov, error) {
 	return NewDocumentReestrSchetov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentReestrSchetovs(where Where) ([]DocumentReestrSchetov, error) {
+func (c *Client) DocumentReestrSchetovs(where Where) (*[]DocumentReestrSchetov, error) {
 	type ReturnObj struct {
 		Value []DocumentReestrSchetov `json:"value"`
 	}
@@ -31640,7 +31640,7 @@ func (c *Client) DocumentReestrSchetovs(where Where) ([]DocumentReestrSchetov, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentReestrSchetov(key PrimaryDocumentReestrSchetov, entity DocumentReestrSchetov) (*DocumentReestrSchetov, error) {
 	return NewDocumentReestrSchetov(c.updateEntity(key, entity))
@@ -31678,7 +31678,7 @@ func (c *Client) CreateDocumentReestrSchetovReestr(entity DocumentReestrSchetovR
 func (c *Client) DocumentReestrSchetovReestr(key PrimaryDocumentReestrSchetovReestr, fields []string) (*DocumentReestrSchetovReestr, error) {
 	return NewDocumentReestrSchetovReestr(c.getEntity(key, fields))
 }
-func (c *Client) DocumentReestrSchetovReestrs(where Where) ([]DocumentReestrSchetovReestr, error) {
+func (c *Client) DocumentReestrSchetovReestrs(where Where) (*[]DocumentReestrSchetovReestr, error) {
 	type ReturnObj struct {
 		Value []DocumentReestrSchetovReestr `json:"value"`
 	}
@@ -31694,7 +31694,7 @@ func (c *Client) DocumentReestrSchetovReestrs(where Where) ([]DocumentReestrSche
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentReestrSchetovReestr(key PrimaryDocumentReestrSchetovReestr, entity DocumentReestrSchetovReestr) (*DocumentReestrSchetovReestr, error) {
 	return NewDocumentReestrSchetovReestr(c.updateEntity(key, entity))
@@ -31741,7 +31741,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu(entit
 func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu(key PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu, fields []string) (*DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu, error) {
 	return NewDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiius(where Where) ([]DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiius(where Where) (*[]DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu `json:"value"`
 	}
@@ -31757,7 +31757,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiius(where Wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu(key PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu, entity DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu) (*DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu, error) {
 	return NewDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiu(c.updateEntity(key, entity))
@@ -31799,7 +31799,7 @@ func (c *Client) CreateDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary
 func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary(key PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary, fields []string) (*DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary, error) {
 	return NewDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovarys(where Where) ([]DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary, error) {
+func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovarys(where Where) (*[]DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary `json:"value"`
 	}
@@ -31815,7 +31815,7 @@ func (c *Client) DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovarys(wher
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary(key PrimaryDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary, entity DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary) (*DocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary, error) {
 	return NewDocumentInventarizatsiiaTovarovOtdannykhNaKomissiiuTovary(c.updateEntity(key, entity))
@@ -31854,7 +31854,7 @@ func (c *Client) CreateCatalogKlassifikatorStranMira(entity CatalogKlassifikator
 func (c *Client) CatalogKlassifikatorStranMira(key PrimaryCatalogKlassifikatorStranMira, fields []string) (*CatalogKlassifikatorStranMira, error) {
 	return NewCatalogKlassifikatorStranMira(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKlassifikatorStranMiras(where Where) ([]CatalogKlassifikatorStranMira, error) {
+func (c *Client) CatalogKlassifikatorStranMiras(where Where) (*[]CatalogKlassifikatorStranMira, error) {
 	type ReturnObj struct {
 		Value []CatalogKlassifikatorStranMira `json:"value"`
 	}
@@ -31870,7 +31870,7 @@ func (c *Client) CatalogKlassifikatorStranMiras(where Where) ([]CatalogKlassifik
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKlassifikatorStranMira(key PrimaryCatalogKlassifikatorStranMira, entity CatalogKlassifikatorStranMira) (*CatalogKlassifikatorStranMira, error) {
 	return NewCatalogKlassifikatorStranMira(c.updateEntity(key, entity))
@@ -31911,7 +31911,7 @@ func (c *Client) CreateCatalogKlassifikatorEdinitsIzmereniia(entity CatalogKlass
 func (c *Client) CatalogKlassifikatorEdinitsIzmereniia(key PrimaryCatalogKlassifikatorEdinitsIzmereniia, fields []string) (*CatalogKlassifikatorEdinitsIzmereniia, error) {
 	return NewCatalogKlassifikatorEdinitsIzmereniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKlassifikatorEdinitsIzmereniias(where Where) ([]CatalogKlassifikatorEdinitsIzmereniia, error) {
+func (c *Client) CatalogKlassifikatorEdinitsIzmereniias(where Where) (*[]CatalogKlassifikatorEdinitsIzmereniia, error) {
 	type ReturnObj struct {
 		Value []CatalogKlassifikatorEdinitsIzmereniia `json:"value"`
 	}
@@ -31927,7 +31927,7 @@ func (c *Client) CatalogKlassifikatorEdinitsIzmereniias(where Where) ([]CatalogK
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKlassifikatorEdinitsIzmereniia(key PrimaryCatalogKlassifikatorEdinitsIzmereniia, entity CatalogKlassifikatorEdinitsIzmereniia) (*CatalogKlassifikatorEdinitsIzmereniia, error) {
 	return NewCatalogKlassifikatorEdinitsIzmereniia(c.updateEntity(key, entity))
@@ -32025,7 +32025,7 @@ func (c *Client) CreateCatalogNastroikiRMK(entity CatalogNastroikiRMK) (*Catalog
 func (c *Client) CatalogNastroikiRMK(key PrimaryCatalogNastroikiRMK, fields []string) (*CatalogNastroikiRMK, error) {
 	return NewCatalogNastroikiRMK(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiRMKs(where Where) ([]CatalogNastroikiRMK, error) {
+func (c *Client) CatalogNastroikiRMKs(where Where) (*[]CatalogNastroikiRMK, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiRMK `json:"value"`
 	}
@@ -32041,7 +32041,7 @@ func (c *Client) CatalogNastroikiRMKs(where Where) ([]CatalogNastroikiRMK, error
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiRMK(key PrimaryCatalogNastroikiRMK, entity CatalogNastroikiRMK) (*CatalogNastroikiRMK, error) {
 	return NewCatalogNastroikiRMK(c.updateEntity(key, entity))
@@ -32076,7 +32076,7 @@ func (c *Client) CreateCatalogNastroikiRMKPoriadokPrimeneniiaSkidok(entity Catal
 func (c *Client) CatalogNastroikiRMKPoriadokPrimeneniiaSkidok(key PrimaryCatalogNastroikiRMKPoriadokPrimeneniiaSkidok, fields []string) (*CatalogNastroikiRMKPoriadokPrimeneniiaSkidok, error) {
 	return NewCatalogNastroikiRMKPoriadokPrimeneniiaSkidok(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiRMKPoriadokPrimeneniiaSkidoks(where Where) ([]CatalogNastroikiRMKPoriadokPrimeneniiaSkidok, error) {
+func (c *Client) CatalogNastroikiRMKPoriadokPrimeneniiaSkidoks(where Where) (*[]CatalogNastroikiRMKPoriadokPrimeneniiaSkidok, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiRMKPoriadokPrimeneniiaSkidok `json:"value"`
 	}
@@ -32092,7 +32092,7 @@ func (c *Client) CatalogNastroikiRMKPoriadokPrimeneniiaSkidoks(where Where) ([]C
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiRMKPoriadokPrimeneniiaSkidok(key PrimaryCatalogNastroikiRMKPoriadokPrimeneniiaSkidok, entity CatalogNastroikiRMKPoriadokPrimeneniiaSkidok) (*CatalogNastroikiRMKPoriadokPrimeneniiaSkidok, error) {
 	return NewCatalogNastroikiRMKPoriadokPrimeneniiaSkidok(c.updateEntity(key, entity))
@@ -32129,7 +32129,7 @@ func (c *Client) CreateCatalogNastroikiRMKSostavNaimenovaniia(entity CatalogNast
 func (c *Client) CatalogNastroikiRMKSostavNaimenovaniia(key PrimaryCatalogNastroikiRMKSostavNaimenovaniia, fields []string) (*CatalogNastroikiRMKSostavNaimenovaniia, error) {
 	return NewCatalogNastroikiRMKSostavNaimenovaniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogNastroikiRMKSostavNaimenovaniias(where Where) ([]CatalogNastroikiRMKSostavNaimenovaniia, error) {
+func (c *Client) CatalogNastroikiRMKSostavNaimenovaniias(where Where) (*[]CatalogNastroikiRMKSostavNaimenovaniia, error) {
 	type ReturnObj struct {
 		Value []CatalogNastroikiRMKSostavNaimenovaniia `json:"value"`
 	}
@@ -32145,7 +32145,7 @@ func (c *Client) CatalogNastroikiRMKSostavNaimenovaniias(where Where) ([]Catalog
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogNastroikiRMKSostavNaimenovaniia(key PrimaryCatalogNastroikiRMKSostavNaimenovaniia, entity CatalogNastroikiRMKSostavNaimenovaniia) (*CatalogNastroikiRMKSostavNaimenovaniia, error) {
 	return NewCatalogNastroikiRMKSostavNaimenovaniia(c.updateEntity(key, entity))
@@ -32189,7 +32189,7 @@ func (c *Client) CreateCatalogKharakteristikiNomenklatury(entity CatalogKharakte
 func (c *Client) CatalogKharakteristikiNomenklatury(key PrimaryCatalogKharakteristikiNomenklatury, fields []string) (*CatalogKharakteristikiNomenklatury, error) {
 	return NewCatalogKharakteristikiNomenklatury(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKharakteristikiNomenklaturys(where Where) ([]CatalogKharakteristikiNomenklatury, error) {
+func (c *Client) CatalogKharakteristikiNomenklaturys(where Where) (*[]CatalogKharakteristikiNomenklatury, error) {
 	type ReturnObj struct {
 		Value []CatalogKharakteristikiNomenklatury `json:"value"`
 	}
@@ -32205,7 +32205,7 @@ func (c *Client) CatalogKharakteristikiNomenklaturys(where Where) ([]CatalogKhar
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKharakteristikiNomenklatury(key PrimaryCatalogKharakteristikiNomenklatury, entity CatalogKharakteristikiNomenklatury) (*CatalogKharakteristikiNomenklatury, error) {
 	return NewCatalogKharakteristikiNomenklatury(c.updateEntity(key, entity))
@@ -32251,7 +32251,7 @@ func (c *Client) CreateCatalogKharakteristikiNomenklaturySpetsifikatsiia(entity 
 func (c *Client) CatalogKharakteristikiNomenklaturySpetsifikatsiia(key PrimaryCatalogKharakteristikiNomenklaturySpetsifikatsiia, fields []string) (*CatalogKharakteristikiNomenklaturySpetsifikatsiia, error) {
 	return NewCatalogKharakteristikiNomenklaturySpetsifikatsiia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogKharakteristikiNomenklaturySpetsifikatsiias(where Where) ([]CatalogKharakteristikiNomenklaturySpetsifikatsiia, error) {
+func (c *Client) CatalogKharakteristikiNomenklaturySpetsifikatsiias(where Where) (*[]CatalogKharakteristikiNomenklaturySpetsifikatsiia, error) {
 	type ReturnObj struct {
 		Value []CatalogKharakteristikiNomenklaturySpetsifikatsiia `json:"value"`
 	}
@@ -32267,7 +32267,7 @@ func (c *Client) CatalogKharakteristikiNomenklaturySpetsifikatsiias(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogKharakteristikiNomenklaturySpetsifikatsiia(key PrimaryCatalogKharakteristikiNomenklaturySpetsifikatsiia, entity CatalogKharakteristikiNomenklaturySpetsifikatsiia) (*CatalogKharakteristikiNomenklaturySpetsifikatsiia, error) {
 	return NewCatalogKharakteristikiNomenklaturySpetsifikatsiia(c.updateEntity(key, entity))
@@ -32328,7 +32328,7 @@ func (c *Client) CreateDocumentOtborTovarov(entity DocumentOtborTovarov) (*Docum
 func (c *Client) DocumentOtborTovarov(key PrimaryDocumentOtborTovarov, fields []string) (*DocumentOtborTovarov, error) {
 	return NewDocumentOtborTovarov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtborTovarovs(where Where) ([]DocumentOtborTovarov, error) {
+func (c *Client) DocumentOtborTovarovs(where Where) (*[]DocumentOtborTovarov, error) {
 	type ReturnObj struct {
 		Value []DocumentOtborTovarov `json:"value"`
 	}
@@ -32344,7 +32344,7 @@ func (c *Client) DocumentOtborTovarovs(where Where) ([]DocumentOtborTovarov, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtborTovarov(key PrimaryDocumentOtborTovarov, entity DocumentOtborTovarov) (*DocumentOtborTovarov, error) {
 	return NewDocumentOtborTovarov(c.updateEntity(key, entity))
@@ -32395,7 +32395,7 @@ func (c *Client) CreateDocumentOtborTovarovTovary(entity DocumentOtborTovarovTov
 func (c *Client) DocumentOtborTovarovTovary(key PrimaryDocumentOtborTovarovTovary, fields []string) (*DocumentOtborTovarovTovary, error) {
 	return NewDocumentOtborTovarovTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtborTovarovTovarys(where Where) ([]DocumentOtborTovarovTovary, error) {
+func (c *Client) DocumentOtborTovarovTovarys(where Where) (*[]DocumentOtborTovarovTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentOtborTovarovTovary `json:"value"`
 	}
@@ -32411,7 +32411,7 @@ func (c *Client) DocumentOtborTovarovTovarys(where Where) ([]DocumentOtborTovaro
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtborTovarovTovary(key PrimaryDocumentOtborTovarovTovary, entity DocumentOtborTovarovTovary) (*DocumentOtborTovarovTovary, error) {
 	return NewDocumentOtborTovarovTovary(c.updateEntity(key, entity))
@@ -32450,7 +32450,7 @@ func (c *Client) CreateDocumentOtborTovarovTovaryKOtboru(entity DocumentOtborTov
 func (c *Client) DocumentOtborTovarovTovaryKOtboru(key PrimaryDocumentOtborTovarovTovaryKOtboru, fields []string) (*DocumentOtborTovarovTovaryKOtboru, error) {
 	return NewDocumentOtborTovarovTovaryKOtboru(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtborTovarovTovaryKOtborus(where Where) ([]DocumentOtborTovarovTovaryKOtboru, error) {
+func (c *Client) DocumentOtborTovarovTovaryKOtborus(where Where) (*[]DocumentOtborTovarovTovaryKOtboru, error) {
 	type ReturnObj struct {
 		Value []DocumentOtborTovarovTovaryKOtboru `json:"value"`
 	}
@@ -32466,7 +32466,7 @@ func (c *Client) DocumentOtborTovarovTovaryKOtborus(where Where) ([]DocumentOtbo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtborTovarovTovaryKOtboru(key PrimaryDocumentOtborTovarovTovaryKOtboru, entity DocumentOtborTovarovTovaryKOtboru) (*DocumentOtborTovarovTovaryKOtboru, error) {
 	return NewDocumentOtborTovarovTovaryKOtboru(c.updateEntity(key, entity))
@@ -32503,7 +32503,7 @@ func (c *Client) CreateCatalogSposobyDostavkiTovara(entity CatalogSposobyDostavk
 func (c *Client) CatalogSposobyDostavkiTovara(key PrimaryCatalogSposobyDostavkiTovara, fields []string) (*CatalogSposobyDostavkiTovara, error) {
 	return NewCatalogSposobyDostavkiTovara(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSposobyDostavkiTovaras(where Where) ([]CatalogSposobyDostavkiTovara, error) {
+func (c *Client) CatalogSposobyDostavkiTovaras(where Where) (*[]CatalogSposobyDostavkiTovara, error) {
 	type ReturnObj struct {
 		Value []CatalogSposobyDostavkiTovara `json:"value"`
 	}
@@ -32519,7 +32519,7 @@ func (c *Client) CatalogSposobyDostavkiTovaras(where Where) ([]CatalogSposobyDos
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSposobyDostavkiTovara(key PrimaryCatalogSposobyDostavkiTovara, entity CatalogSposobyDostavkiTovara) (*CatalogSposobyDostavkiTovara, error) {
 	return NewCatalogSposobyDostavkiTovara(c.updateEntity(key, entity))
@@ -32557,7 +32557,7 @@ func (c *Client) CreateCatalogPodrazdeleniia(entity CatalogPodrazdeleniia) (*Cat
 func (c *Client) CatalogPodrazdeleniia(key PrimaryCatalogPodrazdeleniia, fields []string) (*CatalogPodrazdeleniia, error) {
 	return NewCatalogPodrazdeleniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPodrazdeleniias(where Where) ([]CatalogPodrazdeleniia, error) {
+func (c *Client) CatalogPodrazdeleniias(where Where) (*[]CatalogPodrazdeleniia, error) {
 	type ReturnObj struct {
 		Value []CatalogPodrazdeleniia `json:"value"`
 	}
@@ -32573,7 +32573,7 @@ func (c *Client) CatalogPodrazdeleniias(where Where) ([]CatalogPodrazdeleniia, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPodrazdeleniia(key PrimaryCatalogPodrazdeleniia, entity CatalogPodrazdeleniia) (*CatalogPodrazdeleniia, error) {
 	return NewCatalogPodrazdeleniia(c.updateEntity(key, entity))
@@ -32616,7 +32616,7 @@ func (c *Client) CreateDocumentJournalPreiskuranty(entity DocumentJournalPreisku
 func (c *Client) DocumentJournalPreiskuranty(key PrimaryDocumentJournalPreiskuranty, fields []string) (*DocumentJournalPreiskuranty, error) {
 	return NewDocumentJournalPreiskuranty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalPreiskurantys(where Where) ([]DocumentJournalPreiskuranty, error) {
+func (c *Client) DocumentJournalPreiskurantys(where Where) (*[]DocumentJournalPreiskuranty, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalPreiskuranty `json:"value"`
 	}
@@ -32632,7 +32632,7 @@ func (c *Client) DocumentJournalPreiskurantys(where Where) ([]DocumentJournalPre
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalPreiskuranty(key PrimaryDocumentJournalPreiskuranty, entity DocumentJournalPreiskuranty) (*DocumentJournalPreiskuranty, error) {
 	return NewDocumentJournalPreiskuranty(c.updateEntity(key, entity))
@@ -32674,7 +32674,7 @@ func (c *Client) CreateCatalogRelizyIuvelirnykhSalonov(entity CatalogRelizyIuvel
 func (c *Client) CatalogRelizyIuvelirnykhSalonov(key PrimaryCatalogRelizyIuvelirnykhSalonov, fields []string) (*CatalogRelizyIuvelirnykhSalonov, error) {
 	return NewCatalogRelizyIuvelirnykhSalonov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRelizyIuvelirnykhSalonovs(where Where) ([]CatalogRelizyIuvelirnykhSalonov, error) {
+func (c *Client) CatalogRelizyIuvelirnykhSalonovs(where Where) (*[]CatalogRelizyIuvelirnykhSalonov, error) {
 	type ReturnObj struct {
 		Value []CatalogRelizyIuvelirnykhSalonov `json:"value"`
 	}
@@ -32690,7 +32690,7 @@ func (c *Client) CatalogRelizyIuvelirnykhSalonovs(where Where) ([]CatalogRelizyI
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRelizyIuvelirnykhSalonov(key PrimaryCatalogRelizyIuvelirnykhSalonov, entity CatalogRelizyIuvelirnykhSalonov) (*CatalogRelizyIuvelirnykhSalonov, error) {
 	return NewCatalogRelizyIuvelirnykhSalonov(c.updateEntity(key, entity))
@@ -32725,7 +32725,7 @@ func (c *Client) CreateCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy(entity 
 func (c *Client) CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy(key PrimaryCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy, fields []string) (*CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy, error) {
 	return NewCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizys(where Where) ([]CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy, error) {
+func (c *Client) CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizys(where Where) (*[]CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy, error) {
 	type ReturnObj struct {
 		Value []CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy `json:"value"`
 	}
@@ -32741,7 +32741,7 @@ func (c *Client) CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizys(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy(key PrimaryCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy, entity CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy) (*CatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy, error) {
 	return NewCatalogRelizyIuvelirnykhSalonovObnovliaemyeRelizy(c.updateEntity(key, entity))
@@ -32814,7 +32814,7 @@ func (c *Client) CreateDocumentOtchetKomissioneraOProdazhakh(entity DocumentOtch
 func (c *Client) DocumentOtchetKomissioneraOProdazhakh(key PrimaryDocumentOtchetKomissioneraOProdazhakh, fields []string) (*DocumentOtchetKomissioneraOProdazhakh, error) {
 	return NewDocumentOtchetKomissioneraOProdazhakh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetKomissioneraOProdazhakhs(where Where) ([]DocumentOtchetKomissioneraOProdazhakh, error) {
+func (c *Client) DocumentOtchetKomissioneraOProdazhakhs(where Where) (*[]DocumentOtchetKomissioneraOProdazhakh, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetKomissioneraOProdazhakh `json:"value"`
 	}
@@ -32830,7 +32830,7 @@ func (c *Client) DocumentOtchetKomissioneraOProdazhakhs(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetKomissioneraOProdazhakh(key PrimaryDocumentOtchetKomissioneraOProdazhakh, entity DocumentOtchetKomissioneraOProdazhakh) (*DocumentOtchetKomissioneraOProdazhakh, error) {
 	return NewDocumentOtchetKomissioneraOProdazhakh(c.updateEntity(key, entity))
@@ -32868,7 +32868,7 @@ func (c *Client) CreateDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva(en
 func (c *Client) DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva(key PrimaryDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva, fields []string) (*DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstvas(where Where) ([]DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva, error) {
+func (c *Client) DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstvas(where Where) (*[]DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva `json:"value"`
 	}
@@ -32884,7 +32884,7 @@ func (c *Client) DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstvas(where W
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva(key PrimaryDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva, entity DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva) (*DocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentOtchetKomissioneraOProdazhakhDenezhnyeSredstva(c.updateEntity(key, entity))
@@ -32936,7 +32936,7 @@ func (c *Client) CreateDocumentOtchetKomissioneraOProdazhakhTovary(entity Docume
 func (c *Client) DocumentOtchetKomissioneraOProdazhakhTovary(key PrimaryDocumentOtchetKomissioneraOProdazhakhTovary, fields []string) (*DocumentOtchetKomissioneraOProdazhakhTovary, error) {
 	return NewDocumentOtchetKomissioneraOProdazhakhTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentOtchetKomissioneraOProdazhakhTovarys(where Where) ([]DocumentOtchetKomissioneraOProdazhakhTovary, error) {
+func (c *Client) DocumentOtchetKomissioneraOProdazhakhTovarys(where Where) (*[]DocumentOtchetKomissioneraOProdazhakhTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentOtchetKomissioneraOProdazhakhTovary `json:"value"`
 	}
@@ -32952,7 +32952,7 @@ func (c *Client) DocumentOtchetKomissioneraOProdazhakhTovarys(where Where) ([]Do
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentOtchetKomissioneraOProdazhakhTovary(key PrimaryDocumentOtchetKomissioneraOProdazhakhTovary, entity DocumentOtchetKomissioneraOProdazhakhTovary) (*DocumentOtchetKomissioneraOProdazhakhTovary, error) {
 	return NewDocumentOtchetKomissioneraOProdazhakhTovary(c.updateEntity(key, entity))
@@ -32989,7 +32989,7 @@ func (c *Client) CreateCatalogTovarnyeKategorii(entity CatalogTovarnyeKategorii)
 func (c *Client) CatalogTovarnyeKategorii(key PrimaryCatalogTovarnyeKategorii, fields []string) (*CatalogTovarnyeKategorii, error) {
 	return NewCatalogTovarnyeKategorii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTovarnyeKategoriis(where Where) ([]CatalogTovarnyeKategorii, error) {
+func (c *Client) CatalogTovarnyeKategoriis(where Where) (*[]CatalogTovarnyeKategorii, error) {
 	type ReturnObj struct {
 		Value []CatalogTovarnyeKategorii `json:"value"`
 	}
@@ -33005,7 +33005,7 @@ func (c *Client) CatalogTovarnyeKategoriis(where Where) ([]CatalogTovarnyeKatego
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTovarnyeKategorii(key PrimaryCatalogTovarnyeKategorii, entity CatalogTovarnyeKategorii) (*CatalogTovarnyeKategorii, error) {
 	return NewCatalogTovarnyeKategorii(c.updateEntity(key, entity))
@@ -33043,7 +33043,7 @@ func (c *Client) CreateCatalogDokumentyUdostoveriaiushchieLichnost(entity Catalo
 func (c *Client) CatalogDokumentyUdostoveriaiushchieLichnost(key PrimaryCatalogDokumentyUdostoveriaiushchieLichnost, fields []string) (*CatalogDokumentyUdostoveriaiushchieLichnost, error) {
 	return NewCatalogDokumentyUdostoveriaiushchieLichnost(c.getEntity(key, fields))
 }
-func (c *Client) CatalogDokumentyUdostoveriaiushchieLichnosts(where Where) ([]CatalogDokumentyUdostoveriaiushchieLichnost, error) {
+func (c *Client) CatalogDokumentyUdostoveriaiushchieLichnosts(where Where) (*[]CatalogDokumentyUdostoveriaiushchieLichnost, error) {
 	type ReturnObj struct {
 		Value []CatalogDokumentyUdostoveriaiushchieLichnost `json:"value"`
 	}
@@ -33059,7 +33059,7 @@ func (c *Client) CatalogDokumentyUdostoveriaiushchieLichnosts(where Where) ([]Ca
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogDokumentyUdostoveriaiushchieLichnost(key PrimaryCatalogDokumentyUdostoveriaiushchieLichnost, entity CatalogDokumentyUdostoveriaiushchieLichnost) (*CatalogDokumentyUdostoveriaiushchieLichnost, error) {
 	return NewCatalogDokumentyUdostoveriaiushchieLichnost(c.updateEntity(key, entity))
@@ -33102,7 +33102,7 @@ func (c *Client) CreateCatalogFiltryDliaElektronnykhPisem(entity CatalogFiltryDl
 func (c *Client) CatalogFiltryDliaElektronnykhPisem(key PrimaryCatalogFiltryDliaElektronnykhPisem, fields []string) (*CatalogFiltryDliaElektronnykhPisem, error) {
 	return NewCatalogFiltryDliaElektronnykhPisem(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFiltryDliaElektronnykhPisems(where Where) ([]CatalogFiltryDliaElektronnykhPisem, error) {
+func (c *Client) CatalogFiltryDliaElektronnykhPisems(where Where) (*[]CatalogFiltryDliaElektronnykhPisem, error) {
 	type ReturnObj struct {
 		Value []CatalogFiltryDliaElektronnykhPisem `json:"value"`
 	}
@@ -33118,7 +33118,7 @@ func (c *Client) CatalogFiltryDliaElektronnykhPisems(where Where) ([]CatalogFilt
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFiltryDliaElektronnykhPisem(key PrimaryCatalogFiltryDliaElektronnykhPisem, entity CatalogFiltryDliaElektronnykhPisem) (*CatalogFiltryDliaElektronnykhPisem, error) {
 	return NewCatalogFiltryDliaElektronnykhPisem(c.updateEntity(key, entity))
@@ -33154,7 +33154,7 @@ func (c *Client) CreateCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra(entity 
 func (c *Client) CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra(key PrimaryCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra, fields []string) (*CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra, error) {
 	return NewCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFiltryDliaElektronnykhPisemDeistviiaFiltras(where Where) ([]CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra, error) {
+func (c *Client) CatalogFiltryDliaElektronnykhPisemDeistviiaFiltras(where Where) (*[]CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra, error) {
 	type ReturnObj struct {
 		Value []CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra `json:"value"`
 	}
@@ -33170,7 +33170,7 @@ func (c *Client) CatalogFiltryDliaElektronnykhPisemDeistviiaFiltras(where Where)
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra(key PrimaryCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra, entity CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra) (*CatalogFiltryDliaElektronnykhPisemDeistviiaFiltra, error) {
 	return NewCatalogFiltryDliaElektronnykhPisemDeistviiaFiltra(c.updateEntity(key, entity))
@@ -33207,7 +33207,7 @@ func (c *Client) CreateCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra(entity C
 func (c *Client) CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra(key PrimaryCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra, fields []string) (*CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra, error) {
 	return NewCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra(c.getEntity(key, fields))
 }
-func (c *Client) CatalogFiltryDliaElektronnykhPisemUsloviiaFiltras(where Where) ([]CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra, error) {
+func (c *Client) CatalogFiltryDliaElektronnykhPisemUsloviiaFiltras(where Where) (*[]CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra, error) {
 	type ReturnObj struct {
 		Value []CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra `json:"value"`
 	}
@@ -33223,7 +33223,7 @@ func (c *Client) CatalogFiltryDliaElektronnykhPisemUsloviiaFiltras(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra(key PrimaryCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra, entity CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra) (*CatalogFiltryDliaElektronnykhPisemUsloviiaFiltra, error) {
 	return NewCatalogFiltryDliaElektronnykhPisemUsloviiaFiltra(c.updateEntity(key, entity))
@@ -33268,7 +33268,7 @@ func (c *Client) CreateDocumentPreiskurantTsenNaTsvKamni(entity DocumentPreiskur
 func (c *Client) DocumentPreiskurantTsenNaTsvKamni(key PrimaryDocumentPreiskurantTsenNaTsvKamni, fields []string) (*DocumentPreiskurantTsenNaTsvKamni, error) {
 	return NewDocumentPreiskurantTsenNaTsvKamni(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPreiskurantTsenNaTsvKamnis(where Where) ([]DocumentPreiskurantTsenNaTsvKamni, error) {
+func (c *Client) DocumentPreiskurantTsenNaTsvKamnis(where Where) (*[]DocumentPreiskurantTsenNaTsvKamni, error) {
 	type ReturnObj struct {
 		Value []DocumentPreiskurantTsenNaTsvKamni `json:"value"`
 	}
@@ -33284,7 +33284,7 @@ func (c *Client) DocumentPreiskurantTsenNaTsvKamnis(where Where) ([]DocumentPrei
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPreiskurantTsenNaTsvKamni(key PrimaryDocumentPreiskurantTsenNaTsvKamni, entity DocumentPreiskurantTsenNaTsvKamni) (*DocumentPreiskurantTsenNaTsvKamni, error) {
 	return NewDocumentPreiskurantTsenNaTsvKamni(c.updateEntity(key, entity))
@@ -33324,7 +33324,7 @@ func (c *Client) CreateDocumentPreiskurantTsenNaTsvKamniTablitsa(entity Document
 func (c *Client) DocumentPreiskurantTsenNaTsvKamniTablitsa(key PrimaryDocumentPreiskurantTsenNaTsvKamniTablitsa, fields []string) (*DocumentPreiskurantTsenNaTsvKamniTablitsa, error) {
 	return NewDocumentPreiskurantTsenNaTsvKamniTablitsa(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPreiskurantTsenNaTsvKamniTablitsas(where Where) ([]DocumentPreiskurantTsenNaTsvKamniTablitsa, error) {
+func (c *Client) DocumentPreiskurantTsenNaTsvKamniTablitsas(where Where) (*[]DocumentPreiskurantTsenNaTsvKamniTablitsa, error) {
 	type ReturnObj struct {
 		Value []DocumentPreiskurantTsenNaTsvKamniTablitsa `json:"value"`
 	}
@@ -33340,7 +33340,7 @@ func (c *Client) DocumentPreiskurantTsenNaTsvKamniTablitsas(where Where) ([]Docu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPreiskurantTsenNaTsvKamniTablitsa(key PrimaryDocumentPreiskurantTsenNaTsvKamniTablitsa, entity DocumentPreiskurantTsenNaTsvKamniTablitsa) (*DocumentPreiskurantTsenNaTsvKamniTablitsa, error) {
 	return NewDocumentPreiskurantTsenNaTsvKamniTablitsa(c.updateEntity(key, entity))
@@ -33378,7 +33378,7 @@ func (c *Client) CreateSize(entity Size) (*Size, error) {
 func (c *Client) Size(key PrimarySize, fields []string) (*Size, error) {
 	return NewSize(c.getEntity(key, fields))
 }
-func (c *Client) Sizes(where Where) ([]Size, error) {
+func (c *Client) Sizes(where Where) (*[]Size, error) {
 	type ReturnObj struct {
 		Value []Size `json:"value"`
 	}
@@ -33394,7 +33394,7 @@ func (c *Client) Sizes(where Where) ([]Size, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateSize(key PrimarySize, entity Size) (*Size, error) {
 	return NewSize(c.updateEntity(key, entity))
@@ -33432,7 +33432,7 @@ func (c *Client) CreateCatalogTipyDragotsennykhMetallov(entity CatalogTipyDragot
 func (c *Client) CatalogTipyDragotsennykhMetallov(key PrimaryCatalogTipyDragotsennykhMetallov, fields []string) (*CatalogTipyDragotsennykhMetallov, error) {
 	return NewCatalogTipyDragotsennykhMetallov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTipyDragotsennykhMetallovs(where Where) ([]CatalogTipyDragotsennykhMetallov, error) {
+func (c *Client) CatalogTipyDragotsennykhMetallovs(where Where) (*[]CatalogTipyDragotsennykhMetallov, error) {
 	type ReturnObj struct {
 		Value []CatalogTipyDragotsennykhMetallov `json:"value"`
 	}
@@ -33448,7 +33448,7 @@ func (c *Client) CatalogTipyDragotsennykhMetallovs(where Where) ([]CatalogTipyDr
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTipyDragotsennykhMetallov(key PrimaryCatalogTipyDragotsennykhMetallov, entity CatalogTipyDragotsennykhMetallov) (*CatalogTipyDragotsennykhMetallov, error) {
 	return NewCatalogTipyDragotsennykhMetallov(c.updateEntity(key, entity))
@@ -33499,7 +33499,7 @@ func (c *Client) CreateDocumentTelemarketing(entity DocumentTelemarketing) (*Doc
 func (c *Client) DocumentTelemarketing(key PrimaryDocumentTelemarketing, fields []string) (*DocumentTelemarketing, error) {
 	return NewDocumentTelemarketing(c.getEntity(key, fields))
 }
-func (c *Client) DocumentTelemarketings(where Where) ([]DocumentTelemarketing, error) {
+func (c *Client) DocumentTelemarketings(where Where) (*[]DocumentTelemarketing, error) {
 	type ReturnObj struct {
 		Value []DocumentTelemarketing `json:"value"`
 	}
@@ -33515,7 +33515,7 @@ func (c *Client) DocumentTelemarketings(where Where) ([]DocumentTelemarketing, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentTelemarketing(key PrimaryDocumentTelemarketing, entity DocumentTelemarketing) (*DocumentTelemarketing, error) {
 	return NewDocumentTelemarketing(c.updateEntity(key, entity))
@@ -33558,7 +33558,7 @@ func (c *Client) CreateDocumentTelemarketingUchastniki(entity DocumentTelemarket
 func (c *Client) DocumentTelemarketingUchastniki(key PrimaryDocumentTelemarketingUchastniki, fields []string) (*DocumentTelemarketingUchastniki, error) {
 	return NewDocumentTelemarketingUchastniki(c.getEntity(key, fields))
 }
-func (c *Client) DocumentTelemarketingUchastnikis(where Where) ([]DocumentTelemarketingUchastniki, error) {
+func (c *Client) DocumentTelemarketingUchastnikis(where Where) (*[]DocumentTelemarketingUchastniki, error) {
 	type ReturnObj struct {
 		Value []DocumentTelemarketingUchastniki `json:"value"`
 	}
@@ -33574,7 +33574,7 @@ func (c *Client) DocumentTelemarketingUchastnikis(where Where) ([]DocumentTelema
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentTelemarketingUchastniki(key PrimaryDocumentTelemarketingUchastniki, entity DocumentTelemarketingUchastniki) (*DocumentTelemarketingUchastniki, error) {
 	return NewDocumentTelemarketingUchastniki(c.updateEntity(key, entity))
@@ -33621,7 +33621,7 @@ func (c *Client) CreateDocumentVozvratDavalcheskogoMetalla(entity DocumentVozvra
 func (c *Client) DocumentVozvratDavalcheskogoMetalla(key PrimaryDocumentVozvratDavalcheskogoMetalla, fields []string) (*DocumentVozvratDavalcheskogoMetalla, error) {
 	return NewDocumentVozvratDavalcheskogoMetalla(c.getEntity(key, fields))
 }
-func (c *Client) DocumentVozvratDavalcheskogoMetallas(where Where) ([]DocumentVozvratDavalcheskogoMetalla, error) {
+func (c *Client) DocumentVozvratDavalcheskogoMetallas(where Where) (*[]DocumentVozvratDavalcheskogoMetalla, error) {
 	type ReturnObj struct {
 		Value []DocumentVozvratDavalcheskogoMetalla `json:"value"`
 	}
@@ -33637,7 +33637,7 @@ func (c *Client) DocumentVozvratDavalcheskogoMetallas(where Where) ([]DocumentVo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentVozvratDavalcheskogoMetalla(key PrimaryDocumentVozvratDavalcheskogoMetalla, entity DocumentVozvratDavalcheskogoMetalla) (*DocumentVozvratDavalcheskogoMetalla, error) {
 	return NewDocumentVozvratDavalcheskogoMetalla(c.updateEntity(key, entity))
@@ -33676,7 +33676,7 @@ func (c *Client) CreateCatalogAdresnyeSokrashcheniia(entity CatalogAdresnyeSokra
 func (c *Client) CatalogAdresnyeSokrashcheniia(key PrimaryCatalogAdresnyeSokrashcheniia, fields []string) (*CatalogAdresnyeSokrashcheniia, error) {
 	return NewCatalogAdresnyeSokrashcheniia(c.getEntity(key, fields))
 }
-func (c *Client) CatalogAdresnyeSokrashcheniias(where Where) ([]CatalogAdresnyeSokrashcheniia, error) {
+func (c *Client) CatalogAdresnyeSokrashcheniias(where Where) (*[]CatalogAdresnyeSokrashcheniia, error) {
 	type ReturnObj struct {
 		Value []CatalogAdresnyeSokrashcheniia `json:"value"`
 	}
@@ -33692,7 +33692,7 @@ func (c *Client) CatalogAdresnyeSokrashcheniias(where Where) ([]CatalogAdresnyeS
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogAdresnyeSokrashcheniia(key PrimaryCatalogAdresnyeSokrashcheniia, entity CatalogAdresnyeSokrashcheniia) (*CatalogAdresnyeSokrashcheniia, error) {
 	return NewCatalogAdresnyeSokrashcheniia(c.updateEntity(key, entity))
@@ -33741,7 +33741,7 @@ func (c *Client) CreateDocumentRassylkaAnket(entity DocumentRassylkaAnket) (*Doc
 func (c *Client) DocumentRassylkaAnket(key PrimaryDocumentRassylkaAnket, fields []string) (*DocumentRassylkaAnket, error) {
 	return NewDocumentRassylkaAnket(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRassylkaAnkets(where Where) ([]DocumentRassylkaAnket, error) {
+func (c *Client) DocumentRassylkaAnkets(where Where) (*[]DocumentRassylkaAnket, error) {
 	type ReturnObj struct {
 		Value []DocumentRassylkaAnket `json:"value"`
 	}
@@ -33757,7 +33757,7 @@ func (c *Client) DocumentRassylkaAnkets(where Where) ([]DocumentRassylkaAnket, e
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRassylkaAnket(key PrimaryDocumentRassylkaAnket, entity DocumentRassylkaAnket) (*DocumentRassylkaAnket, error) {
 	return NewDocumentRassylkaAnket(c.updateEntity(key, entity))
@@ -33795,7 +33795,7 @@ func (c *Client) CreateDocumentRassylkaAnketVlozheniia(entity DocumentRassylkaAn
 func (c *Client) DocumentRassylkaAnketVlozheniia(key PrimaryDocumentRassylkaAnketVlozheniia, fields []string) (*DocumentRassylkaAnketVlozheniia, error) {
 	return NewDocumentRassylkaAnketVlozheniia(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRassylkaAnketVlozheniias(where Where) ([]DocumentRassylkaAnketVlozheniia, error) {
+func (c *Client) DocumentRassylkaAnketVlozheniias(where Where) (*[]DocumentRassylkaAnketVlozheniia, error) {
 	type ReturnObj struct {
 		Value []DocumentRassylkaAnketVlozheniia `json:"value"`
 	}
@@ -33811,7 +33811,7 @@ func (c *Client) DocumentRassylkaAnketVlozheniias(where Where) ([]DocumentRassyl
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRassylkaAnketVlozheniia(key PrimaryDocumentRassylkaAnketVlozheniia, entity DocumentRassylkaAnketVlozheniia) (*DocumentRassylkaAnketVlozheniia, error) {
 	return NewDocumentRassylkaAnketVlozheniia(c.updateEntity(key, entity))
@@ -33848,7 +33848,7 @@ func (c *Client) CreateDocumentRassylkaAnketPoluchateli(entity DocumentRassylkaA
 func (c *Client) DocumentRassylkaAnketPoluchateli(key PrimaryDocumentRassylkaAnketPoluchateli, fields []string) (*DocumentRassylkaAnketPoluchateli, error) {
 	return NewDocumentRassylkaAnketPoluchateli(c.getEntity(key, fields))
 }
-func (c *Client) DocumentRassylkaAnketPoluchatelis(where Where) ([]DocumentRassylkaAnketPoluchateli, error) {
+func (c *Client) DocumentRassylkaAnketPoluchatelis(where Where) (*[]DocumentRassylkaAnketPoluchateli, error) {
 	type ReturnObj struct {
 		Value []DocumentRassylkaAnketPoluchateli `json:"value"`
 	}
@@ -33864,7 +33864,7 @@ func (c *Client) DocumentRassylkaAnketPoluchatelis(where Where) ([]DocumentRassy
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentRassylkaAnketPoluchateli(key PrimaryDocumentRassylkaAnketPoluchateli, entity DocumentRassylkaAnketPoluchateli) (*DocumentRassylkaAnketPoluchateli, error) {
 	return NewDocumentRassylkaAnketPoluchateli(c.updateEntity(key, entity))
@@ -33901,7 +33901,7 @@ func (c *Client) CreateCatalogVidyDeiatelnostiKontragentov(entity CatalogVidyDei
 func (c *Client) CatalogVidyDeiatelnostiKontragentov(key PrimaryCatalogVidyDeiatelnostiKontragentov, fields []string) (*CatalogVidyDeiatelnostiKontragentov, error) {
 	return NewCatalogVidyDeiatelnostiKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogVidyDeiatelnostiKontragentovs(where Where) ([]CatalogVidyDeiatelnostiKontragentov, error) {
+func (c *Client) CatalogVidyDeiatelnostiKontragentovs(where Where) (*[]CatalogVidyDeiatelnostiKontragentov, error) {
 	type ReturnObj struct {
 		Value []CatalogVidyDeiatelnostiKontragentov `json:"value"`
 	}
@@ -33917,7 +33917,7 @@ func (c *Client) CatalogVidyDeiatelnostiKontragentovs(where Where) ([]CatalogVid
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogVidyDeiatelnostiKontragentov(key PrimaryCatalogVidyDeiatelnostiKontragentov, entity CatalogVidyDeiatelnostiKontragentov) (*CatalogVidyDeiatelnostiKontragentov, error) {
 	return NewCatalogVidyDeiatelnostiKontragentov(c.updateEntity(key, entity))
@@ -33957,7 +33957,7 @@ func (c *Client) CreateCatalogTorgovoeOborudovanie(entity CatalogTorgovoeOborudo
 func (c *Client) CatalogTorgovoeOborudovanie(key PrimaryCatalogTorgovoeOborudovanie, fields []string) (*CatalogTorgovoeOborudovanie, error) {
 	return NewCatalogTorgovoeOborudovanie(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTorgovoeOborudovanies(where Where) ([]CatalogTorgovoeOborudovanie, error) {
+func (c *Client) CatalogTorgovoeOborudovanies(where Where) (*[]CatalogTorgovoeOborudovanie, error) {
 	type ReturnObj struct {
 		Value []CatalogTorgovoeOborudovanie `json:"value"`
 	}
@@ -33973,7 +33973,7 @@ func (c *Client) CatalogTorgovoeOborudovanies(where Where) ([]CatalogTorgovoeObo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTorgovoeOborudovanie(key PrimaryCatalogTorgovoeOborudovanie, entity CatalogTorgovoeOborudovanie) (*CatalogTorgovoeOborudovanie, error) {
 	return NewCatalogTorgovoeOborudovanie(c.updateEntity(key, entity))
@@ -34013,7 +34013,7 @@ func (c *Client) CreateCatalogSkhemyRealizatsii(entity CatalogSkhemyRealizatsii)
 func (c *Client) CatalogSkhemyRealizatsii(key PrimaryCatalogSkhemyRealizatsii, fields []string) (*CatalogSkhemyRealizatsii, error) {
 	return NewCatalogSkhemyRealizatsii(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkhemyRealizatsiis(where Where) ([]CatalogSkhemyRealizatsii, error) {
+func (c *Client) CatalogSkhemyRealizatsiis(where Where) (*[]CatalogSkhemyRealizatsii, error) {
 	type ReturnObj struct {
 		Value []CatalogSkhemyRealizatsii `json:"value"`
 	}
@@ -34029,7 +34029,7 @@ func (c *Client) CatalogSkhemyRealizatsiis(where Where) ([]CatalogSkhemyRealizat
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkhemyRealizatsii(key PrimaryCatalogSkhemyRealizatsii, entity CatalogSkhemyRealizatsii) (*CatalogSkhemyRealizatsii, error) {
 	return NewCatalogSkhemyRealizatsii(c.updateEntity(key, entity))
@@ -34075,7 +34075,7 @@ func (c *Client) CreateCatalogSkhemyRealizatsiiEtapySkhemy(entity CatalogSkhemyR
 func (c *Client) CatalogSkhemyRealizatsiiEtapySkhemy(key PrimaryCatalogSkhemyRealizatsiiEtapySkhemy, fields []string) (*CatalogSkhemyRealizatsiiEtapySkhemy, error) {
 	return NewCatalogSkhemyRealizatsiiEtapySkhemy(c.getEntity(key, fields))
 }
-func (c *Client) CatalogSkhemyRealizatsiiEtapySkhemys(where Where) ([]CatalogSkhemyRealizatsiiEtapySkhemy, error) {
+func (c *Client) CatalogSkhemyRealizatsiiEtapySkhemys(where Where) (*[]CatalogSkhemyRealizatsiiEtapySkhemy, error) {
 	type ReturnObj struct {
 		Value []CatalogSkhemyRealizatsiiEtapySkhemy `json:"value"`
 	}
@@ -34091,7 +34091,7 @@ func (c *Client) CatalogSkhemyRealizatsiiEtapySkhemys(where Where) ([]CatalogSkh
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogSkhemyRealizatsiiEtapySkhemy(key PrimaryCatalogSkhemyRealizatsiiEtapySkhemy, entity CatalogSkhemyRealizatsiiEtapySkhemy) (*CatalogSkhemyRealizatsiiEtapySkhemy, error) {
 	return NewCatalogSkhemyRealizatsiiEtapySkhemy(c.updateEntity(key, entity))
@@ -34138,7 +34138,7 @@ func (c *Client) CreateCatalogPodkliuchaemoeOborudovanie(entity CatalogPodkliuch
 func (c *Client) CatalogPodkliuchaemoeOborudovanie(key PrimaryCatalogPodkliuchaemoeOborudovanie, fields []string) (*CatalogPodkliuchaemoeOborudovanie, error) {
 	return NewCatalogPodkliuchaemoeOborudovanie(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPodkliuchaemoeOborudovanies(where Where) ([]CatalogPodkliuchaemoeOborudovanie, error) {
+func (c *Client) CatalogPodkliuchaemoeOborudovanies(where Where) (*[]CatalogPodkliuchaemoeOborudovanie, error) {
 	type ReturnObj struct {
 		Value []CatalogPodkliuchaemoeOborudovanie `json:"value"`
 	}
@@ -34154,7 +34154,7 @@ func (c *Client) CatalogPodkliuchaemoeOborudovanies(where Where) ([]CatalogPodkl
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPodkliuchaemoeOborudovanie(key PrimaryCatalogPodkliuchaemoeOborudovanie, entity CatalogPodkliuchaemoeOborudovanie) (*CatalogPodkliuchaemoeOborudovanie, error) {
 	return NewCatalogPodkliuchaemoeOborudovanie(c.updateEntity(key, entity))
@@ -34205,7 +34205,7 @@ func (c *Client) CreateDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshe
 func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii(key PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii, fields []string) (*DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii, error) {
 	return NewDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniis(where Where) ([]DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii, error) {
+func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniis(where Where) (*[]DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii, error) {
 	type ReturnObj struct {
 		Value []DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii `json:"value"`
 	}
@@ -34221,7 +34221,7 @@ func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniis(w
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii(key PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii, entity DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii) (*DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii, error) {
 	return NewDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshenii(c.updateEntity(key, entity))
@@ -34265,7 +34265,7 @@ func (c *Client) CreateDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnoshe
 func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov(key PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov, fields []string) (*DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov, error) {
 	return NewDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov(c.getEntity(key, fields))
 }
-func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentovs(where Where) ([]DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov, error) {
+func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentovs(where Where) (*[]DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov, error) {
 	type ReturnObj struct {
 		Value []DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov `json:"value"`
 	}
@@ -34281,7 +34281,7 @@ func (c *Client) DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTab
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov(key PrimaryDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov, entity DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov) (*DocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov, error) {
 	return NewDocumentKlassifikatsiiaPokupateleiPoStadiiamVzaimootnosheniiTablitsaRaspredeleniiaKontragentov(c.updateEntity(key, entity))
@@ -34318,7 +34318,7 @@ func (c *Client) CreateCatalogGabarity(entity CatalogGabarity) (*CatalogGabarity
 func (c *Client) CatalogGabarity(key PrimaryCatalogGabarity, fields []string) (*CatalogGabarity, error) {
 	return NewCatalogGabarity(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGabaritys(where Where) ([]CatalogGabarity, error) {
+func (c *Client) CatalogGabaritys(where Where) (*[]CatalogGabarity, error) {
 	type ReturnObj struct {
 		Value []CatalogGabarity `json:"value"`
 	}
@@ -34334,7 +34334,7 @@ func (c *Client) CatalogGabaritys(where Where) ([]CatalogGabarity, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGabarity(key PrimaryCatalogGabarity, entity CatalogGabarity) (*CatalogGabarity, error) {
 	return NewCatalogGabarity(c.updateEntity(key, entity))
@@ -34414,7 +34414,7 @@ func (c *Client) CreateDocumentZakazKlienta(entity DocumentZakazKlienta) (*Docum
 func (c *Client) DocumentZakazKlienta(key PrimaryDocumentZakazKlienta, fields []string) (*DocumentZakazKlienta, error) {
 	return NewDocumentZakazKlienta(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakazKlientas(where Where) ([]DocumentZakazKlienta, error) {
+func (c *Client) DocumentZakazKlientas(where Where) (*[]DocumentZakazKlienta, error) {
 	type ReturnObj struct {
 		Value []DocumentZakazKlienta `json:"value"`
 	}
@@ -34430,7 +34430,7 @@ func (c *Client) DocumentZakazKlientas(where Where) ([]DocumentZakazKlienta, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakazKlienta(key PrimaryDocumentZakazKlienta, entity DocumentZakazKlienta) (*DocumentZakazKlienta, error) {
 	return NewDocumentZakazKlienta(c.updateEntity(key, entity))
@@ -34483,7 +34483,7 @@ func (c *Client) CreateDocumentZakazKlientaTovary(entity DocumentZakazKlientaTov
 func (c *Client) DocumentZakazKlientaTovary(key PrimaryDocumentZakazKlientaTovary, fields []string) (*DocumentZakazKlientaTovary, error) {
 	return NewDocumentZakazKlientaTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentZakazKlientaTovarys(where Where) ([]DocumentZakazKlientaTovary, error) {
+func (c *Client) DocumentZakazKlientaTovarys(where Where) (*[]DocumentZakazKlientaTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentZakazKlientaTovary `json:"value"`
 	}
@@ -34499,7 +34499,7 @@ func (c *Client) DocumentZakazKlientaTovarys(where Where) ([]DocumentZakazKlient
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentZakazKlientaTovary(key PrimaryDocumentZakazKlientaTovary, entity DocumentZakazKlientaTovary) (*DocumentZakazKlientaTovary, error) {
 	return NewDocumentZakazKlientaTovary(c.updateEntity(key, entity))
@@ -34578,7 +34578,7 @@ func (c *Client) CreateArriveFromManufacturing(entity ArriveFromManufacturing) (
 func (c *Client) ArriveFromManufacturing(key PrimaryArriveFromManufacturing, fields []string) (*ArriveFromManufacturing, error) {
 	return NewArriveFromManufacturing(c.getEntity(key, fields))
 }
-func (c *Client) ArriveFromManufacturings(where Where) ([]ArriveFromManufacturing, error) {
+func (c *Client) ArriveFromManufacturings(where Where) (*[]ArriveFromManufacturing, error) {
 	type ReturnObj struct {
 		Value []ArriveFromManufacturing `json:"value"`
 	}
@@ -34594,7 +34594,7 @@ func (c *Client) ArriveFromManufacturings(where Where) ([]ArriveFromManufacturin
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateArriveFromManufacturing(key PrimaryArriveFromManufacturing, entity ArriveFromManufacturing) (*ArriveFromManufacturing, error) {
 	return NewArriveFromManufacturing(c.updateEntity(key, entity))
@@ -34652,7 +34652,7 @@ func (c *Client) CreateArriveFromManufacturingInstance(entity ArriveFromManufact
 func (c *Client) ArriveFromManufacturingInstance(key PrimaryArriveFromManufacturingInstance, fields []string) (*ArriveFromManufacturingInstance, error) {
 	return NewArriveFromManufacturingInstance(c.getEntity(key, fields))
 }
-func (c *Client) ArriveFromManufacturingInstances(where Where) ([]ArriveFromManufacturingInstance, error) {
+func (c *Client) ArriveFromManufacturingInstances(where Where) (*[]ArriveFromManufacturingInstance, error) {
 	type ReturnObj struct {
 		Value []ArriveFromManufacturingInstance `json:"value"`
 	}
@@ -34668,7 +34668,7 @@ func (c *Client) ArriveFromManufacturingInstances(where Where) ([]ArriveFromManu
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateArriveFromManufacturingInstance(key PrimaryArriveFromManufacturingInstance, entity ArriveFromManufacturingInstance) (*ArriveFromManufacturingInstance, error) {
 	return NewArriveFromManufacturingInstance(c.updateEntity(key, entity))
@@ -34709,7 +34709,7 @@ func (c *Client) CreateDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy(enti
 func (c *Client) DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy(key PrimaryDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy, fields []string) (*DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy, error) {
 	return NewDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieProduktsiiIzProizvodstvaMaterialys(where Where) ([]DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy, error) {
+func (c *Client) DocumentPostuplenieProduktsiiIzProizvodstvaMaterialys(where Where) (*[]DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy `json:"value"`
 	}
@@ -34725,7 +34725,7 @@ func (c *Client) DocumentPostuplenieProduktsiiIzProizvodstvaMaterialys(where Whe
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy(key PrimaryDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy, entity DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy) (*DocumentPostuplenieProduktsiiIzProizvodstvaMaterialy, error) {
 	return NewDocumentPostuplenieProduktsiiIzProizvodstvaMaterialy(c.updateEntity(key, entity))
@@ -34773,7 +34773,7 @@ func (c *Client) CreateDocumentJournalZakazyPostavshchikam(entity DocumentJourna
 func (c *Client) DocumentJournalZakazyPostavshchikam(key PrimaryDocumentJournalZakazyPostavshchikam, fields []string) (*DocumentJournalZakazyPostavshchikam, error) {
 	return NewDocumentJournalZakazyPostavshchikam(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalZakazyPostavshchikams(where Where) ([]DocumentJournalZakazyPostavshchikam, error) {
+func (c *Client) DocumentJournalZakazyPostavshchikams(where Where) (*[]DocumentJournalZakazyPostavshchikam, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalZakazyPostavshchikam `json:"value"`
 	}
@@ -34789,7 +34789,7 @@ func (c *Client) DocumentJournalZakazyPostavshchikams(where Where) ([]DocumentJo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalZakazyPostavshchikam(key PrimaryDocumentJournalZakazyPostavshchikam, entity DocumentJournalZakazyPostavshchikam) (*DocumentJournalZakazyPostavshchikam, error) {
 	return NewDocumentJournalZakazyPostavshchikam(c.updateEntity(key, entity))
@@ -34839,7 +34839,7 @@ func (c *Client) CreateDocumentJournalSkladskieDokumenty(entity DocumentJournalS
 func (c *Client) DocumentJournalSkladskieDokumenty(key PrimaryDocumentJournalSkladskieDokumenty, fields []string) (*DocumentJournalSkladskieDokumenty, error) {
 	return NewDocumentJournalSkladskieDokumenty(c.getEntity(key, fields))
 }
-func (c *Client) DocumentJournalSkladskieDokumentys(where Where) ([]DocumentJournalSkladskieDokumenty, error) {
+func (c *Client) DocumentJournalSkladskieDokumentys(where Where) (*[]DocumentJournalSkladskieDokumenty, error) {
 	type ReturnObj struct {
 		Value []DocumentJournalSkladskieDokumenty `json:"value"`
 	}
@@ -34855,7 +34855,7 @@ func (c *Client) DocumentJournalSkladskieDokumentys(where Where) ([]DocumentJour
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentJournalSkladskieDokumenty(key PrimaryDocumentJournalSkladskieDokumenty, entity DocumentJournalSkladskieDokumenty) (*DocumentJournalSkladskieDokumenty, error) {
 	return NewDocumentJournalSkladskieDokumenty(c.updateEntity(key, entity))
@@ -34895,7 +34895,7 @@ func (c *Client) CreateCatalogsmsUsloviiaOtboraDiskontnykhKart(entity Catalogsms
 func (c *Client) CatalogsmsUsloviiaOtboraDiskontnykhKart(key PrimaryCatalogsmsUsloviiaOtboraDiskontnykhKart, fields []string) (*CatalogsmsUsloviiaOtboraDiskontnykhKart, error) {
 	return NewCatalogsmsUsloviiaOtboraDiskontnykhKart(c.getEntity(key, fields))
 }
-func (c *Client) CatalogsmsUsloviiaOtboraDiskontnykhKarts(where Where) ([]CatalogsmsUsloviiaOtboraDiskontnykhKart, error) {
+func (c *Client) CatalogsmsUsloviiaOtboraDiskontnykhKarts(where Where) (*[]CatalogsmsUsloviiaOtboraDiskontnykhKart, error) {
 	type ReturnObj struct {
 		Value []CatalogsmsUsloviiaOtboraDiskontnykhKart `json:"value"`
 	}
@@ -34911,7 +34911,7 @@ func (c *Client) CatalogsmsUsloviiaOtboraDiskontnykhKarts(where Where) ([]Catalo
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogsmsUsloviiaOtboraDiskontnykhKart(key PrimaryCatalogsmsUsloviiaOtboraDiskontnykhKart, entity CatalogsmsUsloviiaOtboraDiskontnykhKart) (*CatalogsmsUsloviiaOtboraDiskontnykhKart, error) {
 	return NewCatalogsmsUsloviiaOtboraDiskontnykhKart(c.updateEntity(key, entity))
@@ -34986,7 +34986,7 @@ func (c *Client) CreateArrive(entity Arrive) (*Arrive, error) {
 func (c *Client) Arrive(key PrimaryArrive, fields []string) (*Arrive, error) {
 	return NewArrive(c.getEntity(key, fields))
 }
-func (c *Client) Arrives(where Where) ([]Arrive, error) {
+func (c *Client) Arrives(where Where) (*[]Arrive, error) {
 	type ReturnObj struct {
 		Value []Arrive `json:"value"`
 	}
@@ -35002,7 +35002,7 @@ func (c *Client) Arrives(where Where) ([]Arrive, error) {
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateArrive(key PrimaryArrive, entity Arrive) (*Arrive, error) {
 	return NewArrive(c.updateEntity(key, entity))
@@ -35058,7 +35058,7 @@ func (c *Client) CreateDocumentPostuplenieTovarovUslugTovary(entity DocumentPost
 func (c *Client) DocumentPostuplenieTovarovUslugTovary(key PrimaryDocumentPostuplenieTovarovUslugTovary, fields []string) (*DocumentPostuplenieTovarovUslugTovary, error) {
 	return NewDocumentPostuplenieTovarovUslugTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieTovarovUslugTovarys(where Where) ([]DocumentPostuplenieTovarovUslugTovary, error) {
+func (c *Client) DocumentPostuplenieTovarovUslugTovarys(where Where) (*[]DocumentPostuplenieTovarovUslugTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieTovarovUslugTovary `json:"value"`
 	}
@@ -35074,7 +35074,7 @@ func (c *Client) DocumentPostuplenieTovarovUslugTovarys(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieTovarovUslugTovary(key PrimaryDocumentPostuplenieTovarovUslugTovary, entity DocumentPostuplenieTovarovUslugTovary) (*DocumentPostuplenieTovarovUslugTovary, error) {
 	return NewDocumentPostuplenieTovarovUslugTovary(c.updateEntity(key, entity))
@@ -35119,7 +35119,7 @@ func (c *Client) CreateDocumentPostuplenieTovarovUslugUslugi(entity DocumentPost
 func (c *Client) DocumentPostuplenieTovarovUslugUslugi(key PrimaryDocumentPostuplenieTovarovUslugUslugi, fields []string) (*DocumentPostuplenieTovarovUslugUslugi, error) {
 	return NewDocumentPostuplenieTovarovUslugUslugi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPostuplenieTovarovUslugUslugis(where Where) ([]DocumentPostuplenieTovarovUslugUslugi, error) {
+func (c *Client) DocumentPostuplenieTovarovUslugUslugis(where Where) (*[]DocumentPostuplenieTovarovUslugUslugi, error) {
 	type ReturnObj struct {
 		Value []DocumentPostuplenieTovarovUslugUslugi `json:"value"`
 	}
@@ -35135,7 +35135,7 @@ func (c *Client) DocumentPostuplenieTovarovUslugUslugis(where Where) ([]Document
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPostuplenieTovarovUslugUslugi(key PrimaryDocumentPostuplenieTovarovUslugUslugi, entity DocumentPostuplenieTovarovUslugUslugi) (*DocumentPostuplenieTovarovUslugUslugi, error) {
 	return NewDocumentPostuplenieTovarovUslugUslugi(c.updateEntity(key, entity))
@@ -35207,7 +35207,7 @@ func (c *Client) CreateDocumentSchetFakturaVydannyi(entity DocumentSchetFakturaV
 func (c *Client) DocumentSchetFakturaVydannyi(key PrimaryDocumentSchetFakturaVydannyi, fields []string) (*DocumentSchetFakturaVydannyi, error) {
 	return NewDocumentSchetFakturaVydannyi(c.getEntity(key, fields))
 }
-func (c *Client) DocumentSchetFakturaVydannyis(where Where) ([]DocumentSchetFakturaVydannyi, error) {
+func (c *Client) DocumentSchetFakturaVydannyis(where Where) (*[]DocumentSchetFakturaVydannyi, error) {
 	type ReturnObj struct {
 		Value []DocumentSchetFakturaVydannyi `json:"value"`
 	}
@@ -35223,7 +35223,7 @@ func (c *Client) DocumentSchetFakturaVydannyis(where Where) ([]DocumentSchetFakt
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentSchetFakturaVydannyi(key PrimaryDocumentSchetFakturaVydannyi, entity DocumentSchetFakturaVydannyi) (*DocumentSchetFakturaVydannyi, error) {
 	return NewDocumentSchetFakturaVydannyi(c.updateEntity(key, entity))
@@ -35269,7 +35269,7 @@ func (c *Client) CreateDocumentPlanProdazhPoSalonam(entity DocumentPlanProdazhPo
 func (c *Client) DocumentPlanProdazhPoSalonam(key PrimaryDocumentPlanProdazhPoSalonam, fields []string) (*DocumentPlanProdazhPoSalonam, error) {
 	return NewDocumentPlanProdazhPoSalonam(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlanProdazhPoSalonams(where Where) ([]DocumentPlanProdazhPoSalonam, error) {
+func (c *Client) DocumentPlanProdazhPoSalonams(where Where) (*[]DocumentPlanProdazhPoSalonam, error) {
 	type ReturnObj struct {
 		Value []DocumentPlanProdazhPoSalonam `json:"value"`
 	}
@@ -35285,7 +35285,7 @@ func (c *Client) DocumentPlanProdazhPoSalonams(where Where) ([]DocumentPlanProda
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlanProdazhPoSalonam(key PrimaryDocumentPlanProdazhPoSalonam, entity DocumentPlanProdazhPoSalonam) (*DocumentPlanProdazhPoSalonam, error) {
 	return NewDocumentPlanProdazhPoSalonam(c.updateEntity(key, entity))
@@ -35330,7 +35330,7 @@ func (c *Client) CreateDocumentPlanProdazhPoSalonamSalony(entity DocumentPlanPro
 func (c *Client) DocumentPlanProdazhPoSalonamSalony(key PrimaryDocumentPlanProdazhPoSalonamSalony, fields []string) (*DocumentPlanProdazhPoSalonamSalony, error) {
 	return NewDocumentPlanProdazhPoSalonamSalony(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlanProdazhPoSalonamSalonys(where Where) ([]DocumentPlanProdazhPoSalonamSalony, error) {
+func (c *Client) DocumentPlanProdazhPoSalonamSalonys(where Where) (*[]DocumentPlanProdazhPoSalonamSalony, error) {
 	type ReturnObj struct {
 		Value []DocumentPlanProdazhPoSalonamSalony `json:"value"`
 	}
@@ -35346,7 +35346,7 @@ func (c *Client) DocumentPlanProdazhPoSalonamSalonys(where Where) ([]DocumentPla
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlanProdazhPoSalonamSalony(key PrimaryDocumentPlanProdazhPoSalonamSalony, entity DocumentPlanProdazhPoSalonamSalony) (*DocumentPlanProdazhPoSalonamSalony, error) {
 	return NewDocumentPlanProdazhPoSalonamSalony(c.updateEntity(key, entity))
@@ -35381,7 +35381,7 @@ func (c *Client) CreateDocumentPlanProdazhPoSalonamDniPoGrafiku(entity DocumentP
 func (c *Client) DocumentPlanProdazhPoSalonamDniPoGrafiku(key PrimaryDocumentPlanProdazhPoSalonamDniPoGrafiku, fields []string) (*DocumentPlanProdazhPoSalonamDniPoGrafiku, error) {
 	return NewDocumentPlanProdazhPoSalonamDniPoGrafiku(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPlanProdazhPoSalonamDniPoGrafikus(where Where) ([]DocumentPlanProdazhPoSalonamDniPoGrafiku, error) {
+func (c *Client) DocumentPlanProdazhPoSalonamDniPoGrafikus(where Where) (*[]DocumentPlanProdazhPoSalonamDniPoGrafiku, error) {
 	type ReturnObj struct {
 		Value []DocumentPlanProdazhPoSalonamDniPoGrafiku `json:"value"`
 	}
@@ -35397,7 +35397,7 @@ func (c *Client) DocumentPlanProdazhPoSalonamDniPoGrafikus(where Where) ([]Docum
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPlanProdazhPoSalonamDniPoGrafiku(key PrimaryDocumentPlanProdazhPoSalonamDniPoGrafiku, entity DocumentPlanProdazhPoSalonamDniPoGrafiku) (*DocumentPlanProdazhPoSalonamDniPoGrafiku, error) {
 	return NewDocumentPlanProdazhPoSalonamDniPoGrafiku(c.updateEntity(key, entity))
@@ -35450,7 +35450,7 @@ func (c *Client) CreateCatalogBankovskieScheta(entity CatalogBankovskieScheta) (
 func (c *Client) CatalogBankovskieScheta(key PrimaryCatalogBankovskieScheta, fields []string) (*CatalogBankovskieScheta, error) {
 	return NewCatalogBankovskieScheta(c.getEntity(key, fields))
 }
-func (c *Client) CatalogBankovskieSchetas(where Where) ([]CatalogBankovskieScheta, error) {
+func (c *Client) CatalogBankovskieSchetas(where Where) (*[]CatalogBankovskieScheta, error) {
 	type ReturnObj struct {
 		Value []CatalogBankovskieScheta `json:"value"`
 	}
@@ -35466,7 +35466,7 @@ func (c *Client) CatalogBankovskieSchetas(where Where) ([]CatalogBankovskieSchet
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogBankovskieScheta(key PrimaryCatalogBankovskieScheta, entity CatalogBankovskieScheta) (*CatalogBankovskieScheta, error) {
 	return NewCatalogBankovskieScheta(c.updateEntity(key, entity))
@@ -35531,7 +35531,7 @@ func (c *Client) CreateDocumentStornirovanieOtchetaKomitentuOProdazhakh(entity D
 func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakh(key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakh, fields []string) (*DocumentStornirovanieOtchetaKomitentuOProdazhakh, error) {
 	return NewDocumentStornirovanieOtchetaKomitentuOProdazhakh(c.getEntity(key, fields))
 }
-func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhs(where Where) ([]DocumentStornirovanieOtchetaKomitentuOProdazhakh, error) {
+func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhs(where Where) (*[]DocumentStornirovanieOtchetaKomitentuOProdazhakh, error) {
 	type ReturnObj struct {
 		Value []DocumentStornirovanieOtchetaKomitentuOProdazhakh `json:"value"`
 	}
@@ -35547,7 +35547,7 @@ func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhs(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentStornirovanieOtchetaKomitentuOProdazhakh(key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakh, entity DocumentStornirovanieOtchetaKomitentuOProdazhakh) (*DocumentStornirovanieOtchetaKomitentuOProdazhakh, error) {
 	return NewDocumentStornirovanieOtchetaKomitentuOProdazhakh(c.updateEntity(key, entity))
@@ -35585,7 +35585,7 @@ func (c *Client) CreateDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnye
 func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva(key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva, fields []string) (*DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva(c.getEntity(key, fields))
 }
-func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstvas(where Where) ([]DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva, error) {
+func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstvas(where Where) (*[]DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva, error) {
 	type ReturnObj struct {
 		Value []DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva `json:"value"`
 	}
@@ -35601,7 +35601,7 @@ func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredst
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva(key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva, entity DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva) (*DocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva, error) {
 	return NewDocumentStornirovanieOtchetaKomitentuOProdazhakhDenezhnyeSredstva(c.updateEntity(key, entity))
@@ -35650,7 +35650,7 @@ func (c *Client) CreateDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary(en
 func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary(key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary, fields []string) (*DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary, error) {
 	return NewDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhTovarys(where Where) ([]DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary, error) {
+func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhTovarys(where Where) (*[]DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary `json:"value"`
 	}
@@ -35666,7 +35666,7 @@ func (c *Client) DocumentStornirovanieOtchetaKomitentuOProdazhakhTovarys(where W
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary(key PrimaryDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary, entity DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary) (*DocumentStornirovanieOtchetaKomitentuOProdazhakhTovary, error) {
 	return NewDocumentStornirovanieOtchetaKomitentuOProdazhakhTovary(c.updateEntity(key, entity))
@@ -35713,7 +35713,7 @@ func (c *Client) CreateDocumentPeredachaVRemont(entity DocumentPeredachaVRemont)
 func (c *Client) DocumentPeredachaVRemont(key PrimaryDocumentPeredachaVRemont, fields []string) (*DocumentPeredachaVRemont, error) {
 	return NewDocumentPeredachaVRemont(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeredachaVRemonts(where Where) ([]DocumentPeredachaVRemont, error) {
+func (c *Client) DocumentPeredachaVRemonts(where Where) (*[]DocumentPeredachaVRemont, error) {
 	type ReturnObj struct {
 		Value []DocumentPeredachaVRemont `json:"value"`
 	}
@@ -35729,7 +35729,7 @@ func (c *Client) DocumentPeredachaVRemonts(where Where) ([]DocumentPeredachaVRem
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeredachaVRemont(key PrimaryDocumentPeredachaVRemont, entity DocumentPeredachaVRemont) (*DocumentPeredachaVRemont, error) {
 	return NewDocumentPeredachaVRemont(c.updateEntity(key, entity))
@@ -35770,7 +35770,7 @@ func (c *Client) CreateDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont(entity D
 func (c *Client) DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont(key PrimaryDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont, fields []string) (*DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont, error) {
 	return NewDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeredachaVRemontIzdeliiaPriniatyeVRemonts(where Where) ([]DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont, error) {
+func (c *Client) DocumentPeredachaVRemontIzdeliiaPriniatyeVRemonts(where Where) (*[]DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont, error) {
 	type ReturnObj struct {
 		Value []DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont `json:"value"`
 	}
@@ -35786,7 +35786,7 @@ func (c *Client) DocumentPeredachaVRemontIzdeliiaPriniatyeVRemonts(where Where) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont(key PrimaryDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont, entity DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont) (*DocumentPeredachaVRemontIzdeliiaPriniatyeVRemont, error) {
 	return NewDocumentPeredachaVRemontIzdeliiaPriniatyeVRemont(c.updateEntity(key, entity))
@@ -35827,7 +35827,7 @@ func (c *Client) CreateDocumentPeredachaVRemontTovary(entity DocumentPeredachaVR
 func (c *Client) DocumentPeredachaVRemontTovary(key PrimaryDocumentPeredachaVRemontTovary, fields []string) (*DocumentPeredachaVRemontTovary, error) {
 	return NewDocumentPeredachaVRemontTovary(c.getEntity(key, fields))
 }
-func (c *Client) DocumentPeredachaVRemontTovarys(where Where) ([]DocumentPeredachaVRemontTovary, error) {
+func (c *Client) DocumentPeredachaVRemontTovarys(where Where) (*[]DocumentPeredachaVRemontTovary, error) {
 	type ReturnObj struct {
 		Value []DocumentPeredachaVRemontTovary `json:"value"`
 	}
@@ -35843,7 +35843,7 @@ func (c *Client) DocumentPeredachaVRemontTovarys(where Where) ([]DocumentPeredac
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateDocumentPeredachaVRemontTovary(key PrimaryDocumentPeredachaVRemontTovary, entity DocumentPeredachaVRemontTovary) (*DocumentPeredachaVRemontTovary, error) {
 	return NewDocumentPeredachaVRemontTovary(c.updateEntity(key, entity))
@@ -35886,7 +35886,7 @@ func (c *Client) CreateCatalogPolzovateli(entity CatalogPolzovateli) (*CatalogPo
 func (c *Client) CatalogPolzovateli(key PrimaryCatalogPolzovateli, fields []string) (*CatalogPolzovateli, error) {
 	return NewCatalogPolzovateli(c.getEntity(key, fields))
 }
-func (c *Client) CatalogPolzovatelis(where Where) ([]CatalogPolzovateli, error) {
+func (c *Client) CatalogPolzovatelis(where Where) (*[]CatalogPolzovateli, error) {
 	type ReturnObj struct {
 		Value []CatalogPolzovateli `json:"value"`
 	}
@@ -35902,7 +35902,7 @@ func (c *Client) CatalogPolzovatelis(where Where) ([]CatalogPolzovateli, error) 
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogPolzovateli(key PrimaryCatalogPolzovateli, entity CatalogPolzovateli) (*CatalogPolzovateli, error) {
 	return NewCatalogPolzovateli(c.updateEntity(key, entity))
@@ -35943,7 +35943,7 @@ func (c *Client) CreateCatalogTsenovyeKoridory(entity CatalogTsenovyeKoridory) (
 func (c *Client) CatalogTsenovyeKoridory(key PrimaryCatalogTsenovyeKoridory, fields []string) (*CatalogTsenovyeKoridory, error) {
 	return NewCatalogTsenovyeKoridory(c.getEntity(key, fields))
 }
-func (c *Client) CatalogTsenovyeKoridorys(where Where) ([]CatalogTsenovyeKoridory, error) {
+func (c *Client) CatalogTsenovyeKoridorys(where Where) (*[]CatalogTsenovyeKoridory, error) {
 	type ReturnObj struct {
 		Value []CatalogTsenovyeKoridory `json:"value"`
 	}
@@ -35959,7 +35959,7 @@ func (c *Client) CatalogTsenovyeKoridorys(where Where) ([]CatalogTsenovyeKoridor
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogTsenovyeKoridory(key PrimaryCatalogTsenovyeKoridory, entity CatalogTsenovyeKoridory) (*CatalogTsenovyeKoridory, error) {
 	return NewCatalogTsenovyeKoridory(c.updateEntity(key, entity))
@@ -35997,7 +35997,7 @@ func (c *Client) CreateCatalogGruppySkladov(entity CatalogGruppySkladov) (*Catal
 func (c *Client) CatalogGruppySkladov(key PrimaryCatalogGruppySkladov, fields []string) (*CatalogGruppySkladov, error) {
 	return NewCatalogGruppySkladov(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppySkladovs(where Where) ([]CatalogGruppySkladov, error) {
+func (c *Client) CatalogGruppySkladovs(where Where) (*[]CatalogGruppySkladov, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppySkladov `json:"value"`
 	}
@@ -36013,7 +36013,7 @@ func (c *Client) CatalogGruppySkladovs(where Where) ([]CatalogGruppySkladov, err
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppySkladov(key PrimaryCatalogGruppySkladov, entity CatalogGruppySkladov) (*CatalogGruppySkladov, error) {
 	return NewCatalogGruppySkladov(c.updateEntity(key, entity))
@@ -36048,7 +36048,7 @@ func (c *Client) CreateCatalogGruppySkladovSklady(entity CatalogGruppySkladovSkl
 func (c *Client) CatalogGruppySkladovSklady(key PrimaryCatalogGruppySkladovSklady, fields []string) (*CatalogGruppySkladovSklady, error) {
 	return NewCatalogGruppySkladovSklady(c.getEntity(key, fields))
 }
-func (c *Client) CatalogGruppySkladovSkladys(where Where) ([]CatalogGruppySkladovSklady, error) {
+func (c *Client) CatalogGruppySkladovSkladys(where Where) (*[]CatalogGruppySkladovSklady, error) {
 	type ReturnObj struct {
 		Value []CatalogGruppySkladovSklady `json:"value"`
 	}
@@ -36064,7 +36064,7 @@ func (c *Client) CatalogGruppySkladovSkladys(where Where) ([]CatalogGruppySklado
 		return nil, err
 	}
 
-	return result.Value, nil
+	return &result.Value, nil
 }
 func (c *Client) UpdateCatalogGruppySkladovSklady(key PrimaryCatalogGruppySkladovSklady, entity CatalogGruppySkladovSklady) (*CatalogGruppySkladovSklady, error) {
 	return NewCatalogGruppySkladovSklady(c.updateEntity(key, entity))

@@ -24,6 +24,8 @@ func (g *Generator) GenEntityArgs(source shared.OneCType) string {
 func (g *Generator) GenEntitiesArgs(source shared.OneCType) string {
 	result := ""
 	result += "type " + g.TranslateType(source.Name) + "sArgs struct {\n"
-	result += "\n}"
+	result += "	BaseWhere *Where\n"
+	result += "	Filter *" + g.TranslateType(source.Name) + "Filter\n"
+	result += "}"
 	return result
 }

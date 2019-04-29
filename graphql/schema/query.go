@@ -16,6 +16,6 @@ func (g *Generator) GenQueries(source []shared.OneCType) string {
 func (g *Generator) GenQuery(source shared.OneCType) string {
 	result := ""
 	result += "	" + g.TranslateType(source.Name) + "(Key: Primary" + g.TranslateType(source.Name) + "!): " + g.TranslateType(source.Name) + "\n"
-	result += "	" + g.TranslateType(source.Name) + "s(): " + g.TranslateType(source.Name)
+	result += "	" + g.TranslateType(source.Name) + "s(BaseWhere: BaseWhere, Filter: " + g.TranslateType(source.Name) + "Filter): [" + g.TranslateType(source.Name) + "!]"
 	return result
 }
