@@ -31,6 +31,8 @@ type GqlResolver struct {
 
 `)
 	f.WriteString(g.GenResolvers(g.schema.Entities))
+	f.WriteString("\n")
+	f.WriteString(g.GenMutations(g.schema.Entities))
 	f.Close()
 
 	f, _ = os.Create("odata/Resolver_filter.go")
