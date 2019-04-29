@@ -34,5 +34,5 @@ func main() {
 	json.Unmarshal(types, &clientGen.TypeMap)
 
 	clientGen.Start()
-	StartServer()
+	//	StartServer()
 }
