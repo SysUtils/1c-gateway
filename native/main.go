@@ -7,13 +7,14 @@ import (
 )
 
 type Generator struct {
-	TypeMap map[string]string
-	NameMap map[string]string
-	schema  shared.Schema
+	TypeMap      map[string]string
+	NameMap      map[string]string
+	Associations map[string]map[string]string
+	schema       shared.Schema
 }
 
 func NewGenerator(schema shared.Schema) *Generator {
-	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string)}
+	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: make(map[string]map[string]string)}
 }
 
 func (g *Generator) Start() {
@@ -60,5 +61,14 @@ import "encoding/json"
 	for _, e := range g.schema.Functions {
 		f.WriteString(g.GenFunction(e) + "\n")
 	}
+	f.Close()
+
+	f, err = os.Create("odata/Navigations.go")
+	if err != nil {
+		log.Fatal(err)
+	}
+	f.WriteString(`package odata
+`)
+	f.WriteString(g.GenNavigations(g.schema.Entities) + "\n")
 	f.Close()
 }

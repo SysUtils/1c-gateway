@@ -7,13 +7,14 @@ import (
 )
 
 type Generator struct {
-	TypeMap map[string]string
-	NameMap map[string]string
-	schema  shared.Schema
+	TypeMap      map[string]string
+	NameMap      map[string]string
+	Associations map[string]map[string]string
+	schema       shared.Schema
 }
 
 func NewGenerator(schema shared.Schema) *Generator {
-	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string)}
+	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: map[string]map[string]string{}}
 }
 
 func (g *Generator) Start() {
@@ -22,6 +23,7 @@ func (g *Generator) Start() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	g.ExtractAssociations(g.schema.Association)
 	for _, e := range g.schema.Entities {
 		f.WriteString(g.GenType(e))
 	}

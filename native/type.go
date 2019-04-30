@@ -10,6 +10,8 @@ func (g *Generator) GenType(source shared.OneCType) string {
 	result += "\n"
 	result += g.GenTypeFunc(source)
 	result += "\n"
+	result += g.GenPrimaryKeyFunc(source)
+	result += "\n"
 	result += g.GenNew(source)
 	result += "\n"
 	result += g.GenCreate(source)
@@ -24,6 +26,7 @@ func (g *Generator) GenType(source shared.OneCType) string {
 
 func (g *Generator) GenTypeStruct(source shared.OneCType) string {
 	result := fmt.Sprintf("type %s struct {\n", g.TranslateType(source.Name))
+	result += "	Client *Client\n"
 	for _, prop := range source.Properties {
 		result += "	"
 		result += g.TranslateName(prop.Name)
@@ -41,7 +44,7 @@ func (g *Generator) GenTypeStruct(source shared.OneCType) string {
 }
 
 func (g *Generator) GenNew(source shared.OneCType) string {
-	result := fmt.Sprintf("func New%s(data string, prevError error) (*%s, error) {\n", g.TranslateType(source.Name), g.TranslateType(source.Name))
+	result := fmt.Sprintf("func New%s(data string, prevError error, client *Client) (*%s, error) {\n", g.TranslateType(source.Name), g.TranslateType(source.Name))
 	result += fmt.Sprintf(`	if prevError != nil {
 		return nil, prevError
 	}
@@ -50,6 +53,7 @@ func (g *Generator) GenNew(source shared.OneCType) string {
 	if err != nil {
 		return nil, err
 	}
+	result.Client = client
 	return result, nil
 }`, g.TranslateType(source.Name))
 	return result
@@ -62,15 +66,35 @@ func (g *Generator) GenTypeFunc(source shared.OneCType) string {
 	return result
 }
 
+func (g *Generator) GenNavigationProperties(source shared.OneCType) string {
+	result := fmt.Sprintf("func (%s) () string {\n", g.TranslateType(source.Name))
+	result += fmt.Sprintf(`	return "%s"
+}`, source.Name)
+	return result
+}
+
+func (g *Generator) GenPrimaryKeyFunc(source shared.OneCType) string {
+	result := fmt.Sprintf("func (e %s) PrimaryKey () Primary%s {\n", g.TranslateType(source.Name), g.TranslateType(source.Name))
+	result += fmt.Sprintf("	return Primary%s {", g.TranslateType(source.Name))
+	for _, key := range source.Keys {
+		result += fmt.Sprintf("%s: e.%s,", g.TranslateName(key.Name), g.TranslateName(key.Name))
+	}
+	result += fmt.Sprintf(`}
+}`)
+	return result
+}
+
 func (g *Generator) GenCreate(source shared.OneCType) string {
 	result := fmt.Sprintf("func (c *Client) Create%s(entity %s) (*%s, error) {\n", g.TranslateType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name))
-	result += fmt.Sprintf(`	return New%s(c.createEntity(entity))`+"\n", g.TranslateType(source.Name))
+	result += fmt.Sprintf(`	src, err := c.createEntity(entity)` + "\n")
+	result += fmt.Sprintf(`	return New%s(src, err, c)`+"\n", g.TranslateType(source.Name))
 	return result + "}"
 }
 
 func (g *Generator) GenRead(source shared.OneCType) string {
 	result := fmt.Sprintf("func (c *Client) %s(key Primary%s, fields []string) (*%s, error) {\n", g.TranslateType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name))
-	result += fmt.Sprintf(`	return New%s(c.getEntity(key, fields))`+"\n", g.TranslateType(source.Name))
+	result += fmt.Sprintf(`	src, err := c.getEntity(key, fields)` + "\n")
+	result += fmt.Sprintf(`	return New%s(src, err, c)`+"\n", g.TranslateType(source.Name))
 	result += "}\n"
 	result += fmt.Sprintf(`func (c *Client) %ss(where Where) (*[]%s, error) {
 	type ReturnObj struct {
@@ -95,7 +119,8 @@ func (g *Generator) GenRead(source shared.OneCType) string {
 
 func (g *Generator) GenUpdate(source shared.OneCType) string {
 	result := fmt.Sprintf("func (c *Client) Update%s(key Primary%s, entity %s) (*%s, error) {\n", g.TranslateType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name))
-	result += fmt.Sprintf(`	return New%s(c.updateEntity(key, entity))`+"\n", g.TranslateType(source.Name))
+	result += fmt.Sprintf(`	src, err := c.updateEntity(key, entity)` + "\n")
+	result += fmt.Sprintf(`	return New%s(src, err, c)`+"\n", g.TranslateType(source.Name))
 	return result + "}"
 }
 

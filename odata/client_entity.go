@@ -26,6 +26,15 @@ func (c *Client) getEntities(name string, where Where) (string, error) {
 	return c.get(uri)
 }
 
+func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, error) {
+	uri := "/" + url.PathEscape(key.APIEntityType())
+	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key
+	uri += "/" + url.PathEscape(property)
+	uri += "?$format=json&"
+
+	return c.get(uri)
+}
+
 func (c *Client) ExecuteEntityMethod(key IPrimaryKey, function IFunction) (string, error) {
 	uri := "/" + url.PathEscape(key.APIEntityType())
 	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key
