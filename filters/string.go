@@ -1,6 +1,9 @@
 package filters
 
-import "fmt"
+import (
+	"fmt"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/static"
+)
 
 type StringOp int
 
@@ -12,18 +15,18 @@ const (
 	StringOpStartswith
 )
 
-func String(field string, op StringOp, value string) *Filter {
+func String(field string, op StringOp, value string) *odata.Filter {
 	switch op {
 	case StringOpEq:
-		return &Filter{fmt.Sprintf("%s eq '%s'", field, EscapeString(value))}
+		return &odata.Filter{fmt.Sprintf("%s eq '%s'", field, odata.EscapeString(value))}
 	case StringOpNe:
-		return &Filter{fmt.Sprintf("%s ne '%s'", field, EscapeString(value))}
+		return &odata.Filter{fmt.Sprintf("%s ne '%s'", field, odata.EscapeString(value))}
 	case StringOpSubstringof:
-		return &Filter{fmt.Sprintf("substringof(%s, '%s')", field, EscapeString(value))}
+		return &odata.Filter{fmt.Sprintf("substringof(%s, '%s')", field, odata.EscapeString(value))}
 	case StringOpEndswith:
-		return &Filter{fmt.Sprintf("endswith(%s, '%s')", field, EscapeString(value))}
+		return &odata.Filter{fmt.Sprintf("endswith(%s, '%s')", field, odata.EscapeString(value))}
 	case StringOpStartswith:
-		return &Filter{fmt.Sprintf("startswith(%s, '%s')", field, EscapeString(value))}
+		return &odata.Filter{fmt.Sprintf("startswith(%s, '%s')", field, odata.EscapeString(value))}
 	}
 	return nil
 }

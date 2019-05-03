@@ -1,6 +1,9 @@
 package filters
 
-import "fmt"
+import (
+	"fmt"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/static"
+)
 
 type IntOp int
 
@@ -13,20 +16,20 @@ const (
 	IntOpLe
 )
 
-func Int(field string, op IntOp, value int) *Filter {
+func Int(field string, op IntOp, value int) *odata.Filter {
 	switch op {
 	case IntOpEq:
-		return &Filter{fmt.Sprintf("%s eq %d", field, value)}
+		return &odata.Filter{fmt.Sprintf("%s eq %d", field, value)}
 	case IntOpNe:
-		return &Filter{fmt.Sprintf("%s ne %d", field, value)}
+		return &odata.Filter{fmt.Sprintf("%s ne %d", field, value)}
 	case IntOpGt:
-		return &Filter{fmt.Sprintf("%s gt %d", field, value)}
+		return &odata.Filter{fmt.Sprintf("%s gt %d", field, value)}
 	case IntOpGe:
-		return &Filter{fmt.Sprintf("%s ge %d", field, value)}
+		return &odata.Filter{fmt.Sprintf("%s ge %d", field, value)}
 	case IntOpLt:
-		return &Filter{fmt.Sprintf("%s lt %d", field, value)}
+		return &odata.Filter{fmt.Sprintf("%s lt %d", field, value)}
 	case IntOpLe:
-		return &Filter{fmt.Sprintf("%s le %d", field, value)}
+		return &odata.Filter{fmt.Sprintf("%s le %d", field, value)}
 	}
 	return nil
 }
