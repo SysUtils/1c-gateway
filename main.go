@@ -21,9 +21,10 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	graphqlGen := graphql.NewGenerator(*schema)
 	fields, _ := ioutil.ReadFile("fields.dat")
 	types, _ := ioutil.ReadFile("types.dat")
+
+	graphqlGen := graphql.NewGenerator(*schema)
 	json.Unmarshal(fields, &graphqlGen.NameMap)
 	json.Unmarshal(types, &graphqlGen.TypeMap)
 
@@ -32,7 +33,7 @@ func main() {
 	clientGen := native.NewGenerator(*schema)
 	json.Unmarshal(fields, &clientGen.NameMap)
 	json.Unmarshal(types, &clientGen.TypeMap)
-
 	clientGen.Start()
-	StartServer()
+
+	//StartServer()
 }

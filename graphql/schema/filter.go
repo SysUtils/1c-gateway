@@ -1,6 +1,7 @@
 package schema
 
 import (
+	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 	"strings"
 )
@@ -15,19 +16,22 @@ func (g *Generator) GenFilters(source []shared.OneCType) string {
 }
 
 func (g *Generator) GenFilter(source shared.OneCType) string {
-	result := ""
 	name := g.TranslateType(source.Name) + "Filter"
-	result += "input " + name + " {\n"
-	result += "	AND: [" + name + "!]\n"
-	result += "	OR: [" + name + "!]\n"
+	result := fmt.Sprintf(`input %s {
+	AND: [%s!]
+	OR: [%s!]
+`, name, name, name)
 	for _, prop := range source.Properties {
-		transType := g.TranslateType(prop.Type)
-		if _, ok := ScalarTypes[transType]; ok {
-			result += "	" + g.TranslateName(prop.Name) + "_eq: " + transType + "\n"
-			result += "	" + g.TranslateName(prop.Name) + "_ne: " + transType + "\n"
+		propType := g.TranslateType(prop.Type)
+		propName := g.TranslateType(prop.Name)
+		if _, ok := ScalarTypes[propType]; ok {
+			result += fmt.Sprintf(
+				`	%s_eq: %s
+	%s_ne: %s
+`, propName, propType, propName, propType)
 		} else {
-			if !strings.HasPrefix(transType, "[") {
-				result += "	" + g.TranslateName(prop.Name) + ": " + transType + "Filter\n"
+			if !strings.HasPrefix(propType, "[") {
+				result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
 			}
 		}
 	}

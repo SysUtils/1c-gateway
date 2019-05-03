@@ -1,21 +1,26 @@
 package schema
 
-import "gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+import (
+	"fmt"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+)
 
 func (g *Generator) GenQueries(source []shared.OneCType) string {
-	result := "type Query {\n"
+	queries := "type Query {\n"
 	for _, entity := range source {
-		result += g.GenQuery(entity)
-		result += "\n"
+		queries += g.GenQuery(entity)
+		queries += "\n"
 	}
-	result += "}"
-
+	result := fmt.Sprintf(`type Query {
+	%s
+}`)
 	return result
 }
 
 func (g *Generator) GenQuery(source shared.OneCType) string {
-	result := ""
-	result += "	" + g.TranslateType(source.Name) + "(Key: Primary" + g.TranslateType(source.Name) + "!): " + g.TranslateType(source.Name) + "\n"
-	result += "	" + g.TranslateType(source.Name) + "s(BaseWhere: BaseWhere, Filter: " + g.TranslateType(source.Name) + "Filter): [" + g.TranslateType(source.Name) + "!]"
+	t := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`	%s(Key: Primary%s!): %s
+	%ss(BaseWhere: BaseWhere, Filter: %sFilter): [%s!]`, t, t, t, t, t, t)
 	return result
 }

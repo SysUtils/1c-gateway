@@ -5,6 +5,15 @@ import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 )
 
+func (g *Generator) GenFunctions(source []shared.Function) string {
+	result := ""
+	for _, entity := range source {
+		result += g.GenFunction(entity)
+		result += "\n"
+	}
+	return result[:len(result)-1]
+}
+
 func (g *Generator) GenFunction(source shared.Function) string {
 	result := g.GenFunctionStruct(source)
 	result += "\n"

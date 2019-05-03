@@ -5,6 +5,15 @@ import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 )
 
+func (g *Generator) GenComplexTypes(source []shared.OneCType) string {
+	result := ""
+	for _, entity := range source {
+		result += g.GenComplexType(entity)
+		result += "\n"
+	}
+	return result[:len(result)-1]
+}
+
 func (g *Generator) GenComplexType(source shared.OneCType) string {
 	result := g.GenComplexTypeStruct(source)
 	return result

@@ -41,27 +41,31 @@ func (g *Generator) GenFilter(source shared.OneCType) string {
 
 func (g *Generator) GenFilterStruct(source shared.OneCType) string {
 	result := ""
-	result += "type " + g.TranslateType(source.Name) + "Filter struct {\n"
-	result += "	AND *[]" + g.TranslateType(source.Name) + "Filter\n"
-	result += "	OR *[]" + g.TranslateType(source.Name) + "Filter\n"
+	t := g.TranslateType(source.Name)
+	result += fmt.Sprintf("type %sFilter struct {\n", t)
+	result += fmt.Sprintf("	AND *[]%sFilter\n", t)
+	result += fmt.Sprintf("	OR *[]%sFilter\n", t)
 	for _, prop := range source.Properties {
-		transType := g.TranslateType(prop.Type)
-		if _, ok := ScalarTypes[transType]; ok {
-			result += "	" + g.TranslateName(prop.Name) + "_eq *" + transType + "\n"
-			result += "	" + g.TranslateName(prop.Name) + "_ne *" + transType + "\n"
+		propType := g.TranslateType(prop.Type)
+		propName := g.TranslateName(prop.Name)
+		if _, ok := ScalarTypes[propType]; ok {
+			result += fmt.Sprintf("	%s_eq *%s\n", propName, propType)
+			result += fmt.Sprintf("	%s_ne *%s\n", propName, propType)
 		} else {
-			if !strings.HasPrefix(transType, "[") {
-				result += "	" + g.TranslateName(prop.Name) + ": " + transType + "Filter\n"
+			if !strings.HasPrefix(propType, "[") {
+				result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
 			}
 		}
 	}
-	return result + "}"
+	result += fmt.Sprintf("}")
+	return result
 }
 
 func (g *Generator) GenFilterToStringFunc(source shared.OneCType) string {
-	result := ""
-	result += "func (t " + g.TranslateType(source.Name) + "Filter) ToString() string {\n"
-	result += fmt.Sprintf(`	if t.AND != nil && len(*t.AND) > 0 {
+	t := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`func (t %sFilter) ToString() string {
+	if t.AND != nil && len(*t.AND) > 0 {
 		tmp := %sFilter{AND: t.AND}
 		t.AND = nil
 		*tmp.AND = append(*tmp.AND, t)
@@ -82,30 +86,32 @@ func (g *Generator) GenFilterToStringFunc(source shared.OneCType) string {
 		return "("+result+")"
 	}
 	return t.ScalarToString()
-}`, g.TranslateType(source.Name), g.TranslateType(source.Name))
+}`, t, t, t)
 	return result
 }
 
 func (g *Generator) GenFilterScalarToStringFunc(source shared.OneCType) string {
-	result := ""
-	result += "func (f *" + g.TranslateType(source.Name) + "Filter) ScalarToString() string {\n"
-	result += `	result := "true"`
-	result += "\n"
+	t := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`func (f *%sFilter) ScalarToString() string {
+	result := "true"
+`, t)
 	for _, prop := range source.Properties {
-		transType := g.TranslateType(prop.Type)
-		if _, ok := ScalarTypes[transType]; ok {
-			result += `	if f.` + g.TranslateName(prop.Name) + `_ne != nil {` + "\n"
-			result += `		result += " and ` + prop.Name + ` ne " + f.` + g.TranslateName(prop.Name) + `_ne.AsParameter()` + "\n"
-			result += "	}\n"
-			result += `	if f.` + g.TranslateName(prop.Name) + `_eq != nil {` + "\n"
-			result += `		result += " and ` + prop.Name + ` eq " + f.` + g.TranslateName(prop.Name) + `_eq.AsParameter()` + "\n"
-			result += "	}\n"
+		propType := g.TranslateType(prop.Type)
+		propName := g.TranslateName(prop.Name)
+		if _, ok := ScalarTypes[propType]; ok {
+			result += fmt.Sprintf("	if f.%s_ne != nil {\n", propName)
+			result += fmt.Sprintf(`		result += " and %s ne " + f.%s_ne.AsParameter()`+"\n", prop.Name, propName)
+			result += fmt.Sprintf("	}\n")
+			result += fmt.Sprintf(`	if f.%s_eq != nil {`+"\n", propName)
+			result += fmt.Sprintf(`		result += " and %s eq " + f.%s_eq.AsParameter()`+"\n", prop.Name, propName)
+			result += fmt.Sprintf("	}\n")
 		} else {
-			if !strings.HasPrefix(transType, "[") {
-				result += "	" + g.TranslateName(prop.Name) + ": " + transType + "Filter\n"
+			if !strings.HasPrefix(propType, "[") {
+				result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
 			}
 		}
 	}
-	result += "	return `(` + result + `)`\n"
-	return result + "}"
+	result += fmt.Sprintf("	return `(` + result + `)`\n}")
+	return result
 }

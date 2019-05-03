@@ -28,12 +28,8 @@ func (g *Generator) GenPrimaryKeyStruct(source shared.OneCType) string {
 				break
 			}
 		}
-		result += "	"
-		result += g.TranslateName(key.Name)
-		result += ": "
-		result += g.TranslateType(key.Type)
-		result += "!\n"
+		result += fmt.Sprintf("	%s: %s!\n", g.TranslateName(key.Name), g.TranslateType(key.Type))
 	}
-
-	return result + "}"
+	result += fmt.Sprintf("}")
+	return result
 }

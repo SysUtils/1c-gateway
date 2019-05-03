@@ -1,22 +1,29 @@
 package schema
 
-import "gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+import (
+	"fmt"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+)
 
 func (g *Generator) GenMutations(source []shared.OneCType) string {
-	result := "type Mutation {\n"
+	mutations := ""
 	for _, entity := range source {
-		result += g.GenMutation(entity)
-		result += "\n"
+		mutations += g.GenMutation(entity)
+		mutations += "\n"
 	}
-	result += "}"
+
+	result := fmt.Sprintf(`type Mutation {
+	%s}`, mutations)
 
 	return result
 }
 
 func (g *Generator) GenMutation(source shared.OneCType) string {
-	result := ""
-	result += "	Create" + g.TranslateType(source.Name) + "(Entity: " + g.TranslateType(source.Name) + "Input!): " + g.TranslateType(source.Name) + "\n"
-	result += "	Update" + g.TranslateType(source.Name) + "(Key: Primary" + g.TranslateType(source.Name) + "!," + "Entity: " + g.TranslateType(source.Name) + "Input!): " + g.TranslateType(source.Name) + "\n"
-	result += "	Remove" + g.TranslateType(source.Name) + "(Key: Primary" + g.TranslateType(source.Name) + "!): Boolean!"
+	t := g.TranslateType(source.Name)
+	tInput := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`	Create%s(Entity: %s!): %s
+	Update%s(Key: Primary%s!, Entity: %sInput!): %s\n"
+	Remove%s(Key: Primary%s!): Boolean!`, t, tInput, t, t, t, tInput, t, t, t)
 	return result
 }

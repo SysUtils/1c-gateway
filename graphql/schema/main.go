@@ -1,6 +1,7 @@
 package schema
 
 import (
+	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 	"log"
 	"os"
@@ -17,40 +18,59 @@ func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: map[string]map[string]string{}}
 }
 
-func (g *Generator) Start() {
-
-	f, err := os.Create("odata/Types.gql")
+func (g *Generator) writeGqlfile(filename, data string) {
+	f, err := os.Create("odata/" + filename)
 	if err != nil {
-		log.Fatal(err)
+		log.Panic(err)
 	}
+	_, err = f.WriteString(data)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	err = f.Close()
+	if err != nil {
+		log.Panic(err)
+	}
+}
+
+func (g *Generator) Start() {
 	g.ExtractAssociations(g.schema.Association)
-	for _, e := range g.schema.Entities {
-		f.WriteString(g.GenType(e))
-	}
-	f.Close()
+	data := fmt.Sprintf(`schema {
+  query: Query
+  mutation: Mutation
+}
 
-	f, err = os.Create("odata/ComplexTypes.gql")
-	for _, e := range g.schema.Complexes {
-		f.WriteString(g.GenType(e))
-	}
-	f.Close()
+input BaseWhere {
+	Top: Int!
+	Skip: Int!
+	Orderby: String!
+}
 
-	f, err = os.Create("odata/PrimaryKeys.gql")
-	f.WriteString(g.GenPrimaryKeys(g.schema.Entities))
-	f.Close()
+scalar String
+scalar Int
+scalar Int16
+scalar Int64
+scalar Double
+scalar Float
+scalar DateTime
+scalar Binary
+scalar Stream
+scalar Boolean
+scalar Guid
 
-	f, err = os.Create("odata/Mutations.gql")
-	f.WriteString(g.GenMutations(g.schema.Entities))
-	f.Close()
-
-	f, err = os.Create("odata/Queries.gql")
-	f.WriteString(g.GenQueries(g.schema.Entities))
-	f.Close()
-
-	f, err = os.Create("odata/Filters.gql")
-	f.WriteString(g.GenFilters(g.schema.Entities))
-	f.WriteString("\n")
-	f.WriteString(g.GenFilters(g.schema.Complexes))
-	f.Close()
-
+%s
+%s
+%s
+%s
+%s
+%s
+%s`, g.GenTypes(g.schema.Entities),
+		g.GenTypes(g.schema.Complexes),
+		g.GenPrimaryKeys(g.schema.Entities),
+		g.GenMutations(g.schema.Entities),
+		g.GenQueries(g.schema.Entities),
+		g.GenFilters(g.schema.Entities),
+		g.GenFilters(g.schema.Complexes))
+	g.writeGqlfile("Schema.gql", data)
 }

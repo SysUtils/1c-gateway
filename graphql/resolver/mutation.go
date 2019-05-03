@@ -1,6 +1,9 @@
 package resolver
 
-import "gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+import (
+	"fmt"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+)
 
 func (g *Generator) GenMutations(source []shared.OneCType) string {
 	result := ""
@@ -22,21 +25,29 @@ func (g *Generator) GenMutation(source shared.OneCType) string {
 }
 
 func (g *Generator) GenMutationRemove(source shared.OneCType) string {
-	result := "func (r *GqlResolver) Remove" + g.TranslateType(source.Name) + "(ctx context.Context, args " + g.TranslateType(source.Name) + "RemoveArgs) (bool, error) {\n"
-	result += "	err :=  r.Client.Delete" + g.TranslateType(source.Name) + "(args.Key)\n"
-	result += "	return err == nil, err\n"
-	result += "}"
+	t := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`func (r *GqlResolver) Remove%s(ctx context.Context, args %sRemoveArgs) (bool, error) {
+	err :=  r.Client.Delete%s(args.Key)
+	return err == nil, err
+}`, t, t, t)
 	return result
 }
+
 func (g *Generator) GenMutationUpdate(source shared.OneCType) string {
-	result := "func (r *GqlResolver) Update" + g.TranslateType(source.Name) + "(ctx context.Context, args " + g.TranslateType(source.Name) + "UpdateArgs) (*" + g.TranslateType(source.Name) + ", error) {\n"
-	result += "	return r.Client.Update" + g.TranslateType(source.Name) + "(args.Key, args.Entity)\n"
-	result += "}"
+	t := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`func (r *GqlResolver) Update%s(ctx context.Context, args %sUpdateArgs) (*%s, error) {
+	return r.Client.Update%s(args.Key, args.Entity)
+}`, t, t, t, t)
 	return result
 }
+
 func (g *Generator) GenMutationCreate(source shared.OneCType) string {
-	result := "func (r *GqlResolver) Create" + g.TranslateType(source.Name) + "(ctx context.Context, args " + g.TranslateType(source.Name) + "CreateArgs) (*" + g.TranslateType(source.Name) + ", error) {\n"
-	result += "	return r.Client.Create" + g.TranslateType(source.Name) + "(args.Entity)\n"
-	result += "}"
+	t := g.TranslateType(source.Name)
+	result := fmt.Sprintf(
+		`func (r *GqlResolver) Create%s(ctx context.Context, args %sCreateArgs) (*%s, error) {
+	return r.Client.Create%s(args.Entity)
+}`, t, t, t, t)
 	return result
 }

@@ -5,6 +5,15 @@ import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 )
 
+func (g *Generator) GenPrimaryKeys(source []shared.OneCType) string {
+	result := ""
+	for _, entity := range source {
+		result += g.GenPrimaryKey(entity)
+		result += "\n"
+	}
+	return result[:len(result)-1]
+}
+
 func (g *Generator) GenPrimaryKey(source shared.OneCType) string {
 	result := g.GenPrimaryKeyStruct(source)
 	result += "\n"

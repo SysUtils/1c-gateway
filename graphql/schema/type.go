@@ -1,6 +1,7 @@
 package schema
 
 import (
+	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 	"log"
 )
@@ -17,9 +18,17 @@ func (g *Generator) ExtractAssociations(source []shared.Association) {
 	}
 }
 
+func (g *Generator) GenTypes(source []shared.OneCType) string {
+	result := ""
+	for _, entity := range source {
+		result += g.GenType(entity)
+		result += "\n"
+	}
+	return result
+}
+
 func (g *Generator) GenType(source shared.OneCType) string {
 	result := g.GenTypeStruct(source)
-	result += "\n"
 	return result
 }
 
@@ -32,12 +41,9 @@ func (g *Generator) GenTypeStruct(source shared.OneCType) string {
 }
 
 func (g *Generator) GenInputTypeStruct(source shared.OneCType) string {
-	result := "input " + g.TranslateType(source.Name) + "Input {\n"
+	result := fmt.Sprintf("input %sInput {\n", g.TranslateType(source.Name))
 	for _, prop := range source.Properties {
-		result += "	"
-		result += g.TranslateName(prop.Name)
-		result += ": "
-		result += g.TranslateInputType(prop.Type)
+		result += fmt.Sprintf("	%s: %s", g.TranslateName(prop.Name), g.TranslateInputType(prop.Type))
 		if !prop.Nullable {
 			result += "!"
 		}
@@ -47,12 +53,9 @@ func (g *Generator) GenInputTypeStruct(source shared.OneCType) string {
 }
 
 func (g *Generator) GenOutputTypeStruct(source shared.OneCType) string {
-	result := "type " + g.TranslateType(source.Name) + " {\n"
+	result := fmt.Sprintf("input %s {\n", g.TranslateType(source.Name))
 	for _, prop := range source.Properties {
-		result += "	"
-		result += g.TranslateName(prop.Name)
-		result += ": "
-		result += g.TranslateType(prop.Type)
+		result += fmt.Sprintf("	%s: %s", g.TranslateName(prop.Name), g.TranslateInputType(prop.Type))
 		if !prop.Nullable {
 			result += "!"
 		}
@@ -65,11 +68,7 @@ func (g *Generator) GenOutputTypeStruct(source shared.OneCType) string {
 		if _, ok := g.Associations[nav.Type][nav.ToRole]; !ok {
 			log.Panicf("navigation role not found: %s.%s", nav.Type, nav.ToRole)
 		}
-		result += "	"
-		result += g.TranslateName(nav.Name)
-		result += ": "
-		result += g.TranslateType(g.Associations[nav.Type][nav.ToRole])
-		result += "\n"
+		result += fmt.Sprintf("	%s: %s\n", g.TranslateName(nav.Name), g.TranslateType(g.Associations[nav.Type][nav.ToRole]))
 	}
 	return result + "}"
 }

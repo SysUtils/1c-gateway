@@ -1,6 +1,7 @@
 package native
 
 import (
+	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 	"log"
 	"os"
@@ -17,58 +18,46 @@ func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: make(map[string]map[string]string)}
 }
 
+func (g *Generator) writeGofile(filename, data string) {
+	f, err := os.Create("odata/" + filename)
+	if err != nil {
+		log.Panic(err)
+	}
+	_, err = f.WriteString(data)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	err = f.Close()
+	if err != nil {
+		log.Panic(err)
+	}
+}
+
 func (g *Generator) Start() {
-	f, err := os.Create("odata/Entity.go")
-	if err != nil {
-		log.Fatal(err)
-	}
-	f.WriteString(`package odata
+	data := fmt.Sprintf(`package odata
 import "encoding/json"
-`)
-	for _, e := range g.schema.Entities {
-		f.WriteString(g.GenType(e) + "\n")
-	}
-	f.Close()
 
-	f, err = os.Create("odata/Primary.go")
-	if err != nil {
-		log.Fatal(err)
-	}
-	f.WriteString(`package odata
-`)
-	for _, e := range g.schema.Entities {
-		f.WriteString(g.GenPrimaryKey(e) + "\n")
-	}
-	f.Close()
+%s`, g.GenTypes(g.schema.Entities))
+	g.writeGofile("Entity.go", data)
 
-	f, err = os.Create("odata/Complex.go")
-	if err != nil {
-		log.Fatal(err)
-	}
-	f.WriteString(`package odata
-`)
-	for _, e := range g.schema.Complexes {
-		f.WriteString(g.GenComplexType(e) + "\n")
-	}
-	f.Close()
+	data = fmt.Sprintf(`package odata
 
-	f, err = os.Create("odata/Functions.go")
-	if err != nil {
-		log.Fatal(err)
-	}
-	f.WriteString(`package odata
-`)
-	for _, e := range g.schema.Functions {
-		f.WriteString(g.GenFunction(e) + "\n")
-	}
-	f.Close()
+%s`, g.GenPrimaryKeys(g.schema.Entities))
+	g.writeGofile("Primary.go", data)
 
-	f, err = os.Create("odata/Navigations.go")
-	if err != nil {
-		log.Fatal(err)
-	}
-	f.WriteString(`package odata
-`)
-	f.WriteString(g.GenNavigations(g.schema.Entities) + "\n")
-	f.Close()
+	data = fmt.Sprintf(`package odata
+
+%s`, g.GenComplexTypes(g.schema.Complexes))
+	g.writeGofile("Complex.go", data)
+
+	data = fmt.Sprintf(`package odata
+
+%s`, g.GenFunctions(g.schema.Functions))
+	g.writeGofile("Functions.go", data)
+
+	data = fmt.Sprintf(`package odata
+
+%s`, g.GenNavigations(g.schema.Entities))
+	g.writeGofile("Navigations.go", data)
 }
