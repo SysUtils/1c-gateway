@@ -12,7 +12,7 @@ func (g *Generator) GenFilters(source []shared.OneCType) string {
 		result += g.GenFilter(entity)
 		result += "\n"
 	}
-	return result[:len(result)-1]
+	return result
 }
 
 func (g *Generator) GenFilter(source shared.OneCType) string {

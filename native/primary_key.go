@@ -36,6 +36,9 @@ func (g *Generator) GenPrimaryKeyStruct(source shared.OneCType) string {
 		result += g.TranslateName(key.Name)
 		result += " "
 		result += g.TranslateType(key.Type)
+		result += " `"
+		result += fmt.Sprintf(`json:"%s,omitempty"`, key.Name)
+		result += "`"
 		result += "\n"
 	}
 

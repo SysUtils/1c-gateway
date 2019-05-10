@@ -40,7 +40,7 @@ message Timestamp {
 	f.WriteString("\n")
 	f.WriteString(g.GenMessages(g.schema.Complexes))
 	f.WriteString("\n")
-	f.WriteString(g.GenService(g.schema.Complexes))
+	f.WriteString(g.GenService(g.schema.Entities))
 	f.Close()
 
 }

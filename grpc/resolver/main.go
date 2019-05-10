@@ -17,10 +17,23 @@ func NewGenerator(schema shared.Schema) *Generator {
 }
 
 func (g *Generator) Start() {
-	f, _ := os.Create("odata/GrpcConverters.go")
+	f, _ := os.Create("odata/GrpcConverter.go")
 	f.WriteString(`package odata
 `)
-	f.WriteString(g.GenConverters(g.schema.Entities))
+	f.WriteString(g.GenTypeConverters(g.schema.Entities))
+	f.WriteString(g.GenComplexConverters(g.schema.Complexes))
 	f.Close()
 
+	f, _ = os.Create("odata/GrpcResolver.go")
+	f.WriteString(`package odata
+
+import "context"
+
+type GrpcResolver struct {
+	Client *Client
+}
+
+`)
+	f.WriteString(g.GenQueryResolvers(g.schema.Entities))
+	f.Close()
 }

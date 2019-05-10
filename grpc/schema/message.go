@@ -11,7 +11,7 @@ func (g *Generator) GenMessages(source []shared.OneCType) string {
 		result += g.GenMessage(entity)
 		result += "\n"
 	}
-	return result[:len(result)-1]
+	return result
 }
 
 func (g *Generator) GenMessage(source shared.OneCType) string {
@@ -24,7 +24,7 @@ func (g *Generator) GenMessage(source shared.OneCType) string {
 func (g *Generator) GenTypeMessage(source shared.OneCType) string {
 	result := fmt.Sprintf("message %s {\n", g.TranslateType(source.Name))
 	for i, prop := range source.Properties {
-		result += fmt.Sprintf("%s %s = %d;\n", g.TranslateType(prop.Type), g.TranslateName(prop.Name), i+1)
+		result += fmt.Sprintf("	%s %s = %d;\n", g.TranslateType(prop.Type), g.TranslateName(prop.Name), i+1)
 	}
 	return result + "}"
 }

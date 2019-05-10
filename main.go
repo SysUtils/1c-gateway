@@ -7,6 +7,11 @@ import (
 	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/graphql"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/native"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/odata"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_cleaner"
+	//"github.com/graph-gophers/graphql-go"
+	//"github.com/graph-gophers/graphql-go/relay"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_loader"
 	"io/ioutil"
 	"log"
@@ -37,15 +42,8 @@ func main() {
 		log.Fatal("usage: 1cclientgenerator host 1СBase username password")
 	}
 
-	loader := schema_loader.NewSchemaLoader(fmt.Sprintf("http://%s/%s/odata/standard.odata/$metadata", os.Args[1], os.Args[2]), os.Args[3], os.Args[4])
-	schema, err := loader.Load()
-	if err != nil {
-		log.Fatalln(err)
-	}
-	fields, _ := ioutil.ReadFile("fields.dat")
-	types, _ := ioutil.ReadFile("types.dat")
-	err = os.Mkdir("odata", os.ModePerm)
-	if err != nil && err != os.ErrExist {
+	err := os.Mkdir("odata", os.ModePerm)
+	if err != nil && err.Error() != "mkdir odata: file exists" {
 		log.Fatalln(err)
 	}
 	// static/binary.go
@@ -82,15 +80,38 @@ func main() {
 	extractAsset("static/string.go", "odata/string.go")
 	extractAsset("static/time.go", "odata/time.go")
 	extractAsset("static/where.go", "odata/where.go")
+	extractAsset("static/grpc_helper.go", "odata/grpc_helper.go")
+
+	loader := schema_loader.NewSchemaLoader(fmt.Sprintf("http://%s/%s/odata/standard.odata/$metadata", os.Args[1], os.Args[2]), os.Args[3], os.Args[4])
+	schema, err := loader.Load()
+	if err != nil {
+		log.Fatalln(err)
+	}
+	fields, _ := ioutil.ReadFile("fields.dat")
+	types, _ := ioutil.ReadFile("types.dat")
+
+	nameMap := make(map[string]string)
+	typeMap := make(map[string]string)
+	json.Unmarshal(fields, &nameMap)
+	json.Unmarshal(types, &typeMap)
+
+	schema = schema_cleaner.ClearSchema(schema, typeMap)
 
 	graphqlGen := graphql.NewGenerator(*schema)
-	json.Unmarshal(fields, &graphqlGen.NameMap)
-	json.Unmarshal(types, &graphqlGen.TypeMap)
-
+	graphqlGen.NameMap = nameMap
+	graphqlGen.TypeMap = typeMap
 	graphqlGen.Start()
 
 	clientGen := native.NewGenerator(*schema)
-	json.Unmarshal(fields, &clientGen.NameMap)
-	json.Unmarshal(types, &clientGen.TypeMap)
+	clientGen.NameMap = nameMap
+	clientGen.TypeMap = typeMap
 	clientGen.Start()
+
+	grpcGen := grpc.NewGenerator(*schema)
+	grpcGen.NameMap = nameMap
+	grpcGen.TypeMap = typeMap
+	grpcGen.Start()
+
+	odata.NewClient("web", "12345", "http://127.0.0.1:8091/JewellerTrade/odata/standard.odata/")
+
 }

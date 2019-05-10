@@ -15,6 +15,6 @@ func (g *Generator) GenService(source []shared.OneCType) string {
 }
 
 func (g *Generator) GenServiceMethod(source shared.OneCType) string {
-	result := fmt.Sprintf("	rpc %s(%sPrimary) returns (%s);", g.TranslateName(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name))
+	result := fmt.Sprintf("	rpc %s(%sPrimary) returns (%s);", g.TranslateNativeType(source.Name), g.TranslateType(source.Name), g.TranslateType(source.Name))
 	return result
 }

@@ -3,6 +3,7 @@ package grpc
 import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc/resolver"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc/schema"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc/server"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 )
 
@@ -21,8 +22,14 @@ func (g *Generator) Start() {
 	schemaGen.TypeMap = g.TypeMap
 	schemaGen.NameMap = g.NameMap
 	schemaGen.Start()
+
 	resolverGen := resolver.NewGenerator(g.schema)
 	resolverGen.TypeMap = g.TypeMap
 	resolverGen.NameMap = g.NameMap
 	resolverGen.Start()
+
+	serverGen := server.NewGenerator(g.schema)
+	serverGen.TypeMap = g.TypeMap
+	serverGen.NameMap = g.NameMap
+	serverGen.Start()
 }

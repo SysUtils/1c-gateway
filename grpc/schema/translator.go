@@ -39,7 +39,7 @@ func (g *Generator) TranslateType(src string) string {
 	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1)) + "Grpc"
 }
 
-func (g *Generator) TranslateInputType(src string) string {
+func (g *Generator) TranslateNativeType(src string) string {
 	if strings.HasPrefix(src, "Edm.") {
 		src = src[4:]
 	}
@@ -48,13 +48,13 @@ func (g *Generator) TranslateInputType(src string) string {
 		src = src[14:]
 	}
 	if strings.HasPrefix(src, "Collection(") && strings.HasSuffix(src, ")") {
-		return "[" + g.TranslateInputType(src[11:len(src)-1]) + "!]"
+		return "repeated " + g.TranslateType(src[11:len(src)-1])
 	}
 	if val, ok := g.TypeMap[src]; ok {
-		src = val
+		return val
 	}
-	if _, ok := ScalarTypes[src]; !ok {
-		src += "Input"
+	if val, ok := ScalarTypes[src]; ok {
+		return val
 	}
 	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
 }

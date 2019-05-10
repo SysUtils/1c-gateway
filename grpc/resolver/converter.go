@@ -5,25 +5,64 @@ import (
 	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
 )
 
-func (g *Generator) GenConverters(source []shared.OneCType) string {
+func (g *Generator) GenComplexConverters(source []shared.OneCType) string {
 	result := ""
-	for _, entity := range source {
-		result += g.GenConverterToGrpc(entity)
+	for _, e := range source {
+		result += g.GenGrpcConverter(e)
 		result += "\n"
-		//result += g.GenConverterFromGrpc(entity)
-		//result += "\n"
+		result += g.GenNativeConverter(e)
+		result += "\n"
 	}
-	return result[:len(result)-1]
+	return result
 }
 
-func (g *Generator) GenConverterToGrpc(source shared.OneCType) string {
-	result := fmt.Sprintf("func (e *%s) ToGrpc() %sGrpc {", g.TranslateType(source.Name), g.TranslateType(source.Name))
-	result += fmt.Sprintf("	return %sGrpc {", g.TranslateType(source.Name))
-	for _, prop := range source.Properties {
-		if !prop.Nullable {
-			result += fmt.Sprintf("%s: e.%s,", g.TranslateName(prop.Name), g.TranslateName(prop.Name))
-		}
+func (g *Generator) GenTypeConverters(source []shared.OneCType) string {
+	result := ""
+	for _, e := range source {
+		result += g.GenGrpcConverter(e)
+		result += "\n"
+		result += g.GenNativeConverter(e)
+		result += "\n"
+		result += g.GenGrpcPrimaryConverter(e)
+		result += "\n"
+		result += g.GenNativePrimaryConverter(e)
+		result += "\n"
 	}
-	result += "\n	}\n}"
+	return result
+}
+
+func (g *Generator) GenGrpcPrimaryConverter(source shared.OneCType) string {
+	result := fmt.Sprintf("func (t *Primary%s) ToGrpc() (%sPrimary, error) {\n", g.TranslateNativeType(source.Name), g.TranslateGrpcType(source.Name))
+	result += fmt.Sprintf("	result := %sPrimary {}\n", g.TranslateGrpcType(source.Name))
+	result += fmt.Sprintf("	err := ConvertType(t, &result)\n")
+	result += fmt.Sprintf("	return result, err\n")
+	result += fmt.Sprintf("}")
+	return result
+}
+
+func (g *Generator) GenGrpcConverter(source shared.OneCType) string {
+	result := fmt.Sprintf("func (t *%s) ToGrpc() (%s, error) {\n", g.TranslateNativeType(source.Name), g.TranslateGrpcType(source.Name))
+	result += fmt.Sprintf("	result := %s {}\n", g.TranslateGrpcType(source.Name))
+	result += fmt.Sprintf("	err := ConvertType(t, &result)\n")
+	result += fmt.Sprintf("	return result, err\n")
+	result += fmt.Sprintf("}")
+	return result
+}
+
+func (g *Generator) GenNativePrimaryConverter(source shared.OneCType) string {
+	result := fmt.Sprintf("func (t *%sPrimary) ToNative() (Primary%s, error) {\n", g.TranslateGrpcType(source.Name), g.TranslateNativeType(source.Name))
+	result += fmt.Sprintf("	result := Primary%s {}\n", g.TranslateNativeType(source.Name))
+	result += fmt.Sprintf("	err := ConvertType(t, &result)\n")
+	result += fmt.Sprintf("	return result, err\n")
+	result += fmt.Sprintf("}")
+	return result
+}
+
+func (g *Generator) GenNativeConverter(source shared.OneCType) string {
+	result := fmt.Sprintf("func (t *%s) ToGrpc() (%s, error) {\n", g.TranslateGrpcType(source.Name), g.TranslateNativeType(source.Name))
+	result += fmt.Sprintf("	result := %s {}\n", g.TranslateNativeType(source.Name))
+	result += fmt.Sprintf("	err := ConvertType(t, &result)\n")
+	result += fmt.Sprintf("	return result, err\n")
+	result += fmt.Sprintf("}")
 	return result
 }

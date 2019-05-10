@@ -11,7 +11,7 @@ func (g *Generator) GenComplexTypes(source []shared.OneCType) string {
 		result += g.GenComplexType(entity)
 		result += "\n"
 	}
-	return result[:len(result)-1]
+	return result
 }
 
 func (g *Generator) GenComplexType(source shared.OneCType) string {
