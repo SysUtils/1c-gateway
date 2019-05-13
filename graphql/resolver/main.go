@@ -51,9 +51,4 @@ type GqlResolver struct {
 %s
 %s`, g.GenResolvers(g.schema.Entities), g.GenMutations(g.schema.Entities))
 	g.writeGofile("Resolver.go", data)
-
-	data = fmt.Sprintf(`package odata
-
-%s`, g.GenFilters(g.schema.Entities))
-	g.writeGofile("Resolver_filter.go", data)
 }

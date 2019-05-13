@@ -22,8 +22,8 @@ func (g *Generator) GenMutation(source shared.OneCType) string {
 	t := g.TranslateType(source.Name)
 	tInput := g.TranslateType(source.Name)
 	result := fmt.Sprintf(
-		`	Create%s(Entity: %s!): %s
-	Update%s(Key: Primary%s!, Entity: %sInput!): %s\n"
+		`	Create%s(Entity: %sInput!): %s
+	Update%s(Key: Primary%s!, Entity: %sInput!): %s
 	Remove%s(Key: Primary%s!): Boolean!`, t, tInput, t, t, t, tInput, t, t, t)
 	return result
 }

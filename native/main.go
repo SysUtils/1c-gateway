@@ -60,4 +60,9 @@ import "encoding/json"
 
 %s`, g.GenNavigations(g.schema.Entities))
 	g.writeGofile("Navigations.go", data)
+
+	data = fmt.Sprintf(`package odata
+
+%s`, g.GenFilters(g.schema.Entities))
+	g.writeGofile("Filters.go", data)
 }

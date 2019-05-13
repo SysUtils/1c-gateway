@@ -6,12 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/graphql"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/native"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/odata"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_cleaner"
-	//"github.com/graph-gophers/graphql-go"
-	//"github.com/graph-gophers/graphql-go/relay"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/native"
+	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_cleaner"
 	"gitlab.com/zullpro/core/1cclientgenerator.git/schema_loader"
 	"io/ioutil"
 	"log"
@@ -97,21 +94,41 @@ func main() {
 
 	schema = schema_cleaner.ClearSchema(schema, typeMap)
 
-	graphqlGen := graphql.NewGenerator(*schema)
-	graphqlGen.NameMap = nameMap
-	graphqlGen.TypeMap = typeMap
-	graphqlGen.Start()
-
 	clientGen := native.NewGenerator(*schema)
 	clientGen.NameMap = nameMap
 	clientGen.TypeMap = typeMap
 	clientGen.Start()
 
+	graphqlGen := graphql.NewGenerator(*schema)
+	graphqlGen.NameMap = nameMap
+	graphqlGen.TypeMap = typeMap
+	graphqlGen.Start()
+
 	grpcGen := grpc.NewGenerator(*schema)
 	grpcGen.NameMap = nameMap
 	grpcGen.TypeMap = typeMap
 	grpcGen.Start()
+	/*
+		client := odata.NewClient("web", "12345", "http://127.0.0.1:8091/JewellerTrade/odata/standard.odata/")
 
-	odata.NewClient("web", "12345", "http://127.0.0.1:8091/JewellerTrade/odata/standard.odata/")
+		// Стартуем наш gRPC сервер для прослушивания tcp
+		lis, err := net.Listen("tcp", ":50500")
+		if err != nil {
+			log.Fatalf("failed to listen: %v", err)
+		}
+
+		s := ggrpc.NewServer()
+
+		// Зарегистрируйте нашу службу на сервере gRPC, это свяжет нашу
+		// реализацию с кодом автогенерированного интерфейса для нашего
+		// сообщения `Response`, которое мы создали в нашем протобуфе
+		odata.RegisterGrpcOdataServer(s, &odata.GrpcResolver{client})
+
+		// Регистрация службы ответов на сервере gRPC.
+		reflection.Register(s)
+		if err := s.Serve(lis); err != nil {
+			log.Fatalf("failed to serve: %v", err)
+		}
+	*/
 
 }

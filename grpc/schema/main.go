@@ -35,6 +35,12 @@ message Timestamp {
 	// inclusive.
 	int32 nanos = 2;
 }
+
+message BaseWhere {
+	int32 Top = 1;
+	int32 Skip = 2;
+	string Orderby = 3;
+}
 `)
 	f.WriteString(g.GenMessages(g.schema.Entities))
 	f.WriteString("\n")

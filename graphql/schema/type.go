@@ -53,9 +53,9 @@ func (g *Generator) GenInputTypeStruct(source shared.OneCType) string {
 }
 
 func (g *Generator) GenOutputTypeStruct(source shared.OneCType) string {
-	result := fmt.Sprintf("input %s {\n", g.TranslateType(source.Name))
+	result := fmt.Sprintf("type %s {\n", g.TranslateType(source.Name))
 	for _, prop := range source.Properties {
-		result += fmt.Sprintf("	%s: %s", g.TranslateName(prop.Name), g.TranslateInputType(prop.Type))
+		result += fmt.Sprintf("	%s: %s", g.TranslateName(prop.Name), g.TranslateType(prop.Type))
 		if !prop.Nullable {
 			result += "!"
 		}

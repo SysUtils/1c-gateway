@@ -23,11 +23,11 @@ func (g *Generator) GenFilter(source shared.OneCType) string {
 `, name, name, name)
 	for _, prop := range source.Properties {
 		propType := g.TranslateType(prop.Type)
-		propName := g.TranslateType(prop.Name)
+		propName := g.TranslateName(prop.Name)
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf(
-				`	%s_eq: %s
-	%s_ne: %s
+				`	%sEq: %s
+	%sNe: %s
 `, propName, propType, propName, propType)
 		} else {
 			if !strings.HasPrefix(propType, "[") {

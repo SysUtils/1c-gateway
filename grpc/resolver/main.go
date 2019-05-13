@@ -20,6 +20,13 @@ func (g *Generator) Start() {
 	f, _ := os.Create("odata/GrpcConverter.go")
 	f.WriteString(`package odata
 `)
+	f.WriteString(`func (w *BaseWhere) ToNative() Where {
+	return Where {Top: w.Top,
+	Skip: w.Skip,
+	Orderby: w.Orderby }
+}
+`)
+
 	f.WriteString(g.GenTypeConverters(g.schema.Entities))
 	f.WriteString(g.GenComplexConverters(g.schema.Complexes))
 	f.Close()

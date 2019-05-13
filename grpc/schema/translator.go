@@ -5,7 +5,18 @@ import (
 	"strings"
 )
 
-var ScalarTypes = map[string]string{
+var ScalarTypes = map[string]bool{
+	"string":    true,
+	"int32":     true,
+	"int64":     true,
+	"double":    true,
+	"float":     true,
+	"Timestamp": true,
+	"bytes":     true,
+	"bool":      true,
+}
+
+var ScalarTypesMap = map[string]string{
 	"String":   "string",
 	"Int":      "int32",
 	"Int16":    "int32",
@@ -33,7 +44,7 @@ func (g *Generator) TranslateType(src string) string {
 	if val, ok := g.TypeMap[src]; ok {
 		return val + "Grpc"
 	}
-	if val, ok := ScalarTypes[src]; ok {
+	if val, ok := ScalarTypesMap[src]; ok {
 		return val
 	}
 	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1)) + "Grpc"
@@ -53,7 +64,7 @@ func (g *Generator) TranslateNativeType(src string) string {
 	if val, ok := g.TypeMap[src]; ok {
 		return val
 	}
-	if val, ok := ScalarTypes[src]; ok {
+	if val, ok := ScalarTypesMap[src]; ok {
 		return val
 	}
 	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))

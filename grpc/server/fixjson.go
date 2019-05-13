@@ -25,7 +25,6 @@ func (g *Generator) ExtractNameMap() map[string]string {
 
 func (g *Generator) Replacer(s string) string {
 	s = s[6:]
-	log.Println(s)
 	return `json:"` + g.ReverseNameMap[s]
 }
 

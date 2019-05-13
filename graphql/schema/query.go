@@ -11,10 +11,8 @@ func (g *Generator) GenQueries(source []shared.OneCType) string {
 		queries += g.GenQuery(entity)
 		queries += "\n"
 	}
-	result := fmt.Sprintf(`type Query {
-	%s
-}`)
-	return result
+	queries += fmt.Sprintf(`}`)
+	return queries
 }
 
 func (g *Generator) GenQuery(source shared.OneCType) string {
