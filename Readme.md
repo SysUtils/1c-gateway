@@ -4,9 +4,11 @@
 
 ### Install
 
+```bash
 git clone <repo>
-
+go generate
 go install
+```
 
 ### Use as library
 

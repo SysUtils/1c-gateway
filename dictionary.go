@@ -45,7 +45,7 @@ func SaveToFile(data map[string]string, path string) {
 	if err != nil {
 		panic(err)
 	}
-	_ := f.Close()
+	_ = f.Close()
 }
 
 func LoadFromFile(path string) map[string]string {
@@ -61,7 +61,7 @@ func LoadFromFile(path string) map[string]string {
 	if err != nil {
 		return res
 	}
-	_ := f.Close()
+	_ = f.Close()
 	return res
 }
 
