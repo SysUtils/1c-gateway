@@ -108,27 +108,4 @@ func main() {
 	grpcGen.NameMap = nameMap
 	grpcGen.TypeMap = typeMap
 	grpcGen.Start()
-	/*
-		client := odata.NewClient("web", "12345", "http://127.0.0.1:8091/JewellerTrade/odata/standard.odata/")
-
-		// Стартуем наш gRPC сервер для прослушивания tcp
-		lis, err := net.Listen("tcp", ":50500")
-		if err != nil {
-			log.Fatalf("failed to listen: %v", err)
-		}
-
-		s := ggrpc.NewServer()
-
-		// Зарегистрируйте нашу службу на сервере gRPC, это свяжет нашу
-		// реализацию с кодом автогенерированного интерфейса для нашего
-		// сообщения `Response`, которое мы создали в нашем протобуфе
-		odata.RegisterGrpcOdataServer(s, &odata.GrpcResolver{client})
-
-		// Регистрация службы ответов на сервере gRPC.
-		reflection.Register(s)
-		if err := s.Serve(lis); err != nil {
-			log.Fatalf("failed to serve: %v", err)
-		}
-	*/
-
 }
