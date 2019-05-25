@@ -22,15 +22,19 @@ func NewGenerator(schema shared.Schema) *Generator {
 
 func (g *Generator) Start() {
 	cmd := exec.Command("protoc", "--go_out=plugins=grpc:.", "odata/grpc.proto")
-	cmd.Run()
+	err := cmd.Run()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	source, err := ioutil.ReadFile("odata/grpc.pb.go")
 	if err != nil {
-		log.Fatal(source)
+		log.Fatal(err)
 	}
 	strSource := string(source)
 	strSource = g.FixJson(strSource)
 	err = ioutil.WriteFile("odata/grpc.pb.go", []byte(strSource), os.ModePerm)
 	if err != nil {
-		log.Fatal(source)
+		log.Fatal(err)
 	}
 }
