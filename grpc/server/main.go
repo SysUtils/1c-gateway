@@ -22,6 +22,9 @@ func NewGenerator(schema shared.Schema) *Generator {
 
 func (g *Generator) Start() {
 	cmd := exec.Command("protoc", "--go_out=plugins=grpc:.", "odata/grpc.proto")
+	cmd.Stdout = os.Stdout // cmd.Stdout -> stdout
+	cmd.Stderr = os.Stderr // cmd.Stderr -> stderr
+
 	err := cmd.Run()
 	if err != nil {
 		log.Fatal(err)
