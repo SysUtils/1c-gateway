@@ -72,5 +72,5 @@ scalar Guid
 		g.GenQueries(g.schema.Entities),
 		g.GenFilters(g.schema.Entities),
 		g.GenFilters(g.schema.Complexes))
-	g.writeGqlfile("Schema.gql", data)
+	g.writeGqlfile("Schema.graphql", data)
 }
