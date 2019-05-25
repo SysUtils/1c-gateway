@@ -1,3 +1,7 @@
+1c have beautiful odata interface& This instrument have 3 options:
+1. Work as library for 1C odata interface. Project generate methods and types by metadata with translating cyrillic with dictionary(types.dat, fields.dat)
+2. Work as grpc middleware
+
 ### Install
 
 git clone <repo>
@@ -20,3 +24,9 @@ For example
 ```bash
 1cclientgenerator.git 127.0.0.1:80 JewelleryTrade odata 11111 ./types.dat ./fields.dat
 ```
+
+### Use as middleware with graphql interface
+
+
+### Use as middleware with grpc interface
+(In feature versions)
