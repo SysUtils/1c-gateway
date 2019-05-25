@@ -19,12 +19,12 @@ go install
 3. Run generate lib
 
 ```bash
-1cclientgenerator <1c-server> <1c-odata-instance> <odata-usesrname> <odata-password> ./types.dat ./fields.dat
+1c-gateway <1c-server> <1c-odata-instance> <odata-usesrname> <odata-password>
 ```
 
 For example
 ```bash
-1cclientgenerator.git 127.0.0.1:80 JewelleryTrade odata 11111 ./types.dat ./fields.dat
+1c-gateway 127.0.0.1:80 JewelleryTrade odata 11111
 ```
 
 ### Use as middleware with graphql interface
