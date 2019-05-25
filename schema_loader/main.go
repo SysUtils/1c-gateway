@@ -2,7 +2,7 @@ package schema_loader
 
 import (
 	"encoding/xml"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/shared"
 	"io/ioutil"
 	"net/http"
 )

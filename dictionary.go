@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/shared"
 	"os"
 	"strings"
 )
@@ -45,7 +45,7 @@ func SaveToFile(data map[string]string, path string) {
 	if err != nil {
 		panic(err)
 	}
-	f.Close()
+	_ := f.Close()
 }
 
 func LoadFromFile(path string) map[string]string {
@@ -61,7 +61,7 @@ func LoadFromFile(path string) map[string]string {
 	if err != nil {
 		return res
 	}
-	f.Close()
+	_ := f.Close()
 	return res
 }
 

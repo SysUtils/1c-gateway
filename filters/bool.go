@@ -2,7 +2,7 @@ package filters
 
 import (
 	"fmt"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/static"
+	"github.com/SysUtils/1c-gateway/static"
 )
 
 type BoolOp int

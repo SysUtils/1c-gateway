@@ -1,10 +1,10 @@
 package grpc
 
 import (
-	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc/resolver"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc/schema"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/grpc/server"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/grpc/resolver"
+	"github.com/SysUtils/1c-gateway/grpc/schema"
+	"github.com/SysUtils/1c-gateway/grpc/server"
+	"github.com/SysUtils/1c-gateway/shared"
 )
 
 type Generator struct {

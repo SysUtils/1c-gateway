@@ -2,7 +2,7 @@ package native
 
 import (
 	"fmt"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/shared"
 )
 
 func (g *Generator) GenPrimaryKeys(source []shared.OneCType) string {

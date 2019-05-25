@@ -1,9 +1,9 @@
 package graphql
 
 import (
-	"gitlab.com/zullpro/core/1cclientgenerator.git/graphql/resolver"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/graphql/schema"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/graphql/resolver"
+	"github.com/SysUtils/1c-gateway/graphql/schema"
+	"github.com/SysUtils/1c-gateway/shared"
 )
 
 type Generator struct {

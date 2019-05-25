@@ -1,6 +1,6 @@
 package schema_cleaner
 
-import "gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+import "github.com/SysUtils/1c-gateway/shared"
 
 func ExtractAssociations(source []shared.Association) map[string]map[string]string {
 	result := make(map[string]map[string]string)

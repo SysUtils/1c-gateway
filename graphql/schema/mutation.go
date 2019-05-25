@@ -2,7 +2,7 @@ package schema
 
 import (
 	"fmt"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/shared"
 )
 
 func (g *Generator) GenMutations(source []shared.OneCType) string {

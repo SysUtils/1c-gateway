@@ -2,7 +2,7 @@ package resolver
 
 import (
 	"fmt"
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/shared"
 	"log"
 	"os"
 )

@@ -1,7 +1,7 @@
 package schema
 
 import (
-	"gitlab.com/zullpro/core/1cclientgenerator.git/shared"
+	"github.com/SysUtils/1c-gateway/shared"
 	"os"
 )
 
