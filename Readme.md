@@ -10,6 +10,11 @@ go generate
 go install
 ```
 
+For using you must install protobuf and protoc-gen-go(https://github.com/golang/protobuf):
+```bash
+go get -u github.com/golang/protobuf/protoc-gen-go
+```
+
 ### Use as library
 
 1. Go to dir with project

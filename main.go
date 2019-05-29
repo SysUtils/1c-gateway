@@ -4,6 +4,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"github.com/SysUtils/1c-gateway/graphql"
 	"github.com/SysUtils/1c-gateway/grpc"
@@ -35,8 +36,16 @@ func extractAsset(asset, path string) {
 }
 
 func main() {
-	if len(os.Args) != 5 {
-		log.Fatal("usage: 1cclientgenerator host 1СBase username password")
+	var host = flag.String("host", "localhost:8091", "address and port of 1C web service")
+	var base = flag.String("base", "MyBase", "address and port of 1C web service")
+	var username = flag.String("username", "Administrator", "username for 1C web service")
+	var password = flag.String("password", "password", "password for 1C web service")
+	var isGraphql = flag.Bool("graphql", false, "generate graphql server?")
+	var isGrpc = flag.Bool("grpc", false, "generate grpc server?")
+	flag.Parse()
+
+	if host == nil || base == nil || username == nil || password == nil {
+		log.Fatal("arguments host, base, username and password is required")
 	}
 
 	err := os.Mkdir("odata", os.ModePerm)
@@ -79,7 +88,7 @@ func main() {
 	extractAsset("static/where.go", "odata/where.go")
 	extractAsset("static/grpc_helper.go", "odata/grpc_helper.go")
 
-	loader := schema_loader.NewSchemaLoader(fmt.Sprintf("http://%s/%s/odata/standard.odata/$metadata", os.Args[1], os.Args[2]), os.Args[3], os.Args[4])
+	loader := schema_loader.NewSchemaLoader(fmt.Sprintf("http://%s/%s/odata/standard.odata/$metadata", *host, *base), *username, *password)
 	schema, err := loader.Load()
 	if err != nil {
 		log.Fatalln(err)
@@ -89,8 +98,12 @@ func main() {
 
 	nameMap := make(map[string]string)
 	typeMap := make(map[string]string)
-	json.Unmarshal(fields, &nameMap)
-	json.Unmarshal(types, &typeMap)
+	if err := json.Unmarshal(fields, &nameMap); err != nil {
+		log.Panic(err)
+	}
+	if err := json.Unmarshal(types, &typeMap); err != nil {
+		log.Panic(err)
+	}
 
 	schema = schema_cleaner.ClearSchema(schema, typeMap)
 
@@ -99,13 +112,17 @@ func main() {
 	clientGen.TypeMap = typeMap
 	clientGen.Start()
 
-	graphqlGen := graphql.NewGenerator(*schema)
-	graphqlGen.NameMap = nameMap
-	graphqlGen.TypeMap = typeMap
-	graphqlGen.Start()
+	if isGraphql != nil && *isGraphql == true {
+		graphqlGen := graphql.NewGenerator(*schema)
+		graphqlGen.NameMap = nameMap
+		graphqlGen.TypeMap = typeMap
+		graphqlGen.Start()
+	}
 
-	grpcGen := grpc.NewGenerator(*schema)
-	grpcGen.NameMap = nameMap
-	grpcGen.TypeMap = typeMap
-	grpcGen.Start()
+	if isGrpc != nil && *isGrpc == true {
+		grpcGen := grpc.NewGenerator(*schema)
+		grpcGen.NameMap = nameMap
+		grpcGen.TypeMap = typeMap
+		grpcGen.Start()
+	}
 }
