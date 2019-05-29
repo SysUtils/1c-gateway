@@ -1,12 +1,11 @@
 package main
 
-//go:generate go-bindata -pkg $GOPACKAGE static/
+//go:generate go-bindata -pkg $GOPACKAGE ../static/
 
 import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/SysUtils/1c-gateway/graphql"
 	"github.com/SysUtils/1c-gateway/grpc"
 	"github.com/SysUtils/1c-gateway/native"
 	"github.com/SysUtils/1c-gateway/schema_cleaner"
@@ -40,8 +39,6 @@ func main() {
 	var base = flag.String("base", "MyBase", "address and port of 1C web service")
 	var username = flag.String("username", "Administrator", "username for 1C web service")
 	var password = flag.String("password", "password", "password for 1C web service")
-	var isGraphql = flag.Bool("graphql", false, "generate graphql server?")
-	var isGrpc = flag.Bool("grpc", false, "generate grpc server?")
 	flag.Parse()
 
 	if host == nil || base == nil || username == nil || password == nil {
@@ -112,17 +109,8 @@ func main() {
 	clientGen.TypeMap = typeMap
 	clientGen.Start()
 
-	if isGraphql != nil && *isGraphql == true {
-		graphqlGen := graphql.NewGenerator(*schema)
-		graphqlGen.NameMap = nameMap
-		graphqlGen.TypeMap = typeMap
-		graphqlGen.Start()
-	}
-
-	if isGrpc != nil && *isGrpc == true {
-		grpcGen := grpc.NewGenerator(*schema)
-		grpcGen.NameMap = nameMap
-		grpcGen.TypeMap = typeMap
-		grpcGen.Start()
-	}
+	grpcGen := grpc.NewGenerator(*schema)
+	grpcGen.NameMap = nameMap
+	grpcGen.TypeMap = typeMap
+	grpcGen.Start()
 }
