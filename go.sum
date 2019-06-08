@@ -46,7 +46,4 @@ golang.org/x/sys v0.0.0-20190608050228-5b15430b70e3/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/tools v0.0.0-20190608022120-eacb66d2a7c3 h1:sU3tSV6wDhWsvf9NjL0FzRjgAmYnQL5NEhdmcN16UEg=
 golang.org/x/tools v0.0.0-20190608022120-eacb66d2a7c3/go.mod h1:/rFqwRUd4F7ZHNgwSSTFct+R/Kf4OFW1sUzUTQQTgfc=
-gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
-pkg.re/check.v1 v0.0.0-20180628173108-788fd7840127 h1:EeocMI3EyLQz3I7hzvaLQDeHhKG/Zv2Sjr6+D7dmucw=
-pkg.re/check.v1 v0.0.0-20180628173108-788fd7840127/go.mod h1:Bv2p9ADKkn3MpAYt+c1TwsHRyGRJYvQku+t0WRX6uAc=
 rsc.io/pdf v0.1.1/go.mod h1:n8OzWcQ6Sp37PL01nO98y4iUCRdTGarVfzxY20ICaU4=
