@@ -1,7 +1,7 @@
 package native
 
 import (
-	"pkg.re/essentialkaos/translit.v2"
+	"github.com/essentialkaos/translit"
 	"strings"
 )
 
