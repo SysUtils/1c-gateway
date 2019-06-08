@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/SysUtils/1c-gateway/graphql"
 	"github.com/SysUtils/1c-gateway/grpc"
 	"github.com/SysUtils/1c-gateway/native"
 	"github.com/SysUtils/1c-gateway/schema_cleaner"
@@ -108,6 +109,11 @@ func main() {
 	clientGen.NameMap = nameMap
 	clientGen.TypeMap = typeMap
 	clientGen.Start()
+
+	graphqlGen := graphql.NewGenerator(*schema)
+	graphqlGen.NameMap = nameMap
+	graphqlGen.TypeMap = typeMap
+	graphqlGen.Start()
 
 	grpcGen := grpc.NewGenerator(*schema)
 	grpcGen.NameMap = nameMap
