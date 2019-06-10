@@ -20,7 +20,7 @@ func (g *Generator) genMessage(source shared.OneCType) string {
 	result += "\n"
 	result += g.genQuerysResponseMessage(source)
 	result += "\n"
-	result += g.пenQuerysWhereMessage(source)
+	result += g.genQuerysWhereMessage(source)
 	result += "\n"
 	result += g.genFilterMessage(source)
 	result += "\n"

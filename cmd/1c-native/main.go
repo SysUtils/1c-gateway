@@ -1,12 +1,11 @@
 // Package for generate 1c odata client
 package main
 
-//go:generate go-bindata -pkg $GOPACKAGE ../../static/
-
 import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	generated "github.com/SysUtils/1c-gateway"
 	"github.com/SysUtils/1c-gateway/native"
 	"github.com/SysUtils/1c-gateway/schema_cleaner"
 	"github.com/SysUtils/1c-gateway/schema_loader"
@@ -16,7 +15,7 @@ import (
 )
 
 func extractAsset(asset, path string) {
-	data, err := Asset(asset)
+	data, err := generated.Asset(asset)
 	if err != nil {
 		log.Panic(err)
 	}

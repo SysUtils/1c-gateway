@@ -1,12 +1,11 @@
 // Package for generate 1c grpc and graphql client
 package main
 
-//go:generate go-bindata -pkg $GOPACKAGE ../../static/
-
 import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/SysUtils/1c-gateway"
 	"github.com/SysUtils/1c-gateway/graphql"
 	"github.com/SysUtils/1c-gateway/grpc"
 	"github.com/SysUtils/1c-gateway/native"
@@ -18,7 +17,7 @@ import (
 )
 
 func extractAsset(asset, path string) {
-	data, err := Asset(asset)
+	data, err := generated.Asset(asset)
 	if err != nil {
 		log.Panic(err)
 	}
