@@ -120,6 +120,9 @@ func (g *Generator) genRead(source shared.OneCType) string {
 	if err != nil {
 		return nil, err
 	}
+	for i := range result.Value {
+		result.Value[i].Client = c;
+	}
 
 	return &result.Value, nil
 }`, g.translateType(source.Name), g.translateType(source.Name), g.translateType(source.Name), source.Name)
