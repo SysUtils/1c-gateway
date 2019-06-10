@@ -5,10 +5,10 @@ import (
 	"github.com/SysUtils/1c-gateway/shared"
 )
 
-func (g *Generator) GenMutations(source []shared.OneCType) string {
+func (g *Generator) genMutations(source []shared.OneCType) string {
 	mutations := ""
 	for _, entity := range source {
-		mutations += g.GenMutation(entity)
+		mutations += g.genMutation(entity)
 		mutations += "\n"
 	}
 
@@ -18,9 +18,9 @@ func (g *Generator) GenMutations(source []shared.OneCType) string {
 	return result
 }
 
-func (g *Generator) GenMutation(source shared.OneCType) string {
-	t := g.TranslateType(source.Name)
-	tInput := g.TranslateType(source.Name)
+func (g *Generator) genMutation(source shared.OneCType) string {
+	t := g.translateType(source.Name)
+	tInput := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`	Create%s(Entity: %sInput!): %s
 	Update%s(Key: Primary%s!, Entity: %sInput!): %s

@@ -1,3 +1,4 @@
+// Package grpc provides generator for GRPC gateway
 package grpc
 
 import (
@@ -13,20 +14,22 @@ type Generator struct {
 	schema  shared.Schema
 }
 
+// NewGenerator returns initialized generator
 func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string)}
 }
 
-func (g *Generator) Start() {
+// Generate generates the grpc gateway and writes it to ./odata folder
+func (g *Generator) Generate() {
 	schemaGen := schema.NewGenerator(g.schema)
 	schemaGen.TypeMap = g.TypeMap
 	schemaGen.NameMap = g.NameMap
-	schemaGen.Start()
+	schemaGen.Generate()
 
 	resolverGen := resolver.NewGenerator(g.schema)
 	resolverGen.TypeMap = g.TypeMap
 	resolverGen.NameMap = g.NameMap
-	resolverGen.Start()
+	resolverGen.Generate()
 
 	serverGen := server.NewGenerator(g.schema)
 	serverGen.TypeMap = g.TypeMap

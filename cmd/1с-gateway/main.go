@@ -1,11 +1,11 @@
+// Package for generate 1c grpc and graphql client
 package main
-
-//go:generate go-bindata -pkg $GOPACKAGE ../../static/
 
 import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/SysUtils/1c-gateway"
 	"github.com/SysUtils/1c-gateway/graphql"
 	"github.com/SysUtils/1c-gateway/grpc"
 	"github.com/SysUtils/1c-gateway/native"
@@ -17,7 +17,7 @@ import (
 )
 
 func extractAsset(asset, path string) {
-	data, err := Asset(asset)
+	data, err := generated.Asset(asset)
 	if err != nil {
 		log.Panic(err)
 	}
@@ -103,12 +103,12 @@ func main() {
 		log.Panic(err)
 	}
 
-	schema = schema_cleaner.ClearSchema(schema, typeMap)
+	schema = schema_cleaner.Clean(schema, typeMap)
 
 	clientGen := native.NewGenerator(*schema)
 	clientGen.NameMap = nameMap
 	clientGen.TypeMap = typeMap
-	clientGen.Start()
+	clientGen.Generate()
 
 	graphqlGen := graphql.NewGenerator(*schema)
 	graphqlGen.NameMap = nameMap
@@ -118,5 +118,5 @@ func main() {
 	grpcGen := grpc.NewGenerator(*schema)
 	grpcGen.NameMap = nameMap
 	grpcGen.TypeMap = typeMap
-	grpcGen.Start()
+	grpcGen.Generate()
 }

@@ -1,3 +1,4 @@
+// Package grpc/server provides generator for GRPC gateway's server
 package server
 
 import (
@@ -16,10 +17,12 @@ type Generator struct {
 	schema         shared.Schema
 }
 
+// NewGenerator returns initialized generator
 func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: map[string]map[string]string{}}
 }
 
+// Generate generates the grpc server and writes it to ./odata folder
 func (g *Generator) Start() {
 	cmd := exec.Command("protoc", "--go_out=plugins=grpc:.", "odata/grpc.proto")
 	cmd.Stdout = os.Stdout // cmd.Stdout -> stdout
@@ -35,7 +38,7 @@ func (g *Generator) Start() {
 		log.Fatal(err)
 	}
 	strSource := string(source)
-	strSource = g.FixJson(strSource)
+	strSource = g.fixJson(strSource)
 	err = ioutil.WriteFile("odata/grpc.pb.go", []byte(strSource), os.ModePerm)
 	if err != nil {
 		log.Fatal(err)

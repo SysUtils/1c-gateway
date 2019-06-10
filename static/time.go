@@ -7,12 +7,15 @@ import (
 	"time"
 )
 
+// Type for Edm.Time
 type Time time.Time
 
+// Maps Time to the graphql scalar type in the schema.
 func (Time) ImplementsGraphQLType(name string) bool {
 	return name == "Time"
 }
 
+// A custom unmarshaler for Time type
 func (t *Time) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case time.Time:
@@ -35,11 +38,13 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 	}
 }
 
+// A custom json/graphql marshaller for Time type
 func (t Time) MarshalJSON() ([]byte, error) {
 	val := time.Time(t).Format(timeformat)
 	return json.Marshal(val)
 }
 
+// A custom json unmarshaller for Time type
 func (t *Time) UnmarshalJSON(b []byte) error {
 	s := strings.Trim(string(b), `"`)
 	val, err := time.Parse(timeformat, s)
@@ -47,6 +52,7 @@ func (t *Time) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// A custom marshaller to uri query format for Time type
 func (t Time) AsParameter() string {
 	val := time.Time(t).Format(timeformat)
 	return fmt.Sprintf("'%s'", val)

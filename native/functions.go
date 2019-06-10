@@ -5,30 +5,30 @@ import (
 	"github.com/SysUtils/1c-gateway/shared"
 )
 
-func (g *Generator) GenFunctions(source []shared.Function) string {
+func (g *Generator) genFunctions(source []shared.Function) string {
 	result := ""
 	for _, entity := range source {
-		result += g.GenFunction(entity)
+		result += g.genFunction(entity)
 		result += "\n"
 	}
 	return result[:len(result)-1]
 }
 
-func (g *Generator) GenFunction(source shared.Function) string {
-	result := g.GenFunctionStruct(source)
+func (g *Generator) genFunction(source shared.Function) string {
+	result := g.genFunctionStruct(source)
 	result += "\n"
-	result += g.GenFunctionNameFunc(source)
+	result += g.genFunctionNameFunc(source)
 	result += "\n"
-	result += g.GenFunctionParametersFunc(source)
+	result += g.genFunctionParametersFunc(source)
 	return result
 }
 
-func (g *Generator) GenFunctionStruct(source shared.Function) string {
+func (g *Generator) genFunctionStruct(source shared.Function) string {
 	result := ""
 	if source.IsBindable {
-		result += fmt.Sprintf("type Function%s%s struct {\n", g.TranslateType(source.Parameters[0].Type), g.TranslateName(source.Name))
+		result += fmt.Sprintf("type Function%s%s struct {\n", g.translateType(source.Parameters[0].Type), g.translateName(source.Name))
 	} else {
-		result += fmt.Sprintf("type Function%s struct {\n", g.TranslateName(source.Name))
+		result += fmt.Sprintf("type Function%s struct {\n", g.translateName(source.Name))
 	}
 
 	for i, p := range source.Parameters {
@@ -36,9 +36,9 @@ func (g *Generator) GenFunctionStruct(source shared.Function) string {
 			continue
 		}
 		result += "	"
-		result += g.TranslateName(p.Name)
+		result += g.translateName(p.Name)
 		result += " "
-		result += g.TranslateType(p.Type)
+		result += g.translateType(p.Type)
 		result += " `"
 		result += fmt.Sprintf(`odata:"%s"`, p.Name)
 		result += "`"
@@ -49,12 +49,12 @@ func (g *Generator) GenFunctionStruct(source shared.Function) string {
 	return result
 }
 
-func (g *Generator) GenFunctionNameFunc(source shared.Function) string {
+func (g *Generator) genFunctionNameFunc(source shared.Function) string {
 	result := ""
 	if source.IsBindable {
-		result += fmt.Sprintf("func (Function%s%s) Name() string {\n", g.TranslateType(source.Parameters[0].Type), g.TranslateName(source.Name))
+		result += fmt.Sprintf("func (Function%s%s) Name() string {\n", g.translateType(source.Parameters[0].Type), g.translateName(source.Name))
 	} else {
-		result += fmt.Sprintf("func (Function%s) Name() string {\n", g.TranslateName(source.Name))
+		result += fmt.Sprintf("func (Function%s) Name() string {\n", g.translateName(source.Name))
 	}
 	result += fmt.Sprintf(`	return "%s"`, source.Name)
 	result += "\n}"
@@ -62,12 +62,12 @@ func (g *Generator) GenFunctionNameFunc(source shared.Function) string {
 	return result
 }
 
-func (g *Generator) GenFunctionParametersFunc(source shared.Function) string {
+func (g *Generator) genFunctionParametersFunc(source shared.Function) string {
 	result := ""
 	if source.IsBindable {
-		result += fmt.Sprintf("func (f Function%s%s) Parameters() string {\n", g.TranslateType(source.Parameters[0].Type), g.TranslateName(source.Name))
+		result += fmt.Sprintf("func (f Function%s%s) Parameters() string {\n", g.translateType(source.Parameters[0].Type), g.translateName(source.Name))
 	} else {
-		result += fmt.Sprintf("func (f Function%s) Parameters() string {\n", g.TranslateName(source.Name))
+		result += fmt.Sprintf("func (f Function%s) Parameters() string {\n", g.translateName(source.Name))
 	}
 	result += fmt.Sprintf(`	return `)
 	for i, key := range source.Parameters {
@@ -80,7 +80,7 @@ func (g *Generator) GenFunctionParametersFunc(source shared.Function) string {
 			result += fmt.Sprintf(` + "&%s=" + `, key.Name)
 
 		}
-		result += "f." + g.TranslateName(key.Name) + ".AsParameter()"
+		result += "f." + g.translateName(key.Name) + ".AsParameter()"
 	}
 	result += "\n}"
 

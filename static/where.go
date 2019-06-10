@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// Interface for odata Filter type
 type IFilter interface {
 	ToString() string
 }
@@ -18,6 +19,7 @@ type Where struct {
 	Fields  []string
 }
 
+// Returns string representation of Where object
 func (w *Where) Serialize() string {
 	params := ""
 

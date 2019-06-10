@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func (g *Generator) TranslateName(src string) string {
+func (g *Generator) translateName(src string) string {
 	if val, ok := g.NameMap[src]; ok {
 		return val
 	}

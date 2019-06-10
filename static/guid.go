@@ -6,19 +6,15 @@ import (
 	"strings"
 )
 
+// Type for Edm.Guid
 type Guid string
 
-// ImplementsGraphQLType maps this custom Go type
-// to the graphql scalar type in the schema.
+// Maps Guid to the graphql scalar type in the schema.
 func (Guid) ImplementsGraphQLType(name string) bool {
 	return name == "Guid"
 }
 
-// UnmarshalGraphQL is a custom unmarshaler for Time
-//
-// This function will be called whenever you use the
-// time scalar as an input
-
+// A custom unmarshaler for Guid type
 func (t *Guid) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case string:
@@ -29,10 +25,12 @@ func (t *Guid) UnmarshalGraphQL(input interface{}) error {
 	}
 }
 
+// A custom json/graphql marshaller for Guid type
 func (t Guid) MarshalJSON() ([]byte, error) {
 	return json.Marshal(string(t))
 }
 
+// A custom json unmarshaller for Guid type
 func (t *Guid) UnmarshalJSON(b []byte) error {
 	s := strings.Trim(string(b), `"`)
 	if strings.HasPrefix(s, "guid'") {
@@ -42,6 +40,7 @@ func (t *Guid) UnmarshalJSON(b []byte) error {
 	return nil
 }
 
+// A custom marshaller to uri query format for Guid type
 func (t Guid) AsParameter() string {
 	return `guid'` + string(t) + `'`
 }

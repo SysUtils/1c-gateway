@@ -1,4 +1,4 @@
-package main
+package generated
 
 import (
 	"encoding/json"
@@ -9,7 +9,6 @@ import (
 
 var fields = map[string]string{}
 var types = map[string]string{}
-var i = 0
 
 func TranslateField(source string) string {
 	if val, ok := types[source]; ok {
@@ -65,7 +64,7 @@ func LoadFromFile(path string) map[string]string {
 	return res
 }
 
-func Start(schema shared.Schema) {
+func _(schema shared.Schema) {
 	types = LoadFromFile("types.dat")
 	fields = LoadFromFile("fields.dat")
 	for i, entity := range schema.Entities {

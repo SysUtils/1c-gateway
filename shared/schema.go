@@ -1,3 +1,4 @@
+// Package shared provides shared types
 package shared
 
 type PropertyRef struct {

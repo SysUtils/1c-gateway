@@ -26,6 +26,7 @@ func (c *Client) getEntities(name string, where Where) (string, error) {
 	return c.get(uri)
 }
 
+// Returns json representation of entity's NavigationProperty
 func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, error) {
 	uri := "/" + url.PathEscape(key.APIEntityType())
 	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key
@@ -35,6 +36,7 @@ func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, e
 	return c.get(uri)
 }
 
+// Execute entity's method and return its output in json
 func (c *Client) ExecuteEntityMethod(key IPrimaryKey, function IFunction) (string, error) {
 	uri := "/" + url.PathEscape(key.APIEntityType())
 	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key

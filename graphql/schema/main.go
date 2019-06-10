@@ -1,3 +1,4 @@
+// Package graphql/schema provides generator for GraphQL gateway's schema
 package schema
 
 import (
@@ -14,28 +15,14 @@ type Generator struct {
 	schema       shared.Schema
 }
 
+// NewGenerator returns initialized generator
 func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: map[string]map[string]string{}}
 }
 
-func (g *Generator) writeGqlfile(filename, data string) {
-	f, err := os.Create("odata/" + filename)
-	if err != nil {
-		log.Panic(err)
-	}
-	_, err = f.WriteString(data)
-	if err != nil {
-		log.Panic(err)
-	}
-
-	err = f.Close()
-	if err != nil {
-		log.Panic(err)
-	}
-}
-
-func (g *Generator) Start() {
-	g.ExtractAssociations(g.schema.Association)
+// Generate generates the GraphQL schema and writes it to ./odata folder
+func (g *Generator) Generate() {
+	g.extractAssociations(g.schema.Association)
 	data := fmt.Sprintf(`schema {
   query: Query
   mutation: Mutation
@@ -65,12 +52,28 @@ scalar Guid
 %s
 %s
 %s
-%s`, g.GenTypes(g.schema.Entities),
-		g.GenTypes(g.schema.Complexes),
-		g.GenPrimaryKeys(g.schema.Entities),
-		g.GenMutations(g.schema.Entities),
-		g.GenQueries(g.schema.Entities),
-		g.GenFilters(g.schema.Entities),
-		g.GenFilters(g.schema.Complexes))
+%s`, g.genTypes(g.schema.Entities),
+		g.genTypes(g.schema.Complexes),
+		g.genPrimaryKeys(g.schema.Entities),
+		g.genMutations(g.schema.Entities),
+		g.genQueries(g.schema.Entities),
+		g.genFilters(g.schema.Entities),
+		g.genFilters(g.schema.Complexes))
 	g.writeGqlfile("Schema.graphql", data)
+}
+
+func (g *Generator) writeGqlfile(filename, data string) {
+	f, err := os.Create("odata/" + filename)
+	if err != nil {
+		log.Panic(err)
+	}
+	_, err = f.WriteString(data)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	err = f.Close()
+	if err != nil {
+		log.Panic(err)
+	}
 }

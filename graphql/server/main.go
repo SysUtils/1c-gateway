@@ -1,3 +1,4 @@
+// Package graphql/server provides GraphQL server for gateway
 package server
 
 import (
@@ -13,6 +14,7 @@ import (
 	"net/http"
 )
 
+// Starts the server using the specified address, scheme and resolver
 func Start(addr string, schemaBlob []byte, resolver interface{}) error {
 	closer := initJaeger("1c-graphql-gateway")
 	defer closer.Close()

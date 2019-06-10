@@ -7,12 +7,15 @@ import (
 	"strings"
 )
 
+// Type for Edm.Int16
 type Int16 int16
 
+// Maps Int to the graphql scalar type in the schema.
 func (Int16) ImplementsGraphQLType(name string) bool {
 	return name == "Int16"
 }
 
+// A custom unmarshaler for Int16 type
 func (t *Int16) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case int:
@@ -33,10 +36,12 @@ func (t *Int16) UnmarshalGraphQL(input interface{}) error {
 	return nil
 }
 
+// A custom json/graphql marshaller for Int16 type
 func (t Int16) MarshalJSON() ([]byte, error) {
 	return json.Marshal(int(t))
 }
 
+// A custom json unmarshaller for Int16 type
 func (t *Int16) UnmarshalJSON(b []byte) error {
 	s := string(b)
 	val, err := strconv.Atoi(strings.Trim(s, `"`))
@@ -44,6 +49,7 @@ func (t *Int16) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// A custom marshaller to uri query format for Int16 type
 func (t Int16) AsParameter() string {
 	return strconv.Itoa(int(t))
 }
