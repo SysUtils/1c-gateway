@@ -56,5 +56,5 @@ func (t *DateTime) UnmarshalJSON(b []byte) error {
 // A custom marshaller to uri query format for DateTime type
 func (t DateTime) AsParameter() string {
 	val := time.Time(t).Format(timeformat)
-	return fmt.Sprintf("'%s'", val)
+	return fmt.Sprintf("datetime'%s'", val)
 }
