@@ -42,11 +42,73 @@ func (g *Generator) Start() {
 	data = fmt.Sprintf(
 		`package odata
 
-import "context"
+import (
+	"context"
+	"time"
+)
 
 type GqlResolver struct {
 	Client *Client
+	events     chan *Event
+	subscriber chan *Subscriber
 }
+
+func NewGqlResolver(client *Client) *GqlResolver {
+	r := &GqlResolver{
+		Client:         client,
+		events:     make(chan *Event),
+		subscriber: make(chan *Subscriber),
+	}
+
+	go r.broadcast()
+
+	return r
+}
+
+type Subscriber struct {
+	stop   <-chan struct{}
+	events chan<- *Event
+}
+
+type Event struct {
+	id        string
+	eventType string
+	payload   interface{}
+}
+
+func (r *GqlResolver) broadcast() {
+	subscribers := map[string]*Subscriber{}
+	unsubscribe := make(chan string)
+
+	// NOTE: subscribing and sending events are at odds.
+	for {
+		select {
+		case id := <-unsubscribe:
+			delete(subscribers, id)
+		case s := <-r.subscriber:
+			subscribers[randomID()] = s
+		case e := <-r.events:
+			for id, s := range subscribers {
+				go func(id string, s *Subscriber) {
+					select {
+					case <-s.stop:
+						unsubscribe <- id
+						return
+					default:
+					}
+
+					select {
+					case <-s.stop:
+						unsubscribe <- id
+					case s.events <- e:
+					case <-time.After(time.Second):
+					}
+				}(id, s)
+			}
+		}
+	}
+}
+
 
 %s
 %s`, g.GenResolvers(g.schema.Entities), g.GenMutations(g.schema.Entities))

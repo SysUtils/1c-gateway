@@ -11,15 +11,18 @@ require (
 	github.com/graph-gophers/graphql-transport-ws v0.0.0-20181129022607-40b8cf7c0060
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
+	github.com/kr/pty v1.1.4 // indirect
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/pkg/errors v0.8.1 // indirect
-	github.com/stretchr/testify v1.3.0 // indirect
+	github.com/stretchr/objx v0.2.0 // indirect
 	github.com/uber-go/atomic v1.4.0 // indirect
 	github.com/uber/jaeger-client-go v2.16.0+incompatible
 	github.com/uber/jaeger-lib v2.0.0+incompatible // indirect
 	go.uber.org/atomic v1.4.0 // indirect
 	golang.org/x/arch v0.0.0-20190312162104-788fe5ffcd8c // indirect
 	golang.org/x/crypto v0.0.0-20190605123033-f99c8df09eb5 // indirect
+	golang.org/x/net v0.0.0-20190607181551-461777fb6f67 // indirect
 	golang.org/x/sys v0.0.0-20190608050228-5b15430b70e3 // indirect
+	golang.org/x/text v0.3.2 // indirect
 	golang.org/x/tools v0.0.0-20190608022120-eacb66d2a7c3 // indirect
 )
