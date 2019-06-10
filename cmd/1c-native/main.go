@@ -1,3 +1,4 @@
+// Package for generate 1c odata client
 package main
 
 //go:generate go-bindata -pkg $GOPACKAGE ../../static/
@@ -101,10 +102,10 @@ func main() {
 		log.Panic(err)
 	}
 
-	schema = schema_cleaner.ClearSchema(schema, typeMap)
+	schema = schema_cleaner.Clean(schema, typeMap)
 
 	clientGen := native.NewGenerator(*schema)
 	clientGen.NameMap = nameMap
 	clientGen.TypeMap = typeMap
-	clientGen.Start()
+	clientGen.Generate()
 }

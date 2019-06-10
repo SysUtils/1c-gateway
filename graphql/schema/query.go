@@ -5,18 +5,18 @@ import (
 	"github.com/SysUtils/1c-gateway/shared"
 )
 
-func (g *Generator) GenQueries(source []shared.OneCType) string {
+func (g *Generator) genQueries(source []shared.OneCType) string {
 	queries := "type Query {\n"
 	for _, entity := range source {
-		queries += g.GenQuery(entity)
+		queries += g.genQuery(entity)
 		queries += "\n"
 	}
 	queries += fmt.Sprintf(`}`)
 	return queries
 }
 
-func (g *Generator) GenQuery(source shared.OneCType) string {
-	t := g.TranslateType(source.Name)
+func (g *Generator) genQuery(source shared.OneCType) string {
+	t := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`	%s(Key: Primary%s!): %s
 	%ss(BaseWhere: BaseWhere, Filter: %sFilter): [%s!]`, t, t, t, t, t, t)

@@ -1,3 +1,4 @@
+// Package graphql provides generator for GraphQL gateway's
 package graphql
 
 import (
@@ -20,10 +21,10 @@ func (g *Generator) Start() {
 	schemaGen := schema.NewGenerator(g.schema)
 	schemaGen.TypeMap = g.TypeMap
 	schemaGen.NameMap = g.NameMap
-	schemaGen.Start()
+	schemaGen.Generate()
 
 	resolverGen := resolver.NewGenerator(g.schema)
 	resolverGen.TypeMap = g.TypeMap
 	resolverGen.NameMap = g.NameMap
-	resolverGen.Start()
+	resolverGen.Generate()
 }

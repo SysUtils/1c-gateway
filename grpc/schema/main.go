@@ -1,3 +1,4 @@
+// Package grpc/schema provides generator for GRPC gateway's schema
 package schema
 
 import (
@@ -12,11 +13,13 @@ type Generator struct {
 	schema       shared.Schema
 }
 
+// NewGenerator returns initialized generator
 func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: map[string]map[string]string{}}
 }
 
-func (g *Generator) Start() {
+// Generate generates the grpc schema and writes it to ./odata folder
+func (g *Generator) Generate() {
 	f, _ := os.Create("odata/grpc.proto")
 	f.WriteString(`syntax = "proto3";
 
@@ -42,11 +45,11 @@ message BaseWhere {
 	string Orderby = 3;
 }
 `)
-	f.WriteString(g.GenMessages(g.schema.Entities))
+	f.WriteString(g.genMessages(g.schema.Entities))
 	f.WriteString("\n")
-	f.WriteString(g.GenMessages(g.schema.Complexes))
+	f.WriteString(g.genMessages(g.schema.Complexes))
 	f.WriteString("\n")
-	f.WriteString(g.GenService(g.schema.Entities))
+	f.WriteString(g.genService(g.schema.Entities))
 	f.Close()
 
 }

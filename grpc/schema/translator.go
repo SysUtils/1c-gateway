@@ -30,7 +30,7 @@ var ScalarTypesMap = map[string]string{
 	"Guid":     "string",
 }
 
-func (g *Generator) TranslateType(src string) string {
+func (g *Generator) translateType(src string) string {
 	if strings.HasPrefix(src, "Edm.") {
 		src = src[4:]
 	}
@@ -39,7 +39,7 @@ func (g *Generator) TranslateType(src string) string {
 		src = src[14:]
 	}
 	if strings.HasPrefix(src, "Collection(") && strings.HasSuffix(src, ")") {
-		return "repeated " + g.TranslateType(src[11:len(src)-1])
+		return "repeated " + g.translateType(src[11:len(src)-1])
 	}
 	if val, ok := g.TypeMap[src]; ok {
 		return val + "Grpc"
@@ -50,7 +50,7 @@ func (g *Generator) TranslateType(src string) string {
 	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1)) + "Grpc"
 }
 
-func (g *Generator) TranslateNativeType(src string) string {
+func (g *Generator) translateNativeType(src string) string {
 	if strings.HasPrefix(src, "Edm.") {
 		src = src[4:]
 	}
@@ -59,7 +59,7 @@ func (g *Generator) TranslateNativeType(src string) string {
 		src = src[14:]
 	}
 	if strings.HasPrefix(src, "Collection(") && strings.HasSuffix(src, ")") {
-		return "repeated " + g.TranslateType(src[11:len(src)-1])
+		return "repeated " + g.translateType(src[11:len(src)-1])
 	}
 	if val, ok := g.TypeMap[src]; ok {
 		return val
@@ -70,7 +70,7 @@ func (g *Generator) TranslateNativeType(src string) string {
 	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
 }
 
-func (g *Generator) TranslateName(src string) string {
+func (g *Generator) translateName(src string) string {
 	if val, ok := g.NameMap[src]; ok {
 		return val
 	}

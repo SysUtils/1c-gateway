@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func TranslateType(src string) string {
+func translateType(src string) string {
 	if strings.HasPrefix(src, "Edm.") {
 		src = src[4:]
 	}
@@ -13,7 +13,7 @@ func TranslateType(src string) string {
 		src = src[14:]
 	}
 	if strings.HasPrefix(src, "Collection(") && strings.HasSuffix(src, ")") {
-		src = TranslateType(src[11 : len(src)-1])
+		src = translateType(src[11 : len(src)-1])
 	}
 	return src
 }

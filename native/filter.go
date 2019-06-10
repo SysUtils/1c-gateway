@@ -20,34 +20,34 @@ var ScalarTypes = map[string]bool{
 	"Guid":     true,
 }
 
-func (g *Generator) GenFilters(source []shared.OneCType) string {
+func (g *Generator) genFilters(source []shared.OneCType) string {
 	result := ""
 	for _, entity := range source {
-		result += g.GenFilter(entity)
+		result += g.genFilter(entity)
 		result += "\n"
 	}
 	return result[:len(result)-1]
 }
 
-func (g *Generator) GenFilter(source shared.OneCType) string {
+func (g *Generator) genFilter(source shared.OneCType) string {
 	result := ""
-	result += g.GenFilterStruct(source)
+	result += g.genFilterStruct(source)
 	result += "\n"
-	result += g.GenFilterToStringFunc(source)
+	result += g.genFilterToStringFunc(source)
 	result += "\n"
-	result += g.GenFilterScalarToStringFunc(source)
+	result += g.genFilterScalarToStringFunc(source)
 	return result
 }
 
-func (g *Generator) GenFilterStruct(source shared.OneCType) string {
+func (g *Generator) genFilterStruct(source shared.OneCType) string {
 	result := ""
-	t := g.TranslateType(source.Name)
+	t := g.translateType(source.Name)
 	result += fmt.Sprintf("type %sFilter struct {\n", t)
 	result += fmt.Sprintf("	AND *[]%sFilter\n", t)
 	result += fmt.Sprintf("	OR *[]%sFilter\n", t)
 	for _, prop := range source.Properties {
-		propType := g.TranslateType(prop.Type)
-		propName := g.TranslateName(prop.Name)
+		propType := g.translateType(prop.Type)
+		propName := g.translateName(prop.Name)
 		fmt.Println(propName)
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf("	%sEq *%s\n", propName, propType)
@@ -62,8 +62,8 @@ func (g *Generator) GenFilterStruct(source shared.OneCType) string {
 	return result
 }
 
-func (g *Generator) GenFilterToStringFunc(source shared.OneCType) string {
-	t := g.TranslateType(source.Name)
+func (g *Generator) genFilterToStringFunc(source shared.OneCType) string {
+	t := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`func (t %sFilter) ToString() string {
 	if t.AND != nil && len(*t.AND) > 0 {
@@ -91,15 +91,15 @@ func (g *Generator) GenFilterToStringFunc(source shared.OneCType) string {
 	return result
 }
 
-func (g *Generator) GenFilterScalarToStringFunc(source shared.OneCType) string {
-	t := g.TranslateType(source.Name)
+func (g *Generator) genFilterScalarToStringFunc(source shared.OneCType) string {
+	t := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`func (f *%sFilter) ScalarToString() string {
 	result := "true"
 `, t)
 	for _, prop := range source.Properties {
-		propType := g.TranslateType(prop.Type)
-		propName := g.TranslateName(prop.Name)
+		propType := g.translateType(prop.Type)
+		propName := g.translateName(prop.Name)
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf("	if f.%sNe != nil {\n", propName)
 			result += fmt.Sprintf(`		result += " and %s ne " + f.%sNe.AsParameter()`+"\n", prop.Name, propName)

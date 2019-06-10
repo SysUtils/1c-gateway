@@ -1,3 +1,4 @@
+// Package schema_loader provides downloader for metadata
 package schema_loader
 
 import (
@@ -13,10 +14,12 @@ type SchemaLoader struct {
 	pass string
 }
 
+// Returns initialized schema loader
 func NewSchemaLoader(url, user, pass string) *SchemaLoader {
 	return &SchemaLoader{url: url, user: user, pass: pass}
 }
 
+// Download metadata and extract schema object from it
 func (g *SchemaLoader) Load() (*shared.Schema, error) {
 	req, err := http.NewRequest("GET", g.url, nil)
 	if err != nil {

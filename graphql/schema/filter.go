@@ -6,24 +6,24 @@ import (
 	"strings"
 )
 
-func (g *Generator) GenFilters(source []shared.OneCType) string {
+func (g *Generator) genFilters(source []shared.OneCType) string {
 	result := ""
 	for _, entity := range source {
-		result += g.GenFilter(entity)
+		result += g.genFilter(entity)
 		result += "\n"
 	}
 	return result
 }
 
-func (g *Generator) GenFilter(source shared.OneCType) string {
-	name := g.TranslateType(source.Name) + "Filter"
+func (g *Generator) genFilter(source shared.OneCType) string {
+	name := g.translateType(source.Name) + "Filter"
 	result := fmt.Sprintf(`input %s {
 	AND: [%s!]
 	OR: [%s!]
 `, name, name, name)
 	for _, prop := range source.Properties {
-		propType := g.TranslateType(prop.Type)
-		propName := g.TranslateName(prop.Name)
+		propType := g.translateType(prop.Type)
+		propName := g.translateName(prop.Name)
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf(
 				`	%sEq: %s

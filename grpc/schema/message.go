@@ -6,59 +6,59 @@ import (
 	"strings"
 )
 
-func (g *Generator) GenMessages(source []shared.OneCType) string {
+func (g *Generator) genMessages(source []shared.OneCType) string {
 	result := ""
 	for _, entity := range source {
-		result += g.GenMessage(entity)
+		result += g.genMessage(entity)
 		result += "\n"
 	}
 	return result
 }
 
-func (g *Generator) GenMessage(source shared.OneCType) string {
-	result := g.GenTypeMessage(source)
+func (g *Generator) genMessage(source shared.OneCType) string {
+	result := g.genTypeMessage(source)
 	result += "\n"
-	result += g.GenQuerysResponseMessage(source)
+	result += g.genQuerysResponseMessage(source)
 	result += "\n"
-	result += g.GenQuerysWhereMessage(source)
+	result += g.пenQuerysWhereMessage(source)
 	result += "\n"
-	result += g.GenFilterMessage(source)
+	result += g.genFilterMessage(source)
 	result += "\n"
-	result += g.GenRemoveResponseMessage(source)
+	result += g.genRemoveResponseMessage(source)
 	result += "\n"
-	result += g.GenPrimaryKeyMessage(source)
+	result += g.genPrimaryKeyMessage(source)
 	result += "\n"
-	result += g.GenUpdateRequestMessage(source)
+	result += g.genUpdateRequestMessage(source)
 	return result
 }
 
-func (g *Generator) GenTypeMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message %s {\n", g.TranslateType(source.Name))
+func (g *Generator) genTypeMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message %s {\n", g.translateType(source.Name))
 	for i, prop := range source.Properties {
-		result += fmt.Sprintf("	%s %s = %d;\n", g.TranslateType(prop.Type), g.TranslateName(prop.Name), i+1)
+		result += fmt.Sprintf("	%s %s = %d;\n", g.translateType(prop.Type), g.translateName(prop.Name), i+1)
 	}
 	return result + "}"
 }
 
-func (g *Generator) GenQuerysResponseMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message %ssResponse {\n", g.TranslateType(source.Name))
-	result += fmt.Sprintf("	repeated %s Result = 1;", g.TranslateType(source.Name))
+func (g *Generator) genQuerysResponseMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message %ssResponse {\n", g.translateType(source.Name))
+	result += fmt.Sprintf("	repeated %s Result = 1;", g.translateType(source.Name))
 	return result + "}"
 }
 
-func (g *Generator) GenQuerysWhereMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message %sWhere {\n", g.TranslateType(source.Name))
+func (g *Generator) genQuerysWhereMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message %sWhere {\n", g.translateType(source.Name))
 	result += fmt.Sprintf("	BaseWhere Base = 1;")
-	result += fmt.Sprintf("	%sFilter Filter = 2;", g.TranslateType(source.Name))
+	result += fmt.Sprintf("	%sFilter Filter = 2;", g.translateType(source.Name))
 	return result + "}"
 }
 
-func (g *Generator) GenFilterMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message %sFilter {\n", g.TranslateType(source.Name))
+func (g *Generator) genFilterMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message %sFilter {\n", g.translateType(source.Name))
 	i := 1
 	for _, prop := range source.Properties {
-		propType := g.TranslateType(prop.Type)
-		propName := g.TranslateName(prop.Name)
+		propType := g.translateType(prop.Type)
+		propName := g.translateName(prop.Name)
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf(
 				`	%s %s_eq = %d;
@@ -75,8 +75,8 @@ func (g *Generator) GenFilterMessage(source shared.OneCType) string {
 	return result + "}"
 }
 
-func (g *Generator) GenPrimaryKeyMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message %sPrimary {\n", g.TranslateType(source.Name))
+func (g *Generator) genPrimaryKeyMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message %sPrimary {\n", g.translateType(source.Name))
 	for i, key := range source.Keys {
 		for _, prop := range source.Properties {
 			if prop.Name == key.Name {
@@ -84,21 +84,21 @@ func (g *Generator) GenPrimaryKeyMessage(source shared.OneCType) string {
 				break
 			}
 		}
-		result += fmt.Sprintf("	%s %s = %d;\n", g.TranslateType(key.Type), g.TranslateName(key.Name), i+1)
+		result += fmt.Sprintf("	%s %s = %d;\n", g.translateType(key.Type), g.translateName(key.Name), i+1)
 	}
 
 	return result + "}"
 }
 
-func (g *Generator) GenRemoveResponseMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message Remove%sResponse {\n", g.TranslateType(source.Name))
+func (g *Generator) genRemoveResponseMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message Remove%sResponse {\n", g.translateType(source.Name))
 	result += "	bool Status = 1;\n"
 	return result + "}"
 }
 
-func (g *Generator) GenUpdateRequestMessage(source shared.OneCType) string {
-	result := fmt.Sprintf("message %sUpdateRequest {\n", g.TranslateType(source.Name))
-	result += fmt.Sprintf("	%sPrimary Key = 1;\n", g.TranslateType(source.Name))
-	result += fmt.Sprintf("	%s Entity = 2;\n", g.TranslateType(source.Name))
+func (g *Generator) genUpdateRequestMessage(source shared.OneCType) string {
+	result := fmt.Sprintf("message %sUpdateRequest {\n", g.translateType(source.Name))
+	result += fmt.Sprintf("	%sPrimary Key = 1;\n", g.translateType(source.Name))
+	result += fmt.Sprintf("	%s Entity = 2;\n", g.translateType(source.Name))
 	return result + "}"
 }

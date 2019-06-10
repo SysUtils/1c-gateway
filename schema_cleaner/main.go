@@ -1,8 +1,9 @@
+// Package schema_cleaner provides functions to clean the schema
 package schema_cleaner
 
 import "github.com/SysUtils/1c-gateway/shared"
 
-func ExtractAssociations(source []shared.Association) map[string]map[string]string {
+func extractAssociations(source []shared.Association) map[string]map[string]string {
 	result := make(map[string]map[string]string)
 	for _, assoc := range source {
 		name := "StandardODATA." + assoc.Name
@@ -16,9 +17,10 @@ func ExtractAssociations(source []shared.Association) map[string]map[string]stri
 	return result
 }
 
-func ClearSchema(source *shared.Schema, typeMap map[string]string) *shared.Schema {
+// Removes all types that are not in the TypeMap and returns the clean schema
+func Clean(source *shared.Schema, typeMap map[string]string) *shared.Schema {
 	result := *source
-	associations := ExtractAssociations(source.Association)
+	associations := extractAssociations(source.Association)
 	types := make(map[string]bool)
 	for t := range typeMap {
 		types[t] = true
@@ -28,27 +30,27 @@ func ClearSchema(source *shared.Schema, typeMap map[string]string) *shared.Schem
 	for prevCnt < len(types) {
 		prevCnt = len(types)
 		for _, e := range source.Entities {
-			if _, ok := types[TranslateType(e.Name)]; ok {
+			if _, ok := types[translateType(e.Name)]; ok {
 				for _, p := range e.Properties {
-					types[TranslateType(p.Type)] = true
+					types[translateType(p.Type)] = true
 				}
 
 				for _, n := range e.Navigations {
-					types[TranslateType(associations[n.Type][n.FromRole])] = true
-					types[TranslateType(associations[n.Type][n.ToRole])] = true
+					types[translateType(associations[n.Type][n.FromRole])] = true
+					types[translateType(associations[n.Type][n.ToRole])] = true
 				}
 			}
 		}
 
 		for _, e := range source.Complexes {
-			if _, ok := types[TranslateType(e.Name)]; ok {
+			if _, ok := types[translateType(e.Name)]; ok {
 				for _, p := range e.Properties {
-					types[TranslateType(p.Type)] = true
+					types[translateType(p.Type)] = true
 				}
 
 				for _, n := range e.Navigations {
-					types[TranslateType(associations[n.Type][n.FromRole])] = true
-					types[TranslateType(associations[n.Type][n.ToRole])] = true
+					types[translateType(associations[n.Type][n.FromRole])] = true
+					types[translateType(associations[n.Type][n.ToRole])] = true
 				}
 			}
 		}

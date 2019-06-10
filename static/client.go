@@ -14,6 +14,7 @@ type Client struct {
 	client   *http.Client
 }
 
+// Return initialized odata client
 func NewClient(username, password, endpoint string) *Client {
 	return &Client{username, password, endpoint, &http.Client{}}
 }

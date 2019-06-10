@@ -5,26 +5,26 @@ import (
 	"github.com/SysUtils/1c-gateway/shared"
 )
 
-func (g *Generator) GenPrimaryKeys(source []shared.OneCType) string {
+func (g *Generator) genPrimaryKeys(source []shared.OneCType) string {
 	result := ""
 	for _, entity := range source {
-		result += g.GenPrimaryKey(entity)
+		result += g.genPrimaryKey(entity)
 		result += "\n"
 	}
 	return result[:len(result)-1]
 }
 
-func (g *Generator) GenPrimaryKey(source shared.OneCType) string {
-	result := g.GenPrimaryKeyStruct(source)
+func (g *Generator) genPrimaryKey(source shared.OneCType) string {
+	result := g.genPrimaryKeyStruct(source)
 	result += "\n"
-	result += g.GenPrimaryKeyTypeFunc(source)
+	result += g.genPrimaryKeyTypeFunc(source)
 	result += "\n"
-	result += g.GenPrimaryKeySerializeFunc(source)
+	result += g.genPrimaryKeySerializeFunc(source)
 	return result
 }
 
-func (g *Generator) GenPrimaryKeyStruct(source shared.OneCType) string {
-	result := fmt.Sprintf("type Primary%s struct {\n", g.TranslateType(source.Name))
+func (g *Generator) genPrimaryKeyStruct(source shared.OneCType) string {
+	result := fmt.Sprintf("type Primary%s struct {\n", g.translateType(source.Name))
 	for _, key := range source.Keys {
 		for _, prop := range source.Properties {
 			if prop.Name == key.Name {
@@ -33,9 +33,9 @@ func (g *Generator) GenPrimaryKeyStruct(source shared.OneCType) string {
 			}
 		}
 		result += "	"
-		result += g.TranslateName(key.Name)
+		result += g.translateName(key.Name)
 		result += " "
-		result += g.TranslateType(key.Type)
+		result += g.translateType(key.Type)
 		result += " `"
 		result += fmt.Sprintf(`json:"%s,omitempty"`, key.Name)
 		result += "`"
@@ -45,14 +45,14 @@ func (g *Generator) GenPrimaryKeyStruct(source shared.OneCType) string {
 	return result + "}"
 }
 
-func (g *Generator) GenPrimaryKeyTypeFunc(source shared.OneCType) string {
-	result := fmt.Sprintf("func (Primary%s) APIEntityType() string {\n", g.TranslateType(source.Name))
+func (g *Generator) genPrimaryKeyTypeFunc(source shared.OneCType) string {
+	result := fmt.Sprintf("func (Primary%s) APIEntityType() string {\n", g.translateType(source.Name))
 	result += fmt.Sprintf(`	return "%s"`+"\n", source.Name)
 	return result + "}"
 }
 
-func (g *Generator) GenPrimaryKeySerializeFunc(source shared.OneCType) string {
-	result := fmt.Sprintf("func (p Primary%s) Serialize() string {\n", g.TranslateType(source.Name))
+func (g *Generator) genPrimaryKeySerializeFunc(source shared.OneCType) string {
+	result := fmt.Sprintf("func (p Primary%s) Serialize() string {\n", g.translateType(source.Name))
 	result += fmt.Sprintf(`	return `)
 	for i, key := range source.Keys {
 		if i > 0 {
@@ -60,7 +60,7 @@ func (g *Generator) GenPrimaryKeySerializeFunc(source shared.OneCType) string {
 		} else {
 			result += fmt.Sprintf(`"%s=" + `, key.Name)
 		}
-		result += "p." + g.TranslateName(key.Name) + ".AsParameter()"
+		result += "p." + g.translateName(key.Name) + ".AsParameter()"
 	}
 	return result + "\n}"
 }

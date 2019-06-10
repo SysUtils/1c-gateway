@@ -1,3 +1,4 @@
+// Package grpc/resolver provides generator for GRPC resolver
 package resolver
 
 import (
@@ -12,11 +13,13 @@ type Generator struct {
 	schema       shared.Schema
 }
 
+// NewGenerator returns initialized generator
 func NewGenerator(schema shared.Schema) *Generator {
 	return &Generator{schema: schema, TypeMap: make(map[string]string), NameMap: make(map[string]string), Associations: map[string]map[string]string{}}
 }
 
-func (g *Generator) Start() {
+// Generate generates the resolver and writes it to ./odata folder
+func (g *Generator) Generate() {
 	f, _ := os.Create("odata/GrpcConverter.go")
 	f.WriteString(`package odata
 `)
@@ -27,8 +30,8 @@ func (g *Generator) Start() {
 }
 `)
 
-	f.WriteString(g.GenTypeConverters(g.schema.Entities))
-	f.WriteString(g.GenComplexConverters(g.schema.Complexes))
+	f.WriteString(g.genTypeConverters(g.schema.Entities))
+	f.WriteString(g.genComplexConverters(g.schema.Complexes))
 	f.Close()
 
 	f, _ = os.Create("odata/GrpcResolver.go")
@@ -41,6 +44,6 @@ type GrpcResolver struct {
 }
 
 `)
-	f.WriteString(g.GenQueryResolvers(g.schema.Entities))
+	f.WriteString(g.genQueryResolvers(g.schema.Entities))
 	f.Close()
 }
