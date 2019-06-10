@@ -28,11 +28,15 @@ func (g *Generator) genFilter(source shared.OneCType) string {
 			result += fmt.Sprintf(
 				`	%sEq: %s
 	%sNe: %s
-`, propName, propType, propName, propType)
+	%sGt: %s
+	%sLt: %s
+	%sGe: %s
+	%sLe: %s
+`, propName, propType, propName, propType, propName, propType, propName, propType, propName, propType, propName, propType)
 		} else {
-			if !strings.HasPrefix(propType, "[") {
-				result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
-			}
+			//if !strings.HasPrefix(propType, "[") {
+			//	result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
+			//}
 		}
 	}
 	result += "}"

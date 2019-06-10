@@ -52,6 +52,10 @@ func (g *Generator) genFilterStruct(source shared.OneCType) string {
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf("	%sEq *%s\n", propName, propType)
 			result += fmt.Sprintf("	%sNe *%s\n", propName, propType)
+			result += fmt.Sprintf("	%sGt *%s\n", propName, propType)
+			result += fmt.Sprintf("	%sLt *%s\n", propName, propType)
+			result += fmt.Sprintf("	%sGe *%s\n", propName, propType)
+			result += fmt.Sprintf("	%sLe *%s\n", propName, propType)
 		} else {
 			if !strings.HasPrefix(propType, "[") {
 				result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
@@ -106,6 +110,18 @@ func (g *Generator) genFilterScalarToStringFunc(source shared.OneCType) string {
 			result += fmt.Sprintf("	}\n")
 			result += fmt.Sprintf(`	if f.%sEq != nil {`+"\n", propName)
 			result += fmt.Sprintf(`		result += " and %s eq " + f.%sEq.AsParameter()`+"\n", prop.Name, propName)
+			result += fmt.Sprintf("	}\n")
+			result += fmt.Sprintf(`	if f.%sGt != nil {`+"\n", propName)
+			result += fmt.Sprintf(`		result += " and %s gt " + f.%sGt.AsParameter()`+"\n", prop.Name, propName)
+			result += fmt.Sprintf("	}\n")
+			result += fmt.Sprintf(`	if f.%sLt != nil {`+"\n", propName)
+			result += fmt.Sprintf(`		result += " and %s lt " + f.%sLt.AsParameter()`+"\n", prop.Name, propName)
+			result += fmt.Sprintf("	}\n")
+			result += fmt.Sprintf(`	if f.%sGe != nil {`+"\n", propName)
+			result += fmt.Sprintf(`		result += " and %s ge " + f.%sGe.AsParameter()`+"\n", prop.Name, propName)
+			result += fmt.Sprintf("	}\n")
+			result += fmt.Sprintf(`	if f.%sLe != nil {`+"\n", propName)
+			result += fmt.Sprintf(`		result += " and %s le " + f.%sLe.AsParameter()`+"\n", prop.Name, propName)
 			result += fmt.Sprintf("	}\n")
 		} else {
 			if !strings.HasPrefix(propType, "[") {
