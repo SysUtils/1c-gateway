@@ -32,73 +32,52 @@ func (g *Generator) Generate() {
 import (
 	"context"
 	"time"
+	"os"
+	"github.com/google/uuid"
+	"log"
+	"strconv"
+	"sync/atomic"
 )
 
 type GqlResolver struct {
 	Client *Client
-	events     chan *Event
-	subscriber chan *Subscriber
+	events     chan interface{}
+	subscribers chan *Subscriber
 }
 
 func NewGqlResolver(client *Client) *GqlResolver {
 	r := &GqlResolver{
-		Client:         client,
-		events:     make(chan *Event),
-		subscriber: make(chan *Subscriber),
+		Client:      client,
+		events:      make(chan interface{}),
+		subscribers: make(chan *Subscriber),
 	}
 
-	go r.broadcast()
+	offset, err := strconv.ParseInt(os.Getenv("C_OFFSET"), 10, 32)
+	if err != nil {
+		log.Println(err)
+		log.Println(os.Getenv("C_OFFSET"))
+	}
+
+	go r.broadcast(time.Duration(offset))
 
 	return r
 }
 
 type Subscriber struct {
 	stop   <-chan struct{}
-	events chan<- *Event
+	events interface{}
+	uType string
 }
 
-type Event struct {
-	id        string
-	eventType string
-	payload   interface{}
+type unsubscribeEvent struct {
+	id    string
+	uType string
 }
-
-func (r *GqlResolver) broadcast() {
-	subscribers := map[string]*Subscriber{}
-	unsubscribe := make(chan string)
-
-	// NOTE: subscribing and sending events are at odds.
-	for {
-		select {
-		case id := <-unsubscribe:
-			delete(subscribers, id)
-		case s := <-r.subscriber:
-			subscribers[randomID()] = s
-		case e := <-r.events:
-			for id, s := range subscribers {
-				go func(id string, s *Subscriber) {
-					select {
-					case <-s.stop:
-						unsubscribe <- id
-						return
-					default:
-					}
-
-					select {
-					case <-s.stop:
-						unsubscribe <- id
-					case s.events <- e:
-					case <-time.After(time.Second):
-					}
-				}(id, s)
-			}
-		}
-	}
-}
-
 
 %s
-%s`, g.genResolvers(g.schema.Entities), g.genMutations(g.schema.Entities))
+%s
+%s
+%s`, g.genResolvers(g.schema.Entities), g.genMutations(g.schema.Entities), g.genWatchers(g.schema.Entities), g.getBroadcasters(g.schema.Entities))
 	g.writeGofile("Resolver.go", data)
 }
 

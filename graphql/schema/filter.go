@@ -3,7 +3,6 @@ package schema
 import (
 	"fmt"
 	"github.com/SysUtils/1c-gateway/shared"
-	"strings"
 )
 
 func (g *Generator) genFilters(source []shared.OneCType) string {

@@ -26,6 +26,7 @@ func (g *Generator) Generate() {
 	data := fmt.Sprintf(`schema {
   query: Query
   mutation: Mutation
+  subscription: Subscription
 }
 
 input BaseWhere {
@@ -52,11 +53,13 @@ scalar Guid
 %s
 %s
 %s
+%s
 %s`, g.genTypes(g.schema.Entities),
 		g.genTypes(g.schema.Complexes),
 		g.genPrimaryKeys(g.schema.Entities),
 		g.genMutations(g.schema.Entities),
 		g.genQueries(g.schema.Entities),
+		g.genSubscriptions(g.schema.Entities),
 		g.genFilters(g.schema.Entities),
 		g.genFilters(g.schema.Complexes))
 	g.writeGqlfile("Schema.graphql", data)
