@@ -161,8 +161,6 @@ func (g *Generator) getBroadcasters(source []shared.OneCType) string {
 						go func(id string, s *Subscriber) {
 							eventChan <- ev
 						}(id, s)
-					default:
-						log.Panicf("Wrong type %%s in circle of createProduction subscribers", eventChan)
 					}
 				}
 `, t, t)
