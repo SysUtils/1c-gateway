@@ -41,19 +41,6 @@ func (g *Generator) genSubscriptions(source []shared.OneCType) string {
 	return queries
 }
 
-func (g *Generator) genSubscriptionTypes(source shared.OneCType) string {
-	t := g.translateType(source.Name)
-	return fmt.Sprintf(
-		`func (r *GqlResolver) OnCreate%s(ctx context.Context) <-chan *%s {
-	c := make(chan *%s)
-	// NOTE: this could take a while
-	r.create <- &create%sSubscriber{events: c, stop: ctx.Done()}
-
-	return c
-}
-`, t, t, t, t)
-}
-
 func (g *Generator) genSubscriptionCallback(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 	return fmt.Sprintf(
