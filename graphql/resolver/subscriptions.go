@@ -47,11 +47,11 @@ func (g *Generator) genSubscriptionCallback(source shared.OneCType) string {
 		`func (r *GqlResolver) OnCreate%s(ctx context.Context) <-chan *%s {
 	c := make(chan *%s)
 	// NOTE: this could take a while
-	r.create <- &create%sSubscriber{uType: "Create%s", events: c, stop: ctx.Done()}
+	r.create <- &Subscriber{uType: "Create%s", events: c, stop: ctx.Done()}
 
 	return c
 }
-`, t, t, t, t, t)
+`, t, t, t, t)
 }
 
 func (g *Generator) genWatchers(source []shared.OneCType) string {
