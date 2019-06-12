@@ -18,6 +18,7 @@ import (
 // Starts the server using the specified address, scheme and resolver
 func Start(addr string, schemaBlob []byte, resolver interface{}) error {
 	closer := initJaeger("1c-graphql-gateway")
+	httpMetric := NewHttpMetric()
 	defer closer.Close()
 	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers()}
 
@@ -26,7 +27,7 @@ func Start(addr string, schemaBlob []byte, resolver interface{}) error {
 		return err
 	}
 
-	graphQLHandler := graphqlws.NewHandlerFunc(schema, &relay.Handler{Schema: schema})
+	graphQLHandler := MetricCollectMiddleware(httpMetric, graphqlws.NewHandlerFunc(schema, &relay.Handler{Schema: schema}))
 
 	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		_, err := w.Write(playground)
