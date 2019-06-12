@@ -549,6 +549,7 @@ var playground = []byte(`
       root.classList.add('playgroundIn');
 
       GraphQLPlayground.init(root, {
+				endpoint: "/graphql"
         // you can add more options here
       })
     })

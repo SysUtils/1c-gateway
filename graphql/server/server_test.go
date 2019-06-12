@@ -16,5 +16,5 @@ func TestServer(t *testing.T) {
 			t.Fatal(err)
 		}
 	}()
-	time.Sleep(time.Second)
+	time.Sleep(time.Minute)
 }
