@@ -7,6 +7,7 @@ import (
 	"github.com/graph-gophers/graphql-go/relay"
 	"github.com/graph-gophers/graphql-transport-ws/graphqlws"
 	"github.com/opentracing/opentracing-go"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/uber/jaeger-client-go"
 	"github.com/uber/jaeger-client-go/config"
 	"io"
@@ -17,8 +18,9 @@ import (
 // Starts the server using the specified address, scheme and resolver
 func Start(addr string, schemaBlob []byte, resolver interface{}) error {
 	closer := initJaeger("1c-graphql-gateway")
+	httpMetric := NewHttpMetric()
 	defer closer.Close()
-	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers()}
+	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers(), graphql.Tracer(NewTracer(httpMetric))}
 
 	schema, err := graphql.ParseSchema(string(schemaBlob), resolver, opts...)
 	if err != nil {
@@ -26,6 +28,15 @@ func Start(addr string, schemaBlob []byte, resolver interface{}) error {
 	}
 
 	graphQLHandler := graphqlws.NewHandlerFunc(schema, &relay.Handler{Schema: schema})
+
+	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		_, err := w.Write(playground)
+		if err != nil {
+			log.Panic(err)
+		}
+	}))
+
+	http.Handle("/metrics", promhttp.Handler())
 
 	http.Handle("/graphql", graphQLHandler)
 	return http.ListenAndServe(addr, nil)
