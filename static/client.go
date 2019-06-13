@@ -33,7 +33,7 @@ func (c *Client) get(url string) (string, error) {
 	if resp.StatusCode/100 == 2 {
 		return string(body), nil
 	}
-	return "", errors.New(string(body))
+	return "", errors.New(resp.Status + "\nBody:\n" + string(body))
 }
 
 func (c *Client) post(url string, data []byte) (string, error) {
@@ -50,7 +50,7 @@ func (c *Client) post(url string, data []byte) (string, error) {
 	if resp.StatusCode/100 == 2 {
 		return string(body), nil
 	}
-	return "", errors.New(string(body))
+	return "", errors.New(resp.Status + "\nBody:\n" + string(body))
 }
 
 func (c *Client) patch(url string, data []byte) (string, error) {
@@ -67,7 +67,7 @@ func (c *Client) patch(url string, data []byte) (string, error) {
 	if resp.StatusCode/100 == 2 {
 		return string(body), nil
 	}
-	return "", errors.New(string(body))
+	return "", errors.New(resp.Status + "\nBody:\n" + string(body))
 }
 
 func (c *Client) delete(url string) error {
@@ -85,5 +85,8 @@ func (c *Client) delete(url string) error {
 	if len(body) != 0 {
 		return errors.New(string(body))
 	}
-	return nil
+	if resp.StatusCode/100 == 2 {
+		return nil
+	}
+	return errors.New(resp.Status + "\nBody:\n" + string(body))
 }

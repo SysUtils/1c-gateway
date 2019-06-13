@@ -33,7 +33,14 @@ func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, e
 	uri += "/" + url.PathEscape(property)
 	uri += "?$format=json&"
 
-	return c.get(uri)
+	body, err := c.get(uri)
+	if err != nil {
+		if err.Error() == "404 Not found\nBody:" {
+			return "", nil
+		}
+	}
+
+	return body, err
 }
 
 // Execute entity's method and return its output in json
