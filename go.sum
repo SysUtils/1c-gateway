@@ -74,5 +74,3 @@ gopkg.in/alecthomas/kingpin.v2 v2.2.6/go.mod h1:FMv+mEhP44yOT+4EoQTLFTRgOQ1FBLks
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v2 v2.2.1/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
-pkg.re/check.v1 v0.0.0-20180628173108-788fd7840127 h1:EeocMI3EyLQz3I7hzvaLQDeHhKG/Zv2Sjr6+D7dmucw=
-pkg.re/check.v1 v0.0.0-20180628173108-788fd7840127/go.mod h1:Bv2p9ADKkn3MpAYt+c1TwsHRyGRJYvQku+t0WRX6uAc=

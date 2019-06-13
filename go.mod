@@ -16,5 +16,4 @@ require (
 	github.com/uber/jaeger-client-go v2.16.0+incompatible
 	github.com/uber/jaeger-lib v2.0.0+incompatible // indirect
 	go.uber.org/atomic v1.4.0 // indirect
-	pkg.re/check.v1 v0.0.0-20180628173108-788fd7840127 // indirect
 )
