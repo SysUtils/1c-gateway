@@ -20,14 +20,14 @@ func Start(addr string, schemaBlob []byte, resolver interface{}) error {
 	closer := initJaeger("1c-graphql-gateway")
 	httpMetric := NewHttpMetric()
 	defer closer.Close()
-	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers()}
+	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers(), graphql.Tracer(NewTracer(httpMetric))}
 
 	schema, err := graphql.ParseSchema(string(schemaBlob), resolver, opts...)
 	if err != nil {
 		return err
 	}
 
-	graphQLHandler := MetricCollectMiddleware(httpMetric, graphqlws.NewHandlerFunc(schema, &relay.Handler{Schema: schema}))
+	graphQLHandler := graphqlws.NewHandlerFunc(schema, &relay.Handler{Schema: schema})
 
 	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		_, err := w.Write(playground)
