@@ -35,7 +35,7 @@ func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, e
 
 	body, err := c.get(uri)
 	if err != nil {
-		if err.Error() == "404 Not found\nBody:" {
+		if err.Error() == "404 Not found\nBody:\n" {
 			return "", nil
 		}
 	}
