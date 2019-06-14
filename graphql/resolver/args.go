@@ -33,8 +33,9 @@ func (g *Generator) genEntityArgs(source shared.OneCType) string {
 func (g *Generator) genEntitiesArgs(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 	result := fmt.Sprintf("type %ssArgs struct {\n", t)
-	result += fmt.Sprintf("	BaseWhere *Where\n")
+	result += fmt.Sprintf("	Options *Where\n")
 	result += fmt.Sprintf("	Filter *%sFilter\n", t)
+	result += fmt.Sprintf("	OrderBy *string\n")
 	result += fmt.Sprintf("}")
 	return result
 }

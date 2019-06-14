@@ -3,6 +3,7 @@ package resolver
 import (
 	"fmt"
 	"github.com/SysUtils/1c-gateway/shared"
+	"strings"
 )
 
 func (g *Generator) genResolvers(source []shared.OneCType) string {
@@ -28,19 +29,32 @@ func (g *Generator) genEntityResolver(source shared.OneCType) string {
 func (g *Generator) genEntitiesResolver(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 
+	fieldmapBody := ""
+	for _, prop := range source.Properties {
+		key := strings.Replace(g.translateName(prop.Name), `"`, `\"`, -1)
+		val := strings.Replace(prop.Name, `"`, `\"`, -1)
+		fieldmapBody += fmt.Sprintf(`    "%s_asc": "%s asc",
+    "%s_desc": "%s desc",
+`, key, val, key, val)
+	}
+
 	result := fmt.Sprintf(
-		`func (r *GqlResolver) %ss(ctx context.Context, args %ssArgs) (*[]%s, error) {
-	if args.BaseWhere != nil {
-		if args.Filter != nil {
-			args.BaseWhere.Filter = *args.Filter
-		}
-		return r.Client.%ss(*args.BaseWhere)
+		`
+var %sFieldMap = map[string]string {
+%s}
+func (r *GqlResolver) %ss(ctx context.Context, args %ssArgs) (*[]%s, error) {
+	where := Where {}
+	if args.Options != nil {
+		where = *args.Options
 	}
 	if args.Filter != nil {
-		return r.Client.%ss(Where {Filter: *args.Filter})
+		where.Filter = *args.Filter
 	}
-	return r.Client.%ss(Where {})
-}`, t, t, t, t, t, t)
+	if args.OrderBy != nil {
+		where.Orderby = %sFieldMap[*args.OrderBy]
+	}
+	return r.Client.%ss(where)
+}`, t, fieldmapBody, t, t, t, t, t)
 
 	return result
 }
