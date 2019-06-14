@@ -19,6 +19,6 @@ func (g *Generator) genQuery(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`	%s(Key: Primary%s!): %s
-	%ss(BaseWhere: BaseWhere, Filter: %sFilter): [%s!]`, t, t, t, t, t, t)
+	%ss(Options: Options, Filter: %sFilter, OrderBy: %sField): [%s!]`, t, t, t, t, t, t, t)
 	return result
 }

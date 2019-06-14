@@ -24,7 +24,7 @@ func (w *Where) Serialize() string {
 	params := ""
 
 	if w.Filter != nil {
-		params += fmt.Sprintf("$filter=%s&", url.PathEscape((w.Filter).ToString()))
+		params += fmt.Sprintf("$filter=%s&", url.PathEscape(w.Filter.ToString()))
 	}
 
 	if w.Orderby != "" {

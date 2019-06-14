@@ -29,10 +29,9 @@ func (g *Generator) Generate() {
   subscription: Subscription
 }
 
-input BaseWhere {
+input Options {
 	Top: Int!
 	Skip: Int!
-	Orderby: String!
 }
 
 scalar String
@@ -54,6 +53,7 @@ scalar Guid
 %s
 %s
 %s
+%s
 %s`, g.genTypes(g.schema.Entities),
 		g.genTypes(g.schema.Complexes),
 		g.genPrimaryKeys(g.schema.Entities),
@@ -61,7 +61,8 @@ scalar Guid
 		g.genQueries(g.schema.Entities),
 		g.genSubscriptions(g.schema.Entities),
 		g.genFilters(g.schema.Entities),
-		g.genFilters(g.schema.Complexes))
+		g.genFilters(g.schema.Complexes),
+		g.genFields(g.schema.Entities))
 	g.writeGqlfile("Schema.graphql", data)
 }
 

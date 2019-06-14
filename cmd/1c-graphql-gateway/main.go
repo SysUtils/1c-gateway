@@ -35,10 +35,10 @@ func extractAsset(asset, path string) {
 }
 
 func main() {
-	var host = flag.String("host", "", "address and port of 1C web service")
-	var base = flag.String("base", "", "address and port of 1C web service")
-	var username = flag.String("username", "", "username for 1C web service")
-	var password = flag.String("password", "", "password for 1C web service")
+	var host = flag.String("host", "localhost:8091", "address and port of 1C web service")
+	var base = flag.String("base", "MyBase", "address and port of 1C web service")
+	var username = flag.String("username", "Administrator", "username for 1C web service")
+	var password = flag.String("password", "password", "password for 1C web service")
 	flag.Parse()
 
 	if host == nil || base == nil || username == nil || password == nil || *host == "" || *base == "" || *username == "" || *password == "" {
