@@ -16,11 +16,11 @@ import (
 )
 
 // Starts the server using the specified address, scheme and resolver
-func Start(addr string, schemaBlob []byte, resolver interface{}) error {
+func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int) error {
 	closer := initJaeger("1c-graphql-gateway")
 	httpMetric := NewHttpMetric()
 	defer closer.Close()
-	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers(), graphql.Tracer(NewTracer(httpMetric))}
+	opts := []graphql.SchemaOpt{graphql.UseFieldResolvers(), graphql.Tracer(NewTracer(httpMetric)), graphql.MaxParallelism(poolSize)}
 
 	schema, err := graphql.ParseSchema(string(schemaBlob), resolver, opts...)
 	if err != nil {
