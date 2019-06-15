@@ -53,12 +53,12 @@ func (g *Generator) genTypeStruct(source shared.OneCType) string {
 }
 
 func (g *Generator) genNew(source shared.OneCType) string {
-	result := fmt.Sprintf("func New%s(data string, prevError error, client *Client) (*%s, error) {\n", g.translateType(source.Name), g.translateType(source.Name))
+	result := fmt.Sprintf("func New%s(data []byte, prevError error, client *Client) (*%s, error) {\n", g.translateType(source.Name), g.translateType(source.Name))
 	result += fmt.Sprintf(`	if prevError != nil {
 		return nil, prevError
 	}
 	result := new(%s)
-	err := json.Unmarshal([]byte(data), result)
+	err := json.Unmarshal(data, result)
 	if err != nil {
 		return nil, err
 	}
@@ -116,7 +116,7 @@ func (g *Generator) genRead(source shared.OneCType) string {
 	if err != nil {
 		return nil, err
 	}
-	err = json.Unmarshal([]byte(raw), &result)
+	err = json.Unmarshal(raw, &result)
 	if err != nil {
 		return nil, err
 	}

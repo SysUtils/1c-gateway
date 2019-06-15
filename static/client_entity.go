@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func (c *Client) getEntity(keys IPrimaryKey, fields []string) (string, error) {
+func (c *Client) getEntity(keys IPrimaryKey, fields []string) ([]byte, error) {
 	uri := "/" + url.PathEscape(keys.APIEntityType())
 	uri += fmt.Sprintf("(%s)", keys.Serialize()) // Unique key
 	uri += "?$format=json"
@@ -18,7 +18,7 @@ func (c *Client) getEntity(keys IPrimaryKey, fields []string) (string, error) {
 	return c.get(uri)
 }
 
-func (c *Client) getEntities(name string, where Where) (string, error) {
+func (c *Client) getEntities(name string, where Where) ([]byte, error) {
 	uri := "/" + url.PathEscape(name)
 	uri += "?$format=json&"
 	uri += where.Serialize()
@@ -27,7 +27,7 @@ func (c *Client) getEntities(name string, where Where) (string, error) {
 }
 
 // Returns json representation of entity's NavigationProperty
-func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, error) {
+func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) ([]byte, error) {
 	uri := "/" + url.PathEscape(key.APIEntityType())
 	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key
 	uri += "/" + url.PathEscape(property)
@@ -35,8 +35,8 @@ func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, e
 
 	body, err := c.get(uri)
 	if err != nil {
-		if err.Error() == "404 Not found\nBody:" {
-			return "", nil
+		if err.Error() == "404 Not found\nBody:\n" {
+			return nil, nil
 		}
 	}
 
@@ -44,7 +44,7 @@ func (c *Client) GetEntityNavigaion(key IPrimaryKey, property string) (string, e
 }
 
 // Execute entity's method and return its output in json
-func (c *Client) ExecuteEntityMethod(key IPrimaryKey, function IFunction) (string, error) {
+func (c *Client) ExecuteEntityMethod(key IPrimaryKey, function IFunction) ([]byte, error) {
 	uri := "/" + url.PathEscape(key.APIEntityType())
 	uri += fmt.Sprintf("(%s)", url.PathEscape(key.Serialize())) // Unique key
 	uri += "/" + function.Name()
@@ -54,10 +54,10 @@ func (c *Client) ExecuteEntityMethod(key IPrimaryKey, function IFunction) (strin
 	return c.post(uri, nil)
 }
 
-func (c *Client) updateEntity(key IPrimaryKey, entity IEntity) (string, error) {
+func (c *Client) updateEntity(key IPrimaryKey, entity IEntity) ([]byte, error) {
 	data, err := json.Marshal(entity)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
 	uri := "/" + url.PathEscape(entity.APIEntityType())
@@ -77,10 +77,10 @@ func (c *Client) removeEntity(key IPrimaryKey) error {
 	return c.delete(uri)
 }
 
-func (c *Client) createEntity(entity IEntity) (string, error) {
+func (c *Client) createEntity(entity IEntity) ([]byte, error) {
 	data, err := json.Marshal(entity)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 	uri := "/" + url.PathEscape(entity.APIEntityType()) + "?$format=json"
 
