@@ -55,6 +55,8 @@ func (g *Generator) genSubscriptions(source []shared.OneCType) string {
 		if validPrefix && validSuffix {
 			queries += g.genUpdateSubscription(entity)
 			queries += "\n"
+			queries += g.genDeleteSubscription(entity)
+			queries += "\n"
 		}
 
 	}
@@ -72,4 +74,10 @@ func (g *Generator) genUpdateSubscription(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 	return fmt.Sprintf(
 		`	OnUpdate%s: %s!`, t, t)
+}
+
+func (g *Generator) genDeleteSubscription(source shared.OneCType) string {
+	t := g.translateType(source.Name)
+	return fmt.Sprintf(
+		`	OnDelete%s: %s!`, t, t)
 }

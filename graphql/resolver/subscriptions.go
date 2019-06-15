@@ -70,6 +70,7 @@ func (g *Generator) genSubscriptions(createEntities, upateEntities []shared.OneC
 	}
 	for _, entity := range upateEntities {
 		queries += g.genUpdateCallback(entity)
+		queries += g.genDeleteCallback(entity)
 	}
 	return queries
 }
@@ -100,15 +101,35 @@ func (g *Generator) genUpdateCallback(source shared.OneCType) string {
 `, t, t, t, t)
 }
 
+func (g *Generator) genDeleteCallback(source shared.OneCType) string {
+	t := g.translateType(source.Name)
+	return fmt.Sprintf(
+		`func (r *GqlResolver) OnDelete%s(ctx context.Context) <-chan *%s {
+	c := make(chan *%s)
+	// NOTE: this could take a while
+	r.subscribers <- &Subscriber{uType: "Delete%s", events: c, stop: ctx.Done()}
+
+	return c
+}
+`, t, t, t, t)
+}
+
 func (g *Generator) genWatchers(updateEntities, createEntities []shared.OneCType) string {
 
 	queries := `func (r *GqlResolver) watcher(offset time.Duration, subscribersCounts *map[string]*int32) {
 	watchInterval := time.Second * 10
 	ticker := time.NewTicker(watchInterval)
-	dataVersions := map[string]map[Guid]String { "CatalogDogovoryKontragentov": {} }
+	dataVersions := map[string]map[Guid]String {}
+	itemkeys  := map[string][]Guid {}
 `
+	for _, val := range createEntities {
+		queries += fmt.Sprintf(`	itemkeys["%s"] = []Guid {}
+`, g.translateType(val.Name))
+	}
 	for _, val := range updateEntities {
 		queries += fmt.Sprintf(`	dataVersions["%s"] = map[Guid]String{}
+`, g.translateType(val.Name))
+		queries += fmt.Sprintf(`	itemkeys["%s"] = []Guid {}
 `, g.translateType(val.Name))
 	}
 	queries += `
@@ -119,10 +140,10 @@ func (g *Generator) genWatchers(updateEntities, createEntities []shared.OneCType
 `
 	for _, val := range createEntities {
 		queries += g.genCreateWatcher(val)
-
 	}
 	for _, val := range updateEntities {
 		queries += g.genUpdateWatcher(val)
+		queries += g.genDeleteWatcher(val)
 	}
 
 	queries += fmt.Sprintf(`
@@ -192,10 +213,44 @@ func (g *Generator) genUpdateWatcher(source shared.OneCType) string {
 								dataVersions["%s"][p.%s] = *p.%s
 							}
 						}
+					} else if count != nil && *count == 0 {
+						dataVersions["%s"] = map[Guid]String {}
 					} else if count != nil && *count < 0 {
 						log.Panicf("count of sypscribers type %%s is %%d", sType, *count)
 					}
-`, t, t, t, k, dv, t, t, k, k, t, k, dv)
+`, t, t, t, k, dv, t, t, k, k, t, k, dv, t)
+	return result
+}
+
+func (g *Generator) genDeleteWatcher(source shared.OneCType) string {
+	t := g.translateType(source.Name)
+	k := g.translateName("Ref_Key")
+	result := fmt.Sprintf(`
+				case "Delete%s":
+					if count != nil && *count > 0 {
+						items, err := r.Client.%ss(Where{Fields:[]string{"Ref_Key"}})
+						if err != nil {
+							log.Println(err)
+						} else  {
+							newItems := make([]Guid, len(*items))
+							itemMap := map[Guid]bool {}
+							for i, p := range *items {
+								newItems[i] = p.%s
+								itemMap[p.%s] = true
+							}
+							for _, v := range itemkeys["%s"] {
+								if _, ok := itemMap[v]; !ok {
+									r.deleteEvents <- &%s { %s: v }
+								}
+							}
+							itemkeys["%s"] = newItems
+						}
+					} else if count != nil && *count == 0 {
+						itemkeys["%s"] = []Guid {}
+					} else if count != nil && *count < 0 {
+						log.Panicf("count of sypscribers type %%s is %%d", sType, *count)
+					}
+`, t, t, k, k, t, t, k, t, t)
 	return result
 }
 
@@ -203,6 +258,7 @@ func (g *Generator) getBroadcasters(updateEntities, createEntities []shared.OneC
 	counters := ""
 	createEvents := ""
 	updateEvents := ""
+	deleteEvents := ""
 
 	for _, entity := range createEntities {
 		t := g.translateType(entity.Name)
@@ -231,6 +287,20 @@ func (g *Generator) getBroadcasters(updateEntities, createEntities []shared.OneC
 		updateEvents += fmt.Sprintf(`case *%s:
 				for id, s := range subscribers {
 					if strings.HasPrefix(s.uType, "Update") {
+						switch eventChan := s.events.(type) {
+						case chan *%s:
+							go func(id string, s *Subscriber) {
+								eventChan <- ev
+							}(id, s)
+						}
+					}
+				}
+`, t, t)
+		counters += fmt.Sprintf(`"Delete%s": new(int32),`, t)
+		counters += "\n"
+		deleteEvents += fmt.Sprintf(`case *%s:
+				for id, s := range subscribers {
+					if strings.HasPrefix(s.uType, "Delete") {
 						switch eventChan := s.events.(type) {
 						case chan *%s:
 							go func(id string, s *Subscriber) {
@@ -272,17 +342,13 @@ func (g *Generator) getBroadcasters(updateEntities, createEntities []shared.OneC
 			switch ev := e.(type) {
 			` + updateEvents + `
 			}
+		case e := <-r.deleteEvents:
+			switch ev := e.(type) {
+			` + deleteEvents + `
+			}
 		}
 	}
 }
 `)
-	return result
-}
-
-func (g *Generator) getBroadcasterUnsub(source shared.OneCType) string {
-	result := `
-				case "%s":
-					atomic.AddInt32(subscribersCounts[uType], -1)
-					delete(%s, e.id)`
 	return result
 }
