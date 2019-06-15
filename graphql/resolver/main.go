@@ -31,6 +31,7 @@ func (g *Generator) Generate() {
 
 import (
 	"context"
+	"strings"
 	"time"
 	"os"
 	"github.com/google/uuid"
@@ -41,14 +42,18 @@ import (
 
 type GqlResolver struct {
 	Client *Client
-	events     chan interface{}
+	createEvents chan interface{}
+	updateEvents chan interface{}
+	deleteEvents  chan interface{}
 	subscribers chan *Subscriber
 }
 
 func NewGqlResolver(client *Client) *GqlResolver {
 	r := &GqlResolver{
 		Client:      client,
-		events:      make(chan interface{}),
+		createEvents:      make(chan interface{}),
+		updateEvents:      make(chan interface{}),
+		deleteEvents:      make(chan interface{}),
 		subscribers: make(chan *Subscriber),
 	}
 
@@ -76,9 +81,7 @@ type unsubscribeEvent struct {
 
 %s
 %s
-%s
-%s
-%s`, g.genResolvers(g.schema.Entities), g.genSubscriptions(g.schema.Entities), g.genMutations(g.schema.Entities), g.genWatchers(g.schema.Entities), g.getBroadcasters(g.schema.Entities))
+%s`, g.genResolvers(g.schema.Entities), g.genMutations(g.schema.Entities), g.GenSubAll(g.schema.Entities))
 	g.writeGofile("Resolver.go", data)
 }
 
