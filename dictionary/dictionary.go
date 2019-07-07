@@ -49,21 +49,29 @@ func (g *Generator) GenerateDictionary(schema *shared.Schema) {
 	fields = LoadFromFile("fields.dat")
 	for i, entity := range schema.Entities {
 		println(i, "/", len(schema.Entities))
-		g.translateType(entity.Name)
-		for _, prop := range entity.Properties {
-			g.translateName(prop.Name)
+		if _, ok := types[entity.Name]; !ok {
+			types[entity.Name] = g.translateType(entity.Name)
 		}
-		SaveToFile(types, "types.dat")
-		SaveToFile(fields, "fields.dat")
+
+		for _, prop := range entity.Properties {
+			if _, ok := fields[prop.Name]; !ok {
+				fields[prop.Name] = g.translateName(prop.Name)
+			}
+		}
 	}
 
 	for i, entity := range schema.Complexes {
 		println(i, "/", len(schema.Entities))
-		g.translateType(entity.Name)
-		for _, prop := range entity.Properties {
-			g.translateName(prop.Name)
+		if _, ok := types[entity.Name]; !ok {
+			types[entity.Name] = g.translateType(entity.Name)
 		}
-		SaveToFile(types, "types.dat")
-		SaveToFile(fields, "fields.dat")
+
+		for _, prop := range entity.Properties {
+			if _, ok := fields[prop.Name]; !ok {
+				fields[prop.Name] = g.translateName(prop.Name)
+			}
+		}
 	}
+	SaveToFile(types, "types.dat")
+	SaveToFile(fields, "fields.dat")
 }
