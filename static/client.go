@@ -29,13 +29,17 @@ type Request struct {
 }
 
 // Return initialized odata client
-func NewClient(username, password, endpoint string, poolSize, queueSize int) *Client {
+func NewClient(username, password, endpoint string, poolSize, queueSize int, transport http.RoundTripper) *Client {
 	metric := prometheus.NewGauge(prometheus.GaugeOpts{
 		Name: "one_c_http_parallel_requests",
 		Help: "1c load from this service",
 	})
 	prometheus.MustRegister(metric)
-	client := &Client{username: username, password: password, endpoint: endpoint, client: &http.Client{}, metrics: metric}
+	httpClient := &http.Client{}
+	if transport != nil {
+		httpClient.Transport = transport
+	}
+	client := &Client{username: username, password: password, endpoint: endpoint, client: httpClient, metrics: metric}
 	client.queue = make(chan Request, queueSize)
 	for i := 0; i < poolSize; i++ {
 		go client.worker()
@@ -133,6 +137,7 @@ func (c *Client) do(request *http.Request) ([]byte, error) {
 	case err := <-errChan:
 		return nil, err
 	case resp := <-respChan:
+		defer resp.Body.Close()
 		body, _ := ioutil.ReadAll(resp.Body)
 		if resp.StatusCode/100 == 2 {
 			return body, nil

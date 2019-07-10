@@ -91,8 +91,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fields, _ := ioutil.ReadFile("fields.dat")
-	types, _ := ioutil.ReadFile("types.dat")
+	fields, _ := ioutil.ReadFile("fields.json")
+	types, _ := ioutil.ReadFile("types.json")
 
 	nameMap := make(map[string]string)
 	typeMap := make(map[string]string)
