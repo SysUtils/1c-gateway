@@ -14,6 +14,7 @@ func (g *Generator) genResolvers(source []shared.OneCType) string {
 		result += g.genEntitiesResolver(entity)
 		result += "\n"
 	}
+
 	return result[:len(result)-1]
 }
 

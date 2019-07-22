@@ -28,10 +28,11 @@ type Parameter struct {
 }
 
 type Function struct {
-	Name       string      `xml:"Name,attr"`
-	Type       string      `xml:"ReturnType,attr"`
-	IsBindable bool        `xml:"IsBindable,attr"`
-	Parameters []Parameter `xml:"Parameter"`
+	Name            string      `xml:"Name,attr"`
+	Type            string      `xml:"ReturnType,attr"`
+	IsBindable      bool        `xml:"IsBindable,attr"`
+	IsSideEffecting bool        `xml:"IsSideEffecting,attr"`
+	Parameters      []Parameter `xml:"Parameter"`
 }
 
 type NavProp struct {

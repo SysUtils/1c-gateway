@@ -58,10 +58,19 @@ func Clean(source *shared.Schema, typeMap map[string]string) *shared.Schema {
 
 	result.Entities = make([]shared.OneCType, 0)
 	result.Complexes = make([]shared.OneCType, 0)
+	result.Functions = make([]shared.Function, 0)
 
 	for _, e := range source.Entities {
 		if _, ok := types[e.Name]; ok {
 			result.Entities = append(result.Entities, e)
+		}
+	}
+
+	for _, e := range source.Functions {
+		if !e.IsBindable {
+			result.Functions = append(result.Functions, e)
+		} else if _, ok := types[translateType(e.Parameters[0].Type)]; ok {
+			result.Functions = append(result.Functions, e)
 		}
 	}
 
