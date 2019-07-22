@@ -3,6 +3,7 @@ package schema
 import (
 	"github.com/essentialkaos/translit"
 	"strings"
+	"unicode"
 )
 
 var ScalarTypes = map[string]bool{
@@ -19,6 +20,18 @@ var ScalarTypes = map[string]bool{
 	"Guid":     true,
 }
 
+func ToCamelCase(src string) string {
+	result := []rune(src)
+	result[0] = unicode.ToUpper(result[0])
+	return string(result)
+}
+
+func ToLowerCamelCase(src string) string {
+	result := []rune(src)
+	result[0] = unicode.ToLower(result[0])
+	return string(result)
+}
+
 func (g *Generator) translateType(src string) string {
 	if strings.HasPrefix(src, "Edm.") {
 		src = src[4:]
@@ -31,9 +44,10 @@ func (g *Generator) translateType(src string) string {
 		src = "[" + g.translateType(src[11:len(src)-1]) + "!]"
 	}
 	if val, ok := g.TypeMap[src]; ok {
-		return val
+		return ToCamelCase(val)
 	}
-	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
+
+	return ToCamelCase(translit.EncodeToICAO(strings.Replace(src, "_", "", -1)))
 }
 
 func (g *Generator) translateInputType(src string) string {
@@ -53,12 +67,14 @@ func (g *Generator) translateInputType(src string) string {
 	if _, ok := ScalarTypes[src]; !ok {
 		src += "Input"
 	}
-	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
+
+	return ToCamelCase(translit.EncodeToICAO(strings.Replace(src, "_", "", -1)))
 }
 
 func (g *Generator) translateName(src string) string {
 	if val, ok := g.NameMap[src]; ok {
-		return val
+		return ToLowerCamelCase(val)
 	}
-	return translit.EncodeToICAO(strings.Replace(src, "_", "", -1))
+
+	return ToLowerCamelCase(translit.EncodeToICAO(strings.Replace(src, "_", "", -1)))
 }

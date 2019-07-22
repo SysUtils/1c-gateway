@@ -48,7 +48,6 @@ func (g *Generator) genFilterStruct(source shared.OneCType) string {
 	for _, prop := range source.Properties {
 		propType := g.translateType(prop.Type)
 		propName := g.translateName(prop.Name)
-		fmt.Println(propName)
 		if _, ok := ScalarTypes[propType]; ok {
 			result += fmt.Sprintf("	%sEq *%s\n", propName, propType)
 			result += fmt.Sprintf("	%sNe *%s\n", propName, propType)
