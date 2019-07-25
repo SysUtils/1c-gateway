@@ -54,15 +54,18 @@ scalar Guid
 %s
 %s
 %s
-%s`, g.genTypes(g.schema.Entities),
+%s
+%s`,
+		g.genTypes(g.schema.Entities),
 		g.genTypes(g.schema.Complexes),
 		g.genPrimaryKeys(g.schema.Entities),
-		g.genMutations(g.schema.Entities),
+		g.genMutations(g.schema.Entities, g.schema.Functions),
 		g.genQueries(g.schema.Entities),
 		g.genSubscriptions(g.schema.Entities),
 		g.genFilters(g.schema.Entities),
 		g.genFilters(g.schema.Complexes),
-		g.genFields(g.schema.Entities))
+		g.genFields(g.schema.Entities),
+		g.genFunctions(g.schema.Functions))
 	g.writeGqlfile("Schema.graphql", data)
 }
 

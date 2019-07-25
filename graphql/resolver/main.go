@@ -81,7 +81,7 @@ type unsubscribeEvent struct {
 
 %s
 %s
-%s`, g.genResolvers(g.schema.Entities), g.genMutations(g.schema.Entities), g.GenSubAll(g.schema.Entities))
+%s`, g.genResolvers(g.schema.Entities), g.genMutations(g.schema.Entities, g.schema.Functions), g.GenSubAll(g.schema.Entities))
 	g.writeGofile("Resolver.go", data)
 }
 
