@@ -45,8 +45,8 @@ func LoadFromFile(path string) map[string]string {
 }
 
 func (g *Generator) GenerateDictionary(schema *shared.Schema) {
-	types = LoadFromFile("types.dat")
-	fields = LoadFromFile("fields.dat")
+	types = LoadFromFile("types.json")
+	fields = LoadFromFile("fields.json")
 	for i, entity := range schema.Entities {
 		println(i, "/", len(schema.Entities))
 		if _, ok := types[entity.Name]; !ok {
@@ -72,6 +72,6 @@ func (g *Generator) GenerateDictionary(schema *shared.Schema) {
 			}
 		}
 	}
-	SaveToFile(types, "types.dat")
-	SaveToFile(fields, "fields.dat")
+	SaveToFile(types, "types.json")
+	SaveToFile(fields, "fields.json")
 }

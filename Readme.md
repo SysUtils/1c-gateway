@@ -1,5 +1,5 @@
 1c have beautiful odata interface& This instrument have 3 options:
-1. Work as library for 1C odata interface. Project generate methods and types by metadata with translating cyrillic with dictionary(types.dat, fields.dat)
+1. Work as library for 1C odata interface. Project generate methods and types by metadata with translating cyrillic with dictionary(types.json, fields.json)
 2. Work as grpc middleware
 3. Work as graphql middleware
 
@@ -23,7 +23,7 @@ go install
 
 1. Go to dir with project
 
-2. Fill types.dat and fileds.dat
+2. Fill types.json and fileds.json
 
 3. Run generate lib
 
