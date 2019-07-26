@@ -40,7 +40,7 @@ func (g *Generator) genMutationFunction(source shared.Function) string {
 	if source.IsBindable {
 		t := g.translateType(source.Parameters[0].Type)
 		return fmt.Sprintf(
-			`	%s%s(key: Primary%s!, args: %s%sArgs!): Boolean`, n, t, t, n, t)
+			`	%s%s(key: Primary%s!, args: %s%sArgs!): Boolean!`, n, t, t, n, t)
 	}
 	return ""
 }
