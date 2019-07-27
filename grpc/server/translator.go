@@ -22,5 +22,9 @@ func (g *Generator) translateName(src string) string {
 	if val, ok := g.NameMap[src]; ok {
 		return ToCamelCase(val)
 	}
+	if strings.HasSuffix(src, "_key") {
+		return g.translateName(src[:len(src)-4]) + "Key"
+	}
+
 	return ToCamelCase(translit.EncodeToICAO(strings.Replace(src, "_", "", -1)))
 }

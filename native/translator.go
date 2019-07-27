@@ -29,9 +29,11 @@ func (g *Generator) translateType(src string) string {
 	if strings.HasPrefix(src, "Collection(") && strings.HasSuffix(src, ")") {
 		src = "[]" + g.translateType(src[11:len(src)-1])
 	}
+
 	if val, ok := g.TypeMap[src]; ok {
 		return ToCamelCase(val)
 	}
+
 	return ToCamelCase(translit.EncodeToICAO(strings.Replace(src, "_", "", -1)))
 }
 
@@ -39,5 +41,9 @@ func (g *Generator) translateName(src string) string {
 	if val, ok := g.NameMap[src]; ok {
 		return ToCamelCase(val)
 	}
+	if strings.HasSuffix(src, "_key") {
+		return g.translateName(src[:len(src)-4]) + "Key"
+	}
+
 	return ToCamelCase(translit.EncodeToICAO(strings.Replace(src, "_", "", -1)))
 }
