@@ -24,14 +24,21 @@ func (g *Generator) genFilter(source shared.OneCType) string {
 		propType := g.translateType(prop.Type)
 		propName := g.translateName(prop.Name)
 		if _, ok := ScalarTypes[propType]; ok {
-			result += fmt.Sprintf(
-				`	%sEq: %s
+			if prop.Type == "Boolean" {
+				result += fmt.Sprintf(
+					`	%sEq: %s
+	%sNe: %s
+`, propName, propType, propName, propType)
+			} else {
+				result += fmt.Sprintf(
+					`	%sEq: %s
 	%sNe: %s
 	%sGt: %s
 	%sLt: %s
 	%sGe: %s
 	%sLe: %s
 `, propName, propType, propName, propType, propName, propType, propName, propType, propName, propType, propName, propType)
+			}
 		} else {
 			//if !strings.HasPrefix(propType, "[") {
 			//	result += fmt.Sprintf("	%s: %sFilter\n", propName, propType)
