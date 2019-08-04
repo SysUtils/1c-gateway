@@ -39,10 +39,10 @@ func (g *Generator) genTypeStruct(source shared.OneCType) string {
 	for _, prop := range source.Properties {
 		result += "	"
 		result += g.translateName(prop.Name)
-		result += " "
-		if prop.Nullable {
-			result += "*"
-		}
+		result += " *"
+		/*if prop.Nullable {
+			result += ""
+		}*/
 		result += g.translateType(prop.Type)
 		result += " `"
 		result += fmt.Sprintf(`json:"%s,omitempty"`, prop.Name)
@@ -83,10 +83,15 @@ func (g *Generator) genNavigationProperties(source shared.OneCType) string {
 }
 
 func (g *Generator) genPrimaryKeyFunc(source shared.OneCType) string {
-	result := fmt.Sprintf("func (e %s) PrimaryKey () Primary%s {\n", g.translateType(source.Name), g.translateType(source.Name))
+	result := fmt.Sprintf("func (e %s) PrimaryKey () (*Primary%s, error) {\n", g.translateType(source.Name), g.translateType(source.Name))
+	for _, key := range source.Keys {
+		result += fmt.Sprintf("	if e.%s == nil {", g.translateName(key.Name))
+		result += fmt.Sprintf("		return nil,  errors.New(`e.%s must be not null`)", g.translateName(key.Name))
+		result += fmt.Sprintf("	}")
+	}
 	result += fmt.Sprintf("	return Primary%s {", g.translateType(source.Name))
 	for _, key := range source.Keys {
-		result += fmt.Sprintf("%s: e.%s,", g.translateName(key.Name), g.translateName(key.Name))
+		result += fmt.Sprintf("%s: *(e.%s),", g.translateName(key.Name), g.translateName(key.Name))
 	}
 	result += fmt.Sprintf(`}
 }`)

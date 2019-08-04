@@ -201,16 +201,16 @@ func (g *Generator) genUpdateWatcher(source shared.OneCType) string {
 							log.Println(err)
 						} else  {
 							for _, p := range *items {
-								if val, ok := dataVersions["%s"][p.%s]; ok {
+								if val, ok := dataVersions["%s"][*p.%s]; ok {
 									if val != *p.%s {
-										item, err := r.Client.%s(Primary%s{%s:p.%s}, nil)
+										item, err := r.Client.%s(Primary%s{%s:*p.%s}, nil)
 										if err != nil {
 											log.Println(err)
 										}
 										r.updateEvents <- item
 									}
 								}
-								dataVersions["%s"][p.%s] = *p.%s
+								dataVersions["%s"][*p.%s] = *p.%s
 							}
 						}
 					} else if count != nil && *count == 0 {
@@ -235,12 +235,12 @@ func (g *Generator) genDeleteWatcher(source shared.OneCType) string {
 							newItems := make([]Guid, len(*items))
 							itemMap := map[Guid]bool {}
 							for i, p := range *items {
-								newItems[i] = p.%s
-								itemMap[p.%s] = true
+								newItems[i] = *p.%s
+								itemMap[*p.%s] = true
 							}
 							for _, v := range itemkeys["%s"] {
 								if _, ok := itemMap[v]; !ok {
-									r.deleteEvents <- &%s { %s: v }
+									r.deleteEvents <- &%s { %s: &v }
 								}
 							}
 							itemkeys["%s"] = newItems

@@ -44,9 +44,9 @@ func (g *Generator) genInputTypeStruct(source shared.OneCType) string {
 	result := fmt.Sprintf("input %sInput {\n", g.translateType(source.Name))
 	for _, prop := range source.Properties {
 		result += fmt.Sprintf("	%s: %s", g.translateName(prop.Name), g.translateInputType(prop.Type))
-		if !prop.Nullable {
-			result += "!"
-		}
+		//if !prop.Nullable {
+		//	result += "!"
+		//}
 		result += "\n"
 	}
 	return result + "}"
@@ -56,9 +56,9 @@ func (g *Generator) genOutputTypeStruct(source shared.OneCType) string {
 	result := fmt.Sprintf("type %s {\n", g.translateType(source.Name))
 	for _, prop := range source.Properties {
 		result += fmt.Sprintf("	%s: %s", g.translateName(prop.Name), g.translateType(prop.Type))
-		if !prop.Nullable {
-			result += "!"
-		}
+		//if !prop.Nullable {
+		//	result += "!"
+		//}
 		result += "\n"
 	}
 	for _, nav := range source.Navigations {
