@@ -60,7 +60,7 @@ func (g *Generator) genMutationUpdate(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`func (r *GqlResolver) Update%s(ctx context.Context, args %sUpdateArgs) (*%s, error) {
-	return r.Client.Update%s(args.Key, args.Entity)
+	return r.Client.Update%s(args.Entity.PrimaryKey(), args.Entity)
 }`, t, t, t, t)
 	return result
 }

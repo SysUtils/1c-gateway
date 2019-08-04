@@ -83,7 +83,6 @@ func (g *Generator) genRemoveArgs(source shared.OneCType) string {
 func (g *Generator) genUpdateArgs(source shared.OneCType) string {
 	t := g.translateType(source.Name)
 	result := fmt.Sprintf("type %sUpdateArgs struct {\n", t)
-	result += fmt.Sprintf("	Key Primary%s\n", t)
 	result += fmt.Sprintf("	Entity %s\n", t)
 	result += fmt.Sprintf("}")
 	return result

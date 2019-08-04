@@ -30,8 +30,8 @@ func (g *Generator) genMutation(source shared.OneCType) string {
 	tInput := g.translateType(source.Name)
 	result := fmt.Sprintf(
 		`	create%s(entity: %sInput!): %s
-	update%s(key: Primary%s!, entity: %sInput!): %s
-	remove%s(key: Primary%s!): Boolean!`, t, tInput, t, t, t, tInput, t, t, t)
+	update%s(entity: %sInput!): %s
+	remove%s(key: Primary%s!): Boolean!`, t, tInput, t, t, tInput, t, t, t)
 	return result
 }
 
