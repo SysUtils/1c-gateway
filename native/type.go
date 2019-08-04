@@ -85,15 +85,15 @@ func (g *Generator) genNavigationProperties(source shared.OneCType) string {
 func (g *Generator) genPrimaryKeyFunc(source shared.OneCType) string {
 	result := fmt.Sprintf("func (e %s) PrimaryKey () (*Primary%s, error) {\n", g.translateType(source.Name), g.translateType(source.Name))
 	for _, key := range source.Keys {
-		result += fmt.Sprintf("	if e.%s == nil {", g.translateName(key.Name))
-		result += fmt.Sprintf("		return nil,  errors.New(`e.%s must be not null`)", g.translateName(key.Name))
-		result += fmt.Sprintf("	}")
+		result += fmt.Sprintf("	if e.%s == nil {\n", g.translateName(key.Name))
+		result += fmt.Sprintf("		return nil,  errors.New(`e.%s must be not null`)\n", g.translateName(key.Name))
+		result += fmt.Sprintf("	}\n")
 	}
-	result += fmt.Sprintf("	return Primary%s {", g.translateType(source.Name))
+	result += fmt.Sprintf("	return &Primary%s {", g.translateType(source.Name))
 	for _, key := range source.Keys {
 		result += fmt.Sprintf("%s: *(e.%s),", g.translateName(key.Name), g.translateName(key.Name))
 	}
-	result += fmt.Sprintf(`}
+	result += fmt.Sprintf(`}, nil
 }`)
 	return result
 }

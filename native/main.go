@@ -23,7 +23,10 @@ func NewGenerator(schema shared.Schema) *Generator {
 // Generate generates the native odata client and writes it to ./odata folder
 func (g *Generator) Generate() {
 	data := fmt.Sprintf(`package odata
-import "encoding/json"
+import (
+"encoding/json"
+"errors"
+)
 
 %s`, g.genTypes(g.schema.Entities))
 	g.writeGofile("Entity.go", data)
