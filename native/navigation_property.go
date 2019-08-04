@@ -38,7 +38,11 @@ func (g *Generator) genNavigation(source shared.OneCType) string {
 			log.Panicf("navigation role not found: %s.%s", nav.Type, nav.ToRole)
 		}
 		result += fmt.Sprintf("func (e %s)%s() (*%s, error) {\n", g.translateType(source.Name), g.translateName(nav.Name), g.translateType(g.Associations[nav.Type][nav.ToRole]))
-		result += fmt.Sprintf(`	src, err := e.Client.GetEntityNavigaion(e.PrimaryKey(),"%s")`+"\n", nav.Name)
+		result += "	key, err := e.PrimaryKey()\n"
+		result += "	if err != nil {\n"
+		result += "		return nil, err\n"
+		result += "	}\n"
+		result += fmt.Sprintf(`	src, err := e.Client.GetEntityNavigaion(key,"%s")`+"\n", nav.Name)
 		result += fmt.Sprintf(`	if len(src) == 0 {` + "\n")
 		result += fmt.Sprintf(`		return nil, err` + "\n")
 		result += fmt.Sprintf(`	}` + "\n")
