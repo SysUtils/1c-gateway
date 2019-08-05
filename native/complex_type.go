@@ -25,9 +25,9 @@ func (g *Generator) genComplexTypeStruct(source shared.OneCType) string {
 		result += "	"
 		result += g.translateName(prop.Name)
 		result += " "
-		if prop.Nullable {
-			result += "*"
-		}
+		//if prop.Nullable {
+		result += "*"
+		//}
 		result += g.translateType(prop.Type)
 		result += " `"
 		result += fmt.Sprintf(`json:"%s,omitempty"`, prop.Name)
