@@ -22,7 +22,10 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 		*t = Time(input)
 		return nil
 	case string:
-		val, err := time.Parse(timeformat, input)
+		val, err := time.Parse(OneCTimeFormat, input)
+		if err != nil {
+			val, err = time.Parse(JSTimeFormat, input)
+		}
 		*t = Time(val)
 		return err
 	case int:
@@ -40,20 +43,20 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 
 // A custom json/graphql marshaller for Time type
 func (t Time) MarshalJSON() ([]byte, error) {
-	val := time.Time(t).Format(timeformat)
+	val := time.Time(t).Format(JSTimeFormat)
 	return json.Marshal(val)
 }
 
 // A custom json unmarshaller for Time type
 func (t *Time) UnmarshalJSON(b []byte) error {
 	s := strings.Trim(string(b), `"`)
-	val, err := time.Parse(timeformat, s)
+	val, err := time.Parse(JSTimeFormat, s)
 	*t = Time(val)
 	return err
 }
 
 // A custom marshaller to uri query format for Time type
 func (t Time) AsParameter() string {
-	val := time.Time(t).Format(timeformat)
+	val := time.Time(t).Format(OneCTimeFormat)
 	return fmt.Sprintf("datetime'%s'", val)
 }

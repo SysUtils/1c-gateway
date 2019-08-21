@@ -10,7 +10,8 @@ import (
 // Type for Edm.DateTime
 type DateTime time.Time
 
-const timeformat = "2006-01-02T15:04:05"
+const OneCTimeFormat = "2006-01-02T15:04:05"
+const JSTimeFormat = "2006-01-02T15:04:05Z0700"
 
 // Maps DateTime to the graphql scalar type in the schema.
 func (DateTime) ImplementsGraphQLType(name string) bool {
@@ -24,7 +25,10 @@ func (t *DateTime) UnmarshalGraphQL(input interface{}) error {
 		*t = DateTime(input)
 		return nil
 	case string:
-		val, err := time.Parse(timeformat, input)
+		val, err := time.Parse(OneCTimeFormat, input)
+		if err != nil {
+			val, err = time.Parse(JSTimeFormat, input)
+		}
 		*t = DateTime(val)
 		return err
 	case int:
@@ -42,19 +46,19 @@ func (t *DateTime) UnmarshalGraphQL(input interface{}) error {
 
 // A custom json/graphql marshaller for DateTime type
 func (t DateTime) MarshalJSON() ([]byte, error) {
-	val := time.Time(t).Format(timeformat)
+	val := time.Time(t).Format(JSTimeFormat)
 	return json.Marshal(val)
 }
 
 // A custom json unmarshaller for DateTime type
 func (t *DateTime) UnmarshalJSON(b []byte) error {
-	val, err := time.Parse(timeformat, strings.Trim(string(b), `"`))
+	val, err := time.Parse(JSTimeFormat, strings.Trim(string(b), `"`))
 	*t = DateTime(val)
 	return err
 }
 
 // A custom marshaller to uri query format for DateTime type
 func (t DateTime) AsParameter() string {
-	val := time.Time(t).Format(timeformat)
+	val := time.Time(t).Format(OneCTimeFormat)
 	return fmt.Sprintf("datetime'%s'", val)
 }
