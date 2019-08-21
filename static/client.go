@@ -2,6 +2,7 @@ package odata
 
 import (
 	"bytes"
+	"encoding/json"
 	"errors"
 	"github.com/prometheus/client_golang/prometheus"
 	"io/ioutil"
@@ -26,6 +27,31 @@ type Request struct {
 	httpRequest *http.Request
 	error       chan error
 	response    chan *http.Response
+}
+
+type ErrorResponse struct {
+	Error `json:"odata.error"`
+}
+
+type Error struct {
+	Code    string `json:"code"`
+	Message struct {
+		Lang  string `json:"lang"`
+		Value string `json:"value"`
+	} `json:"message"`
+	HttpCode int `json:"http_code"`
+}
+
+func (err Error) Error() string {
+	return err.Message.Value
+}
+
+func (err Error) Extensions() map[string]interface{} {
+	return map[string]interface{}{
+		"code":     err.Code,
+		"message":  err.Message.Value,
+		"httpCode": err.HttpCode,
+	}
 }
 
 // Return initialized odata client
@@ -142,6 +168,12 @@ func (c *Client) do(request *http.Request) ([]byte, error) {
 		if resp.StatusCode/100 == 2 {
 			return body, nil
 		}
-		return nil, errors.New(resp.Status + "\nBody:\n" + string(body))
+		errResponse := ErrorResponse{}
+		if err := json.Unmarshal(body, &errResponse); err != nil {
+			return nil, errors.New(string(body))
+		}
+
+		errResponse.Error.HttpCode = resp.StatusCode
+		return nil, errResponse.Error
 	}
 }
