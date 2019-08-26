@@ -21,7 +21,7 @@ func (t *Binary) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case string:
 		res, err := b64.StdEncoding.DecodeString(input)
-		*t = Binary(res)
+		*t = res
 		return err
 	default:
 		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
@@ -36,7 +36,7 @@ func (t Binary) MarshalJSON() ([]byte, error) {
 // A custom json unmarshaller for Binary type
 func (t *Binary) UnmarshalJSON(b []byte) error {
 	val, err := b64.StdEncoding.DecodeString(strings.Trim(string(b), `"`))
-	*t = Binary(val)
+	*t = val
 	return err
 }
 

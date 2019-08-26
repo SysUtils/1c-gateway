@@ -63,5 +63,5 @@ func (t *Time) UnmarshalJSON(b []byte) error {
 // A custom marshaller to uri query format for Time type
 func (t Time) AsParameter() string {
 	val := time.Time(t).Format(OneCTimeFormat)
-	return fmt.Sprintf("datetime'%s'", val)
+	return fmt.Sprintf("datetime'%s'", val) // Probably typo error?
 }
