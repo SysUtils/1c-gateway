@@ -2,7 +2,8 @@ package odata
 
 import (
 	"encoding/json"
-	"fmt"
+	"github.com/go-errors/errors"
+	"reflect"
 )
 
 // Type for Edm.Boolean
@@ -13,14 +14,14 @@ func (Boolean) ImplementsGraphQLType(name string) bool {
 	return name == "Boolean"
 }
 
-// A custom graphql unmarshaler for Boolean type
+// A custom graphql unmarshaller for Boolean type
 func (t *Boolean) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case bool:
 		*t = Boolean(input)
 		return nil
 	default:
-		return fmt.Errorf("wrong type")
+		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
 	}
 }
 

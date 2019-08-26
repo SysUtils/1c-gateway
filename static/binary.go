@@ -3,7 +3,8 @@ package odata
 import (
 	b64 "encoding/base64"
 	"encoding/json"
-	"fmt"
+	"github.com/go-errors/errors"
+	"reflect"
 	"strings"
 )
 
@@ -15,7 +16,7 @@ func (Binary) ImplementsGraphQLType(name string) bool {
 	return name == "Binary"
 }
 
-// A custom graphql unmarshaler for Binary type
+// A custom graphql unmarshaller for Binary type
 func (t *Binary) UnmarshalGraphQL(input interface{}) error {
 	switch input := input.(type) {
 	case string:
@@ -23,9 +24,8 @@ func (t *Binary) UnmarshalGraphQL(input interface{}) error {
 		*t = Binary(res)
 		return err
 	default:
-		return fmt.Errorf("wrong type")
+		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
 	}
-	return nil
 }
 
 // A custom json/graphql marshaller for Binary type

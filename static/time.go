@@ -3,6 +3,8 @@ package odata
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/go-errors/errors"
+	"reflect"
 	"strings"
 	"time"
 )
@@ -37,7 +39,7 @@ func (t *Time) UnmarshalGraphQL(input interface{}) error {
 		*t = Time(val)
 		return nil
 	default:
-		return fmt.Errorf("wrong type")
+		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
 	}
 }
 
@@ -49,8 +51,11 @@ func (t Time) MarshalJSON() ([]byte, error) {
 
 // A custom json unmarshaller for Time type
 func (t *Time) UnmarshalJSON(b []byte) error {
-	s := strings.Trim(string(b), `"`)
-	val, err := time.Parse(JSTimeFormat, s)
+	input := strings.Trim(string(b), `"`)
+	val, err := time.Parse(OneCTimeFormat, input)
+	if err != nil {
+		val, err = time.Parse(JSTimeFormat, input)
+	}
 	*t = Time(val)
 	return err
 }

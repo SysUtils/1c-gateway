@@ -2,7 +2,8 @@ package odata
 
 import (
 	"encoding/json"
-	"fmt"
+	"github.com/go-errors/errors"
+	"reflect"
 	"strconv"
 	"strings"
 )
@@ -31,7 +32,7 @@ func (t *Double) UnmarshalGraphQL(input interface{}) error {
 		}
 		*t = Double(val)
 	default:
-		return fmt.Errorf("wrong type")
+		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
 	}
 	return nil
 }

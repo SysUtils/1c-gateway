@@ -3,7 +3,8 @@ package odata
 import (
 	b64 "encoding/base64"
 	"encoding/json"
-	"fmt"
+	"github.com/go-errors/errors"
+	"reflect"
 	"strings"
 )
 
@@ -22,7 +23,7 @@ func (t *Stream) UnmarshalGraphQL(input interface{}) error {
 		res, _ := b64.StdEncoding.DecodeString(input)
 		*t = Stream(res)
 	default:
-		return fmt.Errorf("wrong type")
+		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
 	}
 	return nil
 }

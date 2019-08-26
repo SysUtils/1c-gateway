@@ -2,7 +2,8 @@ package odata
 
 import (
 	"encoding/json"
-	"fmt"
+	"github.com/go-errors/errors"
+	"reflect"
 	"strconv"
 	"strings"
 )
@@ -24,6 +25,8 @@ func (t *Int16) UnmarshalGraphQL(input interface{}) error {
 		*t = Int16(input)
 	case int64:
 		*t = Int16(input)
+	case float64:
+		*t = Int16(input)
 	case string:
 		val, err := strconv.Atoi(strings.Trim(input, `"`))
 		if err != nil {
@@ -31,7 +34,7 @@ func (t *Int16) UnmarshalGraphQL(input interface{}) error {
 		}
 		*t = Int16(val)
 	default:
-		return fmt.Errorf("wrong type")
+		return errors.Errorf(convertErrorFormat, reflect.TypeOf(input), reflect.TypeOf(*t))
 	}
 	return nil
 }
