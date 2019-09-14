@@ -50,9 +50,9 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, t
 			}
 
 			result := res{Code: Ok}
-			login := r.FormValue("login")
+			user := r.FormValue("username")
 			password := r.FormValue("password")
-			token, err := tokenManager.Get(login, password)
+			token, err := tokenManager.Get(user, password)
 			if err != nil {
 				result.Error = err.Error()
 				result.Code = AuthError
