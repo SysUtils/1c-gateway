@@ -2,6 +2,7 @@
 package server
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/relay"
@@ -16,7 +17,7 @@ import (
 )
 
 // Starts the server using the specified address, scheme and resolver
-func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int) error {
+func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, tokenManager ITokenManager) error {
 	closer := initJaeger("1c-graphql-gateway")
 	httpMetric := NewHttpMetric()
 	defer closer.Close()
@@ -36,9 +37,38 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int) e
 		}
 	}))
 
-	http.Handle("/metrics", promhttp.Handler())
+	http.Handle("/token", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		const (
+			Ok        = 0
+			AuthError = 1
+		)
 
-	http.Handle("/graphql", graphQLHandler)
+		type res struct {
+			Code  int
+			Error string `json:",omitempty"`
+			Token string `json:",omitempty"`
+		}
+
+		result := res{Code: Ok}
+		login := r.FormValue("login")
+		password := r.FormValue("password")
+		token, err := tokenManager.Get(login, password)
+		if err != nil {
+			result.Error = err.Error()
+			result.Code = AuthError
+		}
+		result.Token = token
+		data, err := json.Marshal(result)
+		if err != nil {
+			w.WriteHeader(500)
+			return
+		}
+		w.Write(data)
+	}))
+
+	http.Handle("/metrics", Secure(promhttp.Handler(), tokenManager))
+
+	http.Handle("/graphql", Secure(graphQLHandler, tokenManager))
 	return http.ListenAndServe(addr, nil)
 }
 
