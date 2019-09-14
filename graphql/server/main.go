@@ -16,6 +16,11 @@ import (
 	"net/http"
 )
 
+type TokenRequest struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
 // Starts the server using the specified address, scheme and resolver
 func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, tokenManager ITokenManager) error {
 	closer := initJaeger("1c-graphql-gateway")
@@ -50,9 +55,20 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, t
 			}
 
 			result := res{Code: Ok}
-			user := r.FormValue("username")
-			password := r.FormValue("password")
-			token, err := tokenManager.Get(user, password)
+
+			params := TokenRequest{}
+
+			body, err := r.GetBody()
+			if err != nil {
+				result.Error = err.Error()
+				result.Code = AuthError
+			}
+			dec := json.NewDecoder(body)
+			if err := dec.Decode(&params); err != nil {
+				result.Error = err.Error()
+				result.Code = AuthError
+			}
+			token, err := tokenManager.Get(params.Username, params.Password)
 			if err != nil {
 				result.Error = err.Error()
 				result.Code = AuthError
