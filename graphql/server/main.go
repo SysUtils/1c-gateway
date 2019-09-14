@@ -58,16 +58,18 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, t
 
 			params := TokenRequest{}
 
-			body, err := r.GetBody()
-			if err != nil {
-				result.Error = err.Error()
-				result.Code = AuthError
+			defer r.Body.Close()
+			dec := json.NewDecoder(r.Body)
+			for {
+				if err := dec.Decode(&params); err == io.EOF {
+					break
+				} else if err != nil {
+					log.Println(err)
+					result.Error = err.Error()
+					result.Code = AuthError
+				}
 			}
-			dec := json.NewDecoder(body)
-			if err := dec.Decode(&params); err != nil {
-				result.Error = err.Error()
-				result.Code = AuthError
-			}
+
 			token, err := tokenManager.Get(params.Username, params.Password)
 			if err != nil {
 				result.Error = err.Error()
