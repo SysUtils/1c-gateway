@@ -42,7 +42,7 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, t
 		}
 	}))
 	if tokenManager != nil {
-		http.Handle("/token", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		http.Handle("/token", disableCors(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			const (
 				Ok        = 0
 				AuthError = 1
@@ -82,10 +82,10 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, t
 				return
 			}
 			w.Write(data)
-		}))
+		})))
 
-		http.Handle("/metrics", Secure(promhttp.Handler(), tokenManager))
-		http.Handle("/graphql", Secure(graphQLHandler, tokenManager))
+		http.Handle("/metrics", promhttp.Handler())
+		http.Handle("/graphql", disableCors(Secure(graphQLHandler, tokenManager)))
 	} else {
 		http.Handle("/metrics", promhttp.Handler())
 		http.Handle("/graphql", graphQLHandler)
@@ -111,4 +111,18 @@ func initJaeger(service string) io.Closer {
 		tracer,
 	)
 	return closer
+}
+
+func disableCors(h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+		w.Header().Set("Access-Control-Allow-Headers", "Accept, Authorization, Content-Type, Content-Length, Accept-Encoding")
+		if r.Method == "OPTIONS" {
+			w.Header().Set("Access-Control-Max-Age", "86400")
+			w.WriteHeader(http.StatusOK)
+			return
+		}
+		h.ServeHTTP(w, r)
+	})
 }
