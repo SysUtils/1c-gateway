@@ -36,39 +36,43 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int, t
 			log.Panic(err)
 		}
 	}))
+	if tokenManager != nil {
+		http.Handle("/token", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			const (
+				Ok        = 0
+				AuthError = 1
+			)
 
-	http.Handle("/token", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		const (
-			Ok        = 0
-			AuthError = 1
-		)
+			type res struct {
+				Code  int
+				Error string `json:",omitempty"`
+				Token string `json:",omitempty"`
+			}
 
-		type res struct {
-			Code  int
-			Error string `json:",omitempty"`
-			Token string `json:",omitempty"`
-		}
+			result := res{Code: Ok}
+			login := r.FormValue("login")
+			password := r.FormValue("password")
+			token, err := tokenManager.Get(login, password)
+			if err != nil {
+				result.Error = err.Error()
+				result.Code = AuthError
+			}
+			result.Token = token
+			data, err := json.Marshal(result)
+			if err != nil {
+				w.WriteHeader(500)
+				return
+			}
+			w.Write(data)
+		}))
 
-		result := res{Code: Ok}
-		login := r.FormValue("login")
-		password := r.FormValue("password")
-		token, err := tokenManager.Get(login, password)
-		if err != nil {
-			result.Error = err.Error()
-			result.Code = AuthError
-		}
-		result.Token = token
-		data, err := json.Marshal(result)
-		if err != nil {
-			w.WriteHeader(500)
-			return
-		}
-		w.Write(data)
-	}))
+		http.Handle("/metrics", Secure(promhttp.Handler(), tokenManager))
+		http.Handle("/graphql", Secure(graphQLHandler, tokenManager))
+	} else {
+		http.Handle("/metrics", promhttp.Handler())
+		http.Handle("/graphql", graphQLHandler)
+	}
 
-	http.Handle("/metrics", Secure(promhttp.Handler(), tokenManager))
-
-	http.Handle("/graphql", Secure(graphQLHandler, tokenManager))
 	return http.ListenAndServe(addr, nil)
 }
 
