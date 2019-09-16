@@ -23,7 +23,9 @@ func NewGenerator(schema shared.Schema) *Generator {
 // Generate generates the GraphQL schema and writes it to ./odata folder
 func (g *Generator) Generate() {
 	g.extractAssociations(g.schema.Association)
-	data := fmt.Sprintf(`schema {
+	data := fmt.Sprintf(`package odata
+
+const gqlSchema = `+"`"+`schema {
   query: Query
   mutation: Mutation
   subscription: Subscription
@@ -55,7 +57,7 @@ scalar Guid
 %s
 %s
 %s
-%s`,
+%s`+"`",
 		g.genTypes(g.schema.Entities),
 		g.genTypes(g.schema.Complexes),
 		g.genPrimaryKeys(g.schema.Entities),
@@ -66,10 +68,9 @@ scalar Guid
 		g.genFilters(g.schema.Complexes),
 		g.genFields(g.schema.Entities),
 		g.genFunctions(g.schema.Functions))
-	g.writeGqlfile("Schema.graphql", data)
+	g.writeFile("Schema.go", data)
 }
-
-func (g *Generator) writeGqlfile(filename, data string) {
+func (g *Generator) writeFile(filename, data string) {
 	f, err := os.Create("odata/" + filename)
 	if err != nil {
 		log.Panic(err)
