@@ -10,6 +10,7 @@ require (
 	github.com/gorilla/websocket v1.4.0 // indirect
 	github.com/graph-gophers/graphql-go v0.0.0-20190513003547-158e7b876106
 	github.com/graph-gophers/graphql-transport-ws v0.0.0-20181129022607-40b8cf7c0060
+	github.com/nats-io/nats.go v1.8.1
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/prometheus/client_golang v0.9.4

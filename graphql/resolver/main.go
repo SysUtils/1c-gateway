@@ -31,7 +31,6 @@ func (g *Generator) Generate() {
 
 import (
 	"context"
-	"strings"
 	"time"
 	"os"
 	"github.com/google/uuid"
@@ -40,20 +39,24 @@ import (
 	"sync/atomic"
 )
 
+type EventClass int
+
+const (
+	Create EventClass = iota
+	Update
+	Delete
+)
+
 type GqlResolver struct {
 	Client *Client
-	createEvents chan interface{}
-	updateEvents chan interface{}
-	deleteEvents  chan interface{}
+	watcher *Watcher
 	subscribers chan *Subscriber
 }
 
-func NewGqlResolver(client *Client) *GqlResolver {
+func NewGqlResolver(client *Client, watcher *Watcher) *GqlResolver {
 	r := &GqlResolver{
 		Client:      client,
-		createEvents:      make(chan interface{}),
-		updateEvents:      make(chan interface{}),
-		deleteEvents:      make(chan interface{}),
+		watcher:     watcher,
 		subscribers: make(chan *Subscriber),
 	}
 
@@ -71,12 +74,13 @@ func NewGqlResolver(client *Client) *GqlResolver {
 type Subscriber struct {
 	stop   <-chan struct{}
 	events interface{}
-	uType string
+	uType EventType
+	uClass EventClass
 }
 
 type unsubscribeEvent struct {
 	id    string
-	uType string
+	uType EventType
 }
 
 %s
