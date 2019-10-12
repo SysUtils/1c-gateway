@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../../../../grpctest" />
     <content url="file://$MODULE_DIR$" />
-    <content url="file://$MODULE_DIR$/../../../gitlab.com/zullpro/core/1c-gateway" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Bundled Protobuf Distribution" level="application" />

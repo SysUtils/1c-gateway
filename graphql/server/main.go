@@ -38,7 +38,7 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int) e
 
 	http.Handle("/metrics", promhttp.Handler())
 
-	http.Handle("/graphql", graphQLHandler)
+	http.Handle("/graphql", disableCors(graphQLHandler))
 	return http.ListenAndServe(addr, nil)
 }
 
@@ -59,4 +59,18 @@ func initJaeger(service string) io.Closer {
 		tracer,
 	)
 	return closer
+}
+
+func disableCors(h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+		w.Header().Set("Access-Control-Allow-Headers", "Accept, Authorization, Content-Type, Content-Length, Accept-Encoding")
+		if r.Method == "OPTIONS" {
+			w.Header().Set("Access-Control-Max-Age", "86400")
+			w.WriteHeader(http.StatusOK)
+			return
+		}
+		h.ServeHTTP(w, r)
+	})
 }
