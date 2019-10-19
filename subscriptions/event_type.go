@@ -13,6 +13,9 @@ func (g *Generator) genTypeConsts(createEntities, updateEntities []shared.OneCTy
 	for _, val := range updateEntities {
 		result += fmt.Sprintf("\tUpdate%s\n", g.translateType(val.Name))
 		result += fmt.Sprintf("\tDelete%s\n", g.translateType(val.Name))
+		if !FindString(val.Name, createEntities) {
+			result += fmt.Sprintf("\tCreate%s\n", g.translateType(val.Name))
+		}
 	}
 	return result
 }

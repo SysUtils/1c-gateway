@@ -62,6 +62,15 @@ func (g *Generator) GenSubAll(source []shared.OneCType) string {
 	return result
 }
 
+func FindString(name string, a []shared.OneCType) bool {
+	for _, e := range a {
+		if name == e.Name {
+			return true
+		}
+	}
+	return false
+}
+
 func (g *Generator) genSubscriptions(createEntities, upateEntities []shared.OneCType) string {
 	queries := ""
 	for _, entity := range createEntities {
@@ -70,6 +79,9 @@ func (g *Generator) genSubscriptions(createEntities, upateEntities []shared.OneC
 	for _, entity := range upateEntities {
 		queries += g.genUpdateCallback(entity)
 		queries += g.genDeleteCallback(entity)
+		if !FindString(entity.Name, createEntities) {
+			queries += g.genCreateCallback(entity)
+		}
 	}
 	return queries
 }
@@ -169,6 +181,23 @@ func (g *Generator) getBroadcasters(updateEntities, createEntities []shared.OneC
 					}
 				}
 `, t, t)
+
+		if !FindString(entity.Name, createEntities) {
+			counters += fmt.Sprintf(`Create%s: new(int32),`, t)
+			counters += "\n"
+			createEvents += fmt.Sprintf(`case *%s:
+				for id, s := range subscribers {
+					if s.uClass == Create {
+						switch eventChan := s.events.(type) {
+						case chan *%s:
+							go func(id string, s *Subscriber) {
+								eventChan <- ev
+							}(id, s)
+						}
+					}
+				}
+`, t, t)
+		}
 	}
 
 	result := fmt.Sprintf(`func (r *GqlResolver) broadcast(offset time.Duration) {

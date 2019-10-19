@@ -24,6 +24,7 @@ func (g *Generator) genSubscriptions(source []shared.OneCType) string {
 	for _, entity := range source {
 		validPrefix := false
 		validSuffix := false
+		lite := false
 		for _, s := range subscriptionValidPrefixes {
 			if strings.HasPrefix(entity.Name, s) {
 				validPrefix = true
@@ -40,6 +41,7 @@ func (g *Generator) genSubscriptions(source []shared.OneCType) string {
 		if validPrefix && validSuffix {
 			queries += g.genCreateSubscription(entity)
 			queries += "\n"
+			lite = true
 		}
 
 		validPrefix = false
@@ -57,6 +59,10 @@ func (g *Generator) genSubscriptions(source []shared.OneCType) string {
 			queries += "\n"
 			queries += g.genDeleteSubscription(entity)
 			queries += "\n"
+			if !lite {
+				queries += g.genCreateSubscription(entity)
+				queries += "\n"
+			}
 		}
 
 	}

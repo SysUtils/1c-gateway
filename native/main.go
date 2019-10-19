@@ -28,7 +28,9 @@ import (
 "errors"
 )
 
-%s`, g.genTypes(g.schema.Entities))
+%s
+
+%s`, g.genTypes(g.schema.Entities), g.genFunctions(g.schema.Functions))
 	g.writeGofile("Entity.go", data)
 
 	data = fmt.Sprintf(`package odata
@@ -43,7 +45,7 @@ import (
 
 	data = fmt.Sprintf(`package odata
 
-%s`, g.genFunctions(g.schema.Functions))
+%s`, g.genFunctionsType(g.schema.Functions))
 	g.writeGofile("Functions.go", data)
 
 	data = fmt.Sprintf(`package odata

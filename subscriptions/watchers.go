@@ -26,16 +26,22 @@ func (g *Generator) genWatchers(createEntities, updateEntities []shared.OneCType
 	ticker := time.NewTicker(watchInterval)
 	dataVersions := map[string]map[Guid]String {}
 	itemkeys  := map[string][]Guid {}
+	catalogKeys  := map[string]map[Guid]struct{} {}
 `
 	for _, val := range createEntities {
 		queries += fmt.Sprintf(`	itemkeys["%s"] = []Guid {}
 `, g.translateType(val.Name))
 	}
 	for _, val := range updateEntities {
-		queries += fmt.Sprintf(`	dataVersions["%s"] = map[Guid]String{}
+		queries += fmt.Sprintf(`	dataVersions["%s"] = map[Guid]String {}
 `, g.translateType(val.Name))
-		queries += fmt.Sprintf(`	itemkeys["%s"] = []Guid {}
+		queries += fmt.Sprintf(`	catalogKeys["%s"] = map[Guid]struct{} {}
 `, g.translateType(val.Name))
+		if !FindString(val.Name, createEntities) {
+			queries += fmt.Sprintf(`	itemkeys["%s"] = []Guid {}
+`, g.translateType(val.Name))
+		}
+
 	}
 	queries += `
 	for range ticker.C {
@@ -49,6 +55,9 @@ func (g *Generator) genWatchers(createEntities, updateEntities []shared.OneCType
 	for _, val := range updateEntities {
 		queries += g.genUpdateWatcher(val)
 		queries += g.genDeleteWatcher(val)
+		if !FindString(val.Name, createEntities) {
+			queries += g.genCreateHeavyWatcher(val)
+		}
 	}
 
 	queries += fmt.Sprintf(`
@@ -91,6 +100,39 @@ func (g *Generator) genCreateWatcher(source shared.OneCType) string {
 						log.Panicf("count of sypscribers type %%s is %%d", sType, count)
 					}
 `, t, t, f, t)
+	return result
+}
+
+func (g *Generator) genCreateHeavyWatcher(source shared.OneCType) string {
+	t := g.translateType(source.Name)
+	k := g.translateName("Ref_Key")
+	result := fmt.Sprintf(`
+				case Create%s:
+					flag := len(catalogKeys["%s"]) == 0
+					if count > 0 {
+						items, err := r.Client.%ss(Where{Fields:[]string{"Ref_Key"}})
+						if err != nil {
+							log.Println(err)
+						} else  {
+							for  _, skeleton := range *items {
+								if _, ok := catalogKeys["%s"][*skeleton.%s]; !ok {
+									catalogKeys["%s"][*skeleton.%s] = struct{} {}
+									if !flag {
+										item, err := r.Client.%s(Primary%s{%s:*skeleton.%s}, nil)
+										if err != nil {
+											log.Println(err)
+										}
+										r.Created <- item
+									}
+								}
+							}
+						}
+					} else if count == 0 {
+						catalogKeys["%s"] = map[Guid]struct{} {}
+					} else if count < 0 {
+						log.Panicf("count of sypscribers type %%s is %%d", sType, count)
+					}
+`, t, t, t, t, k, t, k, t, t, k, k, t)
 	return result
 }
 

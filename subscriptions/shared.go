@@ -44,3 +44,12 @@ func filterEntities(source []shared.OneCType) ([]shared.OneCType, []shared.OneCT
 	}
 	return createEntities, updateEntities
 }
+
+func FindString(name string, a []shared.OneCType) bool {
+	for _, e := range a {
+		if name == e.Name {
+			return true
+		}
+	}
+	return false
+}

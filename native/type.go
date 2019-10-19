@@ -146,3 +146,30 @@ func (g *Generator) genDelete(source shared.OneCType) string {
 	result += fmt.Sprintf(`	return c.removeEntity(key)` + "\n")
 	return result + "}"
 }
+
+func (g *Generator) genFunctions(source []shared.Function) string {
+	result := ""
+	for _, entity := range source {
+		result += g.genFunction(entity)
+		result += "\n"
+	}
+	return result[:len(result)-1]
+}
+
+func (g *Generator) genFunction(source shared.Function) string {
+	n := g.translateName(source.Name)
+	if source.IsBindable {
+		t := g.translateType(source.Parameters[0].Type)
+		result := fmt.Sprintf(
+			`func (e *%s) %s(args Function%s%s) (bool, error) {
+	key, err := e.PrimaryKey()
+	if err != nil {
+		return false, err
+	}
+	_, err = e.Client.ExecuteEntityMethod(key, args)
+	return err == nil, err
+}`, t, n, t, n)
+		return result
+	}
+	return ""
+}

@@ -5,16 +5,16 @@ import (
 	"github.com/SysUtils/1c-gateway/shared"
 )
 
-func (g *Generator) genFunctions(source []shared.Function) string {
+func (g *Generator) genFunctionsType(source []shared.Function) string {
 	result := ""
 	for _, entity := range source {
-		result += g.genFunction(entity)
+		result += g.genFunctionType(entity)
 		result += "\n"
 	}
 	return result[:len(result)-1]
 }
 
-func (g *Generator) genFunction(source shared.Function) string {
+func (g *Generator) genFunctionType(source shared.Function) string {
 	result := g.genFunctionStruct(source)
 	result += "\n"
 	result += g.genFunctionNameFunc(source)
