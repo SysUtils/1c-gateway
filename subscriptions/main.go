@@ -75,8 +75,8 @@ func (r *Watcher) AddEventListener(t EventType, delta int) {
 	r.listenersCounts[t] += delta
 }
 
-func (r *Watcher) Start() {
-	go r.watch(time.Second * 0)
+func (r *Watcher) Start(offset int64) {
+	go r.watch(time.Duration(offset))
 }
 
 %s`, g.genTypeConsts(create, update), g.genWatchers(create, update))
