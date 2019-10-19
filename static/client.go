@@ -55,17 +55,12 @@ func (err Error) Extensions() map[string]interface{} {
 }
 
 // Return initialized odata client
-func NewClient(username, password, endpoint string, poolSize, queueSize int, transport http.RoundTripper) *Client {
-	metric := prometheus.NewGauge(prometheus.GaugeOpts{
-		Name: "one_c_http_parallel_requests",
-		Help: "1c load from this service",
-	})
-	prometheus.MustRegister(metric)
+func NewClient(username, password, endpoint string, poolSize, queueSize int, transport http.RoundTripper, gauge prometheus.Gauge) *Client {
 	httpClient := &http.Client{}
 	if transport != nil {
 		httpClient.Transport = transport
 	}
-	client := &Client{username: username, password: password, endpoint: endpoint, client: httpClient, metrics: metric}
+	client := &Client{username: username, password: password, endpoint: endpoint, client: httpClient, metrics: gauge}
 	client.queue = make(chan Request, queueSize)
 	for i := 0; i < poolSize; i++ {
 		go client.worker()
@@ -122,7 +117,10 @@ func (c *Client) worker() {
 	}
 	for work := range c.queue {
 		atomic.AddInt32(&c.counter, 1)
-		c.metrics.Inc()
+		if c.metrics != nil {
+			c.metrics.Inc()
+		}
+
 		resp, err := c.client.Do(work.httpRequest)
 		if err != nil {
 			if work.error != nil {
@@ -135,7 +133,9 @@ func (c *Client) worker() {
 			work.response <- resp
 		}
 		atomic.AddInt32(&c.counter, -1)
-		c.metrics.Dec()
+		if c.metrics != nil {
+			c.metrics.Dec()
+		}
 	}
 }
 
