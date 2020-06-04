@@ -1,6 +1,6 @@
 module github.com/SysUtils/1c-gateway
 
-go 1.12
+go 1.14
 
 require (
 	github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd // indirect
@@ -17,5 +17,4 @@ require (
 	github.com/uber/jaeger-client-go v2.16.0+incompatible
 	github.com/uber/jaeger-lib v2.0.0+incompatible // indirect
 	go.uber.org/atomic v1.4.0 // indirect
-	pkg.re/check.v1 v0.0.0-20190902080502-41f04d3bba15 // indirect
 )
