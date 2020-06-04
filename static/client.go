@@ -130,10 +130,14 @@ func (c *Client) worker() {
 			} else {
 				log.Panicf("error: %v, request: %v", err, work.httpRequest)
 			}
+		} else {
+			if work.response != nil {
+				work.response <- resp
+			} else {
+				log.Panicf("response channel is nil")
+			}
 		}
-		if work.response != nil {
-			work.response <- resp
-		}
+
 		atomic.AddInt32(&c.counter, -1)
 		c.metrics.Dec()
 	}
