@@ -8,6 +8,7 @@ import (
 	"github.com/graph-gophers/graphql-transport-ws/graphqlws"
 	"github.com/opentracing/opentracing-go"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/sirupsen/logrus"
 	"github.com/uber/jaeger-client-go"
 	"github.com/uber/jaeger-client-go/config"
 	"io"
@@ -45,7 +46,7 @@ func Start(addr string, schemaBlob []byte, resolver interface{}, poolSize int) e
 func initJaeger(service string) io.Closer {
 	cfg, err := config.FromEnv()
 	if err != nil {
-		log.Panic(err)
+		logrus.WithError(err).Info("tracing is disabled")
 	}
 	if service != "" {
 		cfg.ServiceName = service
